@@ -7,62 +7,35 @@ group: navigation
 {% include JB/setup %}
 
 <div class="row">
-  
-  <div class="col-sm-6">
-    <div class="row service-wrapper">
-      <a href="./releases.html">
-        <div class="col-sm-8">
-          <h3>Releases</h3>
-          <p>For each release we list what packages have been added, and what changes have been made.</p>
-        </div>
-        <div class="col-sm-4">
-          <img src="images/icons/glyphicons-60-cargo.svg" alt="Read More" height="65"></img>
-        </div>
-    </div>
-  </div>
-  
+
+  {% assign box_title = "Releases" %}
+{% assign box_text = "For each release we list what packages have been added, and what changes have been made." %}
+{% assign box_image = "images/icons/glyphicons-60-cargo.svg" %}
+{% assign box_link = "./releases.html" %}
+{% include themes/cgal/box %}
+
+{% assign box_title = "Acknowledging" %}
+{% assign box_text = "Before writing to the user mailing list you might have a look here." %}
+{% assign box_image = "images/icons/glyphicons-536-ice-cream.svg" %}
+{% assign box_link = "http://doc.cgal.org/latest/Manual/how_to_cite_cgal.html" %}
+{% include themes/cgal/box %}
 
 
-  <div class="col-sm-6">
-    <div class="row service-wrapper">
-      <a href="http://doc.cgal.org/latest/Manual/how_to_cite_cgal.html">
-        <div class="col-sm-8">
-          <h3>Acknowledging</h3>
-          <p>When you use CGAL in your work, please cite us. We provide bibtex entries for
-            the different packages of the library.</p>
-        </div>
-        <div class="col-sm-4">
-          <img src="images/icons/glyphicons-536-ice-cream.svg" alt="Read More" height="65"></img>
-        </div>
-    </div>
-  </div>
 </div>
 
 <div class="row">
-  <div class="col-sm-6">
-    <div class="row service-wrapper">
-      <a href="./videos.html">
-        <div class="col-sm-8">
-          <h3>Videos</h3>
-          <p>Have a look at videos covering algorithms and data structures of CGAL.</p>
-        </div>
-        <div class="col-sm-4">
-          <img src="images/icons/glyphicons-9-film.svg" alt="Read More" height="75"></img>
-        </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-6">
-    <div class="row service-wrapper">
-      <a href="https://cgal.geometryfactory.com/CGAL/Members/wiki/Main_Page">
-        <div class="col-sm-8">
-          <h3>Intranet</h3>
-          <p>Access to the CGAL Developer wiki (password protected).</p>
-        </div>
-        <div class="col-sm-4">
-          <img src="images/icons/glyphicons-205-unlock.svg" alt="Read More" height="75"></img>
-        </div>
-    </div>
-  </div>
+
+{% assign box_title = "Videos" %}
+{% assign box_text = "Have a look at videos covering algorithms and data structures of CGAL." %}
+{% assign box_image = "images/icons/glyphicons-9-film.svg" %}
+{% assign box_link = "./videos.html" %}
+{% include themes/cgal/box %}
+
+{% assign box_title = "Intranet" %}
+{% assign box_text = "Passwort protected access to the Developer Wiki" %}
+{% assign box_image = "images/icons/glyphicons-205-unlock.svg" %}
+{% assign box_link = "https://cgal.geometryfactory.com/CGAL/Members/wiki/Main_Page" %}
+{% include themes/cgal/box %}
+
 </div>
 
