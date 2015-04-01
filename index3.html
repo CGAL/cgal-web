@@ -8,24 +8,24 @@ tagline:
 <div class="homepage-slider">
   <div id="sequence">
     <ul class="sequence-canvas">
-      <li style="background-image: url({{ BASE_PATH }}/images/A1.jpg); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
-        <h2 class="title">AABB tree in the MakerBot driver</h2>
-        <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::AABB_tree tree(faces(surface));</pre></h3>
+      <li style="background-image: url({{ BASE_PATH }}/images/segmentation.png); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+        <h2 class="title">Mesh Segmentation</h2>
+        <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::sdf_values(surface_mesh);</pre></h3>
       </li>
 	  
-      <li style="background-image: url({{ BASE_PATH }}/images/A2.jpg); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
-        <h2 class="title">Meshing on a Raspberry Pi<sup>3</sup> Cluster </h2>
-        <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::parallel::make_periodic_mesh_3(S);</pre></h3>
+      <li style="background-image: url({{ BASE_PATH }}/images/Poisson_surface_reconstruction.png); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+        <h2 class="title">Surface Reconstruction</h2>
+        <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::Mesh_3 tet_mesh = CGAL::make_mesh_3();</pre></h3>
       </li>
 	  
-      <li style="background-image: url({{ BASE_PATH }}/images/A3.jpg); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
-        <h2 class="title">Voice Interpolation in the Intercom</h2>
-        <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::sibson_c1_interpolation_square(p, N);</pre></h3>
+      <li style="background-image: url({{ BASE_PATH }}/images/voronoi.png); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+        <h2 class="title">Voronoi Diagram</h2>
+        <h3 class="subtitle"><pre style='text-shadow:none'>VD = CGAL::make_voronoi(points);</pre></h3>
       </li>
 
-      <li style="background-image: url({{ BASE_PATH }}/images/A4.jpg); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
-        <h2 class="title">Sweat&reg;:  Energy from Water and CO<sub>2</sub> </h2>
-        <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::parallel::make_periodic_mesh_3(S);</pre></h3>
+      <li style="background-image: url({{ BASE_PATH }}/images/aabb_tree.png); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+        <h2 class="title">Axis Aligned Bounding Box Tree</h2>
+        <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::AABB_tree tree(faces(surface_mesh));</pre></h3>
       </li>
 
     </ul>
