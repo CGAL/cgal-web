@@ -32,7 +32,7 @@ Usage:
       <ul>
     {% endif %}
 
-    <li><span>{{ post.date | date: "%B, %Y" }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>{% if post.description != "" %}: {% if post.tags contains "WIP" %}Work in Progress - {% endif %} {{post.description}} {% endif %}</li>
+    <li><span>{{ post.date | date: "%B %e, %Y" }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>{% if post.description != "" %}: {% if post.tags contains "WIP" %}Work in Progress - {% endif %} {{post.description}} {% endif %}</li>
   
     {% if forloop.last %}
       </ul>

@@ -30,7 +30,7 @@
           </div>
           <div class="single-post-info">
             <i class="glyphicon glyphicon-time"></i>
-            {{ page.date | | date: "%B, %Y" }}
+            {{ page.date | date_to_long_string }}
           </div>
           <div class="single-post-content">
             {{ content }}
