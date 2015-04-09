@@ -2362,7 +2362,6 @@ span.color-red {
   *display: inline;
 }
 .mainmenu > ul > li > a,
-.mainmenu > ul > li > div > a,
 .mainmenu .mainmenu-submenu-inner > li > a {
   font-size: 1.2em;
   padding: 1.2em 1.5em;
