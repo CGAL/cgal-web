@@ -9,9 +9,7 @@ group: navigation
 <div class="row">
   <div class="col-md-4">
     <ul>
-      {% assign releases = site.posts | where:"category","release" %}
-      {% for post in site.posts %}
-      {% if post.tags contains "release" %}
+      {% for post in site.tags['release'] %}
         {% capture this_day %}{{ post.date | date: "%d" }}{% endcapture %}
         {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
         {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
@@ -27,7 +25,6 @@ group: navigation
         {% else %}
         <li><a href="{{ BASE_PATH }}{{post.url}}" class="active">{{post.title}}</a> ({{this_month}} {{this_year}})</li>
         {% endif %}
-      {% endif %}
       {% endfor %}
     </ul>
   </div>
