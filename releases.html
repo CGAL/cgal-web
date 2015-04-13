@@ -9,6 +9,7 @@ group: navigation
 <div class="row">
   <div class="col-md-4">
     <ul>
+ <li><a href="https://raw.githubusercontent.com/CGAL/cgal/master/Installation/CHANGES">global changelog</a> </li>
       {% for post in site.tags['release'] %}
         {% capture this_day %}{{ post.date | date: "%d" }}{% endcapture %}
         {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
