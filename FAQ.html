@@ -175,16 +175,18 @@ group: navigation
        Debian repository. Debian testing (jessie) and Debian stable (wheezy)
        might not contain the latest version of CGAL. In that case, add</P>
        <P><TT>
-       deb <A href="ftp://ftp.mpi-sb.mpg.de/pub/outgoing/CGAL/debian/">ftp://ftp.mpi-sb.mpg.de/pub/outgoing/CGAL/debian</A> wheezy main contrib non-free<BR />
-       deb-src <A href="ftp://ftp.mpi-sb.mpg.de/pub/outgoing/CGAL/debian/">ftp://ftp.mpi-sb.mpg.de/pub/outgoing/CGAL/debian</A> wheezy main contrib non-free<BR />
+       deb <A href="http://debian.cgal.org/">http://debian.cgal.org</A> wheezy main<BR />
+       deb-src <A href="http://debian.cgal.org/">http://debian.cgal.org</A> wheezy main<BR />
+       <BR />
+       deb <A href="http://debian.cgal.org/">http://debian.cgal.org</A> jessie main<BR />
+       deb-src <A href="http://debian.cgal.org/">http://debian.cgal.org</A> jessie main<BR />
        </TT></P>
-       <P>to <TT>/etc/apt/sources.list</TT> (for jessie simply replace
-       "wheezy" by "jessie"). The packages are called  <TT>libcgal10</TT>,
-       <TT>libcgal-dev</TT>, <TT>libcgal-qt4-10</TT>, <TT>libcgal-qt4-dev</TT>,
-       <TT>libcgal-demo</TT> and <TT>libcgal-ipelets</TT>.
-       Packages for older CGAL versions are available at
-       <A href="ftp://ftp.mpi-sb.mpg.de/pub/outgoing/CGAL/debian/archive/">
-       ftp://ftp.mpi-sb.mpg.de/pub/outgoing/CGAL/debian/archive</A>
+       <P>to <TT>/etc/apt/sources.list</TT> (you only need the pair of lines
+       corresponding to the release you are using). The packages are called
+       <TT>libcgal11</TT>, <TT>libcgal-dev</TT>, <TT>libcgal-qt4-11</TT>,
+       <TT>libcgal-qt4-dev</TT>, <TT>libcgal-demo</TT> and
+       <TT>libcgal-ipelets</TT>. Packages for older CGAL versions are available at
+       <A href="http://debian.cgal.org/archive/">http://debian.cgal.org/archive</A>
        or from the official Debian archive.</P>
        <P>The Ubuntu repository also contains packages for CGAL, but not
        always for the latest version. The Debian packages might work on
@@ -214,7 +216,7 @@ group: navigation
    $ ./Delaunay_triangulation_2 & 	 
    $ ./Regular_triangulation_2 & 	 
           </PRE> 	 
-          <P>See also /usr/share/doc/libcgal10/README.Debian for more information.</P>
+          <P>See also /usr/share/doc/libcgal11/README.Debian for more information.</P>
   </LI>
 
    <LI> <A NAME="is_vc6_supported"></A>
