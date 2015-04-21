@@ -42,7 +42,7 @@ To build CGAL from source on Windows you have to <a href="https://gforge.inria.f
 
 <h3 id="GeneralPrerequisites">General Prerequisites</h3>
 <ul><li> Download and install cmake (www.cmake.org)
-  </li><li> Download CGAL installer (<a rel="nofollow" class="external free" href="http://gforge.inria.fr/frs/?group_id=52">http://gforge.inria.fr/frs/?group_id=52</a>)
+  </li><li> <a rel="nofollow" class="external free" href="/download/last">Download CGAL installer</a>
   </li><li> Read the appendix if you don't know how to set/modify an environment variable
   </li><li> Qt 4 is only needed if you want to run CGAL demos. libQGLViewer is only needed for 3D CGAL demos.
   </li><li> Identify what is the <i>Visual Studio Command Prompt</i> corresponding to the correct version (32- or 64-bit) of the compiler. Look in the start menu under the <i>Visual Studio</i> or <i>Microsoft Windows SDK</i> folders. At the command prompt, type <code>cl.exe</code> to check the version.
@@ -67,7 +67,8 @@ To build CGAL from source on Windows you have to <a href="https://gforge.inria.f
 
 <p>You then need to set the following two environment variables to point respectively to the path of the libraries and the headers
 </p>
-<pre>   BOOST_LIBRARYDIR=C:\dev\libboost_1_54_0\lib32-msvc-10.0
+<pre>
+  BOOST_LIBRARYDIR=C:\dev\libboost_1_54_0\lib32-msvc-10.0
   BOOST_INCLUDEDIR=C:\dev\libboost_1_54_0
 </pre>
 <p>You also need to add in your PATH environment variable, the path to the Boost dll's:
