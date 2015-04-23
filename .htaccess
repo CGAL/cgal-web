@@ -11,8 +11,9 @@ RewriteEngine on
 RewriteCond %{HTTP_HOST} ^cgal.org
 RewriteRule (.*) http://www.cgal.org/$1 [R=301,L]
 
-# Redirect platforms.html (removed from the web site in April 2015)
+# Redirect page removed from the web site in April 2015)
 Redirect permanent /platforms.html http://doc.cgal.org/latest/Manual/installation.html#seccompilers
+Redirect permanent /windows_installation.html /download/windows.html
 
 AddHandler type-map .var
 RedirectMatch permanent ^/index2.html /
