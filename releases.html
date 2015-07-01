@@ -10,7 +10,9 @@ group: navigation
   <div class="col-md-4">
     <ul>
  <li><a href="https://raw.githubusercontent.com/CGAL/cgal/master/Installation/CHANGES">global changelog</a> </li>
-      {% for post in site.tags['release'] %}
+ <li>The manual of an old release X.Y can still be accessed at
+  <tt>http://doc.cgal.org/Manual/X.Y/doc_html/cgal_manual/packages.html</tt> </li>
+ {% for post in site.tags['release'] %}
         {% capture this_day %}{{ post.date | date: "%d" }}{% endcapture %}
         {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
         {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
