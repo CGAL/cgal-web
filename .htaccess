@@ -11,9 +11,12 @@ RewriteEngine on
 RewriteCond %{HTTP_HOST} ^cgal.org
 RewriteRule (.*) http://www.cgal.org/$1 [R=301,L]
 
-# Redirect page removed from the web site in April 2015)
+# Redirect page removed from the web site in April 2015
 Redirect permanent /platforms.html http://doc.cgal.org/latest/Manual/installation.html#seccompilers
 Redirect permanent /windows_installation.html /download/windows.html
+Redirect permanent /grass.html /news/2014/04/01/GoogleGrass/
+Redirect permanent /philosophy.html /exact.html
+Redirect permanent /questionnaire.html https://fr.surveymonkey.com/r/?sm=r1cY4ooW6OIeySeh%2fhr2AA%3d%3d
 
 AddHandler type-map .var
 RedirectMatch permanent ^/index2.html /
