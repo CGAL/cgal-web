@@ -27,11 +27,11 @@ RedirectMatch permanent ^/([^/]+)_frame.html /$1.html
 RedirectMatch permanent ^/upcoming http://upcoming.cgal.org
 RedirectMatch permanent ^/packages /Manual/latest/doc_html/cgal_manual/packages.html
 
-# link for downloading the last release, currently 4.7-beta1 and 4.6.2
+# link for downloading the last release, currently 4.7-beta2 and 4.6.3
 Redirect /download/last https://gforge.inria.fr/frs/?group_id=52
 
-# CGAL-4.7-beta1
-Redirect /download/beta https://gforge.inria.fr/frs/?group_id=52&release_id=9328
+# CGAL-4.7-beta2
+Redirect /download/beta https://gforge.inria.fr/frs/?group_id=52&release_id=9410
 
 RedirectMatch seeother ^/Pkg/(.*) http://doc.cgal.org/latest/Manual/packages.html#Pkg$1Summary
 RedirectMatch seeother ^/Part/(.*) http://doc.cgal.org/latest/Manual/packages.html#Part$1
@@ -166,10 +166,33 @@ RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
 RewriteRule demo/4.6.2/(.*) /demo/4.6.1/$1 [R]
 
 RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.6.3/(.*) /demo/4.6.2/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
 RewriteRule demo/4.7/(.*) /demo/4.6/$1 [R]
 
 RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.7.1/(.*) /demo/4.7/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.7.2/(.*) /demo/4.7.1/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.7.3/(.*) /demo/4.7.2/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
 RewriteRule demo/4.8/(.*) /demo/4.7/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.8.1/(.*) /demo/4.8/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.8.2/(.*) /demo/4.8.1/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.8.3/(.*) /demo/4.8.2/$1 [R]
+
+
 
 # Redirect last version of the manual /Manual/4.5/ to /Manual/latest/
 RewriteRule ^Manual/4.5/(.*) /Manual/latest/$1 [R]
