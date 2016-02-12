@@ -30,8 +30,10 @@ RedirectMatch permanent ^/packages /Manual/latest/doc_html/cgal_manual/packages.
 # link for downloading the last release, currently 4.8-beta1 and 4.7
 Redirect /download/last https://github.com/CGAL/cgal/releases
 
-# CGAL-4.7-beta2
-Redirect /download/beta https://gforge.inria.fr/frs/?group_id=52&release_id=9410
+# CGAL-4.8-beta1
+Redirect /download/beta https://github.com/CGAL/cgal/releases/tag/releases/CGAL-4.8-beta1
+
+RedirectMatch seeother ^/download/(.*) https://github.com/CGAL/cgal/releases/tag/releases/CGAL-$1
 
 RedirectMatch seeother ^/Pkg/(.*) http://doc.cgal.org/latest/Manual/packages.html#Pkg$1Summary
 RedirectMatch seeother ^/Part/(.*) http://doc.cgal.org/latest/Manual/packages.html#Part$1
