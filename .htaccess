@@ -27,8 +27,8 @@ RedirectMatch permanent ^/([^/]+)_frame.html /$1.html
 RedirectMatch permanent ^/upcoming http://upcoming.cgal.org
 RedirectMatch permanent ^/packages /Manual/latest/doc_html/cgal_manual/packages.html
 
-# link for downloading the last release, currently 4.7
-Redirect /download/last https://github.com/CGAL/cgal/releases/tag/releases/CGAL-4.7
+# link for downloading the last release, currently 4.8-beta1 and 4.7
+Redirect /download/last https://github.com/CGAL/cgal/releases
 
 # CGAL-4.7-beta2
 Redirect /download/beta https://gforge.inria.fr/frs/?group_id=52&release_id=9410
