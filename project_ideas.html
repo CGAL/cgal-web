@@ -42,6 +42,7 @@ First section to read: <a href="#information">Information Candidates Should Supp
   <li> <a href="#p10">Sparse Eigenvalue Solver and Application to Diffusion Distances</a>
   <li> <a href="#p11">Improving the Point Set Shape Detection Component</a>
   <li> <a href="#p12">Robust Normal estimation for Point Clouds with Sharp Features</a>
+  <li> <a href="#p13">Implementing a Package for Computation of Surface Maps.</a>
 </ol>
 
 <!------------------------------------------------------------------------------------------------------------------------------------------------------------>
@@ -243,6 +244,22 @@ In general we need to calculate a specific number of eigenvalues and eigenvector
 
 <!------------------------------------------------------------------------------------------------------------------------------------------------------------>
 <hr>
+
+
+<h3 id="p13">Implementing a Package for Computation of Surface Maps.</h3>
+<p><b>Mentors:</b> Yaron Lipman(Weizmann Institute of Science), Andreas Fabri (GeometryFactory)</p>
+<p><b>Project description:</b><br />
+Computing high quality mappings between surfaces is a core task in computer graphics, computer vision, medical imaging and related fields. This projects aims at implementing algorithms ([1],[2]) for computing bijective, low distortion mappings between surface-meshes. The implementation will consist of a couple of algorithms which follow the same  three steps: i) cutting the meshes into disk topology; ii) embedding the meshes into a canonical domain and reducing the distortion of the embedding via optimization; iii) computing the surface map induced from the embeddings via an overlay procedure and/or lifting.  
+<pre>
+[1]  AIGERMAN, N., PORANNE, R., AND LIPMAN, Y. 2015. Seamless surface mappings. ACM Transactions on Graphics (TOG) 34, 4.
+[2]  AIGERMAN, N., AND LIPMAN, Y. 2015. Orbifold tutte embeddings. ACM Trans. Graph. 34, 6.
+</pre>
+</p>
+<p><b>Required Skills:</b> C++, Geometry, Optimization </p>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<hr>
+
 
 <h3 id="information">Information Candidates Should Supply</h3>
 
