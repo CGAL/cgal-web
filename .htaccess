@@ -31,7 +31,7 @@ RedirectMatch permanent ^/packages /Manual/latest/doc_html/cgal_manual/packages.
 Redirect /download/last https://github.com/CGAL/cgal/releases
 
 # CGAL-4.8-beta1
-Redirect /download/beta https://github.com/CGAL/cgal/releases/tag/releases/CGAL-4.8-beta1
+Redirect /download/beta https://github.com/CGAL/cgal/releases/tag/releases/CGAL-4.9-beta1
 
 RedirectMatch seeother ^/download/([0-9].*) https://github.com/CGAL/cgal/releases/tag/releases/CGAL-$1
 
