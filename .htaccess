@@ -194,6 +194,30 @@ RewriteRule demo/4.8.2/(.*) /demo/4.8.1/$1 [R]
 RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
 RewriteRule demo/4.8.3/(.*) /demo/4.8.2/$1 [R]
 
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.9/(.*) /demo/4.8/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.9.1/(.*) /demo/4.9/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.9.2/(.*) /demo/4.9.1/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.9.3/(.*) /demo/4.9.2/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.10/(.*) /demo/4.9/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.10.1/(.*) /demo/4.10/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.10.2/(.*) /demo/4.10.1/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.10.3/(.*) /demo/4.10.2/$1 [R]
+
 
 
 # Redirect last version of the manual /Manual/4.5/ to /Manual/latest/
