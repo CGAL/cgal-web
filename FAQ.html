@@ -620,13 +620,6 @@ the
 	  might be unbalanced and therefore queries and updates might
 	  take longer, especially, if many removal and split
 	  operations are performed.</li>
-	  
-	  <li>When the curves to be inserted into an arrangement are
-	  available in advance (as opposed to supplied on-line), it is
-	  advised to use the more efficient aggregate (sweep-based)
-	  insertion over the incremental insertion; e.g.,
-	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Function_insert_curves.html"><code>insert_curves()</code></a>.
-	  </li>
 
 	  <li>The various traits classes should be instantiated with
 	  an exact number type to ensure robustness, when the input of
