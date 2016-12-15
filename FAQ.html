@@ -565,10 +565,10 @@ group: navigation
 	  <var>x</var>-monotone curves, whose interior is disjoint
 	  from existing edges and vertices of the arrangement. The
 	  specialized insertion functions, i.e., 
-	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_on_surface_2.html"><code>insert_in_face_interior()</code></a>,
-	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_on_surface_2.html"><code>insert_from_left_vertex()</code></a>, 
-	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_on_surface_2.html"><code>insert_from_right_vertex()</code></a>, and
-	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_on_surface_2.html"><code>insert_at_vertices()</code></a>
+	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_2.html"><code>insert_in_face_interior()</code></a>,
+	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_2.html"><code>insert_from_left_vertex()</code></a>, 
+	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_2.html"><code>insert_from_right_vertex()</code></a>, and
+	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_2.html"><code>insert_at_vertices()</code></a>
 	  can be used according to the available information. These
 	  functions hardly involve any geometric operations, if at
 	  all. They accept topologically related parameters, and use
@@ -579,15 +579,15 @@ group: navigation
           <p>A polygon, represented by a list of segments along its
 	  boundary, can be inserted into an empty arrangement as
 	  follows. First, one segment is inserted using
-	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_on_surface_2.html"><code>insert_in_face_interior()</code></a>
+	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_2.html"><code>insert_in_face_interior()</code></a>
 	  into the unbounded face. Then, a segment with a common end
 	  point is inserted using either
-	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_on_surface_2.html"><code>insert_from_left_vertex()</code></a>
+	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_2.html"><code>insert_from_left_vertex()</code></a>
 	  or
-	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_on_surface_2.html"><code>insert_from_right_vertex()</code></a>,
+	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_2.html"><code>insert_from_right_vertex()</code></a>,
 	  and so on with the rest of the segments except for the last,
 	  which is inserted using
-	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_on_surface_2.html"><code>insert_at_vertices()</code></a>,
+	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_2.html"><code>insert_at_vertices()</code></a>,
 	  as both endpoints of which are the mapping of known
 	  vertices.</p></li>
 	    
