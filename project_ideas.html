@@ -40,18 +40,27 @@ First section to read: <a href="#information">Information Candidates Should Supp
   <li> <a href="#p8">Improving Normal Orientation</a>
   <li> <a href="#p9">Hexahedral Mesh Extraction</a>
   <li> <a href="#p10">Mesh Smoothing and Shape Smoothing</a>
-  <li> <a href="#p11">Integrating PinMesh in CGAL</h3>
+  <li> <a href="#p11">Integrating PinMesh in CGAL</a>
 </ol>
 
 <!------------------------------------------------------------------------------------------------------------------------------------------------------------>
 <hr>
 
 <h3 id="p1">Adding a Parallel Version of the Edge Simplification Algorithm</h3>
-<p><b>Mentor(s):</b> Sebastien Loriot  (GeometryFactory) and Clément Jamin (INRIA)
+<p><b>Mentor(s):</b> Sebastien Loriot  (GeometryFactory) and Clement Jamin (INRIA)
 </p><p><b>Project description:</b><br />
 CGAL has a triangulated surface mesh edge simplification <a rel="nofollow" class="external text" href="http://doc.cgal.org/latest/Surface_mesh_simplification/index.html">package</a>
-based on the paper <i>Peter Lindstrom and Greg Turk. Fast and memory efficient polygonal simplification. In IEEE Visualization, pages 279–286, 1998.</i>
-The goal of this project is to use a modified version of this algorithm to allow edges of a mesh to be simplified using parallel threads.
+based on the paper <i>Peter Lindstrom and Greg Turk. Fast and memory efficient polygonal simplification. In IEEE Visualization, pages 279-286, 1998.</i>
+The goal of this project is to be able to run the edge simplification algorithm in parallel.
+There are several ways to achieve it:
+<ul>
+<li> modify the current algorithm so that several thread can work on the simplification.
+<li> implement a method to decompose the meshes into submeshes and run the algorithm sequentially on each part + special care for the stitches.
+<li> implement another method that is better and designed for parallel computing.
+</ul>
+
+The choice of the approach is left to the candidate.
+
 </p><p><b>Required Skills:</b> C++, Intel TBB
 </p><p><b>Contact:</b> sebastien.loriot@cgal.org
 </p>
@@ -106,13 +115,13 @@ The CGAL project has moved from a dedicated Git repository to the Github service
 <hr>
 
 <h3 id="p6">Finalizing a Package for 2D Triangulations on the Sphere</h3>
-<p><b>Mentor(s):</b> Sébastien Loriot (GeometryFactory) and Monique Teillaud (INRIA)
+<p><b>Mentor(s):</b> Sebastien Loriot (GeometryFactory) and Monique Teillaud (INRIA)
 </p><p><b>Project description:</b><br />
 The sphere can model atoms (biology) as well as the earth (geography) and the celestial vault (astrophysics), which shows a strong need for computations on the sphere. A method was proposed, a few years ago, to compute triangulations of points on or close to a sphere [1], and a prototype software has been written. The prototype is very efficient, but it duplicates some parts of the CGAL 2D triangulation classes. The project will consist in proposing a new design for those classes in order to avoid duplications, and implementing it. 
 </p><p><b>Required Skills:</b> C++, design patterns
 </p><p><b>Contact:</b> Sebastien.Loriot@cgal.org, Monique.Teillaud@inria.fr
 </p><p><b>Reference</b><br />
-[1] Manuel Caroli, Pedro M. M. de Castro, Sébastien Loriot, Olivier Rouiller, Monique Teillaud, and Camille Wormser. Robust and Efﬁcient Delaunay triangulations of points on or close to a sphere. In 9th International Symposium on Experimental Algorithms, volume 6049 of Lecture Notes in Computer Science, pages 462-473, 2010. Preliminary version available at <a rel="nofollow" class="external free" href="https://hal.inria.fr/inria-00405478/">https://hal.inria.fr/inria-00405478/</a>
+[1] Manuel Caroli, Pedro M. M. de Castro, Sebastien Loriot, Olivier Rouiller, Monique Teillaud, and Camille Wormser. Robust and Efficient Delaunay triangulations of points on or close to a sphere. In 9th International Symposium on Experimental Algorithms, volume 6049 of Lecture Notes in Computer Science, pages 462-473, 2010. Preliminary version available at <a rel="nofollow" class="external free" href="https://hal.inria.fr/inria-00405478/">https://hal.inria.fr/inria-00405478/</a>
 </p>
 
 <!------------------------------------------------------------------------------------------------------------------------------------------------------------>
@@ -120,7 +129,7 @@ The sphere can model atoms (biology) as well as the earth (geography) and the ce
 <h3 id="p7">Improving Poisson Surface Reconstruction</h3>
 <p><b>Mentor(s):</b> Pierre Alliez (Inria), Gael Guennebaud (Inria) and Simon Giraudot (GeometryFactory)
 </p><p><b>Project description:</b><br />
-The current implementation from CGAL: <a rel="nofollow" class="external free" href="http://doc.cgal.org/latest/Manual/packages.html#PkgPoissonSurfaceReconstructionSummary">http://doc.cgal.org/latest/Manual/packages.html#PkgPoissonSurfaceReconstructionSummary</a> can be improved along two axes: scalability and smoothness of the reconstructed surfaces.
+The current implementation from CGAL: <a rel="nofollow" class="external free" href="http://doc.cgal.org/latest/Poisson_surface_reconstruction_3">http://doc.cgal.org/latest/Poisson_surface_reconstruction_3</a> can be improved along two axes: scalability and smoothness of the reconstructed surfaces.
 The scalability is hampered by the fact that the Poisson solver requires a space discretization: a Delaunay triangulation generated via Delaunay refinement, and a matrix assembly. A first direction is to reduce the complexity of the triangulation. A second direction is a hash data structure inspired by [1]. A third direction is to investigate a matrix-free approach where the implicit function is computed in closed form using a far field approximation. 
 On smoothness of the output surfaces, the current issue is that the current implicit surface is piecewise linear as computed on a piecewise linear 3D function. We will investigate local smooth interpolation approaches that yield smooth surfaces at all scales. Another issue arises on surfaces with boundaries. We will devise an approach that generate smooth curves as boundaries. 
 </p><p><b>Required Skills:</b> C++, geometric data structures, applied maths.
@@ -135,7 +144,7 @@ On smoothness of the output surfaces, the current issue is that the current impl
 <h3 id="p8">Improving Normal Orientation</h3>
 <p><b>Mentor(s):</b> Pierre Alliez (Inria), Gael Guennebaud (Inria) and Simon Giraudot (GeometryFactory)
 </p><p><b>Project description:</b><br />
-The current CGAL approach for normal orientation <a rel="nofollow" class="external free" href="http://doc.cgal.org/latest/Point_set_processing_3/index.html#Chapter_Point_Set_Processing">http://doc.cgal.org/latest/Point_set_processing_3/index.html#Chapter_Point_Set_Processing</a> proceeds by propagation along a minimum spanning tree. While this approach is satisfactory for noise-free connected point sets, it fails on disconnected point sets with high noise. The first objective is to evaluate two more recent approaches on a wide range of point sets [1,2]. The second objective is to implement the best approach as a CGAL algorithm. The third objective is to investigate the use of an existing approach [3] based on the construction of an signed implicit function from unoriented points, in order to deduce the normal orientation. 
+The current CGAL approach for normal orientation <a rel="nofollow" class="external free" href="http://doc.cgal.org/latest/Point_set_processing_3">http://doc.cgal.org/latest/Point_set_processing_3</a> proceeds by propagation along a minimum spanning tree. While this approach is satisfactory for noise-free connected point sets, it fails on disconnected point sets with high noise. The first objective is to evaluate two more recent approaches on a wide range of point sets [1,2]. The second objective is to implement the best approach as a CGAL algorithm. The third objective is to investigate the use of an existing approach [3] based on the construction of an signed implicit function from unoriented points, in order to deduce the normal orientation. 
 </p><p><b>Required Skills:</b> C++, geometric data structures, applied maths.
 </p><p><b>Contact:</b> pierre.alliez@inria.fr, gael.guennebaud@inria.fr and simon.giraudot@geometryfactory.com
 </p><p><b>References</b><br />
@@ -181,7 +190,7 @@ and mesh smoothing are available in the literature. The goal of this project is 
 </p><p><b>References</b><br />
 </p>
 <ul>
-<li> [1] <a rel="nofollow" class="external text" href="https://www.researchgate.net/profile/Mathieu_Desbrun/publication/221326461_Processing_Irregular_Meshes/links/0deec52bb6fcc1f898000000.pdf">Implicit fairing of irregular meshes using diffusion and curvature flow</a> Desbrun, Meyer, Schröder, and Barr (1999).
+<li> [1] <a rel="nofollow" class="external text" href="https://www.researchgate.net/profile/Mathieu_Desbrun/publication/221326461_Processing_Irregular_Meshes/links/0deec52bb6fcc1f898000000.pdf">Implicit fairing of irregular meshes using diffusion and curvature flow</a> Desbrun, Meyer, Schroder, and Barr (1999).
 </li>
 <li> [2] <a rel="nofollow" class="external text" href="http://www.imr.sandia.gov/papers/imr11/surazhsky.pdf">High quality compatible triangulations</a> Surazhsky and Gotsman (2004)
 </li>
