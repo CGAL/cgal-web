@@ -39,6 +39,7 @@ First section to read: <a href="#information">Information Candidates Should Supp
   <li> <a href="#p7">Improving Poisson Surface Reconstruction</a>
   <li> <a href="#p8">Improving Normal Orientation</a>
   <li> <a href="#p9">Hexahedral Mesh Extraction</a>
+  <li> <a href="#p10">Mesh Smoothing and Shape Smoothing</a>
 </ol>
 
 <!------------------------------------------------------------------------------------------------------------------------------------------------------------>
@@ -154,6 +155,34 @@ Implement the method given in the paper "HexEx: Robust Hexahedral Mesh Extractio
 </p>
 <ul>
 <li> [1] <a rel="nofollow" class="external free" href="https://www.meshing.rwth-aachen.de/publication/03260/">https://www.meshing.rwth-aachen.de/publication/03260/</a>
+</li>
+</ul>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<hr>
+
+<h3 id="p10">Mesh Smoothing and Shape Smoothing</h3>
+<p><b>Mentor(s):</b> Jane Tournois (GeometryFactory), Pierre Alliez (Inria)
+</p><p><b>Project description:</b><br />
+Mesh Smoothing and Shape Smoothing (or Geometric Smoothing) are often needed to improve the quality of a surface mesh. The choice of quality criterion (angles, edge lengths, smoothness, noise,...) leads the choice of the optimizer. Many algorithms that provide solutions for geometric smoothing
+and mesh smoothing are available in the literature. This project aims at the implementation of some of the State-of-the-Art algorithms in the 
+<a rel="nofollow" class="external text" href="http://doc.cgal.org/latest/Polygon_mesh_processing/index.html">Polygon Mesh Processing</a> CGAL package.
+</p>
+<ul>
+<li> Geometric Smoothing includes the <i>Mean Curvature Flow</i> [1] and its volume preserving and feature preserving variants. 
+</li>
+<li> Mesh Smoothing includes the <i>High Quality Compatible Triangulations</i> [2] and methods that are angle-based or area-based.
+</li>
+</ul>
+<p>This work can be extended by providing a generic framework to optimize a user-defined criterion such as normals, colors,...
+</p><p><b>Required Skills:</b> C++, geometric data structures, generic programming.
+</p><p><b>Contact:</b> jane.tournois@geometryfactory.com
+</p><p><b>References</b><br />
+</p>
+<ul>
+<li> [1] <i>Implicit fairing of irregular meshes using diffusion and curvature flow</i> (Desbrun, Meyer, and Schr{\"o}der, Barr) (1999).
+</li>
+<li> [2] <i>High quality compatible triangulations</i>, Surazhsky and Gotsman (2004)
 </li>
 </ul>
 
