@@ -40,6 +40,7 @@ First section to read: <a href="#information">Information Candidates Should Supp
   <li> <a href="#p8">Improving Normal Orientation</a>
   <li> <a href="#p9">Hexahedral Mesh Extraction</a>
   <li> <a href="#p10">Mesh Smoothing and Shape Smoothing</a>
+  <li> <a href="#p11">Integrating PinMesh in CGAL</h3>
 </ol>
 
 <!------------------------------------------------------------------------------------------------------------------------------------------------------------>
@@ -185,6 +186,21 @@ and mesh smoothing are available in the literature. The goal of this project is 
 <li> [2] <a rel="nofollow" class="external text" href="http://www.imr.sandia.gov/papers/imr11/surazhsky.pdf">High quality compatible triangulations</a> Surazhsky and Gotsman (2004)
 </li>
 </ul>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<hr>
+
+<h3 id="p11">Integrating PinMesh in CGAL</h3>
+<p><b>Mentor(s):</b> Salles Viana Gomes de Magalhaes (Universidade Federal de Vi&ccedil;osa), Andrade Marcus (Universidade Federal de Vi&ccedil;osa), W. Randolph Franklin(Rensselaer Polytechnic Institute), Andreas Fabri(GeometryFactory)</p>
+<p> PinMesh is a very fast algorithm with implementation to preprocess a
+polyhedral mesh, also known as a multi-material mesh, in order to
+perform 3D point location queries. PinMesh combines several innovative
+components to efficiently handle the largest available meshes. CGAL also have a <a href="http://doc.cgal.org/latest/Polygon_mesh_processing/classCGAL_1_1Side__of__triangle__mesh.html
+">class</a> for answering such queries, but it is not optimized for large meshes. The goal of this project is to integrate the code of PinMesh into CGAL so that it can be used
+as an alternative implementation of <code>Side_of_triangle_mesh</code>.
+</p><p><b>Required Skills:</b> C++, generic programming.
+</p><p><b>Contact:</b> andreas.fabri@cgal.org
+
 
 <!------------------------------------------------------------------------------------------------------------------------------------------------------------>
 <hr>
