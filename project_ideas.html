@@ -41,6 +41,7 @@ First section to read: <a href="#information">Information Candidates Should Supp
   <li> <a href="#p9">Hexahedral Mesh Extraction</a>
   <li> <a href="#p10">Mesh Smoothing and Shape Smoothing</a>
   <li> <a href="#p11">Integrating PinMesh in CGAL</a>
+  <li> <a href="#p12">Interfacing <code>NearptD</code> with Point Set Processing algorithms of CGAL</a>
 </ol>
 
 <!------------------------------------------------------------------------------------------------------------------------------------------------------------>
@@ -208,6 +209,22 @@ components to efficiently handle the largest available meshes. CGAL also have a 
 ">class</a> for answering such queries, but it is not optimized for large meshes. The goal of this project is to integrate the code of PinMesh into CGAL so that it can be used
 as an alternative implementation of <code>Side_of_triangle_mesh</code>.
 </p><p><b>Required Skills:</b> C++, generic programming.
+</p><p><b>Contact:</b> andreas.fabri@cgal.org
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<hr>
+
+<h3 id="p12">Interfacing <code>NearptD</code> with Point Set Processing algorithms of CGAL</h3>
+<p><b>Mentor(s):</b> W. Randolph Franklin(Rensselaer Polytechnic Institute), Andreas Fabri(GeometryFactory)</p>
+<p>
+<a href="https://github.com/Lucky1313/NearptD"><code>NearptD</code></a> is a nearest neighbor search
+software that is using a uniform grid to enable the use of the GPU for doing faster queries.
+CGAL provides a k-nearest neighbor data structure running only on the CPU. The goal of this project is
+to replace in <a href="http://doc.cgal.org/latest/Point_set_processing_3">point set processing</a> algorithm of CGAL the nearest neighbor implementation by the one of NearptD.
+Benchmark will them be done to see if the replacement could be useful in practice. If so, a proper integration
+should be done.
+</p>
+
+</p><p><b>Required Skills:</b> C++, generic programming, GPU.
 </p><p><b>Contact:</b> andreas.fabri@cgal.org
 
 
