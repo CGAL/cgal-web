@@ -24,11 +24,11 @@ Voronoi diagrams (also called Apollonius graph), as well as
 the CGAL Hilbert sort algorithm for producing space filling
 curves.</p>.
 
-![Example image](/images/windows.png)
-
+![](/images/april.jpg)
+<p><small>Left: Voronoi ring  Right: Space filling ear ring</small></p>
 <h3>A Unified Naming Scheme</h3>
 
-<p>Laure N.T. Rhino, the chief software architect at Mc Neel  who gave 
+<p>Laure N.T. Rhino, the chief software architect at McNeel  who gave 
 this most wonderful design software its name, contaced the CGAL Editorial 
 Board, asking if it wouldn't be possible to rename the  <i>multiplicatively 
 weighted Voronoi diagrams</i> to <i>Ivanka Diagram</i>, so that it 
@@ -43,7 +43,7 @@ to push the boundaries of how jewelery can look like in the 21st century"</p>
  <p><small>Sebastien L.O. Riot, Chief Technologist at Swarowki</small></p>
 </blockquote>
 
-<p>According to Swarowski and and Rhino, we would do them a favor if the
+<p>According to Swarowski and and McNeel, we would do them a favor if the
 collection, the tool, as well as the component had the same name.
 This is somehow understandable, if we think about the naming mess 
 of Visual Studio 2013, sitting in the directory Microsoft Visual Studio 12.0,
@@ -64,15 +64,15 @@ but there are maybe even non-technical issues we should take into account.</p>
 
 <ul>
 <li><p>It is just a query replace all, and a serious developer has
-derived her own class anyways, so renaming is not really an issue.<p>
+derived her own class anyways, so renaming is not really an issue.</p>
 <li><p>Don't do this, as you know who profits from viral marketing.</p>
 <li><p>Open Source projects such as CGAL must stay politically neutral.</p>
 <li><p>It must be an obsession of some people to tag things with their name.
-Obama-Care, Ivanka diagram,...
-I am shocked to hear here the name of the Rhino software comes from.</p>
+Obamacare, Ivanka diagram,...
+I am shocked to hear where the name of the Rhino software comes from.</p>
 <li><p>As software developers tend towards Democats, this is not a clever move.</p>  
 <li><p>I appreciate, because you help to make America great again.</p>
-<li<p>In 1000 years educated people will still remember Apollonius.</p>
+<li><p>In 1000 years educated people will still remember Apollonius.</p>
 <li><p>If you call this stuff jewelry, then better call the class <i>Merkel_diagram</i>.</p>
 </ul>
 
