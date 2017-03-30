@@ -76,7 +76,7 @@ Obamacare, Ivanka diagram,...
 I am shocked to hear where the name of the Rhino software comes from.</p>
 <li><p>As software developers tend towards the Democrats, this is not a clever move.</p>  
 <li><p>I appreciate, because you help to make America great again.</p>
-<li<<p>You risk not to pass immigration when you fly into LAX for the next Siggraph</p>
+<li><p>You risk not to pass immigration when you fly into LAX for the next Siggraph</p>
 <li><p>In 1000 years educated people will still remember Apollonius.</p>
 <li><p>If you call this stuff jewelry, then better call the class <i>Merkel_diagram</i>.</p>
 </ul>
