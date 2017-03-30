@@ -60,7 +60,10 @@ project from developers for developers.</p>
 <p>As the C++ programming language does not allow templated typedefs, we are
 reluctant to break backward compatibility, by just renaming the class 
 <i>CGAL::Multiplicatively_weighted_voronoi_diagram_3</i> to <i>Ivanka_diagram</i>,
-but there are maybe even non-technical issues we should take into account.</p>
+but there are maybe even non-technical issues we should take into account,
+so maybe you can help us to add items to our pro and con list which
+will be the base for the next Editorial Board meeting co-located with SGP 2017
+in London.</p>
 
 <ul>
 <li><p>It is just a query replace all, and a serious developer has
