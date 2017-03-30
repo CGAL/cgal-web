@@ -24,7 +24,7 @@ Voronoi diagrams (also called Apollonius graph), as well as
 the CGAL Hilbert sort algorithm for producing space filling
 curves.</p>.
 
-![](/images/april.jpg)
+![](/images/april2017.jpg)
 <p><small>Left: Voronoi ring  Right: Space filling ear ring</small></p>
 <h3>A Unified Naming Scheme</h3>
 
