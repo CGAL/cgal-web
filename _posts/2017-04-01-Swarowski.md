@@ -44,7 +44,7 @@ to push the boundaries of how jewelery can look like in the 21st century"</p>
 </blockquote>
 
 <p>According to Swarowski and and McNeel, we would do them a favor if the
-collection, the tool, as well as the component had the same name.
+collection, the tool, as well as the CGAL component had the same name.
 This is somehow understandable, if we think about the naming mess 
 of Visual Studio 2013, sitting in the directory Microsoft Visual Studio 12.0,
 and having the version number MSC_VER = 18 in case you want to #if it
