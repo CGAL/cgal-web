@@ -18,7 +18,9 @@ Redirect permanent /grass.html /news/2014/04/01/GoogleGrass/
 Redirect permanent /philosophy.html /exact.html
 Redirect permanent /questionnaire.html https://fr.surveymonkey.com/r/?sm=r1cY4ooW6OIeySeh%2fhr2AA%3d%3d
 
-Redirect permanent /2017/05/24/cgal410/ /2017/05/27/cgal410/
+# Wrong links used in the various annoucement of CGAL-4.10
+Redirect permanent /2017/05/24/cgal410/ /2017/05/29/cgal410/
+Redirect permanent /2017/05/27/cgal410/ /2017/05/29/cgal410/
 
 AddHandler type-map .var
 RedirectMatch permanent ^/index2.html /
