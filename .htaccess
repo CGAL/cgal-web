@@ -9,7 +9,11 @@ RewriteEngine on
 
 # Redirect cgal.org to www.cgal.org
 RewriteCond %{HTTP_HOST} ^cgal.org
-RewriteRule (.*) http://www.cgal.org/$1 [R=301,L]
+RewriteRule (.*) https://www.cgal.org/$1 [R=301,L]
+
+# Enforce https
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
 
 # Redirect page removed from the web site in April 2015
 Redirect permanent /platforms.html http://doc.cgal.org/latest/Manual/installation.html#seccompilers
