@@ -11,4 +11,4 @@ tags: ["events"]
 We have a room for 25 participants at Stanford University on Wednesday 18th of October 2017 from 9am-2pm.</p>
 
 <p>For more information on the schedule, and for the registration for the event please visit
-<a href="">this page</a>.</p>
+<a href="https://fr.surveymonkey.com/r/6D92CDQ">this page</a>.</p>
