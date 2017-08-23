@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "CGAL in the Bay Area"
-description: "CGAL in the Bay Area"
+description: "Register for a halfday CGAL workshop at Stanford University"
 category: 
 tags: ["events"]
 ---
