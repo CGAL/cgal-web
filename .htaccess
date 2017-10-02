@@ -226,6 +226,41 @@ RewriteRule demo/4.10.2/(.*) /demo/4.10.1/$1 [R]
 RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
 RewriteRule demo/4.10.3/(.*) /demo/4.10.2/$1 [R]
 
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.11/(.*) /demo/4.9/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.11.1/(.*) /demo/4.11/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.11.2/(.*) /demo/4.11.1/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.11.3/(.*) /demo/4.11.2/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.12/(.*) /demo/4.11/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.12.1/(.*) /demo/4.12/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.12.2/(.*) /demo/4.12.1/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.12.3/(.*) /demo/4.12.2/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.13/(.*) /demo/4.12/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.13.1/(.*) /demo/4.13/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.13.2/(.*) /demo/4.13.1/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.13.3/(.*) /demo/4.13.2/$1 [R]
 
 
 # Redirect last version of the manual /Manual/4.5/ to /Manual/latest/
