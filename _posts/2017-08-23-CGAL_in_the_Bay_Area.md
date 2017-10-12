@@ -10,7 +10,7 @@ tags: ["events"]
 <p>The CGAL Open Source Project organizes a half day workshop at Stanford University.
 It takes place in Seminar Room  <a href="https://biox.stanford.edu/about/building-services/room-scheduling/seminar-room-s362">S362</a>
 on Wednesday 18th of October 2017 from 9am-2pm.</p>
-The room is located in the seminar area on the 3rd floor of the South wing of the Clark Center, accessible by going through Peet's Coffee.</p>
+<p>The room is located in the seminar area on the 3rd floor of the South wing of the Clark Center, accessible by going through Peet's Coffee.</p>
 
 <p>As we have limited space, we would like to ask you to register on
 <a href="https://fr.surveymonkey.com/r/6D92CDQ">this page</a>.</p>
@@ -36,5 +36,5 @@ of the API. A word about dual licensing (GPL/commercial).</p>
 
 <h3>Parking Instructions</h3>
 
-<p>See the <a href=https://biox.stanford.edu/about/clark-center/map-directions">map</a>.
+<p>See the <a href="https://biox.stanford.edu/about/clark-center/map-directions">map</a>.
 Please use the Via Ortega garage. (Roth Way Garage is closer, but it has a daily parking limit of 4 hours)</p>
