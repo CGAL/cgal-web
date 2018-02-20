@@ -171,17 +171,18 @@ group: navigation
   <LI> <A NAME="debian_packages"></A>
        <B>Are there packages for Debian / Ubuntu available?</B>
        <P>Packages for Debian unstable (sid) are available from the official
-       Debian repository. Debian testing (jessie) and Debian stable (wheezy)
+       Debian repository. Debian stable (stretch) and Debian testing (buster)
        might not contain the latest version of CGAL. In that case, add</P>
        <P><TT>
-       deb <A href="http://debian.cgal.org/">http://debian.cgal.org</A> jessie main<BR />
-       deb-src <A href="http://debian.cgal.org/">http://debian.cgal.org</A> jessie main<BR />
-       <BR />
        deb <A href="http://debian.cgal.org/">http://debian.cgal.org</A> stretch main<BR />
        deb-src <A href="http://debian.cgal.org/">http://debian.cgal.org</A> stretch main<BR />
+       <BR />
+       deb <A href="http://debian.cgal.org/">http://debian.cgal.org</A> buster main<BR />
+       deb-src <A href="http://debian.cgal.org/">http://debian.cgal.org</A>buster main<BR />
        </TT></P>
        <P>to <TT>/etc/apt/sources.list</TT> (you only need the pair of lines
-       corresponding to the release you are using). The packages are called
+       corresponding to the release you are using) and make sure that the package
+       <TT>apt-transport-https</TT> is installed. The packages are called
        <TT>libcgal11v5</TT>, <TT>libcgal-dev</TT>, <TT>libcgal-qt5-11</TT>,
        <TT>libcgal-qt5-dev</TT>, <TT>libcgal-demo</TT> and
        <TT>libcgal-ipelets</TT>. Packages for older CGAL versions are available at
