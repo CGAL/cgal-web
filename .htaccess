@@ -18,7 +18,7 @@ RewriteCond %{HTTP_HOST} ^cgal.org
 RewriteRule (.*) https://www.cgal.org/$1 [R=301,L]
 
 # Activate HSTS
-Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
 
 # Redirect page removed from the web site in April 2015
 Redirect permanent /platforms.html http://doc.cgal.org/latest/Manual/installation.html#seccompilers
