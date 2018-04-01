@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "CGAL- Finalist for the Greenest Project Award"
-description: "CGAL - the carbon footprint of a cricket"
+title: "CGAL - Finalist for the Green Project Award"
+description: "The Carbon Footprint of a Cricket"
 category: "news"
 tags: []
 ---
@@ -9,7 +9,7 @@ tags: []
 
 
 
-<p>We are glad to be among the three finalists for the <em>Greenest Project Award</em> offered
+<p>We are glad to be among the three finalists for the <em>Green Project Award</em> offered
 by Google Inc to the Open Source project that makes the most substantial effort
 to produce software with a low carbon footprint per byte.</p>
 
@@ -22,7 +22,7 @@ from each other away, without the need for traveling.</p>
 <blockquote>
 <p>"The CGAL project has clearly a holistic view on how to reduce the carbon footprint."</p>
 
- <p><small>Anonymous Reviewer III</small></p>
+ <p><small>Anonymous Reviewer no. 3</small></p>
 </blockquote>
 
 In the following we present some ideas, and more importantly actions we take, to
@@ -39,7 +39,7 @@ some minimal ecological standards. These standards will not be very demanding, b
 applying (a regulatory) force is often the only thing that helps.</p>
 
 <blockquote>
-<p>"TWe should go down there, get some guys together, ya know, get some bricks and baseball bats, 
+<p>"We should go down there, get some guys together, ya know, get some bricks and baseball bats, 
 and really explain things to 'em"</p>
  <p><small>Woody Allen, Manhattan</small></p>
 </blockquote>
@@ -56,7 +56,7 @@ a bike, public transportation, or a hybrid/electric car which
 weights less than 1200/1600 kg. Depending where developers live
 a car is unavoidable, but a hybrid Porsche or Lexus SUV
 is, honestly, a joke as they weight more than 2.4 tons. GeometryFactory, for example,
-leased a fleet of five <a href="https://www.renault.fr/vehicules/vehicules-electriques/zoe/versions.html">Renault <em>Zoe</wm></a> for its employees.</p>
+leased a fleet of five <a href="https://www.renault.fr/vehicules/vehicules-electriques/zoe/versions.html">Renault <em>Zoe</em></a> for its employees.</p>
 
 ![](/images/zoe.png)
 <p><small>Jane and Zoe</small></p>
