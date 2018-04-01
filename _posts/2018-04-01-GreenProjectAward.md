@@ -101,7 +101,7 @@ swig, github, Open Source licensing, in order to address a larger and even untec
 <a href="https://www.seat61.com/UnitedStates.htm#Long%20distance%20trains%20in%20the%20east">
 Amtrak's</a>  <em>Lakeshore Limited</em> and <em>California Zephyr</em>. We arranged for getting a dining car
 serving as a rolling office, and, on the way West, we pick
-up fellow Open Source project mentors at Chicago, Omaha, Burlington and Denver.
+up fellow Open Source project mentors at Chicago, Omaha, Burlington and Denver.</p>
 
 ![](/images/amtrak.png)
 <p><small>NYC-SF</small></p>
