@@ -66,10 +66,11 @@ leased a fleet of five <a href="https://www.renault.fr/vehicules/vehicules-elect
 <p>The 120 CGAL packages are tested continuously on about 30 platforms, where platform
 means Linux/Windows Distribution * compiler * boost-version * Debug/Release * ...
 As CGAL is not a monolithic software, each unit test can be performed
-on low energy consumption hardware. In November 2017 we migrated from a server
+on low energy consumption hardware. In May 2018 we migrate from a server
 farm close to Reykjavik to 120*30 <a href="https://www.fairphone.com/en/">Fairphones</a>
 with OS emulators. The phones are recycled phones having broken screens, which got
-replaced with small solar panels.</p>
+replaced with small solar panels. They will go directly on the roof of the GeometryFactory
+office building.</p>
 
 ![](/images/fairphone.jpg)
 <p><small>Recycled Fairphone with solar panel</small></p>
