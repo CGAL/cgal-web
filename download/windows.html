@@ -135,7 +135,7 @@ To build CGAL from source on Windows you have to <a href="/download/last" target
 </pre>
 <p>You now need to compile CGAL.
 </p>
-<ul><li> Open CMake-GUI
+<ul><li> Open cmake-gui
   </li><li> For both "Where is the source code" and "Where to build the binaries", specify the CGAL Installation folder 
 
 </li></ul>
@@ -153,10 +153,14 @@ To build CGAL from source on Windows you have to <a href="/download/last" target
 </li></ul>
 <pre>   I add to my PATH C:\dev\CGAL-4.12\build\bin
 </pre>
+
+<pre>You can choose not to build CGAL libraries, but use it in header-only mode by checking CGAL_HEADER_ONLY while configuring CGAL with cmake-gui.
+</pre>
+
 <h3 id="BuildinganExample">Building an Example</h3>
 <p>Examples need neither Qt 5, nor libQGLViewer
 </p>
-<ul><li> Open CMake-GUI
+<ul><li> Open cmake-gui
   </li><li> Choose "Where is the source code:" to be the Convex_hull_2 examples directory under the CGAL installation. 
 </li></ul>
 <pre>   I set it to C:\dev\CGAL-4.12\example\Convex_hull_2
@@ -179,7 +183,7 @@ To build CGAL from source on Windows you have to <a href="/download/last" target
 <h3 id="BuildingaDemo">Building a Demo</h3>
 <p>All demos need Qt 5, and the 3D demos need libQGLViewer.
 </p>
-<ul><li> Open CMake
+<ul><li> Open cmake-gui
   </li><li> Choose "Where is the source code:" to be the Triangulation_3 demo directory under the CGAL installation. 
 </li></ul>
 <pre>   I set it to C:\dev\CGAL-4.12\demo\Triangulation_3
