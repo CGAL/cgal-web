@@ -40,11 +40,11 @@ RedirectMatch permanent ^/([^/]+)_frame.html /$1.html
 RedirectMatch permanent ^/upcoming http://upcoming.cgal.org
 RedirectMatch permanent ^/packages /Manual/latest/doc_html/cgal_manual/packages.html
 
-# link for downloading the last release
+# link to the latest release
 Redirect /download/last https://github.com/CGAL/cgal/releases
 
-# CGAL-4.8-beta1
-Redirect /download/beta https://github.com/CGAL/cgal/releases/tag/releases/CGAL-4.9-beta1
+# link to the latest beta release
+Redirect /download/beta https://github.com/CGAL/cgal/releases/tag/releases/CGAL-4.13-beta1
 
 RedirectMatch seeother ^/download/([0-9].*) https://github.com/CGAL/cgal/releases/tag/releases/CGAL-$1
 
