@@ -46,6 +46,8 @@ Redirect /download/last https://github.com/CGAL/cgal/releases
 # link to the latest beta release
 Redirect /download/beta https://github.com/CGAL/cgal/releases/tag/releases/CGAL-4.13-beta1
 
+Redirect permanent /archive.html /news.html
+
 RedirectMatch seeother ^/download/([0-9].*) https://github.com/CGAL/cgal/releases/tag/releases/CGAL-$1
 
 RedirectMatch seeother ^/Pkg/(.*) http://doc.cgal.org/latest/Manual/packages.html#Pkg$1Summary
