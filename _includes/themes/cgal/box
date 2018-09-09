@@ -1,20 +1,33 @@
 {% if box_smaller %}
 <div class="col-sm-4">
+{% elsif box_bigger %}
+<div class="col-sm-12">
 {% else %}
 <div class="col-sm-6">
 {% endif %}
   <a href="{{box_link}}"{% if box_target_blank %} target="_blank"{% endif%}>
     <div class="row service-wrapper">
-      <div class="col-sm-8">
-        <h3>{{box_title}}</h3>
-        <p>{{box_text}}</p>
-      </div>
-      <div class="col-sm-4">
-        <img src="{{box_image}}" alt="Read More" height="65"></img>
+      <div class="row-eq-height">
+        {% if box_image_blank %}
+          <div class="col-sm-12">
+            <h3>{{box_title}}</h3>
+            <p>{{box_text}}</p>
+          </div>
+        {% else %}
+          <div class="col-sm-3 vert_align_middle">
+            <img src="{{box_image}}" height="65" class="center-block" alt="Read More"></img>
+          </div>
+          <div class="col-sm-9">
+            <h3>{{box_title}}</h3>
+            <p>{{box_text}}</p>
+          </div>
+        {% endif %}
       </div>
     </div>
   </a>
 </div>
 
 {% assign box_target_blank = false %}
+{% assign box_image_blank = false %}
 {% assign box_smaller = false %}
+{% assign box_bigger = false %}
