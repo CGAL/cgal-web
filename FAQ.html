@@ -19,7 +19,7 @@ group: navigation
                   Are there example/demo programs somewhere?</A>
              <LI> <A HREF="#cgal_discuss">Is there a mailing list for users?</A>
              <LI> <A HREF="#bug_reporting">I think I have encountered a bug in 
-                  CGAL.  What should I do?</A>
+                  CGAL. What should I do?</A>
              <LI> <A HREF="#oldreleases">Where do I find old releases of CGAL?</A>
          </UL>
     <LI> <A HREF="#installation">Installation and Compilation</A>
@@ -111,7 +111,7 @@ group: navigation
    <LI> <A NAME="cgal_logo"></A>
         <B>How did you make the CGAL logo?</B>
 	<P>
-	See <a href="logo.html">here</a> for information about the CGAL logo construction.
+  See <a href="logo-design.html">this page</a> for information about the construction of the CGAL logo.
 	<P>
 
 	<LI> <A NAME="cgal_pronounce"></A>
@@ -133,7 +133,7 @@ group: navigation
    <LI> <A NAME="cgal_discuss"></A>
         <B>Is there a mailing list for users?</B>
         <P>
-        Yes.  See the web page describing the CGAL <a href="mailing_list.html">mailing lists</a>.
+        Yes. See the web page describing the CGAL <a href="mailing_list.html">mailing lists</a>.
         <P>
 
    <LI> <A NAME="bug_reporting"></A>
@@ -144,8 +144,9 @@ group: navigation
 
     <LI> <A NAME="oldreleases"></A>
       <B>Where do I find old releases of CGAL?</B>
-      <P>All released files as well as manuals are on
-        <a href="https://github.com/CGAL/cgal/releases">github.com/cgal</a>.</P>
+      <P>All released files as well as manuals are available in the
+        <a href="https://github.com/CGAL/cgal/releases">release</a> section
+        of the CGAL GitHub repository.</P>
       <P>
 </UL>
 
@@ -173,14 +174,12 @@ group: navigation
        <P>Packages for Debian unstable (sid) are available from the official
        Debian repository. Debian stable (stretch) and Debian testing (buster)
        might not contain the latest version of CGAL. In that case, add</P>
-       <P><TT>
-       deb <A href="http://debian.cgal.org/">http://debian.cgal.org</A> stretch main<BR />
-       deb-src <A href="http://debian.cgal.org/">http://debian.cgal.org</A> stretch main<BR />
-       <BR />
-       deb <A href="http://debian.cgal.org/">http://debian.cgal.org</A> buster main<BR />
-       deb-src <A href="http://debian.cgal.org/">http://debian.cgal.org</A>buster main<BR />
-       </TT></P>
-       <P>to <TT>/etc/apt/sources.list</TT> (you only need the pair of lines
+      <PRE>   deb <A href="http://debian.cgal.org/">http://debian.cgal.org</A> stretch main
+   deb-src <A href="http://debian.cgal.org/">http://debian.cgal.org</A> stretch main</PRE>
+       or
+      <PRE>   deb <A href="http://debian.cgal.org/">http://debian.cgal.org</A> buster main
+   deb-src <A href="http://debian.cgal.org/">http://debian.cgal.org</A> buster main</PRE>
+       to <TT>/etc/apt/sources.list</TT> (note that you only need the pair of lines
        corresponding to the release you are using) and make sure that the package
        <TT>apt-transport-https</TT> is installed. The packages are called
        <TT>libcgal11v5</TT>, <TT>libcgal-dev</TT>, <TT>libcgal-qt5-11</TT>,
@@ -197,35 +196,28 @@ group: navigation
        <B>How do I compile and execute the demos and examples on Debian / Ubuntu?</B> 	 
        <P>Install the CGAL packages (see the preceding entry).
           Unpack the examples and demos in some directory, e.g., <TT>$HOME/cgal</TT>.</P> 	 
-          <PRE> 	 
-   $ mkdir $HOME/cgal 	 
-   $ cd $HOME/cgal 	 
-   $ tar xzf /usr/share/doc/libcgal-demo/examples.tar.gz 	 
-   $ tar xzf /usr/share/doc/libcgal-demo/demo.tar.gz 	 
-          </PRE> 	 
+          <PRE>   $ mkdir $HOME/cgal
+   $ cd $HOME/cgal
+   $ tar xzf /usr/share/doc/libcgal-demo/examples.tar.gz
+   $ tar xzf /usr/share/doc/libcgal-demo/demo.tar.gz</PRE>
           <P>Configure and build the desired examples or demos, e.g., the
              demos of Triangulation_2.</P> 	 
-          <PRE> 	 
-   $ cd demo/Triangulation_2 	 
-   $ cmake . 	 
-   $ make 	 
-          </PRE> 	 
+          <PRE>   $ cd demo/Triangulation_2
+   $ cmake .
+   $ make</PRE>
           <P>Then run the demos.</P> 	 
-          <PRE> 	 
-   $ ./Constrained_delaunay_triangulation_2 & 	 
-   $ ./Delaunay_triangulation_2 & 	 
-   $ ./Regular_triangulation_2 & 	 
-          </PRE> 	 
+          <PRE>   $ ./Constrained_delaunay_triangulation_2 &
+   $ ./Delaunay_triangulation_2 &
+   $ ./Regular_triangulation_2 &</PRE>
           <P>See also /usr/share/doc/libcgal11v5/README.Debian for more information.</P>
   </LI>
 
    <LI> <A NAME="is_vc6_supported"></A>
         <B>Is Visual C++ 6 supported?</B>
-        <P>No it isn't and there is no hope that you can make the necessary
-           fixes yourself to get it running with this compiler.</P>
-
-        <p>The fact is that VC6 didn't support the template mechanism good
-           enough. The solution is to  either use an old version of CGAL,
+        <P>No, it is not and there is no hope that you can make the necessary
+           fixes yourself to get it running with this compiler.
+           The issue lies in the fact that VC6 did not support the template mechanism well
+           enough. The solution is to either use an old version of CGAL
            or to upgrade to newer versions of the Microsoft compiler.</P>
 
    <LI> <A NAME="qt"></A>
@@ -246,28 +238,28 @@ group: navigation
 
    <LI> <A NAME="compilation_speed"></A>
         <B>How to reduce compilation time of programs using CGAL ?</B>
-	<P>CGAL is heavily using C++ templates, and this has an impact on
+  <P>CGAL is heavily using C++ templates, and this has an impact on
 	   compilation speed.  Here are some hints that can help speed up
-           compilation of programs using CGAL.
+           compilation of programs using CGAL:
         <UL>
 	    <LI><em>Remove compiler debugging</em> options like <code>-g</code> if you can.
 		Indeed, generating debug information can be very costly for
 		template instantiations, both in terms of running time and
                 memory usage by the compiler tool chain.
-	    <LI><em>Remove compiler optimization</em> options like <code>-O2</code>, when
-		you do not need them, such as early in the development cycle of
+      <LI><em>Remove compiler optimization</em> options like <code>-O2</code> when
+    you do not need them, such as in the early steps of the development cycle of
                 your programs.
 	    <LI><em>Regroup translation units</em> : if your program is composed of
-                lots of small translation units to be compiled and linked, try to
+                many small translation units to be compiled and linked, try to
                 reduce their numbers by merging them.  This traditional style
-                for C programs is very slow for programs heavily using C++ templates.
+                for C programs is actually very slow for programs heavily using C++ templates.
                 Regrouping them reduces the time spent by the compiler to parse
                 the header files, and avoids redundant template instantiations.
             <LI><em>Precompile header files</em> : some compilers, such as GCC, provide
                 a feature named <a href="http://en.wikipedia.org/wiki/Precompiled_header">
-                precompiled headers</a>.  It can be mostly useful if you can regroup in a
+                precompiled headers</a>. This can be mostly useful if you can regroup in a
                 single header file most of the header files that you use, together with
-                most template instantiations.  Refer to your compiler documentation to use this.
+                most template instantiations.  Refer to your compiler documentation to use this feature.
         </UL>
 </UL>
 
@@ -295,13 +287,13 @@ group: navigation
 
         <P>
         There is no universal answer to this question either (which is why
-        our kernels are templates).  The answer depends, among other things,
+        our kernels are templates). The answer depends, among other things,
         on how important robustness is in comparison to speed, whether your
         program involves the construction of new objects or simply predicate
-        evaluation and comparisons, the size of the input numbers.  The 
-        section on 
+        evaluation and comparisons, and on the size of the input numbers. The
+        section
         <A HREF="/Manual/last/doc_html/cgal_manual/Kernel_23/Chapter_main.html#Section_7.2.6">
-        choosing a kernel</A> in the kernel manual should provide some guidance.
+        Choosing a kernel</A> in the kernel manual should provide some guidance.
 
         <P>
    <LI> <A NAME="predicates_vs_constructions"></A>
@@ -309,11 +301,10 @@ group: navigation
            why does this make a difference for the robustness of my program?</B>
          <P>
          Geometric predicates are used to test properties of geometric objects
-         and return, for example, a boolean value (true or false). For
-         example, testing whether a point lies inside a sphere is a predicate 
+         and return, for example, a boolean value (true or false). An example
+         of predicate would be testing whether a point lies inside a sphere is a predicate
          as is testing whether three points form a left turn, right turn or
-         are collinear. A
-         geometric construction creates a geometric object, such as the line
+         are collinear. A geometric construction creates a new geometric object, such as the line
          through two different points or the center of a circle defined by a
          certain set of points.
          <P>
@@ -372,8 +363,7 @@ group: navigation
         <A HREF="/Manual/last/doc_html/cgal_manual/NumberTypeSupport_ref/Class_Lazy_exact_nt.html">CGAL::Lazy_exact_nt</A>
         on top of an exact number type.<BR><BR>
 
-	Good references that
-        discuss the robustness problem in geometric computing are<BR><BR>
+  Good references that discuss the robustness problem in geometric computing are:<BR>
         <UL>
            <LI> S. Schirra. Robustness and precision issues in geometric 
                 computation.  <I>Research Report MPI-I-98-004, Max Planck 
@@ -401,7 +391,7 @@ group: navigation
         segment, but the CGAL kernel does not seem to support that.  Why?</B>
        <P>
        Our kernel concept is representation-independent. 
-       There is no assumption on how a Point_3, for example, is represented. In
+       There is no assumption on how a <tt>Point_3</tt>, for example, is represented. In
        particular, it need not be represented by Cartesian coordinates.  Thus
        writing code that relies on being able to change these coordinates may 
        lead to inefficient code.   Our basic library algorithms are designed 
@@ -424,7 +414,7 @@ group: navigation
        How do I do that?</B>
        <P>
        All number types used by CGAL provide a conversion function called
-       <TT>CGAL::to_double</TT>.  For example: <TT> double x = CGAL::to_double(p.x());</TT>.
+       <TT>CGAL::to_double</TT>.  For example: <code>double x = CGAL::to_double(p.x());</code>.
        <P>
 
        <LI> <A NAME="uncertain_exception"></A>
@@ -691,9 +681,7 @@ the
         to transform the points stored in a polyhedral surface <I>P</I> 
         with a CGAL affine transformation given in <I>A</I> (which
         is a  proper STL functor) one can write:
-        <PRE>
-    std::transform( P.points_begin(), P.points_end(), P.points_begin(), A);
-        </PRE>
+        <PRE>std::transform( P.points_begin(), P.points_end(), P.points_begin(), A);</PRE>
         <P>
    <LI> <A NAME="polyhedron_examples"></A>
         <B>Where can I find examples of polyhedral surfaces?</B>
