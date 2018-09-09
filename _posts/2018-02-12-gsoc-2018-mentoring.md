@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "CGAL to participate in the Google Summer of Code 2018"
-description: "The CGAL Project is a mentoring organization for GSoC 2018"
+description: ""
 category: "news"
 tags: [gsoc,gsoc2018]
 ---

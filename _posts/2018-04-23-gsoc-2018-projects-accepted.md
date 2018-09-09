@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "CGAL welcomes 8 students for the GSoC 2018"
-description: "The CGAL Project is welcoming 8 students"
+description: ""
 category: "news"
 tags: [gsoc,gsoc2018]
 ---

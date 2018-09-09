@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CGAL @ ACM Solid Modeling Symposium"
+title: "CGAL @ ACMSM"
 description: ""
 category: 
 tags: []

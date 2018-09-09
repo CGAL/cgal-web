@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "CGAL @ SIGGRAPH 2008: Booth"
-description: "Visit our booth on the exhibition floor!"
+description: "Visit our booth on the exhibition floor"
 category: 
 tags: [siggraph]
 ---
