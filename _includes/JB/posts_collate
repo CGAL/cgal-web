@@ -32,8 +32,10 @@ Usage:
       <ul>
     {% endif %}
 
-    <li><span>{{ post.date | date: "%B %e, %Y" }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>{% if post.description != "" %}: {% if post.tags contains "WIP" %}Work in Progress - {% endif %} {{post.description}} {% endif %}</li>
-  
+    <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+        <br><div style="color:#afaa98;font-size:12px">{{ post.date | date: "%B %e, %Y" }}</div>
+    </li>
+
     {% if forloop.last %}
       </ul>
     {% else %}
