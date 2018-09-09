@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Google Summer of Code 2018"
-description: "The CGAL Project is welcoming 8 students for GSoC 2018"
-category: 
-tags: []
+title: "CGAL welcomes 8 students for the GSoC 2018"
+description: "The CGAL Project is welcoming 8 students"
+category: "news"
+tags: [gsoc,gsoc2018]
 ---
 {% include JB/setup %}
-The CGAL Project is a mentoring organization for <a href="https://summerofcode.withgoogle.com">Google Summer of Code 2018</a>.
-Have a look at <a href="https://summerofcode.withgoogle.com/organizations/6121660483108864/">the project and students</a> that were selected.
+
+The CGAL project welcomes 8 <a href="https://summerofcode.withgoogle.com/">GSoC</a> students.
+Have a look at the <a href="https://summerofcode.withgoogle.com/organizations/6121660483108864/">Accepted Projects</a> page.

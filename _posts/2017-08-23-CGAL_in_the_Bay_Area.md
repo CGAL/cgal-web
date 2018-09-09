@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "CGAL in the Bay Area"
-description: "Register for a halfday CGAL workshop at Stanford University"
+description: "Register for a half-day CGAL workshop at Stanford University"
 category: 
 tags: ["events"]
 ---
 {% include JB/setup %}
 
-<p>The CGAL Open Source Project organizes a half day workshop at Stanford University.
+<p>The CGAL Open Source Project organizes a half-day workshop at Stanford University.
 It takes place in Seminar Room  <a href="https://biox.stanford.edu/about/building-services/room-scheduling/seminar-room-s362">S362</a>
 on Wednesday 18th of October 2017 from 9am-2pm.</p>
 <p>The room is located in the seminar area on the 3rd floor of the South wing of the Clark Center, accessible by going through Peet's Coffee.</p>
@@ -37,4 +37,4 @@ of the API. A word about dual licensing (GPL/commercial).</p>
 <h3>Parking Instructions</h3>
 
 <p>See the <a href="https://biox.stanford.edu/about/clark-center/map-directions">map</a>.
-Please use the Via Ortega garage. (Roth Way Garage is closer, but it has a daily parking limit of 4 hours)</p>
+Please use the Via Ortega garage. (Roth Way Garage is closer, but it has a daily parking limit of 4 hours.)</p>

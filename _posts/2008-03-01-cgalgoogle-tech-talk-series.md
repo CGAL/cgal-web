@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CGAL@Google Tech Talk Series"
+title: "CGAL @ Google Tech Talk Series"
 description: ""
 category: 
 tags: []

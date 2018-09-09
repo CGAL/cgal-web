@@ -13,11 +13,10 @@ tags: ["WIP"]
 <p>This new package provides a (1D) curve skeleton extraction algorithm for 
  a triangulated poylgonal mesh without borders based on the mean curvature flow.
  The particularity of this skeleton is that it has the same topology
- as the input mesh. For each skeleton vertex one can obtain its location
+ as the input mesh. For each skeleton vertex, one can obtain its location
  and its corresponding vertices of the input mesh. 
  The code is generic and works with any model of the `HalfedgeGraph` concept.
 </p>
-
 
 <p><b>Status:</b> Submitted to the Editorial Board and targeted for CGAL 4.7, Autumn 2015</p>
 
@@ -25,4 +24,3 @@ tags: ["WIP"]
 <p>
 [1] Andrea Tagliasacchi, Ibraheem Alhashim, Matt Olson, and Hao Zhang. Mean curvature skeletons. Computer Graphics Forum (Proceedings of the Symposium on Geometry Processing), 31(5):1735–1744, 2012.
 </p>
-

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CGAL@MICAD"
+title: "CGAL @ MICAD"
 description: ""
 category: 
 tags: []

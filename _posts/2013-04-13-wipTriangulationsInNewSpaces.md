@@ -10,7 +10,6 @@ tags: ["WIP"]
 <h3>Monique Teillaud</h3>
 <h4> <a href="http://gamble.loria.fr/" target="_blank">Gamble</a>, Inria Nancy - Grand Est</h4>
 
-<p>
-Monique is coordinating work on the extension of triangulations and mesh generation to <a href="https://members.loria.fr/Monique.Teillaud/other-geometries/">other geometries</a> than the Euclidean spaces R<sup>d</sup>
-</p>
+<p>Monique is coordinating work on the extension of triangulations and mesh generation to
+<a href="https://members.loria.fr/Monique.Teillaud/other-geometries/">other geometries</a> than the Euclidean spaces R<sup>d</sup>.</p>
 

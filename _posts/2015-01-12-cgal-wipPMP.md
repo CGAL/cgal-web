@@ -20,7 +20,6 @@ al.'s book on polygon mesh processing [1]</p>
 hole filling, self-intersection and orientation tests, slicing a
 surface mesh, and identifying its connected components.</p>
 
-
 <p><b>Status:</b> In preparation for submission to the Editorial Board and targeted for CGAL 4.7, Autumn 2015</p>
 
 <h4>Bibliography</h4>

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "2D Visibility"
-description: "compute the visibility polygon for a point in a polygon with holes."
+title: "New in CGAL: 2D Visibility"
+description: "Computation of the visibility polygon for a point in a polygon with holes."
 category:
 tags: ["WIP"]
 ---

@@ -16,7 +16,6 @@ able to detect a set of primitive shapes (plane, sphere, cylinder,
 cone and torus).
 </p>
 
-
 <p><b>Status:</b> Submitted to the Editorial Board and targeted for CGAL 4.7, Autumn 2015</p>
 
 <h4>Bibliography</h4>

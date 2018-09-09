@@ -22,7 +22,7 @@ Call for Papers for the special issue of the journal <a href="http://www.elsevie
 <p>The international journal Computational Geometry: Theory and
 Applications is planning a special issue on CGAL, the Computational
 Geometry Algorithms Library. CGAL is an open source C++ library, see
-<a href="http://www.cgal.org">http://www.cgal.org</a>. Its goal is to
+<a href="https://www.cgal.org/">www.cgal.org</a>. Its goal is to
 make the most important methods developed in computational geometry
 available to users in industry and academia, by providing easy access
 to robust and generic geometric algorithms.</p>
@@ -95,4 +95,4 @@ with the special issue guest editors.</p>
 <p>Computational Geometry, Theory and Applications is an international
 journal in computer science published by Elsevier, see
 <a href="http://www.elsevier.com/locate/comgeo">
-http://www.elsevier.com/locate/comgeo</a></p>
+http://www.elsevier.com/locate/comgeo</a>.</p>

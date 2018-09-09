@@ -22,7 +22,7 @@ from each other away, without the need for traveling.</p>
 <blockquote>
 <p>"The CGAL project has clearly a holistic view on how to reduce the carbon footprint."</p>
 
- <p><small>Anonymous Reviewer no. 3</small></p>
+<p><small>Anonymous Reviewer no. 3</small></p>
 </blockquote>
 
 In the following we present some ideas, and more importantly actions we take, to
@@ -40,7 +40,7 @@ applying (a regulatory) force is often the only thing that helps.</p>
 
 <blockquote>
 <p>"We should go down there, get some guys together, ya know, get some bricks and baseball bats, 
-and really explain things to 'em"</p>
+and really explain things to 'em."</p>
  <p><small>Woody Allen, Manhattan</small></p>
 </blockquote>
 
@@ -72,8 +72,10 @@ with OS emulators. The phones are recycled phones having broken screens, which g
 replaced with small solar panels. They will go directly on the roof of the GeometryFactory
 office building.</p>
 
-![](/images/fairphone.jpg)
-<p><small>Recycled Fairphone with solar panel</small></p>
+<div style="text-align:center;">
+  <img src="../../../../images/fairphone.jpg"><br>
+  <small>Recycled Fairphone with solar panel</small>
+</div>
 
 <p>The result is recycled material, a low wiring effort, and
 most importantly a future business: The CGAL Project is among the alpha tester for

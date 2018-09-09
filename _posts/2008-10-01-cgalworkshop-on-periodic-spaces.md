@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CGAL@Workshop on Periodic Spaces"
+title: "CGAL @ Workshop on Periodic Spaces"
 description: ""
 category: 
 tags: []

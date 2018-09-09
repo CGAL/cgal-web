@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CGAL@Meshing Round Table"
+title: "CGAL @ IMR"
 description: ""
 category: 
 tags: []

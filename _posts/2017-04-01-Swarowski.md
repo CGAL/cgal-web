@@ -24,10 +24,12 @@ Voronoi diagrams (also called Apollonius graph), as well as
 the CGAL Hilbert sort algorithm for producing space filling
 curves.</p>.
 
-![](/images/april2017.jpg)
-<p><small>Left: Voronoi ring  Right: Space filling ear ring</small></p>
-<h3>A Unified Naming Scheme</h3>
+<div style="text-align:center;">
+  <img src="../../../../images/april2017.jpg"><br>
+  <small>Left: Voronoi ring  Right: Space filling ear ring</small>
+</div>
 
+<h3>A Unified Naming Scheme</h3>
 <p>Laure N.T. Rhino, the chief software architect at McNeel  who gave 
 this most wonderful design software its name, contacted the CGAL Editorial 
 Board, asking if it wouldn't be possible to rename the  <i>multiplicatively 
@@ -50,7 +52,6 @@ of Visual Studio 2013, sitting in the directory Microsoft Visual Studio 12.0,
 and having the version number MSC_VER = 18 in case you want to #if it
 in your C++ code.</p>
 
-
 <h3>Your Opinon is Important for Us </h3>
 
 <p>Before making this move, we would like to gather feedback from 
@@ -63,21 +64,45 @@ reluctant to break backward compatibility, by just renaming the class
 <i>CGAL::Multiplicatively_weighted_voronoi_diagram_3</i> to <i>Ivanka_diagram</i>,
 but there are maybe even non-technical issues we should take into account,
 so maybe you can help us to add items to our pro and con list which
-will be the base for the next Editorial Board meeting co-located with SGP 2017
-in London.</p>
+will be the base for the next Editorial Board meeting co-located with
+<a href="http://geometry.cs.ucl.ac.uk/SGP2017/">SGP 2017</a> in London.</p>
 
-<ul>
-<li><p>It is just a query replace all, and a serious developer has
-derived her own class anyways, so renaming is not really an issue.</p>
-<li><p>Don't do this, as you know who profits from viral marketing.</p>
-<li><p>Open Source projects such as CGAL must stay politically neutral.</p>
-<li><p>It must be an obsession of some people to tag things with their name.
-Obamacare, Ivanka diagram,...
-I am shocked to hear where the name of the Rhino software comes from.</p>
-<li><p>As software developers tend towards the Democrats, this is not a clever move.</p>  
-<li><p>I appreciate, because you help to make America great again.</p>
-<li><p>You risk not to pass immigration when you fly into LAX for the next Siggraph</p>
-<li><p>In 1000 years educated people will still remember Apollonius.</p>
-<li><p>If you call this stuff jewelry, then better call the class <i>Merkel_diagram</i>.</p>
-</ul>
-
+<h2> Comments</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="post-comments">
+        <div class="comment-wrapper product-detail-info">
+          It is just a query replace all, and a serious developer has
+          derived her own class anyways, so renaming is not really an issue...
+        </div><br>
+        <div class="comment-wrapper product-detail-info">
+          Don't do this!! You know who profits from viral marketing!
+        </div><br>
+        <div class="comment-wrapper product-detail-info">
+          Open Source projects such as CGAL must stay politically neutral.
+        </div><br>
+        <div class="comment-wrapper product-detail-info">
+          It must be an obsession of some people to tag things with their name:
+          Obamacare, Ivanka diagram,...
+          I am shocked to hear where the name of the Rhino software comes from!
+        </div><br>
+        <div class="comment-wrapper product-detail-info">
+          As software developers tend towards the Democrats, this is not a clever move.
+        </div><br>
+        <div class="comment-wrapper product-detail-info">
+          I appreciate, because you help to make America great again!!
+        </div><br>
+        <div class="comment-wrapper product-detail-info">
+          You risk not to pass immigration when you fly into LAX for the next SIGGRAPH...
+        </div><br>
+        <div class="comment-wrapper product-detail-info">
+          In 1000 years, educated people will still remember Apollonius.
+        </div><br>
+        <div class="comment-wrapper product-detail-info">
+          If you call this stuff jewelry, then better call the class <i>Merkel_diagram</i>.
+        </div><br>
+      </div>
+    </div>
+  </div>
+</div>

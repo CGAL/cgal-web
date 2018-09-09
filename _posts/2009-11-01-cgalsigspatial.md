@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CGAL@SIGSPATIAL"
+title: "CGAL @ SIGSPATIAL"
 description: ""
 category: 
 tags: []
