@@ -112,17 +112,11 @@ a:hover {
 .service-wrapper {
   background: #FFF;
   margin: 20px 10px;
-  text-align: center;
+  text-align: left;
   padding: 30px 20px;
-  -webkit-border-radius: 5px;
   -webkit-background-clip: padding-box;
-  -moz-border-radius: 5px;
   -moz-background-clip: padding;
-  border-radius: 5px;
   background-clip: padding-box;
-  -webkit-box-shadow: 0 0 3px #999;
-  -moz-box-shadow: 0 0 3px #999;
-  box-shadow: 0 0 3px #999;
   color: 0 0 3px #999;
 }
 .service-wrapper h3 {
@@ -131,6 +125,14 @@ a:hover {
 }
 .service-wrapper p {
   margin-top: 0;
+}
+.service-wrapper:hover {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 3px #999;
+  -moz-box-shadow: 0 0 3px #999;
+  box-shadow: 0 0 3px #999;
 }
 /* Row */
 .service-wrapper-row {
@@ -159,6 +161,17 @@ a:hover {
   box-shadow: 0 0 8px #999;
   color: 0 0 8px #999;
 }
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.vert_align_middle {
+  display: flex;
+  align-items: center;
+}
+
 /*--------------------------------------------------------------------------
 +	Pricing Table Style
 --------------------------------------------------------------------------*/
@@ -637,7 +650,7 @@ a:hover {
 }
 .single-post-content p {
   color: #828282;
-  font-size: 0.9em;
+  font-size: 1em;
   text-align: justify;
 }
 .post-comments {
@@ -725,7 +738,6 @@ a:hover {
 }
 .blog-sidebar .recent-posts a,
 .blog-sidebar .blog-categories a {
-  color: #535b60;
 }
 /*--------------------------------------------------------------------------
 +	E-commerce Style
@@ -929,14 +941,14 @@ span.color-red {
   margin-left: 0 !important;
 }
 .product-detail-info {
-  background: #fff;
-  border-top: 0;
+  background: #f0f0e4;;
+  border-top: 1px;
   border-left: 1px;
   border-right: 1px;
   border-bottom: 1px;
   border-color: #ddd;
   border-style: solid;
-  padding: 20px 30px;
+  padding: 10px 10px;
 }
 .product-detail-info p,
 .product-detail-info ul {
@@ -1765,6 +1777,7 @@ span.color-red {
   border-top: 1px dotted #7C7C7C;
   padding-top: 10px;
   font-size: 0.9em;
+  overflow: hidden;
 }
 /*--------------------------------------------------------------------------
 +	Pagination Style (overrides Bootstrap style)
