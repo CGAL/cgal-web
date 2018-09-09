@@ -9,37 +9,31 @@ group: navigation
 <div class="row">
 
 {% assign box_title = "Getting Started" %}
-{% assign box_text = "General information to get you started with CGAL." %}
+{% assign box_text = "Browse through general information to get you started with CGAL." %}
 {% assign box_image = "images/icons/glyphicons-174-play.svg" %}
 {% assign box_link = "https://doc.cgal.org/latest/Manual/general_intro.html" %}
 {% assign box_target_blank = true %}
 {% include themes/cgal/box %}
 
 {% assign box_title = "Manual" %}
-{% assign box_text  = "CGAL is split into packages. Curious about how to use them? Here you are." %}
+{% assign box_text = "Consult comprehensive descriptions of each CGAL package, along with examples." %}
 {% assign box_image = "images/icons/glyphicons-320-sort.svg" %}
 {% assign box_link = "https://doc.cgal.org/latest/Manual/packages.html" %}
 {% assign box_target_blank = true %}
 {% include themes/cgal/box %}
 
-<!--
-{% assign box_title = "Manual of CGAL 4.11 beta 1" %}
-{% assign box_text  = "Have a look into the future. Note that the beta is already public." %}
-{% assign box_image = "images/icons/beta.svg" %}
-{% assign box_link = "https://doc.cgal.org/4.11/Manual/packages.html" %}
-{% assign box_target_blank = true %}
-{% include themes/cgal/box %}
--->
+</div>
 
-{% assign box_title = "Manual of CGAL Master Branch" %}
-{% assign box_text  = "Latest CGAL master documentation pages, updated once a week" %}
-{% assign box_image = "images/icons/glyphicons-428-git-pull-request.svg" %}
-{% assign box_link = "https://cgal.geometryfactory.com/CGAL/doc/master/Manual/index.html" %}
-{% assign box_target_blank = true %}
+<div class="row">
+
+{% assign box_title = "Tutorials" %}
+{% assign box_text = "Learn how to use the full capabilities of these selected CGAL data structures and algorithms through detailed, hands-on examples." %}
+{% assign box_image = "images/icons/open_book.svg" %}
+{% assign box_link = "https://doc.cgal.org/latest/Manual/tutorials.html" %}
 {% include themes/cgal/box %}
 
 {% assign box_title = "Exact Computation Paradigm" %}
-{% assign box_text  = "Combine the speed of floating point computation with the robustness guaranteed by arbitrary precision arithmetic " %}
+{% assign box_text  = "CGAL combines the speed of floating point computation with the robustness guaranteed by arbitrary precision arithmetic. " %}
 {% assign box_image = "images/icons/exact.svg" %}
 {% assign box_link = "exact.html" %}
 {% include themes/cgal/box %}

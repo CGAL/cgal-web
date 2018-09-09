@@ -7,33 +7,63 @@ group: navigation
 {% include JB/setup %}
 
 <div class="row">
+  <a href="./download/windows.html">
+  <div class="col-sm-4">
+    <div class="service-wrapper">
+      <img src="images/icons/windows.svg" class="center-block" height="65" alt="Windows"></img>
+      <center><h3>Windows</h3></center>
+    </div>
+  </div>
+  </a>
+
+  <a href="./download/linux.html">
+  <div class="col-sm-4">
+    <div class="service-wrapper">
+        <img src="images/icons/linux.svg" class="center-block" alt="Linux" height="65"></img>
+      <center><h3>Linux</h3></center>
+    </div>
+  </div>
+  </a>
+
+  <a href="./download/macosx.html">
+  <div class="col-sm-4">
+    <div class="service-wrapper">
+        <img src="images/icons/Mac_os_x_icon.svg" class="center-block" alt="Mac OS X" height="65"></img>
+      <center><h3>Mac OS X</h3></center>
+    </div>
+  </div>
+  </a>
+</div>
+
+<div class="row">
 
 {% assign box_title = "Licensing" %}
 {% assign box_text = "CGAL is dual licensed, namely under the GPL3+ and a commercial license." %}
 {% assign box_image = "images/icons/glyphicons-115-list.svg" %}
 {% assign box_link = "./license.html" %}
-{% include themes/cgal/box %}
-
-{% assign box_title = "Linux" %}
-{% assign box_text = "Get it with a package manager, as a tarball, or from github" %}
-{% assign box_image = "images/icons/linux.svg" %}
-{% assign box_link = "./download/linux.html" %}
+{% assign box_bigger = true %}
 {% include themes/cgal/box %}
 
 </div>
 
 <div class="row">
 
-{% assign box_title = "Mac OS X" %}
-{% assign box_text = "Get it with a package manager, as a tarball, or from github" %}
-{% assign box_image = "images/icons/Mac_os_x_icon.svg" %}
-{% assign box_link = "./download/macosx.html" %}
+{% assign box_title = "Acknowledging" %}
+{% assign box_text = "We provide bibtex entries for each chapter of the manual so that you can cite CGAL correctly in your publications." %}
+{% assign box_image = "images/icons/network.svg" %}
+{% assign box_link = "http://doc.cgal.org/latest/Manual/how_to_cite_cgal.html" %}
+{% assign box_bigger = true %}
 {% include themes/cgal/box %}
 
-{% assign box_title = "Windows" %}
-{% assign box_text = "Get it with an installer, a tarball, or from github" %}
-{% assign box_image = "images/icons/windows.svg" %}
-{% assign box_link = "./download/windows.html" %}
+</div>
+
+<div class="row">
+
+{% assign box_title = "All releases" %}
+{% assign box_text = "Browse all CGAL releases and their associated changes." %}
+{% assign box_image = "images/icons/glyphicons-60-cargo.svg" %}
+{% assign box_link = "./releases.html" %}
+{% assign box_bigger = true %}
 {% include themes/cgal/box %}
 
 </div>

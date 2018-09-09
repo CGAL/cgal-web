@@ -15,7 +15,7 @@ group: navigation
 {% include themes/cgal/box %}
 
 {% assign box_title = "FAQ" %}
-{% assign box_text = "Before writing to the user mailing list you might have a look here." %}
+{% assign box_text = "Before writing to the user mailing list, you might want to have a look here." %}
 {% assign box_image = "images/icons/faq.svg" %}
 {% assign box_link = "./FAQ.html" %}
 {% include themes/cgal/box %}
@@ -25,33 +25,28 @@ group: navigation
 <div class="row">
 
 {% assign box_title = "Report Bugs" %}
-{% assign box_text = "CGAL is bug free. Just kidding." %}
+{% assign box_text = "CGAL is bug-free... Just kidding!" %}
 {% assign box_image = "images/icons/glyphicons-361-bug.svg" %}
 {% assign box_link = "./bug_report.html" %}
 {% include themes/cgal/box %}
 
 {% assign box_target_blank = true %}
 {% assign box_title = "Request Features" %}
-{% assign box_text = "We implement everything you want. Just kidding." %}
+{% assign box_text = "Thinking of a good addition to CGAL? Suggest it to us!" %}
 {% assign box_image = "images/icons/glyphicons-310-comments.svg" %}
 {% assign box_link = "https://github.com/CGAL/cgal/issues/new" %}
 {% include themes/cgal/box %}
 
 </div>
 
-{% assign box_title = "Feedback" %}
-{% assign box_text = "What packages of CGAL do you use? Which compiler do you use? What is your application domain? What would you like to see in CGAL?" %}
-{% assign box_image = "images/icons/glyphicons-31-pencil.svg" %}
-{% assign box_link = "https://fr.surveymonkey.com/s/L6C6SML" %}
+<div class="row">
 
-<a href="{{box_link}}">
-  <div class="row service-wrapper">
-    <div class="col-sm-8">
-      <h3>{{box_title}}</h3>
-      <p>{{box_text}}</p>
-    </div>
-    <div class="col-sm-4">
-      <img src="{{box_image}}" alt="Read More" height="65"></img>
-    </div>
-  </div>
-</a>
+{% assign box_title = "Feedback" %}
+{% assign box_text = "Let us know about you! What packages of CGAL do you use? What is your application domain?
+                      Which compiler do you use? What would you like to see in CGAL in the future? ..." %}
+{% assign box_image = "images/icons/pen.svg" %}
+{% assign box_link = "https://fr.surveymonkey.com/s/L6C6SML" %}
+{% assign box_bigger = true %}
+{% include themes/cgal/box %}
+
+</div>

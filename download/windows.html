@@ -6,11 +6,16 @@ group: navigation
 ---
 {% include JB/setup %}
 
+<h2>Build from Source</h2>
 
 <p>
 To build CGAL from source on Windows you have to <a href="/download/last" target="_blank">download an installer or tarball</a> or you can clone the current development version of CGAL from <a href="https://github.com/CGAL/cgal" target="_blank">GitHub</a>. Below are the installation instructions for the installer.
 
 <p>Please note that the directory layout and build process of the development version on GitHub are different from the release version.</p>
+
+<h2>Installing CGAL</h2>
+
+<p><hr><p>
 
 <table id="toc" class="toc">
   <ul>
@@ -35,29 +40,28 @@ To build CGAL from source on Windows you have to <a href="/download/last" target
   </ul>
 </table>
 
+<p><hr><p>
 
 <h3 id="GeneralPrerequisites">General Prerequisites</h3>
-<ul><li> Download and install <a rel="nofollow" class="external free" href="https://cmake.org">CMake</a>
-  </li><li> <a rel="nofollow" class="external free" href="/download/last">Download CGAL installer</a>
-  </li><li> Read the appendix if you don't know how to set/modify an environment variable
-  </li><li> Qt 5 is only needed if you want to run CGAL demos.
+<ul><li> Download and install <a rel="nofollow" class="external free" href="https://cmake.org">CMake</a>.
+  </li><li> <a rel="nofollow" class="external free" href="/download/last">Download the CGAL installer</a>.
+  </li><li> Read <a href="#Appendix">the appendix</a> if you don't know how to set/modify an environment variable.
+  </li><li> <b>Qt 5 is only needed if you want to run CGAL demos.</b>
   </li><li> Identify what is the <i>Visual Studio Command Prompt</i> corresponding to the correct version (32- or 64-bit) of the compiler. Look in the start menu under the <i>Visual Studio</i> or <i>Microsoft Windows SDK</i> folders. At the command prompt, type <code>cl.exe</code> to check the version.
 
 
 </li></ul>
 <h3 id="PrerequisitesforBuildingthe32-bitCGALLibraryusingMicrosoftVisualStudio">Prerequisites for Building the <i>32-bit</i> CGAL Library using Microsoft Visual Studio 2013</h3>
 <h4 id="Boost">Boost</h4>
-<p>The 32-bit and 64-bits binary versions of Boost are available on <a rel="nofollow" class="external free" href="http://sourceforge.net/projects/boost/files/boost-binaries/" target="_blank">SourceForge</a>.
+<p>The 32-bit and 64-bits binary versions of Boost are available on <a rel="nofollow" class="external free" href="https://sourceforge.net/projects/boost/files/boost-binaries/" target="_blank">SourceForge</a>.
 
 </p><p>The installers install both boost headers and precompiled libraries.
   Please note that the CGAL project is not responsible for the files provided on this web site.
   At the moment these lines were written, the latest version was 1.67.
 </p>
 
-<pre>   I download and run the file boost_1_67_0-msvc-xx.0-32.exe (where xx = 12 for 2013)
-</pre>
-<p><pre>   I choose to extract the files to a new directory c:\dev\libboost_1_67_0
-  </pre>
+<pre>   I download and run the file boost_1_67_0-msvc-xx.0-32.exe (where xx = 12 for 2013)</pre>
+<p><pre>   I choose to extract the files to a new directory c:\dev\libboost_1_67_0</pre>
 
 <p>You then need to set the following two environment variables to point respectively to the path of the libraries and the headers
 </p>
@@ -71,11 +75,11 @@ To build CGAL from source on Windows you have to <a href="/download/last" target
 </pre>
 
 <h4 id="Qt5">Qt 5</h4>
-<ul><li>Download and install the <i>Qt library for open source development package for 32-bit Visual Studio 2013</i> at <a rel="nofollow" class="external free" href="http://www.qt.io/download/" target="_blank">http://www.qt.io/download/</a> (<a rel="nofollow" class="external free" href="http://www.qt.io/download-open-source/#section-5" target="_blank">here is the direct link to the offline installers</a>).
+<ul><li>Download and install the <i>Qt library for open source development package for 32-bit Visual Studio 2013</i> at <a rel="nofollow" class="external free" href="https://www.qt.io/download/" target="_blank">https://www.qt.io/download/</a> (<a rel="nofollow" class="external free" href="https://www1.qt.io/offline-installers/" target="_blank">here is the direct link to the offline installers</a>).
 
   </li><li>Add the environment variable QTDIR pointing to the place you installed Qt.
 </li></ul>
-<pre>   I selected C:\Qt\Qt5.5.1 so QTDIR is set to C:\Qt\Qt5.5.1
+<pre>   I select C:\Qt\Qt5.5.1 so QTDIR is set to C:\Qt\Qt5.5.1
 </pre>
 <ul><li>Add to the path the bin directory of Qt
 </li></ul>
@@ -89,58 +93,56 @@ To build CGAL from source on Windows you have to <a href="/download/last" target
 <p>The procedure for getting Boost is the same as described for the <a href="#Boost">32-bit version</a>, but all "32" must be replaced by "64".
 </p>
 <h4 id="Qt52">Qt 5</h4>
-<ul><li>For the 64-bit version of Qt 5, the only available installer is for Visual Studio 2013, and the instructions are the same as described for <a href="#Qt5">32-bit version</a>. For other versions of Visual Studio, please refer to these instructions: <a rel="nofollow" class="external free" href="http://doc.qt.io/qt-5/build-sources.html" target="_blank">http://doc.qt.io/qt-5/build-sources.html</a>.
-</li></ul>
+For the 64-bit version of Qt 5, the only available installer is for Visual Studio 2013, and the instructions
+are the same as described for <a href="#Qt5">32-bit version</a>. For other versions of Visual Studio, please refer to these instructions:
+<a rel="nofollow" class="external free" href="https://doc.qt.io/qt-5/build-sources.html" target="_blank">https://doc.qt.io/qt-5/build-sources.html</a>.
 
 </p>
 <h3 id="BuildingCGAL">Building CGAL</h3>
-<p>Run the installer and select the version you want to install (this is only used to download the precompiled GMP and MPFR).
+<p>Run the installer and select the version you want to install (this is only used to download the precompiled GMP and MPFR):
 </p>
 <pre>   I choose C:\dev\CGAL-4.12 as installation directory
 </pre>
 <p>You now need to compile CGAL.
 </p>
 <ul><li> Open cmake-gui
-  </li><li> For both "Where is the source code" and "Where to build the binaries", specify the CGAL Installation folder 
+  </li><li> For both "Where is the source code" and "Where to build the binaries", specify the CGAL Installation folder:
 
 </li></ul>
 <pre>   I set C:\dev\CGAL-4.12 for source and C:\dev\CGAL-4.12\build as binaries
 </pre>
-<ul><li> Click on Configure
-  </li><li> Choose "Visual Studio xx xxxx" for the 32-bit version and "Visual Studio xx xxxx Win64" for the 64-bit version
-  </li><li> Click on Generate
-</li></ul>
-<pre>   In the directory C:\dev\CGAL-4.12\build a solution file named CGAL.sln has been created
-</pre>
-<ul><li> Run Visual Studio and compile ALL_BUILD project both in Debug and Release.
-  </li><li> Add to your path the bin directory of the build
+<ul><li> Click on <code>Configure</code>.
+  </li><li> Choose <code>Visual Studio xx xxxx</code> for the 32-bit version and <code>Visual Studio xx xxxx Win64</code> for the 64-bit version.
+  </li><li> Click on <code>Generate</code>. a solution file named <code>CGAL.sln</code> has been created in the directory <code>C:\dev\CGAL-4.12\build</code>.
+  </li><li> Run Visual Studio and compile <code>ALL_BUILD</code> project both in Debug and Release.
+  </li><li> Add to your path the bin directory of the build:
 
 </li></ul>
 <pre>   I add to my PATH C:\dev\CGAL-4.12\build\bin
 </pre>
 
-<pre>You can choose not to build CGAL libraries, but use it in header-only mode by checking CGAL_HEADER_ONLY while configuring CGAL with cmake-gui.
-</pre>
+<p>You can choose not to build CGAL libraries, but use it in header-only mode by checking <code>CGAL_HEADER_ONLY</code> while configuring CGAL with cmake-gui.
+</p>
 
 <h3 id="BuildinganExample">Building an Example</h3>
-<p>Examples do not need Qt 5
+<p>Examples do not need Qt 5.
 </p>
-<ul><li> Open cmake-gui
-  </li><li> Choose "Where is the source code:" to be the Convex_hull_2 examples directory under the CGAL installation. 
+<ul><li> Open cmake-gui.
+  </li><li> Choose "Where is the source code:" to be, for example, the Convex_hull_2 examples directory under the CGAL installation:
 </li></ul>
 <pre>   I set it to C:\dev\CGAL-4.12\example\Convex_hull_2
 
 </pre>
-<ul><li> Choose "Where to build the binaries:" to be a build directory
+<ul><li> Choose "Where to build the binaries:" to be a build directory:
 </li></ul>
 <pre>   I set it to "C:\dev\CGAL-4.12\build-example\Convex_hull_2"
 </pre>
-<ul><li> Click Configure and then Generate
-  </li><li> A solution file has been created in the build directory. Open it can compile and run it.
+<ul><li> Click <code>Configure</code> and then <code>Generate</code>.
+  </li><li> A solution file has been created in the build directory. Open it can compile and run it:
 </li></ul>
 <pre>   I open the file C:\dev\CGAL-4.12\build-examples\Convex_hull_2\Convex_hull_2_example.sln with Visual Studio
 </pre>
-<ul><li> Once the compilation is complete, you can run the executable (directly in Visual or by running the .exe created in the Debug or Release folder).
+<ul><li> Once the compilation is complete, you can run the executable (directly in Visual or by running the <code>.exe</code> created in the Debug or Release folder):
 </li></ul>
 
 <pre>   I open the C:\dev\CGAL-4.12\build-examples\Convex_hull_2\ch_timing.exe (the window automatically closes if not run from the console).
@@ -148,18 +150,15 @@ To build CGAL from source on Windows you have to <a href="/download/last" target
 <h3 id="BuildingaDemo">Building a Demo</h3>
 <p>All demos need Qt 5.
 </p>
-<ul><li> Open cmake-gui
-  </li><li> Choose "Where is the source code:" to be the Triangulation_3 demo directory under the CGAL installation. 
+<ul><li> Open cmake-gui.
+  </li><li> Choose "Where is the source code:" to be, for example, the Triangulation_3 demo directory under the CGAL installation:
 </li></ul>
-<pre>   I set it to C:\dev\CGAL-4.12\demo\Triangulation_3
-
-</pre>
-<ul><li> Choose "Where to build the binaries:" to be a build directory
+<pre>   I set it to C:\dev\CGAL-4.12\demo\Triangulation_3</pre>
+<ul><li> Choose "Where to build the binaries:" to be a build directory:
 </li></ul>
-<pre>   I set it to "C:\dev\CGAL-4.12\build-demo\Triangulation_3"
-</pre>
-<ul><li> Click Configure and then Generate
-  </li><li> A solution file has been created in the build directory. Open it, build and run it.
+<pre>   I set it to "C:\dev\CGAL-4.12\build-demo\Triangulation_3"</pre>
+<ul><li> Click <code>Configure</code> and then <code>Generate</code>.
+  </li><li> A solution file has been created in the build directory. Open it, build it, and run it:
 </li></ul>
 <pre>   I open the file C:\dev\CGAL-4.12\build-demo\Triangulation_3\Triangulation_3.sln with Visual Studio
 </pre>
@@ -170,8 +169,8 @@ To build CGAL from source on Windows you have to <a href="/download/last" target
 <p>From the desktop, right-click My Computer and click properties (on Vista/Win7 click Advanced system settings on the left side).
 </p>
 <ul><li>In the System Properties window, click on the Advanced tab.
-  </li><li>In the Advanced section, click the Environment Variables button. 
-  </li><li>Finally, in the <i>User Variables</i> area, you can add or edit variables. 
+  </li><li>In the Advanced section, click the Environment Variables button.
+  </li><li>Finally, in the <i>User Variables</i> area, you can add or edit variables.
   </li><li>To add a new one click on New, the first line is the name of the variable (PATH for example), the second the value. If several values are added, they must be separated by a <i>;</i>.
 
   </li><li>To modify one, select it and click on <i>Edit...</i>
