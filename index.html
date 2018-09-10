@@ -109,7 +109,7 @@ tagline:
   <div class="col-md-4">
     {% assign news = site.posts %}
     {% assign exist_active_beta = false %}
-    <h3>Latest releases</h3>
+    <h3>Latest Releases</h3>
     <ul>
       {% for post in news %}
         {% if post.tags contains "latest-release" %}
@@ -125,7 +125,7 @@ tagline:
         {% endif %}
       {% endfor %}
     </ul>
-    <h4>Previous releases</h4>
+    <h4>Previous Releases</h4>
     <ul>
       {% assign releases_counter = 0 %}
       {% assign max_releases_number = 2 %}
