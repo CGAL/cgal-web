@@ -13,6 +13,16 @@ tagline:
         <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::sdf_values(surface_mesh);</pre></h3>
       </li>
 
+      <li style="background-image: url({{ BASE_PATH }}/images/classif_header_cgal.png); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+        <h2 class="title">Classification</h2>
+        <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::Classification::classify(las_points);</pre></h3>
+      </li>
+
+      <li style="background-image: url({{ BASE_PATH }}/images/periodic_banner.png); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+        <h2 class="title">Periodic Mesh Generation</h2>
+        <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::Periodic_tet_mesh mesh = CGAL::make_periodic_mesh();</pre></h3>
+      </li>
+
       <li style="background-image: url({{ BASE_PATH }}/images/Poisson_surface_reconstruction.png); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
         <h2 class="title">Surface Reconstruction</h2>
         <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::poisson_surface_reconstruction_delaunay(points);</pre></h3>
@@ -27,19 +37,15 @@ tagline:
         <h2 class="title">Axis Aligned Bounding Box Tree</h2>
         <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::AABB_tree tree(faces(surface_mesh));</pre></h3>
       </li>
-
-      <li style="background-image: url({{ BASE_PATH }}/images/classif_header_cgal.png); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
-        <h2 class="title">Classification</h2>
-        <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::Classification::classify(las_points);</pre></h3>
-      </li>
     </ul>
     <div class="sequence-pagination-wrapper">
       <ul class="sequence-pagination">
-	<li>1</li>
-	<li>2</li>
-	<li>3</li>
-	<li>4</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
         <li>5</li>
+        <li>6</li>
       </ul>
     </div>
   </div>
@@ -112,6 +118,9 @@ tagline:
     <h3>Latest Releases</h3>
     <ul>
       {% for post in news %}
+        {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+        {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
+
         {% if post.tags contains "latest-release" %}
           <li class="active"><b>Latest stable release:</b> <a href="{{ BASE_PATH }}{{post.url}}" class="active">{{post.description}}</a></li>
           {% break %}
@@ -128,7 +137,7 @@ tagline:
     <h4>Previous Releases</h4>
     <ul>
       {% assign releases_counter = 0 %}
-      {% assign max_releases_number = 2 %}
+      {% assign max_releases_number = 3 %}
       {% unless exist_active_beta == true %}
         {% assign max_releases_number = max_releases_number | plus: 1 %}
       {% endunless %}
