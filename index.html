@@ -93,7 +93,7 @@ tagline:
         {% unless post.tags contains "WIP" %}
           <li class="active">{{this_month}} {{this_year}}
           <a href="{{ BASE_PATH }}{{post.url}}" class="active">{{post.title}}</a><!--
-          -->{% unless post.description == "" %}: {{post.description}}{% endunless %}
+          -->{% unless post.description == "" %} -- {{post.description}}{% endunless %}
           </li>
           {% assign news_counter = news_counter | plus: 1 %}
           {% if news_counter >= max_news_number %}
