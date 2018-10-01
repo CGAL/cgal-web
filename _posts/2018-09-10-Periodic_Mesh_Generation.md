@@ -27,8 +27,9 @@ in these spaces are duplicated across all tiles.</p>
 
 <br>
 <p>These periodic spaces are particularly well adapted to materials science and the modelling
-of some physic phenomena such as crystallographic structures, the cosmic web,
-and <a href="https://members.loria.fr/MTeillaud/PeriodicSpacesWorkshop/">more</a>...
+of some physic phenomena such as crystallographic structures, the cosmic web, and more (see for example,
+the program of the <a href="https://members.loria.fr/MTeillaud/PeriodicSpacesWorkshop/">CGAL Prospective Workshop
+on Geometric Computing in Periodic Spaces </a> )...
 As in the Euclidean space, the study of these topics requires discretizing objects in triangulations
 and meshes. The construction of 3D periodic triangulations has been available in CGAL since
 <a href="../../../../2009/10/05/cgal-35">CGAL 3.5</a>, with the release of the package
