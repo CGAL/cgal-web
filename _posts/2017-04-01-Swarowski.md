@@ -22,12 +22,10 @@ used is gold powder, (b) <a href="https://www.rhino3d.com/gallery/4">Rhino</a> a
 design tool, and (c) Rhino plugins based on CGAL multiplicatively weighted
 Voronoi diagrams (also called Apollonius graph), as well as
 the CGAL Hilbert sort algorithm for producing space filling
-curves.</p>.
+curves.</p>
 
-<div style="text-align:center;">
-  <img src="../../../../images/april2017.jpg"><br>
-  <small>Left: Voronoi ring  Right: Space filling ear ring</small>
-</div>
+![](/images/april2017.jpg)
+<p><small>Left: Voronoi ring  Right: Space filling ear ring</small></p>
 
 <h3>A Unified Naming Scheme</h3>
 <p>Laure N.T. Rhino, the chief software architect at McNeel  who gave 

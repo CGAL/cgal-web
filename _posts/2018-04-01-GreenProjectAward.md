@@ -72,10 +72,8 @@ with OS emulators. The phones are recycled phones having broken screens, which g
 replaced with small solar panels. They will go directly on the roof of the GeometryFactory
 office building.</p>
 
-<div style="text-align:center;">
-  <img src="../../../../images/fairphone.jpg"><br>
-  <small>Recycled Fairphone with solar panel</small>
-</div>
+![](/images/fairphone.jpg)
+<p><small>Recycled Fairphone with solar panel</small></p>
 
 <p>The result is recycled material, a low wiring effort, and
 most importantly a future business: The CGAL Project is among the alpha tester for
