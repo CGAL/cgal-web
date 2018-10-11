@@ -41,29 +41,28 @@ group: navigation
 {% assign box_text = "CGAL is dual licensed, namely under the GPL3+ and a commercial license." %}
 {% assign box_image = "images/icons/glyphicons-115-list.svg" %}
 {% assign box_link = "./license.html" %}
-{% assign box_bigger = true %}
 {% include themes/cgal/box %}
-
-</div>
-
-<div class="row">
 
 {% assign box_title = "Acknowledging" %}
-{% assign box_text = "We provide bibtex entries for each chapter of the manual so that you can cite CGAL correctly in your publications." %}
+{% assign box_text = "We provide bibtex entries for each package so that you can cite CGAL correctly in your publications." %}
 {% assign box_image = "images/icons/network.svg" %}
 {% assign box_link = "http://doc.cgal.org/latest/Manual/how_to_cite_cgal.html" %}
-{% assign box_bigger = true %}
 {% include themes/cgal/box %}
 
 </div>
 
 <div class="row">
 
-{% assign box_title = "All releases" %}
+{% assign box_title = "All Releases" %}
 {% assign box_text = "Browse all CGAL releases and their associated changes." %}
 {% assign box_image = "images/icons/glyphicons-60-cargo.svg" %}
 {% assign box_link = "./releases.html" %}
-{% assign box_bigger = true %}
+{% include themes/cgal/box %}
+
+{% assign box_title = "Release Download Statistics" %}
+{% assign box_text = "Access the download counts for all CGAL releases and all supported platforms." %}
+{% assign box_image = "images/icons/graph.svg" %}
+{% assign box_link = "https://www.somsubhra.com/github-release-stats/?username=CGAL&repository=cgal" %}
 {% include themes/cgal/box %}
 
 </div>
