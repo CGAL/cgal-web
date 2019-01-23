@@ -64,8 +64,8 @@ of sharp edges in a mesh, as well as post-processing steps such as mesh optimiza
 
 <br>
 <p>The package Periodic_3_mesh_3 is already integrated in CGAL's master branch
-on the <a href="https://github.com/CGAL/cgal/">CGAL GitHub repository</a>, and will be available
-officially in the upcoming release, CGAL 4.13, scheduled for September 2018.</p>
+on the <a href="https://github.com/CGAL/cgal/">CGAL GitHub repository</a>, and will be
+officially released in the upcoming version of CGAL, CGAL 4.13, scheduled for September 2018.</p>
 
 <i class="glyphicon glyphicon-book"></i>
 <a href="https://doc.cgal.org/4.13/Periodic_3_mesh_3/index.html#Chapter_3D_Periodic_Mesh_Generation">Documentation of the package Periodic_3_mesh_3</a>
