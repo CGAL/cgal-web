@@ -85,7 +85,7 @@ during the <a href="https://github.com/CGAL/cgal/wiki/GSoC_2018" title="GSoC 201
 of the <a href="https://github.com/CGAL/cgal/wiki/Project-Ideas" title="CGAL GSoC">Google Summer of Code</a>,
 mentored by Keenan Crane and Andreas Fabri. It is now available in CGAL's master branch
 on the <a href="https://github.com/CGAL/cgal/">CGAL GitHub repository</a>,
-and will be officially released in the upcoming version of CGAL, 4.14, scheduled for March 2019.</p>
+and will be officially released in the upcoming version of CGAL (4.14) scheduled for March 2019.</p>
 
 <i class="glyphicon glyphicon-book"></i>
 <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Heat_method_3/index.html#Chapter_HeatMethod">Documentation of the package Heat_Method_3</a> <br>
