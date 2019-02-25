@@ -87,7 +87,7 @@ tagline:
     <ul>
       {% assign news = site.posts %}
       {% assign news_counter = 0 %}
-      {% assign max_news_number = 5 %}
+      {% assign max_news_number = 4 %}
       {% for post in news %}
         {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
         {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
