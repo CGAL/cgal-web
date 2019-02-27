@@ -9,7 +9,7 @@ tags: [""]
 
 <h3><a href="https://imiordanov.github.io/">Iordan Iordanov</a> and
 <a href="https://members.loria.fr/Monique.Teillaud/">Monique Teillaud</a></h3>
-<h4><a href="https://www.inria.fr">INRIA Nancy Nancy - Grand Est</a>,
+<h4><a href="https://www.inria.fr/centre/nancy">INRIA Nancy - Grand Est</a>,
 <a href="https://www.loria.fr/en/">LORIA</a></h4>
 
 <br>
