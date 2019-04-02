@@ -1,0 +1,160 @@
+---
+layout: default
+title: The Computational Geometry Algorithms Library
+tagline:
+---
+{% include JB/setup %}
+
+<div class="homepage-slider">
+  <div id="sequence">
+    <ul class="sequence-canvas">
+      <li style="background-image: url({{ BASE_PATH }}/images/zoomx-1.png); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+        <h2 class="title">The Heat Method</h2>
+        <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::just_do_it(heat_me_up);</pre></h3>
+      </li>
+
+      <li style="background-image: url({{ BASE_PATH }}/images/zoomx-3.png); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+        <h2 class="title">Mesh Segmentation</h2>
+        <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::just_do_it(surface_mesh);</pre></h3>
+      </li>
+
+      <li style="background-image: url({{ BASE_PATH }}/images/zoomx-2.png); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+        <h2 class="title">Classification</h2>
+        <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::just_do_it(first_second_third);</pre></h3>
+      </li>
+
+      <li style="background-image: url({{ BASE_PATH }}/images/periodic_banner.png); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+        <h2 class="title">Periodic Mesh Generation</h2>
+        <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::make_periodic_mesh(foam);</pre></h3>
+      </li>
+
+      <li style="background-image: url({{ BASE_PATH }}/images/zoomx-4.png); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+        <h2 class="title">Quad Mesh Generation</h2>
+        <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::just_do_it(mesh);</pre></h3>
+      </li>
+
+    </ul>
+    <div class="sequence-pagination-wrapper">
+      <ul class="sequence-pagination">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="blog-post blog-single-post col-md-12">
+      <p>CGAL is a software project that provides easy access to efficient and reliable geometric algorithms in the form of a C++ library.
+      CGAL is used in various areas needing geometric computation, such as geographic information systems, computer aided design,
+      molecular biology, medical imaging,  computer graphics, and robotics.</p>
+
+      <p>The library offers data structures and algorithms like
+      <a href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations">triangulations</a>,
+      <a href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams">Voronoi diagrams</a>,
+      <a href="https://doc.cgal.org/latest/Manual/packages.html#PkgBooleanSetOperations2Summary">Boolean operations on polygons</a>
+      and <a href="https://doc.cgal.org/latest/Manual/packages.html#PkgNef3Summary">polyhedra</a>,
+      <a href="https://doc.cgal.org/latest/Manual/packages.html#PkgPointSetProcessingSummary">point set processing</a>,
+      <a href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements">arrangements of curves</a>,
+      <a href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing">surface and volume mesh generation</a>,
+      <a href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometryProcessing">geometry processing</a>,
+      <a href="https://doc.cgal.org/latest/Manual/packages.html#PkgAlphaShape2Summary">alpha shapes</a>,
+      <a href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms">convex hull algorithms</a>,
+      <a href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction">shape reconstruction</a>,
+      <a href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures">AABB and KD trees</a>...</p>
+
+      <p>Learn more about CGAL by browsing through the <a href="https://doc.cgal.org/latest/Manual/packages.html" target="_blank">Package Overview</a>.</p>
+    </div>
+  </div>
+
+  <div class="col-md-8">
+    <h3>Latest News</h3>
+    <ul>
+      {% assign news = site.posts %}
+      {% assign news_counter = 0 %}
+      {% assign max_news_number = 4 %}
+      {% for post in news %}
+        {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+        {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
+
+        {% assign is_release = false %}
+        {% for tag in post.tags %}
+          {% if tag contains "release" %}
+            {% assign is_release = true %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+
+        {% unless is_release == true %}
+        {% unless post.dontshow %}
+        {% unless post.tags contains "WIP" %}
+          <li class="active">{{this_month}} {{this_year}}
+          <a href="{{ BASE_PATH }}{{post.url}}" class="active">{{post.title}}</a><!--
+          -->{% unless post.description == "" %} -- {{post.description}}{% endunless %}
+          </li>
+          {% assign news_counter = news_counter | plus: 1 %}
+          {% if news_counter >= max_news_number %}
+            {% break %}
+          {% endif %}
+        {% endunless %}
+        {% endunless %}
+        {% endunless %}
+      {% endfor %}
+    </ul>
+    <a href="{{ BASE_PATH}}/news.html" class="btn">Older news and announcements...</a>
+  </div>
+  <div class="col-md-4">
+    {% assign news = site.posts %}
+    {% assign exist_active_beta = false %}
+    <h3>Latest Releases</h3>
+    <ul>
+      {% for post in news %}
+        {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+        {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
+
+        {% if post.tags contains "latest-release" %}
+          <li class="active"><b>Latest stable release:</b> <a href="{{ BASE_PATH }}{{post.url}}" class="active">{{post.description}}</a></li>
+          {% break %}
+        {% endif %}
+      {% endfor %}
+      {% for post in news %}
+        {% if post.tags contains "active-beta-release" %}
+          {% assign exist_active_beta = true %}
+          <li class="active"><b>Active beta release:</b> <a href="{{ BASE_PATH }}{{post.url}}" class="active">{{post.description}}</a></li>
+          {% break %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+    <h4>Previous Releases</h4>
+    <ul>
+      {% assign releases_counter = 0 %}
+      {% assign max_releases_number = 3 %}
+      {% unless exist_active_beta == true %}
+        {% assign max_releases_number = max_releases_number | plus: 1 %}
+      {% endunless %}
+
+      {% for post in news %}
+        {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+        {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
+        {% unless post.dontshow %}
+        {% unless post.tags contains "WIP" %}
+        {% if post.tags contains "release" %}
+        {% unless post.tags contains "latest" or post.tags contains "active" %}
+          <li class="active">{{this_month}} {{this_year}} <a href="{{ BASE_PATH }}{{post.url}}" class="active">{{post.description}}</a></li>
+          {% assign releases_counter = releases_counter | plus: 1 %}
+          {% if releases_counter >= max_releases_number %}
+            {% break %}
+          {% endif %}
+        {% endunless %}
+        {% endif %}
+        {% endunless %}
+        {% endunless %}
+      {% endfor %}
+    </ul>
+    <a href="{{ BASE_PATH}}/releases.html" class="btn">Older releases...</a>
+  </div>
+</div>
