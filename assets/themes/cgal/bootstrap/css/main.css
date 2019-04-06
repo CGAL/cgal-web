@@ -2646,3 +2646,9 @@ span.color-red {
 .dropdown.open a.dropdown-toggle .caret {
   border-top: 4px solid #FFF;
 }
+.btn-dark-orange {
+  filter: invert(47%) sepia(82%) saturate(335%) hue-rotate(352deg) brightness(91%) contrast(97%);
+}
+.btn-dark-orange:hover {
+  filter: invert(76%) sepia(9%) saturate(447%) hue-rotate(10deg) brightness(90%) contrast(86%);
+}
