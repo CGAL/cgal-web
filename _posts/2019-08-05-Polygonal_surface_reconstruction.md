@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "New in CGAL: Polygonal Surface Reconstruction"
-description: "Introducing a new package piecewise planar object reconstruction from point clouds"
+description: "Introducing a new package for piecewise planar object reconstruction from point clouds"
 category:
 tags: [""]
 ---
