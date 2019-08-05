@@ -31,7 +31,7 @@ tags: [""]
 </div>
 
 <br>
-<p>The method assumes that all necessary major planes are provided (or they can be extracted from the input point set).It can recover sharp features of the objects, and it can handle a large amount of noise and outliers, complementing the existing surface reconstruction methods.</p>
+<p>The method assumes that all necessary major planes are provided (for example using the new tools in the Shape detection package, see also <a href="../../07/30/Shape_detection">this post</a>), or they can be extracted from the input point set). It can recover sharp features of the objects, and it can handle a large amount of noise and outliers, complementing the existing surface reconstruction methods.</p>
 
 <br>
 <p>This package is already available in CGAL's master branch
