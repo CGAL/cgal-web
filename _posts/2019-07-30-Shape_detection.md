@@ -19,7 +19,7 @@ tags: [""]
 <br>
 <h3>Detecting Lines in a 2D Point Cloud </h3>
 
-Given a set of 2D points with the corresponding normals, the algorithm groups these points with respect to the quality of the local least squares 2D line fit. The connectivity among points is provided via a K-d tree.
+<p>Given a set of 2D points with the corresponding normals, the algorithm groups these points with respect to the quality of the local least squares 2D line fit. The connectivity among points is provided via a K-d tree.</p>
 
 <div style="text-align:center;">
   <img src="../../../../images/2d-pc.png" width="100%"><br>
@@ -29,7 +29,7 @@ Given a set of 2D points with the corresponding normals, the algorithm groups th
 <br>
 <h3>Detecting Planes in a 3D Point Cloud</h3>
 
-Given a set of 3D points with the corresponding normals, the algorithm groups these points with respect to the quality of the local least squares 3D plane fit. The connectivity among points is provided via a K-d tree.
+<p>Given a set of 3D points with the corresponding normals, the algorithm groups these points with respect to the quality of the local least squares 3D plane fit. The connectivity among points is provided via a K-d tree.</p>
 
 <br>
 <div style="text-align:center;">
@@ -37,12 +37,13 @@ Given a set of 3D points with the corresponding normals, the algorithm groups th
   <small>A 3D point set depicted with one color per detected plane.</small>
 </div>
 
-This can be used in conjunction with a new package added in the next version of CGAL, <a href="../../08/05/Polygonal_surface_reconstruction/">Polygonal Surface Reconstruction</a> to reconstruct piecewise planar surfaces from points cloud. An example of both features working together is available <a href="https://github.com/CGAL/cgal/blob/5220b7d26095f817f959ba412405b961d061bbb9/Polygonal_surface_reconstruction/examples/Polygonal_surface_reconstruction/polyfit_example_with_region_growing.cpp">here</a>.
+<br>
+<p>This type of detection can be used in conjunction with a new package added in the next version of CGAL, <a href="../../08/05/Polygonal_surface_reconstruction/">Polygonal Surface Reconstruction</a> to reconstruct piecewise planar surfaces from point clouds. An example of both features working together is available <a href="https://github.com/CGAL/cgal/blob/5220b7d26095f817f959ba412405b961d061bbb9/Polygonal_surface_reconstruction/examples/Polygonal_surface_reconstruction/polyfit_example_with_region_growing.cpp">here</a>.</p>
 
 <br>
 <h3>Detecting Planes on a Polygon Mesh</h3>
 
-Given a triangle surface mesh, the algorithm groups its faces with respect to the quality of the local least squares plane fit. The connectivity and normals are obtained directly from the mesh.
+<p>Given a triangle surface mesh, the algorithm groups its faces with respect to the quality of the local least squares plane fit. The connectivity and normals are obtained directly from the mesh.</p>
 
 <br>
 <div style="text-align:center;">
