@@ -24,7 +24,7 @@ compilers is:
   -   LLVM Clang version 8.0 or later (on Linux or MacOS), and
   -   Apple Clang compiler versions 7.0.2 and 10.0.1 (on MacOS).
 
-Users with environments that do not allow the use of C++14 should
-stay with CGAL-4.14 and its bug-fix releases.
+Users with environments that do not allow the use of C++14 must use
+CGAL-4.14 and its bug-fix releases.
 
 </div>
