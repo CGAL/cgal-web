@@ -1,0 +1,13 @@
+rm -rf Keyword/*
+rm -f Biblio/*
+rm -f index.html
+/proj/epidaure/home/bin/bibtex2html ./publications.bib -sort-criterium year
+perl -pi.bak -e "s/Internal reports/Technical reports/g" Keyword/*.html
+perl -ni.bak -e '/^   OPT[A-Z]/ or print;' Biblio/cgal_publications.bib
+perl -pi.bak -e "s/#669999/#C0C0D0/g" Keyword/*.html
+perl -pi.bak -e "s/#669999/#C0C0D0/g" Biblio/*.html
+perl -pi.bak -e "s/#badfe1/#C0C0D0/g" Keyword/*.html
+perl -pi.bak -e "s/#badfe1/#C0C0D0/g" Biblio/*.html
+perl -pi.bak -e "s|index.html|../bibliography.html|g" Keyword/*.html
+perl -pi.bak -e "s|index.html|../bibliography.html|g" Biblio/*.html
+perl -pi.bak -e 's|-08]|-08 - <a href="./cgal_publications.bib">bibtex file</a>]|g' Biblio/cgal_publications.html

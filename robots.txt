@@ -1,0 +1,6 @@
+# *.cgal.org robots.txt file
+User-agent: *
+<!--#if  expr='"$SERVER_NAME" = "upcoming.cgal.org"' -->
+# We do not want web robots index that web site.
+Disallow: /
+<!--#endif -->

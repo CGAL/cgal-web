@@ -1,0 +1,39 @@
+---
+layout: page
+title: Releases
+header: Releases
+group: navigation
+---
+{% include JB/setup %}
+
+<div class="row">
+  <div class="col-md-4">
+    <ul>
+      {% assign releases = site.posts | where:"category","release" %}
+      {% for post in site.posts %}
+      {% if post.tags contains "release" %}
+        {% capture this_day %}{{ post.date | date: "%d" }}{% endcapture %}
+        {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+        {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
+
+        {% comment %} always print the first entry, only print following
+        entries if they are not betas, this is a little convoluted since
+        we have no better way to negate contains statements
+        {% endcomment %}
+
+        {% if forloop.first %}
+        <li><a href="{{ BASE_PATH }}{{post.url}}" class="active">{{post.title}}</a> ({{this_month}} {{this_year}})</li>
+        {% elsif post.title contains "beta" %}
+        {% else %}
+        <li><a href="{{ BASE_PATH }}{{post.url}}" class="active">{{post.title}}</a> ({{this_month}} {{this_year}})</li>
+        {% endif %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="col-md-8">
+    <img class="img-responsive" src="images/release_history_sloccount.png" alt="Releases size graph">
+    <caption align=BOTTOM>Number of lines of code of CGAL (using <a href="http://www.dwheeler.com/sloccount/"> David A. Wheeler's 'SLOCCount'</a>, restricted to the <code>include/CGAL/</code> and <code>src/</code> directories).
+    </caption>
+  </div>
+</div>

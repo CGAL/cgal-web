@@ -1,0 +1,55 @@
+\documentclass[12pt,a4paper]{article}
+
+\pagestyle{empty} % no page number
+\parskip 16pt     % space between paragraphs
+\parindent 0pt    % indent for new paragraph
+
+\usepackage{geometry}
+\geometry{left=0.5in,top=0.5in,right=0.5in,bottom=0.5in} %margins
+\usepackage{graphicx}
+\usepackage{color,framed}
+\usepackage{calc}
+\usepackage{alltt,url}
+\usepackage{bold-extra}
+
+\DeclareGraphicsExtensions{.png}
+\DeclareGraphicsExtensions{.jpg}
+\DeclareGraphicsRule{.png}{eps}{.bb}{`convert -compress JPEG #1 eps2:-}
+\DeclareGraphicsRule{.jpg}{eps}{.bb}{`convert #1 eps2:-}
+
+\newcommand{\cgal}{\textsc{Cgal}}
+\linespread{1.2}
+
+\begin{document}
+\begin{framed}
+  \newlength{\cgalwidth}\setlength{\cgalwidth}{\textwidth}
+  \begin{center}
+    \includegraphics[width=\cgalwidth]{GSoC2011.pdf}
+
+    \textbf{\Huge Looking for a Cool Summer Job?}
+  \end{center}
+
+  \textbf{\large The Computational Geometry Algorithm Library (\cgal{})
+    open-source project, has been accepted to participate in the 2011 Google
+    Summer of Code (GSoC) program; see \url{http://www.google-melange.com/}.
+    This means that Google is supporting \cgal{} by funding some internships
+    potentially from all over the world, for writing code under the guidance
+    of experienced developers, so called mentors.}
+
+  \textbf{\large If you are a smart user, have the time, and would like to
+    contribute and to get paid for that, you should apply! If you have
+    some master or PhD students who can spend their summer (full time)
+    on a nice \cgal{} project, please advise them to apply.}
+
+  \textbf{\large We have already listed several ideas for projects and
+    instructions to applicants at
+    \url{http://www.cgal.org/project_ideas.html}. If you find a project
+    that suits your expertise and interest, contact the mentor of the
+    project to get acquainted with her or him and to obtain more details.}
+
+  %\centerline{The \cgal{} team}
+  \includegraphics[width=\cgalwidth]{../../images/cgal-full.pdf}
+  
+\end{framed}
+
+\end{document}

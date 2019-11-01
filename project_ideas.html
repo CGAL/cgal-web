@@ -1,0 +1,552 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-US">
+<HEAD>
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+  <LINK TITLE="CGAL style" REL=stylesheet TYPE="text/css" HREF="/cgal.css">
+   <TITLE>CGAL - Project Ideas  for the Google Summer of Code 2015</TITLE>
+
+  <script type="text/javascript">
+  function mailto_link(em1,em2,em3,name,subject)
+  {
+  document.write('<a href="mailto:'+em1+'@'+em2+'.'+em3+'?Subject=[GSOC15] '+subject+'">'+name+'<\/a>');
+  }
+  </script>
+
+</HEAD>
+<BODY>
+<table>
+<tr>
+
+<!--#include virtual="/menu.inc.html" -->
+
+<td valign=top>
+
+<H1>CGAL Projects page for the Google Summer of Code 2015</H1>
+
+<p>
+Since 2010, the CGAL Project was a mentoring organization of the  <a href="http://code.google.com/soc/">Google Summer of Code</a>.
+On this page we present some project ideas as well the <a href="#information">information applicants have to provide us</a>.
+GSoC applicants are welcome to propose other ideas and check if a mentor is interested in supervising it.
+</p>
+
+This year our application has been <b>rejected</b>.
+
+<br>
+<p>Previous project ideas of the CGAL project for the <b>Google Summer of Code</b> can be found on the following pages:
+<a href="http://www.cgal.org/gsoc/2010.html">2010</a>, <a href="http://www.cgal.org/gsoc/2011.html">2011</a>,
+<a href="http://www.cgal.org/gsoc/2012.html">2012</a>, <a href="http://www.cgal.org/gsoc/2013.html">2013</a>,
+<a href="http://www.cgal.org/gsoc/2014.html">2014</a>.</p>
+
+<!-- <p><b>Before sending an email to anybody, please carefully read <a href="#information"> this section</a>.</b></p> -->
+
+
+<h3>Summary:</h3>
+
+<p>
+First section to read: <a href="#information">Information Candidates Should Supply</a>
+</p>
+
+<ol>
+  <li> <a href="#p1">Use Embree for Ray Shooting</a>
+  <li> <a href="#p2">Adding Better I/O for the CGAL Library</a>
+  <li> <a href="#p3">Adding a Parallel Version of the Edge Simplification Algorithm</a>
+  <li> <a href="#p4">Finalizing a Package for 2D Triangulations on the Sphere</a>
+  <li> <a href="#p5">Enhancing the 2D Arrangements Package</a>
+  <li> <a href="#p6">Improving the Polyhedron Demo</a>
+  <li> <a href="#p7">Dynamic Attributes for Combinatorial Maps</a>
+  <li> <a href="#p8">Implementation of a Generic Bounding Volume Hierarchy (BVH)</a>
+  <li> <a href="#p9">Visibility Computation in 2.5D Terrains</a>
+  <li> <a href="#p10">Update Packages to Use the BGL API</a>
+  <li> <a href="#p11">Tool to Compare the Output of Two Runs of Doxygen</a>
+  <li> <a href="#p12">Intersection of a Power diagram with a triangulation in 2D</a>
+  <li> <a href="#p13">Fixing and Enhancing 2D Regularized Boolean Operations</a>
+  <li> <a href="#p14">Reworking Intersection Functions</a>
+  <li> <a href="#p15">Parallel Implementation of a Point Set Reconstruction Algorithm</a>
+  <li> <a href="#p16">Create a bridge between the available Github "webhooks", and the usual Git hook scripts</a>
+  <li> <a href="#p17">3D Mesh Generation - Detect and handle small geometric features</a>
+  <li> <a href="#p18">Statistical mechanics of hard spheres</a>
+</ol>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+<h2 id="p1">Use Embree for Ray Shooting</h2>
+<p>
+<b>Mentor(s)</b>:
+<script type="text/javascript">
+  mailto_link("andreas.fabri","geometryfactory","com","Andreas Fabri","Use Embree for Ray Shooting")
+</script>
+from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+</p>
+<h3>Project description:</h3>
+<p>
+The Embree project has a low level API for ray shooting queries. First benchmarks show that Embree is faster than the CGAL AABB Tree. This is partially due to the use of vector operations.  The goal of this GSoC project is twofold. First, we want to allow to use Embree, for example in the mesh generator. Second the student should introduce vector operations in the AABB Tree.
+</p><p><b>Required Skills:</b> parallel vector operations, C++ templates
+</p>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+<h2 id="p2">Adding Better I/O for the CGAL Library</h2>
+<p>
+<b>Mentor(s)</b>:
+<script type="text/javascript">
+  mailto_link("andreas.fabri","geometryfactory","com","Andreas Fabri","Adding better I/O for the CGAL library")
+</script>
+from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+</p>
+<h3>Project description:</h3>
+<p>
+The goal of this project is to add some wrapper to allow CGAL to read/write different
+classical input files.
+</p><p>The obvious things we see that is missing are:
+</p>
+<ul><li> vtk data structures (unstructured grids, poly data, ...)
+</li><li> MRI file formats for the meshing algorithms: Nifti (.nifti), Gis (.img, .hdr), vtk
+</li><li> GIS file formats (WKT, GML, GeoJSON, ...)
+</li></ul>
+<p>The goal is not necessarily to re-implement these readers/writers but rely on existing software with a license compatible with CGAL
+</p><p>
+<b>Required Skills:</b> vtk, C++ templates, cmake
+</p>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+<h2 id="p3">Adding a Parallel Version of the Edge Simplification Algorithm</h2>
+<p>
+<b>Mentor(s)</b>:
+<script type="text/javascript">
+  mailto_link("sebastien.loriot","cgal","org","S&eacute;bastien Loriot","Adding a parallel version of the edge simplification algorithm")
+</script>
+from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+and
+<script type="text/javascript">
+  mailto_link("clement.jamin.pro","gmail","com","Cl&eacute;ment Jamin","Adding a parallel version of the edge simplification algorithm")
+</script>
+from <a href="http://www-sop.inria.fr/geometrica/">Inria Sophia-Antipolis</a>
+</p>
+<h3>Project description:</h3>
+<p>
+CGAL has a triangulated surface mesh edge simplification <a href="http://doc.cgal.org/latest/Surface_mesh_simplification/index.html">package</a>
+based on the paper <i>Peter Lindstrom and Greg Turk. Fast and memory efficient polygonal simplification. In IEEE Visualization, pages 279-286, 1998.</i>
+<br>
+The goal of this project is to use a modified version of this algorithm to allow edges of a mesh to be simplified using parallel threads.
+</p>
+<p><b>Required Skills:</b> C++, Intel TBB</p>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+<h2 id="p4">Finalizing a Package for 2D Triangulations on the Sphere</h2>
+<p>
+<b>Mentor(s)</b>:
+<script type="text/javascript">
+  mailto_link("Monique.Teillaud","inria","fr","Monique Teillaud","Finalizing a Package for 2D Triangulations on the Sphere")
+</script>
+from <a href="http://www.loria.fr/~teillaud/">INRIA Nancy - Grand Est   -   LORIA</a>
+and
+<script type="text/javascript">
+  mailto_link("sebastien.loriot","cgal","org","S&eacute;bastien Loriot","Finalizing a Package for 2D Triangulations on the Sphere")
+</script>
+from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+</p>
+<h3>Project description:</h3>
+<p>
+The sphere can model atoms (biology) as well as the earth (geography) and the celestial vault (astrophysics), which shows a strong need for computations on the sphere. A method was proposed, a few years ago, to compute triangulations of points on or close to a sphere [1], and a prototype software has been written. The prototype is very efficient, but it duplicates some parts of the CGAL 2D triangulation classes. The project will consist in proposing a new design for those classes in order to avoid duplications, and implementing it. Some work is in progress in CGAL on re-designing the CGAL 3D triangulation packages, which will provide an example for a potential solution.
+</p>
+<p><code>[1] Manuel Caroli, Pedro M. M. de Castro, S&eacute;bastien Loriot, Olivier Rouiller, Monique Teillaud, and Camille Wormser. Robust and Efficient Delaunay triangulations of points on or close to a sphere. In 9th International Symposium on Experimental Algorithms, volume 6049 of Lecture Notes in Computer Science, pages 462-473, 2010. Preliminary version available at https://hal.inria.fr/inria-00405478/</code>
+</p>
+<p><b>Required Skills:</b> C++, design patterns</p>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+<h2 id="p5">Enhancing the 2D Arrangements Package</h2>
+<p>
+<b>Mentor(s)</b>:
+<script type="text/javascript">
+  mailto_link("efifogel","gmail","com","Efi Fogel","Enhancing the 2D Arrangements Package")
+</script>
+from the <a href="http://acg.cs.tau.ac.il/people">Applied Computational Geometry Lab</a>,  Tel Aviv University
+</p>
+<h3>Project description:</h3>
+<p>
+Fix and enhance various small features in the 2D Arrangements package:
+</p>
+<ul>
+<li> Implement Naive Ray Shooting. </li>
+<li> Fix all point location strategies to work with all traits classes. </li>
+<li> Replace CGAL::Object with boost::variant. </li>
+<li> Use smart pointers instead of allocation and deletion. </li>
+<li> Add CGAL::insert(arr, curves_begin, curves_end, points_begin, points_end). </li>
+<li> Fix the zone() free function (it's not according to the formal definition). </li>
+<li> Implement missing (documented) functions. </li>
+<li> Add a default traits parameter for free functions that do not have it yet. </li>
+</ul>
+<p><b>Required Skills:</b> C++, templates, Boost</p>
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+<h2 id="p6">Improving the Polyhedron Demo</h2>
+<p>
+<b>Mentor(s)</b>:
+<script type="text/javascript">
+  mailto_link("laurent.rineau","cgal","org","Laurent Rineau","Improving the Polyhedron Demo")
+</script>
+from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+and
+<script type="text/javascript">
+  mailto_link("sebastien.loriot","cgal","org","S&eacute;bastien Loriot","Improving the Polyhedron Demo")
+</script>
+from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+</p>
+<h3>Project description:</h3>
+<p>
+CGAL provides many 3D algorithms and most of have a corresponding plugin for the Polyhedron demo.
+The demo frameworks need a few improvements:
+</p>
+<ul>
+<li> Use modern OpenGL API </li>
+<li> Categories for plugins </li>
+<li> Reorganization of the code per plugin </li>
+<li> Add more plugins </li>
+<li> Port a selection tool for point set </li>
+</ul>
+<p><b>Required Skills:</b> OpenGL, C++, QT</p>
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+<h2 id="p7">Dynamic Attributes for Combinatorial Maps</h2>
+<p>
+<b>Mentor(s)</b>:
+<script type="text/javascript">
+  mailto_link("guillaume.damiand","liris.cnrs","fr","Guillaume Damiand","Dynamic Attributes for Combinatorial Maps")
+</script>
+from <a href="http://liris.cnrs.fr/gdamiand/">CNRS/Universit&eacute; de Lyon</a>
+</p>
+<h3>Project description:</h3>
+<p>
+Add the dynamic attributes functionality in the combinatorial maps package. The principle of this functionality is to allow users to add/remove attributes associated with cells of a combinatorial map dynamically. The idea is to use boost property maps, similarly to the existing code in the new Surface mesh package.
+</p>
+<p><b>Required Skills:</b> C++, Boost</p>
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+<h2 id="p8">Implementation of a Generic Bounding Volume Hierarchy (BVH)</h2>
+<p>
+<b>Mentor(s)</b>:
+<script type="text/javascript">
+  mailto_link("mhsaar","gmail","com","Michael Hemmer","Implementation of a Generic Bounding Volume Hierarchy (BVH)")
+</script>
+from <a href="https://www.ibr.cs.tu-bs.de/users/hemmer/">TU Braunschweig</a>
+</p>
+<h3>Project description:</h3>
+<p>
+CGAL currently provides a package for Axis Aligned Bounding Box trees in 3D. However, this package is not generic in the sense that it fixes the dimension and the type of the bounding volume. Moreover, the package does not provide intersection or distance computation of two Hierarchies. Based on a prototype implementation developed in Braunschweig the goal is to provide a new package that provides similar features while leaving the dimension and the bounding volume type unspecified.
+</p>
+<p><b>Required Skills:</b> C++, templates, Boost</p>
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+<h2 id="p9">Visibility Computation in 2.5D Terrains</h2>
+<p>
+<b>Mentor(s)</b>:
+<script type="text/javascript">
+  mailto_link("mhsaar","gmail","com","Michael Hemmer","Visibility Computation in 2.5D Terrains")
+</script>
+from <a href="https://www.ibr.cs.tu-bs.de/users/hemmer/">TU Braunschweig</a>
+</p>
+<h3>Project description:</h3>
+<p>
+The upcoming CGAL package for visibility provides visibility computation within 2D polygons and in 1.5D Terrains. The goal of this project is to provide visibility computation in a
+2.5D Terrain, that is, a 2D Triangulation where every vertex is annotated with a height value. A point ''p'' sees another point ''q'' iff the segment ''pq'' is nowhere below the given terrain. The goal is to compute the visible area for a given point ''p''.
+</p>
+<p><b>Required Skills:</b> C++, templates, Boost</p>
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+<h2 id="p10">Update Packages to Use the BGL API</h2>
+<p>
+<b>Mentor(s)</b>:
+<script type="text/javascript">
+  mailto_link("andreas.fabri","geometryfactory","com","Andreas Fabri","Update Packages to Use the BGL API")
+</script>
+from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+</p>
+<h3>Project description:</h3>
+<p>
+The release 4.5 of CGAL introduces extensions of the BGL graph concepts for meshes represented as halfedge data structures (http://doc.cgal.org/latest/Property_map/index.html).
+Some packages of CGAL needs to be updated to use this API:
+</p>
+<ul>
+<li> Polyhedral oracle for <i>3D Mesh Generation</i> </li>
+<li> <i>Planar Parameterization of Triangulated Surface Meshes</i> </li>
+<li> <i>Approximation of Ridges and Umbilics on Triangulated Surface Meshes</i> </li>
+<li> <i>Estimation of Local Differential Properties of Point-Sampled Surfaces</i> </li>
+<li> <i>3D Surface Subdivision Methods</i> </li>
+<li> <code>CGAL::convex_hull_3_to_polyhedron_3()</code> </li>
+</ul>
+<p><b>Required Skills:</b> C++, templates, Boost graph library</p>
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+<h2 id="p11">Tool to Compare the Output of Two Runs of Doxygen</h2>
+<p>
+<b>Mentor(s)</b>:
+<script type="text/javascript">
+  mailto_link("sebastien.loriot","cgal","org","S&eacute;bastien Loriot","Tool to Compare the Output of Two Runs of Doxygen")
+</script>
+from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+</p>
+<h3>Project description:</h3>
+<p>
+The documentation of CGAL is generated using a patched version of doxygen.
+In order to easily upgrade the version of doxygen used to generate the documentation, we need to check
+that all the functions, classes and methods are correctly documented, and all elements are correctly linked.
+</p>
+<ul>
+<li> The first goal of this project is to write a tool that can compare the html output directly or to add a new functionality in doxygen to help doing the comparison. </li>
+<li> The second goal is to enable the latest doxygen release to generate the documentation of CGAL. </li>
+</ul>
+<p><b>Required Skills:</b> C++, html, doxygen</p>
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+<h2 id="p12">Intersection of a Power diagram with a triangulation in 2D</h2>
+<p>
+<b>Mentor(s)</b>:
+<script type="text/javascript">
+  mailto_link("quentin.merigot","imag","fr","Quentin M&eacute;rigot","Intersection of a Power diagram with a triangulation in 2D")
+</script>
+  from <a href="http://quentin.mrgt.fr/">CNRS at Ceremade, Universit&eacute; Paris-Dauphine</a>
+and
+<script type="text/javascript">
+  mailto_link("sebastien.loriot","cgal","org","S&eacute;bastien Loriot","Intersection of a Power diagram with a triangulation in 2D")
+</script>
+from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+</p>
+<h3>Project description:</h3>
+<p>
+In several applications, it is necessary to compute exactly the intersection of a power diagram (a generalization of a Voronoi diagram) with a triangulation of the plane, e.g. implementation of Lloyd's algorithm for meshing, resolution of quadratic optimal transport problems in the plane, etc. The problem we consider is the following: our input is a set of weighted points (x_i,w_i) and a (completely unrelated) triangulation T of a domain of the plane. Denoting P_i the power cells of the ith point and t_j the jth triangles of the triangulation T, the goal is to compute the collection of non-empty intersections (P_i \cap t_j). The goals of the GSoC student are the following:
+</p>
+<ul>
+<li> Implement an algorithm of [1] to perform this computation into CGAL. A preliminary implementation using CGAL [2] (but not included in CGAL yet) is available as a starting point, but there is room for improvement for the computation of the predicates and the API design.</li>
+<li> Extend this implementation, so as to be able to compute the intersection of a 3D power diagram with an embedded 2D triangulation. This has application in surface remeshing.</li>
+</ul>
+<code>[1] http://arxiv.org/pdf/1409.1279v1.pdf, Section 2.1</code><br>
+<code>[2] https://github.com/mrgt/MongeAmpere, see include/MA/voronoi_triangulation_intersection.cpp</code>
+<p><b>Required Skills:</b> C++, templates, some basic maths</p>
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+<h2 id="p13">Fixing and Enhancing 2D Regularized Boolean Operations</h2>
+<p>
+<b>Mentor(s)</b>:
+<script type="text/javascript">
+  mailto_link("efifogel","gmail","com","Efi Fogel","Fixing and Enhancing 2D Regularized Boolean Operations")
+</script>
+and Oren Zalsman
+from the <a href="http://acg.cs.tau.ac.il/people">Applied Computational Geometry Lab</a>,  Tel Aviv University
+</p>
+<h3>Project description:</h3>
+<p>
+Fix and enhance various small features in the 2D Regularized Boolean Operation package:
+</p>
+<ul>
+<li> Add namespace.
+<li> Introduce an implementation of intersection testing for convex polygons.
+<li> Optimize union and intersection of many polygons.</li>
+</ul>
+<p><b>Required Skills:</b> C++, templates, and some computational geometry.</p>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+<h2 id="p14">Reworking Intersection Functions</h2>
+<p>
+<b>Mentor(s)</b>:
+<script type="text/javascript">
+  mailto_link("sebastien.loriot","cgal","org","S&eacute;bastien Loriot","Reworking Intersection Functions")
+</script>
+from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+</p>
+<h3>Project description:</h3>
+<p>
+The goal of this project is to rewrite all the intersection predicates (<code>do_intersect_2/3</code>) to provide more information, but at the same time staying backward compatible. For example, say you want to know whether two segments intersect but also where lies the intersection, in the interior or at an endpoint of each segment. If the student is fast enough, an extension of the project is to rewrite intersection computation functions to take into account the result of the do-intersect predicate to speed up the computation.
+</p>
+<p><b>Required Skills:</b> C++, generic programming, basic geometry</p>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+<h2 id="p15">Parallel Implementation of a Point Set Reconstruction Algorithm</h2>
+<p>
+<b>Mentor(s)</b>:
+<script type="text/javascript">
+  mailto_link("sebastien.loriot","cgal","org","S&eacute;bastien Loriot","Parallel Implementation of a Point Set Reconstruction Algorithm")
+</script>
+from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+and Rapha&euml;lle Chaine from <a href="http://liris.cnrs.fr/~rchaine/">CNRS/Universit&eacute; de Lyon</a>
+</p>
+<h3>Project description:</h3>
+<p>
+Starting from the code of the author of <i>A geometric convection approach of 3D reconstruction, Rapha&euml;lle Chaine,
+  ACM International Conference Proceeding Series,
+  Proceedings of the Eurographics/ACM SIGGRAPH Symposium on Geometry processing, SGP2003, pp. 218-229, June 2003</i>
+</p>
+<p>
+The student will need to propose a way to parallelize this point set reconstruction algorithm following the CGAL's guidelines.
+</p>
+<p><b>Required Skills:</b> C++, parallel programming, Intel TBB</p>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+<h2 id="p16">Create a bridge between the available Github "webhooks", and the usual Git hook scripts</h2>
+<p>
+<b>Mentor(s)</b>:
+<script type="text/javascript">
+  mailto_link("laurent.rineau","cgal","org","Laurent Rineau","Create a bridge between the available Github \"webhooks\", and the usual Git hook scripts")
+</script>
+and
+S&eacute;bastien Loriot
+from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+</p>
+<h3>Project description:</h3>
+<p>
+The CGAL project is willing to move from a dedicated Git repository, to the Github service. One of the issue is that Github no-longer support the server Git hooks, but only its own instance named <i>webhook</i>. The student will implement a bridge between Github webhooks and usual Git hook scripts, so that one can for example use [https://github.com/mhagger/git-multimail git-multimail] with Github.
+</p>
+<p><b>Required Skills:</b> shell programming, web services</p>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+<h2 id="p17">3D Mesh Generation - Detect and handle small geometric features</h2>
+<p>
+<b>Mentor(s)</b>:
+<script type="text/javascript">
+  mailto_link("jane.tournois","geometryfactory","com","Jane Tournois","3D Mesh Generation - Detect and handle small geometric features")
+</script>
+from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+and
+Cl&eacute;ment Jamin
+from <a href="http://www-sop.inria.fr/geometrica/">Inria Sophia-Antipolis</a>
+</p>
+<h3>Project description:</h3>
+<p>
+In this project, the student would have to:
+</p>
+<ul>
+<li> Develop an algorithm to detect holes in a domain (polyhedral domain, image). </li>
+<li> Improve the existing algorithm that detects sharp polyline features in a polyhedral domain.
+<li> Improve the API of Mesh_3 to let the user insert some initial points to start the meshing process. Those can either be automatically chosen on the detected holes, or simply given by the user.</li>
+<li> Develop an algorithm to detect polyline features in 3D images, and integrate it in the public API.</li>
+</ul>
+<p><b>Required Skills:</b> C++, geometry
+</p>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+<h2 id="p18">Statistical mechanics of hard spheres</h2>
+<p>
+<b>Mentor(s)</b>:
+<script type="text/javascript">
+  mailto_link("michael.schindler","espci","fr","Michael Schindler","Statistical mechanics of hard spheres")
+</script>
+from <a href="http://www.pct.espci.fr/~michael/">ESPCI</a>
+and
+<script type="text/javascript">
+  mailto_link("Monique.Teillaud","inria","fr","Monique Teillaud","Statistical mechanics of hard spheres")
+</script>
+from <a href="http://www.loria.fr/~teillaud/">INRIA Nancy - Grand Est   -   LORIA</a>
+</p>
+<h3>Project description:</h3>
+<p>
+This project spans the bridge from statistical physics to CGAL. In
+experiments on colloids, one challenge of our days is to measure, or
+at least estimate thermodynamic properties such as pressure and
+chemical potential (to finally get the free energy). There is one
+special system, the hard-sphere liquid, where theoretical physics can
+help to develop algorithms that allow to do that: The thermodynamics
+of hard-sphere gases can indeed be measured from snapshots ("photos")
+which contain only the positions and radii of the spheres. In the
+algorithm, one needs an efficient and robust triangulation of space
+that is adapted to the individual radii of the spheres. In order to
+validate the algorithm, one wants to avoid the effect of boundaries.<br>
+In summary, one needs precisely what is currently being developed in
+CGAL: the periodic weighted Delaunay triangulation.
+</p><p>
+The project will comprise the following steps:</p>
+<ul>
+<li> Extend an existing 2D prototype to 3D, using the CGAL periodic regular triangulation.
+<li> Running the program on hard-sphere configurations that are
+  generated by an existing molecular-dynamics code, to validate the
+  thermodynamic properties.
+</ul>
+<p><b>Required Skills:</b> C++</p>
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+<h2 id="information">Information Candidates Should Supply</h2>
+
+<p>The application process has several steps. Before contacting anybody verify that you are eligible, that is
+that you are enrolled as student, don't get a tuition fee, etc. The next step is to contact the mentor
+of the project you are interested in. You have to convince him that you are the right person to get the job
+done. The next step is to work out more details and to contact the mentoring organization by providing
+the following information by email to <a href="mailto:gsoc-cgal@lists-sop.inria.fr">gsoc-cgal@lists-sop.inria.fr</a></p>
+
+
+
+
+
+<h3>Project</h3>
+<ol>
+<li> Select a project in the list and provide your personal and detailed description. If you wish to work on another idea of your own, we are pretty open as long as this serves the goal of consolidating CGAL as a whole.
+<li> Provide a proposal of a technical solution with your envisioned methodology. The more detailed the better.
+<li> Explain how the solution will be available to the user, in which form. Do not forget the documentation, unitary tests and cross-platform aspects.
+<li> Provide a realistic schedule with objectives (one every two weeks for example) and deadlines. Focus on mid-term objectives as well as on the final evaluation.
+<li> Provide a formal commitment that you will be involved full time on the GSoC. This is absolutely mandatory.
+</ol>
+
+<h3>Personal data</h3>
+<ol>
+<li> First name, last name, affiliation and geographical location.
+<li> A brief list of the main studies and programming courses attended, with ranking.
+<li> List of the most important software projects contributed and success.
+<li> Which are your best skills in terms of programming and scientific computing?
+<li> In general what is your taste in terms of programming? language, methodology, team work, etc.
+<li> Is there anything that prevents you from working full time on the project during the program period?
+<li> How do you see your involvement after the program ends? Do you see yourself pushing the project further, or do you see yourself contributing to other CGAL projects?
+<li> Are you more interested in the theory/scientific aspect of CGAL, or do you feel more like a hacker?
+<li> What are your long-term wishes in terms of job?
+</ol>
+
+<h3>A mailto:</h3>
+
+<p>This
+<a href="mailto:gsoc-cgal@inria.fr?subject=GSOC-2015&amp;body=%0AProject%0A%0A
+* Select a project in the list and provide your personal and detailed description. %0A
+* Provide a proposal of a technical solution with your envisioned methodology. The more detailed the better.%0A
+* Explain how the solution will be available to the user, in which form. Do not forget the documentation, unitary tests and cross-platform aspects.%0A
+* Provide a realistic schedule with objectives (one every two weeks for example) and deadlines. Focus on mid-term objectives as well as on the final evaluation.%0A
+* Provide a formal commitment that you will be involved full time on the GSoC. This is absolutely mandatory.%0A%0A
+
+Personal data%0A%0A
+* First name, last name, affiliation and geographical location.%0A
+* A brief list of the main studies and programming courses attended, with ranking.%0A
+* List of the most important software projects contributed and success.%0A
+* Which are your best skills in terms of programming and scientific computing?%0A
+* In general what is your taste in terms of programming? language, methodology, team work, etc.%0A
+* Is there anything that prevents you from working full time on the project during the program period?%0A
+* How do you see your involvement after the program ends? Do you see yourself pushing the project further, or do you see yourself contributing to other CGAL projects?%0A
+* Are you more interested in the theory/scientific aspect of CGAL, or do you feel more like a hacker?%0A
+* What are your long-term wishes in terms of job?%0A">anchor</a> is a mailto: with a mail body containing the above items.
+
+
+<!--#include virtual="/footer.inc" -->
+</td>
+</tr>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,20 @@
+{% if box_smaller %}
+<div class="col-sm-4">
+{% else %}
+<div class="col-sm-6">
+{% endif %}
+  <a href="{{box_link}}"{% if box_target_blank %} target="_blank"{% endif%}>
+    <div class="row service-wrapper">
+      <div class="col-sm-8">
+        <h3>{{box_title}}</h3>
+        <p>{{box_text}}</p>
+      </div>
+      <div class="col-sm-4">
+        <img src="{{box_image}}" alt="Read More" height="65"></img>
+      </div>
+    </div>
+  </a>
+</div>
+
+{% assign box_target_blank = false %}
+{% assign box_smaller = false %}

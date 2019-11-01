@@ -1,0 +1,319 @@
+---
+layout: 
+title: The Computational Geometry Algorithms Library
+tagline:
+---
+{% include JB/setup %}
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-US">
+<head>
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+  <META name="keywords" content="software,geometry,mesh generation">
+  <link rel="shortcut icon" href="cgal.ico">
+  <TITLE>CGAL - Computational Geometry Algorithms Library</TITLE>
+  <LINK REL=stylesheet TYPE="text/css" HREF="cgal.css">	
+</head>
+
+<body>
+<TABLE>
+<tr>
+
+<td class="menu" ALIGN="LEFT" VALIGN="TOP">
+
+<div class="menu">
+
+<p class="menu"> <A HREF="{{BASE_PATH}}/">Home</A> | <A HREF="https://cgal.geometryfactory.com/CGAL/Members/wiki/Main_Page">Intranet</A> </p>
+
+<h4 class="menu">Documentation</h4>
+  <p class="menu"> <A HREF="http://doc.cgal.org/latest/Manual/packages.html">Overview</A> </p>
+<!--
+  <p class="menu"> <A HREF="http://doc.cgal.org/latest/">Online&nbsp;Manual</A> </p>
+  <p class="menu"> <A HREF="http://doc.cgal.org/latest/Manual/installation.html">Installation&nbsp;Guide</A> </p>
+-->
+  <p class="menu"> <A HREF="http://doc.cgal.org/latest/">Online&nbsp;Manual&nbsp;(4.4)</A> </p>
+  <p class="menu"> <A HREF="http://doc.cgal.org/latest/Manual/installation.html">Installation&nbsp;Guide&nbsp;(4.4)</A> </p>
+  <p class="menu"> <A HREF="http://doc.cgal.org/4.5/">Online&nbsp;Manual&nbsp;(4.5-beta1)</A> </p>
+
+  <p class="menu"> <A HREF="{{BASE_PATH}}/Tutorials/">Tutorials</A> </p>
+  <p class="menu"> <A HREF="{{BASE_PATH}}/Manual/">All Manuals</A> </p>
+
+<h4 class="menu">Software</h4>
+  <p class="menu"> <A HREF="{{BASE_PATH}}/download.html">Download</A> </p>
+  <p class="menu"> <A HREF="{{BASE_PATH}}/license.html">License</A> </p>
+  <p class="menu"> <A HREF="{{BASE_PATH}}/philosophy.html">The CGAL Philosophy</A> </p>
+  <p class="menu"> <A HREF="{{BASE_PATH}}/bibliography.html">Acknowledging CGAL</A> </p>
+  <p class="menu"> <A HREF="{{BASE_PATH}}/in_progress.html">Work in Progress</A> </p>
+  <p class="menu"> <A HREF="{{BASE_PATH}}/releases.html">Release History</A> </p>
+
+<h4 class="menu">Support</h4>
+  <p class="menu"> <A HREF="{{BASE_PATH}}/FAQ.html">FAQ</A>
+  <p class="menu"> <A HREF="{{BASE_PATH}}/windows_installation.html">CGAL on Windows</A> </p>
+  <p class="menu"> <A HREF="{{BASE_PATH}}/platforms.html">Supported Platforms</A> </p>
+  <p class="menu"> <A HREF="{{BASE_PATH}}/bug_report.html">Reporting Bugs</A> </p>
+  <p class="menu"> <A HREF="{{BASE_PATH}}/mailing_list.html">Mailing Lists/Forums</A> </p>
+
+<h4 class="menu">Project</h4>
+  <p class="menu"> <A HREF="{{BASE_PATH}}/people.html">People</A> </p>
+  <p class="menu"> <A HREF="{{BASE_PATH}}/opensource.html">Getting Involved</A> </p>
+  <p class="menu"> <A HREF="{{BASE_PATH}}/project_rules.html">Rules</A> </p>
+  <p class="menu"> <A HREF="{{BASE_PATH}}/partners.html">Partners and Funding</A> </p>
+
+<h4 class="menu">More information</h4>
+  <p class="menu"> <A HREF="{{BASE_PATH}}/videos.html">Videos</A> </p>
+  <p class="menu"> <A HREF="{{BASE_PATH}}/events.html">Events</A> </p>
+  <p class="menu"> <A HREF="{{BASE_PATH}}/classes.html">Classes</A> </p>
+
+<h4 class="menu">Other Resources</h4>
+  <p class="menu"> <A HREF="{{BASE_PATH}}/projects.html">Projects Using CGAL</A> </p>
+  <p class="menu"> <A HREF="{{BASE_PATH}}/friends.html">3rd Party Software</A> </p>
+  <p class="menu"> <A HREF="{{BASE_PATH}}/other_sites.html">Related Links</A> </p>
+
+<h4 class="menu">Search</h4>
+<form action="http://www.google.com/cse" id="cse-search-box">
+<div>
+<input type="hidden" name="cx" value="016684789936342891908:egz6yjshmum" />
+<input type="hidden" name="ie" value="UTF-8" />
+<input id="string" name="q" size="20" maxlength="255" value="" type="text"><br>
+</div>
+</form>
+
+</div>
+
+</td>
+
+<td valign=top>
+    <CENTER>
+        <IMG SRC="{{BASE_PATH}}/images/cgal_large_FAF8E8.gif" ALT="CGAL">
+    </CENTER>
+    <CENTER>
+        <span class=subtitle>Computational Geometry Algorithms Library</span>
+    </CENTER>
+
+<CENTER>
+<TABLE BORDER=0 CELLPADDING=15 WIDTH="100%">
+<tr>
+<td WIDTH="70%">
+<p>
+The goal of the <a href="{{BASE_PATH}}/opensource.html">CGAL Open Source Project</a> is to provide
+<em>easy access to <a href="{{BASE_PATH}}/philosophy.html">efficient and reliable geometric algorithms</a></em>
+in the form of a C++ library.
+CGAL is used in various areas needing geometric computation, such as:
+computer graphics, scientific visualization, computer aided design and
+modeling, geographic information systems, molecular biology, medical imaging,
+robotics and motion planning, mesh generation, numerical methods...
+More on the <a href="{{BASE_PATH}}/projects.html">projects using CGAL</a> web page.</p>
+
+<p>The CGAL Project uses <em>Web 3.14</em> technology to make CGAL users more productive,
+and this far beyond just getting the programming job done.
+
+<h2>Tag Cloud</h2>
+
+<p>Simply forget wading through the lengthy <a href="http://www.cgal.org/Manual/latest/doc_html/cgal_manual/packages.html">CGAL Package Overview</a>, 
+but simply have a look at the CGAL tag cloud. It reflects 10 years of user access patterns, and features the 50 
+pages looked up by 86.2% of our visitors.</p>
+
+<!--
+begin tag cloud : generated by TagCrowd.com
+Feel free to modify as long as you keep this notice.
+
+EMBEDDING INSTRUCTIONS:
+1. Customize your cloud's style by editing the CSS where it says CUSTOMIZE below.
+2. Insert this code in its entirety into your webpage or blog post.
+
+This code and its rendered image are released under the Creative Commons Attribution-Noncommercial 3.0 Unported License. (http://creativecommons.org/licenses/by-nc/3.0/)
+
+For COMMERCIAL USE LICENSING, visit http://tagcrowd.com/licensing.html
+-->
+<style type="text/css"><!-- #htmltagcloud{
+
+/******************************************
+ * CUSTOMIZE CLOUD CSS BELOW (optional)
+ */
+	font-size: 100%;
+	width: auto;		/* auto or fixed width, e.g. 500px   */
+	font-family:'lucida grande','trebuchet ms',arial,helvetica,sans-serif;
+	background-color:#fff;
+	margin:1em 1em 0 1em;
+	border:2px dotted #ddd;
+	padding:2em; 
+/******************************************
+ * END CUSTOMIZE
+ */
+
+}#htmltagcloud{line-height:2.4em;word-spacing:normal;letter-spacing:normal;text-transform:none;text-align:justify;text-indent:0}#htmltagcloud a:link{text-decoration:none}#htmltagcloud a:visited{text-decoration:none}#htmltagcloud a:hover{color:white;background-color:#05f}#htmltagcloud a:active{color:white;background-color:#03d}.wrd{padding:0;position:relative}.wrd a{text-decoration:none}.tagcloud0{font-size:1.0em;color:#ACC1F3;z-index:10}.tagcloud0 a{color:#ACC1F3}.tagcloud1{font-size:1.4em;color:#ACC1F3;z-index:9}.tagcloud1 a{color:#ACC1F3}.tagcloud2{font-size:1.8em;color:#86A0DC;z-index:8}.tagcloud2 a{color:#86A0DC}.tagcloud3{font-size:2.2em;color:#86A0DC;z-index:7}.tagcloud3 a{color:#86A0DC}.tagcloud4{font-size:2.6em;color:#607EC5;z-index:6}.tagcloud4 a{color:#607EC5}.tagcloud5{font-size:3.0em;color:#607EC5;z-index:5}.tagcloud5 a{color:#607EC5}.tagcloud6{font-size:3.3em;color:#4C6DB9;z-index:4}.tagcloud6 a{color:#4C6DB9}.tagcloud7{font-size:3.6em;color:#395CAE;z-index:3}.tagcloud7 a{color:#395CAE}.tagcloud8{font-size:3.9em;color:#264CA2;z-index:2}.tagcloud8 a{color:#264CA2}.tagcloud9{font-size:4.2em;color:#133B97;z-index:1}.tagcloud9 a{color:#133B97}.tagcloud10{font-size:4.5em;color:#002A8B;z-index:0}.tagcloud10 a{color:#002A8B}.freq{font-size:10pt !important;color:#bbb}#credit{text-align:center;color:#333;margin-bottom:0.6em;font:0.7em 'lucida grande',trebuchet,'trebuchet ms',verdana,arial,helvetica,sans-serif}#credit a:link{color:#777;text-decoration:none}#credit a:visited{color:#777;text-decoration:none}#credit a:hover{color:white;background-color:#05f}#credit a:active{text-decoration:underline}// -->
+</style>
+
+<div id="htmltagcloud"> <span id="0" class="wrd tagcloud7"><a href="#tagcloud">2d</a></span> <span id="1" class="wrd tagcloud5"><a href="#tagcloud">3d</a></span> <span id="2" class="wrd tagcloud6"><a href="#tagcloud">algorithms</a></span> <span id="3" class="wrd tagcloud0"><a href="#tagcloud">allows</a></span> <span id="4" class="wrd tagcloud2"><a href="#tagcloud">arrangements</a></span> <span id="5" class="wrd tagcloud0"><a href="#tagcloud">bounding</a></span> <span id="6" class="wrd tagcloud10"><a href="#tagcloud">cgal</a></span> <span id="7" class="wrd tagcloud8"><a href="#tagcloud">citation</a></span> <span id="8" class="wrd tagcloud1"><a href="#tagcloud">computing</a></span> <span id="9" class="wrd tagcloud4"><a href="#tagcloud">convex</a></span> <span id="10" class="wrd tagcloud5"><a href="#tagcloud">data</a></span> <span id="11" class="wrd tagcloud4"><a href="#tagcloud">delaunay</a></span> <span id="12" class="wrd tagcloud6"><a href="#tagcloud">demo</a></span> <span id="13" class="wrd tagcloud5"><a href="#tagcloud">depends</a></span> <span id="14" class="wrd tagcloud2"><a href="#tagcloud">diagram</a></span> <span id="15" class="wrd tagcloud8"><a href="#tagcloud">entry</a></span> <span id="16" class="wrd tagcloud0"><a href="#tagcloud">framework</a></span> <span id="17" class="wrd tagcloud4"><a href="#tagcloud">functions</a></span> <span id="18" class="wrd tagcloud0"><a href="#tagcloud">geometry</a></span> <span id="19" class="wrd tagcloud1"><a href="#tagcloud">graph</a></span> <span id="20" class="wrd tagcloud1"><a href="#tagcloud">hulls</a></span> <span id="21" class="wrd tagcloud0"><a href="#tagcloud">implements</a></span> <span id="22" class="wrd tagcloud8"><a href="#tagcloud">introduced</a></span> <span id="23" class="wrd tagcloud0"><a href="#tagcloud">kernel</a></span> <span id="24" class="wrd tagcloud2"><a href="#tagcloud">lgpl</a></span> <span id="25" class="wrd tagcloud8"><a href="#tagcloud">license</a></span> <span id="26" class="wrd tagcloud3"><a href="#tagcloud">mesh</a></span> <span id="27" class="wrd tagcloud2"><a href="#tagcloud">michael</a></span> <span id="28" class="wrd tagcloud2"><a href="#tagcloud">nef</a></span> <span id="29" class="wrd tagcloud1"><a href="#tagcloud">number</a></span> <span id="30" class="wrd tagcloud1"><a href="#tagcloud">objects</a></span> <span id="31" class="wrd tagcloud0"><a href="#tagcloud">offers</a></span> <span id="32" class="wrd tagcloud4"><a href="#tagcloud">operations</a></span> <span id="33" class="wrd tagcloud8"><a href="#tagcloud">package</a></span> <span id="34" class="wrd tagcloud0"><a href="#tagcloud">pion</a></span> <span id="35" class="wrd tagcloud7"><a href="#tagcloud">point</a></span> <span id="36" class="wrd tagcloud3"><a href="#tagcloud">polygons</a></span> <span id="37" class="wrd tagcloud2"><a href="#tagcloud">polyhedra</a></span> <span id="38" class="wrd tagcloud5"><a href="#tagcloud">provides</a></span> <span id="39" class="wrd tagcloud7"><a href="#tagcloud">qpl</a></span> <span id="40" class="wrd tagcloud1"><a href="#tagcloud">queries</a></span> <span id="41" class="wrd tagcloud1"><a href="#tagcloud">segment</a></span> <span id="42" class="wrd tagcloud3"><a href="#tagcloud">sets</a></span> <span id="43" class="wrd tagcloud0"><a href="#tagcloud">sphere</a></span> <span id="44" class="wrd tagcloud5"><a href="#tagcloud">structure</a></span> <span id="45" class="wrd tagcloud6"><a href="#tagcloud">surface</a></span> <span id="46" class="wrd tagcloud0"><a href="#tagcloud">sylvain</a></span> <span id="47" class="wrd tagcloud5"><a href="#tagcloud">triangulation</a></span> <span id="48" class="wrd tagcloud1"><a href="#tagcloud">vertices</a></span> <span id="49" class="wrd tagcloud1"><a href="#tagcloud">voronoi</a></span> </div><div id="credit">created at <a href="http://tagcrowd.com">TagCrowd.com</a></div>
+
+<!-- end tag cloud : generated by TagCrowd.com : please keep this notice -->
+
+
+
+<table>
+
+
+
+
+<tr>
+<td><p>&nbsp;</p></td>
+</tr>
+
+<tr>
+<td valign="top">
+<h2>Social Networks</h2>
+<p>Websites without Facebook's "Like" or Google's "+1" button will end up with a Google page rank of zero. 
+
+<p>Starting from today, you can recommend CGAL from plenty of social networks.
+
+
+<p>In the next release we will roll out the "Like" button to every chapter of the CGAL User and Reference Manual. 
+You will see who else likes <a href="http://www.cgal.org/Manual/latest/doc_html/cgal_manual/packages.html#Pkg:AlgebraicFoundations">"Algebraic Foundations"</a>.</p>
+
+<p>Interested to see what we currently work on? Follow us on <a href="http://www.twitter.com/TheCGALProject">www.twitter.com/TheCGALProject</a>.
+</p>
+
+</td>
+<td>
+
+<iframe src="http://www.facebook.com/plugins/like.php?href=www.cgal.org&amp;layout=standard&amp;show_faces=false&amp;width=450&amp;action=recommend&amp;font=tahoma&amp;colorscheme=light&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowTransparency="true"></iframe><br>
+ <a href="http://www.youtube.com/watch?v=OAyUNI3_V2c&feature=player_embedded"><img src="img/cool.png"></a>
+<a href="http://www.twitter.com/TheCGALProject"><img src="img/twiiter.png"></a> <br>
+<a href="http://wd.sharethis.com/share5x/page.html?destination=stumbleupon&url=http%253A%252F%252Fwww.salon.com%252Fentertainment%252Fcomics%252Fthis_modern_world%252F2011%252F03%252F08%252Fthis_modern_world&title=What%2520drives%2520our%2520non-acquiescing%2520educators%253F&publisher=808276df-fbad-481d-8c60-7b71f3cb8b74"><img src="img/social.png"</img></a>
+</td>
+<td>
+sponsored link<br>
+<img src="img/classified.png">
+</td>
+</tr>
+
+<tr>
+<td valign="top">
+<h2>Internet Relay Chat, Skype Screensharing</h2>
+
+<p>The CGAL Project enters a new era. So far you could only reach us via the <em>cgal-discuss</em> mailing list.
+<p>In the next days we will open the CGAL IRC channel. Additionally, you will see the skype online status of the
+CGAL developers listed on the <a href="people.html">Project Members</a> page. Speak to them
+directly when you hit a bug, and even show them the stacktrace in Visual Sudio using skype screensharing. 
+</p>
+</td>
+<td>
+<img src="img/mirc.png">
+</td>
+<td>
+sponsored link<br>
+<img src="img/cloud.png">
+</td>
+</tr> 
+
+
+<tr>
+<td><p>&nbsp;</p></td>
+</tr>
+
+<tr>
+<td valign="top">
+<h2>Amazon</h2>
+<p>You are a Fortran programmer and you find that Barne Stroustroup's book on C++ has too many pages? You are not alone. 
+
+<p>The CGAL Project has teamed up with <a href="http://www.amazon.com">Amazon</a> and worked out the Listmania list of <em>Must Have Books for Mastering CGAL</em>.</p>
+</td>
+<td>
+<img src="img/C++ForDummies.png">
+</td>
+<td>
+sponsored link<br>
+<img src="img/hsbc.png">
+</td>
+</tr>
+
+
+<tr>
+<td><p>&nbsp;</p></td>
+</tr>
+
+<tr>
+<td valign="top">
+<h2>Ebay</h2>
+<p>You have a commercial license for the CGAL <em>Range and Segment Tree</em> package
+and you want to resell it, as it turned out that what you really need is an <em>AABB tree</em>?
+
+<p>The CGAL Project has teamed up with <a href="http://www.ebay.com">Ebay</a>, to make it easier for you to
+sell components you no longer need.
+</td>
+<td>
+<img src="img/ebay.png">
+</td>
+<td>
+sponsored link<br>
+<img src="img/earth.png">
+</td>
+</tr>
+
+
+
+<tr>
+<td><p>&nbsp;</p></td>
+</tr>
+
+<tr>
+<td valign="top">
+<h2>Centre Pompidou</h2>
+<p>Most people only associate triangulations with the word "Delaunay".
+
+<p>The CGAL Project offers 10 Day Passes for the Museum of Modern Art in the
+ <a href="http://www.centrepompidou.fr/">Centre Pompidou</a> in Paris,
+which will allow you to learn more about not only
+<a href="http://en.wikipedia.org/wiki/Sonia_Delaunay">Sonia Delaunay</a>,
+but also about Pablo Voronoi, and Vladimir Minkowski.
+
+</td>
+<td>
+<img src="img/Delaunay.jpg"</img>
+</td>
+<td>
+sponsored link<br>
+<img src="img/audi.png">
+</td>
+</tr>
+
+
+
+<tr>
+<td><p>&nbsp;</p></td>
+</tr>
+
+<tr><td valign="top">
+<h2>Parship</h2>
+<p>
+CGAL users are often nerds, make jokes about the curiously recursive template pattern, and have a hard time to make friends.</p>
+
+<p>The CGAL Project teamed up with <a href="http://www.parship.com">Parship</a> in order to find the partner 
+for your life.  
+
+<p>Parship uses higher dimensional CGAL Voronoi diagrams to identify people with strong affinities.
+</p>
+</td>
+<td><img src="img/parship.png">
+</td>
+<td>
+sponsored link<br>
+<img src="img/mastercard.png">
+</td>
+</tr>
+
+
+
+</table>
+
+</TABLE>
+
+</CENTER>
+
+
+</td>
+</tr>
+</TABLE>
+
+</body>
+</html>

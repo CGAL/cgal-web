@@ -1,0 +1,371 @@
+---
+layout: page
+title: CGAL Projects for Google Summer of Code 2014
+header: CGAL Projects for Google Summer of Code 2014
+group: navigation
+---
+{% include JB/setup %}
+
+<script type="text/javascript">
+function mailto_link(em1,em2,em3,name,subject)
+{
+  document.write('<a href="mailto:'+em1+'@'+em2+'.'+em3+'?Subject=[GSOC14] '+subject+'">'+name+'<\/a>');
+}
+</script>
+
+<p>
+As in 2010, 2011, 2012 and 2013 the CGAL Project is a mentoring organization of the  <a href="http://code.google.com/soc/">Google Summer of Code</a>.
+On this page we present some project ideas as well the <a href="#information">information applicants have to provide us</a>.
+GSoC applicants are welcome to propose other ideas and check if a mentor is interested in supervising it.
+</p>
+
+<br>
+<p>Previous project ideas of the CGAL project for the <b>Google Summer of Code</b> can be found on the following pages:
+<a href="2010.html">2010</a>, <a href="2011.html">2011</a>,
+<a href="2012.html">2012</a>, <a href="2013.html">2013</a>.</p>
+
+<p><b>Before sending an email to anybody, please carefully read <a href="#information"> this section</a>.</b></p>
+
+
+<h3>Summary:</h3>
+
+<p>
+First section to read: <a href="#information">Information Candidates Should Supply</a>
+</p>
+
+<ol>
+  <li> <a href="#p1">Use Embree for Ray Shooting</a>
+  <li> <a href="#p2">Adding Better I/O for the CGAL Library</a>
+  <li> <a href="#p3">Fixes to the 2D Arrangements Package</a>
+  <li> <a href="#p4">Support for Qt5</a>
+  <li> <a href="#p5">Adding a Parallel Version of the Edge Simplification Algorithm</a>
+  <li> <a href="#p6">Enhancing the Upcoming Visibility Package</a>
+  <li> <a href="#p7">Implementing a Shortest Path on Polyhedron Algorithm</a>
+  <li> <a href="#p8">Intersection of Half-Spaces and Computation of the Voronoi-covariance Measure of a Point Set</a>
+  <li> <a href="#p9">Finalization of the Implementation of a 2D Reconstruction and Simplification Algorithm from Point Set</a>
+  <li> <a href="#p10">BGL for Combinatorial Maps and Linear Cell Complex</a>
+  <li> <a href="#p11">Enhancing the Plane-Sweep Framework for Arrangements</a>
+  <li> <a href="#p12">Adding a package for constructing exact Yao graphs to CGAL</a>
+</ol>
+
+<h2 id="p1">Use Embree for Ray Shooting</h2>
+<p>
+<b>Mentor(s)</b>:
+<script type="text/javascript">
+  mailto_link("andreas.fabri","geometryfactory","com","Andreas Fabri","Use Embree for Ray Shooting")
+</script>
+from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+</p>
+<h3>Project description:</h3>
+<p>
+The Embree project has a low level API for ray shooting queries. First benchmarks show that Embree is faster than the CGAL AABB Tree. This is partially due to the use of vector operations.  The goal of this GSoC project is twofold. First, we want to allow to use Embree, for example in the mesh generator. Second the student should introduce vector operations in the AABB Tree.
+</p><p><b>Required Skills:</b> parallel vector operations, C++ templates
+</p>
+
+<h2 id="p2">Adding Better I/O for the CGAL Library</h2>
+<p>
+<b>Mentor(s)</b>:
+<script type="text/javascript">
+  mailto_link("andreas.fabri","geometryfactory","com","Andreas Fabri","Adding better I/O for the CGAL library")
+</script>
+from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+</p>
+<h3>Project description:</h3>
+<p>
+The goal of this project is to add some wrapper to allow CGAL to read/write different
+classical input files.
+</p><p>The obvious things we see that is missing are:
+</p>
+<ul><li> vtk data structures (unstructured grids, poly data, ...)
+</li><li> MRI file formats for the meshing algorithms: Nifti (.nifti), Gis (.img, .hdr), vtk
+</li><li> GIS file formats (WKT, GML, GeoJSON, ...)
+</li></ul>
+<p>The goal is not necessarily to re-implement these readers/writers but rely on existing software with a license compatible with CGAL
+</p><p>
+<b>Required Skills:</b> vtk, C++ templates, cmake
+</p>
+
+<h2 id="p3">Fixes to the 2D Arrangements Package</h2>
+<p>
+<b>Mentor(s)</b>:
+<script type="text/javascript">
+  mailto_link("efifogel","gmail","com","Efi Fogel","Fixes to the 2D Arrangements Package")
+</script>
+from the <a href="http://acg.cs.tau.ac.il/people">Applied Computational Geometry Lab</a>,  Tel Aviv University
+</p>
+<h3>Project description:</h3>
+<p>
+Fix and enhance various small features in the 2D Arrangements package:
+</p>
+<ul><li> Implement Naive Ray Shooting.
+</li><li> Fix all point location strategies to work with all traits class.
+</li><li> Fix the demo to support polylines and enhance it to support the algebraic traits.
+</li><li> Replace CGAL::Object with boost::variant
+</li><li> Augment the polyline traits.
+</li></ul>
+<p><b>Required Skills:</b> Qt4, C++ templates
+</p><p>
+</p>
+
+<h2 id="p4">Support for Qt5</h2>
+<p>
+<b> Mentor(s)</b>:
+<script type="text/javascript">
+  mailto_link("laurent.rineau","cgal","org","Laurent Rineau","Support for Qt5")
+</script>
+from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+and
+<script type="text/javascript">
+  mailto_link("guillaume.damiand","liris.cnrs","fr","Guillaume Damiand","Support for Qt5")
+</script>
+from <a href="http://liris.cnrs.fr/gdamiand/">(CNRS/Universit&eacute; de Lyon)</a>
+</p>
+<h3>Project description:</h3>
+<p>
+In short: Add support for Qt5 and keep the support for Qt4 in CGAL demos.
+</p>
+<p>CGAL has a support for Qt4, and all its demos are written using Qt4
+(without the Qt3Support module). Now that Qt5 is released (and even at
+version 5.2), it is time to support that new version. The objective of this
+project is to design the code of
+the <a href="http://doc.cgal.org/latest/GraphicsView/index.html">CGAL
+Graphics View package</a>, and CGAL demos, so that they can be compiled
+both with Qt4 and Qt5. The <a href="http://www.cmake.org">CMake scripts</a>
+will also have to be adapted so that they can use either Qt4 or Qt5.
+</p>
+<p><b>Required Skills:</b> C++, Qt4, Qt5, CMake
+</p>
+
+<h2 id="p5">Adding a Parallel Version of the Edge Simplification Algorithm</h2>
+<p>
+<b>Mentor(s)</b>:
+<script type="text/javascript">
+  mailto_link("sloriot.ml+gsoc","gmail","com","S&eacutebastien Loriot","Adding a parallel version of the edge simplification algorithm")
+</script>
+from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+and
+<script type="text/javascript">
+  mailto_link("clement.jamin.pro","gmail","com","Cl&eacutement Jamin","Adding a parallel version of the edge simplification algorithm")
+</script>
+from <a href="http://www-sop.inria.fr/geometrica/">Inria Sophia-Antipolis</a>
+</p>
+<h3>Project description:</h3>
+<p>
+CGAL has a triangulated surface mesh edge simplification <a href="http://doc.cgal.org/latest/Surface_mesh_simplification/index.html">package</a>
+based on the paper
+</p>
+<i>Peter Lindstrom and Greg Turk. Fast and memory efficient polygonal simplification. In IEEE Visualization, pages 279-286, 1998.</i>
+<p>
+The goal of this project is to use a modified version of this algorithm to allow edges of a mesh to be simplified using parallel threads.
+</p><p><b>Required Skills:</b> C++, Intel TBB
+</p>
+
+<h2 id="p6">Enhancing the Upcoming Visibility Package</h2>
+<p>
+<b>Mentor(s)</b>:
+<script type="text/javascript">
+  mailto_link("mhsaar","googlemail","com","Michael Hemmer","Enhancing the upcoming Visibility package")
+</script>
+from <a href="http://www.ibr.cs.tu-bs.de">TU Braunschweig</a>
+</p>
+<h3>Project description:</h3>
+<p>
+</p><p>During GSoC 2013 we started a package for visibility computation within 2D polygons.
+The goal of this project is to enhance the currently implemented algorithms
+(see <i>Efficient Computation of Visibility Polygons; EuroCG'14; Francisc Bungiu, Michael Hemmer, John Hershberger, Kan Huang and Alexander Kröller.</i>
+Specifically, the triangular expansion algorithm should be parallelized.
+</p><p><b>Required Skills:</b> C++, Intel TBB
+</p>
+
+<h2 id="p7">Implementing a Shortest Path on Polyhedron Algorithm</h2>
+<p>
+<b>Mentor(s)</b>:
+<script type="text/javascript">
+  mailto_link("sloriot.ml+gsoc","gmail","com","S&eacutebastien Loriot","Implementing a Shortest Path on Polyhedron Algorithm")
+</script>
+from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+and
+&Eacute;ric Colin de Verdi&egrave;re from <a href="http://www.di.ens.fr/~colin/">ENS</a>
+</p>
+<h3>Project description:</h3>
+<p>
+The goal of this project is to implement the following shortest path algorithm into CGAL:
+</p>
+<i> Chen, J., &amp; Han, Y. (1996). Shortest paths on a polyhedron, Part I: Computing shortest paths. International Journal of Computational Geometry &amp; Applications, 6(02), 127-144</i>.
+<p>The implementation can be limited to manifold surface and must use the <a rel="nofollow" class="external text" href="http://doc.cgal.org/latest/BGL/index.html">Boost Graph Library extension of CGAL</a>.
+If time allows an extension of this work could be the implementation of the intrinsic Voronoi diagram.
+</p><p><b>Required Skills:</b> Computational Geometry, C++, Template programming
+</p>
+
+<h2 id="p8">Intersection of Half-Spaces and Computation of the Voronoi-covariance Measure of a Point Set</h2>
+<p>
+<b>Mentor(s)</b>:
+<script type="text/javascript">
+  mailto_link("quentin.merigot","imag","fr","Quentin M&eacuterigot","Intersection of Half-Spaces and Computation of the Voronoi-covariance measure of a Point Set")
+</script>
+  from <a href="http://quentin.mrgt.fr/">CNRS/University of Grenoble</a>
+and
+<script type="text/javascript">
+  mailto_link("sloriot.ml+gsoc","gmail","com","S&eacutebastien Loriot","Intersection of Half-Spaces and Computation of the Voronoi-covariance measure of a Point Set")
+</script>
+from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+</p>
+<h3>Project description:</h3>
+<p>
+The first goal of this project is to implement a robust intersection of a set of half-space.
+Several methods might be implemented as efficiency is very important.
+</p><p>The second goal is to use this primitive to implement the Voronoi-covariance measure of a point set,
+which can be used for robust estimation of geometric quantities from point clouds (eg. normal, sharp features, etc.).<br>
+More details are provided in the following paper:
+</p>
+<i><a rel="nofollow" class="external text" href="http://quentin.mrgt.fr/files/research/vcm.pdf">Voronoi-based Curvature and Feature Estimation from Point Clouds.</a> Q. M&eacute;rigot, M. Ovsjanikov, L. Guibas, IEEE Transactions on Visualization and Computer Graphics 17 (6) 743-756, 2011.</i>
+<p><b>Required Skills:</b> Notions of Computational Geometry, C++, Generic Programming</p>
+
+<!--PROJECT START-->
+<h2  id="p9">Finalization of the implementation of a 2D Reconstruction and Simplification Algorithm from Point Set</h2>
+<strong>Mentors:</strong>
+  Pierre Alliez from <a href="http://www-sop.inria.fr/members/Pierre.Alliez/">Inria Sophia-Antipolis</a>
+and
+  <script type="text/javascript">
+    mailto_link("sloriot.ml+gsoc","gmail","com","Sebastien Loriot","Finalization of the implementation of a 2D Reconstruction and Simplification Algorithm from Point Set")
+  </script>
+  from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+<h3>Project Description</h3>
+<p>This project consists in going to the submission of a new package to CGAL. The student will start from the prototype code
+of the following paper by De Goes and Cohen-Steiner and Alliez and Desbrun:
+<ul>
+<li>  An optimal transport approach to robust reconstruction and simplification of 2D shapes, in Computer Graphics Forum (proceedings of EUROGRAPHICS Symposium on Geometry Processing), 30, 5, 1593-1602, 2011
+</ul>
+<p>The purpose of this project is to understand the code written for this research paper, propose a suitable API and update the code accordingly, write a demo, write the documentation into CGAL style, and submit
+the package to the Editorial Board for review. Of course, the student is invited to perform an extra optimization of the code and to propose new ideas to improve the algorithm. This project is particularly interesting to show what we usually call ''the extra mile'' to turn a code written for a research paper into a documented and publicly distributable code.</p>
+<strong>Required skills:</strong> Generic Programming, C++, QT4 (GraphicsView Framework), Computational Geometry is a plus.
+<!--PROJECT END-->
+
+<h2 id="p10">BGL for Combinatorial Maps and Linear Cell Complex</h2>
+<p>
+<b>Mentor(s)</b>:
+<script type="text/javascript">
+  mailto_link("guillaume.damiand","liris.cnrs","fr","Guillaume Damiand","BGL for Combinatorial Maps and Linear Cell Complex")
+</script>
+from <a href="http://liris.cnrs.fr/gdamiand/">(CNRS/Universit&eacute; de Lyon)</a>
+and
+<script type="text/javascript">
+  mailto_link("andreas.fabri","geometryfactory","com","Andreas Fabri","BGL for Combinatorial Maps and Linear Cell Complex")
+</script>
+from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+</p>
+<h3>Project description:</h3>
+<p>
+This project consists in developing the traits class allowing to use Combinatorial map and Linear cell complex data structures as model of Boost Graph Concept.
+</p><p>The new traits class will be developed by taking the similar existing class for <code>Halfedge_data_structure</code> and <code>Polyhedron_3</code> (which are very similar than Combinatorial map and Linear cell complex of dimension 2). Validation of the class will be done through tests using existing geometrical algorithms in CGAL defined on the Boost Graph Concept, such as the Triangulated Surface Mesh Simplification package for example.
+</p><p><b>Required Skills:</b> Generic Programming, C++, Boost.
+</p>
+
+
+<h2 id="p11">Enhancing the Plane-Sweep Framework for Arrangements </h2>
+<p>
+<b>Mentor(s)</b>:
+<script type="text/javascript">
+  mailto_link("efifogel","gmail","com","Efi Fogel","Enhancing the Plane-Sweep Framework for Arrangements")
+</script>
+from the <a href="http://acg.cs.tau.ac.il/people">Applied Computational Geometry Lab</a>,  Tel Aviv University
+and
+<script type="text/javascript">
+  mailto_link("mhsaar","googlemail","com","Michael Hemmer","Enhancing the Plane-Sweep Framework for Arrangements")
+</script>
+from <a href="http://www.ibr.cs.tu-bs.de">TU Braunschweig</a>
+</p>
+<h3>Project description:</h3>
+<p>Expose the plane-sweep class-template of the <i>2D Arrangements</i>
+package to the public, so that other users can implement their own
+concrete algorithms. This requires revisiting the visitor concept,
+improving the code so that there is a clear distinction between code
+that requires exact construction and code that does not, implementing
+tests, developing additional examples, and writing the appropriate
+documentation.</p>
+
+<p><b>Required Skills:</b> Generic Programming, C++, Sweep-line framework.
+</p>
+
+
+
+
+<h2 id="p12">Adding a package for constructing exact Yao graphs to CGAL</h2>
+<p>
+<b>Mentor(s)</b>:
+<script type="text/javascript">
+  mailto_link("mhsaar","googlemail","com","Michael Hemmer","Adding a package for constructing Yao graph to CGAL")
+</script>
+from <a href="http://www.ibr.cs.tu-bs.de">TU Braunschweig</a>
+and
+<script type="text/javascript">
+  mailto_link("w.si","uws","edu.au","Weisheng Si","Adding a package for constructing Yao graph to CGAL")
+</script>
+from <a href="https://www.uws.edu/">University of Western Sydney </a>
+</p>
+<h3>Project description:</h3>
+<p>
+The goal of this project is to add a package for constructing exact Yao graphs to CGAL. The definition of the Yao graph is simple: given a set of points <i>S</i> on the plane and an integer <i>k</i>, each point in <i>S</i> divides the plane into <i>k</i> equally-angled cones of angle <i>2Pi/k</i> and establishes an edge to its closest neighbor in each cone. The algorithm used to construct Yao graph in this project will be a sweep-line algorithm similar to the
+famous Fortune's algorithm for constructing Voronoi Diagrams. The challenging part is that the  code should be written such that it is optional whether the constructed graph is the exact one, that is, without mistakes due to rounding errors. This is not trivial since the rays subdividing the cones are defined over algebraic extension fields what depend on the chosen <i>k</i>. 
+</p>
+
+<p><b>Required Skills:</b> Generic Programming, C++, Sweep-line framework.
+</p>
+
+
+
+
+<h2 id="information">Information Candidates Should Supply</h2>
+
+<p>The application process has several steps. Before contacting anybody verify that you are eligible, that is
+that you are enrolled as student, don't get a tuition fee, etc. The next step is to contact the mentor
+of the project you are interested in. You have to convince him that you are the right person to get the job
+done. The next step is to work out more details and to contact the mentoring organization by providing
+the following information by email to <a href="mailto:gsoc-cgal@lists-sop.inria.fr">gsoc-cgal@lists-sop.inria.fr</a></p>
+
+
+
+
+
+<h3>Project</h3>
+<ol>
+<li> Select a project in the list and provide your personal and detailed description. If you wish to work on another idea of your own, we are pretty open as long as this serves the goal of consolidating CGAL as a whole.
+<li> Provide a proposal of a technical solution with your envisioned methodology. The more detailed the better.
+<li> Explain how the solution will be available to the user, in which form. Do not forget the documentation, unitary tests and cross-platform aspects.
+<li> Provide a realistic schedule with objectives (one every two weeks for example) and deadlines. Focus on mid-term objectives as well as on the final evaluation.
+<li> Provide a formal commitment that you will be involved full time on the GSoC. This is absolutely mandatory.
+</ol>
+
+<h3>Personal data</h3>
+<ol>
+<li> First name, last name, affiliation and geographical location.
+<li> A brief list of the main studies and programming courses attended, with ranking.
+<li> List of the most important software projects contributed and success.
+<li> Which are your best skills in terms of programming and scientific computing?
+<li> In general what is your taste in terms of programming? language, methodology, team work, etc.
+<li> Is there anything that prevents you from working full time on the project during the program period?
+<li> How do you see your involvement after the program ends? Do you see yourself pushing the project further, or do you see yourself contributing to other CGAL projects?
+<li> Are you more interested in the theory/scientific aspect of CGAL, or do you feel more like a hacker?
+<li> What are your long-term wishes in terms of job?
+</ol>
+
+<h3>A mailto:</h3>
+
+<p>This
+<a href="mailto:gsoc-cgal@inria.fr?subject=GSOC-2014&amp;body=%0AProject%0A%0A
+* Select a project in the list and provide your personal and detailed description. %0A
+* Provide a proposal of a technical solution with your envisioned methodology. The more detailed the better.%0A
+* Explain how the solution will be available to the user, in which form. Do not forget the documentation, unitary tests and cross-platform aspects.%0A
+* Provide a realistic schedule with objectives (one every two weeks for example) and deadlines. Focus on mid-term objectives as well as on the final evaluation.%0A
+* Provide a formal commitment that you will be involved full time on the GSoC. This is absolutely mandatory.%0A%0A
+
+Personal data%0A%0A
+* First name, last name, affiliation and geographical location.%0A
+* A brief list of the main studies and programming courses attended, with ranking.%0A
+* List of the most important software projects contributed and success.%0A
+* Which are your best skills in terms of programming and scientific computing?%0A
+* In general what is your taste in terms of programming? language, methodology, team work, etc.%0A
+* Is there anything that prevents you from working full time on the project during the program period?%0A
+* How do you see your involvement after the program ends? Do you see yourself pushing the project further, or do you see yourself contributing to other CGAL projects?%0A
+* Are you more interested in the theory/scientific aspect of CGAL, or do you feel more like a hacker?%0A
+* What are your long-term wishes in terms of job?%0A">anchor</a> is a mailto: with a mail body containing the above items.

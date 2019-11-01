@@ -1,0 +1,26 @@
+---
+layout: page
+title: Download CGAL for Mac OS X
+header: Download CGAL for Mac OS X
+group: navigation
+---
+{% include JB/setup %}
+
+<h2>With a Package Manager</h2>
+
+You can use either <a href="https://www.macports.org/" target="_blank">macports</a> or <a href="http://brew.sh/" target="_blank">homebrew</a> to get CGAL on Mac OS X.
+
+<pre>
+# using macports
+sudo port install cgal
+sudo port install cgal +qt4 +universal +demos # with the demos
+
+# using homebrew
+brew install cgal
+</pre>
+
+<h2>Build from Source on UNIX-Like Systems</h2>
+<p>
+To build CGAL from source on Mac OS X you have to <a href="https://gforge.inria.fr/frs/?group_id=52" target="_blank">download a release as a tarball</a> or you can clone the current development version of CGAL from <a href="https://github.com/CGAL/cgal" target="_blank">GitHub</a>. The build process is documented in the <a href="http://doc.cgal.org/latest/Manual/installation.html" target="_blank">Installation Manual</a>.</p>
+
+<p>Please note that the directory layout and build process of the development version on GitHub are different from the release version.</p>

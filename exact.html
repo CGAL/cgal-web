@@ -1,0 +1,164 @@
+---
+layout: page
+title: The Exact Computation Paradigm
+header: The Exact Computation Paradigm
+group: navigation
+---
+{% include JB/setup %}
+<P>
+For the impatient reader, let us get to the bottom line right away:
+<P>
+
+CGAL produces correct results, in spite of intermediate roundoff
+errors. If three lines meet in one point, they will do so in CGAL as
+well, and if a fourth line misses this point by 1.0e-380, then it also
+misses it in CGAL. Situations that are sometimes tagged as
+"degenerate" (like a 3-D point set actually living in a 2-D plane) are
+properly handled by CGAL. In fancy terms, this is called the <EM>exact
+computation paradigm</EM>, and it ultimately relies on computing with
+numbers of arbitrary precision. The exact computation paradigm is not
+an invention of CGAL, but CGAL is probably <EM>the</EM> place that
+implements it at a large scale.<P>
+
+Such guaranteed correctness requires that CGAL is properly used (see
+the <A HREF="FAQ.html#inexact_NT">FAQ section on using inexact number
+types</A>), and it comes at a price: compared to algorithms that use
+fixed-precision numbers only, the performance is lower. In the best
+case (as in computing Delaunay triangulations in 3-space), the
+overhead is around 25%. This is possible because CGAL tracks <EM>error
+bounds</EM> and resorts to extended precision only when this is really
+needed.<P>
+
+Computing arrangements of segments is an application that is more
+demanding with respect to extended precision, and the overhead may
+increase to 80%. In other applications, the price of exact computation
+can grow well beyond that. But whatever the price: if you decide to
+pay it, you will not have to worry about robustness issues.<P>
+
+It may well be that you don't worry about robustness issues anyway,
+maybe because your favorite geometric software has never let you down
+in this respect. You may just have been lucky in this case: robustness
+in geometric computing is a delicate issue that is not amenable to the
+usual numerical methods that are successful in other fields. If you
+want to understand why even your favorite geometric software may fail,
+and how CGAL solves the robustness problem, you are now welcome among
+the more patient readers.<P>
+
+<H3>Robustness: The Simple Approach</H3>
+<P>
+In working with real numbers on real computers, there is one basic
+rule: never compare two floating-point numbers for true equality. In
+theory, you might be able to deduce that they are the same, but due to
+roundoff, they always turn out slightly different.<P>
+
+You certainly know this, and you also know a simple approach for
+solving the problem in practice: if the two numbers differ by less
+than some small tolerance, treat them as equal. This often works, but
+you can never be sure about it. <P>
+
+<H3>The Numerical Approach</H3>
+
+<P>
+If roundoff may accumulate, the simple approach definitely fails, but
+you know that there are well-established and reliable techniques from
+numerical analysis to control roundoff and get robust code. So you
+assume that the makers of high-quality geometric software have made
+their homework and get this right.<P>
+
+But in spite of all efforts, they sometimes don't. There are two
+problems here: first of all, most of the above-mentioned techniques to
+fight roundoff apply to <EM>numerical</EM> computing (things like
+solving systems of linear equations), where answers that are slightly
+off are acceptable. Such numerical computations are frequent in many
+fields, among them computer graphics and image processing. The field
+of <EM>geometric</EM> computing is different and comparatively new; a
+full arsenal of numerical weapons simply does not exist.<P>
+
+The second and deeper problem is that numerical weapons are <EM>per
+se</EM> less effective in geometric computing than they are in other
+fields. In geometry, we don't compute numbers but structures: convex
+hulls, triangulations, etc. In building these structures, the
+underlying algorithms ask questions like "is a point to the left, to
+the right, or on the line through two other points?" Such questions
+have no answers that are "slightly off". Either you get it right, or
+you don't. And if you don't, the algorithm might go completely astray.
+Even the most fancy roundoff control techniques don't help here: it's
+primarily a <EM>combinatorial</EM> problem, not a numerical one. <P>
+
+<P>Makers of geometric software know the issue, of course, and they take
+precautions. But in the best case, these only work most of the time,
+in the situations encountered by the "typical" user of the software.
+But your application is special, and it may just happen that the code
+goes astray on your data. This will result in considerably wrong
+output, or even crashes of the code. The problem is amplified by the
+fact that geometric software is in many cases just a by-product of
+computer graphics software, and as such, it does not specifically
+target at geometric computing.<P>
+
+<H3>The CGAL Approach</H3>
+<P>
+Here is where CGAL is different. We concentrate on the geometry (after
+all, that's what we do best), and the CGAL algorithms themselves don't
+contain any numerical security measures to keep them from going
+astray. At first sight, this may look like being different in the
+wrong direction; indeed, naive use of CGAL may result in all the
+robustness problems indicated above, including crashes at runtime. <P>
+
+But if CGAL is properly used, the issues of roundoff and its
+combinatorial consequences completely disappear. Here is how it works:
+In CGAL, we write the high-level algorithms in terms of a well-chosen
+set of basic questions (where is a point with respect to a line?) and
+basic objects (like a circle through three points). Doing this in the
+right way is not always easy, but once it is done, we have outsourced
+all the numerical issues, and we only have to make sure that the part
+of CGAL concerned with the basics returns correct results. Given this,
+the algorithms on top of it just work. Not in most cases, but always!<P>
+
+Getting the underlying basics always right must obviously involve
+something beyond naive floating-point computations, and it indeed
+does. The details are pretty complex, but what essentially happens is
+that we increase the numerical precision of the computations, if
+necessary, by using numbers that in principle allow arbitrary
+precision. These techniques are constantly being refined, with the
+goal of increasing the overall performance of the high-level
+algorithms under the exact computation paradigm.<P>
+
+<H3>What Does It Mean For You?</H3>
+<P>
+The important thing for you to know is that you don't have to know
+about it. It all works automatically and behind the scenes.<P>
+
+Well, almost. If you look at an example program in CGAL, it typically
+starts with a long sequence of typedef declarations, and even not
+taking this into account, the program may look somewhat more
+complicated than what you expect from its functionality. This is to
+some extent a consequence of CGAL's exact computation paradigm.<P>
+
+The chain of typedefs is necessary in order to choose the appropriate
+parameters for the algorithm. The numerical robustness handling does
+not happen in the algorithm itself, but in its basic questions and
+objects. CGAL offers many different ways of getting these basics
+right, and which one is the best depends on the concrete
+application. That's why you have to choose. But in most cases, you can
+simply work with the settings that you find in the example program
+closest to your intended application, and you will be fine.<P>
+
+
+Once you get to the actual code, it's also some functionality that
+looks unnecessarily complicated. For example, distance computations in
+CGAL return the squared distance instead of what you really want to
+know, namely the plain distance. Couldn't CGAL take care of the final
+square root computation itself? If you have followed the previous
+discussion, you will be with us when we say "no". The result of
+applying a square root is usually an irrational number with infinite
+precision, so all that CGAL could do is give you an approximation. (We
+<EM>can</EM> actually give you the exact square root as an algebraic
+number, but it would be somewhat frivolous to impose such magic on you
+by default.) For you, an approximation might be sufficient, but the
+computed distance can also be used as a "basic object" in some
+other CGAL algorithms. For that, it must be exact in order not to
+compromise the overall design.<P>
+
+Admittedly, reading and writing CGAL code takes some getting used to, 
+but now that you have an idea what's behind it, you may find it less
+obscure. <P> 

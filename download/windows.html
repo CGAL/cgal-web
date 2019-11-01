@@ -1,0 +1,244 @@
+---
+layout: page
+title: Download CGAL for Windows
+header: Download and Build CGAL for Windows
+group: navigation
+---
+{% include JB/setup %}
+
+
+<p>
+To build CGAL from source on Windows you have to <a href="https://gforge.inria.fr/frs/?group_id=52" target="_blank">download an installer or tarball</a> or you can clone the current development version of CGAL from <a href="https://github.com/CGAL/cgal" target="_blank">GitHub</a>. Below are the installation instructions for the installer.
+
+<p>Please note that the directory layout and build process of the development version on GitHub are different from the release version.</p>
+
+<table id="toc" class="toc">
+  <ul>
+    <li class="toclevel-1 tocsection-1"><a href="#GeneralPrerequisites"><span class="tocnumber">1</span> <span class="toctext">General Prerequisites</span></a></li>
+    <li class="toclevel-1 tocsection-2"><a href="#PrerequisitesforCompilingthe32-bitCGALLibraryusingMicrosoftVisualStudio2010"><span class="tocnumber">2</span> <span class="toctext">Prerequisites for Compiling the 32-bit CGAL Library using Microsoft Visual Studio 2010</span></a>
+      <ul>
+        <li class="toclevel-2 tocsection-3"><a href="#Boost"><span class="tocnumber">2.1</span> <span class="toctext">Boost</span></a>
+        </li>
+        <li class="toclevel-2 tocsection-6"><a href="#Qt4"><span class="tocnumber">2.2</span> <span class="toctext">Qt 4</span></a></li>
+        <li class="toclevel-2 tocsection-7"><a href="#libQGLViewer"><span class="tocnumber">2.3</span> <span class="toctext">libQGLViewer</span></a></li>
+
+      </ul>
+    </li>
+    <li class="toclevel-1 tocsection-8"><a href="#PrerequisitesforCompilingthe64-bitCGALLibraryUsingMicrosoftVisualStudio2010"><span class="tocnumber">3</span> <span class="toctext">Prerequisites for Compiling the 64-bit CGAL Library Using Microsoft Visual Studio 2010</span></a>
+      <ul>
+        <li class="toclevel-2 tocsection-9"><a href="#Boost2"><span class="tocnumber">3.1</span> <span class="toctext">Boost</span></a></li>
+        <li class="toclevel-2 tocsection-10"><a href="#Qt42"><span class="tocnumber">3.2</span> <span class="toctext">Qt 4</span></a></li>
+        <li class="toclevel-2 tocsection-11"><a href="#libQGLViewer2"><span class="tocnumber">3.3</span> <span class="toctext">libQGLViewer</span></a></li>
+
+      </ul>
+    </li>
+    <li class="toclevel-1 tocsection-12"><a href="#BuildingCGAL"><span class="tocnumber">4</span> <span class="toctext">Building CGAL</span></a></li>
+    <li class="toclevel-1 tocsection-13"><a href="#CompilinganExample"><span class="tocnumber">5</span> <span class="toctext">Compiling an Example</span></a></li>
+    <li class="toclevel-1 tocsection-14"><a href="#CompilingaDemo"><span class="tocnumber">6</span> <span class="toctext">Compiling a Demo</span></a></li>
+    <li class="toclevel-1 tocsection-15"><a href="#Appendix"><span class="tocnumber">7</span> <span class="toctext">Appendix: How to Set the PATH Variable or Other Environment Variables on Windows Systems</span></a></li>
+  </ul>
+</table>
+
+
+<h3 id="GeneralPrerequisites">General Prerequisites</h3>
+<ul><li> Download and install cmake (www.cmake.org)
+  </li><li> Download CGAL installer (<a rel="nofollow" class="external free" href="http://gforge.inria.fr/frs/?group_id=52">http://gforge.inria.fr/frs/?group_id=52</a>)
+  </li><li> Read the appendix if you don't know how to set/modify an environment variable
+  </li><li> Qt 4 is only needed if you want to run CGAL demos. libQGLViewer is only needed for 3D CGAL demos.
+  </li><li> Identify what is the <i>Visual Studio Command Prompt</i> corresponding to the correct version (32- or 64-bit) of the compiler. Look in the start menu under the <i>Visual Studio</i> or <i>Microsoft Windows SDK</i> folders. At the command prompt, type <code>cl.exe</code> to check the version.
+
+
+</li></ul>
+<h3 id="PrerequisitesforCompilingthe32-bitCGALLibraryusingMicrosoftVisualStudio2010">Prerequisites for Compiling the <i>32-bit</i> CGAL Library using Microsoft Visual Studio 2010</h3>
+<h4 id="Boost">Boost</h4>
+<p>The 32-bit and 64-bits binary versions of Boost are kindly provided  by Tom Kent at <a rel="nofollow" class="external free" href="http://boost.teeks99.com" target="_blank">http://boost.teeks99.com</a>.
+
+</p><p>Please note that the CGAL project is not responsible for the files provided on this web site.
+  At the moment these lines were written, Tom provided binaries up to the release 1.54 of boost.
+</p>
+
+<p>Since boost version 1.54, Tom provides installers that install both
+  boost headers and precompiled libraries.
+</p>
+<pre>   I download and run the file boost_1_54_0-msvc-10.0-32.exe
+</pre>
+<p><pre>   I choose to extract the files to a new directory c:\dev\libboost_1_54_0
+  </pre>
+
+<p>You then need to set the following two environment variables to point respectively to the path of the libraries and the headers
+</p>
+<pre>   BOOST_LIBRARYDIR=C:\dev\libboost_1_54_0\lib32-msvc-10.0
+  BOOST_INCLUDEDIR=C:\dev\libboost_1_54_0
+</pre>
+<p>You also need to add in your PATH environment variable, the path to the Boost dll's:
+</p>
+<pre>   I add to my PATH environment variable C:\dev\libboost_1_54_0\lib32-msvc-10.0
+</pre>
+
+<p>With other versions of Tom installers, the path to libraries may end
+  with <code>lib32</code> instead of <code>lib32-msvc-10.0</code>.</p>
+
+<h4 id="Qt4">Qt 4</h4>
+<ul><li>Download and install the <i>Qt library for open source development package for Visual Studio 2010</i> at <a rel="nofollow" class="external free" href="http://qt-project.org/" target="_blank">http://qt-project.org/</a>
+
+  </li><li>Add the environment variable QTDIR pointing to the place you installed Qt.
+</li></ul>
+<pre>   I selected C:\Qt\4.8.2 so QTDIR is set to C:\Qt\4.8.2
+</pre>
+<ul><li>Add to the path the bin directory of Qt
+</li></ul>
+<pre>   I add C:\Qt\4.8.2\bin to my PATH
+</pre>
+<p>To avoid any conflict with another dll with the same name from another folder, add this path as the first in the list.
+</p>
+<h4 id="libQGLViewer">libQGLViewer</h4>
+
+<ul><li>Download libQGLViewer sources (not binaries) from <a rel="nofollow" class="external free" href="http://www.libqglviewer.com" target="_blank">http://www.libqglviewer.com</a> and extract the archive.
+</li></ul>
+<pre>   I extract the sources in C:\dev, a new directory is created C:\dev\libQGLViewer-2.3.17
+</pre>
+<ul><li>Start the <i>Visual Studio Command Prompt</i>
+  </li><li>Go to the QGLviewer directory
+</li></ul>
+<pre>   I do cd C:\dev\libQGLViewer-2.3.17\QGLViewer
+</pre>
+<ul><li> Run qmake and then nmake
+
+</li></ul>
+<pre>   I do:
+  qmake.exe
+  nmake
+</pre>
+<ul><li>Add the release and debug directory to the PATH 
+</li></ul>
+<pre>   I add C:\dev\libQGLViewer-2.3.17\QGLViewer\release;C:\dev\libQGLViewer-2.3.17\QGLViewer\debug to my PATH
+</pre>
+<ul><li> Define the following environment variables:
+</li></ul>
+<pre>   I set the environment variable QGLVIEWERROOT to C:\dev\libQGLViewer-2.3.17
+</pre>
+<ul><li> Type exit to leave the command prompt
+</li></ul>
+
+<h3 id="PrerequisitesforCompilingthe64-bitCGALLibraryUsingMicrosoftVisualStudio2010">Prerequisites for Compiling the <i>64-bit</i> CGAL Library Using Microsoft Visual Studio 2010</h3>
+<h4 id="Boost2">Boost</h4>
+<p>The procedure for getting Boost is the same as described for the <a href="#Boost">32-bit version</a>, but all "32" must be replaced by "64".
+</p>
+<h4 id="Qt42">Qt 4</h4>
+<ul><li>There is no installer for the 64-bit version of QT4. You need to download the sources of the open-source version and to compile them.
+</li></ul>
+<pre>   I download qt-everywhere-opensource-src-4.8.2.tar.gz
+</pre>
+<ul><li>Extract it
+</li></ul>
+<pre>   I extract it to c:\dev. The directory c:\dev\qt-everywhere-opensource-src-4.8.2 has been created
+</pre>
+
+<ul><li>Open the <i>Visual Studio Command Prompt</i>
+  </li><li>Go to the QT directory, configure and compile. If you build only the libraries and the tools (without the examples), it should not take too much time.
+</li></ul>
+<pre>   cd c:\dev\qt-everywhere-opensource-src-4.8.2
+  configure.exe
+  nmake sub-src
+  nmake sub-tools
+</pre>
+<ul><li>You can free some disk space by running <code>nmake clean</code> which brings the disk space down to 2.7GB
+</li></ul>
+<pre>   nmake clean
+</pre>
+
+<ul><li>Then you need to set the QTDIR environment variable
+</li></ul>
+<pre>   I set QTDIR=c:\dev\qt-everywhere-opensource-src-4.8.2
+</pre>
+<ul><li>Add the bin directory to the PATH
+</li></ul>
+<pre>   I add c:\dev\libraries\qt-everywhere-opensource-src-4.8.2\bin to the PATH
+</pre>
+<h4 id="libQGLViewer2">libQGLViewer</h4>
+<p>The procedure is the same as for the <a href="#libQGLViewer">32-bit version.</a>
+
+</p>
+<h3 id="BuildingCGAL">Building CGAL</h3>
+<p>Run the installer and select the version you want to install (this is only used to download the precompiled GMP and MPFR). In the "Setting Environment Variables" screen, uncheck CGAL_DIR.
+</p>
+<pre>   I choose C:\dev\CGAL-4.0 as installation directory
+</pre>
+<p>You now need to compile CGAL
+</p>
+<ul><li> Open CMake-GUI
+  </li><li> For both "Where is the source code" and "Where to build the binaries" specify the CGAL Installation folder 
+
+</li></ul>
+<pre>   I set C:\dev\CGAL-4.0 for source and C:\dev\CGAL-4.0\build as binaries
+</pre>
+<ul><li> Click on Configure
+  </li><li> Choose "Visual Studio 10 2010" for the 32-bit version and "Visual Studio 10 2010 Win64" for the 64-bit version
+  </li><li> Click on Generate
+</li></ul>
+<pre>   In the directory C:\dev\CGAL-4.0\build a solution file named CGAL.sln has been created
+</pre>
+<ul><li> Run Visual Studio 10 and compile ALL_BUILD project both in Debug and Release.
+  </li><li> Add to your path the bin directory of the build
+
+</li></ul>
+<pre>   I add to my PATH C:\dev\CGAL-4.0\build\bin
+</pre>
+<h3 id="CompilinganExample">Compiling an Example</h3>
+<p>Examples need neither Qt 4, nor libQGLViewer
+</p>
+<ul><li> Open CMake-GUI
+  </li><li> Choose "Where is the source code:" to be the Convex_hull_2 examples directory under the CGAL installation. 
+</li></ul>
+<pre>   I set it to C:\dev\CGAL-4.0\example\Convex_hull_2
+
+</pre>
+<ul><li> Choose "Where to build the binaries:" to be a build directory
+</li></ul>
+<pre>   I set it to "C:\dev\CGAL-4.0\build-example\Convex_hull_2"
+</pre>
+<ul><li> Click Configure and then Generate
+  </li><li> A solution file has been created in the build directory. Open it can compile and run it.
+</li></ul>
+<pre>   I open the file C:\dev\CGAL-4.0\build-examples\Convex_hull_2\Convex_hull_2_example.sln with Visual Studio 10
+</pre>
+<ul><li> Once the compilation is complete, you can run the executable (directly in Visual or click on the .exe created in the Debug or Release folder).
+</li></ul>
+
+<pre>   I open the C:\dev\CGAL-4.0\build-examples\Convex_hull_2\ch_timing.exe (the windows automatically close if not run from the console).
+</pre>
+<h3 id="CompilingaDemo">Compiling a Demo</h3>
+<p>Demos need Qt 4 and the 3D demos libQGLViewer.
+</p>
+<ul><li> Open CMake
+  </li><li> Choose "Where is the source code:" to be the Triangulation_3 demo directory under the CGAL installation. 
+</li></ul>
+<pre>   I set it to C:\dev\CGAL-4.0\demo\Triangulation_3
+
+</pre>
+<ul><li> Choose "Where to build the binaries:" to be a build directory
+</li></ul>
+<pre>   I set it to "C:\dev\CGAL-4.0\build-demo\Triangulation_3"
+</pre>
+<ul><li> Click Configure and then Generate
+  </li><li> A solution file has been created in the build directory. Open it, build and run it.
+</li></ul>
+<pre>   I open the file C:\dev\CGAL-4.0\build-demo\Triangulation_3\Triangulation_3.sln with Visual Studio 10
+</pre>
+<ul><li> Once the compilation is complete, you can run the executable (directly in Visual or click on the .exe created in the Debug or Release folder).
+</li></ul>
+
+<h3 id="Appendix">Appendix: How to Set the PATH Variable or Other Environment Variables on Windows Systems</h3>
+<p>From the desktop, right-click My Computer and click properties (on Vista/Win7 click Advanced system settings on the left side).
+</p>
+<ul><li>In the System Properties window, click on the Advanced tab.
+  </li><li>In the Advanced section, click the Environment Variables button. 
+  </li><li>Finally, in the <i>User Variables</i> area, you can add or edit variables. 
+  </li><li>To add a new one click on New, the first line is the name of the variable (PATH for example), the second the value. If several values are added, they must be separated by a <i>;</i>.
+
+  </li><li>To modify one, select it and click on <i>Edit...</i>
+</li></ul>
+<pre>   C:\Program Files;C:\Winnt;C:\Winnt\System32
+</pre>
+<ul><li>Add or modify the path lines with the paths you wish the computer to access. Each different directory is separated with a semicolon as shown above.
+</li></ul>

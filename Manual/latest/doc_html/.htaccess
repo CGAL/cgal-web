@@ -1,0 +1,17 @@
+RewriteEngine on
+
+RewriteBase /Manual/latest/doc_html
+
+RewriteRule ^installation_manual/contents.html$ http://doc.cgal.org/latest/Manual/installation.html [R=seeother]
+RewriteRule ^installation_manual/Chapter_installation_manual.html http://doc.cgal.org/latest/Manual/installation.html [R=seeother]
+RewriteRule ^cgal_manual/Installation/Chapter_main.html$ http://doc.cgal.org/latest/Manual/installation.html [R=seeother]
+RewriteRule ^cgal_manual/Preliminaries/Chapter_main.html http://doc.cgal.org/latest/Manual/preliminaries.html [R=seeother]
+RewriteRule ^cgal_manual/Introduction/Chapter_main.html http://doc.cgal.org/latest/Manual/introduction.html [R=seeother]
+
+#RewriteRule ^cgal_manual/(.*)_ref/(Chapter_.*\.html)$ http://doc.cgal.org/latest/${packages:$1|BUG-packages}/group__${packagesintro:$1|BUG-packagesintro}.html [R=seeother]
+#RewriteRule ^cgal_manual/(.*)_ref/(.*\.html)$ http://doc.cgal.org/latest/${packages:$1|BUG-packages}/${pages:$2|BUG-pages} [R=seeother]
+#RewriteRule ^cgal_manual/(.*)/(Chapter_.*\.html)$ http://doc.cgal.org/latest/${packages:$1|BUG-packages}/index.html [R=seeother]
+
+# New way, with rewrite_all_pages.txt
+#RewriteRule ^cgal_manual/(.*\.html)$ http://doc.cgal.org/latest/${pages:$1|BUG-pages} [R=seeother]
+RewriteRule ^cgal_manual/(.*\.html)$ https://cgal.geometryfactory.com/CGAL/Manual/latest/cgal_manual/$1 [R=seeother]

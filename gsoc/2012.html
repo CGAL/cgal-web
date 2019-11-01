@@ -1,0 +1,315 @@
+---
+layout: page
+title: CGAL Projects for Google Summer of Code 2012
+header: CGAL Projects for Google Summer of Code 2012
+group: navigation
+---
+{% include JB/setup %}
+
+<script type="text/javascript">
+function mailto_link(em1,em2,em3,name,subject)
+{
+  document.write('<a href="mailto:'+em1+'@'+em2+'.'+em3+'?Subject=[GSOC12] '+subject+'">'+name+'<\/a>');
+}
+</script>
+<p>
+As in 2010 and 2011, the CGAL Project is a mentoring organization of the  <a href="http://code.google.com/soc/">Google Summer of Code</a>.
+On this page we present some project ideas as well the <a href="#information">information applicants have to provide us</a>.
+GSoC applicants are welcome to propose other ideas and check if a mentor is interested in supervising it.
+</p>
+
+<br>
+<p>Previous project ideas of the CGAL project for the <b>Google Summer of Code</b> can be found on the following pages:
+<a href="2010.html">2010</a>, <a href="2011">2011</a>.</p>
+
+
+<h3>Summary:</h3>
+
+<ol>      
+  <li> <a href="#planargraph">Switching from CGAL::HalfedgeGraph to boost::PlanarEmbedding</a>
+  <li> <a href="#extendcmaps">Extend the packages Combinatorial maps and Linear cell complex</a>
+  <li> <a href="#webdemo">Webdemo for Visualization of Triangulated Surfaces - aiming at algebraic ones</a>
+  <li> <a href="#argtdemo">Porting the 2D-Arrangement demo to Qt 4 and enhancing it</a>
+  <li> <a href="#holefill">Adding a surface mesh hole filling algorithm into CGAL</a>
+  <li> <a href="#segmentation">Adding a pose independant 3D mesh surface segmentation algorithm into CGAL</a>
+  <li> <a href="#improvmesh2">Improved design and new features for the Mesh_2 package</a>
+  <li> <a href="#improvaabb">New features for the 3D Fast Intersection and Distance Computation (AABB Tree) package</a>
+  <li> <a href="#demoframework">Rework CGAL 3D demo</a>
+  <li> <a href="#recontruction">Surface Reconstruction from Slices</a>
+  <li> <a href="#argtlandmark">Enhancing the <i>Landmarks</i> point-location strategy for 2D arrangements</a>
+  <li> <a href="#external">External project related to CGAL</a>
+</ol>
+
+<!--PROJECT START-->
+  <h2  id="planargraph">Switching from CGAL::HalfedgeGraph to boost::PlanarEmbedding</h2>
+  <p><strong>Mentor:</strong> 
+  <script type="text/javascript">
+    mailto_link("andreas.fabri","geometryfactory","com","Andreas Fabri","boost graph project")
+  </script>
+  from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a></p>
+  <h3>Project Description</h3>
+  <p>Inspired by the Boost Graph Library (BGL), we extended the Graph concept by introducing the HalfedgeGraph concept. This concept imposes an order on the edges incident to a vertex. It leads to the notion of edges cycles and hence faces. Currently, the CGAL Surface Mesh Simplification package operates on polyhedral surfaces using this API.</p>
+  <p>Starting with boost Rel 1.35, the BGL added the notion of  PlanarEmbeddings.</p>
+  <p>The goal of this project is to investigate how we can switch to this PlanarEmbedding concept, and if it still needs further extensions for our purposes. The next step is to make the necessary changes in the Surface Mesh Simplification package. If there still remains time, the student could start to rewrite the CGAL Surface Mesh Parametrisation package, which took another approach to make an abstraction of a  polyhedral surface.</p>
+  <p><strong>Required skills:</strong>BGL, advanced C++<p>
+<!--PROJECT END-->
+
+
+<!--PROJECT START-->
+  <h2  id="extendcmaps">Extend the packages Combinatorial maps and Linear cell complex</h2>
+  <p><strong>Mentor:</strong> 
+  <script type="text/javascript">
+    mailto_link("guillaume.damiand","liris.cnrs","fr","Guillaume Damiand","Extending Combinatorial map package")
+  </script>
+  from <a href="http://liris.cnrs.fr/gdamiand/">LIRIS</a></p>
+  <h3>Project Description</h3>
+  <p>The two packages Combinatorial maps and Linear cell complex are new in CGAL and thus provide only basic functionalities. The goal of this project is to improve these two packages by adding several new functions. We will start by some basic functions such as copy operator and constructor, inversion method, copy of a part of a combinatorial map... One key point of CGAL packages is the genericity, thus each new function must satisfy this paradigm (for example the copy must be possible between two CMaps having different type of darts or attributes). After this first step, we will develop a new mechanism allowing to associate dynamically some information to a given combinatorial map. Indeed, in the current version, information can only be associated in the compiling step by using template arguments. Lastly, we plan to develop new high level geometrical functions such as the extrusion along a path, the decomposition of a 3D linear cell complex in convex volume... Each new function will be added in the existing Linear cell complex demo.</p>
+  <p><strong>Required skills:</strong>C++, templates<br>
+<!--PROJECT END-->
+
+
+<!--PROJECT START-->
+  <h2  id="webdemo">Webdemo for Visualization of Triangulated Surfaces - aiming at algebraic ones</h2>
+  <p><strong>Mentor:</strong> 
+  <script type="text/javascript">
+    mailto_link("eric","mpi-inf.mpg","de","Eric Berberich","Webdemo")
+  </script>
+  from <a href="http://www.mpi-inf.mpg.de/~eric/">Max-Planck-Institut f&uuml;r Informatik</a></p>
+  <h3>Project Description</h3>
+  <p>The goal of this project is to provide a webdemo (running in a browser) to visualize the analysis and triangulation of an algebraic surface (or several ones). The project is the next iteration of the webdemo for analyzing and visualizing algebraic curves in 2D (see <a href="http://exacus.mpi-inf.mpg.de/cgi-bin/xalci.cgi">this page</a>). The iteration is with respect to multiple goals. On one hand it should lift the dimension by one. As for the planar case, there is code available to analyze the algebraic surfaces with its singularities and the theory for triangulating them is also written in a journal submission. However, a certain precision (at least pixel size) must be guaranteed. On the other hand, the new demo should replace the web rendering (currently using Flash) with an more advanced technology.</p>
+  <p>There are some milestones visible:</p>
+  <UL>
+  <LI> Switch current demo to a non-flash version;
+  <LI> Add interface to input surfaces and to output a triangulation in 3D (using some TDS from CGAL) - TDS is chosen to support pick'n'highlight for ''vertices''/''edges''/shells/''volumes'';
+  <LI> Construct triangulation from surface analysis output;
+  <LI> Provide refinement operator for zooming;
+  </UL>
+  <p><strong>Required skills:</strong>C++, WebGL or similar technique, some knowledge about triangulations + polynomials in x,y,z<p>
+<!--PROJECT END-->
+
+<!--PROJECT START-->
+  <h2  id="argtdemo">Porting the 2D-Arrangement demo to Qt 4 and enhancing it</h2>
+  <p><strong>Mentor:</strong>
+  <script type="text/javascript">
+    mailto_link("efifogel","gmail","com","Efi Fogel","Porting arrangement demo")
+  </script>
+  from the <a href="http://acg.cs.tau.ac.il/people">Applied Computational Geometry Lab</a>,  Tel Aviv University</p>
+  <h3>Project Description</h3>
+  <p>The project consists of two phases. The 2D-Arrangement demo program is currently based on Qt 3. The first phase of the project is to port the demo program to Qt 4. The second phase is to enhance the demo.</p>
+  <p>A partial list of enhancements follows:</p>
+  <UL>
+  <LI> Demonstrate all geometric traits classes.
+  <LI> Demonstrate arrangements of unbounded curves (with several unbounded faces).
+  <LI> Demonstrate the overlay operation.
+  </UL>
+  <p><strong>Required skills:</strong>C++, Generic Programming<p>
+<!--PROJECT END-->
+
+<!--PROJECT START-->
+  <h2  id="holefill">Adding a surface mesh hole filling algorithm into CGAL</h2>
+  <p><strong>Mentor:</strong> 
+  <script type="text/javascript">
+    mailto_link("sloriot.ml","gmail","com","Sebastien Loriot","Hole filling")
+  </script>
+  from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a></p>
+  <h3>Project Description</h3>
+  <p>This project consists in implementing a classical hole filling algorithm for surface mesh. The algorithm is described in the following paper:
+  <ul>
+  <li>Filling holes in meshes, Liepa, P., Proceedings of the 2003 Eurographics/ACM SIGGRAPH Symposium on Geometry Processing, 200-205, 2003
+  </ul>
+  <p>The algorithm is explained in the <a href="http://www.pmp-book.org/download/slides/Model_Repair.pdf">Model Repair slides</a> (p. 20) coming with the 
+  <a href="http://www.pmp-book.org/">Polygon Mesh Processing book</a>.
+  </p>
+  <p>
+  <strong>WARNING:</strong> An implementation is available under GPL on the web site of the aforementioned book. To prevent any copyright issue and to respect the authors' work, please do not look at that code if you plan to work on this project.
+  </p>
+  <p><strong>Required skills:</strong>C++, Background in Computational Geometry or Geometry Processing.<p>
+<!--PROJECT END-->
+
+<!--PROJECT START-->
+  <h2  id="segmentation">Adding a pose independant 3D mesh surface segmentation algorithm into CGAL</h2>
+  <p><strong>Mentor:</strong> 
+  <script type="text/javascript">
+    mailto_link("sloriot.ml","gmail","com","Sebastien Loriot","Segmentation")
+  </script>    
+  from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a></p>
+  <h3>Project Description</h3>
+  <p>
+  This project consists in implementing a segmentation algorithm described in this paper:</p>
+  <ul>
+  <li>Consistent mesh partitioning and skeletonisation using the shape diameter function, Shapira, L. and Shamir, A. and Cohen-Or, D., The Visual Computer, 24,4,p. 249-259, 2008, Springer
+  </ul>
+  <p>
+  The particularity of this algorithm is that it does not rely on local geometric quantities to make the segmentation. It uses a function defined on each point of the mesh
+  (the shape diameter function, SDF) that is a good approximation of the distance to the medial axis of the meshed object. If the project goes well, we can in addition handle the skeleton extraction using the SDF also described in the paper.</p>
+  <p><strong>Required skills:</strong>C++, Background in Computational Geometry or Geometry Processing.<p>
+<!--PROJECT END-->
+
+
+<!--PROJECT START-->
+  <h2  id="improvmesh2">Improved design and new features for the Mesh_2 package</h2>
+  <p><strong>Mentors:</strong>
+  <script type="text/javascript">
+    mailto_link("jane.tournois","geometryfactory","com","Jane Tournois","Improving Mesh_2")
+  </script>    
+  from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>, and
+  <script type="text/javascript">
+    mailto_link("clement.jamin","inria","fr","Clement Jamin","Improving Mesh_2")
+  </script>
+  from <a href="http://www-sop.inria.fr/geometrica/">INRIA Sophia-Antipolis</a></p>
+  <h3>Project Description</h3>
+  <p>The Mesh_2 package implements a 2D isotropic triangle mesh generator. Currently, the domain to be meshed is defined by some constrained edges and a set of seed points. The constrained edges divide the plane into several connected components. The mesh domain is either the union of the bounded connected components including at least one seed, or the union of the bounded connected components that do no contain any seed.<br>
+  The project can be split into three phases:</p>
+  <ul>
+  <li> Improve the C++ interface of the package, in order to unify the API with the Mesh_3 package (3D mesher). 
+  <li> Add some mesh optimization methods, to improve the quality of the output meshes.
+  <li> Develop an "oracle" abstraction layer (as devised for Mesh_3) so that the mesher can take different types of input: implicit functions, polygonal domains, 2D images... and on the way, add the ability to manage multi-domain inputs.
+  </ul>
+  <p>For additionnal details, here is the 
+  <a href="http://www.cgal.org/Manual/latest/doc_html/cgal_manual/Mesh_2/Chapter_main.html">documentation of the current Mesh_2 package</a> and of the 
+  <a href="http://www.cgal.org/Manual/latest/doc_html/cgal_manual/Mesh_3/Chapter_main.html">Mesh_3 package</a>.</p>
+  <p><strong>Required skills:</strong>Advanced C++, generic programming, background in Computational Geometry or Geometry Processing.<p>
+<!--PROJECT END-->
+
+<!--PROJECT START-->
+  <h2  id="improvaabb">New features for the 3D Fast Intersection and Distance Computation (AABB Tree) package</h2>
+  <p><strong>Mentors:</strong>
+  <script type="text/javascript">
+    mailto_link("pierre.alliez","inria","fr","Pierre Alliez","Improving AABB_tree")
+  </script>
+  from <a href="http://www-sop.inria.fr/members/Pierre.Alliez/">INRIA Sophia-Antipolis</a>, and
+  <script type="text/javascript">
+    mailto_link("laurent.rineau","geometryfactory","com","Laurent Rineau","Improving AABB_tree")
+  </script>
+  from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a></p>
+  <h3>Project Description</h3>
+  <p>The package offers a static data structure and algorithms to perform efficient intersection and distance queries against sets of finite 3D geometric objects. The set of geometric objects stored in the data structure can be queried for intersection detection, intersection computation and distance.</p>
+  <p>This package turns out useful for a number of atomic geometry processing queries. In this project we propose to add the following features: </p>
+  <ul>
+  <li> intersections with batched queries (set of primitives as queries).
+  <li> distance with batched point queries and exploit spatial coherencies of point set query.
+  <li> sphere range query (returns all primitive within distance from point query or batched point queries).
+  <li> intersection with tree query to find all intersecting primitives.
+  <li> add possibility to use boost::apply_visitor or other call back frunction when an intersection occurs (traversal functor exists but a visitor may be easier to customize).
+  <li> add possibilities to dynamically activate or disactivate some primitives of the tree.
+  <li> perform accelerations through profiling, reduction of cache misses.
+  </ul>
+  <p>Some more advanced changes include designing a dynamic AABB tree through rebalacing, and the possibility to use various primitives as distance queries instead of just point queries.</p>
+  <p><strong>Required skills:</strong>Advanced C++, generic programming, background in Computational Geometry or Geometry Processing.<p>
+<!--PROJECT END-->
+
+<!--PROJECT START-->
+  <h2  id="demoframework">Rework CGAL 3D demo</h2>
+  <p><strong>Mentor:</strong> 
+  <script type="text/javascript">
+    mailto_link("philipp.moeller","geometryfactory","com","Philipp Moeller","3D demos")
+  </script>
+  from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a></p>
+  <h3>Project Description</h3>
+  <p>CGAL has a large amounts of demos to showcase functionality and ease debugging for authors of packages. Those demos have been written using ad hoc forks of an existing foundation framework. Some work has been done to unify this framework in a plug-in architecture and to integrate 
+  <a href="http://www.openscenegraph.org/projects/osg">OpenSceneGraph</a> as the main means for rendering and scene management.</p>
+  <ul>
+    <li> extend the existing plug-in interfaces and support library to be more convenient for users and more tailored to CGAL use-cases
+         <ul>
+         <li> reusable selection mechanisms for primitives
+         <li> specialized rendering for geometric objects (feature highlighting)
+         </ul>
+    <li> smooth out the user interface
+    <li> write and improve essential demos
+         <ul>
+         <li> Polyhedron package
+         <li> Mesh_3 package
+         </ul>
+    <li> improve the capabilities to interactively inspect geometric objects for debugging
+  </ul>
+  <p><strong>Required skills:</strong>Solid C++, OpenGL<p>
+  <p><strong>Bonus Skills:</strong>Qt, OpenSceneGraph<p>
+<!--PROJECT END-->
+
+<!--PROJECT START-->
+  <h2  id="recontruction">Surface Reconstruction from Slices</h2>
+  <p><strong>Mentor:</strong> 
+  <script type="text/javascript">
+    mailto_link("avaxman","geometrie.tuwien.ac","at","Amir Vaxman","Reconstruction")
+  </script>
+  from <a href="http://www.geometrie.tuwien.ac.at/vaxman/">Technische Universit&auml;t Wien</a></p>
+  <h3>Project Description</h3>
+  <p>Given a set of arbitrarily aligned planar cross-section of a 3D-object, the target of this project is to reconstruct an interpolating surface, or a 3D multi-labeled mesh.
+  This project will be based on a basic version of the paper <i>Online Reconstruction of 3D Objects from Arbitrary Cross-Sections</i> by Bermano et al., and several other mild variants will be explored (such as the use of different coordinates).<br>
+  The project will be performed in these two major steps:</p>
+  <ul>
+  <li> Implement 3D planar arrangements, using the 2D arrangement package.
+  <li> Implement an oracle for the 3D mesh generation package which creates a mesh from the data given on the planes.
+  </ul>
+  <p><strong>Required skills:</strong>Strong C++, some knowledge of computational geometry and geometric processing.<br>
+<!--PROJECT END-->
+
+<!--PROJECT START-->
+  <h2  id="argtlandmark">Enhancing the <i>Landmarks</i> point-location strategy for 2D arrangements</h2>
+  <p><strong>Mentor:</strong> 
+  <script type="text/javascript">
+    mailto_link("mhsaar","googlemail","com","Michael Hemmer","Point-location in 2D arrangements")
+  </script>
+  from the <a href="http://acg.cs.tau.ac.il/people">Applied Computational Geometry Lab</a>,  Tel Aviv University</p>
+  <h3>Project Description</h3>
+  <p>One of the most important query types defined on arrangements is the point-location query: Given a point, find the arrangement cell that contains it. Typically, the result of a point-location query is one of the arrangement faces, but in degenerate situations the query point can be located on an edge or coincide with a vertex. The <i>2D Arrangements</i> package supports different strategies of point location. Here, you are asked to enhance the implementation of a specific strategy called <i>Landmarks</i>.</p>
+  <p><strong>Required skills:</strong>C++, Generic Programming<br>
+<!--PROJECT END-->
+
+<h2  id="external">External project related to CGAL</h2>
+<p>In case you are looking for more project ideas related to CGAL, here is a <a href="http://wiki.scilab.org/Contributor%20-%20CGLAB%20module">link</a> to a CGAL related project from <a href="http://www.scilab.org/">Scilab</a>.</p>
+
+<br>
+<HR> 
+
+<h2 id="information">Information Candidates Should Supply</h2>
+
+<p>The application process has several steps. Before contacting anybody verify that you are eligible, that is 
+that you are enrolled as student, don't get a tuition fee, etc. The next step is to contact the mentor
+of the project you are interested in. You have to convince him that you are the right person to get the job
+done. The next step is to work out more details and to contact the mentoring organization by providing 
+the following information by email to <a href="mailto:gsoc-cgal@lists-sop.inria.fr">gsoc-cgal@lists-sop.inria.fr</a></p>
+
+
+<h3>Project</h3>
+<ol>
+<li> Select a project in the list and provide your personal and detailed description. If you wish to work on another idea of your own, we are pretty open as long as this serves the goal of consolidating CGAL as a whole.
+<li> Provide a proposal of a technical solution with your envisioned methodology. The more detailed the better.
+<li> Explain how the solution will be available to the user, in which form. Do not forget the documentation, unitary tests and cross-platform aspects.
+<li> Provide a realistic schedule with objectives (one every two weeks for example) and deadlines. Focus on mid-term objectives as well as on the final evaluation.
+<li> Provide a formal commitment that you will be involved full time on the GSoC. This is absolutely mandatory.
+</ol>
+
+<h3>Personal data</h3>
+<ol>
+<li> First name, last name, affiliation and geographical location.
+<li> A brief list of the main studies and programming courses attended, with ranking.
+<li> List of the most important software projects contributed and success.
+<li> Which are your best skills in terms of programming and scientific computing?
+<li> In general what is your taste in terms of programming? language, methodology, team work, etc.
+<li> Is there anything that prevents you from working full time on the project during the program period?
+<li> How do you see your involvement after the program ends? Do you see yourself pushing the project further, or do you see yourself contributing to other CGAL projects?
+<li> Are you more interested in the theory/scientific aspect of CGAL, or do you feel more like a hacker?
+<li> What are your long-term wishes in terms of job?
+</ol>
+
+<h3>A mailto:</h3>
+
+<p>This
+<a href="mailto:gsoc-cgal@lists-sop.inria.fr?subject=GSOC-2011&amp;body=%0AProject%0A%0A
+* Select a project in the list and provide your personal and detailed description. %0A
+* Provide a proposal of a technical solution with your envisioned methodology. The more detailed the better.%0A
+* Explain how the solution will be available to the user, in which form. Do not forget the documentation, unitary tests and cross-platform aspects.%0A
+* Provide a realistic schedule with objectives (one every two weeks for example) and deadlines. Focus on mid-term objectives as well as on the final evaluation.%0A
+* Provide a formal commitment that you will be involved full time on the GSoC. This is absolutely mandatory.%0A%0A
+
+Personal data%0A%0A
+* First name, last name, affiliation and geographical location.%0A
+* A brief list of the main studies and programming courses attended, with ranking.%0A
+* List of the most important software projects contributed and success.%0A
+* Which are your best skills in terms of programming and scientific computing?%0A
+* In general what is your taste in terms of programming? language, methodology, team work, etc.%0A
+* Is there anything that prevents you from working full time on the project during the program period?%0A
+* How do you see your involvement after the program ends? Do you see yourself pushing the project further, or do you see yourself contributing to other CGAL projects?%0A
+* Are you more interested in the theory/scientific aspect of CGAL, or do you feel more like a hacker?%0A
+* What are your long-term wishes in terms of job?%0A">anchor</a> is a mailto: with a mail body containg the above items.

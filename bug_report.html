@@ -1,0 +1,44 @@
+---
+layout: page
+title: Report a Bug
+header: Report a Bug
+group: navigation
+---
+{% include JB/setup %}
+
+<p>
+Before sending a bug-report, you should check the
+<a href="{{ BASE_PATH }}/FAQ.html">FAQ</a> and
+<a href="https://github.com/CGAL/cgal/issues" target="_blank">the GitHub issue tracker</a>.
+
+<p>
+If you are using an old version of CGAL, your problem may have already 
+been solved in a more recent release.  Please try your program with 
+the <a HREF="{{ BASE_PATH }}/releases.html">latest release</a>.
+
+<p>
+Bug reports should be made on <a href="https://github.com/CGAL/cgal/issues" target="_blank">the GitHub issue tracker</a>.
+In your issue, please do include as much information as possible:
+       <UL>
+           <LI> a short, self contained, correct (compilable), example as explained <a href="http://sscce.org/" target="_blank">here</a>;
+           <LI> which operating system, compiler, and hardware you are using;
+           <LI> information about how CGAL was installed on your system 
+                (<I>i.e.</I>, which options were used, how the library was
+                 built, <I>etc.</I>);
+           <LI> any third-party software (such as GMP) that is involved;
+           <LI> a description of the problem or bug and a way to reproduce it
+                (such as a small sample program or a sequence of commands);
+           <LI> do not forget to mention which kernel you are using, and check
+                for potential <a href="{{ BASE_PATH }}/FAQ.html#kernels">robustness</a> issues
+                you may have;
+	   <LI> in case of run-time crash, please include a stack trace provided
+	        by the debugger;
+           <LI> in case of problems with the installation, make sure to include
+                the install.log file.
+        </UL>
+
+<p>
+The more information you provide, the easier it will be for us to
+help you quickly solve the problem.</p>
+
+ <a href="https://github.com/CGAL/cgal/issues/new" class="btn" target="_blank">Open an Issue</a>
