@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Optimal Area Polygonalization"
-description: "Solving Hard Optimization Problems (CG:SHOP) Challenge 2019---3rd place awarding"
+description: "Solving Hard Optimization Problems (CG:SHOP) Challenge 2019: 3rd Place Award"
 category: "news"
 tags: []
 ---
