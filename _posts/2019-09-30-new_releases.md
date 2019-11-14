@@ -3,7 +3,7 @@ layout: post
 title: "New CGAL releases"
 description: "CGAL-4.13.2, CGAL-4.14.1, and CGAL-5.0-beta1"
 category:
-tags: ["C++14"]
+tags: ["release"]
 ---
 {% include JB/setup %}
 
