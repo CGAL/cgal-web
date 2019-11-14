@@ -621,6 +621,9 @@ a:hover {
 .blog-single-post {
   padding: 10px 30px;
 }
+.blog-single-post a > code {
+  text-decoration: underline;
+}
 .single-post-title h3 {
   font-size: 1.5em;
   margin: 0;
