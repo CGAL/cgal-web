@@ -174,16 +174,15 @@ group: navigation
        <P>Packages for Debian unstable (sid) are available from the official
        Debian repository. Debian stable (stretch) and Debian testing (buster)
        might not contain the latest version of CGAL. In that case, add</P>
-      <PRE>   deb <A href="http://debian.cgal.org/">http://debian.cgal.org</A> stretch main
-   deb-src <A href="http://debian.cgal.org/">http://debian.cgal.org</A> stretch main</PRE>
-       or
       <PRE>   deb <A href="http://debian.cgal.org/">http://debian.cgal.org</A> buster main
    deb-src <A href="http://debian.cgal.org/">http://debian.cgal.org</A> buster main</PRE>
+       or
+      <PRE>   deb <A href="http://debian.cgal.org/">http://debian.cgal.org</A> bullseye main
+   deb-src <A href="http://debian.cgal.org/">http://debian.cgal.org</A> bullseye main</PRE>
        to <TT>/etc/apt/sources.list</TT> (note that you only need the pair of lines
        corresponding to the release you are using) and make sure that the package
        <TT>apt-transport-https</TT> is installed. The packages are called
-       <TT>libcgal11v5</TT>, <TT>libcgal-dev</TT>, <TT>libcgal-qt5-11</TT>,
-       <TT>libcgal-qt5-dev</TT>, <TT>libcgal-demo</TT> and
+       <TT>libcgal-dev</TT>, <TT>libcgal-qt5-dev</TT>, <TT>libcgal-demo</TT> and
        <TT>libcgal-ipelets</TT>. Packages for older CGAL versions are available at
        <A href="http://debian.cgal.org/archive/">http://debian.cgal.org/archive</A>
        or from the official Debian archive.</P>
@@ -209,7 +208,7 @@ group: navigation
           <PRE>   $ ./Constrained_delaunay_triangulation_2 &
    $ ./Delaunay_triangulation_2 &
    $ ./Regular_triangulation_2 &</PRE>
-          <P>See also /usr/share/doc/libcgal11v5/README.Debian for more information.</P>
+          <P>See also /usr/share/doc/libcgal-dev/README.Debian for more information.</P>
   </LI>
 
    <LI> <A NAME="is_vc6_supported"></A>
