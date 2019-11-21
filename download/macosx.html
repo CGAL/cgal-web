@@ -8,21 +8,36 @@ group: navigation
 
 <h2>With a Package Manager</h2>
 
-You can use either <a href="https://www.macports.org/" target="_blank">macports</a> or <a href="http://brew.sh/" target="_blank">homebrew</a> to get CGAL on macOS.
-Note that the packages of these systems are not maintained by the CGAL project. The release available might thus not be the latest stable one.
+<p><em>Note that the package managers are not maintained by the CGAL project. Consequently,
+the latest stable release of CGAL might not be immediately available. On Brew, you can check
+the version of CGAL currently offered on the <a href="https://formulae.brew.sh/formula/cgal">CGAL formulae page</a>.</em></p>
 
-<pre>
-# using macports
-sudo port install cgal
-sudo port install cgal +qt5 +universal +demos # with the demos
-</pre>
+<p>We recommand to use <a href="https://brew.sh/">Brew</a> to get CGAL on macOS (CGAL is also available on
+<a href="https://www.macports.org/" target="_blank">MacPorts</a>).</p>
+
 <pre>
 # using homebrew
 brew install cgal
 </pre>
 
-<h2>Build from Source on UNIX-Like Systems</h2>
-<p>
-To build CGAL from source on macOS you have to <a href="/download/last" target="_blank">download a release as a tarball</a> or you can clone the current development version of CGAL from <a href="https://github.com/CGAL/cgal" target="_blank">GitHub</a>. The build process is documented in the <a href="http://doc.cgal.org/latest/Manual/installation.html" target="_blank">Installation Manual</a>.</p>
+<p>A step-by-step guide showing how to install and use CGAL with a package manager is available in the
+<a href="https://doc.cgal.org/latest/Manual/windows.html#title0">CGAL Documentation</a>.</p>
 
-<p>Please note that the directory layout and build process of the development version on GitHub are different from the release version.</p>
+<br>
+<h2>With a Source Archive</h2>
+
+<p>You can also obtain the CGAL library sources directly from from the
+<a href="https://github.com/CGAL/cgal/releases">Releases</a> page of the CGAL project.</p>
+
+<p>A step-by-step guide showing how to install and use CGAL with sources is available in the
+<a href="https://doc.cgal.org/latest/Manual/windows.html#title0">CGAL Documentation</a>.</p>
+
+<br>
+<h2>Through Github</h2>
+
+<p>Advanced users can clone the current development version of CGAL from
+<a href="https://github.com/CGAL/cgal/">GitHub</a> to enjoy early access to new features.</p>
+
+<p>Please note that the directory layout and build process of the development version on GitHub
+are different from the release version. A basic usage guide is available
+on the CGAL project's <a href="https://github.com/CGAL/cgal/blob/master/INSTALL.md">Install.md</a>.</p>

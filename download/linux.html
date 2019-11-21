@@ -8,21 +8,38 @@ group: navigation
 
 <h2>With a Package Manager</h2>
 
-<p>Most Linux distributions package some version of CGAL. The demos are usually packaged separately.</p>
+<p><em>Note that the package managers are not maintained by the CGAL project. Consequently,
+the latest stable release of CGAL might not be immediately available and you should check the version
+offered by your package manager.</em></p>
+
+<p>We recommend using a package manager as this will ensure that all essential third party dependencies
+are present, and with the correct versions.</p>
 
 <pre>
-# Debian or Linux Mint
-sudo apt-get install libcgal-dev # install the CGAL library
-sudo apt-get install libcgal-demo # install the CGAL demos
-</pre>
-<pre>
-# ArchLinux
-sudo pacman -S cgal
+# Debian, Ubuntu, Linux Mint, ...
+sudo apt-get install libcgal-dev
 </pre>
 
-<h2>Build from Source</h2>
+<p>For other distributions or package manager, please consult your respective documentation.</p>
 
-<p>
-To build CGAL from source on a UNIX-Like System you have to <a href="/download/last" target="_blank">download a release as a tarball</a> or you can clone the current development version of CGAL from <a href="https://github.com/CGAL/cgal" target="_blank">GitHub</a>. The build process is documented in the <a href="http://doc.cgal.org/latest/Manual/installation.html" target="_blank">Installation Manual</a>.</p>
+<p>A step-by-step guide showing how to install and use CGAL with a package manager is available in the
+<a href="https://doc.cgal.org/latest/Manual/windows.html#title0">CGAL Documentation</a>.</p>
 
-<p>Please note that the directory layout and build process of the development version on GitHub are different from the release version.</p>
+<br>
+<h2>With a Source Archive</h2>
+
+<p>You can also obtain the CGAL library sources directly from from the
+<a href="https://github.com/CGAL/cgal/releases">Releases</a> page of the CGAL project.</p>
+
+<p>A step-by-step guide showing how to install and use CGAL with sources is available in the
+<a href="https://doc.cgal.org/latest/Manual/windows.html#title0">CGAL Documentation</a>.</p>
+
+<br>
+<h2>Through Github</h2>
+
+<p>Advanced users can clone the current development version of CGAL from
+<a href="https://github.com/CGAL/cgal/">GitHub</a> to enjoy early access to new features.</p>
+
+<p>Please note that the directory layout and build process of the development version on GitHub
+are different from the release version. A basic usage guide is available
+on the CGAL project's <a href="https://github.com/CGAL/cgal/blob/master/INSTALL.md">Install.md</a>.</p>
