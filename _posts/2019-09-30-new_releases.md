@@ -2,8 +2,8 @@
 layout: post
 title: "New CGAL releases"
 description: "CGAL-4.13.2, CGAL-4.14.1, and CGAL-5.0-beta1"
-category:
-tags: ["release"]
+category: "news"
+tags: [""]
 ---
 {% include JB/setup %}
 
@@ -11,9 +11,9 @@ tags: ["release"]
 The CGAL Open Source Project is pleased to announce today three new
 releases:
 
-  * [CGAL-4.13.2](../cgal4132) is the second (and last) bug-fix release for CGAL-4.13,
-  * [CGAL-4.14.1](../cgal4141) is the first bug-fix release for CGAL-4.14,
-  * and [CGAL-5.0-beta1](../cgal50-beta1) is the first beta release for CGAL-5.0.
+  * [CGAL-4.13.2](/2019/09/30/cgal4132) is the second (and last) bug-fix release for CGAL-4.13,
+  * [CGAL-4.14.1](/2019/09/30/cgal4141) is the first bug-fix release for CGAL-4.14,
+  * and [CGAL-5.0-beta1](/2019/09/30/cgal50-beta1) is the first beta release for CGAL-5.0.
 
 CGAL 5.0 is the first release of CGAL that requires a C++ compiler
 with the support of C++14 or later. The new list of supported
