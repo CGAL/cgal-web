@@ -11,9 +11,9 @@ tags: [""]
 <h4><a href="https://www.irit.fr/STORM/site/">STORM, IRIT</a> and <a href="https://geometryfactory.com/">GeometryFactory</a></h4>
 
 <br>
-<p>Digitizing large objects or scenes often is often performed by scanning from several points of view and merging the scans together afterwards. If the sensors used for acquisition do not have a way to spatially organize these scans, a registration algorithm should be applied in order to produce a unified point cloud that is spatially consistent; if the sensors used do produce localization and orientation information, these might still suffer from noise and imprecision and require a registration processing.</p>
+<p>Digitizing large objects or scenes often is often performed by scanning from several points of view and merging the scans together afterwards. If the sensors used for acquisition do not have a way to spatially organize these scans, a registration algorithm should be applied in order to produce a unified point cloud that is spatially consistent; even if the sensors used do produce localization and orientation information, these might still suffer from noise and imprecision and require a registration processing.</p>
 
-<p>CGAL now offers wrappers for two registration libraries: <em>OpenGR</em> and <em>Pointmatcher</em>.</p>
+<p>CGAL now offers wrappers for two registration libraries: <em>OpenGR</em> and <em>Pointmatcher</em>, enabling the combination of these tools with the diverse algorithms of CGAL (<a href="https://cgal.geometryfactory.com/CGAL/doc/master/Point_set_processing_3/index.html">Point set processing</a>, <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Manual/packages.html#PartReconstruction">Shape Reconstruction</a>, <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Shape_detection/index.html#Chapter_Shape_Detection">Shape Detection</a>, <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Classification/index.html#Chapter_Classification">Classification</a>, ...) in a seamless and efficient manner.</p>
 
 <br>
 <h3><a href="https://storm-irit.github.io/OpenGR/">OpenGR</a></h3>
