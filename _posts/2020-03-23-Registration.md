@@ -18,9 +18,9 @@ tags: [""]
 <br>
 <h3><a href="https://storm-irit.github.io/OpenGR/">OpenGR</a></h3>
 
-<p><em>OpenGR</em> is a set C++ libraries for 3D Global Registration released under the terms of the APACHE V2 licence. The algorithm used is Super4PCS.</p>
+<p><em>OpenGR</em> is a collection of C++ libraries for 3D Global Registration released under the terms of the APACHE V2 licence. The algorithm used is Super4PCS.</p>
 
-<p>From two randomly located and randomly oriented point clouds, <em>OpenGR</em> computes a global registration transformation: applying this transformation to the second point cloud makes it coarsely registered with the first one.</p>
+<p>From two arbitrarily located and arbitrarily oriented point clouds, <em>OpenGR</em> computes a global registration transformation: applying this transformation to the second point cloud makes it coarsely registered with the first one.</p>
 
 <br>
 <h3><a href="https://github.com/ethz-asl/libpointmatcher">Pointmatcher</a></h3>
@@ -36,7 +36,7 @@ tags: [""]
 </div>
 <br>
 
-Both wrappers are part of the <b>Point_set_processing_3</b> package; two new examples (<a href="https://cgal.geometryfactory.com/CGAL/doc/master/Point_set_processing_3/Point_set_processing_3_2registration_with_OpenGR_8cpp-example.html">one for OpenGR</a>, and <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Point_set_processing_3/Point_set_processing_3_2registration_with_pointmatcher_8cpp-example.html">one for Pointmatcher</a>) have been added to get you quickly started.
+Both wrappers are part of the <b>Point set processing</b> package; two new examples (<a href="https://cgal.geometryfactory.com/CGAL/doc/master/Point_set_processing_3/Point_set_processing_3_2registration_with_OpenGR_8cpp-example.html">one for OpenGR</a>, and <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Point_set_processing_3/Point_set_processing_3_2registration_with_pointmatcher_8cpp-example.html">one for Pointmatcher</a>) have been added to get you quickly started.
 
 <i class="glyphicon glyphicon-book"></i>
 <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Point_set_processing_3/index.html">Documentation of the package Point_set_processing_3</a> <br>
