@@ -8,13 +8,14 @@ tagline:
 <div class="homepage-slider">
   <div id="sequence">
     <ul class="sequence-canvas">
-      <li style="background-image: url({{ BASE_PATH }}/images/BeeClover.png); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
-        <h2 class="title">Clover Field</h2>
-        <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::Image_2("clover.png");</pre></h3>
+
+      <li style="background-image: url({{ BASE_PATH }}/images/BeeGrass.png); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+        <h2 class="title">Collision Avoidance</h2>
+        <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::AABB_tree tree(faces(surface_mesh));</pre></h3>
       </li>
       <li style="background-image: url({{ BASE_PATH }}/images/BeePrintedBody.png); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
         <h2 class="title">3D Printed Body</h2>
-        <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::Classification::classify(las_points);</pre></h3>
+        <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::Surface_mesh_deformation(body);</pre></h3>
       </li>
 
       <li style="background-image: url({{ BASE_PATH }}/images/BeeWing.png); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
@@ -27,11 +28,11 @@ tagline:
         <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::Affine_transformation_3();</pre></h3>
       </li>
 
-
-      <li style="background-image: url({{ BASE_PATH }}/images/BeeGrass.png); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
-        <h2 class="title">Collision Avoidance</h2>
-        <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::AABB_tree tree(faces(surface_mesh));</pre></h3>
+      <li style="background-image: url({{ BASE_PATH }}/images/BeeClover.png); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+        <h2 class="title">Clover Field</h2>
+        <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::Image_2("clover.png");</pre></h3>
       </li>
+
     </ul>
     <div class="sequence-pagination-wrapper">
       <ul class="sequence-pagination">
