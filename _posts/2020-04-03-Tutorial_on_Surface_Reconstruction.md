@@ -33,13 +33,12 @@ tags: [""]
 
 <p>The whole tutorial is illustrated by screenshots of point clouds and meshes and by code snippets. All of these code snippets form a full program that is provided and that can be compiled and runned by users.</p>
 
-https://cgal.geometryfactory.com/CGAL/doc/master/Manual/tuto_reconstruction.html<br>
+<br>
 <div style="text-align:center;">
-  <a href="../../../../images/reconstruction_tutorial.png"><img src="../../../../images/reconstruction_tutorial.png" style="max-width:50%"/></a><br>
+  <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Manual/tuto_reconstruction.html"><img src="../../../../images/reconstruction_tutorial.png" style="max-width:50%"/></a><br>
   <small>The new Tutorial on Surface Reconstruction from Point Clouds.</small>
 </div>
 <br>
-
 
 <i class="glyphicon glyphicon-book"></i>
 <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Manual/tuto_reconstruction.html">Tutorial on Surface Reconstruction from Point Clouds</a> <br>
