@@ -29,16 +29,16 @@ tags: [""]
 <p>Because such a diverse set of tools can be confusing for users, CGAL now offers a <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Manual/tuto_reconstruction.html">Tutorial on Surface Reconstruction from Point Clouds</a>. This tutorial explains how to choose the right algorithm, how to preprocess defect-laden data, how the different algorithm are expected to behave depending on the data and on parameters, and how to save and postprocess the output meshes.</p>
 
 <br>
-<div style="text-align:center;">
-  <a href="../../../../images/reconstruction_tutorial.png"><img src="../../../../images/reconstruction_tutorial.png" style="max-width:95%"/></a><br>
-  <small>The new Tutorial on Surface Reconstruction from Point Clouds.</small>
-</div>
-<br>
-
-<br>
 <h3>Code Provided</h3>
 
 <p>The whole tutorial is illustrated by screenshots of point clouds and meshes and by code snippets. All of these code snippets form a full program that is provided and that can be compiled and runned by users.</p>
+
+https://cgal.geometryfactory.com/CGAL/doc/master/Manual/tuto_reconstruction.html<br>
+<div style="text-align:center;">
+  <a href="../../../../images/reconstruction_tutorial.png"><img src="../../../../images/reconstruction_tutorial.png" style="max-width:50%"/></a><br>
+  <small>The new Tutorial on Surface Reconstruction from Point Clouds.</small>
+</div>
+<br>
 
 
 <i class="glyphicon glyphicon-book"></i>
