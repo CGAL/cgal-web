@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "New in CGAL: Optimal Bounding Box"
-description: "Computing Tight Bounding Boxes Around Point Sets and Models"
+description: "Computing Tight Bounding Boxes Of Point Sets and Models"
 category:
 tags: [""]
 ---
