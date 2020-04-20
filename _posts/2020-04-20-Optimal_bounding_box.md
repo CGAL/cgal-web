@@ -78,7 +78,7 @@ and to find not only a local minimum, but a global optimum.</p>
 
 <h3>implementation in CGAL</h3>
 
-<p>The implementation of CGAL supports point sets and meshes in input, with multiple possible output types.
+<p>The implementation of CGAL supports point sets and meshes as input, with multiple possible output types.
 Convex hull preprocessing is used to greatly improve speed, and is performed using the package
 <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Convex_hull_3/index.html#Chapter_3D_Convex_Hulls">3D Convex Hull</a>.</p>
 
