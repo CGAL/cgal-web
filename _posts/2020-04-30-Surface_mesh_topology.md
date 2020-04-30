@@ -23,13 +23,13 @@ tags: [""]
 <ul>
 <li><code>compute_shortest_non_contractible_cycle_with_base_point(dh, weight_functor)</code> to compute a shortest non-contractible cycle going through the source vertex of dh,</li>
 <li><code>compute_shortest_non_contractible_cycle(weight_functor)</code> to compute a shortest non-contractible cycle through every vertex and returns the shortest cycle among them,</li>
-<li><code>compute_edge_width()</code> to compute the edge width of the mesh, equivalent to compute_shortest_non_contractible_cycle( Unit_weight_functor()).</li>
+<li><code>compute_edge_width()</code> to compute the edge width of the mesh, equivalent to compute_shortest_non_contractible_cycle(Unit_weight_functor()).</li>
 <li><code>compute_face_width()</code> to compute the sequence of dart handles as described above and returns an std::vector of dart handles, where each dart represents a traversed face followed by an incident vertex.</li>
 </ul>
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/edge-width.png"><img src="../../../../images/edge-width.png" style="max-width:95%"/></a><br>
+  <a href="../../../../images/edge-width.png"><img src="../../../../images/edge-width.png" style="max-width:85%"/></a><br>
   <small>Pink cycle is the edge width of the mesh: the shortest (in number of edges) non contractible cycle. Green cycle is the shortest (in length) non contractible cycle. </small>
 </div>
 <br>
@@ -38,9 +38,9 @@ tags: [""]
 
 <p>In this package, three tests are available:</p>
 <ul>
-<li><code>is_contractible( \(p_1\))</code> to test if the closed curve \(p_1\) is contractible,</li>
-<li><code>are_freely_homotopic( \(p_1\), \(p_2\))</code> to test if the closed curves \(p_1\) and \(p_2\) are freely homotopic,</li>
-<li><code>are_homotopic_with_fixed_endpoints( \(p_1\), \(p_2\))</code> to test if the paths \(p_1\) and \(p_2\) are homotopic with fixed endpoints.</li>
+<li><code>is_contractible(p1)</code> to test if the closed curve p1 is contractible,</li>
+<li><code>are_freely_homotopic(p1, p2)</code> to test if the closed curves p1 and p2 are freely homotopic,</li>
+<li><code>are_homotopic_with_fixed_endpoints(p1, p2)</code> to test if the paths p1 and p2 are homotopic with fixed endpoints.</li>
 </ul>
 
 <br>
