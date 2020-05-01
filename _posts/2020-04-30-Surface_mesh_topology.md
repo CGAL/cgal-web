@@ -29,8 +29,9 @@ tags: [""]
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/edge-width.png"><img src="../../../../images/edge-width.png" style="max-width:85%"/></a><br>
-  <small>Pink cycle is the edge width of the mesh: the shortest (in number of edges) non contractible cycle. Green cycle is the shortest (in length) non contractible cycle. </small>
+  <a href="../../../../images/edge-width.png"><img src="../../../../images/edge-width.png" style="max-width:45%"/></a><br>
+  <a href="../../../../images/elephant-shortest-cycle.png"><img src="../../../../images/elephant-shortest-cycle.png" style="max-width:45%"/></a><br>
+  <small><b>Left:</b> Pink cycle is the edge width of the mesh: the shortest (in number of edges) non contractible cycle. Green cycle is the shortest (in length) non contractible cycle. <b>Right:</b> The three shortest non-contractible cycles computed successively on elephant mesh.</small>
 </div>
 <br>
 
