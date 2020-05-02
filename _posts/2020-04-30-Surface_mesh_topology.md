@@ -46,7 +46,7 @@ tags: [""]
 <li>test if a closed curve is contractible
 (see <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Surface_mesh_topology/classCGAL_1_1Surface__mesh__topology_1_1Curves__on__surface__topology.html#a816ad97901765d303ee5fa50fc8a0d0b">here</a>),</li>
 <li>test if two closed curves and are freely homotopic
-(see <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Surface_mesh_topology/classCGAL_1_1Surface__mesh__topology_1_1Curves__on__surface__topology.html#a85fc4a1f20c84073814251af6912539d"">here</a>),</li>
+(see <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Surface_mesh_topology/classCGAL_1_1Surface__mesh__topology_1_1Curves__on__surface__topology.html#a85fc4a1f20c84073814251af6912539d">here</a>),</li>
 <li>test if two paths are homotopic with fixed endpoints
 (see <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Surface_mesh_topology/classCGAL_1_1Surface__mesh__topology_1_1Curves__on__surface__topology.html#a05dba41f3012ec7747aa215e2af2f152">here</a>).</li>
 </ul>
