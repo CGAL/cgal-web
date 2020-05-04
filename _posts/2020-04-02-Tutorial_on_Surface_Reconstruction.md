@@ -35,7 +35,7 @@ tags: [""]
 
 <br>
 <div style="text-align:center;">
-  <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Manual/tuto_reconstruction.html"><img src="../../../../images/reconstruction_tutorial.png" style="max-width:50%"/></a><br>
+  <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Manual/tuto_reconstruction.html"><img src="../../../../images/reconstruction_tutorial.png" style="max-width:100%"/></a><br>
   <small>The new Tutorial on Surface Reconstruction from Point Clouds.</small>
 </div>
 <br>
