@@ -12,7 +12,7 @@ tags: [""]
 
 <br>
 
-<p>Geographic Information Systems (GIS) aim at modelizing, processing and storing geographic data. Many applications in GIS rely on specific data structures such as Triangulated Irregulator Network (TIN) or raster images. Some of these data structures can efficiently be computed and processed by the CGAL library.</p>
+<p>Geographic Information Systems (GIS) aim at modeling, processing and storing geographic data. Many applications in GIS rely on specific data structures such as Triangulated Irregular Networks (TIN) or raster images. Some of these data structures can efficiently be computed and processed by the CGAL library.</p>
 
 <br>
 <div style="text-align:center;">
