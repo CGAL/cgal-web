@@ -26,7 +26,7 @@ tags: [""]
 
 <p>Although the CGAL library does not provide a GIS package per se, many of its existing algorithms and data structures can be used for GIS applications. For example, combining the 2D Delaunay Triangulation with projection traits makes the generation of TIN a very simple and straightforward operation.<p>
 
-<p>Because applying the geometric tools of CGAL may not be such an obvious option to GIS developers, CGAL now offers a <a href="">Tutorial on GIS</a>. This tutorial covers many packages such as <a href="https://doc.cgal.org/latest/Triangulation_2/index.html#Chapter_2D_Triangulations">Delaunay Triangulations</a>, <a href="https://doc.cgal.org/latest/Classification/index.html#Chapter_Classification">Classification</a>, <a href="https://doc.cgal.org/latest/Point_set_processing_3/index.html#Chapter_Point_Set_Processing">Point Set</a> and <a href="https://doc.cgal.org/latest/Polygon_mesh_processing/index.html#Chapter_PolygonMeshProcessing">Polygon Mesh Processing</a>... It explains how to combine these various tools into efficient GIS applications: generating Digital Terrain Models (DTM) with ground estimation, rastering at any resolution wanted, contouring height isolevels, etc.</p>
+<p>Because applying the geometric tools of CGAL may not be such an obvious option to GIS developers, CGAL now offers a <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Manual/tuto_gis.html">Tutorial on GIS</a>. This tutorial covers many packages such as <a href="https://doc.cgal.org/latest/Triangulation_2/index.html#Chapter_2D_Triangulations">Delaunay Triangulations</a>, <a href="https://doc.cgal.org/latest/Classification/index.html#Chapter_Classification">Classification</a>, <a href="https://doc.cgal.org/latest/Point_set_processing_3/index.html#Chapter_Point_Set_Processing">Point Set</a> and <a href="https://doc.cgal.org/latest/Polygon_mesh_processing/index.html#Chapter_PolygonMeshProcessing">Polygon Mesh Processing</a>... It explains how to combine these various tools into efficient GIS applications: generating Digital Terrain Models (DTM) with ground estimation, rastering at any resolution wanted, contouring height isolevels, etc.</p>
 
 <br>
 <h3>Code Provided</h3>
@@ -35,7 +35,7 @@ tags: [""]
 
 <br>
 <div style="text-align:center;">
-  <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Manual/tuto_gis.html"><img src="../../../../images/gis_tutorial.png" style="max-width:50%"/></a><br>
+  <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Manual/tuto_gis.html"><img src="../../../../images/gis_tutorial.png" style="max-width:100"/></a><br>
   <small>The new Tutorial on GIS.</small>
 </div>
 <br>
