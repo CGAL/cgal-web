@@ -1,0 +1,37 @@
+name: Jekyll site CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Build the site in the jekyll/builder container
+      run: |
+        docker run \
+        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+        jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+    
+#    - name: Archive the site
+#      run: |
+#        zip -r site.zip _site
+
+#    - name: Upload 
+#      uses: actions/upload-artifact@v1
+#      with:
+#        name: site
+#        path: _site
+
+    - name: Deploy
+      uses: AEnterprise/rsync-deploy@v1.0
+      env:
+        DEPLOY_KEY: ${{ secrets.priv_key }}
+        ARGS: "-e -c -r --delete"
+        SERVER_PORT: 22
+        FOLDER: .
+        SERVER_IP: "cgal.geometryfactory.com"
+        USERNAME: "mgimeno"
+        SERVER_DESTINATION: "public_html/test_site"
