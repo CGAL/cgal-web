@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "CGAL User Portrait: Clubhouse"
-description: "Listen"
+description: "Listen to the Sound of Geometry"
 category: "news"
 tags: []
 ---
@@ -9,7 +9,8 @@ tags: []
 
 <p>You probably wouldn't have imagined that <em>Alpha Exploration</em>, which runs
 <a href="https://apps.apple.com/us/app/id1503133294">Clubhouse</a>, is a user of CGAL.
-You can learn all about how they use it in our Clubhouse room "Geometry meets Industry".</p>
+You can learn all about how Alpha Exploration and other companies use it in our
+Clubhouse room "Geometry meets Industry".</p>
 
 
 <h3>The Room</h3>
