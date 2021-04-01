@@ -35,7 +35,7 @@ is not always that important. Lean back, close your eyes, and imagine a triangle
 of hundred invitations to hand out, twenty of them with an open mic, that is you get the chance
 to raise hand and interact with our guests.</p>
 
-<p>To apply, pleae drop a mail at
+<p>To apply, please drop a mail at
 <a href="mailto:clubhouse@cgal.org?subject=Please%20let%20me%20in">clubhouse@cgal.org</a>,
 and let us know if you want to listen or speak.
 Don't send us your CV, but also more than just your email address - after all we have to make a
