@@ -40,7 +40,7 @@ to raise hand and interact with our guests.</p>
 and let us know if you want to listen or speak.
 Don't send us your CV, but also more than just your email address - after all we have to make a
 choice. What are your achievements? What burning question do you have? Or whatever you can imagine
-to convince us to pick you. We will strive for a mixed audience, and only for thoseof you  who want to speak,
+to convince us to pick you. We will strive for a mixed audience, and only for those of you  who want to speak,
 we will organize a short interview to hear if you really come across.</p>
 
 <h3>GDPR</h3>
