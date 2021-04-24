@@ -83,7 +83,7 @@ int main() {
     Octree octree(points);
     
     // Build the octree
-    octree.refine(10, 20);
+    octree.refine();
     
     // Print out the tree
     std::cout << octree;
@@ -95,7 +95,7 @@ int main() {
 Once the tree is constructed, it's simple to perform queries:
 ```c++
 ...
-// Find the 10 nearest points to the search point
+// Find the 3 nearest points to the search point
 auto search_point = new Point(1, -1, 0);
 Point_vector neighbors;
 octree.nearest_k_neighbors(search_point, 3, std::back_inserter(neighbors));
