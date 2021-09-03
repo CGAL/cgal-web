@@ -50,7 +50,7 @@ Redirect permanent /archive.html /news.html
 
 RedirectMatch seeother ^/download/([0-9].*) https://github.com/CGAL/cgal/releases/tag/releases/CGAL-$1
 
-RedirectMatch seeother ^/Pkg/(.*) http://doc.cgal.org/latest/Manual/packages.html#Pkg$1Summary
+RedirectMatch seeother ^/Pkg/(.*) http://doc.cgal.org/latest/Manual/packages.html#Pkg$1
 RedirectMatch seeother ^/Part/(.*) http://doc.cgal.org/latest/Manual/packages.html#Part$1
 
 # An alias for shorter urls to the CGAL Developers Wiki
