@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "CGAL versions 5.1.5, 5.2.3, and 5.3"
-description: "Three new CGAL releases: CGAL-5.1.5, CGAL-5.2.3, and CGAL-5.3"
+title: "Three new CGAL releases"
+description: "CGAL-5.1.5, CGAL-5.2.3, and CGAL-5.3"
 category: "news"
 tags: [""]
 ---
