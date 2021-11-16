@@ -184,7 +184,7 @@ on the <a href="https://github.com/CGAL/cgal/">CGAL GitHub repository</a>, and w
 officially released in the upcoming version of CGAL, CGAL 5.4, scheduled for December 2021.</p>
 
 <i class="glyphicon glyphicon-book"></i>
-<a href="https://doc.cgal.org/5.3/Manual/packages.html#PkgShapeRegularization">Documentation of the package Shape_Regularization</a>
+<a href="https://doc.cgal.org/5.4/Manual/packages.html#PkgShapeRegularization">Documentation of the package Shape_Regularization</a>
 <br>
 <i class="glyphicon glyphicon-download"></i>
 <a href="https://github.com/CGAL/cgal/tree/master">CGAL master branch on GitHub</a>
