@@ -22,9 +22,9 @@ such as lines and planes, are being regularized. Usually, three types of regular
 among these shapes are reinforced:</p>
 
 <ul>
-<li>*Parallelism* where near parallel shapes are made exactly parallel.</li>
-<li>*Orthogonality* where near orthogonal shapes are made exactly orthogonal.</li>
-<li>*Collinearity* where near collinear shapes are made exactly collinear.</li>
+<li><i>Parallelism:</i> near parallel shapes are made exactly parallel.</li>
+<li><i>Orthogonality:</i> near orthogonal shapes are made exactly orthogonal.</li>
+<li><i>Collinearity:</i> collinear shapes are made exactly collinear.</li>
 </ul>
 
 With the next CGAL release, a new package will add one more step towards a robust and component-based reconstruction pipeline.
