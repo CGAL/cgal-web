@@ -172,13 +172,13 @@ group: navigation
   <LI> <A NAME="debian_packages"></A>
        <B>Are there packages for Debian / Ubuntu available?</B>
        <P>Packages for Debian unstable (sid) are available from the official
-       Debian repository. Debian stable (stretch) and Debian testing (buster)
+       Debian repository. Debian stable (bullseye) and Debian testing (bookworm)
        might not contain the latest version of CGAL. In that case, add</P>
-      <PRE>   deb <A href="http://debian.cgal.org/">http://debian.cgal.org</A> buster main
-   deb-src <A href="http://debian.cgal.org/">http://debian.cgal.org</A> buster main</PRE>
-       or
       <PRE>   deb <A href="http://debian.cgal.org/">http://debian.cgal.org</A> bullseye main
    deb-src <A href="http://debian.cgal.org/">http://debian.cgal.org</A> bullseye main</PRE>
+       or
+      <PRE>   deb <A href="http://debian.cgal.org/">http://debian.cgal.org</A> bookworm main
+   deb-src <A href="http://debian.cgal.org/">http://debian.cgal.org</A> bookworm main</PRE>
        to <TT>/etc/apt/sources.list</TT> (note that you only need the pair of lines
        corresponding to the release you are using) and make sure that the package
        <TT>apt-transport-https</TT> is installed. The packages are called
