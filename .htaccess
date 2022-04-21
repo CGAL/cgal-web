@@ -332,6 +332,29 @@ RewriteRule demo/5.3.2/(.*) /demo/5.3.1/$1 [R]
 RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
 RewriteRule demo/5.3.3/(.*) /demo/5.3.2/$1 [R]
 
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/5.4/(.*) /demo/5.3/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/5.4.1/(.*) /demo/5.4/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/5.4.2/(.*) /demo/5.4.1/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/5.4.3/(.*) /demo/5.4.2/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/5.5/(.*) /demo/5.4/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/5.5.1/(.*) /demo/5.5/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/5.5.2/(.*) /demo/5.5.1/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/5.5.3/(.*) /demo/5.5.2/$1 [R]
 # Redirect last version of the manual /Manual/4.5/ to /Manual/latest/
 RewriteRule ^Manual/4.5/(.*) /Manual/latest/$1 [R]
 
