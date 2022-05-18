@@ -11,7 +11,7 @@ tags: [""]
     <a href="https://geometryfactory.com/who-we-are/">Mael Rouxel-Labbé</a>&deg;,
     <a href="https://www.linkedin.com/in/mhsaar">Michael Hemmer</a>,
     <a href="https://www-sop.inria.fr/members/David.Cohen-Steiner/">David Cohen-Steiner</a>&#42;,
-    <a href="">Pierre Alliez</a>&#42;</h3>
+    <a href="https://team.inria.fr/titane/pierre-alliez/">Pierre Alliez</a>&#42;</h3>
 <h4>&#42;<a href="https://www.inria.fr">INRIA Sophia Antipolis</a>,
     &deg;<a href="http://www.geometryfactory.com" target="_blank">GeometryFactory</a></h4>
 
