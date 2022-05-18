@@ -116,7 +116,7 @@ on input data that combine points, polylines, and triangles.</p>
 <br><br>
 <div style="text-align:center;">
   <a href="../../../../images/alpha_wrap_mixed.png"><img src="../../../../images/alpha_wrap_mixed.png" style="max-width:95%"/></a><br>
-  <br><small>Delaunay triangulations and Voronoi diagrams of radar data on Earth (click to enlarge).</small>
+  <br><small>Single wrap of input data with different representation types: points, segments, triangles (click to enlarge).</small>
 </div>
 
 <br>
