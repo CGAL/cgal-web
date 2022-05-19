@@ -682,35 +682,6 @@ the
         is a  proper STL functor) one can write:
         <PRE>std::transform( P.points_begin(), P.points_end(), P.points_begin(), A);</PRE>
         <P>
-   <LI> <A NAME="polyhedron_examples"></A>
-        <B>Where can I find examples of polyhedral surfaces?</B>
-        <P>
-         We have support for the Object File Format (OFF) as used by
-         <A HREF="http://www.geomview.org/">Geomview</A>. The
-         Geomview distribution contains several example objects. The
-         CGAL distribution contains in <TT>examples/Polyhedron_IO/</TT>
-         a few example objects and example programs around the file IO
-         support for polyhedral surfaces. Among them is a file converter
-         <TT>iv2off.cpp</TT> reading Inventor or VRML 1.0 files
-         extracting <TT>IndexedFaceSet</TT> nodes (in a rather crude
-         fashion, but it may still be useful). Another converter is
-         located in <TT>demo/Polyhedron_IO/</TT> reading geometry
-         files in Viewpoint Data Labs mesh format, see <A
-         HREF="http://www.viewpoint.com/">http://www.viewpoint.com/</A>
-         for its description and for examples.  
-         Another source for many objects in various formats
-         is the <A HREF="http://www.3dcafe.com/">
-         3D Cafe</A>. Although a bit outdated, another 
-         source of references to geometric models and other test
-         data sets is the
-        <A HREF="http://www.mpi-sb.mpg.de/~kettner/pub/cgal_report2_tr_97.ps.gz">
-         CGAL Workpackage 4, Report 2</A>, Fall 1997.
-         <P>
-
-         The easiest solution to read and write polyhedrons in OFF is
-         to include <TT>CGAL/IO/Polyhedron_iostream.h</TT> and use the
-         standard stream operators with a <I>CGAL::Polyhedron_3</I>.
-         <P>
    <LI> <A NAME="polyhedron_normals"></A>
         <B>How can I compute the plane equation (normal) for a facet 
            in a polyhedral surface?</B>
