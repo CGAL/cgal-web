@@ -14,6 +14,6 @@ The CGAL Open Source Project is pleased to announce today three new releases:
   * [CGAL-5.2.2](/2021/07/06/cgal523) is the third bug-fix release for CGAL-5.3, and
   * [CGAL-5.3](/2021/07/06/cgal53) is the most recent feature release of CGAL.
 
-The development of CGAL will then now on the future CGAL-5.4 (planned for December 2021), with bug-fixes regularly backported to the branches for CGAL-5.2.x and CGAL-5.3.x.
+The development of CGAL will now focus on the future CGAL-5.4 (planned for December 2021), with bug-fixes regularly backported to the branches for CGAL-5.2.x and CGAL-5.3.x.
 
 </div>
