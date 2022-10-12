@@ -8,7 +8,7 @@ tags: []
 {% include JB/setup %}
 <div markdown="1">
 
-The CGAL Open Source Project is pleased to announce two new releases that were publish last Friday:
+The CGAL Open Source Project is pleased to announce two new releases that were publish:
 
   * [CGAL-5.4.3](/2022/10/12/cgal5.4.3) is the third bug-fix release for CGAL-5.4, and
   * [CGAL-5.5.1](/2022/10/12/cgal551) is the first bug-fix release for CGAL-5.5.
