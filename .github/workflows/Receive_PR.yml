@@ -1,0 +1,30 @@
+name: Receive_PR
+
+# read-only repo token
+# no access to secrets
+on: [push,pull_request]
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:   
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Change BASE_PATH
+        run: yq -i '.JB.BASE_PATH = "https://saillantnicolas.github.io/cgal-web"' _config.yml
+      - name: Remove demo/ (temporarily)
+        run: rm -rf demo/
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
