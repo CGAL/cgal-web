@@ -70,12 +70,12 @@ jobs:
         - name: getWorkflowId
           id: workflowid
           run: |
-            curl "https://api.github.com/repos/SaillantNicolas/cgal-web/actions/artifacts/${{needs.Extract_Receive_Pr.outputs.artifactid}}" -o artifact.json
+            curl "https://api.github.com/repos/CGAL/cgal-web/actions/artifacts/${{needs.Extract_Receive_Pr.outputs.artifactid}}" -o artifact.json
             echo "id=$(cat artifact.json | jq -r '.workflow_run.id')" >> $GITHUB_OUTPUT
         - name: getPrId
           id: prid
           run: |
-            curl "https://api.github.com/repos/SaillantNicolas/cgal-web/actions/runs/${{ steps.workflowid.outputs.id }}" -o workflow.json
+            curl "https://api.github.com/repos/CGAL/cgal-web/actions/runs/${{ steps.workflowid.outputs.id }}" -o workflow.json
             echo "id=$(cat workflow.json | jq -r '.pull_requests[0].number')" >> $GITHUB_OUTPUT
         - name: Post address
           uses: actions/github-script@v6
@@ -87,7 +87,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: ${{ steps.prid.outputs.id }},
-              body: "The web-site is built. It will be available, after a few minutes, here: https://saillantnicolas.github.io/cgal-web/index.html"
+              body: "The web-site is built. It will be available, after a few minutes, here: https://cgal.github.io/cgal-web/index.html"
             });
         - name: Post error
           uses: actions/github-script@v6

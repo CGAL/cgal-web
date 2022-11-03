@@ -16,7 +16,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Change BASE_PATH
-        run: yq -i '.JB.BASE_PATH = "https://saillantnicolas.github.io/cgal-web"' _config.yml
+        run: yq -i '.JB.BASE_PATH = "https://cgal.github.io/cgal-web"' _config.yml
       - name: Remove demo/ (temporarily)
         run: rm -rf demo/
       - name: Setup Pages
