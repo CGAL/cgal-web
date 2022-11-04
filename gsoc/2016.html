@@ -1,0 +1,454 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>CGAL - Project Ideas  for the Google Summer of Code 2016</title>
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="CGAL Editorial Board">
+
+    <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/icomoon-social.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+
+    <!--[if lte IE 8]>
+	<link rel="stylesheet" href="css/leaflet.ie.css" />
+	<![endif]-->
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/main.css">
+
+    <!-- atom & rss feed -->
+    <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="https://cgal.github.io/cgal-web/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+
+    <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    
+
+    <!-- Navigation & Logo-->
+    <div class="mainmenu-wrapper">
+    <div class="container">
+    <nav id="mainmenu" class="mainmenu" role="navigation">
+    <ul>
+    <li class="logo-wrapper hidden-xs hidden-sm hidden-md">
+    <a href="https://cgal.github.io/cgal-web/index.html">
+    <img src="https://cgal.github.io/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
+    </a>
+    </li>
+
+    <li class="hidden-lg">
+    <a href="https://cgal.github.io/cgal-web/index.html">
+    <img src="https://cgal.github.io/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
+    </a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/project.html">Project</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/download.html">Download</a>
+    </li>
+
+    <li class="dropdown" style="transition-duration: all 0s ease; transition-delay: all 0s ease;">
+    <a href="#" class="dropdown-toggle" data-hover="dropdown">Packages <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometryProcessing" target="_blank">Geometry Processing</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
+        </ul>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/documentation.html">Documentation</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/news.html">News</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/media.html">Media</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/support.html">Support</a>
+    </li>
+
+    </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="section section-breadcrumbs">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>CGAL - Project Ideas  for the Google Summer of Code 2016 </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+<div class="section">
+  <div class="container">
+    
+
+
+
+<H2>CGAL Projects page for the Google Summer of Code 2016</H2>
+
+<p>
+The CGAL Project is applying as a mentoring organization of the  <a href="http://code.google.com/soc/">Google Summer of Code</a> 2016.
+On this page we present some project ideas as well the <a href="#information">information applicants have to provide us</a>.
+GSoC applicants are welcome to propose other ideas and check if a mentor is interested in supervising it.
+</p>
+
+In 2016 our application has been <b>rejected</b>.
+
+<br>
+<p>Previous project ideas of the CGAL project for the <b>Google Summer of Code</b> can be found on the following pages:
+<a href="http://www.cgal.org/gsoc/2010.html">2010</a>, <a href="http://www.cgal.org/gsoc/2011.html">2011</a>,
+<a href="http://www.cgal.org/gsoc/2012.html">2012</a>, <a href="http://www.cgal.org/gsoc/2013.html">2013</a>,
+<a href="http://www.cgal.org/gsoc/2014.html">2014</a>, <a href="http://www.cgal.org/gsoc/2015.html">2015</a>.</p>
+
+
+<h4>Summary:</h4>
+
+<p>
+First section to read: <a href="#information">Information Candidates Should Supply</a>
+</p>
+
+<ol>
+  <li> <a href="#p1">Adding a Parallel Version of the Edge Simplification Algorithm</a>
+  <li> <a href="#p2">Reworking Intersection Functions</a>
+  <li> <a href="#p3">Enhancing the 2D Arrangements Package</a>
+  <li> <a href="#p4">Fixing and Enhancing 2D Regularized Boolean Operations</a>
+  <li> <a href="#p5">Enhancing 2D Regularized Boolean Operations Demo</a>
+  <li> <a href="#p6">Parallel Implementation of a Point Set Reconstruction Algorithm</a>
+  <li> <a href="#p7">Create a Bridge Between the Available Github "webhooks", and the Usual Git Hook Scripts</a>
+  <li> <a href="#p8">Finalizing a Package for 2D Triangulations on the Sphere</a>
+  <li> <a href="#p9">Implementing a Package for the Point Cloud Registration Algorithm Super4PCS</a>
+  <li> <a href="#p10">Sparse Eigenvalue Solver and Application to Diffusion Distances</a>
+  <li> <a href="#p11">Improving the Point Set Shape Detection Component</a>
+  <li> <a href="#p12">Robust Normal estimation for Point Clouds with Sharp Features</a>
+  <li> <a href="#p13">Implementing a Package for Computation of Surface Maps.</a>
+</ol>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<hr>
+
+<h3 id="p1">Adding a Parallel Version of the Edge Simplification Algorithm</h3>
+<p><b>Mentor(s):</b> Sebastien Loriot  (GeometryFactory) and Clément Jamin (INRIA)
+</p><p><b>Project description:</b><br />
+CGAL has a triangulated surface mesh edge simplification <a rel="nofollow" class="external text" href="http://doc.cgal.org/latest/Surface_mesh_simplification/index.html">package</a>
+based on the paper <i>Peter Lindstrom and Greg Turk. Fast and memory efficient polygonal simplification. In IEEE Visualization, pages 279–286, 1998.</i>
+The goal of this project is to use a modified version of this algorithm to allow edges of a mesh to be simplified using parallel threads.
+</p><p><b>Required Skills:</b> C++, Intel TBB
+</p><p><b>Contact:</b> sebastien.loriot@cgal.org
+</p>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<hr>
+
+<h3 id="p2">Reworking Intersection Functions</h3>
+<p><b>Mentor(s):</b> Sebastien Loriot
+</p><p><b>Project description:</b><br />
+The goal of this project is to rewrite all the intersection predicates (<code>do_intersect_2/3</code>) to provide more information, but at the same time staying backward compatible. For example, say you want to know whether two segments intersect but also where lies the intersection, in the interior or at an endpoint of each segment. If the student is fast enough, an extension of the project is to rewrite intersection computation functions to take into account the result of the do-intersect predicate to speed up the computation.
+</p><p><b>Required Skills:</b> C++, generic programming, basic geometry
+</p><p><b>Contact:</b> sebastien.loriot@cgal.org
+</p>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<hr>
+
+<h3 id="p3">Enhancing the 2D Arrangements Package</h3>
+<p><b>Mentor(s):</b> Efi Fogel (Tel Aviv University)
+</p><p><b>Project description:</b><br />
+Fix and enhance various small features in the 2D Arrangements package:
+</p>
+<ul>
+<li> Implement Naive Ray Shooting.
+</li>
+<li> Fix all point location strategies to work with all traits classes.
+</li>
+<li> Replace CGAL::Object with boost::variant.
+</li>
+<li> Use smart pointers instead of allocation and deletion.
+</li>
+<li> Add CGAL::insert(arr, curves_begin, curves_end, points_begin, points_end).
+</li>
+<li> Add CGAL::insert_{in_face,from_left,from_right, at_vertices}(arr, ....) free functions with hints.
+</li>
+<li> Fix the zone() free function (it's not according to the formal definition).
+</li>
+<li> Implement missing (documented) functions.
+</li>
+<li> Add a default traits parameter for free functions that do not have it yet.
+</li>
+</ul>
+<p><b>Required Skills:</b> C++, templates, Boost
+</p><p><b>Contact:</b> efifogel@gmail.com
+</p>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<hr>
+
+<h3 id="p4">Fixing and Enhancing 2D Regularized Boolean Operations</h3>
+<p><b>Mentor(s):</b> Efi Fogel (Tel Aviv University)
+</p><p><b>Project description:</b><br />
+Fix and enhance various small features in the 2D Regularized Boolean Operation package:
+</p>
+<ul>
+<li> Add namespace.
+</li>
+<li> Introduce an implementation of intersection testing for convex polygons.
+</li>
+<li> Optimize union and intersection of many polygons.
+</li>
+<li> Add what's necessary to inter-operate with visibility computation.
+</li>
+</ul>
+<p><b>Required Skills:</b> C++, templates, and some computational geometry.
+</p><p><b>Contact:</b> efifogel@gmail.com
+</p>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<hr>
+
+<h3 id="p5">Enhancing 2D Regularized Boolean Operations Demo</h3>
+<p><b>Mentor(s):</b> Efi Fogel (Tel Aviv University)
+</p><p><b>Project description:</b><br />
+Enhance the 2D Regularized Boolean Operations Demo with the following
+</p>
+<ul>
+<li> Minkowski sum (especially the recently new functionality).
+</li>
+<li> Visibility computation. This may also requires some API additions.
+</li>
+</ul>
+<p><b>Required Skills:</b> C++, templates, and QT.
+</p><p><b>Contact:</b> efifogel@gmail.com
+</p>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<hr>
+
+<h3 id="p6">Parallel Implementation of a Point Set Reconstruction Algorithm</h3>
+<p><b>Mentor(s):</b> Sebastien Loriot and Raphaëlle Chaine
+</p><p><b>Project description:</b><br />
+Starting from the code of the author of:
+</p>
+<pre> A geometric convection approach of 3D reconstruction
+ Raphaëlle Chaine
+ ACM International Conference Proceeding Series,
+ Proceedings of the Eurographics/ACM SIGGRAPH Symposium on Geometry processing, SGP2003, pp. 218-229, June 2003
+ <a rel="nofollow" class="external free" href="http://liris.cnrs.fr/~rchaine/RECONSTRUCTION/sgp_chaine.pdf">http://liris.cnrs.fr/~rchaine/RECONSTRUCTION/sgp_chaine.pdf</a>
+</pre>
+<p>The student will need to finalize the package and propose a way to parallelize this point set reconstruction algorithm following the CGAL's guidelines.
+</p><p><br />
+<b>Required Skills:</b> C++, parallel programming, Intel TBB
+</p><p><b>Contact:</b> sebastien.loriot@cgal.org
+</p>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<hr>
+
+<h3 id="p7">Create a Bridge Between the Available Github "webhooks", and the Usual Git Hook Scripts</h3>
+<p><b>Mentor(s):</b> Laurent Rineau
+</p><p><b>Project description:</b><br />
+The CGAL project has moved from a dedicated Git repository to the Github service. One issue is that Github no-longer support the server Git hooks, but only its own instance named "webhook". The student will implement a bridge between Github webhooks and usual Git hook scripts, so that one can for example use <a rel="nofollow" class="external text" href="https://github.com/mhagger/git-multimail">git-multimail</a> with Github.
+</p><p><b>Required Skills:</b> shell programming, web services
+</p><p><b>Contact:</b>: laurent.rineau@cgal.org
+</p>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<hr>
+
+<h3 id="p8">Finalizing a Package for 2D Triangulations on the Sphere</h3>
+<p><b>Mentor(s):</b> Sébastien Loriot (GeometryFactory) and Monique Teillaud (INRIA)
+</p><p><b>Project description:</b><br />
+The sphere can model atoms (biology) as well as the earth (geography) and the celestial vault (astrophysics), which shows a strong need for computations on the sphere. A method was proposed, a few years ago, to compute triangulations of points on or close to a sphere [1], and a prototype software has been written. The prototype is very efficient, but it duplicates some parts of the CGAL 2D triangulation classes. The project will consist in proposing a new design for those classes in order to avoid duplications, and implementing it. 
+</p><p><b>Required Skills:</b> C++, design patterns
+</p><p><b>Contact:</b> Sebastien.Loriot@cgal.org, Monique.Teillaud@inria.fr
+</p><p><b>Reference</b><br />
+[1] Manuel Caroli, Pedro M. M. de Castro, Sébastien Loriot, Olivier Rouiller, Monique Teillaud, and Camille Wormser. Robust and Efﬁcient Delaunay triangulations of points on or close to a sphere. In 9th International Symposium on Experimental Algorithms, volume 6049 of Lecture Notes in Computer Science, pages 462-473, 2010. Preliminary version available at <a rel="nofollow" class="external free" href="https://hal.inria.fr/inria-00405478/">https://hal.inria.fr/inria-00405478/</a>
+</p><p><br />
+</p>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<hr>
+
+<h3 id="p9">Implementing a Package for the Point Cloud Registration Algorithm Super4PCS</h3>
+<p><b>Mentor(s):</b> Simon Giraudot (GeometryFactory) and Nicolas Mellado (IRIT)
+</p><p><b>Project description:</b><br />
+This projects aims at integrating the existing Super4PCS implementation (<a rel="nofollow" class="external free" href="http://github.com/nmellado/Super4PCS">http://github.com/nmellado/Super4PCS</a>) as a CGAL package.
+</p><p><b>Required Skills:</b> C++
+</p><p><b>Contact:</b> simon.giraudot@geometryfactory.com, nicolas.mellado@irit.fr
+</p><p><b>Reference</b><br />
+[1] Nicolas Mellado, Dror Aiger, and Niloy J. Mitra. 2014. Super 4PCS Fast Global Pointcloud Registration via Smart Indexing. Comput. Graph. Forum 33, 5 (August 2014), 205-215. DOI=<a rel="nofollow" class="external free" href="http://dx.doi.org/10.1111/cgf.12446">http://dx.doi.org/10.1111/cgf.12446</a>
+</p><p><br />
+</p>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<hr>
+
+<h3 id="p10">Sparse Eigenvalue Solver and Application to Diffusion Distances</h3>
+<p><b>Mentor(s):</b> Pierre Alliez (Inria) and Jane Tournois (GeometryFactory)
+</p><p><b>Project description:</b><br /> The eigen-structure of linear operators is relevant for a number of geometry processing algorithms on meshes such as pose-invariant shape signatures for shape retrieval, spectral embedding, parameterization of surface meshes, clustering, correspondence, diffusion distances and surface reconstruction. Popular operators include Laplace Beltrami (1st order and higher order) and distance matrices, the most frequent ones being defined as symmetric positive definite operators. 
+In general we need to calculate a specific number of eigenvalues and eigenvectors of a large sparse square matrix A (smallest or largest), smaller than the size of A. 
+</p><p>Recent advances on solvers through the Eigen and ARPACK-Eigen [1] C++ libraries makes it possible to add an eigenvalue solver in CGAL with little dependency, as both libraries are header-only. In addition, in ARPACK-Eigen the user only requires to define operations on matrix A such as a matrix-vector product. The library is particularly powerful when the matrix-vector product can be computed efficiently, which is the case when A is sparse.
+</p><p>The objective of this project is to implement a generic design for computing eigenvalues and eigenvectors of linear operators on surface meshes and point sets sampled on surfaces. We will first experiment with the Laplace-Beltrami operator to compute diffusion distance [2]. The heat diffusion kernel, derived from the spectral decomposition of M, provides a means to compute approximate geodesic distances at low computational cost. Such approximation can be leveraged in a wide range of potential applications.
+</p><p><b>Required Skills:</b> C++. Knowledge of linear algebra and Laplace operators is a plus. 
+</p><p><b>Contact:</b> pierre.alliez@inria.fr
+</p><p><b>Reference</b><br />
+[1] ARPACK-Eigen is a redesign of the ARPACK software for large scale eigenvalue problems, built on top of Eigen: <a rel="nofollow" class="external free" href="https://github.com/yixuan/arpack-eigen">https://github.com/yixuan/arpack-eigen</a>
+</p><p>[2] Diffusion distances: see <a rel="nofollow" class="external free" href="https://en.wikipedia.org/wiki/Diffusion_map#Diffusion_distance">https://en.wikipedia.org/wiki/Diffusion_map#Diffusion_distance</a>
+</p>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<hr>
+
+<h3 id="p11">Improving the Point Set Shape Detection Component</h3>
+<p><b>Mentors:</b> Simon Giraudot (GeometryFactory), Pierre Alliez (Inria) and Laurent Busé (Inria)
+</p><p><b>Project description:</b><br /> The Shape Detection component implements an efficient RANSAC-based primitive shape detection algorithm for point sets with unoriented normals. Five types of primitive shapes are detected: plane, sphere, cylinder, cone and torus. 
+</p><p>This component can be improved in three ways:
+</p><p>1. Connectivity constraint. To avoid generating shapes with fragmented support we enforce a connectivity constraint by considering only one connected component, referred to as cluster, selected as the one covering the largest number of inliers. While this constraint is efficiently met for developable shapes such as planes or cylinders, it renders the algorithm slow for non-developables shapes such as cones and torii. The objective is to devise a novel data structure and efficient algorithm to enumerate the connected components for cones and torii. This requires devising a parameterization method for these primitives, and dealing with degenerate cases.
+</p><p>2. Random shape generators. The current shape detection algorithm relies upon random generation of primitive shapes, given a small set of points and unoriented normals. Recent findings show that such generator can be made more efficient by requiring less contraints.
+</p><p>3. Other shape types. Other types can be detected through implementing a class deriving from the base shape class. The goal is to demonstrate such genericity by defining composed primitives such as a crease edge formed by two orthogonal planes, a corner formed by three mutually orthogonal planes, and 3D boxes. 
+</p><p><br />
+<b>Required Skills:</b> C++. Knowledge of linear algebra is a plus. 
+</p><p><b>Contact:</b> pierre.alliez@inria.fr
+</p><p><b>Reference</b><br />
+[1] Point Set Shape Detection <a rel="nofollow" class="external free" href="http://doc.cgal.org/latest/Point_set_shape_detection_3/index.html#Chapter_Point_Set_Shape_Detection">http://doc.cgal.org/latest/Point_set_shape_detection_3/index.html#Chapter_Point_Set_Shape_Detection</a>
+</p><p><br />
+</p>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<hr>
+
+<h3 id="p12">Robust Normal estimation for Point Clouds with Sharp Features</h3>
+<p><b>Mentors:</b> Simon Giraudot (GeometryFactory), Alexandre Boulch (Onera) 
+</p><p><b>Project description:</b><br /> Boulch and Marlet devised an algorithm for estimating normals on unorganized point clouds that preserves sharp features [1]. This approach offers an excellent tradeoff between precision, speed, and robustness. In addition, the authors have implemented a prototype algorithm based on CGAL. Starting from this prototype, the goal is to convert it into an algorithm for the point set processing component of CGAL, with examples, tests and plugin for the polyhedron demo of CGAL.
+</p><p><b>Required Skills:</b> C++. 
+</p><p><b>Contact:</b> simon.giraudot@geometryfactory.com
+</p><p><b>Reference</b><br />
+[1] <a rel="nofollow" class="external free" href="https://sites.google.com/site/boulchalexandre/software">https://sites.google.com/site/boulchalexandre/software</a>
+</p>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<hr>
+
+
+<h3 id="p13">Implementing a Package for Computation of Surface Maps.</h3>
+<p><b>Mentors:</b> Yaron Lipman(Weizmann Institute of Science), Andreas Fabri (GeometryFactory)</p>
+<p><b>Project description:</b><br />
+Computing high quality mappings between surfaces is a core task in computer graphics, computer vision, medical imaging and related fields. This projects aims at implementing algorithms ([1],[2]) for computing bijective, low distortion mappings between surface-meshes. The implementation will consist of a couple of algorithms which follow the same  three steps: i) cutting the meshes into disk topology; ii) embedding the meshes into a canonical domain and reducing the distortion of the embedding via optimization; iii) computing the surface map induced from the embeddings via an overlay procedure and/or lifting.  
+<pre>
+[1]  AIGERMAN, N., PORANNE, R., AND LIPMAN, Y. 2015. Seamless surface mappings. ACM Transactions on Graphics (TOG) 34, 4.
+[2]  AIGERMAN, N., AND LIPMAN, Y. 2015. Orbifold tutte embeddings. ACM Trans. Graph. 34, 6.
+</pre>
+</p>
+<p><b>Required Skills:</b> C++, Geometry, Optimization </p>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<hr>
+
+
+<h3 id="information">Information Candidates Should Supply</h3>
+
+<p>The application process has several steps. Before contacting anybody verify that you are eligible, that is
+that you are enrolled as student, don't get a tuition fee, etc. The next step is to contact the mentor
+of the project you are interested in. You have to convince him that you are the right person to get the job
+done. The next step is to work out more details and to contact the mentoring organization by providing
+the following information by email to <a href="mailto:gsoc-cgal@lists-sop.inria.fr">gsoc-cgal@lists-sop.inria.fr</a></p>
+
+
+<h4>Project</h4>
+<ol>
+<li> Select a project in the list and provide your personal and detailed description. If you wish to work on another idea of your own, we are pretty open as long as this serves the goal of consolidating CGAL as a whole.
+<li> Provide a proposal of a technical solution with your envisioned methodology. The more detailed the better.
+<li> Explain how the solution will be available to the user, in which form. Do not forget the documentation, unitary tests and cross-platform aspects.
+<li> Provide a realistic schedule with objectives (one every two weeks for example) and deadlines. Focus on mid-term objectives as well as on the final evaluation.
+<li> Provide a formal commitment that you will be involved full time on the GSoC. This is absolutely mandatory.
+</ol>
+
+<h4>Personal data</h4>
+<ol>
+<li> First name, last name, affiliation and geographical location.
+<li> A brief list of the main studies and programming courses attended, with ranking.
+<li> List of the most important software projects contributed and success.
+<li> Which are your best skills in terms of programming and scientific computing?
+<li> In general what is your taste in terms of programming? language, methodology, team work, etc.
+<li> Is there anything that prevents you from working full time on the project during the program period?
+<li> How do you see your involvement after the program ends? Do you see yourself pushing the project further, or do you see yourself contributing to other CGAL projects?
+<li> Are you more interested in the theory/scientific aspect of CGAL, or do you feel more like a hacker?
+<li> What are your long-term wishes in terms of job?
+</ol>
+
+  </div>
+</div>
+
+
+    
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="footer-copyright">
+            <div style="float: left;">
+              <a href="https://twitter.com/TheCGALProject" alt="The CGAL Project's Twitter">
+                <img src="https://cgal.github.io/cgal-web/images/icons/twitter.svg" class="center-block btn-dark-orange" alt="Twitter" height="18"></img>
+              </a>
+            </div>
+            &copy; 1995-2022 The CGAL Project. All rights reserved.
+            <div style="float: right;">
+              <a href="https://cgal.geometryfactory.com/CGAL/Members/wiki/Main_Page" alt="Password protected access to the Developer Wiki">
+                <i class="glyphicon glyphicon-lock"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascripts -->
+    <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery-1.9.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery-1.9.1.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.fitvids.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.sequence-min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.bxslider.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/template.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/bootstrap-hover-dropdown-min.js"></script>
+  </body>
+</html>
+

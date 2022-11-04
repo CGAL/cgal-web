@@ -1,0 +1,1295 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Projects Using CGAL</title>
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="CGAL Editorial Board">
+
+    <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/icomoon-social.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+
+    <!--[if lte IE 8]>
+	<link rel="stylesheet" href="css/leaflet.ie.css" />
+	<![endif]-->
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/main.css">
+
+    <!-- atom & rss feed -->
+    <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="https://cgal.github.io/cgal-web/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+
+    <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    
+
+    <!-- Navigation & Logo-->
+    <div class="mainmenu-wrapper">
+    <div class="container">
+    <nav id="mainmenu" class="mainmenu" role="navigation">
+    <ul>
+    <li class="logo-wrapper hidden-xs hidden-sm hidden-md">
+    <a href="https://cgal.github.io/cgal-web/index.html">
+    <img src="https://cgal.github.io/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
+    </a>
+    </li>
+
+    <li class="hidden-lg">
+    <a href="https://cgal.github.io/cgal-web/index.html">
+    <img src="https://cgal.github.io/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
+    </a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/project.html">Project</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/download.html">Download</a>
+    </li>
+
+    <li class="dropdown" style="transition-duration: all 0s ease; transition-delay: all 0s ease;">
+    <a href="#" class="dropdown-toggle" data-hover="dropdown">Packages <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometryProcessing" target="_blank">Geometry Processing</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
+        </ul>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/documentation.html">Documentation</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/news.html">News</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/media.html">Media</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/support.html">Support</a>
+    </li>
+
+    </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="section section-breadcrumbs">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Projects Using CGAL </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+<div class="section">
+  <div class="container">
+    
+
+
+
+<p>This page gathers links to external projects using CGAL. If you are aware of
+such other projects, we would appreciate if you could <A
+HREF="mailto:info@cgal.org">send us</A> the corresponding
+information (name, URL, authors, company/university, category, used CGAL
+packages).</p>
+
+<p><br>
+<a href="http://www.geometryfactory.com">GeometryFactory</a> also maintains an (incomplete)
+<a href="http://www.geometryfactory.com/markets-and-customers/">list of commercial customers</a> of CGAL.
+</p>
+
+<!--
+   In each category, more recently added items come first.
+
+   Let's try to keep more information in comments, so that we can eventually
+   cite more details about how CGAL is used for each item in the future.
+-->
+
+<p><br>
+The list of projects using CGAL is ordered along the following <b>categories</b> <i>(in alphabetical order)</i>
+<ul>
+<li> <a href="#art">Art</a>
+<li> <a href="#architecture">Architecture, Buildings Modeling, Urban Modeling</a>
+<li> <a href="#astronomy">Astronomy</a>
+<li> <a href="#cg">Computational Geometry and Geometric Computing</a>
+<li> <a href="#graphics">Computer Graphics</a>
+<li> <a href="#topology">Computational Topology and Shape Matching</a>
+<li> <a href="#vision">Computer Vision, Image Processing, Photogrammetry</a>
+<li> <a href="#games">Games, Virtual Worlds</a>
+<li> <a href="#gis">Geographic Information Systems</a>
+<li> <a href="#geo">Geology and Geophysics</a>
+<li> <a href="#processing">Geometry Processing</a>
+<li> <a href="#math">Mathematics</a>
+<li> <a href="#medical">Medical Modeling and Biophysics</a>
+<li> <a href="#mesh">Mesh Generation and Surface Reconstruction</a>
+<li> <a href="#modelers">2D and 3D Modelers</a>
+<li> <a href="#molecules">Molecular Modeling</a>
+<li> <a href="#motion">Motion Planning</a>
+<li> <a href="#optimization">Optimization</a>
+<li> <a href="#particles">Particle Physics, Materials, Nanostructures, Microstructures, Fluid Dynamics</a>
+<li> <a href="#p2p">Peer-to-Peer Virtual Environment</a>
+<li> <a href="#sensor">Sensor Networks</a>
+</ul>
+</p>
+
+<p>
+Let us also mention <a href="#interfaces">Interfaces of CGAL in other
+languages and platforms</a> and
+<a href="http://www.somsubhra.com/github-release-stats/?username=CGAL&repository=cgal"><i>CGAL
+download statistics</i></a>.
+</p>
+
+<br>
+<hr>
+
+
+<!-- ============================================================================================= -->
+<h2 id="art">Art</h2>
+<!-- ============================================================================================= -->
+
+<ul class="projects-list">
+<LI> <A HREF="https://www.artbyai.com/">
+  <B>Computers Creating Abstract Art by Artificial Intelligence - ArtByAI</B></A><BR>
+  <B>Jeb Gaither</B><BR>
+  ArtByAI, Carmel, Indiana, USA.<BR>
+  <B>Used CGAL packages:</B> 2D Arrangements.<BR><BR>
+</ul>
+
+
+<!-- ============================================================================================= -->
+<h2 id="architecture">Architecture, Buildings Modeling, Urban Modeling</h2>
+<!-- ============================================================================================= -->
+
+<ul class="projects-list">
+<li><B>Geosimulation tool applied to urban data for a gentrification application</B><br>
+    <b>K. Hins Mallet and <a href="https://www.scg.ulaval.ca/mir-abolfazl-mostafavi">Mir Abolfazl Mostafavi</a></b>.<br>
+    D&eacute;partement des sciences g&eacute;omatiques, Universit&eacute; Laval, Qu&eacute;bec, Canada.<br>
+     <B>Used CGAL packages:</B>Voronoi diagrams of polygons.<BR><BR>
+
+<LI> <A HREF="http://serv.photo.verm.tu-muenchen.de/b3d/s98-html.html">
+     <B>Three-dimensional Generalization of Buildings Based on Scale-Spaces</B></A><BR>
+     <B>Helmut Mayer</B><BR>
+     Institute of Photogrammetry and Cartography<BR>
+     University of the Federal Armed Forces, Munich, Germany.<BR><BR>
+</ul>
+
+
+<!-- ============================================================================================= -->
+<h2 id="astronomy">Astronomy</h2>
+<!-- ============================================================================================= -->
+
+<ul class="projects-list">
+
+<LI><B><a href="https://arxiv.org/abs/1907.09625">MOCMC: Method of Characteristics Moment Closure, a Numerical Method for Covariant Radiation Magnetohydrodynamics</a></B><BR>
+  <b>
+  <a href="https://www.lanl.gov/org/ddste/aldsc/computer-computational-statistical-sciences/computational-physics-methods/index.php">Benjamin R. Ryan</a>
+  and <a href="https://ccsweb.lanl.gov/astro/profiles/dolence.html">Joshua C. Dolence</a></b><BR>
+  Los Alamos National Laboratory.<BR>
+  <B>Used CGAL packages:</B> Convex hulls.<BR><BR>
+
+<LI><B><a href="https://johannes.hidding.gitlab.io/cosmo-cgal-demo/">Computing the adhesion model using C++ and CGAL</a></B><BR>
+  <b><a href="http://www.astro.rug.nl/~hidding/">Johan Hidding</a></b><BR>
+  Kapteyn Astronomical Institute<BR>
+  <B>Used CGAL packages:</B> 3D regular triangulations.<BR><BR>
+
+<LI><B><a href=" http://www.astro.rug.nl/~hidding/local-universe-downsampled.pdf">Structures in the Local Universe: an adhesive approach</a></B><BR>
+  <b><a href="http://www.astro.rug.nl/~hidding/">Johan Hidding<a>,
+  <a href="http://www.astro.rug.nl/~weygaert/">Rien van de Weijgaert</a>,
+  <a href="http://www.aip.de/Members/fkitaura">Francisco Kitaura</a>,
+  and <a href="http://www.cs.rug.nl/~gert/">Gert Vegter</a></b><BR>
+  Kapteyn Astronomical Institute, Johann Bernoulli Institute for
+  Mathematics and Computer Science, and Leibniz-Institure for
+  Astrophysics Potsdam.<BR>
+  <B>Used CGAL packages:</B> 3D regular triangulations.<BR><BR>
+
+<LI><B><a href="https://github.com/acgetchell/CDT-plusplus">Causal Dynamical Triangulations</a></B><BR>
+  <B><a href="http://about.me/adamgetchell">Adam Getchell</a></B><BR>
+  UC Davis, USA.<BR>
+  <B>Used CGAL packages:</B> 3D Periodic Delaunay triangulations.<BR><BR>
+
+<LI><B><a href="http://www2.iap.fr/users/sousbie/">DisPerSE</a>,
+  Discrete Persistent Structures Extractor</B><BR>
+  <B>Thierry Sousbie</B><BR>
+  Institut d'Astrophysique de Paris, France.<BR>
+  <B>Used CGAL packages:</B> 2D and 3D Delaunay triangulations.<BR><BR>
+
+<LI><B><a
+  href="http://www.springerlink.com/content/334357373166n902/fulltext.pdf">Alpha,
+  Betti and the Megaparsec Universe: on the Homology and Topology of
+  the Cosmic Web</a></B><BR>
+  <B><a href="http://www.astro.rug.nl/~weygaert/">Rien van de
+  Weygaert</a>, <a href="http://www.cs.rug.nl/~gert/">Gert Vegter</a>,
+  <a href="http://www.cs.duke.edu/~edels/">Herbert Edelsbrunner</a>, Bernard
+  J.T. Jones, Pratyush Pranav, Changbom Park, Wojciech A. Hellwing,
+  Bob Eldering, Nico Kruithof, E.G.P. (Patrick) Bos, Johan Hidding,
+  Job Feldbrugge, Eline ten Have, Matti van Engelen, Manuel Caroli,
+  </B> and <B><a
+  href="http://www.inria.fr/sophia/members/Monique.Teillaud">Monique
+  Teillaud</a></B><BR>
+  Kapteyn Astronomical Institute, Johann Bernoulli Institute for
+  Mathematics and Computer Science, and Stratingh Institute for
+  Chemistry, University of Groningen, The Netherlands,<BR>
+  IST Austria,<BR>
+  School of Physics, Korea Institute for Advanced Study,<BR>
+  Interdisciplinary Centre for Mathematical and Computational
+  Modeling, University of Warsaw, Poland,<BR>
+  INRIA Sophia Antipolis-M&eacute;diterran&eacute;e, France. <BR>
+  <B>Used CGAL packages:</B> 3D Periodic Delaunay triangulations and
+  alpha shapes.<BR><BR>
+
+<li><B>The persistent cosmic web and its filamentary structure:
+<a href="http://science-advisor.net/article/1009.4015?a">I - Theory and implementation</a> and
+<a href="http://science-advisor.net/action/article_idcard.php?id=1600825&amp;c"> II - Illustrations</a></B><BR>
+(see also:
+<a href="http://dx.doi.org/10.1111/j.1365-2966.2011.18394.x">I</a> and
+<a href="http://dx.doi.org/10.1111/j.1365-2966.2011.18395.x">II</a>) <BR>
+    <B>Thierry Sousbie, Christophe Pichon, Hajime Kawahara</B>.<BR>
+    Department of Physics, The University of Tokyo, Japan,<BR>
+    Institut d'Astrophysique de Paris and UPMC, France,<BR>
+    Oxford Astrophysics, Department of Physics, UK,<BR>
+    Department of Physics, Tokyo Metropolitan University, Japan.<BR>
+    <B>Used CGAL packages:</B> 3D periodic Delaunay triangulations.<BR><BR>
+
+<LI><B><a href="http://www.vimeo.com/4169279">A walk through the Universe</a></B><BR>
+    <B><a href="http://skysrv.pha.jhu.edu/~miguel/">Miguel Aragon</a></B><BR>
+    Department of Physics and Astronomy, The Johns Hopkins University, USA.<BR><BR>
+
+<li><B><a href="http://arxiv.org/abs/0809.5104">The Spine of the Cosmic Web</a></B><BR>
+    <B><a href="http://skysrv.pha.jhu.edu/~miguel/">Miguel A. Aragon-Calvo</a>,
+      Erwin Platen,
+      <a href="http://www.astro.rug.nl/~weygaert/">Rien van de Weijgaert</a>, and
+      <a href="http://www.sdss.jhu.edu/~szalay/">Alexander S. Szalay</a></B>.<BR>
+    The Johns Hopkins University, USA, and Kapteyn Institute Groningen, The Netherlands.<BR>
+    <B>Used CGAL packages:</B> 3D Delaunay triangulations.<BR><BR>
+
+<li><B><a href="http://science-advisor.net/article/1006.4178?a">Geometry of the Cosmic Web: Minkowski Functionals from the Delaunay Tessellation</a></B><BR>
+    <B><a href="http://skysrv.pha.jhu.edu/~miguel/">Miguel A. Aragon-Calvo</a>,
+      Sergei F. Shandarin, and
+      <a href="http://www.sdss.jhu.edu/~szalay/">Alexander S. Szalay</a></B>.<BR>
+      The Johns Hopkins University and The University of Kansas, USA.<BR>
+    <B>Used CGAL packages:</B> 3D Delaunay triangulations.<BR><BR>
+
+<li><B><a href="http://www.astro.rug.nl/~voronoi/DTFE/dtfe.html">The Delaunay Tessellation Field Estimator code</a></B><BR>
+    <B><a href="http://www.astro.rug.nl/KAPTEYN_DB/people.php?id=5034965">Marius
+    Cautun</a></B> and
+    <B><a href="http://www.astro.rug.nl/~weygaert/">Rien van de
+    Weijgaert</a></B>.<BR>
+    Kapteyn Institute Groningen, The Netherlands.<BR>
+    <B>Used CGAL packages:</B> 2D and 3D Delaunay triangulations.<BR><BR>
+</ul>
+
+
+<!-- ============================================================================================= -->
+<h2 id="cg">Computational Geometry and Geometric Computing</h2>
+<!-- ============================================================================================= -->
+
+<ul class="projects-list">
+
+<LI><a href="http://dl.acm.org/citation.cfm?id=2683702&CFID=684427644&CFTOKEN=92656577"><B>High-Performance
+  Computation of Distributed-Memory Parallel 3D Voronoi and Delaunay
+  Tessellation</B></a> <BR>
+  <B><a href="http://www.mcs.anl.gov/~tpeterka/">Tom Peterka</a>,
+  <a href="http://www.mrzv.org/">Dmitriy Morozov</a>,
+  and Carolyn Phillips</B><BR>
+  Argonne National Laboratory and Lawrence Berkeley National Laboratory.<BR>
+  <B>Used CGAL packages:</B> 3D Triangulations and 3D Periodic Triangulations.<BR><BR>
+
+<LI> <A HREF="https://page.mi.fu-berlin.de/rote/Papers/pdf/Recovering+structure+from+r-sampled+objects.pdf"><B>Recovering structure from r-sampled objects.</B></A><BR>
+  <B>O. Aichholzer, F. Aurenhammer, B. Kornberger, S. Plantinga, G. Rote, A.
+Sturm, and G. Vegter</B><BR>
+  Graz University of Technology, Austria, University of Groningen,
+  The Netherlands, and Freie Universitaet Berlin, Germany<BR><BR>
+
+<LI> <A HREF="http://www.igi.tugraz.at/Abstracts/aahkpp-abtob-07/"><B>Approximating boundary-triangulated objects with balls.</B></A><BR>
+  <B>O. Aichholzer, F. Aurenhammer, T. Hackl, B. Kornberger, M. Peternell,
+and H. Pottmann</B><BR>
+  <A HREF="http://www.industrial-geometry.at/">Industrial Geometry FWF Project</A>, Austria.<BR><BR>
+
+<LI> <A HREF="http://www.cs.ucdavis.edu/~amenta/pubs/schoi.pdf">
+     <B>Delaunay Triangulation Programs on Surface Data</B></A><BR>
+     <B>Sunghee Choi</B> and <B>Nina Amenta</B><BR>
+     Department of Computer Science<BR>
+     The University of Texas at Austin, USA.<BR><BR>
+
+<LI> <A HREF="http://www.cs.unc.edu/~debug/software/">
+     <B>Almost-Delaunay Simplicies</B></A><BR>
+     <B>Deepak Bandyopadhyay</B> and <B>Jack Snoeyink</B><BR>
+     Department of Computer Science<BR>
+     University of North Carolina, Chapel Hill, USA.<BR><BR>
+
+<LI> <A HREF="http://www-old.dma.fi.upm.es/mabellanas/delonedepth/descript.htm">
+     <B>DEpthLAUNAY</B></A><BR>
+     <B>Manuel Abellanas</B> and <B>Alfredo de las Vegas</B><BR>
+     Universidad Polit&eacute;cnica de Madrid, Spain.<BR><BR>
+
+<LI> <A HREF="http://www.ic.unicamp.br/~rezende/T2inCGALandT2Viewer.htm">
+     <B>T2 in CGAL and T2Viewer</B></A><BR>
+     <B>Alessandra G. de Oliveira</B>,
+     <B>Fabio P. Selmi-Dei</B> and
+     <B>Pedro J. de Rezende</B><BR>
+     Institute of Computing, University of Campinas, Brazil.<BR><BR>
+
+<LI> <A HREF="http://link.springer.com/chapter/10.1007%2F3-540-44842-X_94">
+     <B>3D Intersection Code</B></A><BR>
+     <B>Steven Robbins</B><BR>
+     McGill University, Canada.<BR>
+     <B>Used CGAL packages:</B> Kernel.<BR><BR>
+</ul>
+
+
+<!-- ============================================================================================= -->
+<h2 id="graphics">Computer Graphics</h2>
+<!-- ============================================================================================= -->
+
+<ul class="projects-list">
+<LI><A HREF="https://www.cise.ufl.edu/research/SurfLab/">
+  <B>Surflab</B></A><BR>
+  <B>Jorg Peters</B> <i>et al.</i><BR>
+  Dept of CISE, University of Florida<BR>
+  <b>Used CGAL packages</b>: Polyhedron, Half-edge data structure<BR><BR>
+
+<LI> <A HREF="http://www-sop.inria.fr/reves/Basilic/2011/CSD11/">
+     <B>Silhouette-Aware Warping for Image-Based Rendering</B></A><BR>
+     <B>Gaurav Chaurasia, Olga Sorkine and George Drettakis</B><BR>
+     Reves project-team<BR>
+     INRIA Sophia Antipolis - M&eacute;diterran&eacute;e<BR>
+     <b>Used CGAL packages</b>: 2D conforming triangulations
+                                and meshes.<br><br>
+</ul>
+
+
+<!-- ============================================================================================= -->
+<h2 id="topology">Computational Topology and Shape Matching</h2>
+<!-- ============================================================================================= -->
+
+<ul class="projects-list">
+
+<LI> <A href="http://gudhi.gforge.inria.fr/">
+     <B>GUDHI - Geometry Understanding in Higher Dimensions</B></A><BR>
+      <B>The GUDHI Project</b><BR>
+     Inria Sophia Antipolis and Saclay<BR>
+      <B>Used CGAL packages:</B> dD Triangulations, dD Spatial Searching, dD Geometry Kernel.<BR><BR>
+
+<LI> <B>Mesecina - computational geometry you can see</B> (The Scale Axis Transform)<BR>
+  <a href="http://www.balintmiklos.com/mesecina/">presented at SoCG'07</a><BR>
+  <a href="http://www.agg.ethz.ch/people/phd_students/miklosb"><B>Bálint
+  Miklós</B></a>, <B>Joachim Giesen</B>, and <B>Mark Pauly</B><BR>
+  Applied Geometry Group, ETH Zurich<BR><BR>
+
+<LI> <A HREF="http://www.cs.uu.nl/groups/AA/multimedia/matching/shame.html">
+     <B>SHAME - Shape Matching Environment</B></A><BR>
+      <B>Mark Overmars</B> and <b>Remco Veltkamp</b><BR>
+     Utrecht University<BR><BR>
+
+<LI> <A HREF="http://www.ist.tugraz.at/publication2/abstracts/aaahjr-macpf-08/index.html"><B>Medial Axis Computation for Planar Free-Form Shapes</B></a><BR>
+    <B>O. Aichholzer, W. Aigner,
+    F. Aurenhammer, T. Hackl, B. Jüttler</B> and <B>M. Rabl</B>,
+    Computer-Aided Design, 41(5):339-349, 2009.<BR>
+    <a href="http://www.industrial-geometry.at/">Industrial Geometry FWF Project</a>, Austria.<BR>
+       <B>Used CGAL packages:</B> 2D Circular Kernel<BR><BR>
+
+<LI> <A HREF="http://wwwrsphysse.anu.edu.au/~vbr110/index.php">
+     <B>Topological signatures of point patterns</B></A><BR>
+     <B>Vanessa Robins</B> and <B>Klaus Mecke</B><BR>
+     Department of Applied Mathematics, the Australian National University, Canberra, Australia.<BR>
+     <B>Used CGAL packages:</B> Delaunay Triangulations and Alpha shapes. <BR><BR>
+
+<LI> <A HREF="http://dx.doi.org/10.1145/378583.378630">
+       <B>Computing a Canonical Polygonal Schema of an Orientable Triangulated Surface</B></A><BR>
+       <B>F. Lazarus</B>, <B>M. Pocchiola</B>, <B>G. Vegter</B> and <B>A. Verroust</B><BR>
+       CNRS and University of Poitiers, France; ENS Paris, France; University of Groningen, The Netherlands;
+       INRIA Paris - Rocquencourt, France.<BR><BR>
+</ul>
+
+
+<!-- ============================================================================================= -->
+<h2 id="vision">Computer Vision, Image Processing, Photogrammetry</h2>
+<!-- ============================================================================================= -->
+
+<ul class="projects-list">
+
+<li><b><a href="http://inria-mvs.gforge.inria.fr/">Multi-View Stereo Software</a></b><br>
+  <b>Jean-Paul Chieze</b><br>
+  INRIA Paris - Rocquencourt<br>
+  <b>Used CGAL packages</b> 3D Triangulations<br><br>
+
+<li><b><a href="https://minerva-access.unimelb.edu.au/handle/11343/35464">Image-Based Modeling for Object Reconstruction</a></b> : Close-Range Photogrammetry<br>
+	<b>Ida Jazayeri, Simon Cronk, Clive Fraser</b><br>
+	(Department of Geomatics, School of Engineering, The University of Melbourne, Australia)<br>
+	<!-- Ida Jazayeri <i.jazayeri@pgrad.unimelb.edu.au> -->
+     <b>Used CGAL packages</b>: Point Set Processing, Surface Reconstruction from Point Sets<br><br>
+
+<li> <a href="http://en.sofresud.com/Our-R-D-Projects/GYROVIZ"><b>The Gyroviz project</b></a><br>
+	Automatic modeling of 3D physical scenes from located frames.  And in particular :<br>
+	<a href="http://hal.inria.fr/inria-00422344/">Surface Reconstruction from Multi-View Stereo</a><br>
+	<a href="http://hal.inria.fr/inria-00410980/">High resolution surface reconstruction from overlaping multiple views</a>
+	(<a href="http://www-sop.inria.fr/members/Nader.Salman/NS_SOCG_Vid09.html">Accompanying video</a>)<br>
+	<b>Nader Salman</b> and <b>Mariette Yvinec</b><BR>
+	INRIA Sophia Antipolis - M&eacute;diterran&eacute;e, France<br>
+	<b>Used CGAL packages:</b> 2D and 3D Delaunay triangulations, 2D Constrained Delaunay triangulations, AABB Tree, Surface Mesher, Point Set Processing.<br><br>
+
+<li> <b><a href="http://www.cs.huji.ac.il/~danix/mvclone">Coordinates for Instant Image Cloning</a></b><br>
+     <b>Zeev Farbman, Gil Hoffer, Yaron Lipman, Daniel Cohen-Or,</b> and <b>Dani Lischinski</b><br>
+     The Hebrew University, Tel Aviv University, and Princeton University<br>
+     <b>Used CGAL packages</b>: 2D Mesh Generation<br><br>
+
+<LI> <A HREF="http://imagine.enpc.fr/publications/pons.html">
+       <B>Shape reconstruction from images</B></a><BR>
+       <B>Jean-Philippe Pons et al</B><BR>
+       CERTIS, &Eacute;cole des Ponts<BR>
+       <A HREF="http://imagine.enpc.fr/publications/papers/07iccv_b.pdf">
+       Spatio-temporal shape from silhouette</a><BR>
+       <A HREF="http://imagine.enpc.fr/publications/papers/07iccv_a.pdf">
+       Efficient multi-view reconstruction of large-scale scenes</a><BR>
+       <A HREF="http://imagine.enpc.fr/publications/papers/07cvpr_b.pdf">
+       Topology-adaptive meshes</a><BR>
+       <A HREF="http://imagine.enpc.fr/publications/papers/07ipmi.pdf">
+       Meshing of multi-label datasets</a><BR>
+       <B>Used CGAL packages:</B> 3D and dD Delaunay triangulations, 3D Surface Mesh Generation<BR><BR>
+</ul>
+
+
+<!-- ============================================================================================= -->
+<h2 id="games">Games, Virtual Worlds</h2>
+<!-- ============================================================================================= -->
+
+<ul class="projects-list">
+
+  <LI><A HREF="http://blog.hybridearth.net/?p=183"><B>Hybrid Earth, Mixed Reality at Planet Scale</B></a><br>
+  <B>Joaqu&iacute;n Keller <i>et al.</i></B><BR>
+  Orange Labs, France.<BR>
+  <B>Used CGAL packages:</B> 2D Delaunay triangulations<BR><BR>
+
+<!-- I remove that link, because it points to a domain for sale.
+       Laurent Rineau, 2011/10/25
+<LI><A HREF="http://www.top10-racing.org/"><b>Top10 Racing Simulation</b></a> - Racing Game<BR>
+    CGAL is used to generate the ground and the track from a vectorial description of the road segments.<br>
+    See <a href="http://www.top10-racing.org/tiki-browse_image.php?galleryId=1&amp;imageId=10">these
+	    snapshots</a> of the track editor capturing the triangulation process.<br>
+-->
+	<!-- johann.deneux@gmail.com :
+	Top10 Racing Simulation is a racing game for Linux and Windows. It
+	uses triangulation in CGAL to generate the ground and the track from a
+	vectorial description of the road segments.
+	-->
+<!--
+    <B>Used CGAL packages:</B> Triangulations<BR><BR>
+-->
+    <LI><a href="http://scenery.x-plane.com/"><b>X-Plane Sceneray Creation and Editing tools</b></a><br>
+    <!-- Ben Supnik <bsupnik@xsquawkbox.net> :
+    X-Plane uses CGAL in our open source scenery creation and editing tools.  We use:
+
+    - Polygon boolean ops to import and process GIS data
+    - Arrangement to store imported vector data and run buffering operations on it.
+    - Delauney Triangulation to build and optimize our terrain mesh.
+
+    The scenery generation and editing tools are open source and cross platform.
+    We do not use CGAL inside the simulator itself.
+    -->
+    <B>Used CGAL packages:</B> Polygons, Arrangements, Delaunay triangulations<BR><BR>
+
+<LI> <A HREF="http://fgsd.sourceforge.net/">
+     <B>The FlightGear Scenery Designer</B></A><BR><BR>
+</ul>
+
+
+<!-- ============================================================================================= -->
+<h2 id="geo">Geology and Geophysics</h2>
+<!-- ============================================================================================= -->
+
+<ul class="projects-list">
+<LI><A HREF="http://h2olab.inria.fr/index.php?page=home"><b>H2OLAB</b></a> - software platform for numerical models in hydrogeology<BR>
+     <B>The <A HREF="http://www.irisa.fr/sage/">SAGE</a> project</B><BR>
+     IRISA, INRIA Rennes - Bretagne Atlantique, France (and <A HREF="http://h2olab.inria.fr/index.php?page=partners"><b>partners</b></a>).<BR>
+     <B>Used CGAL packages:</B> Polyhedron<BR><BR>
+
+<LI><A HREF="http://dx.doi.org/10.1016/j.advwatres.2010.08.008"><b>
+  Efficient flow and transport simulations in reconstructed 3D pore
+  geometries,</b></a>, Advances in Water Resources, 33(12), 1508-1516<br>
+  <b>Y Zaretskiy, S Geiger, KS Sorbie,</b> and <b>M Foerster</b><br>
+CGAL is used to convert CT measurements of porous rocks into finite element meshes which then is used to tackle the flow problems at the pore-scale.<br>
+<b>Used CGAL packages:</b> 3D Mesh Generation<BR><BR>
+
+  <LI><A
+  HREF="http://www.springerlink.com/content/021012582k176u72/"><b>
+  Geometry and equilibria of pebbles</b></a>, Mathematical Geosciences, Volume 44, Number 1,
+  71-89<BR>
+  <b>Gabor Domokos, Andras A. Sipos,</b> and <b>Timea Szabo</b><BR>
+  Budapest University of Technology and Economics (BME)<br>
+  CGAL is used to investigate the equilibrium positions of pebbles and the possible connections between the geometrical and mechanical properties of convex bodies.<br>
+<B>Used CGAL packages:</B> 3D Convex Hulls, 3D Polyhedral Surfaces, 2D
+  Polygons, 3D Triangulations <BR><BR>
+
+  <LI><A HREF="http://arem.udg.edu/"><b>
+AREM (Autonomous Robot for Environmental Monitoring)
+  </b></a> Underwater Surface Reconstruction :<br>
+Surface reconstruction applied to point clouds obtained through a computer vision pipeline on underwater imagery. <br>
+<b> Ricard Campos, Rafael Garcia: </b> VICOROB (Computer Vision and Robotics
+  Group), University of Girona, Spain. <br>
+<b> Mariette Yvinec, Pierre Alliez </b>: Geometrica, INRIA Sophia Antipolis -
+  M&eacute;diterran&eacute;e, France. <br>
+<b>Used CGAL packages:</b> 3D Surface Mesher, AABB Tree, Point Set
+  Processing. <BR><BR>
+
+</ul>
+
+
+<!-- ============================================================================================= -->
+<h2 id="gis">Geographic Information Systems</h2>
+<!-- ============================================================================================= -->
+
+<ul class="projects-list">
+
+	<LI> <b><A HREF="http://sites.google.com/site/delaunayintersect/home">Delaunay Intersect Tool</a></b><br>
+	<b>Matthew Denno</b>
+	<br><br>
+
+<LI><A HREF="http://www.gplates.org"><b>GPlates</b></a> - software for the interactive visualisation of plate-tectonics. <BR>
+     <B>Used CGAL packages:</B> 3D Surface Interpolation, 2D Mesh Generator <BR><BR>
+
+<LI> <A HREF="http://postgis.refractions.net/">
+     <B>PostGIS - Geographic Objects for the PostgreSQL Database</B></A><BR>
+     Refractions Research<br>
+     <A HREF="http://pgrouting.org/"><B>pgRouting Project</B></A>
+      Provides routing functionality to PostGIS / PostgreSQL.<BR>
+     Orkney Inc., Japan<BR>
+     <B>Used CGAL packages:</B> 2D Alpha shapes<BR><BR>
+
+<LI> <A HREF="http://code.flickr.com/blog/2008/10/30/the-shape-of-alpha/"><B>The Shape of Alpha</B></A><BR>
+     <B>Used CGAL packages:</B> Alpha Shapes<BR><BR>
+
+<LI> <B>Designing a library to support model-oriented generalization</B><BR>
+     <B>Giuliana Dettori</B> and <A HREF="http://www.disi.unige.it/person/PuppoE/"><B>Enrico Puppo</B></A><BR>
+     Department of Computer Science<BR>
+     University of Genova, Italy.<BR><BR>
+</ul>
+
+
+<!-- ============================================================================================= -->
+<h2 id="processing">Geometry Processing</h2>
+<!-- ============================================================================================= -->
+
+<ul class="projects-list">
+
+<LI><A HREF="http://www-sop.inria.fr/geometrica/collaborations/iron/">
+    <B>IRON (ERC Starting grant project)</B></a><BR>
+    <B>Pierre Alliez </B> <BR>
+    INRIA Sophia Antipolis - M&eacute;diterran&eacute;e, France.<BR>
+
+    <A HREF="http://dx.doi.org/10.1111/j.1467-8659.2011.02033.x">Optimal transport for robust shape reconstruction</a><BR>
+
+    <B>Used CGAL packages:</B> 2D/3D Delaunay triangulations, Polyhedral surfaces, Fast intersection and distance computations.
+
+
+     <BR><BR>
+
+<LI><A HREF="http://alice.loria.fr/index.php/erc-goodshape.html">
+    <B>GoodShape (ERC project)</B></a><BR>
+    <B>Bruno L&eacute;vy and the <a href="http://alice.loria.fr/">ALICE</a> project-team</B><BR>
+    LORIA, INRIA Nancy - Grand Est, France.<BR>
+    <A HREF="http://alice.loria.fr/index.php/publications.html?redirect=0&amp;Paper=CLIPPEDVD@2010">Efficient Computation of 3D Clipped Voronoi Diagram</a><BR>
+    <A HREF="http://alice.loria.fr/index.php/publications.html?redirect=0&amp;Paper=LPCVT@2010">Lp Centroidal Voronoi Tesselation and its Applications</a><BR>
+    <A HREF="http://alice.loria.fr/index.php/publications.html?redirect=0&amp;Paper=onCVT@2009">On Centroidal Voronoi Tessellation - Energy Smoothness and Fast Computation</a><BR>
+    <A HREF="http://alice.loria.fr/index.php/publications.html?redirect=0&amp;Paper=remesh@2009">Isotropic Remeshing with Fast and Exact Computation of Restricted Voronoi Diagram</a><BR>
+    <A HREF="http://alice.loria.fr/index.php/publications.html?redirect=0&amp;Paper=cvtgraph_tr@2009">Centroidal Voronoi Tessellations for Line Segments and Graphs</a><BR>
+    <B>Used CGAL packages:</B> 3D Delaunay triangulations.<BR><BR>
+
+<LI> <A HREF="http://liris.cnrs.fr/plateformes/MEPP">
+     <B>MEsh Processing Platform</B></A><BR>
+     <B>Florent Dupont</B>,<BR>
+     Developed by the  <A HREF="http://liris.cnrs.fr/m2disco/"> M2Disco</A>
+     research team of the LIRIS CNRS lab (Lyon, France).<BR><BR>
+
+
+<LI> <A HREF="http://www.geometry.caltech.edu/pubs/WWTDS06.pdf">
+     <B>Edge Subdivision Schemes and the Construction of Smooth Vector Fields</B></A><BR>
+     <B>Ke Wang</B>, <B>Weiwei</B>, <B>Yiying Tong</B>, <B>Mathieu Desbrun</B> and <B>Peter Schr&ouml;der</B><BR>
+     Caltech, USA.<BR><BR>
+
+<LI> <A HREF="http://www.imr.sandia.gov/papers/imr16/Jain.pdf">
+     <B>Surface Mesh Overlay</B></A><BR>
+     <B>Xiangmin Jiao</B><BR>
+     Computer Science Department<BR>
+     University of Illinois at Urbana-Champaign, USA.<BR><BR>
+</ul>
+
+
+<!-- ============================================================================================= -->
+<h2 id="math">Mathematics</h2>
+<!-- ============================================================================================= -->
+
+<ul class="projects-list">
+
+  <li><b><a href="https://arxiv.org/abs/1807.10762">Hyperbolic polyhedral surfaces with regular faces</a></B><BR>
+  <B><a href="http://www.math.tohoku.ac.jp/english/people/akama-e.html">Yohji Akama</a></B> 
+  and <B>Bobo Hua</B><BR>
+  Tohoku University, Japan and Fudan university, China.<BR>
+  <B>Used CGAL package:</B> 2D periodic hyperbolic triangulations
+</ul>
+
+<!-- ============================================================================================= -->
+<h2 id="medical">Medical Modeling and Biophysics</h2>
+<!-- ============================================================================================= -->
+
+<ul class="projects-list">
+
+<li><B><a href="https://doi.org/10.1088/1361-6463/aa942f">Density Distributions and Depth in Flocks</a></B> -
+  <B><a href="http://wrap.warwick.ac.uk/133344/">Topological Models of Swarming</a></B><BR>
+  <B><a href="https://jasonmlewis.github.io/">Jason M. Lewis</a></B>
+  and <B><a href="https://homepages.warwick.ac.uk/~phscz/">Matthew S. Turner</a></B><BR>
+  University of Warwick, UK.<BR>
+  <B>Used CGAL packages:</B> 3D convex hulls, 3D triangulations, 3D triangulation data structure, 3D alpha shapes<BR><BR>
+  
+<li><B><A href="http://openmeeg.github.io/">OpenMEEG</a> -
+  A C++ package for low-frequency bio-electromagnetism
+  solving forward problems in the field of EEG and MEG</B><BR>
+  <B><a href="https://team.inria.fr/athena/">Athena project-team</a></B><BR>
+  INRIA Sophia Antipolis - M&eacute;diterran&eacute;e<BR>
+  <B>Used CGAL packages:</B> 3D Surface Mesh Generation<BR><BR>
+
+<li><B><A href="http://m-x-l.eu/">MXL -
+  Improving therapy planning for hip, shoulder and knee joint surgery</a></B><BR>
+  <B>Stefan Zachow, Hans Lamecker, Heiko Seim, Carl Martin Grewe, Max
+  Kahnt, Moritz Ehlke,</B> and <B> Matthias Bindernagel</B><BR>
+  Zuse Institute Berlin (ZIB)<BR>
+  <B>Used CGAL packages:</B> 3D Mesh Generation<BR><BR>
+
+<li><B><A href="https://sourcesup.cru.fr/projects/meshinserm/">
+  Logiciel MeshINSERM: Mesher by INSERM </a></B><BR>
+  <B> J.C Souplet (jcsouplet@lri.fr), C Lim, V Leboeuf, C.-L. Benhamou </b> <BR>
+  See <A href="https://sourcesup.cru.fr/docman/view.php/860/3850/JDEV2011_poster_Souplet_MeshINSERM.pdf"> poster 1 </A> (in French). <BR>
+  See <A href="https://sourcesup.cru.fr/docman/view.php/860/3849/SFR2010_Modelisationbiomecanique.pdf"> poster 2 </A> (in French). <BR>
+  INSERM U658, Orl&eacute;ans, France <BR>
+ <B>Used CGAL packages:</B> 3D Mesh Generation<BR><BR>
+
+<li><B><A href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=5687794">In silico tomographic image generation</a></B><BR>
+  <B>Konstantinos
+  Eftaxias, <a href="http://vissarion.github.io/">Vissarion
+  Fisikopoulos</a>,</B> and <B>George M. Spyrou</B><BR> Department of
+  Informatics and Telecommunications, National and Kapodistrian
+  University of Athens, and Biomedical Informatics Unit, Biomedical
+  Research Foundation, Academy of Athens, Greece<BR> In silico
+  tomographic image generation using Monte Carlo and Computational
+  Geometry,
+  <i>10th IEEE
+  International <a href="http://medlab.cs.uoi.gr/itab2010/">Conference</a>
+  on Information Technology and Applications in Biomedicine</i> (to
+  appear)<BR>
+   <B>Used CGAL packages:</B> 3D Delaunay Triangulations, 3D Mesh Generation<BR><BR>
+
+<LI><a href="http://www.ts.infn.it/physics/experiments/vbl/SiteVBL/index.html"><b>VBL/VBL-Rad: Virtual Biophysics Lab</b></a><BR>
+    <B> <A HREF="http://wwwusers.ts.infn.it/~milotti/">Edoardo Milotti</a> </B> and <B> Roberto Chignola </B> <BR>
+    Italian Institute for Nuclear Physics (Trieste)<BR>
+    <!-- Edoardo Milotti : I am using CGAL to define the geometry and topology
+    of cell clusters in simulations of tumor spheroids. This is an interdisciplinary
+    (biophysics) project funded by the Italian Institute for Nuclear Physics.
+    -->
+    <B>Used CGAL packages:</B> 3D convex hull, 3D Delaunay triangulation, 3D alpha shapes <BR><BR>
+
+<LI><A HREF="https://www.mtm.kuleuven.be/Onderzoek/Composites/PhD/2009-maarten-moesen-phd-thesis.pdf"><B>Design and Modeling of Cellular Solids</B></A><BR>
+    <B>Maarten Moesen, S.V. Lomov, J. Schrooten, H. Van Oosterwyck</B> and <B>I. Verpoest</B><BR>
+    Department of Metallurgy and Materials Engineering (MTM), K.U. Leuven, Belgium.<BR>
+    - Numerical optimization of bone scaffold geometry based on local strain distributions, Proceedings of the 8th International Symposium on Computer Methods in Biomechanics and Biomedical Engineering (CMBBE 2008), Porto, Portugal, 27 February-1 March 2008<BR>
+    - Bone Scaffold Design Based On Optimization of Local Strain Distributions, Proceedings of the 16th Congress of the European Society of Biomechanics (ESB 2008), Lucerne, Switzerland, 6-9 July 2008<BR>
+    <B>Used CGAL packages:</B>Surface mesher, Polyhedron,
+    3D Nef Polyhedron, 2D constrained Delaunay Triangulation<BR><BR>
+
+<LI><A HREF="http://femonum.telecom-paristech.fr/"><B> FEMOMUM:</B></A>
+Fetal and Mother Numerical Models<BR>
+<A HREF="http://perso.telecom-paristech.fr/~boubek/papers/FEMONUM/FEMONUM.pdf">paper</a><BR>
+<b> Isabelle Bloch </b> <i>et al.</i> <BR>
+TSI department at T&eacute;l&eacute;com ParisTech <br>
+<!-- This project, aims at providing numerical models of pregnant women -->
+<!-- generated from a large database of imaging exams. The proposed models, -->
+<!-- evaluated by an obsterician and a group of pediatric radiologists, -->
+<!-- enable precise dosimetry studies on the complex, highly variable and -->
+<!-- evolving anatomy of the pregnant woman. <BR> -->
+<B>Used CGAL packages:</B>  3D Mesh Generation<BR><BR>
+
+<LI><B><A
+    HREF="https://www.sofa-framework.org/applications/marketplace/mesh-generation-with-cgal/">SOFA
+    Mesh Generation Plugin</A></B><BR>
+    <B>The <A HREF="http://www.sofa-framework.org/">SOFA Framework</A></B><BR>
+    <B>Used CGAL packages:</B>3D Mesh Generation<BR><BR>
+
+</ul>
+
+
+<!-- ============================================================================================= -->
+<h2 id="mesh">Mesh Generation and Surface Reconstruction</h2>
+<!-- ============================================================================================= -->
+
+<ul class="projects-list">
+
+
+<LI> <A HREF="http://www.cse.ohio-state.edu/~tamaldey/locpsc.html">
+     <B>LocPSC: Software for Generating Large Delaunay Meshes of Surfaces, Volumes, Piecewise-Smooth Surfaces, Non-manifolds </B></A><BR>
+  <B><a href="http://www.cse.ohio-state.edu/~tamaldey/">Tamal Krishna Dey</a></B>
+  and <B>Andrew Slatton</B><BR>
+  Department of Computer Science and Engineering,
+  The Ohio State University <BR>
+  <B>Used CGAL packages:</B> 3D Triangulations <BR><BR>
+
+
+<LI> <A HREF="http://iso2mesh.sourceforge.net/cgi-bin/index.cgi?Home">
+     <B>ISO2Mesh: a free 3D surface and volumetric mesh generator for
+  Matlab/Octave</B></A><BR>
+  <B><a href="http://iso2mesh.sourceforge.net/cgi-bin/index.cgi?FangQ">Qianqian Fang</a></B><BR>
+  Optics Division, Martinos Center for Biomedical Imaging,
+  Massachusetts General Hospital/Harvard Medical School.<BR>
+  <B>Used CGAL packages:</B> 3D Surface Mesh Generation, 3D Mesh
+  Generation, Triangulated Surface Mesh Simplification<BR><BR>
+
+<LI> <A HREF="http://www.cse.ohio-state.edu/~tamaldey/delpsc.html">
+     <B>DelPSC : Delaunay Mesh Generation of Surfaces, Volumes, and Complexes</B></A><BR>
+     <B>Tamal K. Dey</B> and <B>Joshua Levine</B><BR>
+     Department of Computer Science and Engineering<BR>
+     The Ohio State University, USA.<BR>
+     <B>Used CGAL packages:</B> 3D Triangulations <BR><BR>
+
+<LI> <A HREF="https://tel.archives-ouvertes.fr/tel-00102998/document">
+      <B>Surface reconstruction</B></A><BR>
+	<B><a href="https://members.loria.fr/MPouget/">Marc Pouget</a></B><BR>
+      INRIA Nancy - Grand Est, France.<BR>
+      <B>Used CGAL packages:</B> 3D Delaunay Triangulations. <BR><BR>
+
+<LI> <B>Surface reconstruction, simplification and encoding</B><BR>
+     <B><a href="http://igg.unistra.fr/People/allegre/">R&eacute;mi All&egrave;gre</a></B> and <B>
+        <a href="http://liris.cnrs.fr/~rchaine/">Rapha&euml;lle Chaine</a></B><BR>
+     LIRIS, Universit&eacute; Claude Bernard Lyon I, France.<BR><BR>
+
+<LI> <A HREF="http://www.dimap.ufrn.br/~mfsiqueira/Marcelo_Siqueiras_Web_Spot/Software.html">
+     <B>CQMesh (Strictly Convex Quadrangulations from Triangulations)</B></A><BR>
+     <a href="http://www.dimap.ufrn.br/~mfsiqueira"><B>Marcelo Siqueira</B></a> and <B>Suneeta Ramaswami</B><BR>
+     Universidade Federal do Rio Grande do Norte, Brazil;
+     Rutgers University, USA.<BR>
+     <B>Used CGAL packages:</B> Kernel, 2D Polygons. <BR><BR>
+
+<LI> <A HREF="http://www.cse.ohio-state.edu/~tamaldey/qualmesh.html">
+     <B>QualMesh : Quality Delaunay Meshing of Polyhedra</B></A><BR>
+     <B>Tamal K. Dey</B> and <B>Tathagata Ray</B><BR>
+     Jyamiti group, Department of Computer Science and Engineering<BR>
+     The Ohio State University, USA.<BR><BR>
+
+<LI> <A HREF="http://www.cse.ohio-state.edu/~tamaldey/cocone.html"><B>Cocone : Surface Reconstruction</B></A><BR>
+     <B>Tamal Dey</B> and <B>Joachim Giesen</B><BR>
+     Computer and Information Science<BR>
+     The Ohio State University, USA.<BR><BR>
+</ul>
+
+
+<!-- ============================================================================================= -->
+<h2 id="modelers">2D and 3D Modelers</h2>
+<!-- ============================================================================================= -->
+
+<ul class="projects-list">
+
+<li> <a href="http://www.openscad.org/"><B>OpenSCAD</B></a>, a software for creating solid 3D CAD objects</a><BR>
+  <B>Used CGAL packages:</B>2D and 3D Nef Polyhedra<BR><BR>
+
+  <LI> <A HREF="http://www.k-3d.org/"><B>K-3D, 3D modeling and animation software</B></A><BR>
+     <B>Used CGAL packages:</B> 3D Nef Polyhedra<BR><BR>
+
+<LI> <A HREF="http://alice.loria.fr/software/graphite/">
+     <B>Graphite</B></A><BR>
+     <B>The <a href="http://alice.loria.fr/">ALICE</a> project</B><BR>
+     LORIA, INRIA Nancy - Grand Est, France.<BR>
+     <B>Used CGAL packages:</B> 2D and 3D Delaunay triangulations, constrained and non-constrained.<BR><BR>
+
+       <!-- Here is more information provided by Bruno Levy, which can be useful later :
+           - Graphite algorithms that use CGAL:
+
+           CGAL is used by several tools in Graphite :
+              - Crust algorithm for surface reconstruction [Amenta], uses a 3D Delaunay triangulation
+              - ARDECO (Image vectorization algorithm [Lecot et.al, EGSR 2006], uses a 2D Delaunay triangulation
+                   for a Lloyd-like relaxation (http://alice.loria.fr/php/article.php?pub=../publications/papers/2006/EGSR_Ardeco)
+              - Dual-Domain Extrapolation [Levy, SIGGRAPH 2003], uses a 2D constrained Delaunay triangulation
+                   to extend a triangulated 2D domain (http://alice.loria.fr/php/article.php?pub=../publications/papers/2003/dde)
+              - Mesh Autorepair: uses a constrained 2D Delaunay triangulation to fill-in the holes in a mesh
+
+          Graphite uses a factory mechanism to dynamically select among different kernels of CGAL
+       -->
+
+<LI> <A HREF="http://www.cs.technion.ac.il/~cs234326/projects/IRIT_CGAL/index.htm">
+     <B>CGAL Arrangement of IRIT Free-form Curves</B></A><BR>
+     Technion, Israel.<BR>
+     <B>Used CGAL packages:</B> Arrangements.<BR><BR>
+</ul>
+
+
+<!-- ============================================================================================= -->
+<h2 id="molecules">Molecular Modeling</h2>
+<!-- ============================================================================================= -->
+
+<ul class="projects-list">
+
+  <LI><B><a href="http://link.springer.com/chapter/10.1007%2F978-3-662-44753-6_24">
+  Topology-driven Trajectory Synthesis with an Example on Retinal Cell Motions</a></B><BR>
+  <B><a href="http://geometry.stanford.edu/member/guc/">Chen Gu</a>,
+  <a href="http://geometry.stanford.edu/member/guibas/">Leonidas Guibas</a>,
+  and <a href="http://www.geometrie.tugraz.at/kerber/">Michael Kerber</a></B><BR>
+  Google Inc., Stanford University, and Max-Planck-Institute for Informatics.</B><BR>
+  <B>Used CGAL packages:</B> 2D and 3D Periodic Triangulations.<BR><BR>
+
+  <LI> <B><A HREF="http://dx.doi.org/10.1016/j.jmps.2014.06.009">A triangulation-based method to identify dislocation in atomistic models</a></B><BR>
+  <B><A HREf="http://www.mawi.tu-darmstadt.de/mm/mm_mm_sw/gruppe_mm_sw_1/mitarbeiterdetails_mm_2307.en.jsp">Alexander Stukowski</a></B><BR>
+  Technische Universit&auml;t Darmstadt, Germany<BR>
+  <B>Used CGAL packages:</B> 3D Triangulations<BR><BR>
+
+  <LI> <B><A HREF="http://sbl.inria.fr/">Structural Bioinformatics Library</a></B><BR>
+  <B><A href="https://team.inria.fr/abs/">ABS project-team</a> - Algorithms Biology Structure</B><BR>
+  INRIA Sophia Antipolis - M&eacute;diterran&eacute;e<BR>
+  <B>Used CGAL packages:</B> 3D Alpha Shapes, 3D Triangulations, 3D Spherical Geometry Kernel, Halfedge Data Structures, Algebraic Kernel, dD Geometry Kernel <BR><BR>
+
+  <li><B>Protein-DNA interaction</B><br>
+  <a href="http://bioinformatics.oxfordjournals.org/content/26/20/2541.short">
+       A discriminatory function for prediction of protein-DNA interactions based on alpha shape modeling. </a>
+       Bioinformatics, 26(20), 2010, pp 2541-2548.<br>
+  <a href="http://www.proteomesci.com/content/9/S1/S1">
+       Prediction of DNA-binding protein based on statistical and geometric features and support vector machines.</a>
+       Proteome Science, 9(SUPPL. 1), 2011, pp 1-6.<br>
+  <a href="http://bib.oxfordjournals.org/content/early/2012/11/27/bib.bbs077.long">
+      Alpha shape and Delaunay triangulation in studies of protein related interactions.</a>
+      Briefings in Bioinformatics, 2012, doi:10.1093/bib/bbs077. <br>
+  <b>Weiqiang Zhou</b> and <b>Hong Yan</b><br>
+  City University of Hong Kong<br>
+  <B>Used CGAL packages:</B> 3D Alpha shapes<br><br>
+
+  <li><b><a href="http://www.electrostaticszone.eu/index.php/research/11-research/3-ms">
+     NanoShaper: Ray-Casting for Molecular Surfaces triangulation, dielectric map computation and analysis</a></b><br>
+    <b>S. Decherchi</b> and <b>W. Rocchia</b><br>
+  Italian Institute of Technology<br>
+  <B>Used CGAL packages:</B> 3D Alpha-shapes and 3D Regular Triangulation<br><br>
+
+  <li><b><a href="http://dcain.etsin.upm.es/~daniel/alpha/default.html">
+    Applications of computational geometry to the molecular simulation of
+    interfaces</a></b><br>
+    <b>Florencio Balboa Usabiaga</b> and <b>Daniel Duque</b><br>
+  Universidad Polit&eacute;cnica de Madrid<br>
+  <B>Used CGAL packages:</B>2D and 3D Alpha-shapes<br><br>
+
+  <li><b>Protein Voronoi tessellation tools for Docking</b><br>
+    <a href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0018541">
+      A collaborative filtering approach for protein-protein docking scoring
+      functions.</a> PLoS One 2011, 6(4):e18541. PMID: 21526112 <br>
+    <a href="http://hal.archives-ouvertes.fr/docs/00/42/96/18/PDF/2009_ISVD.pdf">
+      Comparing Voronoi and Laguerre tessellations in the protein-protein
+      docking context.</a> Sixth International Symposium on Voronoi
+    Diagrams (ISVD), Copenhagen. 2009. <br>
+    <a href="http://bioinformatics.oxfordjournals.org/cgi/reprint/24/5/652.pdf">
+      DiMoVo: a Voronoi tessellation-based method for discriminating
+      crystallographic and biological protein-protein interactions.</a>
+    Bioinformatics 2008, 24(5):652-8. PMID: 18204058 <br>
+    <a href="http://bioinformatics.oxfordjournals.org/cgi/reprint/23/5/555.pdf">
+      A new protein-protein docking function based on interface residues
+      properties.</a> Bioinformatics 2007, 23(5):555-62. PMID:
+      17237048 <br>
+    <a href="https://hal.inria.fr/inria-00431703">
+      Une nouvelle fonction de score pour l'amarrage
+      prot&eacute;ine-prot&eacute;ine fond&eacute;e sur les diagrammes de
+      Voronoi.</a> In proceedings of Journ&eacute;es Ouvertes de Biologie
+    Informatique Math&eacute;matiques; Lyon, France. 2005:459-469. <br>
+    <a href="http://www.iop.org/EJ/article/1478-3975/2/2/S02/ph5_2_s02.pdf">
+      A docking analysis of the statistical physics of protein-protein
+      recognition.</a> Physical Biology 2005, 2:S17-S23. PMID:
+      16204845. <br>
+    <b><a href="http://pages.saclay.inria.fr/julie.bernauer/">
+      Julie Bernauer</a></b>
+    ,
+    <b>Anne Poupon</b>
+    <i>et al</i><br>
+      INRIA Saclay - Ile de France and
+      Institut de Biochimie et de Biophysique Mol&eacute;culaire et Cellulaire,
+      Universit&eacute; Paris-Sud, Orsay.<br>
+  <B>Used CGAL packages:</B> 3D Triangulations<br><br>
+
+<LI> <A HREF="http://www.cs.duke.edu/donaldlab/software/DISCO/">
+     <B>DISCO: Structure determination of protein homo-oligomers with cyclic symmetry</B></A><BR>
+      <B>Jeffrey W. Martin and Bruce R. Donald</B><BR>
+      Bruce Donald Lab, Duke University<BR>
+    <B>Used CGAL packages:</B> Arrangements <BR><BR>
+</ul>
+
+
+<!-- ============================================================================================= -->
+<h2 id="motion">Motion Planning</h2>
+<!-- ============================================================================================= -->
+
+<ul class="projects-list">
+<li> <a href="http://hbot.benou.fr"><b>HBot</b></a> - Generating maps from robot paths<br>
+     <b>Hadrien Hamel</b><br>
+     More information can be found <a href="http://hbot.benou.fr/doku.php?id=algorithms">here</a>.<br>
+	<!-- hadrien.hamel@gmail.com :
+	I am using CGAL in a personal robotics project, named HBot, that
+	generates a map of the room where the robot runs. This map is first
+	generated as a bitmap (ie. occupancy grid), then vectorized and stored
+	as a polygon with holes. Then I execute a CDT and transform the
+	triangulation structure into a graph. I use this graph with an A*
+	algorithm for pathfinding (the whole process is known as
+	"Triangulation A* Pathfinding"). Finally I simplify the result path (a
+	process known as "funnelling") with boolean operation between
+	polygons. I plan to use 3D surface reconstruction packages too, but
+	this will not be in a near future.
+
+	My project is hosted here: http://hbot.benou.fr
+	and you can see details on the use of CGAL for mapping there:
+	http://hbot.benou.fr/doku.php?id=algorithms
+	-->
+	<B>Used CGAL packages:</B> 2D polygons, 2D Regularized Boolean
+	Set-Operations, 2D Constrained Delaunay triangulations<BR><BR>
+
+<li> <A HREF="http://dx.doi.org/10.1109/ROBOT.2001.932865">
+     <B>Disconnection Proofs for Motion Planning</B></A><BR>
+      <B>Julien Basch</B>, <B>Leonidas J. Guibas</B>, <B>David Hsu</B> and <B>An Thai Nguyen</B><BR>
+      Computer Science Department<BR>
+      Stanford University, USA.<BR><BR>
+
+<li> <A HREF="http://i11www.iti.uni-karlsruhe.de/projects/route_planning/index">
+     <B>Route Planning in Transportation Networks</B></A><BR>
+     <B>Simeon Andreev</B>, <B>Julian Dibbelt</B>, <B>Martin Nöllenburg</B>, <B>Thomas Pajor</B>, and <B>Dorothea Wagner </B><BR>
+      Algorithmics I at the Institute of Theoretical Informatics<BR>
+      Karlsruher Institute of Technology, Germany.<BR>
+      <B>Used CGAL packages:</B> Visibility, Arrangements, Delaunay Triangulations, and Spatial Searching and Sorting <BR><BR>
+
+<li>
+    <A HREF="https://github.com/ethz-asl/polygon_coverage_planning">
+        <B>Polygon Coverage Planning</B>
+    </A><BR>
+    <B>Rik Bähnemann</B>, <B>Nicholas Lawrance</B>, <B>Jen Jen Chung</B>, 
+    <B>Michael Pantic</B>, <B>Roland Siegwart</B>, and <B>Juan Nieto</B><BR>
+    Autonomous Systems Lab, ETH Zürich <BR>
+    See <A href="https://arxiv.org/pdf/1907.09224.pdf">publication</A> <BR>
+    <B>Used CGAL packages:</B> Algebraic Foundations, 2D and 3D Linear Geometry Kernel, 2D Polygon,
+    Geometric Object Generators, STL Extensions, 2D Triangulation, 2D Regularized Boolean Set-Operations, 2D Straight Skeleton and Polygon Offsetting, 2D Arrangement <BR><BR>
+
+</uL>
+
+
+
+    <!-- ============================================================================================= -->
+    <h2 id="optimization">Optimization</h2>
+    <!-- ============================================================================================= -->
+
+    <ul class="projects-list">
+        <li>
+            <A HREF="http://acg.cs.tau.ac.il/projects/in-house-projects/optimal-area-polygonalization/optimal-area-polygonalization">
+                <B>Optimal Area Polygonalization</B>
+            </A><BR>
+            <B>Nir Goren</B>, <B>Efi Fogel</B>, <B>Danny Halperin</B></B><BR>
+            Computational Geometry: Solving Hard Optimization Problems<BR>
+            (CG:SHOP @ SoCG 2019)<BR>
+            Geometric Optimization Challenge 2019<BR>
+            <B>Used CGAL packages:</B> 2D Polygons, 2D Triangulation, dD Spatial Searching, 2D Convex Hulls and Extreme Points <BR><BR>
+    </ul>
+
+    <!-- ============================================================================================= -->
+    <h2 id="particles">Particle Physics, Materials, Nanostructures, Microstructures, Fluid Dynamics</h2>
+    <!-- ============================================================================================= -->
+
+    <ul class="projects-list">
+
+      <li>
+           <b><a href="https://dx.doi.org/10.1103/PhysRevE.104.024137">High-dimensional percolation criticality and hints of mean-field-like caging of the random Lorentz gas</a>
+           <a href="https://arxiv.org/abs/2105.04711">(arxiv)</a></b>
+           <BR><b>Benoit Charbonneau</b>, <b>Patrick Charbonneau</b>, <b>Yi Hu</b>, and <b>Zhen Yang</b>,
+           <BR>University of Waterloo, Canada,
+            Duke University, USA,
+            and Nanjing University, China
+           <BR><B>Used CGAL packages:</B> dD Triangulations
+           <BR><BR>
+      
+           <b><a href="https://doi.org/10.1093/plphys/kiab476">SPIRE, a software tool for bicontinuous phase recognition: application for plastid cubic membranes</a></b>
+           <BR> <b>Tobias M Hain</b>, <b>Michał Bykowski</b>, <b>Matthias Saba</b>,
+           <b><a href="https://www.math.uni-potsdam.de/professuren/applied-geometry-and-topology/team/prof-dr-myfanwy-evans">Myfanwy E Evans</a></b>,
+           <b><a href="http://gerdschroeder-turk.org/">Gerd E Schröder-Turk</a></b>,
+           and <b>Łucja Kowalewska</b>
+           <BR>University of Potsdam, Germany,
+            Murdoch University, Australia,
+            Lund University, Sweden,
+            University of Warsaw, Poland,
+            University of Fribourg, Switzerland,
+            and The Australian National University, Canberra, Australia
+           <BR><B>Used CGAL packages:</B> Advancing Front Surface Reconstruction
+           <BR><BR>
+
+        <li>
+            <b><a href="https://arxiv.org/abs/1711.07981">Two-dimensional Ising model on random lattices with constant coordination number</a></b>
+            <BR><b>Manuel Schrauth</b>, <b>Julian A. J. Richter</b>, and
+            <b><a href="https://www.physik.uni-wuerzburg.de/en/tp3/people/guests/prof-dr-jefferson-stafusa/">Jefferson S. E. Portela</a></b>
+            <BR>Institute of Theoretical Physics and Astrophysics, University of
+            W&uuml;rzburg, Germany, and Departamento Acad&ecirc;mico de F&iacute;sica,
+            Universidade Tecnol&oacute;gica Federal do Paran&aacute, Brasil
+            <BR><B>Used CGAL packages:</B> 2D Periodic Triangulations
+            <BR><BR>
+
+        <li>
+            <b>Random Spatial Structures in Physics</b>
+            <BR><b><a href="https://mklatt.org/">Michael A. Klatt</a> <i>et al.</i></b>
+            <BR>Karlsruhe Institute of Technology, Germany
+            <BR><a href="https://doi.org/10.1016/j.aam.2014.01.001">Minkowski tensor density formulas for Boolean models</a>
+            <BR><a href="https://doi.org/10.1007/978-3-319-51951-7_12">Second Order Analysis of Geometric Functionals of Boolean Models</a>
+            <BR><B>Used CGAL packages:</B> 2D Regularized Boolean Set-Operations
+            <BR><BR>
+
+        <li>
+            <b><a href="https://arxiv.org/abs/1604.06881">Micro-mechanical Failure Analysis of Wet Granular Matter</a></b>
+            (<a href="https://link.springer.com/article/10.1007/s11440-016-0465-5">SpringerLink</a>)
+            <br><b>Konstantin Melnikov</b>, <b>Falk K. Wittel</b>, and <b>Hans J. Herrmann</b><br>
+            Computational Physics for Engineering Materials, ETH Zurich, Switzerland<br>
+            <B>Used CGAL packages:</B> 3D Periodic Triangulations<br><br>
+
+        <li>
+            <b>
+                <a href="http://dx.doi.org/10.1109/ITAB.2010.5687794">
+                    In silico
+                    tomographic image generation using monte carlo and computational
+                    geometry
+                </a><br>
+                <a href="http://iopscience.iop.org/article/10.1088/0957-4484/26/30/304001/meta">
+                    Persistent
+                    homology and many-body atomic structure for medium-range order in
+                    the glass
+                </a></br>
+                <a href="http://arxiv.org/abs/1501.03611">
+                    Description of
+                    Medium-Range Order in Amorphous Structures by Persistent
+                    Homology
+                </a>
+            </b><br>
+            <b>Yasuaki Hiraoka</b> <i>et al.</i><br>
+            Advanced Institute for Materials Research, Tohoku University, Japan<br>
+            <B>Used CGAL packages:</B> 3D Periodic Triangulations, 3D alpha-shapes<br><br>
+
+        <li>
+            <b>
+                <a href="http://dx.doi.org/10.1140/epje/i2015-15097-0">
+                    Cavity
+                    averages for hard spheres in the presence of polydispersity and
+                    incomplete data
+                </a>
+            </b><br>
+            <b>Michael Schindler</b> and <b>A. C. Maggs</b><br>
+            ESPCI ParisTech, France<br>
+            <b>Used CGAL packages:</b> Periodic triangulations<br><br>
+
+        <li>
+            <b>
+                <a href="http://link.springer.com/article/10.1007/s00161-014-0377-2">
+                    Modeling
+                    wave-induced pore pressure and effective stress in a granular
+                    seabed
+                </a>
+            </b><br>
+            <b> Luc Scholt&egrave;s, Bruno Chareyre, Herv&eacute; Michallet, Emanuele Catalano, Donia Marzougui</b><br>
+            Universit&eacute; de Lorraine/CNRS/CREGU, and Universit&eacute; Grenoble
+            Alpes/CNRS, France<br>
+            <b>Used CGAL packages:</b> 3D triangulations<br><br>
+
+        <li>
+            <b>
+                <a href="http://dx.doi.org/10.1016/j.ijheatmasstransfer.2013.01.002">
+                    A
+                    combined finite-discrete element method for calculating the
+                    effective thermal conductivity of bio-aggregates based materials
+                </a>
+            </b><br>
+            <b>
+                F. Pennec, A. Alzina, N. Tessier-Doyen, B. Na&iuml;t-ali,
+                N. Mati-Baouche, H. De Baynast and D.S. Smith
+            </b><br>
+            Groupe d'&Eacute;tude des Mat&eacute;riaux
+            H&eacute;t&eacute;rog&egrave;nes - Centre Europ&eacute;en de la
+            C&eacute;ramique, Limoges, France, and Clermont University, Universit&eacute;
+            Blaise Pascal, Institut Pascal UMR CNRS 6602, Aubi&egrave;re, France<br>
+            <b>Used CGAL packages:</b> 3D triangulations, surface
+            reconstruction from point sets, 3D mesh generation<br><br>
+
+        <li>
+            <b><a href="http://yade-dem.org/doc">Yade open-DEM</a></b><br>
+            A discrete element modeling framework for granular/discrete materials.<br>
+            <b>Bruno Chareyre</b><br>
+            <a href="http://www.grenoble-inp.fr/">Grenoble INP</a>, <a href="https://www.3sr-grenoble.fr">laboratoire 3SR</a><br>
+            <b>Used CGAL packages:</b> Regular and Delaunay triangulation for
+            solid-fluid coupling, contact detection, multi-scale post-processing<br><br>
+
+        <li>
+            <b>
+                <a href="http://dx.doi.org/10.1007/s11242-011-9915-6">
+                    Pore-Scale
+                    Modeling of Viscous Flow and Induced Forces in Dense Sphere
+                    Packings
+                </a>
+            </b><br>
+            <b>Bruno Chareyre, Andreas Cortis, Emanuele Catalano</b>, and <b>Eric Barth&eacute;lemy</b><br>
+            <a href="http://www.grenoble-inp.fr/">Grenoble INP</a><br>
+            <b>Used CGAL packages:</b> 3D regular triangulations<br><br>
+
+        <li>
+            <b>Microstructure Mesh Simplification</b><br>
+            <b>Sylvain Gouttebroze</b>, SINTEF.<br>
+            <B>Used CGAL packages:</B> 3D Delaunay triangulations.<BR><BR>
+
+        <LI>
+            <a href="http://www.msm.ctw.utwente.nl/"><B>Multiscale mechanics</B></a>
+            and <A href="http://www.nwo.nl/en/research-and-results/research-projects/i/82/17082.html"><B>Hierarchical multi-scale modeling</B></A>.<BR>
+            Data structure for micro-macro and multi-phase/-field models.<BR>
+            <B>V.Ogarko and S.Luding</B><BR>
+            Faculty of Engineering Technology, University of Twente, The Netherlands.<BR>
+            <B>Used CGAL packages:</B> 2D and 3D Delaunay triangulations,
+            2D and 3D regular triangulations, periodic Triangulations.<BR><BR>
+
+        <LI>
+            <A HREF="http://fastjet.fr/">
+                <B>FastJet (fast agglomerative jet clustering in particle physics)</B>
+            </A><BR>
+            <B>Matteo Cacciari</B> and <B> Gavin P. Salam</B><BR>
+            LPTHE: Universit&eacute; Pierre et Marie Curie (Paris 6);
+            Universit&eacute; Denis Diderot (Paris 7); CNRS, UMR 7589, France.<BR>
+            <B>Used CGAL packages:</B> 3D Delaunay triangulations.<BR><BR>
+
+        <LI>
+            <B>Dynamical geometry for multiscale dissipative particle dynamics</B>
+            <!-- (<A HREF="http://www.chem.ucl.ac.uk/ccs/gdf/dp4.mpg">movie</A> 16.4MB) --> <BR>
+            <B>Gianni de Fabritiis</B>
+            and <A HREF="http://ccs.chem.ucl.ac.uk/peter"><B>Peter Coveney</B></A><BR>
+            <A HREF="http://ccs.chem.ucl.ac.uk/">Centre for Computational Science</A><BR>
+            Queen Mary, University of London, United Kingdom.<BR><BR>
+    </ul>
+
+
+    <!-- ============================================================================================= -->
+    <h2 id="p2p">Peer-to-Peer Virtual Environment</h2>
+    <!-- ============================================================================================= -->
+
+    <ul class="projects-list">
+
+        <li>
+            <B>
+                <A href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6585890&amp;tag=1">
+                    Automatic
+                    and Autonomous Load Management in Peer-to-Peer Virtual
+                    Environments
+                </A>
+            </B><br>
+            <b>Mahathir Almashor, Ibrahim Khalil, Zahir Tari,</b> and <b>Albert Y. Zomaya</b><br>
+            RMIT University, Melbourne, USTHB, Algiers, and The University of Sydney<br>
+            <B>Used CGAL packages:</B> 3D Triangulations<BR><BR>
+
+    </ul>
+
+
+    <!-- ============================================================================================= -->
+    <h2 id="sensor">Sensor Networks</h2>
+    <!-- ============================================================================================= -->
+
+    <ul class="projects-list">
+        <LI>
+            <A HREF="https://github.com/itm/shawn">
+                <B>Shawn - A discrete event simulator designed with the simulation of large wireless sensor networks in mind</B>
+            </A><BR>
+            Braunschweig Technical University, Germany.<BR>
+            <B>Used CGAL packages:</B> 2D Kernel, Polygons.<BR><BR>
+    </ul>
+
+
+    <!-- ============================================================================================= -->
+    <h2 id="interfaces">Interfaces of CGAL in other languages and platforms</h2>
+    <!-- ============================================================================================= -->
+
+    <ul class="projects-list">
+        <li>
+            <a href="https://github.com/CGAL/cgal-swig-bindings"><b>CGAL SWIG-Bindings</b></a> :
+            bindings for CGAL using <a href="http://www.swig.org">SWIG</a> for Java, Python, ... <br>
+            GeometryFactory<br><br>
+
+        <li>
+            <a href="http://cgal-python.gforge.inria.fr/"><b>CGAL-Python</b></a> :
+            <a href="http://www.python.org">Python</a> bindings for CGAL (no longer maintained)<br>
+            Naceur Meskini and Sylvain Pion, INRIA Sophia-Antipolis<br><br>
+
+        <li>
+            <a href="https://www.mathworks.com/help/matlab/release-notes.html?searchHighlight=cgal&s_tid=doc_srchtitle"><b>CGAL Triangulations in Matlab</b></a><br>
+            The MathWorks<br><br>
+
+        <li>
+            <a href="http://cglab.gforge.inria.fr/"><b>CGLAB</b></a> :
+            Computational Geometry Toolbox for <a href="http://www.scilab.org/">Scilab</a> based on CGAL<br>
+            Naceur Meskini and Sylvain Pion, INRIA Sophia-Antipolis<br>
+            Up-to-date version is available on the <a href="http://forge.scilab.org/index.php/p/cglab/">Scilab forge</a> and is now maintained by <a href="http://www.scilab.org/">Scilab</a> team<br>
+    </ul>
+
+  </div>
+</div>
+
+
+    
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="footer-copyright">
+            <div style="float: left;">
+              <a href="https://twitter.com/TheCGALProject" alt="The CGAL Project's Twitter">
+                <img src="https://cgal.github.io/cgal-web/images/icons/twitter.svg" class="center-block btn-dark-orange" alt="Twitter" height="18"></img>
+              </a>
+            </div>
+            &copy; 1995-2022 The CGAL Project. All rights reserved.
+            <div style="float: right;">
+              <a href="https://cgal.geometryfactory.com/CGAL/Members/wiki/Main_Page" alt="Password protected access to the Developer Wiki">
+                <i class="glyphicon glyphicon-lock"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascripts -->
+    <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery-1.9.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery-1.9.1.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.fitvids.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.sequence-min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.bxslider.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/template.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/bootstrap-hover-dropdown-min.js"></script>
+  </body>
+</html>
+

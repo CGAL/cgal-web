@@ -1,0 +1,961 @@
+% ----------------------------------------------------------------------------
+% $URL$
+% ----------------------------------------------------------------------------
+%
+% Some guidelines in maintaining this BiBTeX file for the
+% CGAL publications web page:
+%
+%   - Entries are sorted alphabetically by their key
+%
+%   - The key is created following the same rules as geombib, see
+%       http://compgeom.cs.uiuc.edu/~jeffe/compgeom/biblios.html
+%
+%     Here are roughly the rules:
+%     initials of authors' last names '-' initials of 5 first title words
+%     (small words are omitted) '-' 2 digits for year
+%     then, in case of conflicts, append 'a' for article, 'i' for proceedings,
+%     't' for technical reports
+%
+%   - to distinguish our keys from geombib, we use 'cgal:' as a prefix
+%
+% ----------------------------------------------------------------------------
+
+@string{ keyword_not_to_be_indexed = "key:?" }
+@string{ author_create_page = 0 }
+@string{ category_create_page = 0 }
+@string{ reduced_year_create_page = 0 }
+@string{ complete_year_create_page = 0 }
+
+@string{ index_file_title = "CGAL Publications" }
+@string{ index_page_title = "CGAL Publications" }
+
+@string{ complete_biblio_file_title = "CGAL Publications sorted by year" }
+@string{ complete_biblio_page_title = "CGAL Publications sorted by year" }
+@string{ filename_complete_biblio = "cgal_publications" }
+
+@string{ head_tag.end = layout.html }
+@string{ header_of_contents = header_of_contents }
+
+@string{ keyword_build_initials_index = 0 }
+@string{ keyword_put_initials_in_index = 0 }
+
+@string{ keyword_write_bibtex_abstract = 0 }
+@string{ complete_biblio_write_bibtex_abstract = 0 }
+
+@string{ disclaimer_2 = ""}
+
+@string{ index_write_author = 0 }
+@string{ keyword_write_author = 0 }
+@string{ complete_biblio_write_author = 0 }
+
+@string{ index_write_date = 0 }
+@string{ keyword_write_date = 0 }
+@string{ complete_biblio_write_date = 0 }
+
+@inproceedings{ cgal:bbp-iayed-98
+, author =      "Herv{\'e} Br{\"o}nnimann and Christoph Burnikel and Sylvain Pion"
+, title =       "Interval Arithmetic Yields Efficient Dynamic Filters for Computational Geometry"
+, booktitle =   "Proceedings 14th Annual Symposium on Computational Geometry"
+, year =        1998
+, pages =       "165--174"
+, precedes = "bbp-iayed-01"
+, update =      "99.07 devillers, 98.07 tamassia"
+, url = "ftp://ftp-sop.inria.fr/geometrica/pion/publis/bbp98.pdf"
+, keyword = "_Robustness_"
+}
+
+@article{ cgal:bbp-iayed-01
+, author =  "H. Br{\"o}nnimann and C. Burnikel and S. Pion"
+, title =       "Interval arithmetic yields efficient dynamic filters
+for computational geometry"
+, journal = "Discrete Applied Mathematics"
+, volume = 109
+, year = 2001
+, pages = "25--47"
+, succeeds = "bbp-iayed-98scg"
+, url = "ftp://ftp-sop.inria.fr/geometrica/pion/publis/interval_journal.pdf"
+, keyword = "_Robustness_"
+}
+
+@article{ cgal:bdpty-tc-02
+, author  =  "Jean-Daniel Boissonnat and Olivier Devillers and Sylvain
+Pion and Monique Teillaud and Mariette Yvinec"
+, title  =  "Triangulations in {CGAL}"
+, journal =     "Comput. Geom. Theory Appl."
+, volume =      22
+, year =        2002
+, pages =       "5--19"
+, succeeds = "bdty-tcgal-00"
+, url = "ftp://ftp-sop.inria.fr/geometrica/pion/publis/triangulations_in_cgal_cgta.pdf"
+, keyword = "_Triangulations_"
+}
+
+@inproceedings{ cgal:bdty-tcgal-00
+, author =      "Jean-Daniel Boissonnat and Olivier Devillers and Monique Teillaud and Mariette Yvinec"
+, title =       "Triangulations in {CGAL}"
+, booktitle =   "Proceedings 16th Annual Symposium on Computational Geometry"
+, year =        2000
+, pages =       "11--18"
+, update =      "01.07 devillers, 00.11 smid, 00.07 devillers"
+, abstract =    "This  paper
+presents  the main algorithmic and design choices that have been
+made to implement triangulations in
+the computational geometry algorithms library CGAL."
+, precedes = "bdpty-tc-02"
+, keyword = "_Triangulations_"
+}
+
+@article{ cgal:bf-csaps-04
+, author  =  "Jean-Daniel Boissonnat and Julia Fl{\"o}totto"
+, title  =  "A coordinate system associated with points scattered on a surface"
+, journal =      "Computer-Aided Design"
+, publisher =   "Elsevier Science"
+, volume = 36
+, pages = "161--174"
+, year = 2004
+, keyword = "_Triangulations_"
+}
+
+@inproceedings{ cgal:bh-app-00
+, author =      "Hannah Bast and Susan Hert"
+, title =       "The Area Partitioning Problem"
+, booktitle =   "Proc. 12th Canad. Conf. Comput. Geom."
+, year =        2000
+, pages =       "163--172"
+, url = "http://www.cs.unb.ca/conf/cccg/eProceedings/6.ps.gz"
+, keyword = "_Polygons/Polyhedra_"
+}
+
+@incollection{ cgal:bk-vs-97
+, author       = {Mark de Berg and Lutz Kettner}
+, title        = {Visualisation and Simulation}
+, booktitle    = {CGAL Workpackage 4: Report 1}
+, publisher    = {The CGAL Consortium}
+, year         = 1997
+, chapter      = 3
+, pages        = {20--24}
+, month        = apr
+, url = "http://www.mpi-sb.mpg.de/~kettner/pub/cgal_report1_tr_97.ps.gz"
+, keyword = "_I/O_"
+}
+
+@inproceedings{ cgal:bksv-agppd-00
+, author       = {Herv{\'e} Br{\"o}nnimann and Lutz Kettner and
+                  Stefan Schirra and Remco Veltkamp}
+, title        = {Applications of the Generic Programming Paradigm
+                  in the Design of {CGAL}}
+, booktitle    = {Generic Programming---Proceedings of a Dagstuhl Seminar}
+, editor       = {M. Jazayeri and R. Loos and D. Musser}
+, series       = {LNCS 1766}
+, publisher    = {Springer-Verlag}
+, pages        = {206--217}
+, year         = 2000
+, url = "http://www.mpi-sb.mpg.de/~kettner/pub/cgal_generic_lncs_00_a.html"
+, abstract     = {
+        We report on the use of the generic programming paradigm in
+	the computational geometry algorithms library CGAL. The
+	parameterization of the geometric algorithms in CGAL enhances
+	flexibility and adaptability and opens an easy way for abolishing
+	precision and robustness problems by exact but nevertheless efficient
+	computation. Furthermore we discuss circulators, which are an
+	extension of the iterator concept to circular structures. Such
+	structures arise frequently in geometric computing.}
+, keyword = "_Design_"
+}
+
+@article{d-dh-02
+, author =      "Olivier Devillers"
+, title =       "The {Delaunay} hierarchy"
+, journal =     "Internat. J. Found. Comput. Sci."
+, year = 2002
+, volume = "13"
+, pages = "163--180"
+, note = "special issue on triangulations"
+, succeeds = "d-iirdt-98"
+, keyword = "_Triangulations_"
+}
+
+@inproceedings{ cgal:dp-eegpd-03
+, author =      "Olivier Devillers and Sylvain Pion"
+, title =       "Efficient Exact Geometric Predicates for {Delaunay} Triangulations"
+, booktitle =   "Proc. 5th Workshop Algorithm Eng. Exper."
+, nickname =    "ALENEX '03"
+, year =        2003
+, pages =       "37--44"
+, url = "ftp://ftp-sop.inria.fr/geometrica/pion/publis/alenex03.pdf"
+, keyword = "_Robustness_"
+}
+
+@inproceedings{ cgal:dpt-wt-01
+, author =      "Olivier Devillers and Sylvain Pion and Monique Teillaud"
+, title =       "Walking in a triangulation"
+, booktitle =   "Proceedings 17th Annual Symposium on Computational Geometry"
+, year =        2001
+, pages =       "106--114"
+, precedes = "dpt-wt-02"
+, update =      "01.07 devillers"
+, url = "ftp://ftp-sop.inria.fr/geometrica/pion/publis/Walking_in_a_triangulation_socg_2001.pdf"
+, keyword = "_Triangulations_"
+}
+
+@article{ cgal:dpt-wt-02
+, author =      "Olivier Devillers and Sylvain Pion and Monique Teillaud"
+, title =       "Walking in a triangulation"
+, journal =     "Internat. J. Found. Comput. Sci."
+, year = 2002
+, volume = "13"
+, pages = "181--199"
+, note = "special issue on triangulations"
+, succeeds = "dpt-wt-01"
+, url = "ftp://ftp-sop.inria.fr/geometrica/pion/publis/Walking_in_a_triangulation_ijfcs.pdf"
+, keyword = "_Triangulations_"
+}
+
+@inproceedings{ cgal:dt-pvr3d-03
+, author =      "Olivier Devillers and Monique Teillaud"
+, title =  "Perturbations and Vertex Removal in a {3D Delaunay} Triangulation"
+, booktitle =   "Proc. 14th ACM-SIAM Sympos. Discrete Algorithms (SODA)"
+, year =    2003
+, pages = "313-319"
+, keyword = "_Triangulations_, _Robustness_"
+}
+
+@techreport{cgal:dt-pvr3d-02
+, author      = "Olivier Devillers and Monique Teillaud"
+, title       = "Perturbations and Vertex Removal in a {3D Delaunay}
+                 Triangulation"
+, year        = 2002
+, number      = "4624"
+, type        = "Research Report"
+, institution = "INRIA"
+, url         = "https://hal.inria.fr/inria-00071961",
+, keyword = "_Triangulations_, _Robustness_"
+}
+
+@phdthesis{ cgal:f-csapc-03
+, author =  "Julia Fl{\"o}totto"
+, title =   "A coordinate system associated to a point cloud
+          issued from a manifold: definition, properties and applications"
+, type =    "Th\`{e}se de doctorat en sciences"
+, school = "Universit\'e de {Nice-Sophia Antipolis}"
+, address = "France"
+, year =    2003
+, url   =   "http://www.inria.fr/rrrt/tu-0805.html"
+, keyword = "_Triangulations_"
+}
+
+@article{ cgal:fhhne-dipmc-00,
+   author = "Eyal Flato and Dan Halperin and Iddo Hanniel and Oren Nechushtan and Ester Ezra",
+   title = "The Design and Implementation of Planar Maps in {CGAL}",
+   journal = "The ACM Journal of Experimental Algorithmics",
+   volume = 5,
+   year = 2000,
+   note = "Also in LNCS Vol. 1668 (WAE '99), pages~154--168"
+,  keyword = "_Arrangements_"
+}
+
+@inproceedings{ cgal:fg-sebbcsa-03
+, author =	"K. Fischer and B. G{\"a}rtner"
+, title =	"The smallest enclosing ball of balls: combinatorial structure
+and algorithms"
+, booktitle =   "Proceedings 19th annual Symposium on Computational Geometry
+(SCG)"
+, year =        "2003"
+, pages =       "292--301"
+, keyword = "_Optimization_"
+}
+
+@inproceedings{ cgal:fgkss-ckbgc-96
+, author =      "Andreas Fabri and Geert-Jan Giezeman and Lutz Kettner and
+                 Stefan Schirra and Sven Sch{\"o}nherr"
+, title =       "The {CGAL} Kernel: {A} Basis for Geometric Computation"
+, editor =      "M. C. Lin and D. Manocha"
+, booktitle =   "Proc. 1st ACM Workshop on Appl. Comput. Geom."
+, series =      "Lecture Notes Comput. Sci."
+, volume =      1148
+, publisher =   "Springer-Verlag"
+, year =        1996
+, pages =       "191--202"
+, url = "http://www.mpi-sb.mpg.de/~kettner/pub/cgal_kernel_lncs_96_a.html"
+, keyword = "_Kernel_, _Design_"
+}
+
+@article{ cgal:fgkss-dccga-00
+, author =      "A. Fabri and G.-J. Giezeman and L. Kettner and S. Schirra and S. Sch{\"o}nherr"
+, title =       "On the Design of {CGAL}, a Computational Geometry Algorithms Library"
+, journal =     "Softw. -- Pract. Exp."
+, volume =      30
+, number =      11
+, year =        2000
+, pages =       "1167--1202"
+, succeeds =    "fgkss-ckbgc-96, fgkss-dccga-98"
+, update =      "01.04 vismara"
+, note =      "Special Issue on Discrete Algorithm Engineering"
+, keyword =     "_Design_"
+, url  = "http://www3.interscience.wiley.com/cgi-bin/fulltext/72517074/PDFSTART"
+}
+
+@INPROCEEDINGS{cgal:fwh-cfpeg-04,
+  AUTHOR       = {Efi Fogel and Ron Wein and Dan Halperin},
+  BOOKTITLE    = {Algorithms - ESA 2004: 12th Annual European Symposium},
+  TITLE        = {Code Flexibility and Program Efficiency by Genericity:
+     Improving {CGAL}'s Arrangements},
+  ADDRESS      = {Bergen, Norway},
+  OPTMONTH     = {},
+  YEAR         = {2004},
+  PAGES        = {664--676},
+  PUBLISHER    = {Springer-Verlag},
+  KEYWORDS     = {_Arrangements_}
+}
+
+@phdthesis{ cgal:g-cgpf-03
+, author =  "Philippe Guigue"
+, title =   "Constructions g{\'e}om{\'e}triques {\`a} pr{\'e}cision fix{\'e}e"
+, type =    "Th\`{e}se de doctorat en sciences"
+, school = "Universit\'e de {Nice-Sophia Antipolis}"
+, address = "France"
+, year =    2003
+, url = "http://www.inria.fr/rrrt/tu-0806.html"
+, keyword = "_Kernel_"
+}
+
+@inproceedings{ cgal:g-frseb-99
+, author =	"B. G{\"a}rtner"
+, title =	"Fast and robust smallest enclosing balls"
+, booktitle =	"Proc. 7th annu. European Symposium on Algorithms (ESA)"
+, year =	"1999"
+, series =	"Lecture Notes in Computer Science"
+, volume =      "1643"
+, publisher =	"Springer-Verlag"
+, pages =       "325--338"
+, keyword = "_Optimization_"
+}
+
+@article{cgal:gd-frtto-03
+, author =       "Philippe Guigue and Olivier Devillers"
+, title =        "Fast and Robust Triangle-Triangle Overlap Test Using Orientation Predicates"
+, journal =      "Journal of graphics tools"
+, year =         2003
+, volume =       8
+, number =       1
+, pages = "39--52"
+, keyword = "_Kernel_"
+}
+
+@inproceedings{ cgal:gs-eegqp-00
+, author =      "Bernd G{\"a}rtner and Sven Sch{\"o}nherr"
+, title =	"An Efficient, Exact, and Generic Quadratic Programming Solver
+for Geometric Optimization"
+, booktitle =	"Proceedings 16th Annual Symposium on Computational Geometry"
+, year =	2000
+, pages =	"110--118"
+, update =	"00.11 jones"
+, keyword = "_Optimization_"
+}
+
+@article{ cgal:gs-epsee-98
+, author =	"B. G{\"a}rtner and S. Sch{\"o}nherr"
+, title =	"Exact Primitives for Smallest Enclosing Ellipses"
+, journal =	"Information Processing Letters"
+, volume =	"68"
+, year =	"1998"
+, pages =	"33--38"
+, keyword = "_Optimization_"
+}
+
+@techreport{ cgal:gs-secegic-98
+, author =	"Bernd G{\"a}rtner and Sven Sch{\"o}nherr"
+, title =       "Smallest Enclosing Circles - An Exact and Generic
+Implementation in C++"
+, institution = "Institute for Computer Science"
+, school =      "Freie Universit{\"a}t Berlin, Germany"
+, number =      "B-98-05"
+, year =        "1998"
+, keyword = "_Optimization_"
+}
+
+@inproceedings{ cgal:ghhkm-bosnc-03
+ ,author       = {Granados, Miguel and Hachenberger, Peter and Hert, Susan
+                  and Kettner, Lutz and Mehlhorn, Kurt and Seel, Michael}
+ ,editor       = {Di Battista, Giuseppe and Zwick, Uri}
+ ,title        = {Boolean Operations on 3D Selective Nef Complexes
+                  Data Structure, Algorithms, and Implementation}
+ ,booktitle    = {Algorithms - ESA 2003: 11th Annual European Symposium}
+ ,address      = {Budapest, Hungary}
+ ,publisher    = {Springer}
+ ,month        = sep
+ ,series       = {Lecture Notes in Computer Science}
+ ,volume       = {2832}
+ ,year         = {2003}
+ ,pages        = {174--186}
+ ,keyword      = "_Polygons/Polyhedra_"
+ ,url          = "http://www.mpi-sb.mpg.de/~kettner/pub/nef_3d_esa_03_a.html"
+}
+
+
+% Is this implemented in CGAL ?
+% @techreport{ cgal:gv-ipaa-03
+% , author =    "Ovidiu Grigore and Remco C. Veltkamp"
+% , title =    "On the Implementation of Polygonal Approximation Algorithms"
+% , institution =    "Utrecht University, Institute of Information and Computing Sciences"
+% , number =    "UU-CS-2003-05"
+% , url =        "http://ftp.cs.uu.nl/pub/RUU/CS/techreps/CS-2003/2003-005.ps.gz"
+% , year =    2003
+% , keyword = "key:?"
+% }
+
+@inproceedings{ cgal:h-cap-01
+, author =      "Susan Hert"
+, title =       "Connected Area Partitioning"
+, booktitle =   "Abstracts 17th European Workshop Comput. Geom."
+, nickname =    "CG 2001"
+, site =        "Berlin"
+, publisher =   "Freie Universit{\"a}t Berlin"
+, year =        2001
+, pages =       "35--38"
+, url = "http://www.mpi-sb.mpg.de/~hert/documents/connected_area_part.ps.gz"
+, keyword = "_Polygons/Polyhedra_"
+}
+
+@mastersthesis{ cgal:h-dipac-00,
+   author = "Iddo Hanniel",
+   title = "The Design and Implementation of Planar Arrangements of Curves in {CGAL}",
+   type = "M.{Sc}. Thesis",
+   school = "School of Computer Science, Tel Aviv University",
+   year = 2000
+,  keyword = "_Arrangements_"
+}
+
+@inproceedings{ cgal:h-slacr-99
+, author =	"Michael Hoffmann"
+, title =	"A Simple Linear Algorithm for Computing Rectangular
+Three-Centers"
+, booktitle =	"Proc. 11th Canad. Conf. Comput. Geom."
+, nickname =	"CCCG '99"
+, site =	"Vancouver(BC), Canada"
+, year =	"1999"
+, pages =	"72--75"
+, keyword = "_Optimization_"
+}
+
+@inproceedings{ cgal:hh-tdaca-00,
+   author = "Iddo Hanniel and Dan Halperin",
+   title = "Two-dimensional arrangements in {CGAL} and adaptive point location for parametric curves",
+   booktitle = "LNCS Vol. 1982 (Proc. WAE '00)",
+   publisher = "Springer-Verlag",
+   pages = "171--182",
+   year = 2000
+,  keyword = "_Arrangements_"
+}
+
+@inproceedings{ cgal:hhkps-aegk-01
+, author =      "Susan Hert and Michael Hoffmann and Lutz Kettner and
+                 Sylvain Pion and Michael Seel"
+, title =       "An Adaptable and Extensible Geometry Kernel"
+, booktitle =   "Proc. Workshop on Algorithm Engineering"
+, nickname =    "WAE '01"
+, series =      "Lecture Notes Comput. Sci."
+, volume =      2141
+, publisher =   "Springer-Verlag"
+, year =        2001
+, pages =       "79--90"
+, url  =      "http://www.mpi-sb.mpg.de/~kettner/pub/cgal_ext_kernel_wae_01_a.html"
+, keyword = "_Kernel_, _Design_"
+}
+
+@incollection{ cgal:ft-gpcl-06
+, author      =	"Efi Fogel and Monique Teillaud"
+, title       = "Generic Programming and The {CGAL} Library"
+, pages       = "313--320"
+, booktitle   = "Effective Computational Geometry for Curves and Surfaces"
+, publisher   = "Springer-Verlag, Mathematics and Visualization"
+, editor      = "Jean-Daniel Boissonnat and Monique Teillaud"
+, year        = 2006
+, keyword     = "_Design_"
+}
+
+@article{ cgal:hl-padmr-98
+, author =      "Susan Hert and Vladimit Lumelsky"
+, title =       "Polygon Area Decomposition for Multiple-Robot Workspace
+                 Division"
+, journal =     "Internat. J. Comput. Geom. Appl."
+, volume =      8
+, number =      4
+, year =        1998
+, pages =       "437--466"
+, keyword = "_Polygons/Polyhedra_"
+}
+
+@article{ cgal:hp-isr-02,
+   author =  "Dan Halperin and Eli Packer",
+   title =   "Iterated Snap Rounding",
+   journal = "Comput. Geom. Theory Appl.",
+   volume =   23,
+   year =     2002,
+   pages =    "209--225"
+,  keyword = "_Arrangements_"
+}
+
+@inproceedings{ cgal:hp-srr-01,
+   author =  "Dan Halperin and Eli Packer",
+   title =   "Snap Rounding Revisited",
+   booktitle =   "Abstracts 17th European Workshop Comput. Geom.",
+   nickname =    "CG 2001",
+   site =    "Berlin",
+   publisher =   "Freie Universit{\"a}t Berlin",
+   year =    2001,
+   pages =   "82--85",
+   update =  "01.04 icking"
+,  keyword = "_Arrangements_"
+}
+
+@incollection{ cgal:k-vs-97
+, author       = {Lutz Kettner}
+, title        = {Visualisation and Simulation}
+, booktitle    = {CGAL Workpackage 4: Report 2}
+, publisher    = {The CGAL Consortium}
+, year         = 1997
+, chapter      = 2
+, pages        = {12--17}
+, month        = {Fall}
+, url = "http://www.mpi-sb.mpg.de/~kettner/pub/cgal_report2_tr_97.ps.gz"
+, keyword = "_I/O_"
+}
+
+@inproceedings{ cgal:k-ddsps-98
+, author =      "Lutz Kettner"
+, title =       "Designing a data structure for polyhedral surfaces"
+, booktitle =   "Proceedings 14th Annual Symposium on Computational Geometry"
+, year =        1998
+, pages =       "146--154"
+, url = "http://www.mpi-sb.mpg.de/~kettner/pub/polyhedron_scg_98_a.html"
+, keyword = "_Polygons/Polyhedra_, _Design_"
+}
+
+@phdthesis{ cgal:k-sdcgc-99
+, author       = {Lutz Kettner}
+, title        = {Software Design in Computational Geometry and
+                 Contour-Edge Based Polyhedron Visualization}
+, school       = {ETH Zurich}
+, year         = 1999
+, address      = {Switzerland}
+, note         = {DISS.\ ETH No.\ 13325}
+, keyword = "_Polygons/Polyhedra_, _I/O_, _Design_"
+, url = "http://www.mpi-sb.mpg.de/~kettner/pub/phd_thesis_eth_99_a.html"
+}
+
+@article{ cgal:k-ugpdd-99
+, author =      "Lutz Kettner"
+, title =       "Using generic programming for designing a data structure
+                 for polyhedral surfaces"
+, journal =     "Comput. Geom. Theory Appl."
+, volume =      13
+, year =        1999
+, pages =       "65--90"
+, url = "http://www.mpi-sb.mpg.de/~kettner/pub/polyhedron_cgta_99_a.html"
+, keyword = "_Polygons/Polyhedra_, _Design_"
+}
+
+@inproceedings{ cgal:ke-rctac-03
+, author  =  "Menelaos I. Karavelas and Ioannis Z. Emiris"
+, title =  "Root comparison techniques applied to computing the additively weighted {V}oronoi diagram"
+, booktitle =   "Proc. 14th ACM-SIAM Sympos. Discrete Algorithms (SODA)"
+, year =    2003
+, pages = "320--329"
+, keyword = "_Triangulations_"
+}
+
+@incollection{ cgal:kn-cgllc-04
+, author       = {Lutz Kettner and Stefan N{\"a}her}
+, title        = {Two Computational Geometry Libraries: {LEDA} and {CGAL}}
+, chapter      = 64
+, editor       = "Jacob E. Goodman and Joseph O'Rourke"
+, booktitle    = "Handbook of Discrete and Computational Geometry"
+, edition      = "Second"
+, publisher    = "CRC Press LLC"
+, address      = "Boca Raton, FL"
+, year         = 2004
+, pages        = {1435--1463}
+, keyword = "_Design_"
+}
+
+@inproceedings{ky-dawvd-02
+,  author =    "Menelaos Karavelas and Mariette Yvinec"
+, title =  "Dynamic Additively Weighted Voronoi Diagrams in 2D"
+, year = 2002
+, booktitle =   "Proc.  10th European Symposium on Algorithms"
+,  pages =       " 586-598"
+,  keywords =    "_Triangulations_"
+}
+
+@inproceedings{ cgal:mmnssuz-cbhdc-97
+, author =      "Kurt Mehlhorn and Michael M{\"u}ller and Stefan N{\"a}her
+                 and Stefan Schirra and Michael Seel and Christian Uhrig
+                 and Joachim Ziegler"
+, title =       "A computational basis for higher dimensional computational
+                 geometry and Applications"
+, booktitle =   "Proceedings 13th Annual Symposium on Computational Geometry"
+, year =        1997
+, pages =       "254--263"
+, keyword = "_Kernel_"
+}
+
+@article{ cgal:mmnssuz-cbhdc-98
+, author =      "Kurt Mehlhorn and Michael M{\"u}ller and Stefan N{\"a}her
+                 and Stefan Schirra and Michael Seel and Christian Uhrig and
+                 Joachim Ziegler"
+, title =       "A Computational Basis for Higher-Dimensional Computational
+                 Geometry and Applications"
+, journal =     "Comput. Geom. Theory Appl."
+, volume =      10
+, number =      4
+, year =        1998
+, pages =       "289--303"
+, keyword = "_Kernel_"
+}
+
+@inproceedings{ cgal:ekptt-tock-04
+, author      =	"Ioannis~Z. Emiris and Athanasios Kakargias and Sylvain Pion
+                 and Monique Teillaud and Elias~P. Tsigaridas"
+, title       =	"Towards an Open Curved Kernel"
+, booktitle   =	"Proceedings 20th Annual Symposium on Computational Geometry"
+, nickname    = "SoCG'04"
+, pages       = "438--446"
+, year        =	2004
+, keyword     = "_Kernel_"
+}
+
+@inproceedings{ cgal:cpt-eeccc-07b
+, author      = {de Castro, Pedro M. M. and Pion, Sylvain and Teillaud, Monique}
+, title       = {Exact and efficient computations on circles in {CGAL}}
+, booktitle   = "Abstracts 23rd. European Workshop on Computational Geometry"
+, nickname    = "EuroCG'07"
+, publisher   =	"Technische Universit{\"a}t Graz, Austria"
+, year        = 2007
+, pages       = "219-222"
+, note        = "also INRIA Research Report 6091"
+, url         = {https://hal.inria.fr/inria-00123259}
+, keyword     = "_Kernel_"
+}
+
+@article{cgal:cclt-dc3sk-08,
+author      = "de Castro, Pedro M. M. and Cazals, Fr\'ed\'eric and Loriot, S\'ebastien and Teillaud, Monique",
+title       = "Design of the {CGAL} {3D} spherical kernel and application to arrangements of circles on a sphere",
+journal     =	"Computational Geometry: Theory and Applications",
+year        = 2008,
+note        = "To appear",
+keyword     = "_Kernel_"
+}
+
+@inproceedings{ cgal:ms-iftml-01
+, author =      "Kurt Mehlhorn and Michael Seel"
+, title =       "Infimaximal Frames: A Technique for Making Lines Look
+                 Like Segments"
+, booktitle =   "Abstracts 17th European Workshop Comput. Geom."
+, nickname =    "CG 2001"
+, site =        "Berlin"
+, publisher =   "Freie Universit{\"a}t Berlin"
+, year =        2001
+, pages =       "78--81"
+, keyword = "_Polygons/Polyhedra_"
+}
+
+@inproceedings{ cgal:o-dcgal-96
+, author       = {Mark H. Overmars}
+, title        = {Designing the Computational Geometry Algorithms
+                  Library {CGAL}}
+, booktitle    = {ACM Workshop on Applied Computational Geometry}
+, editor       = {M. C. Lin and D. Manocha}
+, address      = {Philadelphia, Pennsylvenia}
+, month        = {May, 27--28}
+, year         = 1996
+, note         = {Lecture Notes in Computer Science 1148}
+, keyword = "_Design_"
+}
+
+% Is this implemented in CGAL ?
+% @article{ cgal:ov-psmp-04
+% , author =    "Ren{\' e} van Oostrum and Remco C. Veltkamp"
+% , title =    "Parametric Search Made Practical"
+% , journal =    "Computational Geometry, Theory and Applications"
+% , volume =     28
+% , year =    2004
+% , pages =    "75-88"
+% , keyword = "key:?"
+% }
+
+@phdthesis{ cgal:p-gacg-99
+, author =      "Sylvain Pion"
+, title =       "De la g\'eom\'etrie algorithmique au calcul g\'eom\'etrique"
+, type =        "Th\`{e}se de doctorat en sciences"
+, school =      "Universit\'e de Nice-Sophia Antipolis"
+, address =     "France"
+, year =        1999
+, note =        "TU-0619"
+, url = "http://www.inria.fr/rrrt/tu-0619.html"
+, update =      "02.03 devillers, 00.03 devillers"
+,  keyword = "_Robustness_"
+}
+
+@inproceedings{ cgal:p-iaeia-99
+, author =      "Sylvain Pion"
+, title =       "Interval Arithmetic: An efficient implementation and an application to computational geometry"
+, booktitle =   "Workshop on Applications of Interval Analysis to systems and Control"
+, year =        1999
+, pages =       "99--110"
+, url = "ftp://ftp-sop.inria.fr/geometrica/pion/publis/Misc_99.pdf"
+, update =      "01.07 devillers, 00.03 devillers, 99.07 devillers"
+, keyword = "_Robustness_"
+}
+
+@inproceedings{ cgal:s-cscgc-99
+, author       = {Stefan Schirra}
+, title        = {A Case Study on the Cost of Geometric Computing}
+, booktitle    = {Algorithm Engineering and Experimentation (ALENEX99)}
+, year         = 1999
+, pages        = {156--176}
+, publisher    = {Springer, Berlin}
+, note         = {LNCS 1619}
+, keyword = "_Kernel_, _Convex_Hull_"
+}
+
+@misc{ cgal:s-dcgal-96
+, author       = "Stefan Schirra"
+, title        = "Designing a Computational Geometry Algorithms Library"
+, howpublished = "Lecture Notes for Advanced School on Algorithmic
+                  Foundations of Geographic Information Systems, CISM,
+                  Udine"
+, month        = "September 16-20"
+, year         = "1996"
+, keyword      = "_Design_"
+, url          = "http://domino.mpi-sb.mpg.de/internet/reports.nsf/NumberView/1997-1-014"
+}
+
+@techreport{ cgal:s-picpc-98
+, author       = {Stefan Schirra}
+, title        = {Parameterized Implementations of Classical Planar
+                  Convex Hull Algorithms and Extreme Point Computations}
+, type         = {Research Report}
+, institution  = {Max-Planck-Institut f{\"u}r Informatik}
+, address      = {Im Stadtwald, D-66123 Saarbr{\"u}cken, Germany}
+, number       = {MPI-I-98-1-003}
+, month        = {January}
+, year         = {1998}
+, keyword = "_Kernel_, _Convex_Hull_"
+, url = "http://domino.mpi-sb.mpg.de/internet/reports.nsf/NumberView/1998-1-003"
+}
+
+@incollection{ cgal:s-prgc-97
+, author       = {Stefan Schirra}
+, title        = {Precision and Robustness in Geometric Computations}
+, booktitle    = {Algorithmic foundations of geographic information systems}
+, editor       = {van Kreveld, Marc and Nievergelt, J{\"u}rg and Roos, Thomas and Widmayer, Peter}
+, publisher    = {Springer-Verlag}
+, address      = {Berlin}
+, year         = {1997}
+, series       = {Lecture Notes in Computer Science}
+, volume       = {1340}
+, pages        = {255--287}
+, keyword = "_Kernel_, _Design_"
+}
+
+@mastersthesis{ cgal:s-zkm-96
+, author       = {Michael Schutte}
+, title        = {Zuf{\"a}llige Konvexe Mengen}
+, school       = {Freie Universit{\"a}t Berlin}
+, year         = 1996
+, address      = {Germany}
+, keyword = "_Convex_Hull_"
+}
+
+@techreport{ cgal:s-ipnp-01
+, Author = {Michael Seel}
+, Title = {Implementation of Planar Nef Polyhedra}
+, Type = {Research Report}
+, Institution = {Max-Planck-Institut f{\"u}r Informatik}
+, Address = {Stuhlsatzenhausweg 85, 66123 Saarbr{\"u}cken, Germany}
+, Number = {MPI-I-2001-1-003}
+, Month = {August}
+, Year = {2001}
+, keyword = "_Polygons/Polyhedra_"
+, url = "http://domino.mpi-sb.mpg.de/internet/reports.nsf/NumberView/2001-1-003"
+}
+
+@phdthesis{ cgal:s-pnpgh-01
+, Author = {Michael Seel}
+, Title = {Planar Nef Polyhedra and Generic High-dimensional Geometry}
+, School = {Universit{\"a}t des Saarlandes}
+, Year = {2001}
+, Month = {September}
+, keyword = "_Polygons/Polyhedra_"
+}
+
+@phdthesis{ cgal:s-qpgotia-02
+, author =         "Sven Sch{\"o}nherr"
+, title=           "Quadratic Programming in Geometric Optimization: Theory,
+Implementation, and Applications"
+, school=          "ETH Z{\"u}rich"
+, address =        "Z{\"u}rich, Switzerland"
+, year =           "2002"
+, keyword = "_Optimization_"
+}
+
+@techreport{ cgal:sm-iftml-00
+  ,author       = {M. Seel and K. Mehlhorn}
+  ,title        = {Infimaximal Frames: A Technique for Making Lines Look
+                   Like Segments}
+  ,type         = {Research Report}
+  ,institution  = {MPI f{\"u}r Informatik}
+  ,address      = {Saarbr{\"u}cken, Germany}
+  ,number       = {MPI-I-2000-1-005}
+  ,month        = dec
+  ,year         = {2000}
+  ,issn         = {0946-011X}
+  ,note         = {\path|www.mpi-sb.mpg.de/~mehlhorn/ftp/InfiFrames.ps|}
+, keyword = "_Polygons/Polyhedra_"
+}
+
+@inproceedings{ cgal:t-tdtc-99
+, author =      "Monique Teillaud"
+, title =       "Three Dimensional Triangulations in {CGAL}"
+, booktitle =   "Abstracts 15th European Workshop Comput. Geom."
+, nickname =    "CG '99"
+, site =        "Antibes"
+, publisher =   "INRIA Sophia-Antipolis"
+, year =        1999
+, pages =       "175--178"
+, url = "http://www-sop.inria.fr/prisme/biblio/search.html"
+, update =      "00.03 bibrelex+devillers, 99.07 bibrelex"
+, keyword = "_Triangulations_"
+}
+
+@INPROCEEDINGS{cgal:v-gpcgal-97
+,   AUTHOR       = {R. C. Veltkamp}
+,   BOOKTITLE    = {Proc. 6th Eurographics Workshop on Programming
+Paradigms in Graphics, Budapest, Hungary, 8 September 1997}
+,   TITLE        = {Generic Programming in CGAL, the Computational Geometry
+Algorithms Library}
+,   YEAR         = {1997}
+,   OPTEDITOR    = {F. Arbab and Ph. Slusallek}
+,   OPTORGANIZATION = {Eurographics Association}
+,   PAGES        = {127-138}
+,   KEYWORDS     = _Design_
+}
+
+@inproceedings{ cgal:w-hlfca-02,
+   author = "Ron Wein",
+   title = "High-Level Filtering for Arrangements of Conic Arcs",
+   booktitle = "Proc. ESA 2002",
+   publisher = "Springer-Verlag",
+   year = 2002,
+   pages = "884--895"
+,  keyword = "_Arrangements_"
+}
+
+@mastersthesis{ cgal:w-hlfmt-02,
+   author  = "Ron Wein",
+   title   = "High-Level Filtering for Arrangements of Conic Arcs",
+   type    = "M.{Sc}. Thesis",
+   school  = "School of Computer Science, Tel Aviv University",
+   address = "Tel Aviv, Israel",
+   year    = 2002
+,  keyword = "_Arrangements_"
+}
+
+@ARTICLE{cgal:hhkps-aegk-07,
+   AUTHOR       = {Susan Hert and Michael Hoffmann and Lutz Kettner and Sylvain Pion and Michael Seel},
+   JOURNAL      = {Computational Geometry Theory and Applications},
+   TITLE        = {An Adaptable and Extensible Geometry Kernel},
+   YEAR         = {2007},
+   PAGES        = {16--36},
+   VOLUME       = {38},
+   NUMBER       = {1--2},
+   URL          = {http://dx.doi.org/10.1016/j.comgeo.2006.11.004},
+   KEYWORDS     = {_Kernel_,_Design_}
+}
+
+@ARTICLE{cgal:h-slacr-05,
+   AUTHOR       = {Michael Hoffmann},
+   JOURNAL      = {Computational Geometry Theory and Applications},
+   TITLE        = {A Simple Linear Algorithm for Computing Rectilinear 3-Centers},
+   YEAR         = {2005},
+   PAGES        = {150--165},
+   VOLUME       = {31},
+   NUMBER       = {3},
+   URL          = {http://dx.doi.org/10.1016/j.comgeo.2004.12.002},
+   KEYWORDS     = {_Optimization_}
+}
+
+@Article{cgal:fc-mp-jet-toms-08,
+ author = {Fr\'{e}d\'{e}ric Cazals and Marc Pouget},
+ title = {Algorithm 889: Jet_fitting_3:---A Generic C++ Package for
+                  Estimating the Differential Properties on Sampled
+                  Surfaces via Polynomial Fitting},
+ journal = {ACM Transactions on Mathematical Software},
+ volume = {35},
+ number = {3},
+ year = {2008},
+ issn = {0098-3500},
+ pages = {1--20},
+ url = {http://doi.acm.org/10.1145/1391989.1404582},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = _Geometry Processing_
+ }
+
+@INPROCEEDINGS{cgal:fsh-eiaga-08,
+  AUTHOR       = {Efi Fogel and Ophir Setter and Dan Halperin},
+  BOOKTITLE    = {Abstracts of 24th European Workshop on Computational Geometry},
+  TITLE        = {Exact Implementation of Arrangements of Geodesic Arcs on the
+                  Sphere with Applications},
+  YEAR         = {2008},
+  PAGES        = {83--86},
+  SITE         = {Nancy, France},
+  KEYWORDS     = {_Arrangements_},
+  URL          = {http://acg.cs.tau.ac.il/projects/internal-projects/arr-geodesic-sphere/sphere-vor.pdf}
+}
+
+@INPROCEEDINGS{cgal:fsh-agas-08,
+  AUTHOR       = {Efi Fogel and Ophir Setter and Dan Halperin},
+  BOOKTITLE    = {Proceedings of 24th Annual Symposium on Computational Geometry (SoCG)},
+  TITLE        = {Movie: Arrangements of Geodesic Arcs on the Sphere},
+  PUBLISHER    = {Association for Computing Machinery (ACM) Press},
+  YEAR         = {2008},
+  PAGES        = {218--219},
+  SITE         = {College Park, MD, USE},
+  KEYWORDS     = {_Arrangements_},
+  URL          = {http://acg.cs.tau.ac.il/projects/internal-projects/arr-geodesic-sphere/movie/arrangements-of-geodesic-arcs-on-the-sphere}
+}
+
+@INPROCEEDINGS{cgal:fh-papit-08,
+  AUTHOR       = {Efi Fogel and Dan Halperin},
+  BOOKTITLE    = {Proceedings of 8th Workshop on Algorithmic Foundations of Robotics (WAFR)},
+  TITLE        = {Polyhedral Assembly Partitioning with Infinite Translations
+                 or The Importance of Being Exact},
+  YEAR         = {2008},
+  SITE         = {Guanajuato, Mexico},
+  KEYWORDS     = {_Arrangements_},
+  URL          = {http://acg.cs.tau.ac.il/projects/internal-projects/assembly-partitioning/assem3d.pdf}
+} 
+
+@inproceedings{cgal:ggr-dhlptp-08
+, author =    "T. Galkovskyi and B. G{\"a}rtner and B. Rublev"
+, title =    "The domination heuristic for LP-type problems"
+, booktitle =    "Proc. Workshop on Algorithm Engineering \& Experiments (ALENEX)"
+, year =    "2009"
+, keywords = "_Optimization_"
+} 
+
+@article{cgal:ry-gsddr-07,
+title = "A generic software design for Delaunay refinement meshing",
+journal = "Computational Geometry Theory and Applications",
+volume = "38",
+number = "1-2",
+pages = "100 - 110",
+year = "2007",
+note = "Special Issue on CGAL",
+issn = "0925-7721",
+url = "http://www.sciencedirect.com/science/article/B6TYS-4NDMN9J-2/2/123233326f16d98780ac47c7d3d49d32",
+author = "Laurent Rineau and Mariette Yvinec",
+KEYWORDS     = {_Triangulations_}
+}

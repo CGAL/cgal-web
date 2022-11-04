@@ -1,0 +1,368 @@
+AddOutputFilter INCLUDES .html
+<Files "robots.txt">
+  AddOutputFilter INCLUDES txt
+</Files>
+
+AddType application/pdf .pdf
+
+RewriteEngine on
+
+# Enforce https
+#   Has to be first, before the redirection to www.cgal.org
+#   Verify on https://hstspreload.org/?domain=cgal.org
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
+
+# Redirect cgal.org to www.cgal.org
+RewriteCond %{HTTP_HOST} ^cgal.org
+RewriteRule (.*) https://www.cgal.org/$1 [R=301,L]
+
+# Activate HSTS
+Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
+
+# Redirect page removed from the web site in April 2015
+Redirect permanent /platforms.html http://doc.cgal.org/latest/Manual/installation.html#seccompilers
+Redirect permanent /windows_installation.html /download/windows.html
+Redirect permanent /grass.html /news/2014/04/01/GoogleGrass/
+Redirect permanent /philosophy.html /exact.html
+Redirect permanent /questionnaire.html https://fr.surveymonkey.com/r/?sm=r1cY4ooW6OIeySeh%2fhr2AA%3d%3d
+
+# Wrong links used in the various annoucement of CGAL-4.10
+Redirect permanent /2017/05/24/cgal410/ /2017/05/29/cgal410/
+Redirect permanent /2017/05/27/cgal410/ /2017/05/29/cgal410/
+
+AddHandler type-map .var
+RedirectMatch permanent ^/index2.html /
+RedirectMatch permanent ^/history.html /partners.html
+RedirectMatch permanent ^/other_languages.html /
+RedirectMatch permanent ^/publications_frame.html /bibliography.html
+RedirectMatch permanent ^/([^/]+)_frame.html /$1.html
+RedirectMatch permanent ^/upcoming http://upcoming.cgal.org
+RedirectMatch permanent ^/packages /Manual/latest/doc_html/cgal_manual/packages.html
+
+# link to the latest release
+Redirect /download/last https://github.com/CGAL/cgal/releases
+
+# link to the latest beta release
+Redirect /download/beta https://github.com/CGAL/cgal/releases/tag/releases/CGAL-4.13-beta1
+
+Redirect permanent /archive.html /news.html
+
+RedirectMatch seeother ^/download/([0-9].*) https://github.com/CGAL/cgal/releases/tag/releases/CGAL-$1
+
+RedirectMatch seeother ^/Pkg/(.*) http://doc.cgal.org/latest/Manual/packages.html#Pkg$1
+RedirectMatch seeother ^/Part/(.*) http://doc.cgal.org/latest/Manual/packages.html#Part$1
+
+# An alias for shorter urls to the CGAL Developers Wiki
+RedirectMatch seeother ^/wiki/(.*) https://cgal.geometryfactory.com/CGAL/Members/wiki/$1
+
+RewriteRule ^xredirect:(.+) /cgi-bin/nph-xredirect.cgi/$1 \
+            [T=application/x-httpd-cgi,L]
+
+# Redirect from /Manual/3.5/ or /Manual/last/ to the correspoding TOC of
+# the manual. It does not match /Manual/3.5/something...
+RewriteRule  ^Manual/([^/]*)/$ /Manual/$1/doc_html/cgal_manual/contents.html [R]
+
+# If one demo does not exists in demo/3.5/, then use the one in demo/
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/3.5/(.*) /demo/$1 [R]
+
+# Redirect 3.5.1 to 3.5
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/3.5.1/(.*) /demo/3.5/$1 [R]
+
+# Same for 3.6->3.5.1
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/3.6/(.*) /demo/3.5.1/$1 [R]
+
+# Redirect 3.6.1 to 3.6
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/3.6.1/(.*) /demo/3.6/$1 [R]
+
+# Same for 3.7->3.6
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/3.7/(.*) /demo/3.6/$1 [R]
+
+# Same for 3.7.1->3.7
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/3.7.1/(.*) /demo/3.7/$1 [R]
+
+# Same for 3.8->3.7
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/3.8/(.*) /demo/3.7/$1 [R]
+
+# Same for 3.8.1->3.8
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/3.8.1/(.*) /demo/3.8/$1 [R]
+
+# Same for 3.9->3.8
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/3.9/(.*) /demo/3.8/$1 [R]
+
+# Same for 3.9.1->3.9
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/3.9.1/(.*) /demo/3.9/$1 [R]
+
+# Same for 3.10->3.9
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/3.10/(.*) /demo/3.9/$1 [R]
+
+# Same for 3.10.1->3.10
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/3.10.1/(.*) /demo/3.10/$1 [R]
+
+# Same for 3.11->3.10
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/3.11/(.*) /demo/3.10/$1 [R]
+
+# Same for 3.11.1->3.11
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/3.11.1/(.*) /demo/3.11/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.0/(.*) /demo/3.9/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.0.1/(.*) /demo/4.0/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.0.2/(.*) /demo/4.0.1/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.0.3/(.*) /demo/4.0.2/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.1/(.*) /demo/4.0/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.1.1/(.*) /demo/4.1/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.1.2/(.*) /demo/4.1.1/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.2/(.*) /demo/4.1/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.2.1/(.*) /demo/4.2/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.2.2/(.*) /demo/4.2.1/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.3/(.*) /demo/4.2/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.3.1/(.*) /demo/4.3/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.3.2/(.*) /demo/4.3.1/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.4/(.*) /demo/4.3/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.4.1/(.*) /demo/4.4/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.5/(.*) /demo/4.4/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.5.1/(.*) /demo/4.5/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.5.2/(.*) /demo/4.5.1/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.6/(.*) /demo/4.5/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.6.1/(.*) /demo/4.6/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.6.2/(.*) /demo/4.6.1/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.6.3/(.*) /demo/4.6.2/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.7/(.*) /demo/4.6/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.7.1/(.*) /demo/4.7/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.7.2/(.*) /demo/4.7.1/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.7.3/(.*) /demo/4.7.2/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.8/(.*) /demo/4.7/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.8.1/(.*) /demo/4.8/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.8.2/(.*) /demo/4.8.1/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.8.3/(.*) /demo/4.8.2/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.9/(.*) /demo/4.8/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.9.1/(.*) /demo/4.9/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.9.2/(.*) /demo/4.9.1/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.9.3/(.*) /demo/4.9.2/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.10/(.*) /demo/4.9/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.10.1/(.*) /demo/4.10/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.10.2/(.*) /demo/4.10.1/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.10.3/(.*) /demo/4.10.2/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.11/(.*) /demo/4.9/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.11.1/(.*) /demo/4.11/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.11.2/(.*) /demo/4.11.1/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.11.3/(.*) /demo/4.11.2/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.12/(.*) /demo/4.11/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.12.1/(.*) /demo/4.12/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.12.2/(.*) /demo/4.12.1/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.12.3/(.*) /demo/4.12.2/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.13/(.*) /demo/4.12/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.13.1/(.*) /demo/4.13/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.13.2/(.*) /demo/4.13.1/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.13.3/(.*) /demo/4.13.2/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.14/(.*) /demo/4.13/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.14.1/(.*) /demo/4.14/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.14.2/(.*) /demo/4.14.1/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.14.3/(.*) /demo/4.14.2/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/4.14.4/(.*) /demo/4.14.3/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/5.0/(.*) /demo/4.14/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/5.0.1/(.*) /demo/5.0/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/5.0.2/(.*) /demo/5.0.1/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/5.0.3/(.*) /demo/5.0.2/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/5.1/(.*) /demo/5.0/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/5.1.1/(.*) /demo/5.1/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/5.1.2/(.*) /demo/5.1.1/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/5.1.3/(.*) /demo/5.1.2/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/5.2/(.*) /demo/5.1/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/5.2.1/(.*) /demo/5.2/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/5.2.2/(.*) /demo/5.2.1/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/5.2.3/(.*) /demo/5.2.2/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/5.3/(.*) /demo/5.2/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/5.3.1/(.*) /demo/5.3/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/5.3.2/(.*) /demo/5.3.1/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/5.3.3/(.*) /demo/5.3.2/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/5.4/(.*) /demo/5.3/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/5.4.1/(.*) /demo/5.4/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/5.4.2/(.*) /demo/5.4.1/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/5.4.3/(.*) /demo/5.4.2/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/5.5/(.*) /demo/5.4/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/5.5.1/(.*) /demo/5.5/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/5.5.2/(.*) /demo/5.5.1/$1 [R]
+
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
+RewriteRule demo/5.5.3/(.*) /demo/5.5.2/$1 [R]
+# Redirect last version of the manual /Manual/4.5/ to /Manual/latest/
+RewriteRule ^Manual/4.5/(.*) /Manual/latest/$1 [R]
+
+# Redirect "last" to "latest"
+RewriteRule ^Manual/last(.*) /Manual/latest$1 [R=permanent]
+
+# What is that redirection for? -- Laurent Rineau, 2013/10/18
+RedirectMatch seeother ^latest /Manual/latest/
+
+# Special rule, to test the rewrite map:
+#RewriteRule ^test-cgal_manual/(.*\.html)$ http://doc.cgal.org/latest/${pages:$1|BUG-pages} [R=seeother]

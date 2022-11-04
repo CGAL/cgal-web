@@ -1,0 +1,76 @@
+#### The data was obtained using David A. Wheeler's 'SLOCCount'ran
+#### on include/CGAL and src removing first CORE and OpenNL from include/CGAL
+#### and CGALCore from src.
+#### The number lc for each release is the sum of cpp and anisic lines of codes.
+#### To generate the plot run : "gnuplot release_history_sloccount.plt"
+#### You may need to modify the x-range in release_history_sloccount.plt
+
+#release        lc  month year year+month/13
+0.9          53868    06  1997   1997.461
+1.0          79140    04  1998   1998.308
+1.1          86180    07  1998   1998.538
+1.2          97926    01  1999   1999.077
+2.0          98612    06  1999   1999.461
+2.1         147958    01  2000   2000.077
+2.2         171664    10  2000   2000.769
+2.3         211224    08  2001   2001.615
+2.4         199065    05  2002   2002.385
+3.0         211609    10  2003   2003.769
+#3.0.1       211680    02  2004   2004.154
+3.1         256016    12  2004   2004.923
+3.2         332758    05  2006   2006.385
+#3.2.1       333130    07  2006   2006.538
+3.3         388180    05  2007   2007.385
+#3.3.1       389373    08  2007   2007.615
+3.4         415693    01  2009   2009.077
+3.5         449010    10  2009   2009.769
+#3.5.1       449022    12  2009   2009.923
+3.6         463979    03  2010   2010.231
+#3.6.1       464314    06  2010   2010.461
+3.7         485170    10  2010   2010.769
+3.8         494922    04  2011   2011.308
+3.9         510096    09  2011   2011.692
+#4.0         509251    03  2012   2012.232
+# The following line is actually 4.0.1, but as if it was
+# released in March 2012.
+4.0         513968    03  2012   2012.232
+#the following line is actually 4.1-beta1
+4.1         520176    09  2012   2012.692
+# the following line is CGAL-4.2-alpha1
+4.2         524822    03  2013   2013.232
+# the following list is CGAL-4.3-beta1
+4.3         543616    09  2013   2013.69
+# the following is CGAL-4.4-I-87
+4.4         555307    03  2014  2014.232
+# the following is CGAL-4.5-beta1
+4.5         569961    09  2014  2014.69
+# from CGAL-4.6-beta1
+4.6         588660    03  2015  2015.232
+# from CGAL-4.7-beta1
+4.7         631118    09  2015  2015.75
+# from CGAL-4.8-beta1
+4.8         636311    03  2016  2016.232
+# from CGAL-4.9-alpha1
+4.9         639990    09  2016  2016.75
+# from CGAL-4.10
+4.10        672367    05  2017  2017.42
+# from CGAL-4.11-alpha1
+4.11        689798    09  2017  2017.75
+# from CGAL-4.12
+4.12        683932    04  2018  2018.45
+# from CGAL-4.13
+4.13        703568    10  2018  2018.75
+# from CGAL-4.14-beta1
+4.14        713046    03  2019  2019.232
+# from CGAL-5.0-beta1
+5.0         713993    10  2019  2019.75
+# from CGAL-5.1-beta1
+5.1         738110    06  2020  2020.50
+# from CGAL-5.2-beta2
+5.2         744498    12  2020  2020.96
+# from CGAL-5.3-beta1
+5.3         756864    07  2021  2021.5
+# from CGAL-5.4-beta1
+5.4         772247    01  2022  2022.0
+# from CGAL-5.5-beta1
+5.5         773973    07  2022  2022.5

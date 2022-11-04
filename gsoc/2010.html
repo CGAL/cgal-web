@@ -1,0 +1,570 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>CGAL Projects for Google Summer of Code 2010</title>
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="CGAL Editorial Board">
+
+    <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/icomoon-social.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+
+    <!--[if lte IE 8]>
+	<link rel="stylesheet" href="css/leaflet.ie.css" />
+	<![endif]-->
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/main.css">
+
+    <!-- atom & rss feed -->
+    <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="https://cgal.github.io/cgal-web/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+
+    <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    
+
+    <!-- Navigation & Logo-->
+    <div class="mainmenu-wrapper">
+    <div class="container">
+    <nav id="mainmenu" class="mainmenu" role="navigation">
+    <ul>
+    <li class="logo-wrapper hidden-xs hidden-sm hidden-md">
+    <a href="https://cgal.github.io/cgal-web/index.html">
+    <img src="https://cgal.github.io/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
+    </a>
+    </li>
+
+    <li class="hidden-lg">
+    <a href="https://cgal.github.io/cgal-web/index.html">
+    <img src="https://cgal.github.io/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
+    </a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/project.html">Project</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/download.html">Download</a>
+    </li>
+
+    <li class="dropdown" style="transition-duration: all 0s ease; transition-delay: all 0s ease;">
+    <a href="#" class="dropdown-toggle" data-hover="dropdown">Packages <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometryProcessing" target="_blank">Geometry Processing</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
+        </ul>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/documentation.html">Documentation</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/news.html">News</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/media.html">Media</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/support.html">Support</a>
+    </li>
+
+    </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="section section-breadcrumbs">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>CGAL Projects for Google Summer of Code 2010 </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+<div class="section">
+  <div class="container">
+    
+
+
+Our project code repository for 2010 is 
+<a href="http://code.google.com/p/google-summer-of-code-2010-cgal/">here.</a> 
+
+<p>
+GSoC student applicants are welcome to propose other ideas and check if a mentor is interested in supervising it.
+</p>
+
+
+<h2>Summary</h2>
+
+<ol>
+  <li> <a href="#raytracing">Quality rendering through ray tracing</a>
+  <li> <a href="#oracless">Oracles for Subdivision Surfaces</a>
+  <li> <a href="#convexhull3d">Improved 3D convex hull</a>
+  <li> <a href="#modulargcd">Modular GCD for multivariate polynomials</a>
+  <li> <a href="#random">Allowing different random number generators to be used in CGAL</a>
+  <li> <a href="#boostification">Replacing some basic non-geometric tools in CGAL by Boost/TR1/C++0x functionality</a>
+  <li> <a href="#fileformats">Standard File Format readers/writers</a>
+  <li> <a href="#vtk">A VTK interface for CGAL components</a>
+  <li> <a href="#webservice">A web service that solves geometric problems</a>
+  <li> <a href="#scilabbindingsviaswig">Scilab bindings via SWIG</a>
+  <li> <a href="#parallel">Towards more parallelism in CGAL triangulations and meshes</a>
+  <li> <a href="#triangulation3">Triangulation_3 demo</a>
+</ol>
+
+
+If you wish to apply, please provide the following information by email to "gsoc-cgal@lists-sop.inria.fr" <br><br>
+
+Project:
+<ol>
+<li> Select a project in the list and provide your personal and detailed description. If you wish to work on another idea of your own, we are pretty open as long as this serves the goal of consolidating CGAL as a whole.
+<li> Provide a proposal of a technical solution with your envisioned methodology. The more detailed the better.
+<li> Explain how the solution will be available to the user, in which form. Do not forget the documentation, unitary tests and cross-platform aspects.
+<li> Provide a realistic schedule with objectives (one every two weeks for example) and deadlines. Focus on mid-term objectives as well as on the final evaluation.
+<li> Provide a formal commitment that you will be involved full time on the GSoC. This is absolutely mandatory.
+</ol>
+
+Personal data:
+<ol>
+<li> First name, last name, affiliation and geographical location.
+<li> A brief list of the main studies and programming courses attended, with ranking.
+<li> List of the most important software projects contributed and success.
+<li> Which are your best skills in terms of programming and scientific computing?
+<li> In general what is your taste in terms of programming? language, methodology, team work, etc.
+<li> Is there anything that prevents you from working full time on the project during the program period?
+<li> How do you see your involvement after the program ends? Do you see yourself pushing the project further, or do you see yourself contributing to other CGAL projects?
+<li> Are you more interested in the theory/scientific aspect of CGAL, or do you feel more like a hacker?
+<li> What are your long-term wishes in terms of job ?
+</ol>
+
+<h2>Detailed descriptions</h2>
+
+<ol>
+
+
+ <li id="raytracing"><h3>Quality Rendering through Ray Tracing</h3>
+	
+	  
+		<div style="float:left"><img src="https://cgal.github.io/cgal-web/images/gsoc/liver.png" alt=""></div>
+    <b>Contact:</b> <a href="http://www-sop.inria.fr/members/Pierre.Alliez/">Pierre Alliez</a> and Stephane Tayeb from INRIA
+    <br><b>Description:</b><br>
+    <a href="http://en.wikipedia.org/wiki/PhotoRealistic_RenderMan">PhotoRealistic RenderMan (PRMan for short)</a> 
+    and <a href="http://www.mentalimages.com/index.php">Mental Ray</a>
+    are de facto standards for generating high quality images by ray tracing, and very good
+    open source RenderMan implementations such as <a href="http://aqsis.sf.net">Aqsis</a> or
+    <a href="http://www.renderpixie.com/">Pixie</a> exist.
+    The goal is to elaborate upon a CGAL C++ rendering component devoted to the generation of 
+    RenderMan files from 3D scenes composed of 3D CGAL objects. The motivation is 
+    to enable the user of CGAL 3D demos to generate for a given camera viewpoint
+    high definition images with complex transparency and lighting effects. One example motivation
+    is the rendering of tetrahedron meshes with glass material for the facets and silver
+    cylinders for the edges to reveal the internal structure of the mesh. Another motivation
+    is the rendering of 3D point sets with normal attributes.
+    <br>
+    One part of the component will handle the camera and world placement from the QGLViewer arcball chosen
+    for the 3D demos of CGAL so that the viewpoint and frustum of the ray-traced images match
+    the ones of the demos (the idea is to make a ray-traced snapshot of the current scene).
+    <br>
+    Another part will generate 3D scenes from all 3D finite objects
+    of CGAL such as triangles, segments, tetrahedra, points, iso cuboids and spheres. As the 
+    point, resp. line primitives are rendered by spheres, resp. cylinders, some options must
+    be provided to tune the radii. Finally, the component will contain a few functions to facilitate
+    the selection of materials, transparency and lights for collections of primitives.
+    <br><b>Required skills:</b> Templated C++, hands on experience with ray tracing,
+    knowledge in graphical projection and camera models and taste for computer graphics. 
+    <br><br>
+    <div style="clear:both;"></div>
+ 
+  <li id="oracless"><h3>Oracles for Subdivision Surfaces</h3>
+
+		<div style="float:left;margin-right:1em;"><img src="https://cgal.github.io/cgal-web/images/gsoc/torus.png" alt=""></div>
+    <b>Contact:</b> <a href="http://www.inria.fr/sophia/members/Pierre.Alliez/">Pierre Alliez</a> from INRIA
+    <br><b>Description:</b><br> If you type "Ray Tracing Subdivision Surfaces" or " Packet-based Ray
+    Tracing of Catmull-Clark Subdivision Surfaces" in Google scholar you will find a series of papers 
+    which propose solutions to the problem of ray tracing the limit surface of a subdivision algorithm
+    applied onto coarse control meshes. For surface or volume mesh generation CGAL uses a generic 
+    interface where the input domain boundary is only known through simple intersection tests with
+    3D segments, lines or rays. The goal of this project is to implement intersection oracles for 
+    the Loop and Catmull-Clark subdivision schemes for which closed form formulas exist
+    for evaluating their limit surfaces (see article: Charles Loop and Scott Schaefer.
+    "Approximating Catmull-Clark Subdivision Surfaces with Bicubic Patches".
+    ACM Transactions on Graphics, Vol. 27 No. 1 Article 8. March 2008).
+    The goal is to mesh the limit surface of a subdivision
+    surface applied to very coarse control meshes without having to perform the
+    subdivision itself.
+    <br><b>Required skills:</b> Templated C++, subdivision surfaces and taste for reliable
+                                geometric computing.
+    <br><br>
+		<div style="clear:both;"></div>
+
+  <li id="convexhull3d"><h3>Improved 3D convex hull</h3>
+    <b>Contact:</b> <a href="http://www.inria.fr/sophia/members/Olivier.Devillers/">Olivier Devillers</a> from INRIA
+    <br><b>Description:</b><br>The current implementation of 3D convex hull is a bit slower
+    than 3D Delaunay triangulation and 10 times slower than 2D Delaunay triangulation.
+    The aim of this work is to improve the current performances of the current 3D convex hull.<br>
+    This can be achieved through the use of 3D triangulation for dynamic
+3D convex hull (and not Delaunay triangulation as suggested in the current manual),
+and the use of 2D Triangulation (non Delaunay) for the maintenance of upper and lower hull for incremental 3D convex hull.
+    <br><b>Required skills:</b> Templated C++ and taste for computational geometry!
+    <br><br>
+
+<li id="modulargcd"><h3>Modular GCD for multivariate polynomials</h3>
+    <b>Contact:</b> <a href="http://www.mpi-inf.mpg.de/~hemmer/">Michael Hemmer</a>
+    <br><b>Description:</b><br> Based on the package <a href="http://www.cgal.org/Manual/3.4/doc_html/cgal_manual/Modular_arithmetic/Chapter_main.html">Modular Arithmetic</a> the current implementation of the gcd in the <a href="http://www.cgal.org/Manual/3.4/doc_html/cgal_manual/Polynomial/Chapter_main.html">Polynomials</a> package already provides a modular gcd for univariate polynomials. However, the implementation for multivariate polynomials only profits from this in the sense that the modular arithmetic is applied in the last step of the recursion, that is, within the computations for univariate polynomials. This was caused by the fact that the current implementation was more focused on the support of polynomials over certain algebraic extensions.<br>
+
+The fundamental structure of the algorithm is as follows. The algorithm proceeds in rounds. In each round it selects a prime and maps the coefficients of the input polynomials in the corresponding prime field. Over this field the gcd is computed using the Euclidean Algorithm. This is repeated until the actual gcd can be recovered using the Chinese Remainder Theorem. This method is more efficient than a naive application of the Euclidean Algorithm since it avoids the exponential coefficient growth in intermediate expressions. <br>
+
+The first <b>milestone</b> of this project is to provide a modular gcd for multivariate polynomials over the integers. This implementation should be compared with existing implementations. We consider this implementation as the default implementation for CGAL. In case CGAL is configured with other libraries that provide a better gcd the code should automatically switch to a better implementation.
+A second possible <b>milestone</b>  is the support of polynomials over algebraic extensions fields. A fundamental difference to polynomials over integers is that the gcd is not performed over a Field since the extensions may induce zero divisors. This requires special handling within the code and may even effect the current design of the current <a href="http://www.cgal.org/Manual/3.4/doc_html/cgal_manual/NumberTypeSupport/Chapter_main.html"> Number Type Support</a>  and <a href="http://www.cgal.org/Manual/3.4/doc_html/cgal_manual/Algebraic_foundations/Chapter_main.html">Algebraic Foundations</a> of CGAL.
+    <br><b>Required skills:</b> Templated C++ and a little bit of algebra.
+    <br><br>
+
+
+<li id="random"><h3>Allowing different random number generators to be used in CGAL</h3>
+  <b>Contact:</b> <a href="http://www.linkedin.com/in/fcacciola">Fernando Cacciola</a>
+  <br><b>Description:</b><br> CGAL provides the class 
+<a href="http://www.cgal.org/Manual/3.4/doc_html/cgal_manual/Generator_ref/Class_Random.html#Cross_link_anchor_1766"><tt>CGAL::Random</tt></a>
+for generating seeded random values via the <tt>srand</tt> function of the <tt>C</tt> standard library. This class is 
+used as the random number generator in some algorithms like the
+<a href="http://www.cgal.org/Manual/3.4/doc_html/cgal_manual/Generator/Chapter_main.html">random geometric object generators</a>.<br>
+Since all those random generator functions take an instance of class <tt>CGAL::Random</tt> it is not possible to choose different distributions (the class doesn't allow that).<br>
+The goal of this project is to extend the API of the random geometric object generators to accept other underlying random number generators, such as those from
+the <a href="http://www.boost.org/doc/libs/1_38_0/libs/random/index.html">Boost.Random</a> library or the upcoming <tt>std::random</tt> in the next C++ standard, C++0x.<br>
+The tasks involve: (1) identify all places within CGAL that use CGAL::Random, study their requirement and elaborate the necessary new concepts,
+(2) compare the required concepts with those in <tt>Boost.Random</tt> and <tt>std::random</tt> to design interoperability strategies, (3) modify the functions 
+to accept a parameterized (template) random number generator (of the appropriate concept), instead of an instance of <tt>CGAL::Random</tt>.<br>
+   <br><b>Required skills:</b> Templated C++ and knowledge of concept based design.
+    <br><br>
+
+
+<li id="boostification"><h3>Replacing some basic non-geometric tools in CGAL by Boost/TR1/C++0x functionality</h3>
+    <b>Contact:</b> <a href="http://www-sop.inria.fr/members/Sylvain.Pion/">Sylvain Pion</a> from INRIA
+    <br><b>Description:</b><br> The CGAL project started in 1996, before the
+    first C++ standard was released, and before the <a href="http://www.boost.org/">Boost</a>
+    project was launched.  CGAL has accumulated a number of geometry-independent tools
+    which these days offer duplicate functionality with what is (a) in TR1, (b) planned for
+    the next C++ standard C++0x, and/or (c) are in Boost.  Doing the replacement would help
+    in the long-term by easing maintenance : (a) less code to maintain, and (b)
+    new people are more likely to know about a standard tool, and it will be
+    more useful to them to learn about them, rather than something
+    which is only in CGAL and with no geometric or scientific flavor.
+    <br>
+    The goal of this project would be to "cleanup" CGAL by replacing as many of these as possible.
+    Of course, depending on the case, there can be constraints in terms of efficiency,
+    API compatibility, deprecation paths, etc.  So, the task is non trivial,
+    but there are pieces easier than others.  It should be a nice way to learn about various
+    standard tools in CGAL, Boost and C++0x.
+    <br>Some examples of things to be considered : 
+    <pre>
+    Filter_iterator        -&gt;  boost::filter_iterator
+    Object                 -&gt;  boost::any/variant
+    Triple/Quadruple       -&gt;  TR1::tuple/array
+    Unique_hash_map        -&gt;  TR1::unordered_map/set
+    copy_n                 -&gt;  C++0x::copy_n
+    iterator ranges        -&gt;  Boost.Range
+    Timers                 -&gt;  Boost.Timers
+    Integer8/16/32         -&gt;  int32_t...
+    min_max_element        -&gt;  C++0x (or TR1 ?)
+    predecessor/successor  -&gt;  prev/next (C++0x/TR1)
+    </pre>
+    Note that there is a separate project idea for Random Numbers generators.
+
+    <br>
+    <br><b>Required skills:</b> C++, templates.
+    <br><br>
+
+
+<li id="fileformats"><h3>Standard File Format readers/writers</h3>
+    <b>Contact:</b> <a href="http://www-sop.inria.fr/members/Pierre.Alliez/">Pierre Alliez from INRIA</a> 
+    <br><b>Description:</b><br> CGAL interacts with other systems dealing with geometric data sets.
+    These can be simple point sets ("xyz"), surface meshes (OFF, OBJ, PLY), volume meshes (ABAQUS, etc)
+    or more involved CAD/CAM file formats (DXF, STL).  There are already a few file
+    format readers and writers in CGAL.
+    <br>
+    The goal of this project is to obtain a nice collection of high-quality readers/writers for
+    standard file format.  They would be usable independently of CGAL data structures and algorithms,
+    but with a C++ interface which will make them easy and natural to use with CGAL algorithms.
+    <br>
+    The first task will consist in precisely identifying the standard file formats which exist
+    for dealing with geometry, then see which are already used in CGAL, or potentially useful
+    for CGAL to support.
+    <br>
+    Then, the work will consist in designing the interface of the parsers, based on the needs
+    of current use in CGAL, and then implementing them, together with their documentation.
+    To start with priority will be given to surface and volume meshes. 
+    Finally, as time permits, updating the CGAL code to use these might be nice!
+    <br>
+    <br><b>Required skills:</b> C++, templates, parser tools (Boost.Spirit
+    maybe ?), some ideas of what geometric data is about, but no a priori
+    knowledge of geometric algorithms is needed.
+    <br><br>
+    
+<li id="vtk"><h3>A VTK Interface for CGAL components</h3>
+ <b>Contact:</b> <a href="http://www.linkedin.com/in/andreasfabri">Andreas Fabri</a> from Geometry Factory
+    <br><b>Description:</b><br>
+    <p>VTK is an object-oriented software system for computer graphics, visualization, and image processing. VTK has the
+      notion of a graphics pipeline. There are two basic types of objects involved: data objects and process objects,
+      and compatible objects can be assembled in a pipeline with setInput and getInput methods.</p>
+
+    <p>The goal of this project is to wrap the CGAL algorithms, starting with the CGAL surface and volume mesh generators for 3D images, so that they 
+      become VTK process objects which fit in the VTK graphics pipeline, without that VTK users have to learn CGAL.</p> 
+
+    <br><b>Required skills:</b> C++, VTK.<br>
+    
+
+<li id="webservice"><h3>A web service that solves geometric problems.</h3>
+    <b>Contact:</b> <a href="http://acg.cs.tau.ac.il">Efi Fogel</a> from Tel Aviv University
+    <br><b>Description:</b><br>
+    <p>Create a web service open to the public that offers solutions to the geometric problem described below. The service should be integrated into <a href="http://acg.cs.tau.ac.il/">this</a> website, which runs Plone (an open source content management system). The service should be designed in such a way that it can easily extend to other geometric problems.</p>
+
+     <p>Given a polygonal robot <em>Q</em>, which can translate (but not necessarily rotate) in a room cluttered with polygonal obstacles, maintain a data structure that can efficiently answer queries of the following form: Given a start position <em>s</em> of some reference point in <em>Q</em> and a goal position <em>g</em>, plan a collision-free motion of the robot from <em>s</em> to <em>g</em>.</p>
+    
+     <p>The feed is done in two steps. First, the user uploads the geometric data that describes the work space. Then, the user uploads the queries in forms of pairs of start and goal positions - a pair at a time. For each pair the geometric description of the collision-free path is computed and offered to the user. The web page can illustrate the workspace, the queries, and the obtained solutions.</p>
+
+     <p>The user can choose values for several parameters, such as the quality of the path (e.g., short, high-clearance, shortest subject to prescribed clearance) and whether the robot can touch the obstacles.</p>
+
+    <br><b>Required skills:</b> C++, Plone, and PHP.<br>
+    The core of the solution should be an application written in C++ based on CGAL arrangements and other CGAL components implementing some motion planning algorithms. The mentor will provide description of the algorithms and code components. An application that solves the most simple variant already exists.
+
+The interface should be through a web page integrated into an existing Plone based website. Basic skill in managing Plone websites is required. We assume that for some desired features some extra skills in Plone and PHP are required as well, although they may be acquired as the project advances.
+    <br><br>
+
+<li id="scilabbindingsviaswig"><h3>Scilab bindings via SWIG</h3>
+    <b>Contact:</b> <a href="http://www-sop.inria.fr/members/Sylvain.Pion/">Sylvain Pion</a> from INRIA
+    <br><b>Description:</b><br>
+    <p>This idea is more a collaboration with another software project, also GSOC mentoring organization : the <a href="http://www.scilab.org/">Scilab</a> project.  The idea is to revisit the draft <a href="http://cglab.gforge.inria.fr/">interface between those two software</a>, done years ago, but this time using <a href="http://www.swig.org/">SWIG</a>.  Main mentoring would be done within the Scilab project, co-mentored on the CGAL side as well.  See <a href="http://wiki.scilab.org/Contributor_-_CGAL">here</a> for details.
+
+    <li id="parallel"><h3>Towards more parallelism in CGAL triangulations and meshes</h3>
+    <b>Contact:</b> <a href="http://www-sop.inria.fr/members/Sylvain.Pion/">Sylvain Pion</a> from INRIA
+    <br><b>Description:</b><br>
+    <p>Algorithms in CGAL are currently essentially sequential.  Some work has begun on parallelizing the computation of Delaunay triangulations, but a lot remains to be done, in various areas.  Students can propose important areas that they think they could parallelize.
+
+<li id="triangulation3"><h3>Triangulation_3 demo</h3>
+		<div style="float:left"><img src="https://cgal.github.io/cgal-web/images/gsoc/grid.png" alt=""></div>
+    <b>Contact:</b>
+    <a href="http://www-sop.inria.fr/members/Manuel.Caroli/">Manuel
+    Caroli</a> and
+    <a
+    href="http://www-sop.inria.fr/members/Monique.Teillaud/">Monique
+    Teillaud</a> from INRIA
+    <br><b>Description:</b><br>
+    <p> The goal is to implement a demo program for the
+    <a
+    href="http://www.cgal.org/Manual/last/doc_html/cgal_manual/Triangulation_3/Chapter_main.html">Triangulation_3</a>
+    package using Qt and the QGLViewer. The 
+    Triangulation_3 package contains algorithms for computation of
+    Delaunay triangulations and weighted Delaunay triangulations for a
+    given point set. We aim for an interactive demo that illustrates
+    the package functionality and the used algorithm. So far the 3D
+    demos in CGAL allow for very little interaction. We expect the
+    participant to come up with a nice and easy-to-use mode of
+    interaction that can possibly be reused by other demos in the
+    future.<br>
+    A first milestone could be a non-interactive demo that contains all
+    the functionality. A second milestone would be to add the
+    interactivity.
+    <br><b>Required skills:</b> C++, a little Qt and OpenGL
+    <br><br>
+    <div style="clear:both;"></div>
+
+</ol>
+
+<!-- Too ambitious for this year.  Make it a motivation for the doxygen idea for now.
+  <li id="python"><h3>A Python binding for CGAL</h3>
+    <b>Contact:</b> <a href="http://www.linkedin.com/in/andreasfabri">Andreas Fabri</a>
+                
+    <br><b>Description:</b><br>
+         CGAL algorithms and data structures are written in C++ based on the generic programming paradigm, that is in the spirit of
+         the STL and Boost libraries.  In order to offer a <a href="http://www.python.org/">Python</a> API for the rich functionality of CGAL, wrapper generation
+         and code inspection tools like <a href="http://www.boost.org/doc/libs/1_37_0/libs/python/doc/index.html">Boost.Python</a>
+         and <a href="http://www.language-binding.net/pyplusplus/pyplusplus.html">Py++</a>  are useful. However, straightforward usage of these tools does not 
+         necessarily map good C++ code design on good Python code design, that is the generated code is not automatically 'pythonic'. 
+         This project aims for the latter, and we take a two step approach to get there.
+<BR><BR>
+
+<EM>1. Automatic Language Binding Generation</EM>
+<BR>
+The first step is to use Boost.Python and Py++ with the goal to obtain a Python language binding for large parts of CGAL. 
+This part of the  project can profit from the experiences made in the <a href="http://cgal-python.gforge.inria.fr/">CGAL-Python</a> project,
+which, back in 2006, only used Boost.Python. Although the usage of only this tool lead to a "C++-in-Python-syntax"-version,
+this first version shows how to make the C++ code tool-friendlier. Adding Py++ makes the wrapping easier,
+as it uses code inspection and API pattern matching, but more importantly, it allows to do adaptations on the Python side 
+of the wrapper code.
+<BR>
+
+<EM>2. Pythonic CGAL</EM>
+<BR>
+For two strongly demanded CGAL packages (<a href="http://www.cgal.org/Pkg/Triangulation3">3D Triangulations<a> and 
+<a href="http://www.cgal.org/Pkg/Polyhedron">Polyhedral Surfaces</a>), design a pythonic API 
+based on feedback from current cgal-python users. This second step will consist of iterations of Step 1, and  
+it will again involve C++ development, tool usage, and Python programming.<BR>
+ 
+<br>
+The outcome of the project will be two pythonic CGAL packages that are ready to use, the recipe for obtaining
+further pythonic CGAL packages, and experience which allows to estimate the effort necessary to make entire CGAL pythonic. 
+In case we underestimate the effort, Step 1 alone will be a valuable deliverable, and every iteration of Step 2
+makes the CGAL packages more pythonic.<BR>
+
+<BR>
+
+
+The project will be mentored by people knowing CGAL, Python, and the tools to bridge the gap: 
+<UL>
+<LI> Andreas Fabri, CGAL developer, member of the CGAL Editorial Board, and chief officer of GeometryFactory,
+<LI> Sylvain Pion, INRIA, chair of the CGAL Editorial Board, and co-author of CGAL-PYTHON,
+<LI> Matthias Baas, author of the <a href="http://cgkit.sourceforge.net">Python Computer Graphics Kit</a>
+<LI> Jelle Ferringa, EZCT Architecture & Design Research, contributor to <a href="http://www.pythonocc.org">pythonOCC</a>, 
+  the Python binding for OpenCascade, and Julie Bernauer, INRIA, who are both CGAL-PYTHON power users.
+</UL>
+
+<BR>
+
+<b>Useful skills for this project are:</b><br>
+
+<UL>
+<LI> Python language skills & some experience in writing extension modules for Python,
+<LI> Good C++ language skills & experience compiling tools and libraries,
+<LI> Knowledge about how CGAL works (on an API level),
+<LI> Experience with Boost.Python (it's a bonus having wrapped a few non-trivial classes manually),
+<LI> Experience using Py++ & dependencies (gccxml, pygccxml) to generate the wrapper code.
+</UL>
+
+<br><br>
+-->
+
+<!-- Too ambitious for this year.  Make it a motivation for the doxygen idea for now.
+
+  <li id="docbook"><h3>Switching the manual to DocBook</h3>
+    <b>Contact:</b> <a href="http://www-sop.inria.fr/members/Sylvain.Pion/">Sylvain Pion</a>
+                and/or ???
+    <br><b>Description:</b><br>
+    The CGAL manual is written in LaTeX, using a custom LaTeX style to describe C++ parts.
+    <br>
+    It provides PDF and HTML output.  Both are of good quality, but switching to a more modern
+    and standard system would ease writing of the manual, and would make future evolution simpler. 
+    <br>
+    We propose to investigate the use of the <a href="http://www.docbook.org/">DocBook</a> standard.
+    <br>
+    In order to connect it with C++ and CGAL, it might be a good idea to use
+    <a href="http://www.boost.org/doc/libs/1_37_0/doc/html/boostbook.html">Boost.Book</a>.
+    <br>
+    The challenge here is to plan and perform an automatic conversion from the LaTeX style, to Doxygen
+    comments (see other project), and then, from Doxygen to DocBook via Boost.Book.
+    <br>
+    In order to ease the transition, a tool converting Doxygen comments to the current LaTeX manual format
+    has already been written.
+    <br><b>Required skills:</b> XML, LaTeX, maybe Perl or other text processing tools.
+    <br><br>
+-->
+
+<!--
+  <li id="doxygen"><h3>Transforming the LaTeX reference manual to Doxygen comments</h3>
+    <b>Contact:</b> <a href="http://www-sop.inria.fr/members/Sylvain.Pion/">Sylvain Pion</a>
+    <br><b>Other CGAL developers interested:</b> Andreas Meyer and Laurent Saboret
+    <br><b>Description:</b><br>
+    The CGAL manual is written in LaTeX, using a custom LaTeX style and a custom LaTeX processor to describe a C++ API.
+    It provides PDF and HTML output. Both are of good quality, but switching to a more modern and standard system would ease writing of the manual, and would make future evolution simpler.
+    <br>
+    <a href="http://www.doxygen.org/">Doxygen</a> is the de facto standard for including
+    documentation inside C++ source code.
+    <br>
+    Besides easing the maintenance of the code and the documentation, this format also helps
+    automatic tools to extract documentation.  For example, such as those producing
+    <a href="#python">automatically documented Python wrappers</a>.
+    It can also be a step towards switching the documentation system to something like DocBook
+    in the longer term.
+    <br>
+    Some work has already begun (by Andreas Meyer) to semi-automatically
+    retrofit the current documentation written in LaTeX, inside the source
+    code, but it needs to be continued and completed.
+    <br>
+    In order to allow for a progressive transition, Laurent Saboret has also
+    started to write (and use) a tool that converts back the doxygen comments
+    into our current LaTeX style.  This tool is meant to be used in the mean
+    time, while the transition is not yet complete.
+    <br>
+    The challenge here is the sheer size of documentation, the heavy use of C++
+    templates and finding a reliable and mostly automatic way to relate
+    documentation from the existing manual to the corresponding place inside
+    the source code. This also involves analyzing and transforming C++ code
+    fragments such as method signatures and hierarchies of specialized
+    templates. We re-use our existing LaTeX processor to output an intermediate
+    format, for further analysis.
+    <br><b>Required skills:</b> Doxygen, LaTeX, and Perl or other text processing and scripting tools.
+    <br><br>
+    -->
+
+  </div>
+</div>
+
+
+    
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="footer-copyright">
+            <div style="float: left;">
+              <a href="https://twitter.com/TheCGALProject" alt="The CGAL Project's Twitter">
+                <img src="https://cgal.github.io/cgal-web/images/icons/twitter.svg" class="center-block btn-dark-orange" alt="Twitter" height="18"></img>
+              </a>
+            </div>
+            &copy; 1995-2022 The CGAL Project. All rights reserved.
+            <div style="float: right;">
+              <a href="https://cgal.geometryfactory.com/CGAL/Members/wiki/Main_Page" alt="Password protected access to the Developer Wiki">
+                <i class="glyphicon glyphicon-lock"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascripts -->
+    <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery-1.9.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery-1.9.1.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.fitvids.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.sequence-min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.bxslider.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/template.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/bootstrap-hover-dropdown-min.js"></script>
+  </body>
+</html>
+

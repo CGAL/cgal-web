@@ -1,0 +1,868 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Frequently Asked Questions</title>
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="CGAL Editorial Board">
+
+    <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/icomoon-social.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+
+    <!--[if lte IE 8]>
+	<link rel="stylesheet" href="css/leaflet.ie.css" />
+	<![endif]-->
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/main.css">
+
+    <!-- atom & rss feed -->
+    <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="https://cgal.github.io/cgal-web/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+
+    <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    
+
+    <!-- Navigation & Logo-->
+    <div class="mainmenu-wrapper">
+    <div class="container">
+    <nav id="mainmenu" class="mainmenu" role="navigation">
+    <ul>
+    <li class="logo-wrapper hidden-xs hidden-sm hidden-md">
+    <a href="https://cgal.github.io/cgal-web/index.html">
+    <img src="https://cgal.github.io/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
+    </a>
+    </li>
+
+    <li class="hidden-lg">
+    <a href="https://cgal.github.io/cgal-web/index.html">
+    <img src="https://cgal.github.io/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
+    </a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/project.html">Project</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/download.html">Download</a>
+    </li>
+
+    <li class="dropdown" style="transition-duration: all 0s ease; transition-delay: all 0s ease;">
+    <a href="#" class="dropdown-toggle" data-hover="dropdown">Packages <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometryProcessing" target="_blank">Geometry Processing</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
+        </ul>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/documentation.html">Documentation</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/news.html">News</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/media.html">Media</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/support.html">Support</a>
+    </li>
+
+    </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="section section-breadcrumbs">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Frequently Asked Questions </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+<div class="section">
+  <div class="container">
+    
+
+
+
+
+<UL>
+    <LI> <A HREF="#general">General Information</A>
+         <UL>
+             <LI> <A HREF="#what_is_cgal">What is CGAL?</A>
+             <LI> <A HREF="#who_is_cgal">Who is involved in CGAL?</A>
+             <LI> <A HREF="#cgal_logo">How did you make the CGAL logo?</A>
+             <LI> <A HREF="#cgal_pronounce">How do you pronounce CGAL?</A>
+             <LI> <A HREF="#examples_and_demos">
+                  Are there example/demo programs somewhere?</A>
+             <LI> <A HREF="#cgal_discuss">Is there a mailing list for users?</A>
+             <LI> <A HREF="#bug_reporting">I think I have encountered a bug in 
+                  CGAL. What should I do?</A>
+             <LI> <A HREF="#oldreleases">Where do I find old releases of CGAL?</A>
+         </UL>
+    <LI> <A HREF="#installation">Installation and Compilation</A>
+         <UL>
+            <LI> <A HREF="#how_to_install">How do I install CGAL?</A>
+            <LI> <A HREF="#how_to_compile">How do I compile a program using CGAL?</A>
+            <LI> <A HREF="#debian_packages">Are there packages for Debian / Ubuntu available?</A>
+            <LI> <A HREF="#debian_demos">How do I compile and execute the demos and examples on Debian / Ubuntu?</A>
+            <LI> <A HREF="#is_vc6_supported">Is VC++ 6 supported?</A>
+            <LI> <A HREF="#qt">Which versions of Qt are supported?</A>
+            <LI> <A HREF="#mac_optimization_bug">Why do I get errors when using compiler optimization on Mac OS X?</A>
+            <LI> <A HREF="#compilation_speed">How to reduce compilation time of programs using CGAL ?</A>
+         </UL>
+    <LI> <A HREF="#kernels">Kernels and Number Types</A>
+         <UL>
+            <LI> <A HREF="#which_kernel">CGAL offers many different kernels 
+                 templates.  Which is the right one for my program?</A>
+            <LI> <A HREF="#which_NT">What is the right number type for my
+                 program?</A>
+            <LI> <A HREF="#predicates_vs_constructions">
+                 What is the difference between a predicate and a construction 
+                 and why does this make a difference for the robustness of my 
+                 program?</A>
+            <LI> <A HREF="#inexact_NT">I am using <TT>double</TT> (or 
+                 <TT>float</TT> or ...) as my number type 
+                 and get assertion failures or incorrect output.  Is this a 
+                 bug in CGAL?</A>
+            <LI> <A HREF="#modifiable_kernel">I want to modify the coordinates 
+                 of a point or the endpoints of a segment, but the CGAL kernel 
+                 does not seem to support that.  Why?</A>
+	    <LI> <A HREF="#to_double">I want to convert a number type, e.g.
+	         <TT>FT</TT> to <TT>double</TT>.  How do I do that?</A>
+	    <LI> <A HREF="#uncertain_exception">My program reports "Microsoft C++ exception: CGAL::Uncertain_conversion_exception at memory location ...".  Why?</A>
+        </UL>
+    <LI> <A HREF="#polygons">Polygons</A>
+         <UL>
+            <LI> <A HREF="#boolean_ops">How can I do boolean operations on
+                 polygons?</A>
+            <LI> <A HREF="#polygon_triangulation">How do I compute the 
+                 triangulation of the interior of a polygon?</A>
+         </UL>
+    <LI> <A HREF="#planar_maps">Planar Maps and Arrangements</A>
+         <UL>
+             <LI><a HREF="#planar_map_outer_face">
+		 Is the outer CCB (counterclockwise boundary) of a face of an
+		 arrangement a SIMPLE polygon?</a>
+             <LI><a HREF="#planar_map_bops">Boolean set operations: 
+                 How can I compute them?</a>
+             <LI><a HREF="#planar_map_faster">
+                 How can I accelerate the work with arrangements?</a>
+             <li><a HREF="#planar_map_adding_info">
+                 How can I attach information to a vertex, a halfedge,
+		 or a face?</a>
+         </UL>
+    <LI> <A HREF="#polyhedron">Polyhedral Surfaces</A>
+         <UL>
+             <LI> <A HREF="#polyhedron_transform">Why is there no 
+                  <I>transform</I> function for <I>Polyhedron_3</I>?</A>
+             <LI> <A HREF="#polyhedron_examples">Where can I find examples of 
+                  polyhedral surfaces?</A>
+             <LI> <A HREF="#polyhedron_normals">How can I compute the plane 
+                  equation (normal) for a facet in a polyhedral surface?</A>
+         </UL>
+</UL>
+
+<A NAME="general"></A>
+<HR>
+<BR>
+
+<FONT SIZE="+1"><B>General Information</B></FONT>
+
+<UL>
+   <LI> <A NAME="what_is_cgal"></A>
+        <B>What is CGAL?</B>
+        <P>CGAL is an acronym for the <a href="/Manual/last/doc_html/cgal_manual/contents.html">Computational Geometry Algorithms Library</a>.
+       It is at the same time the short name for the <a href="opensource.html">CGAL Open 
+          Source Project</a>. The goal of the project 
+           is to provide <em>easy access to efficient and reliable geometric algorithms</em>
+           to  users in industry and academia.
+        <P>
+
+   <LI> <A NAME="who_is_cgal"></A>
+        <B>Who is involved in CGAL?</B>
+
+        <p> For more information see the <A HREF="people.html">project members</A>  and the 
+        <a href="partners.html">partners and funding sources</a> pages.
+        <P>
+
+   <LI> <A NAME="cgal_logo"></A>
+        <B>How did you make the CGAL logo?</B>
+	<P>
+  See <a href="logo-design.html">this page</a> for information about the construction of the CGAL logo.
+	<P>
+
+	<LI> <A NAME="cgal_pronounce"></A>
+	<B>How do you pronounce CGAL?</B>
+
+	<p>CGAL is pronounced like "seagull" in English, or "cigale" in French.</p>
+
+   <LI> <A NAME="examples_and_demos"></A>
+        <B>Are there example/demo programs somewhere?</B>
+        <P>
+        Yes.  The CGAL distribution includes two directories containing
+        example programs: <TT>&lt;CGALROOT&gt;/examples/</TT> and 
+        <TT>&lt;CGALROOT&gt;/demo/</TT>.  Here you find the source code and
+        makefiles for these programs. The current CGAL manual provides a nice
+        <a href="/Manual/last/doc_html/cgal_manual/packages.html">overview of packages</a>
+        from where you can also get the demo source code and Windows executables.
+        <P>
+
+   <LI> <A NAME="cgal_discuss"></A>
+        <B>Is there a mailing list for users?</B>
+        <P>
+        Yes. See the web page describing the CGAL <a href="mailing_list.html">mailing lists</a>.
+        <P>
+
+   <LI> <A NAME="bug_reporting"></A>
+        <B>I think I have encountered a bug in CGAL.  What should I do?</B>
+        <P>
+	Please follow the <a href="bug_report.html">bug reporting instructions</a>.
+        <P>
+
+    <LI> <A NAME="oldreleases"></A>
+      <B>Where do I find old releases of CGAL?</B>
+      <P>All released files as well as manuals are available in the
+        <a href="https://github.com/CGAL/cgal/releases">release</a> section
+        of the CGAL GitHub repository.</P>
+      <P>
+</UL>
+
+<A NAME="installation"></A>
+<HR>
+<BR>
+
+<FONT SIZE="+1"><B>Installation and Compilation</B></FONT>
+
+<UL>
+   <LI> <A NAME="how_to_install"></A>
+        <B>How do I install CGAL?</B>
+        <P>
+        Please have a look at the <A HREF="https://doc.cgal.org/latest/Manual/general_intro.html">Installation Guide</A>.
+	<P>
+
+   <LI> <A NAME="how_to_compile"></A>
+        <B>How do I compile a program using CGAL?</B>
+        <P>
+        Please have a look at the <A HREF="https://doc.cgal.org/latest/Manual/general_intro.html">Installation Guide</A>.
+	<P>
+
+  <LI> <A NAME="debian_packages"></A>
+       <B>Are there packages for Debian / Ubuntu available?</B>
+       <P>Packages for Debian unstable (sid) are available from the official
+       Debian repository. Debian stable (bullseye) and Debian testing (bookworm)
+       might not contain the latest version of CGAL. In that case, add</P>
+      <PRE>   deb <A href="http://debian.cgal.org/">http://debian.cgal.org</A> bullseye main
+   deb-src <A href="http://debian.cgal.org/">http://debian.cgal.org</A> bullseye main</PRE>
+       or
+      <PRE>   deb <A href="http://debian.cgal.org/">http://debian.cgal.org</A> bookworm main
+   deb-src <A href="http://debian.cgal.org/">http://debian.cgal.org</A> bookworm main</PRE>
+       to <TT>/etc/apt/sources.list</TT> (note that you only need the pair of lines
+       corresponding to the release you are using) and make sure that the package
+       <TT>apt-transport-https</TT> is installed. The packages are called
+       <TT>libcgal-dev</TT>, <TT>libcgal-qt5-dev</TT>, <TT>libcgal-demo</TT> and
+       <TT>libcgal-ipelets</TT>. Packages for older CGAL versions are available at
+       <A href="http://debian.cgal.org/archive/">http://debian.cgal.org/archive</A>
+       or from the official Debian archive.</P>
+       <P>The Ubuntu repository also contains packages for CGAL, but not
+       always for the latest version. The Debian packages might work on
+       Ubuntu as well.</P>
+  </LI>
+
+  <LI> <A NAME="debian_demos"></A> 	 
+       <B>How do I compile and execute the demos and examples on Debian / Ubuntu?</B> 	 
+       <P>Install the CGAL packages (see the preceding entry).
+          Unpack the examples and demos in some directory, e.g., <TT>$HOME/cgal</TT>.</P> 	 
+          <PRE>   $ mkdir $HOME/cgal
+   $ cd $HOME/cgal
+   $ tar xzf /usr/share/doc/libcgal-demo/examples.tar.gz
+   $ tar xzf /usr/share/doc/libcgal-demo/demo.tar.gz</PRE>
+          <P>Configure and build the desired examples or demos, e.g., the
+             demos of Triangulation_2.</P> 	 
+          <PRE>   $ cd demo/Triangulation_2
+   $ cmake .
+   $ make</PRE>
+          <P>Then run the demos.</P> 	 
+          <PRE>   $ ./Constrained_delaunay_triangulation_2 &
+   $ ./Delaunay_triangulation_2 &
+   $ ./Regular_triangulation_2 &</PRE>
+          <P>See also /usr/share/doc/libcgal-dev/README.Debian for more information.</P>
+  </LI>
+
+   <LI> <A NAME="is_vc6_supported"></A>
+        <B>Is Visual C++ 6 supported?</B>
+        <P>No, it is not and there is no hope that you can make the necessary
+           fixes yourself to get it running with this compiler.
+           The issue lies in the fact that VC6 did not support the template mechanism well
+           enough. The solution is to either use an old version of CGAL
+           or to upgrade to newer versions of the Microsoft compiler.</P>
+
+   <LI> <A NAME="qt"></A>
+        <B>Which versions of Qt are supported?</B>
+	<P>All the demos use Qt5. The 2D demos are based on the
+           <a href="http://www.cgal.org/Pkg/GraphicsView">GraphicsView framework</a>,
+           the 3D demos on the <a href="http://www.libqglviewer.com/">libQGLViewer</a>. </P>
+
+   <LI> <A NAME="mac_optimization_bug"></A>
+        <B>Why do I get errors when using compiler optimization on Mac OS X?</B>
+	<P>The default compiler on Mac OS X is g++ 4.0 (at least on Tiger and Leopard).
+       	   It has some bugs that are unfortunately encountered by some programs using
+           CGAL when optimizing.
+	   We recommend that you use a more recent version of g++, such as g++ 4.2,
+	   which you can get by upgrading to the latest XCode, or using Fink.
+	   You can then select it by passing the following flags to CMake :
+	   <tt>-DCMAKE_CXX_COMPILER=/usr/bin/g++-4.2 -DCMAKE_C_COMPILER=/usr/bin/gcc-4.2</tt></P>
+
+   <LI> <A NAME="compilation_speed"></A>
+        <B>How to reduce compilation time of programs using CGAL ?</B>
+  <P>CGAL is heavily using C++ templates, and this has an impact on
+	   compilation speed.  Here are some hints that can help speed up
+           compilation of programs using CGAL:
+        <UL>
+	    <LI><em>Remove compiler debugging</em> options like <code>-g</code> if you can.
+		Indeed, generating debug information can be very costly for
+		template instantiations, both in terms of running time and
+                memory usage by the compiler tool chain.
+      <LI><em>Remove compiler optimization</em> options like <code>-O2</code> when
+    you do not need them, such as in the early steps of the development cycle of
+                your programs.
+	    <LI><em>Regroup translation units</em> : if your program is composed of
+                many small translation units to be compiled and linked, try to
+                reduce their numbers by merging them.  This traditional style
+                for C programs is actually very slow for programs heavily using C++ templates.
+                Regrouping them reduces the time spent by the compiler to parse
+                the header files, and avoids redundant template instantiations.
+            <LI><em>Precompile header files</em> : some compilers, such as GCC, provide
+                a feature named <a href="http://en.wikipedia.org/wiki/Precompiled_header">
+                precompiled headers</a>. This can be mostly useful if you can regroup in a
+                single header file most of the header files that you use, together with
+                most template instantiations.  Refer to your compiler documentation to use this feature.
+        </UL>
+</UL>
+
+<A NAME="kernels"></A>
+<HR>
+<BR>
+
+<FONT SIZE="+1"><B>Kernels and Number Types</B></FONT>
+
+<UL>
+   <LI> <A NAME="which_kernel"></A>
+        <B>CGAL offers many different kernel templates.  Which is the right
+        one for my program?</B>
+
+        <P>
+        There is no universal answer to this question (which is why there are
+        different kernels in the first place).  The subsection <em>Choosing a Kernel</em>
+        of section 
+        <A HREF="/Manual/last/doc_html/cgal_manual/Kernel_23/Chapter_main.html#Section_7.2.6">
+        Kernel Representations</A> in the manual provides some guidance.
+        <P>
+
+    <LI> <A NAME="which_NT"></A>
+         <B>What is the right number type for my program?</B>
+
+        <P>
+        There is no universal answer to this question either (which is why
+        our kernels are templates). The answer depends, among other things,
+        on how important robustness is in comparison to speed, whether your
+        program involves the construction of new objects or simply predicate
+        evaluation and comparisons, and on the size of the input numbers. The
+        section
+        <A HREF="/Manual/last/doc_html/cgal_manual/Kernel_23/Chapter_main.html#Section_7.2.6">
+        Choosing a kernel</A> in the kernel manual should provide some guidance.
+
+        <P>
+   <LI> <A NAME="predicates_vs_constructions"></A>
+        <B>What is the difference between a predicate and a construction and
+           why does this make a difference for the robustness of my program?</B>
+         <P>
+         Geometric predicates are used to test properties of geometric objects
+         and return, for example, a boolean value (true or false). An example
+         of predicate would be testing whether a point lies inside a sphere is a predicate
+         as is testing whether three points form a left turn, right turn or
+         are collinear. A geometric construction creates a new geometric object, such as the line
+         through two different points or the center of a circle defined by a
+         certain set of points.
+         <P>
+         Constructions are problematic with respect to robustness since the 
+         constructed object has to be stored in a particular representation. 
+         If this representation does not capture the object's properties 
+         sufficiently, due, for example, to limited precision roundoffs, the 
+         correctness of subsequent computations with this object cannot be 
+         guaranteed. However, providing exact constructions is currently
+         less efficient, which is basically the reason why the kernel
+         <A HREF="/Manual/last/doc_html/cgal_manual/Kernel_23_ref/Class_Exact_predicates_inexact_constructions_kernel.html">CGAL::Exact_predicates_inexact_constructions_kernel</A> exists;
+         <TT>double</TT> is used as the representation
+         type in this case.<BR><BR>
+
+   <LI> <A NAME="inexact_NT"></A>
+        <B>I am using <TT>double</TT> (or <TT>float</TT> or ...) as my number 
+        type 
+        and get assertion failures or incorrect output.  Is this a bug in CGAL?
+        </B>
+        <P>
+        While it may well be a bug in CGAL, with such number types you are more
+        likely to suffer from a problem with robustness. In particular, using
+	the kernel <A HREF="/Manual/last/doc_html/cgal_manual/Kernel_23_ref/Class_Cartesian.html">CGAL::Cartesian</A> with number types <TT>double</TT> or
+	<TT>float</TT> is likely to give you wrong results.<P><P>  
+
+        The problem is that double and float are inexact number types,
+        and as such they cannot guarantee exact results in all
+        cases. Worse than this, small roundoff errors can have large
+	consequences, up to the point where an algorithm crashes. Algorithms
+	in geometric computing are particularly sensitive in this respect.
+	<P><P>  
+
+	This was the bad news. The good news is that CGAL provides an
+	easy way for programmers to get around the limitations of
+	inexact number types like <TT>double</TT> and <TT>float</TT>,
+	through its templated kernels. See also our page on
+	<A HREF="exact.html">The Exact Computation Paradigm</A>.
+	<P><P>  
+
+        A solution that always works (although it might slow down the algorithm
+	considerably) is to use an exact multi-precision number type such as 
+        <A HREF="/Manual/last/doc_html/cgal_manual/NumberTypeSupport_ref/Class_Quotient.html">CGAL::Quotient</A>&lt;<A HREF="/Manual/last/doc_html/cgal_manual/NumberTypeSupport_ref/Class_MP_Float.html">CGAL::MP_Float</A>&gt; or 
+        <A HREF="/Manual/last/doc_html/cgal_manual/NumberTypeSupport_ref/Class_Gmpq.html">CGAL::Gmpq</A>, instead of <TT>double</TT> or <TT>float</TT>.
+        <P><P>
+
+        If your program does not involve the construction of new objects 
+        from the input data (such as the intersection of two objects, or the
+        center of a sphere defined by the input objects),
+        the <A HREF="/Manual/last/doc_html/cgal_manual/Kernel_23_ref/Class_Exact_predicates_inexact_constructions_kernel.html">CGAL::Exact_predicates_inexact_constructions_kernel</A> 
+        kernel provides a nice and fast way to use exact predicates together 
+	with an inexact number type such as <TT>double</TT> for constructions.
+        <P><P>
+
+        When your program uses constructions of new objects, you can still
+        speed things up by using the number type
+        <A HREF="/Manual/last/doc_html/cgal_manual/NumberTypeSupport_ref/Class_Lazy_exact_nt.html">CGAL::Lazy_exact_nt</A>
+        on top of an exact number type.<BR><BR>
+
+  Good references that discuss the robustness problem in geometric computing are:<BR>
+        <UL>
+           <LI> S. Schirra. Robustness and precision issues in geometric 
+                computation.  <I>Research Report MPI-I-98-004, Max Planck 
+                Institute for Computer Science</I>, 1998.
+                <A HREF="http://data.mpi-sb.mpg.de/internet/reports.nsf/c125634c000710d0c12560400034f45a/875a972ddb455a67c1256594004db691/$FILE/ATTC1DYI/MPI-I-98-1-004.ps">[ps-file]</A>
+                Revised version of: Robustness and precision issues in 
+                geometric computations.  Ch 9, in M. van Kreveld et al. 
+                (eds.), <I>Algorithmic Foundations of Geographic Information 
+                Systems,</I> LNCS 1340, Springer, 1997.
+           <LI> S. Schirra. Robustness and precision issues in geometric
+                computation. in J.-R. Sack and J. Urrutia (eds.), 
+                <I>Handbook of Computational Geometry</I> Chapter 14,
+                Elsevier Science, 1999
+	   <LI> Lutz Kettner, Kurt Mehlhorn, Sylvain Pion, Stefan Schirra, and 
+	        Chee Yap. Classroom Examples of Robustness Problems in 
+		Geometric Computations, <I>Computational Geometry: Theory and
+		Algorithms</I>, 40(1):61-78, 2008. <A HREF="http://hal.inria.fr/inria-00344310">[html]</A>
+        </UL>
+
+        <P>
+
+   
+   <LI> <A NAME="modifiable_kernel"></A>
+        <B>I want to modify the coordinates of a point, or the endpoints of a
+        segment, but the CGAL kernel does not seem to support that.  Why?</B>
+       <P>
+       Our kernel concept is representation-independent. 
+       There is no assumption on how a <tt>Point_3</tt>, for example, is represented. In
+       particular, it need not be represented by Cartesian coordinates.  Thus
+       writing code that relies on being able to change these coordinates may 
+       lead to inefficient code.   Our basic library algorithms are designed 
+       around the predicates that operate on the geometric objects and do not 
+       require this mutability.  
+
+       Non-modifiability also makes the underlying handle-rep scheme used (by
+       default) to allocate, copy, etc., CGAL objects somewhat easier.
+
+       We recognize, however, that users may want this flexibility and thus
+       are working on providing mutable kernel objects.
+
+       The only way to do this currently is to construct a new point and assign
+       it to the old one : use <code>p = Point_2(p.x(), p.y()+1);</code>
+       as if you would like to do <code>p.y() += 1;</code>.
+       <P>
+
+       <LI> <A NAME="to_double"></A>
+       <B>I want to convert a number type, e.g. <TT>FT</TT> to <TT>double</TT>.
+       How do I do that?</B>
+       <P>
+       All number types used by CGAL provide a conversion function called
+       <TT>CGAL::to_double</TT>.  For example: <code>double x = CGAL::to_double(p.x());</code>.
+       <P>
+
+       <LI> <A NAME="uncertain_exception"></A>
+       <B>My program reports "Microsoft C++ exception: CGAL::Uncertain_conversion_exception at memory location ...".  Why?</B>
+       <P>
+       This is an internal exception, which is caught by CGAL code.  Users are not supposed
+       to be concerned by this, it is correct behaviour, except that it sometimes shows up,
+       for example when debugging.  It is safe to ignore these exceptions.
+       See <a href="https://www.helixoft.com/blog/how-to-disable-a-first-chance-exception-of-type-messages-in-vs-2005.html">here</a> for more information
+       on how to disable the warning.
+       <P>
+
+</UL>
+
+<A NAME="polygons"></A>
+<HR>
+<BR>
+
+<FONT SIZE="+1"><B>Polygons</B></FONT>
+
+<UL>
+    <LI> <A NAME="boolean_ops"></A>
+         <B>How can I do boolean operations on polygons?</B>
+         <P>
+         There are two means provided in CGAL for performing boolean operations
+         on polygons in the plane.  One is provided via the class template
+         <A HREF="/Manual/last/doc_html/cgal_manual/Nef_2/Chapter_main.html"><TT>Nef_polyhedron_2</TT></A>.  
+         The other is provided via the <A HREF="/Manual/last/doc_html/cgal_manual/Boolean_set_operations_2/Chapter_main.html">Boolean Set-Operations</A> package.  
+         There are <A HREF="/Manual/last/doc_html/cgal_manual/packages.html#Pkg:BooleanSetOperations2">demo programs</A> illustrating 
+         boolean operations using both of these.  The manual pages provide 
+         more information regarding, for example, additional functionality 
+         available with these class templates.  See also the 
+         <A HREF="#planar_map_bops">section</A> on this page related to planar
+         maps and boolean operations.
+         <P>
+
+    <LI> <A NAME="polygon_triangulation"></A>
+         <B>How do I compute the triangulation of the interior of a polygon?</B>
+         <P>
+         For this, one should use one of the constrained triangulation classes:
+        <A HREF="/Manual/last/doc_html/cgal_manual/Triangulation_2_ref/Class_Constrained_triangulation_2.html"><TT>Constrained_triangulation_2</TT></A>,
+        <A HREF="/Manual/last/doc_html/cgal_manual/Triangulation_2_ref/Class_Constrained_Delaunay_triangulation_2.html"><TT>Constrained_Delaunay_triangulation_2</TT></A>
+        or
+        <A HREF="/Manual/last/doc_html/cgal_manual/Triangulation_2_ref/Class_Constrained_triangulation_plus_2.html"><TT>Constrained_triangulation_plus_2</TT></A>.
+        The edges of the polygon should be input as constraints to the 
+        triangulation.  The constructed triangulation will be a triangulation 
+        of the whole convex hull, but including as edges the edges of the 
+        polygon which are marked as constrained edges.  From there it is easy 
+        to output the faces inside (resp. outside) the polygon or to mark 
+        these faces as such. 
+        See  <TT>($CGALROOT)/demo/Triangulation_2/constrained.cpp</TT> for an 
+        example.
+         <P>
+</UL>
+
+<A NAME="planar_maps"></A>
+<HR>
+<BR>
+
+<FONT SIZE="+1"><B>Planar Maps and Arrangements</B></FONT>
+
+<UL>
+    <LI><a NAME="planar_map_outer_face"></A>
+	<B>Is the outer CCB (counterclockwise boundary) of a face of an
+	arrangement a SIMPLE polygon?</B>
+
+	<p>The outer CCB of a face of an arrangement is NOT
+	necessarily a simple polygon.  Consider the case where there
+	are "inner antennas"; imagine a face represented by a simple
+	polygon and a vertex <var>v</var> on the outer CCB of the
+	face. Now connect a component that starts and ends at
+	<var>v</var> and lies in the interior of the face (one edge
+	incident at <var>v</var> suffices).
+
+	<p>Mind that if you are using an inexact number type you might
+	get a non-simple polygon even if the outer CCB represents one
+	due to numerical errors.</p></li>
+
+    <LI><a NAME="planar_map_bops"></A>
+        <B>Boolean set operations: How can I compute them?</B>
+
+        <p>The package
+        <a href="/Manual/last/doc_html/cgal_manual/Boolean_set_operations_2/Chapter_main.html">Regularized Boolean Set-Operation</a>
+        consists of the implementation of Boolean set-operations on
+        point sets bounded by weakly x-monotone curves in
+        2-dimensional Euclidean space. In particular, it contains the
+	implementation of regularized Boolean set-operations,
+	intersection predicates, and point containment predicates.</p>
+
+	<p>Ordinary Boolean set-operations that operate on (linear)
+	polygons, which distinguish between the interior and the
+	boundary of a polygon, are supported by the
+	<a HREF="/Manual/last/doc_html/cgal_manual/Nef_2/Chapter_main.html">Planar Nef Polyhedra</a> package.</p>
+
+        <p>For intersections of the interiors of polygons also refer to
+	the <a href="/Manual/last/doc_html/cgal_manual/packages.html#Pkg:Nef2">polygon
+	intersection demo program</a>, which is also available in the <tt>demo</tt>
+	directory of the CGAL distribution.</p>
+
+    <LI><a NAME="planar_map_faster"></A>
+        <b>How can I accelerate the work with arrangements?</B>
+
+        <p>Before the specific tips, we remind you that compiling
+        programs with debug flags disabled and with optimization flags
+        enabled significantly reduces the running time.<br><br>
+
+        <ol>
+          <li>Passing <var>x</var>-monotone curves that are pairwise
+	  disjoint in their interior to the overloaded insertion-function 
+	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Function_insert.html"><code>insert()</code></a>
+	  is more efficient (in running time) and less demanding (in
+	  traits-class functionality) than passing general curves.
+	  </li>
+
+          <li>When the curves to be inserted into an arrangement are
+	  segments that are pairwise disjoint in their interior, it
+	  is more efficient to use the traits class
+	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arr_non_caching_segment_traits_2.html"><code>Arr_non_caching_segment_traits_2</code></a>
+	  rather then the default one
+	  (<a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arr_segment_traits_2.html"><code>Arr_segment_traits_2</code></a>).
+	  
+	  <p>If the segments may intersect each other, the default
+	  traits class
+	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arr_segment_traits_2.html"><code>Arr_segment_traits_2</code></a>
+	  can be safely used with the somehow limited number type
+	  <a href="/Manual/last/doc_html/cgal_manual/NumberTypeSupport_ref/Class_Quotient.html">Quotient</a>&lt;<a href="/Manual/last/doc_html/cgal_manual/NumberTypeSupport_ref/Class_MP_Float.html">MP_float</a>&gt;.
+
+	  <p>On rare occasions the traits class
+	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arr_non_caching_segment_traits_2.html"><code>Arr_non_caching_segment_traits_2</code></a>
+	  exhibits slightly better performance than the default one
+	  (<a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arr_segment_traits_2.html"><code>Arr_segment_traits_2</code></a>)
+	  even when the segments intersect each other, due to the
+	  small overhead of the latter (optimized) traits class.
+	  (For example, when the the so called L<SMALL>EDA</SMALL>
+	  rational kernel is used).
+
+	  <li>Prior knowledge of the combinatorial structure of the
+	  arrangement can be used to accelerate operations that insert
+	  <var>x</var>-monotone curves, whose interior is disjoint
+	  from existing edges and vertices of the arrangement. The
+	  specialized insertion functions, i.e., 
+	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_2.html"><code>insert_in_face_interior()</code></a>,
+	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_2.html"><code>insert_from_left_vertex()</code></a>, 
+	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_2.html"><code>insert_from_right_vertex()</code></a>, and
+	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_2.html"><code>insert_at_vertices()</code></a>
+	  can be used according to the available information. These
+	  functions hardly involve any geometric operations, if at
+	  all. They accept topologically related parameters, and use
+	  them to operate directly on the D<small>CEL</small> records,
+	  thus saving algebraic operations, which are especially
+	  expensive when high-degree curves are involved.
+
+          <p>A polygon, represented by a list of segments along its
+	  boundary, can be inserted into an empty arrangement as
+	  follows. First, one segment is inserted using
+	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_2.html"><code>insert_in_face_interior()</code></a>
+	  into the unbounded face. Then, a segment with a common end
+	  point is inserted using either
+	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_2.html"><code>insert_from_left_vertex()</code></a>
+	  or
+	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_2.html"><code>insert_from_right_vertex()</code></a>,
+	  and so on with the rest of the segments except for the last,
+	  which is inserted using
+	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_2.html"><code>insert_at_vertices()</code></a>,
+	  as both endpoints of which are the mapping of known
+	  vertices.</p></li>
+	    
+	  <li>The main trade-off among point-location strategies, is
+	  between time and storage. Using the
+	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arr_naive_point_location.html">naive</a>
+	  or
+	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arr_walk_along_line_point_location.html">walk</a>
+	  strategies, for example, takes more query time but does not
+	  require preprocessing or maintenance of auxiliary structures
+	  and saves storage space.</li>
+
+	  <li>If point-location queries are not performed frequently,
+	  but other modifying functions, such as removing, splitting,
+	  or merging edges are, then using a point-location strategy
+	  that does not require the maintenance of auxiliary
+	  structures, such as the
+the
+	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arr_naive_point_location.html">naive</a>
+	  or
+	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arr_walk_along_line_point_location.html">walk</a>
+	  strategies, is preferable.</li>
+
+	  <li>There is a trade-off between two modes of the
+	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arr_trapezoid_ric_point_location.html">RIC</a>
+	  strategy that enables the user to choose whether
+	  preprocessing should be performed or not. If preprocessing
+	  is not used, the creation of the structure is
+	  faster. However, for some input sequences the structure
+	  might be unbalanced and therefore queries and updates might
+	  take longer, especially, if many removal and split
+	  operations are performed.</li>
+
+	  <li>The various traits classes should be instantiated with
+	  an exact number type to ensure robustness, when the input of
+	  the operations to be carried out might be degenerate,
+	  although inexact number types could be used at the user's
+	  own risk.</li>
+
+	  <li>Maintaining short bit-lengths of coordinate
+	  representations may drastically decrease the time
+	  consumption of arithmetic operations on the coordinates.
+	  This can be achieved by caching certain information or
+	  normalization (of rational numbers). However, both solutions
+	  should be used cautiously, as the former may lead to an
+	  undue space consumption, and indiscriminate normalization
+	  may considerably slow down the overall process.</li>
+	  
+	  <li>Geometric functions (e.g., traits methods) dominate the
+	  time consumption of most operations. Thus, calls to such
+	  function should be avoided or at least their number should
+	  be decreased, perhaps at the expense of increased
+	  combinatorial-function calls or increased space
+	  consumption. For example, repetition of geometric-function
+	  calls could be avoided by storing the results obtained by
+	  the first call, and reusing them when needed.</li>
+
+          </ol>
+
+    <LI><a NAME="planar_map_adding_info"></A>
+        <B>How can I attach information to a vertex, a halfedge, or a face?</B>
+
+         <p>You need to change the D<small>CEL</small>, so that its
+         <I>vertex</I>, <I>halfedge</I>, and/or <I>face</I> types will
+	 contain the information you want. The package facilitates
+	 the coding necessary to achieve this task. Refer to Section
+	 <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2/Chapter_main.html#arr_sec:ex_dcel"><b>Extending the D<small>CEL</small></b></a>
+	 for further details.
+	 
+         <p>You have to supply your model of the concept
+	 <tt>ArrangementDcel</tt>, which represents the extended
+	 D<small>CEL</small>, and instantiate
+	 <code>CGAL::Arrangement_on_surface_2&lt;Traits,Dcel&gt;</code> properly.
+
+	 <p>If <i>Face</i> is the only feature type you need to extend,
+	 refer to the example at
+         <tt>&lt;CGALROOT&gt;/examples/Arrangement_on_surface_2/face_extension.cpp</tt>.
+	 The example
+         <tt>&lt;CGALROOT&gt;/examples/Arrangement_on_surface_2/ex_dcel_extension.cpp</tt>
+         demonstrates how to extend all the feature types simultaneously.</li>
+</UL>
+
+<A NAME="polyhedron"></A>
+<HR>
+<BR>
+
+<FONT SIZE="+1"><B>Polyhedral Surfaces</B></FONT>
+
+<UL>
+   <LI> <A NAME="polyhedron_transform"></A>
+        <B>Why is there no <I>transform</I> function for 
+           <I>Polyhedron_3</I>?</B>
+        <P>
+        The polyhedral surface (and other data structures in the
+        Basic Library) can have added geometric attributes by the
+        user that would make a generally working <I>transform</I>
+        function for affine transformations difficult to provide
+        in the class, and on the other hand it is easy for a user
+        to apply standard generic algorithms for that purpose, for example,
+        to transform the points stored in a polyhedral surface <I>P</I> 
+        with a CGAL affine transformation given in <I>A</I> (which
+        is a  proper STL functor) one can write:
+        <PRE>std::transform( P.points_begin(), P.points_end(), P.points_begin(), A);</PRE>
+        <P>
+   <LI> <A NAME="polyhedron_normals"></A>
+        <B>How can I compute the plane equation (normal) for a facet 
+           in a polyhedral surface?</B>
+        <P>
+         The <I>plane()</I> member function in facets does not compute 
+         the plane equation, it is only the access to function to the
+         variable stored in facets.<P>
+
+         The plane equations must be computed separately by the
+         user. There is currently no general method available in CGAL
+         that computes the plane equations, since the requirements
+         could vary considerably with the number type chosen or the
+         possible knowledge of the facet types (convex, triangles,
+         ...). Assuming strictly convex facets and exact arithmetic
+         (or the willingness to live with rounding errors), the example 
+        <TT>&lt;CGALROOT&gt;/examples/Polyhedron/polyhedron_prog_normals.cpp</TT>
+         computes these plane equations, see also the <A HREF=
+         "/Manual/last/doc_html/cgal_manual/Polyhedron/Chapter_main.html">User Manual
+         for polyhedral surfaces</A>.<P>
+
+         For inexact double arithmetic and/or non-convex facets one
+         might consider the method of Newell which computes the
+         least-square-fit normal of the plane equation, see for
+         example Filippo Tampieri: <EM>Newell's Method for Computing
+         the Plane Equation of a Polygon</EM>. Graphics Gems III,
+         David Kirk (Ed.), AP Professional, 1992.
+<P>
+</UL>
+
+  </div>
+</div>
+
+
+    
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="footer-copyright">
+            <div style="float: left;">
+              <a href="https://twitter.com/TheCGALProject" alt="The CGAL Project's Twitter">
+                <img src="https://cgal.github.io/cgal-web/images/icons/twitter.svg" class="center-block btn-dark-orange" alt="Twitter" height="18"></img>
+              </a>
+            </div>
+            &copy; 1995-2022 The CGAL Project. All rights reserved.
+            <div style="float: right;">
+              <a href="https://cgal.geometryfactory.com/CGAL/Members/wiki/Main_Page" alt="Password protected access to the Developer Wiki">
+                <i class="glyphicon glyphicon-lock"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascripts -->
+    <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery-1.9.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery-1.9.1.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.fitvids.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.sequence-min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.bxslider.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/template.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/bootstrap-hover-dropdown-min.js"></script>
+  </body>
+</html>
+

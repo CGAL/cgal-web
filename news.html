@@ -1,0 +1,4460 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>News</title>
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="CGAL Editorial Board">
+
+    <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/icomoon-social.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+
+    <!--[if lte IE 8]>
+	<link rel="stylesheet" href="css/leaflet.ie.css" />
+	<![endif]-->
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/main.css">
+
+    <!-- atom & rss feed -->
+    <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="https://cgal.github.io/cgal-web/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+
+    <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    
+
+    <!-- Navigation & Logo-->
+    <div class="mainmenu-wrapper">
+    <div class="container">
+    <nav id="mainmenu" class="mainmenu" role="navigation">
+    <ul>
+    <li class="logo-wrapper hidden-xs hidden-sm hidden-md">
+    <a href="https://cgal.github.io/cgal-web/index.html">
+    <img src="https://cgal.github.io/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
+    </a>
+    </li>
+
+    <li class="hidden-lg">
+    <a href="https://cgal.github.io/cgal-web/index.html">
+    <img src="https://cgal.github.io/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
+    </a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/project.html">Project</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/download.html">Download</a>
+    </li>
+
+    <li class="dropdown" style="transition-duration: all 0s ease; transition-delay: all 0s ease;">
+    <a href="#" class="dropdown-toggle" data-hover="dropdown">Packages <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometryProcessing" target="_blank">Geometry Processing</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
+        </ul>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/documentation.html">Documentation</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/news.html">News</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/media.html">Media</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/support.html">Support</a>
+    </li>
+
+    </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="section section-breadcrumbs">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>News </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+<div class="section">
+  <div class="container">
+    
+
+
+
+
+
+
+  
+    
+    
+    
+    
+  
+    
+      <h2>2022</h2>
+      <h3>October</h3>
+      <ul>
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2022/10/12/new-releases">Two new CGAL releases</a>
+        <br><div style="color:#afaa98;font-size:12px">October 12, 2022</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2022/10/12/cgal551">CGAL 5.5.1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">October 12, 2022</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2022/10/12/cgal5.4.3">CGAL 5.4.3 released</a>
+        <br><div style="color:#afaa98;font-size:12px">October 12, 2022</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>July</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2022/07/29/siggraph-2022">CGAL @ SIGGRAPH 2022</a>
+        <br><div style="color:#afaa98;font-size:12px">July 29, 2022</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2022/07/18/new-releases">Two new CGAL releases</a>
+        <br><div style="color:#afaa98;font-size:12px">July 18, 2022</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2022/07/15/cgal55">CGAL 5.5 released</a>
+        <br><div style="color:#afaa98;font-size:12px">July 15, 2022</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2022/07/15/cgal5.4.2">CGAL 5.4.2 released</a>
+        <br><div style="color:#afaa98;font-size:12px">July 15, 2022</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>June</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/news/2022/06/07/three_new_releases">Three new CGAL releases</a>
+        <br><div style="color:#afaa98;font-size:12px">June  7, 2022</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2022/06/06/cgal55-beta1">CGAL 5.5 beta1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">June  6, 2022</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2022/06/06/cgal541">CGAL 5.4.1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">June  6, 2022</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2022/06/06/cgal532">CGAL 5.3.2 released</a>
+        <br><div style="color:#afaa98;font-size:12px">June  6, 2022</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>May</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2022/05/18/alpha_wrap">New in CGAL: 3D Alpha Wrapping</a>
+        <br><div style="color:#afaa98;font-size:12px">May 18, 2022</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>April</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/news/2022/04/01/sxsw">CGAL @ SXSW</a>
+        <br><div style="color:#afaa98;font-size:12px">April  1, 2022</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>March</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/news/2022/03/08/gsoc-2022-mentoring">CGAL to participate in the Google Summer of Code 2022</a>
+        <br><div style="color:#afaa98;font-size:12px">March  8, 2022</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>January</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2022/01/31/cgal54">CGAL 5.4 released</a>
+        <br><div style="color:#afaa98;font-size:12px">January 31, 2022</div>
+    </li>
+
+    
+      
+        </ul>
+        <h2>2021</h2>
+        <h3>December</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2021/12/17/cgal54-beta1">CGAL 5.4 beta1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">December 17, 2021</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/news/2021/12/13/two_new_releases">Two new CGAL releases</a>
+        <br><div style="color:#afaa98;font-size:12px">December 13, 2021</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2021/12/13/cgal531">CGAL 5.3.1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">December 13, 2021</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2021/12/13/cgal524">CGAL 5.2.4 released</a>
+        <br><div style="color:#afaa98;font-size:12px">December 13, 2021</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>November</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2021/11/16/shape-regularization">New in CGAL: Shape Regularization package</a>
+        <br><div style="color:#afaa98;font-size:12px">November 16, 2021</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>July</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/news/2021/07/06/three_new_releases">Three new CGAL releases</a>
+        <br><div style="color:#afaa98;font-size:12px">July  6, 2021</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2021/07/06/cgal53">CGAL 5.3 released</a>
+        <br><div style="color:#afaa98;font-size:12px">July  6, 2021</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2021/07/06/cgal523">CGAL 5.2.3 released</a>
+        <br><div style="color:#afaa98;font-size:12px">July  6, 2021</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2021/07/06/cgal515">CGAL 5.1.5 released</a>
+        <br><div style="color:#afaa98;font-size:12px">July  6, 2021</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>June</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2021/06/21/Triangulations_on_the_sphere">New in CGAL: Triangulations on the Sphere</a>
+        <br><div style="color:#afaa98;font-size:12px">June 21, 2021</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2021/06/04/cgal53-beta1">CGAL 5.3 beta1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">June  4, 2021</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/news/2021/06/02/new_bugfix_releases">Two bug-fix releases</a>
+        <br><div style="color:#afaa98;font-size:12px">June  2, 2021</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2021/06/02/cgal522">CGAL 5.2.2 released</a>
+        <br><div style="color:#afaa98;font-size:12px">June  2, 2021</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2021/06/02/cgal514">CGAL 5.1.4 released</a>
+        <br><div style="color:#afaa98;font-size:12px">June  2, 2021</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>April</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2021/04/27/Orthtree">New in CGAL: Orthtree package</a>
+        <br><div style="color:#afaa98;font-size:12px">April 27, 2021</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/news/2021/04/01/Clubhouse">CGAL User Portrait: Clubhouse</a>
+        <br><div style="color:#afaa98;font-size:12px">April  1, 2021</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>March</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2021/03/17/cgal521">CGAL 5.2.1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">March 17, 2021</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2021/03/17/cgal513">CGAL 5.1.3 released</a>
+        <br><div style="color:#afaa98;font-size:12px">March 17, 2021</div>
+    </li>
+
+    
+      
+        </ul>
+        <h2>2020</h2>
+        <h3>December</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2020/12/22/cgal52">CGAL 5.2 released</a>
+        <br><div style="color:#afaa98;font-size:12px">December 22, 2020</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2020/12/22/cgal512">CGAL 5.1.2 released</a>
+        <br><div style="color:#afaa98;font-size:12px">December 22, 2020</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>November</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2020/11/18/cgal52-beta1">CGAL 5.2 beta1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">November 18, 2020</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/news/2020/11/16/new_bugfix_releases">Two bug-fix releases</a>
+        <br><div style="color:#afaa98;font-size:12px">November 16, 2020</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2020/11/16/cgal511">CGAL 5.1.1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">November 16, 2020</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2020/11/16/cgal504">CGAL 5.0.4 released</a>
+        <br><div style="color:#afaa98;font-size:12px">November 16, 2020</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>September</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2020/09/08/cgal51">CGAL 5.1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">September  8, 2020</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>August</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2020/08/07/Tetrahedral-remeshing">New in CGAL: Tetrahedral Remeshing</a>
+        <br><div style="color:#afaa98;font-size:12px">August  7, 2020</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2020/08/03/cgal503">CGAL 5.0.3 released</a>
+        <br><div style="color:#afaa98;font-size:12px">August  3, 2020</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>July</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2020/07/28/cgal51-beta2">CGAL 5.1 beta2 released</a>
+        <br><div style="color:#afaa98;font-size:12px">July 28, 2020</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>June</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2020/06/09/cgal51-beta1">CGAL 5.1 beta1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">June  9, 2020</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>May</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2020/05/08/Surface_mesh_topology">New in CGAL: Surface Mesh Topology</a>
+        <br><div style="color:#afaa98;font-size:12px">May  8, 2020</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2020/05/04/Tutorial_on_GIS">New in CGAL: Tutorial on GIS</a>
+        <br><div style="color:#afaa98;font-size:12px">May  4, 2020</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>April</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2020/04/20/Optimal_bounding_box">New in CGAL: Optimal Bounding Box</a>
+        <br><div style="color:#afaa98;font-size:12px">April 20, 2020</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2020/04/02/Tutorial_on_Surface_Reconstruction">New in CGAL: Tutorial on Surface Reconstruction</a>
+        <br><div style="color:#afaa98;font-size:12px">April  2, 2020</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/news/2020/04/01/Bayer">CGAL User Portrait: Bayer CropScience</a>
+        <br><div style="color:#afaa98;font-size:12px">April  1, 2020</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>March</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2020/03/23/Registration">New in CGAL: Wrappers for Registration Libraries</a>
+        <br><div style="color:#afaa98;font-size:12px">March 23, 2020</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>February</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2020/02/25/cgal502">CGAL 5.0.2 released</a>
+        <br><div style="color:#afaa98;font-size:12px">February 25, 2020</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2020/02/25/cgal4143">CGAL 4.14.3 released</a>
+        <br><div style="color:#afaa98;font-size:12px">February 25, 2020</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/news/2020/02/20/gsoc-2020-mentoring">CGAL to participate in the Google Summer of Code 2020</a>
+        <br><div style="color:#afaa98;font-size:12px">February 20, 2020</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>January</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2020/01/24/cgal501">CGAL 5.0.1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">January 24, 2020</div>
+    </li>
+
+    
+      
+        </ul>
+        <h2>2019</h2>
+        <h3>November</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2019/11/08/cgal50">CGAL 5.0 released</a>
+        <br><div style="color:#afaa98;font-size:12px">November  8, 2019</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2019/11/08/cgal4142">CGAL 4.14.2 released</a>
+        <br><div style="color:#afaa98;font-size:12px">November  8, 2019</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>October</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2019/10/31/cgal50-beta2">CGAL 5.0 beta2 released</a>
+        <br><div style="color:#afaa98;font-size:12px">October 31, 2019</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>September</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/news/2019/09/30/new_releases">New CGAL releases</a>
+        <br><div style="color:#afaa98;font-size:12px">September 30, 2019</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2019/09/30/cgal50-beta1">CGAL 5.0 beta1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">September 30, 2019</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2019/09/30/cgal4141">CGAL 4.14.1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">September 30, 2019</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2019/09/30/cgal4132">CGAL 4.13.2 released</a>
+        <br><div style="color:#afaa98;font-size:12px">September 30, 2019</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>August</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2019/08/05/Polygonal_surface_reconstruction">New in CGAL: Polygonal Surface Reconstruction</a>
+        <br><div style="color:#afaa98;font-size:12px">August  5, 2019</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>July</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2019/07/30/Shape_detection">New in CGAL: Shape Detection enhancements</a>
+        <br><div style="color:#afaa98;font-size:12px">July 30, 2019</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/news/2019/07/28/siggraph-2019">CGAL @ SIGGRAPH 2019</a>
+        <br><div style="color:#afaa98;font-size:12px">July 28, 2019</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>June</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/news/2019/06/18/cg-contest">Optimal Area Polygonalization</a>
+        <br><div style="color:#afaa98;font-size:12px">June 18, 2019</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>April</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2019/04/05/cgal4131">CGAL 4.13.1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">April  5, 2019</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2019/04/05/cgal4122">CGAL 4.12.2 released</a>
+        <br><div style="color:#afaa98;font-size:12px">April  5, 2019</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/news/2019/04/01/Nike">CGAL User Portrait: Nike</a>
+        <br><div style="color:#afaa98;font-size:12px">April  1, 2019</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>March</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2019/03/29/cgal414">CGAL 4.14 released</a>
+        <br><div style="color:#afaa98;font-size:12px">March 29, 2019</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2019/03/26/how-to-write-a-paraview-plugin">CGAL How-tos: Writing a CGAL Plugin for ParaView</a>
+        <br><div style="color:#afaa98;font-size:12px">March 26, 2019</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2019/03/13/cgal414-beta2">CGAL 4.14 beta2 released</a>
+        <br><div style="color:#afaa98;font-size:12px">March 13, 2019</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2019/03/04/cgal414-beta1">CGAL 4.14 beta1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">March  4, 2019</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>February</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/news/2019/02/27/gsoc-2019-mentoring">CGAL to participate in the Google Summer of Code 2019</a>
+        <br><div style="color:#afaa98;font-size:12px">February 27, 2019</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2019/02/25/Hyperbolic_triangulations">New in CGAL: 2D Hyperbolic Triangulations and 2D Periodic Hyperbolic Triangulations</a>
+        <br><div style="color:#afaa98;font-size:12px">February 25, 2019</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>January</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2019/01/29/VSA">New in CGAL: Triangulated Surface Mesh Approximation</a>
+        <br><div style="color:#afaa98;font-size:12px">January 29, 2019</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2019/01/23/Heat_Method">New in CGAL: The Heat Method </a>
+        <br><div style="color:#afaa98;font-size:12px">January 23, 2019</div>
+    </li>
+
+    
+      
+        </ul>
+        <h2>2018</h2>
+        <h3>October</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/news/2018/10/17/FFS">CGAL FFS Podcast</a>
+        <br><div style="color:#afaa98;font-size:12px">October 17, 2018</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/news/2018/10/16/InterGEO-2018">CGAL @ INTERGEO 2018</a>
+        <br><div style="color:#afaa98;font-size:12px">October 16, 2018</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2018/10/01/cgal413">CGAL 4.13 released</a>
+        <br><div style="color:#afaa98;font-size:12px">October  1, 2018</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>September</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2018/09/11/cgal413-beta2">CGAL 4.13 beta2 released</a>
+        <br><div style="color:#afaa98;font-size:12px">September 11, 2018</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2018/09/10/Periodic_Mesh_Generation">New in CGAL: 3D Periodic Mesh Generation</a>
+        <br><div style="color:#afaa98;font-size:12px">September 10, 2018</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2018/09/04/cgal4121">CGAL 4.12.1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">September  4, 2018</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>August</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/news/2018/08/12/siggraph-2018">CGAL @ SIGGRAPH 2018</a>
+        <br><div style="color:#afaa98;font-size:12px">August 12, 2018</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2018/08/01/cgal413-beta1">CGAL 4.13 beta1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">August  1, 2018</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>July</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2018/07/31/cgal4113">CGAL 4.11.3 released</a>
+        <br><div style="color:#afaa98;font-size:12px">July 31, 2018</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2018/07/10/cgal4112">CGAL 4.11.2 released</a>
+        <br><div style="color:#afaa98;font-size:12px">July 10, 2018</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>April</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2018/04/30/irp2017">CGAL @ IRP 2018</a>
+        <br><div style="color:#afaa98;font-size:12px">April 30, 2018</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2018/04/25/cgal412">CGAL 4.12 released</a>
+        <br><div style="color:#afaa98;font-size:12px">April 25, 2018</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/news/2018/04/23/gsoc-2018-projects-accepted">CGAL welcomes 8 students for the GSoC 2018</a>
+        <br><div style="color:#afaa98;font-size:12px">April 23, 2018</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2018/04/09/cgal412-beta2">CGAL 4.12 beta2 released</a>
+        <br><div style="color:#afaa98;font-size:12px">April  9, 2018</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/news/2018/04/01/GreenProjectAward">CGAL - Finalist for the Green Project Award</a>
+        <br><div style="color:#afaa98;font-size:12px">April  1, 2018</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>February</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2018/02/27/cgal412-beta1">CGAL 4.12 beta1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">February 27, 2018</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2018/02/26/cgal4111">CGAL 4.11.1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">February 26, 2018</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/news/2018/02/12/gsoc-2018-mentoring">CGAL to participate in the Google Summer of Code 2018</a>
+        <br><div style="color:#afaa98;font-size:12px">February 12, 2018</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>January</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2018/01/16/cgal-4102">CGAL 4.10.2 released</a>
+        <br><div style="color:#afaa98;font-size:12px">January 16, 2018</div>
+    </li>
+
+    
+      
+        </ul>
+        <h2>2017</h2>
+        <h3>September</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2017/09/21/cgal411">CGAL 4.11 released</a>
+        <br><div style="color:#afaa98;font-size:12px">September 21, 2017</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2017/09/13/cgal-4101">CGAL 4.10.1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">September 13, 2017</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>August</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2017/08/23/CGAL_in_the_Bay_Area">CGAL in the Bay Area</a>
+        <br><div style="color:#afaa98;font-size:12px">August 23, 2017</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2017/08/01/cgal411-beta1">CGAL 4.11 beta1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">August  1, 2017</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>July</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/news/2017/07/30/siggraph-2017">CGAL @ SIGGRAPH 2017</a>
+        <br><div style="color:#afaa98;font-size:12px">July 30, 2017</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>May</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2017/05/29/cgal410">CGAL 4.10 released</a>
+        <br><div style="color:#afaa98;font-size:12px">May 29, 2017</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>April</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/news/2017/04/26/cgal-college-de-france">CGAL at the College de France</a>
+        <br><div style="color:#afaa98;font-size:12px">April 26, 2017</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2017/04/20/cgal410-beta1">CGAL 4.10 beta1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">April 20, 2017</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2017/04/12/cgal-491">CGAL 4.9.1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">April 12, 2017</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/news/2017/04/01/Swarowski">CGAL User Portrait: Swarowski and the Ivanka Diagram</a>
+        <br><div style="color:#afaa98;font-size:12px">April  1, 2017</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>March</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2017/03/06/gsoc-2017-mentoring">CGAL to participate in the Google Summer of Code 2017</a>
+        <br><div style="color:#afaa98;font-size:12px">March  6, 2017</div>
+    </li>
+
+    
+      
+        </ul>
+        <h2>2016</h2>
+        <h3>September</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2016/09/19/cgal-49">CGAL 4.9 released</a>
+        <br><div style="color:#afaa98;font-size:12px">September 19, 2016</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2016/09/19/cgal-482">CGAL 4.8.2 released</a>
+        <br><div style="color:#afaa98;font-size:12px">September 19, 2016</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>August</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2016/08/04/cgal49-beta1">CGAL 4.9 beta1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">August  4, 2016</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>July</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/news/2016/07/26/siggraph-2016">CGAL @ SIGGRAPH 2016</a>
+        <br><div style="color:#afaa98;font-size:12px">July 26, 2016</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>June</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2016/06/13/cgal-481">CGAL 4.8.1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">June 13, 2016</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>April</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2016/04/08/cgal48">CGAL 4.8 released</a>
+        <br><div style="color:#afaa98;font-size:12px">April  8, 2016</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/news/2016/04/01/Flashmob">CGAL Flash Mob at SIGGRAPH</a>
+        <br><div style="color:#afaa98;font-size:12px">April  1, 2016</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>March</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2016/03/20/cgal48-beta2">CGAL 4.8 beta2 released</a>
+        <br><div style="color:#afaa98;font-size:12px">March 20, 2016</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>February</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2016/02/10/cgal48-beta1">CGAL 4.8 beta1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">February 10, 2016</div>
+    </li>
+
+    
+      
+        </ul>
+        <h2>2015</h2>
+        <h3>October</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2015/10/20/cgal-47">CGAL 4.7 released</a>
+        <br><div style="color:#afaa98;font-size:12px">October 20, 2015</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>September</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2015/09/21/cgal-47-beta2">CGAL 4.7 beta2 released</a>
+        <br><div style="color:#afaa98;font-size:12px">September 21, 2015</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2015/09/21/cgal-463">CGAL 4.6.3 released</a>
+        <br><div style="color:#afaa98;font-size:12px">September 21, 2015</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>August</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2015/08/20/cgal-462">CGAL 4.6.2 released</a>
+        <br><div style="color:#afaa98;font-size:12px">August 20, 2015</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/news/2015/08/09/siggraph-2015">CGAL @ SIGGRAPH 2015</a>
+        <br><div style="color:#afaa98;font-size:12px">August  9, 2015</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2015/08/07/cgal-47-beta1">CGAL 4.7 beta1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">August  7, 2015</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>June</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2015/06/28/cgal-461">CGAL 4.6.1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">June 28, 2015</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>April</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2015/04/19/cgal-46">CGAL 4.6 released</a>
+        <br><div style="color:#afaa98;font-size:12px">April 19, 2015</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2015/04/01/a-new-cgal-homepage">A New CGAL Homepage</a>
+        <br><div style="color:#afaa98;font-size:12px">April  1, 2015</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/news/2015/04/01/SpaceX">CGAL User Portrait: SpaceX</a>
+        <br><div style="color:#afaa98;font-size:12px">April  1, 2015</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>March</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2015/03/15/cgal-wipRansac">Point Set Shape Detection</a>
+        <br><div style="color:#afaa98;font-size:12px">March 15, 2015</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>February</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2015/02/27/cgal-wipMCF">Triangulated Surface Mesh Skeletonization</a>
+        <br><div style="color:#afaa98;font-size:12px">February 27, 2015</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2015/02/20/cgal-46-beta1">CGAL 4.6 beta1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">February 20, 2015</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2015/02/15/cgal-452">CGAL 4.5.2 released</a>
+        <br><div style="color:#afaa98;font-size:12px">February 15, 2015</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>January</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2015/01/12/cgal-wipPMP">Polygon Mesh Processing</a>
+        <br><div style="color:#afaa98;font-size:12px">January 12, 2015</div>
+    </li>
+
+    
+      
+        </ul>
+        <h2>2014</h2>
+        <h3>December</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2014/12/22/cgal-451">CGAL 4.5.1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">December 22, 2014</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2014/12/14/cgal-HeaderOnly">Header-Only CGAL</a>
+        <br><div style="color:#afaa98;font-size:12px">December 14, 2014</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>October</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2014/10/10/cgal-45">CGAL 4.5 released</a>
+        <br><div style="color:#afaa98;font-size:12px">October 10, 2014</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>August</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2014/08/12/cgal-45-beta1">CGAL 4.5 beta1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">August 12, 2014</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/news/2014/08/08/siggraph-2014">CGAL @ SIGGRAPH 2014</a>
+        <br><div style="color:#afaa98;font-size:12px">August  8, 2014</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>May</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/news/2014/05/24/gsoc-2014">CGAL welcomes 7 students for the GSoC 2014</a>
+        <br><div style="color:#afaa98;font-size:12px">May 24, 2014</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>April</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2014/04/12/gsoc-2014-mentoring">CGAL to participate in the Google Summer of Code 2014</a>
+        <br><div style="color:#afaa98;font-size:12px">April 12, 2014</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2014/04/04/cgal-44">CGAL 4.4 released</a>
+        <br><div style="color:#afaa98;font-size:12px">April  4, 2014</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/news/2014/04/01/GoogleGrass">CGAL @ Google Grass</a>
+        <br><div style="color:#afaa98;font-size:12px">April  1, 2014</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>March</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2014/03/07/cgal-44-beta1">CGAL 4.4 beta1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">March  7, 2014</div>
+    </li>
+
+    
+      
+        </ul>
+        <h2>2013</h2>
+        <h3>October</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2013/10/17/cgal-43">CGAL 4.3 released</a>
+        <br><div style="color:#afaa98;font-size:12px">October 17, 2013</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>August</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2013/08/23/cgal-43-beta1">CGAL 4.3 beta1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">August 23, 2013</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>July</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2013/07/31/wipVisibility">New in CGAL: 2D Visibility</a>
+        <br><div style="color:#afaa98;font-size:12px">July 31, 2013</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2013/07/01/siggraph-2013">CGAL @ SIGGRAPH 2013</a>
+        <br><div style="color:#afaa98;font-size:12px">July  1, 2013</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>April</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2013/04/13/wipTriangulationsInNewSpaces">Triangulations and Meshes in New Spaces</a>
+        <br><div style="color:#afaa98;font-size:12px">April 13, 2013</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/news/2013/04/12/gsoc-2013">CGAL to participate in the Google Summer of Code 2013</a>
+        <br><div style="color:#afaa98;font-size:12px">April 12, 2013</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2013/04/11/cgal-42">CGAL 4.2 released</a>
+        <br><div style="color:#afaa98;font-size:12px">April 11, 2013</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>March</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2013/03/08/cgal-42-beta1">CGAL 4.2 beta1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">March  8, 2013</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2013/03/01/cgal-on-stackoverflow">CGAL on StackOverflow</a>
+        <br><div style="color:#afaa98;font-size:12px">March  1, 2013</div>
+    </li>
+
+    
+      
+        </ul>
+        <h2>2012</h2>
+        <h3>October</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2012/10/24/cgal-41">CGAL 4.1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">October 24, 2012</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>August</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2012/08/17/cgal-41-beta1">CGAL 4.1 beta1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">August 17, 2012</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2012/08/01/siggraph-2012">CGAL @ SIGGRAPH 2012</a>
+        <br><div style="color:#afaa98;font-size:12px">August  1, 2012</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>July</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2012/07/04/cgal-402">CGAL 4.0.2 released</a>
+        <br><div style="color:#afaa98;font-size:12px">July  4, 2012</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2012/07/03/cgal-401">CGAL 4.0.1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">July  3, 2012</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>June</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2012/06/01/cgal-at-cg-week">CGAL at CG Week</a>
+        <br><div style="color:#afaa98;font-size:12px">June  1, 2012</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>March</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/news/2012/03/21/gsoc-2012">CGAL to participate in the Google Summer of Code 2012</a>
+        <br><div style="color:#afaa98;font-size:12px">March 21, 2012</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2012/03/12/cgal-40">CGAL 4.0 released</a>
+        <br><div style="color:#afaa98;font-size:12px">March 12, 2012</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>February</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2012/02/13/cgal-40-beta1">CGAL 4.0 beta1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">February 13, 2012</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2012/02/01/cgal-arrangements-and-their-applications-book">Book: CGAL Arrangements and Their Applications</a>
+        <br><div style="color:#afaa98;font-size:12px">February  1, 2012</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>January</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2012/01/01/swig-bindings-released">SWIG Bindings released</a>
+        <br><div style="color:#afaa98;font-size:12px">January  1, 2012</div>
+    </li>
+
+    
+      
+        </ul>
+        <h2>2011</h2>
+        <h3>November</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2011/11/01/meshing-maestro-award">CGAL wins IMR's Meshing Maestro Award</a>
+        <br><div style="color:#afaa98;font-size:12px">November  1, 2011</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>September</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2011/09/27/cgal-39">CGAL 3.9 released</a>
+        <br><div style="color:#afaa98;font-size:12px">September 27, 2011</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>August</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2011/08/01/siggraph-2011">CGAL @ SIGGRAPH 2011</a>
+        <br><div style="color:#afaa98;font-size:12px">August  1, 2011</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>April</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2011/04/19/cgal-38">CGAL 3.8 released</a>
+        <br><div style="color:#afaa98;font-size:12px">April 19, 2011</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2011/04/01/new-homepage">New Homepage</a>
+        <br><div style="color:#afaa98;font-size:12px">April  1, 2011</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>March</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/news/2011/03/31/gsoc-2011">CGAL to participate in the Google Summer of Code 2011</a>
+        <br><div style="color:#afaa98;font-size:12px">March 31, 2011</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2011/03/14/cgal-38-beta1">CGAL 3.8 beta1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">March 14, 2011</div>
+    </li>
+
+    
+      
+        </ul>
+        <h2>2010</h2>
+        <h3>December</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2010/12/01/cgal-sponsors-socg-2011">CGAL sponsors SoCG 2011</a>
+        <br><div style="color:#afaa98;font-size:12px">December  1, 2010</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>October</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2010/10/15/cgal-37">CGAL 3.7 released</a>
+        <br><div style="color:#afaa98;font-size:12px">October 15, 2010</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>August</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2010/08/23/cgal-37-beta">CGAL 3.7 beta released</a>
+        <br><div style="color:#afaa98;font-size:12px">August 23, 2010</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>July</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2010/07/01/siggraph-2010">CGAL @ SIGGRAPH 2010</a>
+        <br><div style="color:#afaa98;font-size:12px">July  1, 2010</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>June</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2010/06/30/cgal-361">CGAL 3.6.1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">June 30, 2010</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>March</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/news/2010/03/31/gsoc-2010">CGAL to participate in the Google Summer of Code 2010</a>
+        <br><div style="color:#afaa98;font-size:12px">March 31, 2010</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2010/03/22/cgal-36">CGAL 3.6 released</a>
+        <br><div style="color:#afaa98;font-size:12px">March 22, 2010</div>
+    </li>
+
+    
+      
+        </ul>
+        <h2>2009</h2>
+        <h3>December</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2009/12/22/cgal-351">CGAL 3.5.1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">December 22, 2009</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2009/12/01/siggraph-asia">CGAL @ SIGGRAPH Asia 2009</a>
+        <br><div style="color:#afaa98;font-size:12px">December  1, 2009</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>November</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2009/11/01/cgalsigspatial">CGAL @ SIGSPATIAL</a>
+        <br><div style="color:#afaa98;font-size:12px">November  1, 2009</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>October</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2009/10/05/cgal-35">CGAL 3.5 released</a>
+        <br><div style="color:#afaa98;font-size:12px">October  5, 2009</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>September</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2009/09/01/cgalaccv">CGAL @ ACCV</a>
+        <br><div style="color:#afaa98;font-size:12px">September  1, 2009</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>August</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2009/08/01/siggraph-2009">CGAL @ SIGGRAPH 2009</a>
+        <br><div style="color:#afaa98;font-size:12px">August  1, 2009</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>July</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2009/07/30/cgal-35-beta1">CGAL 3.5 beta1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">July 30, 2009</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>March</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2009/03/01/matlab-uses-cgal-triangulations">MATLAB uses CGAL triangulations</a>
+        <br><div style="color:#afaa98;font-size:12px">March  1, 2009</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>January</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2009/01/22/cgal-34">CGAL 3.4 released</a>
+        <br><div style="color:#afaa98;font-size:12px">January 22, 2009</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2009/01/01/cgallinkedin">CGAL @ LinkedIn</a>
+        <br><div style="color:#afaa98;font-size:12px">January  1, 2009</div>
+    </li>
+
+    
+      
+        </ul>
+        <h2>2008</h2>
+        <h3>December</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2008/12/19/cgal-34-beta1">CGAL 3.4 beta1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">December 19, 2008</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>October</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2008/10/01/cgalworkshop-on-periodic-spaces">CGAL @ Workshop on Periodic Spaces</a>
+        <br><div style="color:#afaa98;font-size:12px">October  1, 2008</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2008/10/01/cgalmeshing-round-table">CGAL @ IMR</a>
+        <br><div style="color:#afaa98;font-size:12px">October  1, 2008</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>August</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2008/08/01/siggraph-2008-course">CGAL @ SIGGRAPH 2008: Course</a>
+        <br><div style="color:#afaa98;font-size:12px">August  1, 2008</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2008/08/01/siggraph-2008-booth">CGAL @ SIGGRAPH 2008: Booth</a>
+        <br><div style="color:#afaa98;font-size:12px">August  1, 2008</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>March</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2008/03/01/cgalgoogle-tech-talk-series">CGAL @ Google Tech Talk Series</a>
+        <br><div style="color:#afaa98;font-size:12px">March  1, 2008</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2008/03/01/cgal-user-workshop">CGAL User Workshop</a>
+        <br><div style="color:#afaa98;font-size:12px">March  1, 2008</div>
+    </li>
+
+    
+      
+        </ul>
+        <h2>2007</h2>
+        <h3>September</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2007/09/04/cgal-331">CGAL 3.3.1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">September  4, 2007</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>August</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2007/08/01/siggraph-2007">CGAL @ SIGGRAPH 2007</a>
+        <br><div style="color:#afaa98;font-size:12px">August  1, 2007</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2007/08/01/release-of-cgal-ipelets">Release of CGAL Ipelets</a>
+        <br><div style="color:#afaa98;font-size:12px">August  1, 2007</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>July</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2007/07/01/cgalisvd">CGAL @ ISVD</a>
+        <br><div style="color:#afaa98;font-size:12px">July  1, 2007</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>June</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2007/06/01/cgalsmi">CGAL @ SMI</a>
+        <br><div style="color:#afaa98;font-size:12px">June  1, 2007</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2007/06/01/cgalcgta">CGAL @ CGTA</a>
+        <br><div style="color:#afaa98;font-size:12px">June  1, 2007</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2007/06/01/cgal-33">CGAL 3.3 released</a>
+        <br><div style="color:#afaa98;font-size:12px">June  1, 2007</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>January</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2007/01/01/cgalliama">CGAL @ LIAMA</a>
+        <br><div style="color:#afaa98;font-size:12px">January  1, 2007</div>
+    </li>
+
+    
+      
+        </ul>
+        <h2>2006</h2>
+        <h3>August</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2006/08/01/siggraph-2006">CGAL @ SIGGRAPH 2006</a>
+        <br><div style="color:#afaa98;font-size:12px">August  1, 2006</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>July</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2006/07/01/cgal-321">CGAL 3.2.1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">July  1, 2006</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>May</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2006/05/01/cgal-32">CGAL 3.2 released</a>
+        <br><div style="color:#afaa98;font-size:12px">May  1, 2006</div>
+    </li>
+
+    
+      
+        </ul>
+        <h2>2005</h2>
+        <h3>October</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2005/10/01/project-rules">Project Rules</a>
+        <br><div style="color:#afaa98;font-size:12px">October  1, 2005</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>August</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2005/08/01/call-for-papers">Call for Papers for special issue of Computational Geometry: Theory and Applications</a>
+        <br><div style="color:#afaa98;font-size:12px">August  1, 2005</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>July</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2005/07/01/siggraph-2005">CGAL @ SIGGRAPH 2005</a>
+        <br><div style="color:#afaa98;font-size:12px">July  1, 2005</div>
+    </li>
+
+    
+      
+        </ul>
+        <h2>2004</h2>
+        <h3>December</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2004/12/01/cgal-31">CGAL 3.1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">December  1, 2004</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>March</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2004/03/01/cgalmicad">CGAL @ MICAD</a>
+        <br><div style="color:#afaa98;font-size:12px">March  1, 2004</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>February</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2004/02/01/cgal-301">CGAL 3.0.1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">February  1, 2004</div>
+    </li>
+
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2004/02/01/2nd-cgal-user-workshop">2nd CGAL User Workshop</a>
+        <br><div style="color:#afaa98;font-size:12px">February  1, 2004</div>
+    </li>
+
+    
+      
+        </ul>
+        <h2>2003</h2>
+        <h3>November</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2003/11/01/cgal-30">CGAL 3.0 released</a>
+        <br><div style="color:#afaa98;font-size:12px">November  1, 2003</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>January</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2003/01/01/geometryfactory-incorporated">GeometryFactory Incorporated</a>
+        <br><div style="color:#afaa98;font-size:12px">January  1, 2003</div>
+    </li>
+
+    
+      
+        </ul>
+        <h2>2002</h2>
+        <h3>May</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2002/05/01/cgal-24">CGAL 2.4 released</a>
+        <br><div style="color:#afaa98;font-size:12px">May  1, 2002</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>March</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2002/03/01/1st-cgal-user-workshop">1st CGAL User Workshop</a>
+        <br><div style="color:#afaa98;font-size:12px">March  1, 2002</div>
+    </li>
+
+    
+      
+        </ul>
+        <h2>2001</h2>
+        <h3>October</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2001/10/01/cgal-23">CGAL 2.3 released</a>
+        <br><div style="color:#afaa98;font-size:12px">October  1, 2001</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>June</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2001/06/01/cgalacmsm">CGAL @ ACMSM</a>
+        <br><div style="color:#afaa98;font-size:12px">June  1, 2001</div>
+    </li>
+
+    
+      
+        </ul>
+        <h2>2000</h2>
+        <h3>October</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2000/10/01/cgal-22">CGAL 2.2 released</a>
+        <br><div style="color:#afaa98;font-size:12px">October  1, 2000</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>January</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/2000/01/01/cgal-21">CGAL 2.1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">January  1, 2000</div>
+    </li>
+
+    
+      
+        </ul>
+        <h2>1999</h2>
+        <h3>August</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/1999/08/01/cgalsocg">CGAL @ SoCG'99</a>
+        <br><div style="color:#afaa98;font-size:12px">August  1, 1999</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>June</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/1999/06/01/cgal-20">CGAL 2.0 released</a>
+        <br><div style="color:#afaa98;font-size:12px">June  1, 1999</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>January</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/1999/01/01/cgal-12">CGAL 1.2 released</a>
+        <br><div style="color:#afaa98;font-size:12px">January  1, 1999</div>
+    </li>
+
+    
+      
+        </ul>
+        <h2>1998</h2>
+        <h3>July</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/1998/07/01/cgal-11">CGAL 1.1 released</a>
+        <br><div style="color:#afaa98;font-size:12px">July  1, 1998</div>
+    </li>
+
+    
+          
+        
+          </ul>
+          <h3>April</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/1998/04/01/cgal-10">CGAL 1.0 released</a>
+        <br><div style="color:#afaa98;font-size:12px">April  1, 1998</div>
+    </li>
+
+    
+      
+        </ul>
+        <h2>1997</h2>
+        <h3>June</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="https://cgal.github.io/cgal-web/1997/06/01/cgal-09">CGAL 0.9 released</a>
+        <br><div style="color:#afaa98;font-size:12px">June  1, 1997</div>
+    </li>
+
+    
+      </ul>
+    
+  
+
+
+
+
+  </div>
+</div>
+
+
+    
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="footer-copyright">
+            <div style="float: left;">
+              <a href="https://twitter.com/TheCGALProject" alt="The CGAL Project's Twitter">
+                <img src="https://cgal.github.io/cgal-web/images/icons/twitter.svg" class="center-block btn-dark-orange" alt="Twitter" height="18"></img>
+              </a>
+            </div>
+            &copy; 1995-2022 The CGAL Project. All rights reserved.
+            <div style="float: right;">
+              <a href="https://cgal.geometryfactory.com/CGAL/Members/wiki/Main_Page" alt="Password protected access to the Developer Wiki">
+                <i class="glyphicon glyphicon-lock"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascripts -->
+    <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery-1.9.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery-1.9.1.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.fitvids.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.sequence-min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.bxslider.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/template.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/bootstrap-hover-dropdown-min.js"></script>
+  </body>
+</html>
+

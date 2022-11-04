@@ -1,0 +1,471 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>CGAL Open Source Project Rules and Procedures</title>
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="CGAL Editorial Board">
+
+    <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/icomoon-social.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+
+    <!--[if lte IE 8]>
+	<link rel="stylesheet" href="css/leaflet.ie.css" />
+	<![endif]-->
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/main.css">
+
+    <!-- atom & rss feed -->
+    <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="https://cgal.github.io/cgal-web/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+
+    <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    
+
+    <!-- Navigation & Logo-->
+    <div class="mainmenu-wrapper">
+    <div class="container">
+    <nav id="mainmenu" class="mainmenu" role="navigation">
+    <ul>
+    <li class="logo-wrapper hidden-xs hidden-sm hidden-md">
+    <a href="https://cgal.github.io/cgal-web/index.html">
+    <img src="https://cgal.github.io/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
+    </a>
+    </li>
+
+    <li class="hidden-lg">
+    <a href="https://cgal.github.io/cgal-web/index.html">
+    <img src="https://cgal.github.io/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
+    </a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/project.html">Project</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/download.html">Download</a>
+    </li>
+
+    <li class="dropdown" style="transition-duration: all 0s ease; transition-delay: all 0s ease;">
+    <a href="#" class="dropdown-toggle" data-hover="dropdown">Packages <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometryProcessing" target="_blank">Geometry Processing</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
+        </ul>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/documentation.html">Documentation</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/news.html">News</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/media.html">Media</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/support.html">Support</a>
+    </li>
+
+    </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="section section-breadcrumbs">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>CGAL Open Source Project Rules and Procedures </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+<div class="section">
+  <div class="container">
+    
+
+
+
+<ul>
+  <li><a href="#preamble">Preamble</a></li>
+  <li><a href="#groups">Groups</a></li>
+  <li><a href="#developers">Developers</a></li>
+  <li><a href="#editors">Editorial Board</a></li>
+  <li><a href="#boardmanager">Board Manager</a>
+  <li><a href="#reviewmanager">Review Manager</a></li>
+  <li><a href="#releasemanager">Release Manager</a></li>
+  <li><a href="#voting">Decision Procedures</a></li>
+  <li><a href="#change">Change of Rules and Procedures</a></li>
+</ul>
+
+<p><hr><p>
+<!-- -->
+<h3 id="preamble">Preamble</h3>
+
+<p>With this document, the CGAL Open Source Project sets forth its own
+rules and procedures. The rules and procedures define the different
+groups of persons involved in CGAL, how to become one of them, and how
+decisions are made. This document regulates how important and final
+decisions are made by the editorial board. It does not cover the less
+formal way how many decisions are actually made among developers, and
+it is not the intention to regulate those. There is no precise
+definition, but some examples of decisions that should be handled by
+the editorial board are given throughout this document.</p>
+
+<p><hr><p>
+<!-- -->
+<h3 id="groups">Groups</h3>
+
+<p>The CGAL Open Source Project consists of four groups of people
+based on technical criteria and relation to CGAL.</p>
+
+<ul>
+  <li><b>Users</b> &nbsp; are using CGAL and, for example, are
+    active on the <tt>cgal-discuss</tt> user mailing list
+    including bug reports.</li>
+  <li><b>Contributors</b>  &nbsp; are users of CGAL that contribute
+    to CGAL with patches to fix bugs or to improve CGAL. Contributors
+    shall be listed in acknowledgements.</li>
+  <li><b>Developers</b>  &nbsp; are working on CGAL packages, have
+    access to the member resources, and write access to
+    the CGAL SCM server for their packages.</li>
+  <li><b>Editors</b> &nbsp; are experienced developers that take
+    long term responsibility for the project. See the corresponding
+    <a href="#editors">Editorial Board Section</a> for more details.</li>
+</ul>
+
+<p>
+(Financing the people, the project, or other types of resources is not
+discussed in this document, but see <a href="partners.html">here</a>, and the
+current list of people can be found <a href="people.html">here</a>.)
+</p>
+
+<p><hr><p>
+<!-- -->
+<h3 id="developers">Developers</h3>
+
+<p>A <em>developer</em> is a person that develops at least one CGAL
+package. He/she has access to the member resources of the CGAL
+project. He/she has write access on the CGAL SCM server for
+his/her package(s).</p>
+
+<p>A candidate becomes a developer after a proposal (short description
+of the project the candidate developer is working on) from an
+editorial board member and no objection by any editor within fifteen
+days. If an objection is raised, the matter is to be discussed in the
+editorial board and the decision is made by an anonymous vote; <a
+href="#absolute">absolute majority</a> is required for the candidate
+to become a developer.</p>
+
+<p>A person seizes to be a developer after either his/her personal
+request or upon proposal of an editorial board member and a subsequent
+anonymous vote with an <a href="#absolute">absolute majority</a>.</p>
+
+<p><hr><p>
+<!-- -->
+<h3 id="editors">Editorial Board</h3>
+
+<h4>Responsibilities</h4>
+
+<ul>
+  <li>Review submitted packages (see the <a href="./review_process_rules.html">Submission and Review Rules</a>).</li>
+  <li>Take long term responsibilities for the CGAL project.</li>
+  <li>Represent the project towards its <a href="partners.html">partners</a>, external organizations and other software projects.</li>
+  <li>Suggest medium or long term directions for the CGAL project.</li>
+  <li>Promote CGAL.</li>
+  <li>Discuss any issue regarding the interests of the project.</li>
+  <li>Attract new contributors.</li>
+  <li>Act as a Board Manager when called upon.</li>
+  <li>Vote on proposals, which is compulsory.</li>
+  <li>Communicate to the rest of the board their availability,
+      especially if absent for more than a week.</li>
+</ul>
+
+<h4>Becoming an Editor</h4>
+
+<p>A candidate is considered for becoming an editor upon recommendation
+by an existing editor. The criteria for selection are:</p>
+
+<ul>
+  <li>Candidates have successfully developed or
+      maintained a CGAL package for at least a year.</li>
+  <li>Candidates have been active participants in CGAL
+      developer meetings.</li>
+  <li>Candidates have shown interest in at least two areas
+      within CGAL.</li>
+  <li>Candidates have contributed to the service tasks in CGAL,
+      such as: development of tools, maintenance, testing, porting
+      to other platforms.</li>
+  <li>Candidates have an appropriate educational/technical
+      qualification, such as an academic degree at the level of an M.S.
+      or equivalent.</li>
+</ul>
+
+<p>In addition to above criteria, the editorial board considers also
+   the following criteria:</p>
+
+<ul>
+  <li>The CGAL areas covered by the members of the existing
+      editorial board.</li>
+  <li>The size of the editorial board.</li>
+  <li>The representation of the developing sites/groups in the
+      editorial board.</li>
+</ul>
+
+<p>The criteria described above are guidelines. The editorial board
+discusses the candidacy and makes the final decision by an anonymous
+vote; a <a href="#twothirds">two-thirds majority</a> is needed for a
+candidate to become an editor</p>
+
+<h4>Leaving the Editorial Board</h4>
+
+<p>An editor leaves the editorial board after either his/her personal
+request or upon proposal of an editorial board member and a subsequent
+anonymous vote with a <a href="#twothirds">two-thirds majority</a>.
+Such a proposal may for example be motivated by the repeated failure of an
+editor to fill his duties.</p>
+
+<h4>Dedicated Positions in the Editorial Board</h4>
+
+<p>Editors might hold special task-related positions in the editorial
+board, such as:</p>
+
+<ul>
+  <li><em>Board Manager</em>, detailed <a href="#boardmanager">below</a></li>
+  <li><em>Review Manager</em>, detailed <a href="#reviewmanager">below</a></li>
+  <li><em>Release Manager</em>, detailed <a href="#releasemanager">below</a></li>
+  <li><em>Editor(s)</em> for special issues of journals etc.</li>
+  <li><em>Public relations</em> communication with
+      the users, up-to-date representation/poster for CGAL,
+      CGAL newsletter, etc.</li>
+  <li><em>Legal issues</em> licenses, compatibility between
+      licenses, contributions by multiple sites, etc.</li>
+  <li><em>Answer requests</em> from <tt>cgal-info</tt>.</li>
+</ul>
+
+<p>Appointment for the position of <a href="#boardmanager">board
+manager</a> is done for a period of six months following a round-robin
+process.</p>
+
+<p>Appointments for the positions of <a href="#reviewmanager">review
+manager</a> and <a href="#releasemanager">release manager</a> are done
+for a period of 2 years.  The <a href="#boardmanager">board
+manager</a> organizes elections for these two
+positions. In a two weeks period new candidates announce their
+candidacy and an editor for organizing the election and collecting the
+votes is determined.</p>
+
+<p>A decision for these positions requires <a href="#absolute">absolute
+majority</a>. If <a href="#absolute">absolute majority</a> was not
+reached in the first election round and we have more than one
+candidate, more election rounds are held. If we have more than two
+candidates, all candidates with less votes than the two highest
+ranking candidates are excluded and we repeat the first election
+round.  If we have two candidates, a decision in a
+second election round requires only <a href="#relative">relative
+majority</a>. This round can be skipped if the candidate with less
+votes in round one accepts this result on the basis of <a
+href="#relative">relative majority</a>.</p>
+
+<p><hr><p>
+<!-- -->
+<h3 id="boardmanager">Board Manager</h3>
+
+<h4>Responsibilities</h4>
+
+<ul>
+	<li>Acting towards reaching decisions.
+	<li>Organizing elections and votes: calling for votes,
+            appointing an editor for collecting anonymous votes, and
+            giving a time frame.
+	<li>Appointing representatives for arising tasks.
+	<li>Finding a replacement board manager when absent.
+        <li>Sending acknowledgements for messages sent to the editorial board
+            mailing list by external people.
+</ul>
+
+<p><hr><p>
+<!-- -->
+<h3 id="reviewmanager">Review Manager</h3>
+
+<h4>Responsibilities</h4>
+
+<ul>
+	<li>Supervizing the reviewing process.
+	<li>Acknowledging the reception of submissions towards the authors.
+	<li>Finding primary reviewers, assigning time periods for reviews.
+	<li>Making sure the reviews are done in a timely fashion, and
+            propose counter action otherwise.
+	<li>Maintaining a summary of the current status of the reviews
+	(web page, wiki or tracker...).
+	<li>Making sure that the outcome of the reviews is properly
+	communicated.
+</ul>
+
+<p><hr><p>
+<!-- -->
+<h3 id="releasemanager">Release Manager</h3>
+
+<h4>Responsibilities</h4>
+
+<ul>
+	<li>Supervizing the releasing process.
+	<li>Proposing release schedules.
+	<li>Making sure that releases are issued in a timely fashion.
+	<li>Communicating regularly on the developers mailing-list the
+            upcoming deadlines of the release schedule, and sending
+            status updates for the upcoming releases.
+	<li>Discussing an integration path and schedule with
+            developers of new packages once they have been accepted by
+            the reviewing process.
+	<li>Watching for ongoing developments, e.g. through the
+	    test-suites, and communicating with their developers, in
+	    order to avoid missing the deadlines.
+	<li>Ensuring that deadlines are met, and propose actions to
+	reach this goal.
+</ul>
+
+<p><hr><p>
+<!-- -->
+<h3 id="voting">Decision Procedures</h3>
+
+<p>Votes for a decision are initiated with a proposal by an
+editor. Decisions that are not specifically covered elsewhere in this
+document need an <a href="#absolute">absolute majority</a>.</p>
+
+<p>Votes on personnel decisions are anonymous. An editor is appointed
+to collect such votes (and systematically confirms them to avoid mails
+getting lost) and announce the result, see also the role of
+the <a href="#boardmanager">Board Manager</a>
+in these matters. Proposals specify a deadline for voting, usually two
+weeks and respecting usual vacation and holiday times and editors that
+announced their absence. Votes that are not casted within the time
+frame are counted as abstention. The editor appointed to collect
+anonymous votes will also provide the names of the editors who did not
+vote.</p>
+
+<p>The voting choices in a proposals need to be phrased in a manner
+that abstention has no influence, in particular, abstention does not
+support a change of an existing status.</p>
+
+<p>Let <i>N</i> be the cardinality of the current editorial
+board. We distinguish the following definitions of majorities:</p>
+
+<ul>
+  <li id="relative">
+      <b>Relative majority:</b> &nbsp; the number of votes for a
+      decision is strictly larger than the number of votes for any
+      other choice.</li>
+  <li id="absolute">
+      <b>Absolute majority:</b> &nbsp; the number of votes for a
+      decision is strictly larger than <i>N/2</i>.</li>
+  <li id="twothirds">
+      <b>Two-thirds majority:</b> &nbsp; the number of votes for a
+      decision is larger or equal than <i>2*N/3</i>.</li>
+</ul>
+
+<p><hr><p>
+<!-- -->
+<h3 id="change">Change of Rules and Procedures</h3>
+
+<p>A <a href="#twothirds">two-thirds majority</a> is needed to change
+any part of this document.</p>
+
+<hr>
+<div style="font-style: italic;">
+<h3>Note</h3>
+<p>
+This document was started at the SoCG meeting 2004 in New York and
+refined subsequently under the guiding principle of not to
+over-specify our procedures but rather to refine them when the need
+arises. After a period of internal evaluation, including an election
+for a new editor and an election for a new chair, the editors approved
+this document in an unanimous vote on October 28,
+2005.
+<br>On March 5, 2009, the roles of Editor-in-Chief and Release Manager
+were created after an unanimous vote.
+<br> During the 30th Developer Meeting, on June 4, 2010, in Sophia
+Antipolis, the Editorial Board decided by two-thirds majority to
+remodel the position of Chair, and to rename the positions of Chair
+and Editor-in-chief to Board Manager and Review Manager, respectively.
+</p>
+
+</div>
+
+
+  </div>
+</div>
+
+
+    
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="footer-copyright">
+            <div style="float: left;">
+              <a href="https://twitter.com/TheCGALProject" alt="The CGAL Project's Twitter">
+                <img src="https://cgal.github.io/cgal-web/images/icons/twitter.svg" class="center-block btn-dark-orange" alt="Twitter" height="18"></img>
+              </a>
+            </div>
+            &copy; 1995-2022 The CGAL Project. All rights reserved.
+            <div style="float: right;">
+              <a href="https://cgal.geometryfactory.com/CGAL/Members/wiki/Main_Page" alt="Password protected access to the Developer Wiki">
+                <i class="glyphicon glyphicon-lock"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascripts -->
+    <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery-1.9.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery-1.9.1.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.fitvids.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.sequence-min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.bxslider.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/template.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/bootstrap-hover-dropdown-min.js"></script>
+  </body>
+</html>
+

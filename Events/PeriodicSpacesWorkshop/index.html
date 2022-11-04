@@ -1,0 +1,450 @@
+<!DOCTYPE·HTML·PUBLIC·"-//W3C//DTD·HTML·4.01·Transitional//EN"·"http://www.w3.org/TR/html4/loose.dtd">
+<html·lang="en-US">
+<HEAD>
+<META·HTTP-EQUIV="Content-Type"·CONTENT="text/html;·charset=iso-8859-1">
+<LINK·TITLE="CGAL·style"·REL=stylesheet·TYPE="text/css"·HREF="http://www.cgal.org/cgal.css">
+<TITLE>CGAL·Prospective·Workshop·on·Geometric·Computing·in·Periodic·Spaces</TITLE>
+</HEAD>
+
+<!-- --- -->
+<!-- layout: page -->
+<!-- title: Prospective Workshop on Geometric Computing in Periodic Spaces  -->
+<!-- header: Prospective Workshop on Geometric Computing in Periodic Spaces -->
+<!-- group: navigation -->
+<!-- --- -->
+<!-- {% include JB/setup %} -->
+
+
+<BR>
+
+<FONT SIZE="+3"><I><B>CGAL Prospective Workshop on Geometric Computing in Periodic Spaces</B></I></FONT>
+<BR>
+<BR>
+
+<FONT SIZE="+2"><I><B>INRIA Sophia Antipolis - Méditerranée, 20 October 2008</B></I></FONT>
+<BR>
+<I><B> Room Euler violet</B></I>
+<BR>
+<P>
+Traditionally, the scope of computational geometry research has been
+limited to manipulation of geometric elements in the Euclidean space
+R<sup>d</sup>.
+</P>
+
+<P>
+This one day event will bring together researchers from various
+application areas working on simulations, having in common that the
+domains of their simulation are often periodic spaces. The periodicity
+avoids special treatment at the domain boundaries.  Additionally,
+we will present the most recent advances in CGAL concerning
+3D Delaunay triangulations and Voronoi diagrams in periodic spaces.
+The workshop is a <em>prospective</em> workshop, as the periodic triangulations 
+are work in progress, and hence not yet integrated in the CGAL distribution.
+However, they are already robust and fast enough to be exposed and tested by
+potential real world users.
+</P>
+
+<p>The workshop has two main goals: To share experiences and to identify
+common algorithmic needs as far as the the geometric foundation is
+concerned, that is by abstracting from the fact that the domain models
+the universe, a composite material in a nuclear reactor, or huge
+molecules floating in water.
+</p>
+
+
+
+<h2>Schedule</h2>
+
+<p>
+<TABLE>
+<col width="10%"/>
+<col width="56%"/>
+<col width="34%"/>
+<TR>
+<TD VALIGN=TOP>
+<p><B>10:00 - 10:15</B></p>
+</TD>
+<TD VALIGN=TOP>
+<p><B>Welcome</B></p>
+</TD>
+</TR>
+
+
+<TR>
+<TD VALIGN=TOP>
+<p><B>10:15 - 11:45</B>
+</TD>
+<TD VALIGN=TOP>
+<p><b>Presentations </b>
+</TD>
+</TR>
+
+
+<tr>
+<td valign=top>
+<p>10:15 - 10:45</B>
+</TD>
+<TD VALIGN=TOP>
+<p><em><b>CGAL 3D Triangulations in Periodic Spaces</b></em><br>
+<i>Manuel Caroli</i> and Monique Teillaud, INRIA<br>
+<a href="talk_manuel_caroli.pdf">slides</a>
+<br><br>
+
+In this talk we present the implementation of periodic 3D Delaunay
+triangulations in CGAL, the Computational Geometry Algorithms Library.</p>
+<p>
+Naively extending the Delaunay triangulation algorithm to periodic
+triangulations would require to compute a triangulation of infinitely
+many points. However, exploiting the periodicity it is possible to
+compute a triangulation using only a finite number of periodic copies
+of each input point. We describe how we handle this issue using even
+only one periodic copy of each point, whenever this is possible. We
+formulate a condition on the point set that is efficiently verified by
+our implementation. Additionally we provide some heuristics for
+speed-up.</p>
+
+<p>
+To the best of our knowledge there is no implementation available using
+this approach. Unlike other available implementations we came to know
+about we guarantee to correctly/exactly compute the periodic Delaunay
+triangulation for a point set without having the need of any special
+boundary treatment.</p>
+
+<p>
+For topological reasons the interface requires some changes, however we
+maintain a maximum part of the interface of the CGAL 3D Triangulation
+package.</p>
+
+<p>A video about this software is available 
+<a href="http://www.inria.fr/sophia/members/Manuel.Caroli/Video-SoCG08.html">here</a>
+(the image on the right illustrates the 2D case).
+<!-- <br> It was presented at the  -->
+<!-- <a href="http://www.computational-geometry.org/SoCG-videos/socg08video/">17th Video Review of Computational Geometry</a>,  -->
+<!-- part of the <a href="http://www.socg.org/2008/">24th Annual Symposium on Computational Geometry</a>. -->
+<br><a href="http://www.inria.fr/sophia/members/Monique.Teillaud/other-geometries">To know more</a>
+</p>
+</td>
+<td>
+<center>
+<img width=50% src="./periodic_triangulation_large.png">
+</center>
+</td>
+</tr>
+
+<TR>
+<TD VALIGN=TOP>
+<p>10:45 - 11:15</B>
+</TD>
+<TD VALIGN=TOP>
+<p><em><b>Periodicity and the Design of Bone Scaffolds</b></em><br> 
+<i>Maarten Moesen</i>, Jan Schrooten, and Stepan V. Lomov, Department of Metallurgy and Materials Engineering (MTM), K.U. Leuven <br><br>
+
+Bone scaffolds are porous materials used for replacing damaged bone in
+therapies for healing bone defects up to a few centimeters. To enhance
+bone regeneration, bone scaffolds should provide various biological,
+transport, and mechanical functions. The general aim of this work is
+to support these functions by controlling biomechanically related
+material properties throughout a bone scaffold via an appropriate
+design of its structure and geometry.
+</p>
+
+<p>
+One design strategy involves constructing a regular bone scaffold
+based on a parametric unit cell. Because such a unit cell provides a
+complete geometrical description of the bone scaffold while being
+relatively small, it allows cost-effective determination of local and
+apparent material properties using numerical simulations, on the
+condition that appropriate boundary conditions are applied. In this
+talk, the suitability of periodic boundary conditions will be
+discussed, together with the practical requirements that they impose
+on mesh generation. In addition, open questions will be raised
+concerning the characterization of topological properties based on
+periodic unit cells.
+</p>
+</TD>
+<td>
+<center>
+<img width=50% src="./pma_circ_3d.png">
+</center>
+</td>
+</Tr>
+
+<TR>
+<TD VALIGN=TOP>
+<p>11:15 - 11:45</B>
+</TD>
+<TD VALIGN=TOP>
+<p><em><b>Multi-scale mechanics of granular materials</b></em><br> 
+<i>O. Duran</i>, N.P. Kruyt, K. Bertoldi and S. Luding, 
+Department of Mechanical Engineering, University of Twente  <br><br>
+
+Granular materials consist of nearly-rigid, interacting particles and
+voids. The objective of multi-scale mechanics of granular materials is
+to study the relation between particle properties at the micro-scale
+and continuum-mechanical properties at the macro-scale, such as the
+average stress and strain tensors.</p>
+
+<p>
+To obtain detailed information at the micro-scale, Discrete Element
+Method simulations are frequently used, in which the motion of a large
+set of particles is determined by numerically integrating the
+equations of motion. To suppress wall effects and to maintain
+spatially homogeneous deformation, such simulations are often
+performed in three-dimensional periodic space.</p>
+
+<p>
+To study characteristics and statistics of the deformation at the
+micro-scale, Delaunay tessellations are used. In addition, adaptive
+multi-phase computational fluid dynamics methods, with hierarchical
+data-structures, are being developed that depend on fast Delaunay
+tessellations.
+</p>
+</TD>
+<td>
+<center>
+<img width=50% src="./dcells_large.png">
+</center>
+</td>
+</TR>
+
+
+<TR>
+<TD VALIGN=TOP>
+<p><B>12:00 - 13:30</B>
+</TD>
+<TD VALIGN=TOP>
+<p>Lunch
+</TD>
+</TR>
+
+
+<TR>
+<TD VALIGN=TOP>
+<p><B>13:30 - 14:30</B>
+</TD>
+<TD VALIGN=TOP>
+<p><B>Presentations </B>
+</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>
+<p>13:30 - 14:00</B>
+</TD>
+<TD VALIGN=TOP>
+<p><em><b>Periodic Computer Representations of the Cosmic Structure</b></em><br>
+<i>Rien van de Weijgaert</i>, Kapteyn Institute, University of Groningen 
+<br><a href="http://www.astro.rug.nl/~weygaert/tim1publication/cgal/cgal.universe.simulate.ppt">slides</a>(ppt, 80 Mb)<br><br>
+
+    Cosmology is the study of the structure and evolution of the Universe 
+    and its contents. One of the most important issues is the formation 
+    of structure and the emergence of cosmic objects out of the almost 
+    featureless pristine Universe some 13.6 Gyrs ago. All evidence points 
+    towards a gravitational amplification of initial Gaussian density and 
+    velocity ripples with tiny amplitudes. An important consideration 
+    is that of the cosmological principle: there are no preferred or 
+    central positions in the Universe, each sizeable volume of the  
+    Universe is more or less (statistically) representative. </p>
+
+<p>    When simulating the evolution of cosmic structure we therefore need 
+    to guarantee that the simulation volume is representative. This is 
+    most straightforwardly accomplished by specifying volumes with 
+    periodic boundary conditions. Effectively it means that the simulation 
+    ignores the influence of primordial density and velocity fluctuations 
+    with wavenumbers smaller than the fundamental wavelength of the simulation 
+    box. </p>
+
+<p>    One of the main instruments for studying the formation of structure
+    are N-body simulations, in which the cosmic mass distribution is 
+    reflected in a representative spatial distribution of discrete particles.  
+    I will describe how Delaunay and Voronoi tessellations are powerful 
+    instruments for analyzing and following the multiscale and strongly 
+    patterned nature of spatial structure on Megaparsec scales. 
+<br>(image processed from images made my Miguel Aragon-Calvo)
+</p>
+</TD>
+<td>
+<center>
+<img width=50% src="./cosmic.spine.delaunay.fig1b.jpg">
+</center>
+</td>
+</TR>
+
+
+<TR>
+<TD VALIGN=TOP>
+<p>14:00 - 14:30</B>
+</TD>
+<TD VALIGN=TOP>
+<p><em><b>Radiative Transfer Using Unstructured Grids</b></em><br> 
+Cornelis Dullemond, Max-Planck-Institut for Astronomy, Heidelberg<br>
+<a href="talk_cornelis_dullemond.ppt">slides</a> <br><br>
+
+Arguably, two of the most fundamental problems in astrophysics are the
+motion and flow of gas ("hydrodynamics") and the propagation of
+radiation through these structures of gas ("radiative transfer").
+Since in problems of cosmology, star formation, galaxy formation etc,
+the flows of interstellar gas are very chaotic and clumpy, theoretical
+modelers have since long used "adaptive mesh refinement" (AMR)
+techniques to assure sufficient resolution at places where this is
+necessary while reducing the spatial resolution there where little gas
+is present. </p>
+
+<p>However, it has become clear that traditional hierarchical
+AMR techniques have many problems, and slowly but surely the
+astrophysical community is getting used to the idea of using fully
+unstructured grids to model complex astrophysical problems. Since
+space is effectively infinite, to limit the computational domain to
+finite size for hydrodynamic calculations, periodic boundary
+conditions are often invoked. While they are not necessarily
+realistic, they appear to be much less troubling than fixed wall or
+outflow boundary conditions. To perform the corresponding radiative
+transfer for such simulations requires that also the radiative
+transfer model can make use of such boundary conditions. In particular
+for cosmological simulations this is of particular use.</p>
+
+<p> I will mainly
+present how radiative transfer is done or will be done on Delaunay
+and/or Voronoi grids, and I will then briefly outline the pros and
+cons of using periodic boundary conditions for this problem.
+</p>
+</TD>
+
+<td>
+<center>
+<!-- <img width="100%" src="./2008/detail_visual_hull_4.png"><br> -->
+  <img width="60%" src="./galaxies.png"><br>
+</center>
+</td>
+</TR>
+
+
+<!-- <TR> -->
+<!-- <TD VALIGN=TOP> -->
+<!-- <p>14:00 - 14:30</B> -->
+<!-- </TD> -->
+<!-- <TD VALIGN=TOP> -->
+<!-- <p><em><b>Fluid Dynamics Simulation</b></em><br>  -->
+<!-- N.N.<br><br> -->
+
+<!-- tba. -->
+
+<!-- </p> -->
+<!-- </TD> -->
+<!-- <td> -->
+<!-- <center><img src="./2008/detail_table_bellcurves.png"><br> -->
+<!-- </center> -->
+
+<!-- </td> -->
+<!-- </TR> -->
+
+
+
+<TR>
+<TD VALIGN=TOP>
+<p><B>14:30 - 15:00</B>
+</TD>
+<TD VALIGN=TOP>
+<p>Coffee Break
+</TD>
+</TR>
+
+
+<TR>
+<TD VALIGN=TOP>
+<p><B>15:00 - 16:45</B>
+</TD>
+<TD VALIGN=TOP>
+<p><B>Discussion </B><br><br>
+
+The format of this session is open, in the sense that it allows to build
+working groups in order to learn from each other, identify common problems, etc.
+</p>
+</td>
+</tr>
+
+
+<TR>
+<TD VALIGN=TOP>
+<p><B>16:45 - 17:00</B>
+</TD>
+<TD VALIGN=TOP>
+<p><B>Closing</B><br><br>
+</td>
+</tr>
+
+
+
+</table>
+
+
+<H2>Registration and Accommodation</H2>
+
+<p>The number of participants is limited. You can register for the
+workshop by sending a mail to
+the <a href="mailto:andreas.fabri@geometryfactory.com,monique.teillaud@sophia.inria.fr?subject=Registration for Periodic Spaces Workshop">organizers</a>.  
+There is no registration fee. Participants have to pay for their lunch
+at Inria.
+</p>
+
+<h3>Suggested Hotels</h3>
+
+<p>The following hotels in Antibes are located at walking distance
+from both a bus station to INRIA, and the scenic center of Antibes, as
+well as the sea. We refer to the hotels web sites for more details.
+
+<p>
+<a href="http://www.chrys-hotel.com/">Chrys Hotel</a>***, 
+<a href="http://www.lecollier-hotelrestaurant.com/hotel_tarifs.html">Le Collier</a>**, 
+<a href="http://www.hoteletoile.com/">Hôtel de l'Étoile</a>**, 
+<a href="http://www.hotel-josse.com/">Hôtel Josse</a>***. 
+The latter is located in Juan les Pins, 
+in front of the sea, but further away from bus stations.
+
+
+<h3>How to get to INRIA Sophia Antipolis M&eacute;diterran&eacute;e 
+(<a href="http://www-sop.inria.fr/presentation/data/plan_sophia.jpg">map</a>)</h3>
+
+<p>From Nice and/or the airport take the bus 
+<a href="http://www.nice.aeroport.fr/acces_stationnement/bus/recherche.asp?dest_id=%7B15E2C8B3-FF11-4B28-886C-8E75F2AAF9BE%7D">Line230</a> 
+which provides regular shuttles between Nice, the airport
+Nice-C&ocirc;te d'Azur and Sophia Antipolis (40 mn). Ask the driver
+for the <em>INRIA</em> bus stop.</p>
+
+<p>From Antibes take the <a href="http://www.envibus.fr/">Envibus</a>
+(the name of the bus stop is <em>Gare Sncf - Passerelle</em>). 
+On <a href="http://www.envibus.fr/ligne_detail.asp?id=14&id_commune=1#">Line 11</a> 
+get off at the bus stop <em>INRIA</em>. 
+On <a href="http://www.envibus.fr/ligne_detail.asp?id=1&id_commune=1#">Line 1</a>
+get off at the bus stop <em>IUT</em>. 
+On <a href="http://www.envibus.fr/ligne_detail.asp?id=79&id_commune=1">Line 100</a> 
+(the ride is free) get off at bus stop <em>Templiers</em>, then walk a little bit.</p>
+
+
+
+<h2>Organization</h2>
+
+
+<p>This workshop is organized by 
+<a href="http://www.inria.fr/sophia/members/Monique.Teillaud/">Monique Teillaud</a>, INRIA, 
+<a href="http://www.inria.fr/sophia/members/Manuel.Caroli/">Manuel Caroli</a>, INRIA, 
+and <a href="http://www.geometryfactory.com/">Andreas Fabri</a>, GeometryFactory.
+The workshop is partially supported by the French Research Agency project 
+<a href="http://www-sop.inria.fr/geometrica/collaborations/triangles/">Triangles</a>.
+</p>
+
+
+
+<center>
+<a href="http://www-sop.inria.fr"><img src="http://www-sop.inria.fr/homepage/images/serveur_nat.gif" height="80"></a> 
+<a href="http://www.geometryfactory.com"><img src="./GeometryFactory.png" height="80"></a> 
+<a href="http://www.cgal.org"><img src="http://www-sop.inria.fr/geometrica/images/software/cgal.jpg" height="80"></a> 
+<a href="http://www-sop.inria.fr/geometrica/collaborations/triangles/"><img src="http://www-sop.inria.fr/geometrica/collaborations/triangles/images/logo.jpg" height="80"></a>
+</center>
+
+
+
+<HR>
+
+
+

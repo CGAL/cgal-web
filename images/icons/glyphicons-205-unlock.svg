@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   x="0px"
+   y="0px"
+   width="21"
+   height="26"
+   viewBox="0 0 21 26"
+   xml:space="preserve"
+   id="svg2"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="glyphicons-205-unlock.svg"><metadata
+   id="metadata13"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs11" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="640"
+   inkscape:window-height="480"
+   id="namedview9"
+   showgrid="false"
+   fit-margin-top="0"
+   fit-margin-left="0"
+   fit-margin-right="0"
+   fit-margin-bottom="0"
+   inkscape:zoom="4.9166667"
+   inkscape:cx="11"
+   inkscape:cy="12"
+   inkscape:window-x="2287"
+   inkscape:window-y="126"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="svg2" />
+<g
+   id="glyphicons"
+   transform="translate(-13,-10)">
+	<g
+   id="unlock">
+		<path
+   d="M 33.338,21 H 32 V 15.998 C 32,12.915 29.107,10 26.053,10 H 20.948 C 17.893,10 15,12.915 15,15.998 V 17 h 4 V 15.998 C 19,14.598 19.628,14 21,14 h 5 c 1.372,0 2,0.598 2,1.998 V 21 H 13.662 C 13.297,21 13,21.263 13,21.587 V 35.413 C 13,35.737 13.297,36 13.662,36 H 33.338 C 33.703,36 34,35.737 34,35.413 V 21.587 C 34,21.263 33.703,21 33.338,21 z M 24.5,28.431 V 31 c 0,0.275 -0.225,0.5 -0.5,0.5 h -1 c -0.275,0 -0.5,-0.225 -0.5,-0.5 v -2.569 c -0.596,-0.347 -1,-0.984 -1,-1.723 0,-1.104 0.895,-1.999 2,-1.999 1.104,0 2,0.895 2,1.999 0,0.738 -0.404,1.376 -1,1.723 z"
+   id="path6"
+   inkscape:connector-curvature="0" />
+	</g>
+</g>
+<g
+   id="Layer_2"
+   transform="translate(-13,-10)">
+</g>
+</svg>

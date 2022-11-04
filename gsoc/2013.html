@@ -1,0 +1,533 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>CGAL Projects for Google Summer of Code 2013</title>
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="CGAL Editorial Board">
+
+    <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/icomoon-social.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+
+    <!--[if lte IE 8]>
+	<link rel="stylesheet" href="css/leaflet.ie.css" />
+	<![endif]-->
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/main.css">
+
+    <!-- atom & rss feed -->
+    <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="https://cgal.github.io/cgal-web/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+
+    <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    
+
+    <!-- Navigation & Logo-->
+    <div class="mainmenu-wrapper">
+    <div class="container">
+    <nav id="mainmenu" class="mainmenu" role="navigation">
+    <ul>
+    <li class="logo-wrapper hidden-xs hidden-sm hidden-md">
+    <a href="https://cgal.github.io/cgal-web/index.html">
+    <img src="https://cgal.github.io/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
+    </a>
+    </li>
+
+    <li class="hidden-lg">
+    <a href="https://cgal.github.io/cgal-web/index.html">
+    <img src="https://cgal.github.io/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
+    </a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/project.html">Project</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/download.html">Download</a>
+    </li>
+
+    <li class="dropdown" style="transition-duration: all 0s ease; transition-delay: all 0s ease;">
+    <a href="#" class="dropdown-toggle" data-hover="dropdown">Packages <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometryProcessing" target="_blank">Geometry Processing</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
+        </ul>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/documentation.html">Documentation</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/news.html">News</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/media.html">Media</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/support.html">Support</a>
+    </li>
+
+    </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="section section-breadcrumbs">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>CGAL Projects for Google Summer of Code 2013 </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+<div class="section">
+  <div class="container">
+    
+
+
+<script type="text/javascript">
+function mailto_link(em1,em2,em3,name,subject)
+{
+  document.write('<a href="mailto:'+em1+'@'+em2+'.'+em3+'?Subject=[GSOC13] '+subject+'">'+name+'<\/a>');
+}
+</script>
+
+<p>
+As in 2010, 2011 and 2012, the CGAL Project is a mentoring organization of the  <a href="http://code.google.com/soc/">Google Summer of Code</a>.
+On this page we present some project ideas as well the <a href="#information">information applicants have to provide us</a>.
+GSoC applicants are welcome to propose other ideas and check if a mentor is interested in supervising it.
+</p>
+
+<br>
+<p>Previous project ideas of the CGAL project for the <b>Google Summer of Code</b> can be found on the following pages:
+<a href="2010.html">2010</a>, <a href="2011.html">2011</a>,
+<a href="2012.html">2012</a>.</p>
+
+<p><b>Before sending an email to anybody, please carefully read <a href="#information"> this section</a>.</b></p>
+
+
+<h3>Summary:</h3>
+
+<p>
+First section to read: <a href="#information">Information Candidates Should Supply</a>
+</p>
+
+<ol>
+  <li> <a href="#conceptcheck">Adding a Concept Checking Framework in CGAL</a>
+  <li> <a href="#poisson">Adding the ideas of the Screened Poisson Surface Reconstruction algorithm into CGAL</a>
+  <li> <a href="#sectionreconstruction">New Package: 2D Shape Reconstruction from Unorganized Cross-section</a>
+  <li> <a href="#reconstruction">Finalization of the implementation of a 2D Reconstruction and Simplification Algorithm from Point Set</a>
+  <li> <a href="#aabbtree">2D AABB Tree</a>
+  <li> <a href="#enhanceargt">Enhancing the Arrangement-with-History component</a>
+  <li> <a href="#argtcmap">Implement a model of the concept ArrangementDcel using the Combinatorial Map data structure</a>
+  <li> <a href="#modularity">Introduce modularity into CGAL</a>
+  <li> <a href="#pointgen">More point generators in CGAL</a>
+  <li> <a href="#cgalsage">Interface CGAL and Sage</a>
+  <li> <a href="#curveskel">Adding a Curve-Skeletonization Algorithm into CGAL</a>
+  <li> <a href="#mesh2">Improved design and new features for the Mesh_2 package</a>
+  <li> <a href="#visibility">Visibility Polygon Implementation</a>
+</ol>
+
+<!--PROJECT START-->
+<h2  id="conceptcheck">Adding a Concept Checking Framework in CGAL</h2>
+<strong>Mentor:</strong>
+  <script type="text/javascript">
+    mailto_link("sloriot.ml+gsoc","gmail","com","Sebastien Loriot","Adding a Concept Checking Framework in CGAL")
+  </script>
+  from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+<h3>Project Description</h3>
+<p>CGAL is a C++ template library which heavily relies on concepts. In order to increase the quality of the library we would
+like to introduce a mechanism to check that all the requirements of a concept are exactly those needed (a concept
+might be missing some requirements and might also ask requirements that are not used). A solution might be using the
+<a href="http://www.boost.org/doc/libs/1_53_0/libs/concept_check/concept_check.htm">Boost Concept Checking Library</a>.
+This task does not require any particular notion of computational geometry.</p>
+<strong>Required skills:</strong> C++, Generic programming
+<!--PROJECT END-->
+
+
+<!--PROJECT START-->
+<h2  id="poisson">Adding the ideas of the Screened Poisson Surface Reconstruction algorithm into CGAL</h2>
+<strong>Mentor:</strong>
+  <script type="text/javascript">
+    mailto_link("clement.jamin.pro","gmail","com","Clement Jamin","Adding the ideas of the Screened Poisson Surface Reconstruction algorithm into CGAL")
+  </script>
+  from <a href="http://www-sop.inria.fr/geometrica/">Inria Sophia-Antipolis</a>
+and Misha Kazhdan <a href="http://www.cs.jhu.edu/~misha/">John Hopkins University</a>
+<h3>Project Description</h3>
+<p>CGAL provides a <a href="http://www.cgal.org/Manual/latest/doc_html/cgal_manual/Surface_reconstruction_points_3/Chapter_main.html#Section_49.3">variant of the Poisson algorithm</a>.
+Main differences are that it uses a tetrahedrization instead of an octree, and performs two passes to avoid artifacts where the algorithm has to fill big gaps.
+We would like to incorporated the new ideas of <a href="http://www.cs.jhu.edu/~misha/MyPapers/ToG13.pdf">Misha Kazhdan's last paper</a>
+into CGAL. These improvements would allow to explicitly incorporate the points as interpolation constraints, and would reduce time complexity.</p>
+<strong>Required skills:</strong> C++, Generic programming, Computational geometry
+<!--PROJECT END-->
+
+<!--PROJECT START-->
+<h2  id="sectionreconstruction">New Package: 2D Shape Reconstruction from Unorganized Cross-section</h2>
+<strong>Mentor:</strong>
+  <script type="text/javascript">
+    mailto_link("sloriot.ml+gsoc","gmail","com","Sebastien Loriot","New Package: 2D Shape Reconstruction from Unorganized Cross-section")
+  </script>
+  from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+<h3>Project Description</h3>
+<p>This project consists in implementing the following paper of Pooran Memari and Jean-Daniel Boissonnat:</p>
+<ul>
+<li>Provably Good 2D Shape Reconstruction from Unorganized Cross Sections, 2008 Computer Graphics Forum, Vol.27, No. 5, 1403-1410
+</ul>
+<p>This algorithm is able to reconstruct a 2D shape described by a set of segments, each representing the intersection of the shape with a line.
+The implementation will be based on existing components from the CGAL library (2D Constrained Delaunay Triangulation, Voronoi diagram of segments, Intersection primitives, ...).
+The motivation for implementing this algorithm is to use it as a preprocessing step in the 3D generalization currently under development.</p>
+<strong>Required skills:</strong> Computational geometry, C++, CGAL
+<!--PROJECT END-->
+
+<!--PROJECT START-->
+<h2  id="reconstruction">Finalization of the implementation of a 2D Reconstruction and Simplification Algorithm from Point Set</h2>
+<strong>Mentors:</strong>
+  Pierre Alliez from <a href="http://www-sop.inria.fr/members/Pierre.Alliez/">Inria Sophia-Antipolis</a>
+and
+  <script type="text/javascript">
+    mailto_link("sloriot.ml+gsoc","gmail","com","Sebastien Loriot","Hole filling")
+  </script>
+  from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+<h3>Project Description</h3>
+<p>This project consists in going to the submission of a new package to CGAL. The student will start from the prototype code
+of the following paper by De Goes and Cohen-Steiner and Alliez and Desbrun:
+<ul>
+<li>  An optimal transport approach to robust reconstruction and simplification of 2D shapes, in Computer Graphics Forum (proceedings of EUROGRAPHICS Symposium on Geometry Processing), 30, 5, 1593-1602, 2011
+</ul>
+<p>The purpose of this project is to understand the code written for this research paper, propose a suitable API and update the code accordingly, write a demo, write the documentation into CGAL style, and submit
+the package to the Editorial Board for review. Of course, the student is invited to perform an extra optimization of the code and to propose new ideas to improve the algorithm. This project is particularly interesting to show what we usually call ''the extra mile'' to turn a code written for a research paper into a documented and publicly distributable code.</p>
+<strong>Required skills:</strong> Generic Programming, C++, QT4 (GraphicsView Framework), Computational Geometry is a plus.
+<!--PROJECT END-->
+
+
+<!--PROJECT START-->
+<h2  id="aabbtree">2D AABB Tree</h2>
+<strong>Mentor:</strong>
+<script type="text/javascript">
+  mailto_link("pierre.alliez","inria","fr","Pierre Alliez","2D AABB Tree")
+</script>
+  from <a href="http://www-sop.inria.fr/members/Pierre.Alliez/">Inria Sophia-Antipolis</a>
+and
+  <script type="text/javascript">
+    mailto_link("andreas.fabri","geometryfactory","com","Andreas Fabri","2D AABB Tree")
+  </script>
+  from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+
+<h3>Project Description</h3>
+<p>The purpose of this project is to provide the same functionalities as the ones provided by the <a href="http://www.cgal.org/Pkg/AABB_tree">3D AABB package</a> but in 2D.
+Instead of duplicating of the code, the student will have to devise a solution that shares as much as possible source code from the 3D implementation,
+without breaking backward compatibility.
+Once completed, a testsuite carefully checking the correctness and performances of the implementation must be devised. The performance of such a core component being
+important, code profiling and optimization is a key aspect of the project.</p>
+<p>Time permitting, the student will propose a solution to the point-inside-polygon test using the 2D AABB-tree and will to
+participate to the <a href="http://dmlab.cs.umn.edu/GISCUP2013/index.php">ACM GISCUP 2013</a>.</p>
+<strong>Required skills:</strong> Generic Programming, C++, Data Structures and Algorithms
+<!--PROJECT END-->
+
+<!--PROJECT START-->
+<h2  id="enhanceargt">Enhancing the Arrangement-with-History component</h2>
+<strong>Mentor:</strong>
+<script type="text/javascript">
+    mailto_link("efifogel","gmail","com","Efi Fogel","Enhancing the Arrangement-with-History component")
+</script>
+from the <a href="http://acg.cs.tau.ac.il/people">Applied Computational Geometry Lab</a>,  Tel Aviv University
+<h3>Project Description</h3>
+<p>When you construct an arrangement induced by a set A of arbitrary planar curves, you end up with a collection C of x-monotone subcurves of A that
+are pairwise disjoint in their interior. These subcurves are associated with the arrangement edges (more precisely, with pairs of DCEL halfedges).
+The <code>Arrangement_with_history_2&lt;Traits,Dcel&gt;</code> class-template offered by the
+<a href="http://www.cgal.org/Manual/latest/doc_html/cgal_manual/Arrangement_on_surface_2/Chapter_main.html">2D Arrangement</a>
+package extends the <code>Arrangement_2&lt;Traits,Dcel&gt;</code> class template with an additional layer that represents A and a cross mapping
+between the curves of A and the arrangement edges they induce. Let B denote the set of maximal x-monotone subcurves of the curves in A.
+In this project you are asked to augment the <code>Arrangement_with_history_2</code> class-template with an additional layer that represents B,
+and cross mappings between the curves of the three layers, i.e., A, B, and C. If time permits, the last part of this project is to develop a generic
+function that repairs corrupted general polygons exploiting the augmented arrangement-with-history class-template.</p>
+<strong>Required skills:</strong> C++, Generic Programming, Arrangement
+<!--PROJECT END-->
+
+<!--PROJECT START-->
+<h2  id="argtcmap">Implement a model of the concept ArrangementDcel using the Combinatorial Map data structure</h2>
+<strong>Mentors:</strong>
+  <script type="text/javascript">
+    mailto_link("efifogel","gmail","com","Efi Fogel","Implement a model of the concept ArrangementDcel using the Combinatorial Map data structure")
+  </script>
+  from the <a href="http://acg.cs.tau.ac.il/people">Applied Computational Geometry Lab</a>,  Tel Aviv University
+and   <script type="text/javascript">
+    mailto_link("guillaume.damiand","liris.cnrs","fr","Guillaume Damiand","Implement a model of the concept ArrangementDcel using the Combinatorial Map data structure")
+  </script>
+  from <a href="http://liris.cnrs.fr/gdamiand/">LIRIS</a>
+<h3>Project Description</h3>
+<p>An object of the class template <code>Arrangement_2&lt;Traits,Dcel&gt;</code> offered by the
+<a href="http://www.cgal.org/Manual/latest/doc_html/cgal_manual/Arrangement_on_surface_2/Chapter_main.html">2D Arrangement</a> package represents
+the planar subdivision induced by a set of x-monotone curves and isolated points into maximally connected cells. The arrangement is
+represented as a doubly-connected edge-list (Dcel) such that each Dcel vertex is associated with a point of the plane and each edge is
+associated with an x-monotone curve whose interior is disjoint from all other edges and vertices. The Dcel template parameter must be substituted
+by a model of the concept ArrangementDcel. The <a href="http://www.cgal.org/Manual/latest/doc_html/cgal_manual/Arrangement_on_surface_2/Chapter_main.html">2D Arrangement</a>
+package offers a model of this concept called <code>Arr_dcel_base&lt;V,H,F&gt;</code>.
+In this project you are asked to develop another model of this concept using the Combinatorial Map data structure offered by the
+<a href="http://www.cgal.org/Manual/latest/doc_html/cgal_manual/Combinatorial_map/Chapter_main.html">Combinatorial Maps</a> package.</p>
+<strong>Required skills:</strong> C++, Generic Programming, Arrangement
+<!--PROJECT END-->
+
+<!--PROJECT START-->
+<h2  id="modularity">Introduce modularity into CGAL</h2>
+<strong>Mentor:</strong>
+  <script type="text/javascript">
+    mailto_link("sloriot.ml+gsoc","gmail","com","Sebastien Loriot","Introduce modularity into CGAL")
+  </script>
+  from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>.
+<h3>Project Description</h3>
+<p>CGAL is a C++ library of algorithm and library providing various modules (packages) that do not necessarily depend on each other. A criticism that we often hear about CGAL is that it's a too large library,
+people would be happy to have only a small portion of the library to use only what they need. The purpose of this project is to find the best approach to achieve this goal.
+Internally, CGAL is already decomposed into packages and the release tarball consists in a flatten view of this structure.
+This project implies to detect the real dependencies amongst packages (that is headers included and used), encode this dependencies at the level of cmake, identifies core component that are required by all the packages, find a way for users to download the modules they are interested in, etc.</p>
+<p>If time allows it, the student will try to find a way to reduce the size of the core component, make optional the compilation of the lib, etc.</p>
+<strong>Required skills:</strong> C++, Generic Programming, cmake
+<!--PROJECT END-->
+
+<!--PROJECT START-->
+<h2  id="pointgen">More point generators in CGAL</h2>
+<strong>Mentor:</strong>
+  <script type="text/javascript">
+    mailto_link("pmmc","cin.ufpe","br","Pedro Machado Manh&atilde;es de Castro","More point generators in CGAL")
+  </script>
+  from <a href="http://www.cin.ufpe.br/~pmmc/">Federal University of Pernambuco</a>.
+<h3>Project Description</h3>
+<p>CGAL is a high quality generic C++ library on Computational Geometry. Amongst its features, CGAL offers random point generators in disks,
+squares, balls, cubes, hypercubes, to mention a few. Point generation is quite useful for several things, e.g., testing algorithms, obtaining
+initial values for optimization schemes, and more. In this work, we will concentrate efforts on implementing new point generators.
+Some of the useful point generators that are missing in CGAL include random points inside a triangle, simplex, triangulation, on a surface mesh, on a pure complex, ...</p>
+<strong>Required skills:</strong> C++, Generic programming
+<!--PROJECT END-->
+
+
+<!--PROJECT START-->
+<h2  id="cgalsage">Interface CGAL and Sage</h2>
+<strong>Mentor:</strong>
+  <script type="text/javascript">
+    mailto_link("akobel","mpi-inf.mpg","de","Alexander Kobel","Interface CGAL and Sage")
+  </script>
+  from <a href="http://www.mpi-inf.mpg.de/~akobel/">MPI Saarbruecken</a>,
+  and Burcin Erocal from TU Kaiserslautern, Sage and Pynac projects.
+<h3>Project Description</h3>
+<p><a href="http://www.sagemath.org/">Sage</a> is one of the leading and fastest growing open source mathematics software systems.
+It combines the features of nearly a hundred open source projects and provides a clean high-level Python-based shell and programming
+environment to easily access their functionality. In particular, Sage offers a wide range of symbolical and algebraic computations.
+However, Sage currently lacks advanced algorithms for geometric computing. Vice versa, the development of geometric-algebraic algorithms
+in CGAL can be tedious, and while CGAL provides highly efficient filtered algebraic predicates for its current use cases, more complicated
+applications would benefit from the large range of algebraic operations accessible via Sage.</p>
+<p>The goal of this project is to provide a clean way to call CGAL functions from Sage. The existing <a href="http://code.google.com/p/cgal-bindings/">CGAL bindings</a>
+for Python can serve as a guide, but have to be extended by interfaces supporting arbitrary precision number types. For efficiency reasons, it seems that
+<a href="http://www.cython.org/">Cython</a> is the method of choice and should be preferred over SWIG or Boost wrappers.</p>
+<p>If time allows, a second goal is to access Sage functionality within CGAL.</p>
+<strong>Required skills:</strong> C++, Python, Cython<br>
+<strong>Good-to-have Skills:</strong> CGAL, Sage
+<!--PROJECT END-->
+
+
+<!--PROJECT START-->
+<h2  id="curveskel">Adding a Curve-Skeletonization Algorithm into CGAL</h2>
+<strong>Mentor:</strong>
+  <script type="text/javascript">
+    mailto_link("andrea.tagliasacchi","epfl","ch","Andrea Tagliasacchi","Adding a curve-skeletonization algorithm into CGAL")
+  </script> from Ecole Polytechnique Federale de Lausanne,
+and
+  <script type="text/javascript">
+    mailto_link("sloriot.ml+gsoc","gmail","com","Sebastien Loriot","Adding a curve-skeletonization algorithm into CGAL")
+  </script>
+  from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>.
+<h3>Project Description</h3>
+<p>This project consists in implementing a curve-skeletonization algorithm for a watertight surface mesh. The algorithm consists of two main phases.
+In the first step, a mass-spring system is solved,  resulting in a progressive contraction of the model into a skeleton. In the final step,
+the watertight surface is converted into a network of curves by shortest-edge collapse. The basic algorithm can also be extended to guarantee that the curves are centered within the object.
+<p>A visual demo of the algorithm is available <a href="http://www.youtube.com/watch?feature=player_embedded&amp;v=gs5R2RhngVA">here</a>
+and the algorithm is explained in the following paper (a reference implementation is also available at <a href="http://code.google.com/p/starlab-mcfskel">this page</a>):</p>
+<ul>
+<li>Tagliasacchi, A., Alhashim, I., Olson, M., and Zhang, H. 2012. Mean Curvature Skeletons. Computer Graphics Forum (Proceedings of the Symposium on Geometry Processing) 31, 5, 1735-1744.
+</ul>
+<strong>Required skills:</strong> C++, background in geometry processing
+<!--PROJECT END-->
+
+<!--PROJECT START-->
+<h2  id="mesh2">Improved design and new features for the Mesh_2 package</h2>
+<strong>Mentor:</strong>
+  <script type="text/javascript">
+    mailto_link("jane.tournois","geometryfactory","com","Jane Tournois","Improving Mesh_2")
+  </script>
+  from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>, and
+  <script type="text/javascript">
+    mailto_link("clement.jamin.pro","gmail","com","Clement Jamin","Improving Mesh_2")
+  </script>
+  from <a href="http://www-sop.inria.fr/geometrica/">Inria Sophia-Antipolis</a>
+<h3>Project Description</h3>
+<p>The Mesh_2 package implements a 2D isotropic triangle mesh generator. Currently, the domain to be meshed is defined by some constrained edges and a set of seed points. The constrained edges divide the plane into several connected components. The mesh domain is either the union of the bounded connected components including at least one seed, or the union of the bounded connected components that do no contain any seed.
+
+The project can be split into three phases:
+<ul>
+<li>Improve the C++ interface of the package, in order to unify the API with the Mesh_3 package (3D mesher).
+<li>Add some mesh optimization methods, to improve the quality of the output meshes.
+<li>Develop an "oracle" abstraction layer (as devised for Mesh_3) so that the mesher can take different types of input: implicit functions, polygonal domains, 2D images... and on the way, add the ability to manage multi-domain inputs.
+</ul>
+<p>or additionnal details, here is the <a href="http://www.cgal.org/Manual/latest/doc_html/cgal_manual/Mesh_2/Chapter_main.html">documentation of the current Mesh_2 package</a> and
+of the <a href="http://www.cgal.org/Manual/latest/doc_html/cgal_manual/Mesh_3/Chapter_main.html">Mesh_3 package</a>.</p>
+<strong>Required skills:</strong> Advanced C++, generic programming, background in Computational Geometry or Geometry Processing.
+<!--PROJECT END-->
+
+
+<!--PROJECT START-->
+<h2  id="visibility">Visibility Polygon Implementation</h2>
+<strong>Mentor:</strong>
+  <script type="text/javascript">
+    mailto_link("mhsaar","googlemail","com","Michael Hemmer","Visibility Polygon Implementation")
+  </script>
+  and
+  Alexander Kr&ouml;ller from <a href="http://www.ibr.cs.tu-bs.de">TU Braunschweig</a>
+<h3>Project Description</h3>
+<p>Given a planar polygonal domain (which can be given as a polygon or as
+an arrangement) and a query point, compute the polygon of all points
+that can see the query point. Efficient algorithm implementations for
+this problem are still missing in CGAL. This project will therefore
+join forces with people at TU Braunschweig, with the purpose of
+developing a new package for visibility. Together we will work on
+implementing several different algorithm types (with vs. without
+preprocesing) for different problem inputs (simple polygons vs.
+polygons with holes vs. arrangements); including limited vision ranges
+would be a welcome extra.</p>
+
+<p>Specifically, the project consists of the following steps:</p>
+<ul>
+<li>Familiarize with the interfaces and shape them together with the mentor team
+<li>Select at least one visibility algorithm and implement it
+<li>Join in developing a test suite and instances to validate
+correctness of all the algorithms
+</ul>
+<strong>Required skills:</strong> C++, some knowledge of Computation Geometry
+<!--PROJECT END-->
+
+<h2 id="information">Information Candidates Should Supply</h2>
+
+<p>The application process has several steps. Before contacting anybody verify that you are eligible, that is
+that you are enrolled as student, don't get a tuition fee, etc. The next step is to contact the mentor
+of the project you are interested in. You have to convince him that you are the right person to get the job
+done. The next step is to work out more details and to contact the mentoring organization by providing
+the following information by email to <a href="mailto:gsoc-cgal@lists-sop.inria.fr">gsoc-cgal@lists-sop.inria.fr</a></p>
+
+
+<h3>Project</h3>
+<ol>
+<li> Select a project in the list and provide your personal and detailed description. If you wish to work on another idea of your own, we are pretty open as long as this serves the goal of consolidating CGAL as a whole.
+<li> Provide a proposal of a technical solution with your envisioned methodology. The more detailed the better.
+<li> Explain how the solution will be available to the user, in which form. Do not forget the documentation, unitary tests and cross-platform aspects.
+<li> Provide a realistic schedule with objectives (one every two weeks for example) and deadlines. Focus on mid-term objectives as well as on the final evaluation.
+<li> Provide a formal commitment that you will be involved full time on the GSoC. This is absolutely mandatory.
+</ol>
+
+<h3>Personal data</h3>
+<ol>
+<li> First name, last name, affiliation and geographical location.
+<li> A brief list of the main studies and programming courses attended, with ranking.
+<li> List of the most important software projects contributed and success.
+<li> Which are your best skills in terms of programming and scientific computing?
+<li> In general what is your taste in terms of programming? language, methodology, team work, etc.
+<li> Is there anything that prevents you from working full time on the project during the program period?
+<li> How do you see your involvement after the program ends? Do you see yourself pushing the project further, or do you see yourself contributing to other CGAL projects?
+<li> Are you more interested in the theory/scientific aspect of CGAL, or do you feel more like a hacker?
+<li> What are your long-term wishes in terms of job?
+</ol>
+
+<h3>A mailto:</h3>
+
+<p>This
+<a href="mailto:gsoc-cgal@lists-sop.inria.fr?subject=GSOC-2011&amp;body=%0AProject%0A%0A
+* Select a project in the list and provide your personal and detailed description. %0A
+* Provide a proposal of a technical solution with your envisioned methodology. The more detailed the better.%0A
+* Explain how the solution will be available to the user, in which form. Do not forget the documentation, unitary tests and cross-platform aspects.%0A
+* Provide a realistic schedule with objectives (one every two weeks for example) and deadlines. Focus on mid-term objectives as well as on the final evaluation.%0A
+* Provide a formal commitment that you will be involved full time on the GSoC. This is absolutely mandatory.%0A%0A
+
+Personal data%0A%0A
+* First name, last name, affiliation and geographical location.%0A
+* A brief list of the main studies and programming courses attended, with ranking.%0A
+* List of the most important software projects contributed and success.%0A
+* Which are your best skills in terms of programming and scientific computing?%0A
+* In general what is your taste in terms of programming? language, methodology, team work, etc.%0A
+* Is there anything that prevents you from working full time on the project during the program period?%0A
+* How do you see your involvement after the program ends? Do you see yourself pushing the project further, or do you see yourself contributing to other CGAL projects?%0A
+* Are you more interested in the theory/scientific aspect of CGAL, or do you feel more like a hacker?%0A
+* What are your long-term wishes in terms of job?%0A">anchor</a> is a mailto: with a mail body containg the above items.
+
+  </div>
+</div>
+
+
+    
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="footer-copyright">
+            <div style="float: left;">
+              <a href="https://twitter.com/TheCGALProject" alt="The CGAL Project's Twitter">
+                <img src="https://cgal.github.io/cgal-web/images/icons/twitter.svg" class="center-block btn-dark-orange" alt="Twitter" height="18"></img>
+              </a>
+            </div>
+            &copy; 1995-2022 The CGAL Project. All rights reserved.
+            <div style="float: right;">
+              <a href="https://cgal.geometryfactory.com/CGAL/Members/wiki/Main_Page" alt="Password protected access to the Developer Wiki">
+                <i class="glyphicon glyphicon-lock"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascripts -->
+    <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery-1.9.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery-1.9.1.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.fitvids.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.sequence-min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.bxslider.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/template.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/bootstrap-hover-dropdown-min.js"></script>
+  </body>
+</html>
+

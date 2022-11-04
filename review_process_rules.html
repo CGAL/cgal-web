@@ -1,0 +1,392 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Contributing to CGAL</title>
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="CGAL Editorial Board">
+
+    <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/icomoon-social.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+
+    <!--[if lte IE 8]>
+	<link rel="stylesheet" href="css/leaflet.ie.css" />
+	<![endif]-->
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/main.css">
+
+    <!-- atom & rss feed -->
+    <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="https://cgal.github.io/cgal-web/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+
+    <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    
+
+    <!-- Navigation & Logo-->
+    <div class="mainmenu-wrapper">
+    <div class="container">
+    <nav id="mainmenu" class="mainmenu" role="navigation">
+    <ul>
+    <li class="logo-wrapper hidden-xs hidden-sm hidden-md">
+    <a href="https://cgal.github.io/cgal-web/index.html">
+    <img src="https://cgal.github.io/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
+    </a>
+    </li>
+
+    <li class="hidden-lg">
+    <a href="https://cgal.github.io/cgal-web/index.html">
+    <img src="https://cgal.github.io/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
+    </a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/project.html">Project</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/download.html">Download</a>
+    </li>
+
+    <li class="dropdown" style="transition-duration: all 0s ease; transition-delay: all 0s ease;">
+    <a href="#" class="dropdown-toggle" data-hover="dropdown">Packages <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometryProcessing" target="_blank">Geometry Processing</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
+        </ul>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/documentation.html">Documentation</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/news.html">News</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/media.html">Media</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/support.html">Support</a>
+    </li>
+
+    </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="section section-breadcrumbs">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Contributing to CGAL </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+<div class="section">
+  <div class="container">
+    
+
+
+<h1>Submission, Review, and Integration</h1>
+
+<p>On this page we describe the process for integrating a new feature into
+the CGAL library. A feature is a clearly delimited piece of functionality
+that is described by
+</p>
+<ul>
+<li> its motivation, purpose, and intended use (user manual), and </li>
+<li> its API in C++ (reference manual).</li>
+</ul>
+<p>Features may range from small (one new function, for example)
+up to large (a complex hierarchy of classes). Features may extend
+  existing CGAL packages or form new packages.
+</p><p id="mustbe">In order for a feature to become part of CGAL, it must be
+submitted to the Editorial Board of CGAL first <a href="#small_submissions">(*)</a>.
+
+<br>Subsequently, the submitted feature is reviewed by the Editorial
+Board (possibly with the help of external reviewers). Based on the
+reviews and subsequent discussions with the authors, the Editorial
+Board may reject the feature, or invite it to pursue the process after
+major or minor modifications. A feature whose authors have
+satisfactorily addressed all the requested modifications is invited to
+the integration process. This step extensively tests its
+functionality, cross-platform behavior, and interaction with other
+parts of the library. Once the tests are successful and the feature is
+stable, it is scheduled for release.
+</p>
+
+<ul>
+  <li><a href="#Submission">Submission</a>
+  <ul>
+    <li><a href="#Registration">Registration</a></li>
+    <li><a href="#Formal_Submission">Formal Submission</a></li>
+  </ul>
+  </li>
+  <li><a href="#Review">Review</a></li>
+  <li><a href="#Integration">Integration</a></li>
+</ul>
+
+<h3 id="Submission"> Submission  </h3>
+<p>This is a two-stage process. The authors of a new feature first need
+to register it by providing a minimum amount of (mostly non-technical)
+information. This first stage allows the Editorial Board to check
+whether the intended feature is suitable for CGAL at all. The goal
+here is to avoid that the considerable effort of a formal submission
+(second stage) is wasted on out-of-scope features.
+</p>
+
+<h4 id= "Registration"> Registration</h4>
+<p>In order to register a feature, the corresponding author should send
+an email to the <a href="./people.html">Editorial Board</a>, using the address <b>info AT
+cgal.org</b>. Within this email (or on a website that you
+linked to from the email), the following information must be provided.
+</p>
+
+<ul>
+<li> <b>Summary of the feature</b>: what is its motivation, purpose,
+    and intended use? Which algorithmic and geometric tools does it
+    use and/or implement?
+<br>This information allows the Editorial Board to check whether the
+functionality implemented by the feature is suitable for CGAL.
+</li>
+<li> <b>Authors and maintainers of the feature.</b>
+<br>In many cases, authors are already CGAL developers, but we also
+welcome external contributions. In both cases, we need to know who is
+going to maintain the feature in the future.
+</li>
+<li> <b>Intended license of the feature</b>.
+<br>The feature's license should be compatible with the
+<a href="./license.html">CGAL open source
+licenses</a> (LGPL or GPL). If the feature deviates from this, the
+reasons should be explained.
+</li>
+<li> <b>Intended copyright owner of the feature</b>.
+<br>By default, the copyright on the code is owned by the employer of
+  the author(s). If the feature is an extension of an existing
+  package, a potential transfer or sharing of copyright will be
+  debated. Typically, this process involves reaching an agreement
+  between the legal departments of both the author's employer and of
+  the institute(s) that own(s) the copyright of the package(s).
+</li>
+<li> <b>State of the feature</b>.
+<br>Is it already fully implemented (even in CGAL?), is there a
+prototype available, or is it in the design phase?  Usually, a
+submission makes sense only if at least a prototype is available
+already.
+</li>
+</ul>
+
+<p>The Review Manager acknowledges the registration. (S)he
+informs the corresponding author (usually within two weeks) by email
+whether the feature is invited for a formal submission. In case a
+feature is not invited, the decision will be explained to the
+authors. The decision process might involve further discussions with
+the authors.
+</p>
+
+<h4 id="Formal_Submission"> Formal Submission</h4>
+<p>The formal submission consists of
+</p>
+<ul>
+  <li> a user manual and a reference manual,
+    <br>preferably in CGAL manual style, or similar. CGAL developers
+      have access to the CGAL manual tools used to create CGAL manuals. For
+      external contributions, access to the manual tools can be granted upon
+      request.</li>
+  <li> a proposal for integration into the manual,
+      <br>ie: will it be inserted into an existing chapter? or will it
+	form a separate chapter? in an existing part, or should a new
+	part be created?
+	<br>This proposal should be sent in a separate mail (or in the
+	CGAL wiki, for authors who already have an access).
+    </li>
+</ul>
+<p>The user manual contains the motivation, purpose, and intended
+use of the feature, as well as examples and pictures, and
+implementation details (which algorithm has been implemented? What is
+its runtime?). The reference manual contains the precise API of the
+feature, meaning its concepts, classes, and functions.
+</p><p>The formal submission does not involve source code, and its
+review is based purely on the user and reference manual. Source code
+will be looked at during the integration phase.
+</p>
+<p>Authors whose feature has been invited should send the formal
+submission to the Editorial Board of CGAL, again under <b>info AT
+cgal.org</b>. The Review Manager acknowledges the formal
+submission and gets back to the corresponding author (usually within
+six weeks) with the initial reviews.
+</p>
+
+<p><a name="small_submissions">(*) </a><b><a href="#mustbe">^</a></b>
+  The only exception to these submission
+  rules are for very small features (typically a slight modification
+  in the specifications, like a new function) in an existing package,
+  done by its maintainers. The maintainers of a package can perform
+  such small changes under their own responsibility. However, such
+  changes must still be announced using the wiki page dedicated to
+  this case. Then the Editorial Board may ask for a review or
+  object.
+</p>
+
+<h3 id="Review"> Review </h3>
+
+<p>The review process is initiated by the Review Manager who appoints
+a primary reviewer for the feature. The primary reviewer is a member
+of the Editorial Board and responsible for communication with the
+authors. Besides his/her own review, the primary reviewer organizes at
+least a secondary review. Initial reviews are neither anonymous nor
+final; they are expected to be followed by a discussion between
+authors on the one hand and the reviewers on the other
+hand, with the goal of efficiently sorting out the critical
+issues. The whole review process is documented on an appropriate wiki
+page that is accessible to authors, reviewers, and all CGAL
+developers.
+</p><p>The time frame for the discussion period following the initial
+reviews is flexible. The Review Manager makes sure that the primary
+reviewer remains responsive throughout the discussion. It is in the
+interest of the authors of the feature to remain responsive as well.
+</p>
+
+<p>When the discussion has stabilized, the primary reviewer proposes a
+decision (the API is accepted or rejected) to the Editorial Board,
+accompanying the proposal with the main arguments supporting it. The
+final decision is made accordingly unless there is an objection by an
+editor within fifteen days. 
+</p><p>Reasons for rejection may be insurmountable dissensions between
+authors and reviewers, or irresponsiveness on the side of the
+authors. The Review Manager will inform the corresponding author
+about the decision and explain it. In case of major modifications
+being requested, a second round of reviews may become necessary.
+</p>
+
+<p>A feature whose API (Reference Manual) has been accepted is called
+a <b>candidate</b> feature.
+ The authors of a candidate feature are expected to become CGAL
+  developers, in order to access the CGAL source code management system.
+  From this point, they must maintain their
+  code within CGAL's source code management system in a dedicated
+  branch referred to as a "feature branch" (aka "topic branch").
+  Once the feature branch is available, the authors are invited by
+  the Release Manager to integrate their code in the testing process.
+</p>
+
+<p>Every CGAL release has a <b>Feature Freeze</b> date.
+
+<br>The Feature Freeze, which is three months before the actual release
+date, marks the date from which on the API of the library for the next
+release is fixed/frozen, in particular, the reference manual should
+not change after that date. Exceptions are obvious bug/typo fixes and
+precisions in the specification.
+<br>
+Authors of a feature should take into account that it can take several
+weeks until the first review arrives, which is usually followed by a
+discussion with the author on issues raised by the review. Moreover,
+changes need to be incorporated in a revised submission.
+</p>
+<p>A feature can be candidate for integration into a CGAL release only
+if the authors have done all modifications to the reference manual
+requested during the review process, and that these modifications have
+again been checked by the reviewers, before the Feature Freeze of the next
+release.
+</p>
+
+<center><img SRC="images/release_cycle_git.png" alt=""></center>
+
+<h3 id="Integration"> Integration </h3>
+
+<p>Before a package can actually be integrated in a CGAL release, some
+more steps must be followed. We just sketch these steps in the current document:
+</p>
+<ul>
+<li>The final version of the User Manual must be approved by the reviewers.
+<li>The package must be accompanied by a full test-suite, and the
+test-suite must run without errors.
+</ul>
+
+<p>Every CGAL release has a <b>Code Freeze</b> date.
+
+<br>The Code Freeze, which is one month before the actual release
+date, marks the date from which on the code should not change anymore
+without explicit agreement of the release manager,
+in order to not disturb the final preparation of the release.
+
+</p>
+<p>The authors of a feature which has gone through the whole process
+successfully, before the Code Freeze, are invited by the Release
+Manager to merge the feature branch into the main development branch
+(the "next" branch).
+
+  </div>
+</div>
+
+
+    
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="footer-copyright">
+            <div style="float: left;">
+              <a href="https://twitter.com/TheCGALProject" alt="The CGAL Project's Twitter">
+                <img src="https://cgal.github.io/cgal-web/images/icons/twitter.svg" class="center-block btn-dark-orange" alt="Twitter" height="18"></img>
+              </a>
+            </div>
+            &copy; 1995-2022 The CGAL Project. All rights reserved.
+            <div style="float: right;">
+              <a href="https://cgal.geometryfactory.com/CGAL/Members/wiki/Main_Page" alt="Password protected access to the Developer Wiki">
+                <i class="glyphicon glyphicon-lock"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascripts -->
+    <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery-1.9.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery-1.9.1.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.fitvids.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.sequence-min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.bxslider.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/template.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/bootstrap-hover-dropdown-min.js"></script>
+  </body>
+</html>
+

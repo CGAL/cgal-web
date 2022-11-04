@@ -1,0 +1,252 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>CGAL Videos</title>
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="CGAL Editorial Board">
+
+    <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/icomoon-social.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+
+    <!--[if lte IE 8]>
+	<link rel="stylesheet" href="css/leaflet.ie.css" />
+	<![endif]-->
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/main.css">
+
+    <!-- atom & rss feed -->
+    <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="https://cgal.github.io/cgal-web/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+
+    <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    
+
+    <!-- Navigation & Logo-->
+    <div class="mainmenu-wrapper">
+    <div class="container">
+    <nav id="mainmenu" class="mainmenu" role="navigation">
+    <ul>
+    <li class="logo-wrapper hidden-xs hidden-sm hidden-md">
+    <a href="https://cgal.github.io/cgal-web/index.html">
+    <img src="https://cgal.github.io/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
+    </a>
+    </li>
+
+    <li class="hidden-lg">
+    <a href="https://cgal.github.io/cgal-web/index.html">
+    <img src="https://cgal.github.io/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
+    </a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/project.html">Project</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/download.html">Download</a>
+    </li>
+
+    <li class="dropdown" style="transition-duration: all 0s ease; transition-delay: all 0s ease;">
+    <a href="#" class="dropdown-toggle" data-hover="dropdown">Packages <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometryProcessing" target="_blank">Geometry Processing</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
+        </ul>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/documentation.html">Documentation</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/news.html">News</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/media.html">Media</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/support.html">Support</a>
+    </li>
+
+    </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="section section-breadcrumbs">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>CGAL Videos </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+<div class="section">
+  <div class="container">
+    
+
+
+<style type="text/css">
+  table.videos-list { border:0; }
+  table.videos-list td { padding:5px; }
+  table.videos-list img { border: 1px solid; /* height:60px; */ width:85px; }
+</style>
+
+<table class="videos-list">
+  <tr>
+    <td> <a href="http://www.youtube.com/watch?v=3DLfkWWw_Tg"><img src="http://i4.ytimg.com/vi/3DLfkWWw_Tg/1.jpg" alt="[Watch]"></a></td>
+    <td> <a href="http://www.youtube.com/watch?v=3DLfkWWw_Tg"><em>CGAL: The Open Source Computational Geometry Algorithms Library</em></a> (54:59)<BR>
+      <a href="http://www-sop.inria.fr/members/Sylvain.Pion/">Sylvain Pion</a> and Andreas Fabri.<BR>
+      <a href="http://www.youtube.com/user/googletechtalks">Google Tech Talk</a> series.
+      March 3rd, 2008, Google, Mountain View, California.
+      <!-- <object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/3DLfkWWw_Tg&hl=fr"></param><embed src="http://www.youtube.com/v/3DLfkWWw_Tg&hl=fr" type="application/x-shockwave-flash" width="425" height="344"></embed></object> --> </td>
+  </tr>
+
+  <tr>
+    <td><a href="http://www.computational-geometry.org/SoCG-videos/socg12video/Hidding etal - The Sticky Geometry of the Cosmic Web.mp4"><img src="https://cgal.github.io/cgal-web/images/video_thumbnails/hidding-et-al.jpg" alt="[Watch]"></a></td> 
+    <td><a href="http://www.computational-geometry.org/SoCG-videos/socg12video/Hidding etal - The Sticky Geometry of the Cosmic Web.mp4"><em>The Sticky Geometry of the Cosmic Web</em></a> (7:00)<BR>
+      <a href="http://www.astro.rug.nl/~hidding/">Johan Hidding</a>,
+      <a href="http://www.astro.rug.nl/~weygaert/">Rien van de Weijgaert</a>,
+      <a href="http://www.cs.rug.nl/~gert/">Gert Vegter</a>,
+      <a href="http://www.astro.rug.nl/~bernard60/index.php">Bernard J.T. Jones</a>,
+      and <a href="http://www-sop.inria.fr/members/Monique.Teillaud/">Monique Teillaud</a>. <BR>
+      <a href="http://www.computational-geometry.org/SoCG-videos/socg12video/">21st Video Review of Computational Geometry</a>,
+      <a href="http://socg2012.web.unc.edu/">28th SoCG<a>, 2012, Chapel Hill, NC.</td>
+  </tr>
+  
+  <tr>
+    <td> <a href="http://www-sop.inria.fr/members/Nader.Salman/NS_SOCG_Vid09.html"><img src="https://cgal.github.io/cgal-web/images/video_thumbnails/salman-yvinec-2009.jpg" alt="[Watch]"></a></td>
+    <td> <a href="http://www-sop.inria.fr/members/Nader.Salman/NS_SOCG_Vid09.html"><em>High resolution surface reconstruction from overlaping multiple views</em></a> (6:05)<BR>
+      Nader Salman and Mariette Yvinec.<BR>
+      <a href="http://www.computational-geometry.org/SoCG-videos/socg09video/">18th Video Review of Computational Geometry</a>,
+      <a href="http://www.socg.org/2009">25th SoCG</a>, 2009, Aarhus, Denmark.</td>
+  </tr>
+  <tr>
+    <td> <a href="http://computational-geometry.org/SoCG-videos/socg08video/caroli_video.avi"><img src="https://cgal.github.io/cgal-web/images/video_thumbnails/caroli-teillaud-2008.jpg" alt="[Watch]"></a></td>
+    <td> <a href="http://computational-geometry.org/SoCG-videos/socg08video/caroli_video.avi"><em>On the Computation of 3D Periodic Triangulations</em></a> (5:08)<BR>
+      <a href="http://www.inria.fr/sophia/members/Manuel.Caroli/">Manuel Caroli</a> and <a href="http://www.inria.fr/sophia/members/Monique.Teillaud/">Monique Teillaud</a>.<BR>
+      <a href="http://www.computational-geometry.org/SoCG-videos/socg08video/">17th Video Review of Computational Geometry</a>, 
+      <a href="http://www.socg.org/2008">24th SoCG</a>, 2008, College Park, Maryland.
+      <!-- <object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/TgcsFR_DoA4&hl=en"></param><embed src="http://www.youtube.com/v/TgcsFR_DoA4&hl=fr" type="application/x-shockwave-flash" width="425" height="344"></embed></object> -->
+    </td>
+  </tr>
+  <tr>
+    <td> <a href="http://acg.cs.tau.ac.il/projects/internal-projects/arr-geodesic-sphere/movie/aos-xvid.avi"><img src="https://cgal.github.io/cgal-web/images/video_thumbnails/fogel-halperin-2008.jpg" alt="[Watch]"></a></td>
+    <td> <a href="http://acg.cs.tau.ac.il/projects/internal-projects/arr-geodesic-sphere/movie/aos-xvid.avi"><em>Arrangements of Geodesic Arcs on the Sphere</em></a> (5:11)<BR>
+      <a href="http://www.cs.tau.ac.il/~efif/">Efi Fogel</a>, Ophir Setter, and <a href="http://www.cs.tau.ac.il/~danha/">Dan Helperin</a>.<BR>
+      <a href="http://www.computational-geometry.org/SoCG-videos/socg08video/">17th Video Review of Computational Geometry</a>, 
+      <a href="http://www.socg.org/2008">24th SoCG</a>, 2008, College Park, Maryland.
+      <!-- <embed flashvars="&amp;subtitle=on" type="application/x-shockwave-flash" src="http://video.google.com/googleplayer.swf?docId=1465609627167725920&amp;hl=en" id="VideoPlayback"></embed> -->
+    </td>
+  <tr>
+    <td> <a href="http://www.mpi-inf.mpg.de/~mkerber/video_socg_2008/"><img src="https://cgal.github.io/cgal-web/images/video_thumbnails/emeliyanenko-kerber-2008.jpg" alt="[Watch]"></a></td>
+    <td> <a href="http://www.mpi-inf.mpg.de/~mkerber/video_socg_2008/"><em>Visualizing and Exploring Planar Algebraic Arrangements - a Web Application</em></a> (4:08)<BR>
+      <a href="http://www.mpi-inf.mpg.de/~emeliyan">Pavel Emeliyanenko</a> and <a href="http://www.mpi-inf.mpg.de/~mkerber">Michael Kerber</a>.<BR>
+      <a href="http://www.computational-geometry.org/SoCG-videos/socg08video/">17th Video Review of Computational Geometry</a>, 
+      <a href="http://www.socg.org/2008">24th SoCG</a>, 2008, College Park, Maryland.</td>
+  </tr>
+  <tr>
+    <td> <a href="http://www.computational-geometry.org/SoCG-videos/socg07video/Arrangement.avi"><img src="https://cgal.github.io/cgal-web/images/video_thumbnails/cazals-loriot-2007.jpg" alt="[Watch]"></a> </td>
+    <td> <a href="http://www.computational-geometry.org/SoCG-videos/socg07video/Arrangement.avi"><em>Computing the exact arrangement of circles on a sphere, with applications in structural biology</em></a> (7:15)<BR>
+      <a href="http://www-sop.inria.fr/members/Frederic.Cazals/">Fr&eacute;d&eacute;ric Cazals</a> and <a href="http://www-sop.inria.fr/members/Sebastien.Loriot/">S&eacute;bastien Loriot.</a> <BR>
+      <a href="http://www.computational-geometry.org/SoCG-videos/socg07video/">16th Video Review of Computational Geometry</a>, 
+      <a href="http://www.socg.org/2007">23rd SoCG</a>, 2007, Gyeongju, South-Korea.</td>
+  </tr>
+  <tr>
+    <td> <a href="http://acg.cs.tau.ac.il/projects/internal-projects/gaussian-map-cubical/Mink3d.avi"><img src="https://cgal.github.io/cgal-web/images/video_thumbnails/fogel-halperin-2005.jpg" alt="[Watch]"></a></td>
+    <td> <a href="http://acg.cs.tau.ac.il/projects/internal-projects/gaussian-map-cubical/Mink3d.avi"><em>Exact Minkowski Sums of Convex Polyhedra</em></a> (5:22)<BR>
+      <a href="http://www.cs.tau.ac.il/~efif/">Efi Fogel</a> and <a href="http://www.cs.tau.ac.il/~danha/">Dan Halperin</a>.<BR>
+      <a href="http://www.computational-geometry.org/SoCG-videos/socg05video/">14th Video Review of Computational Geometry</a>, 
+      <a href="http://www.socg.org/2005">21st SoCG</a>, 2005, Pisa, Italy.</td>
+  </tr>
+  <tr>
+    <td> <a href="http://acg.cs.tau.ac.il/projects/internal-projects/minkowski-sums/EMINK.mpg"><img src="https://cgal.github.io/cgal-web/images/video_thumbnails/flato-fogel-halperin-2002.jpg" alt="[Watch]"></a></td>
+    <td> <a href="http://acg.cs.tau.ac.il/projects/internal-projects/minkowski-sums/EMINK.mpg"><em>Exact Minkowski sums and applications</em></a> (8:07)<BR>
+      Eyal Flato, <a href="http://www.cs.tau.ac.il/~efif/">Efi Fogel</a>, and <a href="http://www.cs.tau.ac.il/~danha/">Dan Halperin</a>.<BR>
+      11th Video Review of Computational Geometry, 
+      <a href="http://www-ma2.upc.es/~geomc/events/socg2002/socg2002.html">18th SoCG</a>, 2002, Barcelona, Spain.</td>
+  </tr>
+  <tr>
+    <td> <a href="http://vimeo.com/877882"><img src="https://cgal.github.io/cgal-web/images/video_thumbnails/moniker-2008.jpg" alt="[Watch]"></a></td>
+    <td> <a href="http://vimeo.com/877882"><em>Dynamic 3D Voronoi Demo</em></a> (1:08)<br>
+      <a href="http://vimeo.com/user277736">Moniker</a> on <a href="http://vimeo.com">Vimeo</a>, 2008.
+      <!-- <object width="400" height="267"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=877882&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=877882&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="400" height="267"></embed></object> -->
+    </td>
+  </tr>
+</table>
+
+  </div>
+</div>
+
+
+    
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="footer-copyright">
+            <div style="float: left;">
+              <a href="https://twitter.com/TheCGALProject" alt="The CGAL Project's Twitter">
+                <img src="https://cgal.github.io/cgal-web/images/icons/twitter.svg" class="center-block btn-dark-orange" alt="Twitter" height="18"></img>
+              </a>
+            </div>
+            &copy; 1995-2022 The CGAL Project. All rights reserved.
+            <div style="float: right;">
+              <a href="https://cgal.geometryfactory.com/CGAL/Members/wiki/Main_Page" alt="Password protected access to the Developer Wiki">
+                <i class="glyphicon glyphicon-lock"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascripts -->
+    <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery-1.9.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery-1.9.1.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.fitvids.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.sequence-min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.bxslider.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/template.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/bootstrap-hover-dropdown-min.js"></script>
+  </body>
+</html>
+

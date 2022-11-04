@@ -1,0 +1,88 @@
+
+
+                      2nd CGAL User Workshop
+
+                   *** Call for Submissions ***
+
+                http://www.cgal.org/UserWorkshop
+
+
+The CGAL Open Source Project is organizing the second CGAL User Workshop,
+to be held on June 12, 2004 immediately after the
+20th Annual ACM Symposium on Computational Geometry in New York, USA.  
+
+The goal of this one-day workshop is twofold: to allow CGAL users and 
+developers to meet and share their experiences with the library while at 
+the same time providing an opportunity for potential users to learn more 
+about CGAL and how they might benefit from it.
+
+The day will be organized around a series of short (30-minute) 
+presentations by users and developers.  The topics to be discussed 
+include but are not limited to:
+
+  - design of library components
+  - implementation of algorithms and data structures using CGAL
+  - use of the library in experimentation 
+  - experiences with CGAL in teaching,
+  - comparisons of CGAL with other libraries.
+
+At the end of the day, we will have an extensive Q&A session.
+
+The focus of the meeting is not CGAL, but the users. If you have
+any suggestions about what should be discussed, please send a message 
+to workshop04@cgal.org so we can do our best to organize the workshop 
+to meet your needs.
+
+
+Abstract Submission
+-------------------
+
+If you are a CGAL user and would like to present your work, we invite 
+you to send an abstract (up to 4 pages) to workshop04@cgal.org. The work
+need not be original for this workshop. The CGAL editorial committee will
+select presentations so as to achieve a balanced programme of general
+interest to users and developers.
+
+
+Important Dates
+---------------
+
+     March 19, 2004: Abstract submission deadline 
+     April  2, 2004: Notification of acceptance or rejection
+      June 12, 2004: Workshop
+
+
+Registration and Accommodation
+------------------------------
+
+You can register for the workshop when you register for SoCG'04.  There is no
+separate registration system.  Should you wish to participate only in the 
+workshop, please check the appropriate box on the symposium registration form.
+
+There will be a separate and modest registration fee for the workshop. 
+The payment of this fee will be done on-site. Only cash in $US will be 
+accepted.
+
+You may use the SoCG'04 accommodation booking system
+(http://socg.poly.edu/home/local_information.htm), if you wish,
+even if you intent to attend only the workshop.
+
+
+About CGAL
+----------
+
+CGAL, the Computational Geometry Algorithms Library, is a highly modular 
+C++ library of data structures and algorithms that has been developed via 
+a collaborative project involving several research institutes
+around the world. The mission of the project is to make the 
+most important solutions and methods developed in computational
+geometry available to users in industry and academia.
+
+CGAL is available under an Open Source license, and commercial licenses 
+can be obtained from GeometryFactory Sarl (www.geometryfactory.com).
+
+For more information about the project and the library, please visit
+the CGAL web site (http://www.cgal.org).
+
+
+
