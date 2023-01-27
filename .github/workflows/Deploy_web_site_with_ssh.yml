@@ -1,7 +1,5 @@
 name: Deploy_web_site_with_ssh
 
-# read-only repo token
-# no access to secrets
 on:
   push:
     branches:
@@ -11,11 +9,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    steps:
+    steps:   
       - name: Checkout
         uses: actions/checkout@v3
       - name: Change BASE_PATH
-        run: yq -i '.JB.BASE_PATH = "https://cgal.geometryfactory.com/~${{ secrets.SSH_USER }}/cgal-web"' _config.yml
+        run: yq -i '.JB.BASE_PATH = "${{ vars.CGAL_WEB_SITE_URL }}"' _config.yml
       - name: Remove demo/ (temporarily)
         run: rm -rf demo/
       - name: Build with Jekyll
@@ -27,8 +25,8 @@ jobs:
         run: |
           install -m 600 -D /dev/null ~/.ssh/id_rsa
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-          ssh-keyscan -H ${{ secrets.SSH_HOST }} > ~/.ssh/known_hosts
-      - name: deploy website to ssh using rsync
-        run: rsync -avz ./_site/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USER }}/public_html/cgal-web
+          ssh-keyscan -H ${{ vars.SSH_HOST }} > ~/.ssh/known_hosts
+      - name: rsync
+        run: rsync -avz ./_site/ ${{ vars.SSH_USER }}@${{ vars.SSH_HOST }}:/home/${{ vars.SSH_USER }}/public_html/cgal-web
       - name: cleanup
         run: rm -rf ~/.ssh
