@@ -123,25 +123,22 @@
     
 
 
-
-<H2>CGAL Projects page for the Google Summer of Code 2016</H2>
-
+<h2>Candidacy Status</h2>
 <p>
-The CGAL Project is applying as a mentoring organization of the  <a href="http://code.google.com/soc/">Google Summer of Code</a> 2016.
-On this page we present some project ideas as well the <a href="#information">information applicants have to provide us</a>.
-GSoC applicants are welcome to propose other ideas and check if a mentor is interested in supervising it.
+  Our application has been <b>rejected</b> this year.
 </p>
 
-In 2016 our application has been <b>rejected</b>.
+<h2>Project Ideas</h2>
+<p>
+The CGAL Project applied as a mentoring organization for the <a href="https://code.google.com/soc/">Google Summer of Code</a> 2016.
+</p>
 
-<br>
 <p>Previous project ideas of the CGAL project for the <b>Google Summer of Code</b> can be found on the following pages:
-<a href="http://www.cgal.org/gsoc/2010.html">2010</a>, <a href="http://www.cgal.org/gsoc/2011.html">2011</a>,
-<a href="http://www.cgal.org/gsoc/2012.html">2012</a>, <a href="http://www.cgal.org/gsoc/2013.html">2013</a>,
-<a href="http://www.cgal.org/gsoc/2014.html">2014</a>, <a href="http://www.cgal.org/gsoc/2015.html">2015</a>.</p>
+<a href="2010.html">2010</a>, <a href="2011.html">2011</a>,
+<a href="2012.html">2012</a>, <a href="2013.html">2013</a>,
+<a href="2014.html">2014</a>, <a href="2015.html">2015</a>.</p>
 
-
-<h4>Summary:</h4>
+<h3>Summary:</h3>
 
 <p>
 First section to read: <a href="#information">Information Candidates Should Supply</a>
@@ -296,7 +293,7 @@ The CGAL project has moved from a dedicated Git repository to the Github service
 <h3 id="p8">Finalizing a Package for 2D Triangulations on the Sphere</h3>
 <p><b>Mentor(s):</b> Sébastien Loriot (GeometryFactory) and Monique Teillaud (INRIA)
 </p><p><b>Project description:</b><br />
-The sphere can model atoms (biology) as well as the earth (geography) and the celestial vault (astrophysics), which shows a strong need for computations on the sphere. A method was proposed, a few years ago, to compute triangulations of points on or close to a sphere [1], and a prototype software has been written. The prototype is very efficient, but it duplicates some parts of the CGAL 2D triangulation classes. The project will consist in proposing a new design for those classes in order to avoid duplications, and implementing it. 
+The sphere can model atoms (biology) as well as the earth (geography) and the celestial vault (astrophysics), which shows a strong need for computations on the sphere. A method was proposed, a few years ago, to compute triangulations of points on or close to a sphere [1], and a prototype software has been written. The prototype is very efficient, but it duplicates some parts of the CGAL 2D triangulation classes. The project will consist in proposing a new design for those classes in order to avoid duplications, and implementing it.
 </p><p><b>Required Skills:</b> C++, design patterns
 </p><p><b>Contact:</b> Sebastien.Loriot@cgal.org, Monique.Teillaud@inria.fr
 </p><p><b>Reference</b><br />
@@ -323,11 +320,11 @@ This projects aims at integrating the existing Super4PCS implementation (<a rel=
 
 <h3 id="p10">Sparse Eigenvalue Solver and Application to Diffusion Distances</h3>
 <p><b>Mentor(s):</b> Pierre Alliez (Inria) and Jane Tournois (GeometryFactory)
-</p><p><b>Project description:</b><br /> The eigen-structure of linear operators is relevant for a number of geometry processing algorithms on meshes such as pose-invariant shape signatures for shape retrieval, spectral embedding, parameterization of surface meshes, clustering, correspondence, diffusion distances and surface reconstruction. Popular operators include Laplace Beltrami (1st order and higher order) and distance matrices, the most frequent ones being defined as symmetric positive definite operators. 
-In general we need to calculate a specific number of eigenvalues and eigenvectors of a large sparse square matrix A (smallest or largest), smaller than the size of A. 
+</p><p><b>Project description:</b><br /> The eigen-structure of linear operators is relevant for a number of geometry processing algorithms on meshes such as pose-invariant shape signatures for shape retrieval, spectral embedding, parameterization of surface meshes, clustering, correspondence, diffusion distances and surface reconstruction. Popular operators include Laplace Beltrami (1st order and higher order) and distance matrices, the most frequent ones being defined as symmetric positive definite operators.
+In general we need to calculate a specific number of eigenvalues and eigenvectors of a large sparse square matrix A (smallest or largest), smaller than the size of A.
 </p><p>Recent advances on solvers through the Eigen and ARPACK-Eigen [1] C++ libraries makes it possible to add an eigenvalue solver in CGAL with little dependency, as both libraries are header-only. In addition, in ARPACK-Eigen the user only requires to define operations on matrix A such as a matrix-vector product. The library is particularly powerful when the matrix-vector product can be computed efficiently, which is the case when A is sparse.
 </p><p>The objective of this project is to implement a generic design for computing eigenvalues and eigenvectors of linear operators on surface meshes and point sets sampled on surfaces. We will first experiment with the Laplace-Beltrami operator to compute diffusion distance [2]. The heat diffusion kernel, derived from the spectral decomposition of M, provides a means to compute approximate geodesic distances at low computational cost. Such approximation can be leveraged in a wide range of potential applications.
-</p><p><b>Required Skills:</b> C++. Knowledge of linear algebra and Laplace operators is a plus. 
+</p><p><b>Required Skills:</b> C++. Knowledge of linear algebra and Laplace operators is a plus.
 </p><p><b>Contact:</b> pierre.alliez@inria.fr
 </p><p><b>Reference</b><br />
 [1] ARPACK-Eigen is a redesign of the ARPACK software for large scale eigenvalue problems, built on top of Eigen: <a rel="nofollow" class="external free" href="https://github.com/yixuan/arpack-eigen">https://github.com/yixuan/arpack-eigen</a>
@@ -339,13 +336,13 @@ In general we need to calculate a specific number of eigenvalues and eigenvector
 
 <h3 id="p11">Improving the Point Set Shape Detection Component</h3>
 <p><b>Mentors:</b> Simon Giraudot (GeometryFactory), Pierre Alliez (Inria) and Laurent Busé (Inria)
-</p><p><b>Project description:</b><br /> The Shape Detection component implements an efficient RANSAC-based primitive shape detection algorithm for point sets with unoriented normals. Five types of primitive shapes are detected: plane, sphere, cylinder, cone and torus. 
+</p><p><b>Project description:</b><br /> The Shape Detection component implements an efficient RANSAC-based primitive shape detection algorithm for point sets with unoriented normals. Five types of primitive shapes are detected: plane, sphere, cylinder, cone and torus.
 </p><p>This component can be improved in three ways:
 </p><p>1. Connectivity constraint. To avoid generating shapes with fragmented support we enforce a connectivity constraint by considering only one connected component, referred to as cluster, selected as the one covering the largest number of inliers. While this constraint is efficiently met for developable shapes such as planes or cylinders, it renders the algorithm slow for non-developables shapes such as cones and torii. The objective is to devise a novel data structure and efficient algorithm to enumerate the connected components for cones and torii. This requires devising a parameterization method for these primitives, and dealing with degenerate cases.
 </p><p>2. Random shape generators. The current shape detection algorithm relies upon random generation of primitive shapes, given a small set of points and unoriented normals. Recent findings show that such generator can be made more efficient by requiring less contraints.
-</p><p>3. Other shape types. Other types can be detected through implementing a class deriving from the base shape class. The goal is to demonstrate such genericity by defining composed primitives such as a crease edge formed by two orthogonal planes, a corner formed by three mutually orthogonal planes, and 3D boxes. 
+</p><p>3. Other shape types. Other types can be detected through implementing a class deriving from the base shape class. The goal is to demonstrate such genericity by defining composed primitives such as a crease edge formed by two orthogonal planes, a corner formed by three mutually orthogonal planes, and 3D boxes.
 </p><p><br />
-<b>Required Skills:</b> C++. Knowledge of linear algebra is a plus. 
+<b>Required Skills:</b> C++. Knowledge of linear algebra is a plus.
 </p><p><b>Contact:</b> pierre.alliez@inria.fr
 </p><p><b>Reference</b><br />
 [1] Point Set Shape Detection <a rel="nofollow" class="external free" href="http://doc.cgal.org/latest/Point_set_shape_detection_3/index.html#Chapter_Point_Set_Shape_Detection">http://doc.cgal.org/latest/Point_set_shape_detection_3/index.html#Chapter_Point_Set_Shape_Detection</a>
@@ -356,9 +353,9 @@ In general we need to calculate a specific number of eigenvalues and eigenvector
 <hr>
 
 <h3 id="p12">Robust Normal estimation for Point Clouds with Sharp Features</h3>
-<p><b>Mentors:</b> Simon Giraudot (GeometryFactory), Alexandre Boulch (Onera) 
+<p><b>Mentors:</b> Simon Giraudot (GeometryFactory), Alexandre Boulch (Onera)
 </p><p><b>Project description:</b><br /> Boulch and Marlet devised an algorithm for estimating normals on unorganized point clouds that preserves sharp features [1]. This approach offers an excellent tradeoff between precision, speed, and robustness. In addition, the authors have implemented a prototype algorithm based on CGAL. Starting from this prototype, the goal is to convert it into an algorithm for the point set processing component of CGAL, with examples, tests and plugin for the polyhedron demo of CGAL.
-</p><p><b>Required Skills:</b> C++. 
+</p><p><b>Required Skills:</b> C++.
 </p><p><b>Contact:</b> simon.giraudot@geometryfactory.com
 </p><p><b>Reference</b><br />
 [1] <a rel="nofollow" class="external free" href="https://sites.google.com/site/boulchalexandre/software">https://sites.google.com/site/boulchalexandre/software</a>
@@ -371,7 +368,7 @@ In general we need to calculate a specific number of eigenvalues and eigenvector
 <h3 id="p13">Implementing a Package for Computation of Surface Maps.</h3>
 <p><b>Mentors:</b> Yaron Lipman(Weizmann Institute of Science), Andreas Fabri (GeometryFactory)</p>
 <p><b>Project description:</b><br />
-Computing high quality mappings between surfaces is a core task in computer graphics, computer vision, medical imaging and related fields. This projects aims at implementing algorithms ([1],[2]) for computing bijective, low distortion mappings between surface-meshes. The implementation will consist of a couple of algorithms which follow the same  three steps: i) cutting the meshes into disk topology; ii) embedding the meshes into a canonical domain and reducing the distortion of the embedding via optimization; iii) computing the surface map induced from the embeddings via an overlay procedure and/or lifting.  
+Computing high quality mappings between surfaces is a core task in computer graphics, computer vision, medical imaging and related fields. This projects aims at implementing algorithms ([1],[2]) for computing bijective, low distortion mappings between surface-meshes. The implementation will consist of a couple of algorithms which follow the same  three steps: i) cutting the meshes into disk topology; ii) embedding the meshes into a canonical domain and reducing the distortion of the embedding via optimization; iii) computing the surface map induced from the embeddings via an overlay procedure and/or lifting.
 <pre>
 [1]  AIGERMAN, N., PORANNE, R., AND LIPMAN, Y. 2015. Seamless surface mappings. ACM Transactions on Graphics (TOG) 34, 4.
 [2]  AIGERMAN, N., AND LIPMAN, Y. 2015. Orbifold tutte embeddings. ACM Trans. Graph. 34, 6.
@@ -379,11 +376,8 @@ Computing high quality mappings between surfaces is a core task in computer grap
 </p>
 <p><b>Required Skills:</b> C++, Geometry, Optimization </p>
 
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
-<hr>
-
-
-<h3 id="information">Information Candidates Should Supply</h3>
+<br>
+<h2 id="information">Information Candidates Should Supply</h2>
 
 <p>The application process has several steps. Before contacting anybody verify that you are eligible, that is
 that you are enrolled as student, don't get a tuition fee, etc. The next step is to contact the mentor
@@ -391,8 +385,7 @@ of the project you are interested in. You have to convince him that you are the 
 done. The next step is to work out more details and to contact the mentoring organization by providing
 the following information by email to <a href="mailto:gsoc-cgal@lists-sop.inria.fr">gsoc-cgal@lists-sop.inria.fr</a></p>
 
-
-<h4>Project</h4>
+<h3>Project</h3>
 <ol>
 <li> Select a project in the list and provide your personal and detailed description. If you wish to work on another idea of your own, we are pretty open as long as this serves the goal of consolidating CGAL as a whole.
 <li> Provide a proposal of a technical solution with your envisioned methodology. The more detailed the better.
@@ -401,7 +394,7 @@ the following information by email to <a href="mailto:gsoc-cgal@lists-sop.inria.
 <li> Provide a formal commitment that you will be involved full time on the GSoC. This is absolutely mandatory.
 </ol>
 
-<h4>Personal data</h4>
+<h3>Personal data</h3>
 <ol>
 <li> First name, last name, affiliation and geographical location.
 <li> A brief list of the main studies and programming courses attended, with ranking.

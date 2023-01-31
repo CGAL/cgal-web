@@ -130,19 +130,20 @@ function mailto_link(em1,em2,em3,name,subject)
 }
 </script>
 
+<h2>Accepted Projects</h2>
 <p>
-As in 2010, 2011 and 2012, the CGAL Project is a mentoring organization of the  <a href="http://code.google.com/soc/">Google Summer of Code</a>.
-On this page we present some project ideas as well the <a href="#information">information applicants have to provide us</a>.
-GSoC applicants are welcome to propose other ideas and check if a mentor is interested in supervising it.
+  As since 2010, the CGAL Project was a mentoring organization of the <a href="https://summerofcode.withgoogle.com/">Google Summer of Code</a> in 2013.
+  Successful projects can be found <a href="https://www.google-melange.com/archive/gsoc/2013/orgs/cgal">here</a>.
 </p>
 
-<br>
+<h2>Project Ideas</h2>
+<p>
+  On this page we presented some project ideas for the Google Summer of Code 2014.
+</p>
+
 <p>Previous project ideas of the CGAL project for the <b>Google Summer of Code</b> can be found on the following pages:
 <a href="2010.html">2010</a>, <a href="2011.html">2011</a>,
 <a href="2012.html">2012</a>.</p>
-
-<p><b>Before sending an email to anybody, please carefully read <a href="#information"> this section</a>.</b></p>
-
 
 <h3>Summary:</h3>
 
@@ -166,14 +167,16 @@ First section to read: <a href="#information">Information Candidates Should Supp
   <li> <a href="#visibility">Visibility Polygon Implementation</a>
 </ol>
 
+<hr>
+
 <!--PROJECT START-->
-<h2  id="conceptcheck">Adding a Concept Checking Framework in CGAL</h2>
+<h3 id="conceptcheck">Adding a Concept Checking Framework in CGAL</h3>
 <strong>Mentor:</strong>
   <script type="text/javascript">
     mailto_link("sloriot.ml+gsoc","gmail","com","Sebastien Loriot","Adding a Concept Checking Framework in CGAL")
   </script>
   from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
-<h3>Project Description</h3>
+<b>Project Description</b>
 <p>CGAL is a C++ template library which heavily relies on concepts. In order to increase the quality of the library we would
 like to introduce a mechanism to check that all the requirements of a concept are exactly those needed (a concept
 might be missing some requirements and might also ask requirements that are not used). A solution might be using the
@@ -182,16 +185,17 @@ This task does not require any particular notion of computational geometry.</p>
 <strong>Required skills:</strong> C++, Generic programming
 <!--PROJECT END-->
 
+<hr>
 
 <!--PROJECT START-->
-<h2  id="poisson">Adding the ideas of the Screened Poisson Surface Reconstruction algorithm into CGAL</h2>
+<h3 id="poisson">Adding the ideas of the Screened Poisson Surface Reconstruction algorithm into CGAL</h3>
 <strong>Mentor:</strong>
   <script type="text/javascript">
     mailto_link("clement.jamin.pro","gmail","com","Clement Jamin","Adding the ideas of the Screened Poisson Surface Reconstruction algorithm into CGAL")
   </script>
   from <a href="http://www-sop.inria.fr/geometrica/">Inria Sophia-Antipolis</a>
 and Misha Kazhdan <a href="http://www.cs.jhu.edu/~misha/">John Hopkins University</a>
-<h3>Project Description</h3>
+<b>Project Description</b>
 <p>CGAL provides a <a href="http://www.cgal.org/Manual/latest/doc_html/cgal_manual/Surface_reconstruction_points_3/Chapter_main.html#Section_49.3">variant of the Poisson algorithm</a>.
 Main differences are that it uses a tetrahedrization instead of an octree, and performs two passes to avoid artifacts where the algorithm has to fill big gaps.
 We would like to incorporated the new ideas of <a href="http://www.cs.jhu.edu/~misha/MyPapers/ToG13.pdf">Misha Kazhdan's last paper</a>
@@ -199,14 +203,16 @@ into CGAL. These improvements would allow to explicitly incorporate the points a
 <strong>Required skills:</strong> C++, Generic programming, Computational geometry
 <!--PROJECT END-->
 
+<hr>
+
 <!--PROJECT START-->
-<h2  id="sectionreconstruction">New Package: 2D Shape Reconstruction from Unorganized Cross-section</h2>
+<h3 id="sectionreconstruction">New Package: 2D Shape Reconstruction from Unorganized Cross-section</h3>
 <strong>Mentor:</strong>
   <script type="text/javascript">
     mailto_link("sloriot.ml+gsoc","gmail","com","Sebastien Loriot","New Package: 2D Shape Reconstruction from Unorganized Cross-section")
   </script>
   from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
-<h3>Project Description</h3>
+<b>Project Description</b>
 <p>This project consists in implementing the following paper of Pooran Memari and Jean-Daniel Boissonnat:</p>
 <ul>
 <li>Provably Good 2D Shape Reconstruction from Unorganized Cross Sections, 2008 Computer Graphics Forum, Vol.27, No. 5, 1403-1410
@@ -217,8 +223,10 @@ The motivation for implementing this algorithm is to use it as a preprocessing s
 <strong>Required skills:</strong> Computational geometry, C++, CGAL
 <!--PROJECT END-->
 
+<hr>
+
 <!--PROJECT START-->
-<h2  id="reconstruction">Finalization of the implementation of a 2D Reconstruction and Simplification Algorithm from Point Set</h2>
+<h3 id="reconstruction">Finalization of the implementation of a 2D Reconstruction and Simplification Algorithm from Point Set</h3>
 <strong>Mentors:</strong>
   Pierre Alliez from <a href="http://www-sop.inria.fr/members/Pierre.Alliez/">Inria Sophia-Antipolis</a>
 and
@@ -226,7 +234,7 @@ and
     mailto_link("sloriot.ml+gsoc","gmail","com","Sebastien Loriot","Hole filling")
   </script>
   from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
-<h3>Project Description</h3>
+<b>Project Description</b>
 <p>This project consists in going to the submission of a new package to CGAL. The student will start from the prototype code
 of the following paper by De Goes and Cohen-Steiner and Alliez and Desbrun:
 <ul>
@@ -237,9 +245,10 @@ the package to the Editorial Board for review. Of course, the student is invited
 <strong>Required skills:</strong> Generic Programming, C++, QT4 (GraphicsView Framework), Computational Geometry is a plus.
 <!--PROJECT END-->
 
+<hr>
 
 <!--PROJECT START-->
-<h2  id="aabbtree">2D AABB Tree</h2>
+<h3 id="aabbtree">2D AABB Tree</h3>
 <strong>Mentor:</strong>
 <script type="text/javascript">
   mailto_link("pierre.alliez","inria","fr","Pierre Alliez","2D AABB Tree")
@@ -251,7 +260,7 @@ and
   </script>
   from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
 
-<h3>Project Description</h3>
+<b>Project Description</b>
 <p>The purpose of this project is to provide the same functionalities as the ones provided by the <a href="http://www.cgal.org/Pkg/AABB_tree">3D AABB package</a> but in 2D.
 Instead of duplicating of the code, the student will have to devise a solution that shares as much as possible source code from the 3D implementation,
 without breaking backward compatibility.
@@ -262,14 +271,16 @@ participate to the <a href="http://dmlab.cs.umn.edu/GISCUP2013/index.php">ACM GI
 <strong>Required skills:</strong> Generic Programming, C++, Data Structures and Algorithms
 <!--PROJECT END-->
 
+<hr>
+
 <!--PROJECT START-->
-<h2  id="enhanceargt">Enhancing the Arrangement-with-History component</h2>
+<h3 id="enhanceargt">Enhancing the Arrangement-with-History component</h3>
 <strong>Mentor:</strong>
 <script type="text/javascript">
     mailto_link("efifogel","gmail","com","Efi Fogel","Enhancing the Arrangement-with-History component")
 </script>
 from the <a href="http://acg.cs.tau.ac.il/people">Applied Computational Geometry Lab</a>,  Tel Aviv University
-<h3>Project Description</h3>
+<b>Project Description</b>
 <p>When you construct an arrangement induced by a set A of arbitrary planar curves, you end up with a collection C of x-monotone subcurves of A that
 are pairwise disjoint in their interior. These subcurves are associated with the arrangement edges (more precisely, with pairs of DCEL halfedges).
 The <code>Arrangement_with_history_2&lt;Traits,Dcel&gt;</code> class-template offered by the
@@ -282,8 +293,10 @@ function that repairs corrupted general polygons exploiting the augmented arrang
 <strong>Required skills:</strong> C++, Generic Programming, Arrangement
 <!--PROJECT END-->
 
+<hr>
+
 <!--PROJECT START-->
-<h2  id="argtcmap">Implement a model of the concept ArrangementDcel using the Combinatorial Map data structure</h2>
+<h3 id="argtcmap">Implement a model of the concept ArrangementDcel using the Combinatorial Map data structure</h3>
 <strong>Mentors:</strong>
   <script type="text/javascript">
     mailto_link("efifogel","gmail","com","Efi Fogel","Implement a model of the concept ArrangementDcel using the Combinatorial Map data structure")
@@ -293,7 +306,7 @@ and   <script type="text/javascript">
     mailto_link("guillaume.damiand","liris.cnrs","fr","Guillaume Damiand","Implement a model of the concept ArrangementDcel using the Combinatorial Map data structure")
   </script>
   from <a href="http://liris.cnrs.fr/gdamiand/">LIRIS</a>
-<h3>Project Description</h3>
+<b>Project Description</b>
 <p>An object of the class template <code>Arrangement_2&lt;Traits,Dcel&gt;</code> offered by the
 <a href="http://www.cgal.org/Manual/latest/doc_html/cgal_manual/Arrangement_on_surface_2/Chapter_main.html">2D Arrangement</a> package represents
 the planar subdivision induced by a set of x-monotone curves and isolated points into maximally connected cells. The arrangement is
@@ -306,14 +319,16 @@ In this project you are asked to develop another model of this concept using the
 <strong>Required skills:</strong> C++, Generic Programming, Arrangement
 <!--PROJECT END-->
 
+<hr>
+
 <!--PROJECT START-->
-<h2  id="modularity">Introduce modularity into CGAL</h2>
+<h3 id="modularity">Introduce modularity into CGAL</h3>
 <strong>Mentor:</strong>
   <script type="text/javascript">
     mailto_link("sloriot.ml+gsoc","gmail","com","Sebastien Loriot","Introduce modularity into CGAL")
   </script>
   from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>.
-<h3>Project Description</h3>
+<b>Project Description</b>
 <p>CGAL is a C++ library of algorithm and library providing various modules (packages) that do not necessarily depend on each other. A criticism that we often hear about CGAL is that it's a too large library,
 people would be happy to have only a small portion of the library to use only what they need. The purpose of this project is to find the best approach to achieve this goal.
 Internally, CGAL is already decomposed into packages and the release tarball consists in a flatten view of this structure.
@@ -322,14 +337,16 @@ This project implies to detect the real dependencies amongst packages (that is h
 <strong>Required skills:</strong> C++, Generic Programming, cmake
 <!--PROJECT END-->
 
+<hr>
+
 <!--PROJECT START-->
-<h2  id="pointgen">More point generators in CGAL</h2>
+<h3 id="pointgen">More point generators in CGAL</h3>
 <strong>Mentor:</strong>
   <script type="text/javascript">
     mailto_link("pmmc","cin.ufpe","br","Pedro Machado Manh&atilde;es de Castro","More point generators in CGAL")
   </script>
   from <a href="http://www.cin.ufpe.br/~pmmc/">Federal University of Pernambuco</a>.
-<h3>Project Description</h3>
+<b>Project Description</b>
 <p>CGAL is a high quality generic C++ library on Computational Geometry. Amongst its features, CGAL offers random point generators in disks,
 squares, balls, cubes, hypercubes, to mention a few. Point generation is quite useful for several things, e.g., testing algorithms, obtaining
 initial values for optimization schemes, and more. In this work, we will concentrate efforts on implementing new point generators.
@@ -337,16 +354,17 @@ Some of the useful point generators that are missing in CGAL include random poin
 <strong>Required skills:</strong> C++, Generic programming
 <!--PROJECT END-->
 
+<hr>
 
 <!--PROJECT START-->
-<h2  id="cgalsage">Interface CGAL and Sage</h2>
+<h3 id="cgalsage">Interface CGAL and Sage</h3>
 <strong>Mentor:</strong>
   <script type="text/javascript">
     mailto_link("akobel","mpi-inf.mpg","de","Alexander Kobel","Interface CGAL and Sage")
   </script>
   from <a href="http://www.mpi-inf.mpg.de/~akobel/">MPI Saarbruecken</a>,
   and Burcin Erocal from TU Kaiserslautern, Sage and Pynac projects.
-<h3>Project Description</h3>
+<b>Project Description</b>
 <p><a href="http://www.sagemath.org/">Sage</a> is one of the leading and fastest growing open source mathematics software systems.
 It combines the features of nearly a hundred open source projects and provides a clean high-level Python-based shell and programming
 environment to easily access their functionality. In particular, Sage offers a wide range of symbolical and algebraic computations.
@@ -361,9 +379,10 @@ for Python can serve as a guide, but have to be extended by interfaces supportin
 <strong>Good-to-have Skills:</strong> CGAL, Sage
 <!--PROJECT END-->
 
+<hr>
 
 <!--PROJECT START-->
-<h2  id="curveskel">Adding a Curve-Skeletonization Algorithm into CGAL</h2>
+<h3 id="curveskel">Adding a Curve-Skeletonization Algorithm into CGAL</h3>
 <strong>Mentor:</strong>
   <script type="text/javascript">
     mailto_link("andrea.tagliasacchi","epfl","ch","Andrea Tagliasacchi","Adding a curve-skeletonization algorithm into CGAL")
@@ -373,7 +392,7 @@ and
     mailto_link("sloriot.ml+gsoc","gmail","com","Sebastien Loriot","Adding a curve-skeletonization algorithm into CGAL")
   </script>
   from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>.
-<h3>Project Description</h3>
+<b>Project Description</b>
 <p>This project consists in implementing a curve-skeletonization algorithm for a watertight surface mesh. The algorithm consists of two main phases.
 In the first step, a mass-spring system is solved,  resulting in a progressive contraction of the model into a skeleton. In the final step,
 the watertight surface is converted into a network of curves by shortest-edge collapse. The basic algorithm can also be extended to guarantee that the curves are centered within the object.
@@ -385,8 +404,10 @@ and the algorithm is explained in the following paper (a reference implementatio
 <strong>Required skills:</strong> C++, background in geometry processing
 <!--PROJECT END-->
 
+<hr>
+
 <!--PROJECT START-->
-<h2  id="mesh2">Improved design and new features for the Mesh_2 package</h2>
+<h3 id="mesh2">Improved design and new features for the Mesh_2 package</h3>
 <strong>Mentor:</strong>
   <script type="text/javascript">
     mailto_link("jane.tournois","geometryfactory","com","Jane Tournois","Improving Mesh_2")
@@ -396,7 +417,7 @@ and the algorithm is explained in the following paper (a reference implementatio
     mailto_link("clement.jamin.pro","gmail","com","Clement Jamin","Improving Mesh_2")
   </script>
   from <a href="http://www-sop.inria.fr/geometrica/">Inria Sophia-Antipolis</a>
-<h3>Project Description</h3>
+<b>Project Description</b>
 <p>The Mesh_2 package implements a 2D isotropic triangle mesh generator. Currently, the domain to be meshed is defined by some constrained edges and a set of seed points. The constrained edges divide the plane into several connected components. The mesh domain is either the union of the bounded connected components including at least one seed, or the union of the bounded connected components that do no contain any seed.
 
 The project can be split into three phases:
@@ -410,16 +431,17 @@ of the <a href="http://www.cgal.org/Manual/latest/doc_html/cgal_manual/Mesh_3/Ch
 <strong>Required skills:</strong> Advanced C++, generic programming, background in Computational Geometry or Geometry Processing.
 <!--PROJECT END-->
 
+<hr>
 
 <!--PROJECT START-->
-<h2  id="visibility">Visibility Polygon Implementation</h2>
+<h3 id="visibility">Visibility Polygon Implementation</h3>
 <strong>Mentor:</strong>
   <script type="text/javascript">
     mailto_link("mhsaar","googlemail","com","Michael Hemmer","Visibility Polygon Implementation")
   </script>
   and
   Alexander Kr&ouml;ller from <a href="http://www.ibr.cs.tu-bs.de">TU Braunschweig</a>
-<h3>Project Description</h3>
+<b>Project Description</b>
 <p>Given a planar polygonal domain (which can be given as a polygon or as
 an arrangement) and a query point, compute the polygon of all points
 that can see the query point. Efficient algorithm implementations for
@@ -441,7 +463,8 @@ correctness of all the algorithms
 <strong>Required skills:</strong> C++, some knowledge of Computation Geometry
 <!--PROJECT END-->
 
-<h2 id="information">Information Candidates Should Supply</h2>
+<br><br>
+<h2 id="information">Information Candidates Should Supply</h3>
 
 <p>The application process has several steps. Before contacting anybody verify that you are eligible, that is
 that you are enrolled as student, don't get a tuition fee, etc. The next step is to contact the mentor

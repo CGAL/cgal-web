@@ -124,24 +124,26 @@
 
 
 
-<H2>CGAL Projects page for the Google Summer of Code 2017</H2>
-
+<h2>Accepted Projects</h2>
 <p>
-The CGAL Project is a mentoring organization of the  <a href="http://code.google.com/soc/">Google Summer of Code</a> 2017.
-On this page we present some project ideas as well the <a href="#information">information applicants have to provide us</a>.
-GSoC applicants are welcome to propose other ideas and check if a mentor is interested in supervising it. For new project
-proposals, contact us at <a href="mailto:gsoc-cgal@inria.fr">gsoc-cgal@inria.fr</a>.
+  The CGAL Project was a mentoring organization of the <a href="https://summerofcode.withgoogle.com/">Google Summer of Code</a> in 2017.
+  Successful projects can be found <a href="https://summerofcode.withgoogle.com/archive/2017/organizations/6565611412914176">here</a>.
 </p>
 
-<br>
-<p>Previous project ideas of the CGAL project for the <b>Google Summer of Code</b> can be found on the following pages:
-<a href="http://www.cgal.org/gsoc/2010.html">2010</a>, <a href="http://www.cgal.org/gsoc/2011.html">2011</a>,
-<a href="http://www.cgal.org/gsoc/2012.html">2012</a>, <a href="http://www.cgal.org/gsoc/2013.html">2013</a>,
-<a href="http://www.cgal.org/gsoc/2014.html">2014</a>, <a href="http://www.cgal.org/gsoc/2015.html">2015</a>,
-<a href="http://www.cgal.org/gsoc/2016.html">2016</a>.</p>
+<h2>Project Ideas</h2>
+<p>
+  On this page we presented some project ideas for the Google Summer of Code 2017.
+</p>
 
+<p>
+  Previous project ideas of the CGAL project for the Google Summer of Code can be found on the following pages:
+  <a href="2010.html">2010</a>, <a href="2011.html">2011</a>,
+  <a href="2012.html">2012</a>, <a href="2013.html">2013</a>,
+  <a href="2014.html">2014</a>, <a href="2015.html">2015</a>,
+  <a href="2016.html">2016</a>.</p>
+</p>
 
-<h4>Summary:</h4>
+<h3>Summary:</h3>
 
 <p>
 First section to read: <a href="#information">Information Candidates Should Supply</a>
@@ -201,7 +203,7 @@ The goal of this project is to rewrite all the intersection predicates (<code>do
 <h3 id="p3">Enhancing the 2D Arrangement Demo (1)</h3>
 <p><b>Mentor(s)</b>: Efi Fogel (Tel Aviv University)
 </p><p><b>Project description:</b><br />
-Currently the demo supports (linear) segments, polylines, conic arcs, linear curves, and circular arcs. The goal of this project is to enhance the 2D arrangement demo to support additional types of curves, namely, Bezier curves and algebraic curves. 
+Currently the demo supports (linear) segments, polylines, conic arcs, linear curves, and circular arcs. The goal of this project is to enhance the 2D arrangement demo to support additional types of curves, namely, Bezier curves and algebraic curves.
 </p><p>This is a perfect project for GSoC. A developer that commits to pursue the goals of this project will learn to use the 2D arrangement package, other components of CGAL, and other libraries, such as QT. The purpose of the CGAL demos is to demonstrate the potential of the various components of CGAL using visual effects. The excitement and satisfaction, a developer of an application experience, are always enhances when visual effects are exploited. Demo programs of CGAL show the capabilities of the library and help the community evaluating it. A potential user can quickly determine whether a specific component of CGAL can be used to solve  a problem she or he may have and how to go about it.
 </p><p><b>Required Skills:</b> C++, generic programming, basic geometry
 </p><p><b>Contact:</b> efifogel@gmail.com
@@ -236,7 +238,7 @@ The CGAL project has moved from a dedicated Git repository to the Github service
 <h3 id="p6">Finalizing a Package for 2D Triangulations on the Sphere</h3>
 <p><b>Mentor(s):</b> Sebastien Loriot (GeometryFactory) and Monique Teillaud (INRIA)
 </p><p><b>Project description:</b><br />
-The sphere can model atoms (biology) as well as the earth (geography) and the celestial vault (astrophysics), which shows a strong need for computations on the sphere. A method was proposed, a few years ago, to compute triangulations of points on or close to a sphere [1], and a prototype software has been written. The prototype is very efficient, but it duplicates some parts of the CGAL 2D triangulation classes. The project will consist in proposing a new design for those classes in order to avoid duplications, and implementing it. 
+The sphere can model atoms (biology) as well as the earth (geography) and the celestial vault (astrophysics), which shows a strong need for computations on the sphere. A method was proposed, a few years ago, to compute triangulations of points on or close to a sphere [1], and a prototype software has been written. The prototype is very efficient, but it duplicates some parts of the CGAL 2D triangulation classes. The project will consist in proposing a new design for those classes in order to avoid duplications, and implementing it.
 </p><p><b>Required Skills:</b> C++, design patterns
 </p><p><b>Contact:</b> Sebastien.Loriot@cgal.org, Monique.Teillaud@inria.fr
 </p><p><b>Reference</b><br />
@@ -249,8 +251,8 @@ The sphere can model atoms (biology) as well as the earth (geography) and the ce
 <p><b>Mentor(s):</b> Pierre Alliez (Inria), Gael Guennebaud (Inria) and Simon Giraudot (GeometryFactory)
 </p><p><b>Project description:</b><br />
 The current implementation from CGAL: <a rel="nofollow" class="external free" href="http://doc.cgal.org/latest/Poisson_surface_reconstruction_3">http://doc.cgal.org/latest/Poisson_surface_reconstruction_3</a> can be improved along two axes: scalability and smoothness of the reconstructed surfaces.
-The scalability is hampered by the fact that the Poisson solver requires a space discretization: a Delaunay triangulation generated via Delaunay refinement, and a matrix assembly. A first direction is to reduce the complexity of the triangulation. A second direction is a hash data structure inspired by [1]. A third direction is to investigate a matrix-free approach where the implicit function is computed in closed form using a far field approximation. 
-On smoothness of the output surfaces, the current issue is that the current implicit surface is piecewise linear as computed on a piecewise linear 3D function. We will investigate local smooth interpolation approaches that yield smooth surfaces at all scales. Another issue arises on surfaces with boundaries. We will devise an approach that generate smooth curves as boundaries. 
+The scalability is hampered by the fact that the Poisson solver requires a space discretization: a Delaunay triangulation generated via Delaunay refinement, and a matrix assembly. A first direction is to reduce the complexity of the triangulation. A second direction is a hash data structure inspired by [1]. A third direction is to investigate a matrix-free approach where the implicit function is computed in closed form using a far field approximation.
+On smoothness of the output surfaces, the current issue is that the current implicit surface is piecewise linear as computed on a piecewise linear 3D function. We will investigate local smooth interpolation approaches that yield smooth surfaces at all scales. Another issue arises on surfaces with boundaries. We will devise an approach that generate smooth curves as boundaries.
 </p><p><b>Required Skills:</b> C++, geometric data structures, applied maths.
 </p><p><b>Contact:</b> pierre.alliez@inria.fr, gael.guennebaud@inria.fr and simon.giraudot@geometryfactory.com
 </p><p><b>References</b><br />
@@ -263,7 +265,7 @@ On smoothness of the output surfaces, the current issue is that the current impl
 <h3 id="p8">Improving Normal Orientation</h3>
 <p><b>Mentor(s):</b> Pierre Alliez (Inria), Gael Guennebaud (Inria) and Simon Giraudot (GeometryFactory)
 </p><p><b>Project description:</b><br />
-The current CGAL approach for normal orientation <a rel="nofollow" class="external free" href="http://doc.cgal.org/latest/Point_set_processing_3">http://doc.cgal.org/latest/Point_set_processing_3</a> proceeds by propagation along a minimum spanning tree. While this approach is satisfactory for noise-free connected point sets, it fails on disconnected point sets with high noise. The first objective is to evaluate two more recent approaches on a wide range of point sets [1,2]. The second objective is to implement the best approach as a CGAL algorithm. The third objective is to investigate the use of an existing approach [3] based on the construction of an signed implicit function from unoriented points, in order to deduce the normal orientation. 
+The current CGAL approach for normal orientation <a rel="nofollow" class="external free" href="http://doc.cgal.org/latest/Point_set_processing_3">http://doc.cgal.org/latest/Point_set_processing_3</a> proceeds by propagation along a minimum spanning tree. While this approach is satisfactory for noise-free connected point sets, it fails on disconnected point sets with high noise. The first objective is to evaluate two more recent approaches on a wide range of point sets [1,2]. The second objective is to implement the best approach as a CGAL algorithm. The third objective is to investigate the use of an existing approach [3] based on the construction of an signed implicit function from unoriented points, in order to deduce the normal orientation.
 </p><p><b>Required Skills:</b> C++, geometric data structures, applied maths.
 </p><p><b>Contact:</b> pierre.alliez@inria.fr, gael.guennebaud@inria.fr and simon.giraudot@geometryfactory.com
 </p><p><b>References</b><br />
@@ -294,11 +296,11 @@ Implement the method given in the paper "HexEx: Robust Hexahedral Mesh Extractio
 <p><b>Mentor(s):</b> Jane Tournois (GeometryFactory), Pierre Alliez (Inria)
 </p><p><b>Project description:</b><br />
 Mesh Smoothing and Shape Smoothing (or Geometric Smoothing) are often needed to improve the quality of a surface mesh. The choice of quality criterion (angles, edge lengths, smoothness, noise,...) leads the choice of the optimizer. Many algorithms that provide solutions for geometric smoothing
-and mesh smoothing are available in the literature. The goal of this project is to implement and publish some of the State-of-the-Art algorithms in the 
+and mesh smoothing are available in the literature. The goal of this project is to implement and publish some of the State-of-the-Art algorithms in the
 <a rel="nofollow" class="external text" href="http://doc.cgal.org/latest/Polygon_mesh_processing/index.html">CGAL Polygon Mesh Processing package</a>.
 </p>
 <ul>
-<li> Geometric Smoothing includes the <i>Mean Curvature Flow</i> [1] and its volume preserving and feature preserving variants. 
+<li> Geometric Smoothing includes the <i>Mean Curvature Flow</i> [1] and its volume preserving and feature preserving variants.
 </li>
 <li> Mesh Smoothing includes the <i>High Quality Compatible Triangulations</i> [2] and methods that are angle-based or area-based.
 </li>

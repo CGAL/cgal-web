@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2023-01-27T21:44:48+00:00</updated>
+ <updated>2023-01-31T08:20:04+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -11695,7 +11695,7 @@ Vancouver Canada, 12-14 July 2014.&lt;/p&gt;
    <updated>2014-05-24T00:00:00+00:00</updated>
    <id>http://www.cgal.org/news/2014/05/24/gsoc-2014</id>
    <content type="html">
-&lt;p&gt;The CGAL project welcomes 7 &lt;a href=&quot;http://code.google.com/soc/&quot;&gt;GSoC&lt;/a&gt; students.
+&lt;p&gt;The CGAL project welcomes 7 &lt;a href=&quot;https://code.google.com/soc/&quot;&gt;GSoC&lt;/a&gt; students.
 Have a look at the &lt;a href=&quot;https://cgal.github.io/cgal-web/gsoc/2014.html&quot;&gt;Accepted Projects&lt;/a&gt; page.&lt;/p&gt;
 </content>
  </entry>
