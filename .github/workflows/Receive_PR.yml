@@ -28,3 +28,11 @@ jobs:
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
+      - name: Create PR number file
+        run: |
+          echo "${{ github.event.number }}" > pr_number.txt
+      - name: Upload PR number file
+        uses: actions/upload-artifact@v2
+        with:
+          name: pr_number
+          path: pr_number.txt
