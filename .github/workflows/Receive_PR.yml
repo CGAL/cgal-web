@@ -3,10 +3,6 @@ name: Receive_PR
 # read-only repo token
 # no access to secrets
 on: [push,pull_request,workflow_dispatch]
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
   
 jobs:
   build:
