@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2023-02-28T20:17:27+00:00</updated>
+ <updated>2023-02-28T20:47:33+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -43,8 +43,8 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=sort%3Aup
 &lt;a href=&quot;https://doc.cgal.org/5.4.4/Manual/index.html&quot;&gt;CGAL-5.4.4 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.4.4 is a bug-fix release for &lt;a href=&quot;../../../../2022/01/31/cgal54&quot;&gt;CGAL 5.4&lt;/a&gt;.
-The list of fixed bugs since &lt;a href=&quot;../../../../2022/07/15/cgal5.4.2&quot;&gt;CGAL 5.4.3&lt;/a&gt;
-can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AMerged_in_5.4.4+-label%3AMerged_in_5.4.2&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
+The list of fixed bugs since &lt;a href=&quot;../../../../2022/10/12/cgal5.4.3/&quot;&gt;CGAL 5.4.3&lt;/a&gt;
+can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AMerged_in_5.4.4+-label%3AMerged_in_5.4.3&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </content>
  </entry>
  
