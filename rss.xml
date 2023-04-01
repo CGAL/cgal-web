@@ -5,112 +5,106 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2023-04-01T09:12:37+00:00</lastBuildDate>
-        <pubDate>2023-04-01T09:12:37+00:00</pubDate>
+        <lastBuildDate>2023-04-01T11:00:30+00:00</lastBuildDate>
+        <pubDate>2023-04-01T11:00:30+00:00</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
                 <title>Influence4You</title>
                 <description>
-&lt;p&gt;Although the CGAL Open Source Project is a non-profit organization it
+&lt;p&gt;Although the CGAL Open Source Project is a non-profit organization, it
 should be clear that we need communication to reach new users and grow
 the community. Today &lt;i&gt;Influencer Marketing&lt;/i&gt; is the channel of choice.&lt;/p&gt;
 
-&lt;center&gt;
-&lt;br /&gt;
-&lt;img src=&quot;../../../../../images/nycBillboard.jpg&quot; style=&quot;max-width:85%&quot; /&gt;
-&lt;br /&gt;
-&lt;/center&gt;
-
-&lt;p&gt;&lt;small&gt;CGAL during 30 min on a billboard at the occasion of a geophysics conference where we exhibited.&lt;/small&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h3&gt;Communication Theory&lt;/h3&gt;
 
-&lt;p&gt;Last century only big players had one page advertisements in
+&lt;p&gt;Last century, only big players had one-page advertisements in
 traditional print media, that is newspapers like the New York Times and
 weekly publications like The Economist. Smaller software companies
 advertised in niche publications like &lt;a href=&quot;https://www.usinenouvelle.com/&quot;&gt;Usine Nouvelle&lt;/a&gt; or
-01-Informatique. At the end of the century you saw the arrival of
+01-Informatique. The end of the century saw the arrival of
 featured content, that is articles written by journalists paid by
 companies, as well as industry fair magazines such as &lt;a href=&quot;https://formnext.mesago.com/frankfurt/en/themes-events/fonmag/fonmag_archive.html&quot;&gt;fon&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Other old fashioned ways to advertise are electronic billboards. While a
-brand like Pepsi or Nike can afford a permanent screening, we paid
-for a &lt;i&gt;focused screening&lt;/i&gt; that is 30 minutes during the social
-event of a conference.&lt;p&gt;
+brand like Pepsi or Nike can afford a permanent screening, we could only pay
+for a &lt;i&gt;focused screening&lt;/i&gt; of 30 minutes during the social event of a recent conference.&lt;p&gt;
 
+&lt;br /&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;a href=&quot;../../../../images/nycBillboard.jpg&quot;&gt;&lt;img src=&quot;../../../../images/nycBillboard.jpg&quot; style=&quot;max-width:85%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+  &lt;br /&gt;&lt;small&gt;CGAL during 30 min on a billboard at the occasion of a geophysics conference where we exhibited.&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;br /&gt;
 &lt;p&gt;October 23, 2000, will be a date forever remembered by internet
-marketers around the globe, as this was the birth of the first ever
-self-serve online advertising platform – Google AdWords.
-The CGAL Project since ever spent a small budget on keywords like
-&quot;Minkowski Sum&quot; and &quot;Hausdorff Distance&quot;.&lt;/p&gt;
+marketers around the globe as this was the birth of the first ever
+self-serve online advertising platform: Google AdWords.
+The CGAL Project has since then spent a small budget on keywords like
+&quot;Apollonius Graphs&quot; and &quot;Periodic Hyperbolic Triangulations&quot;, with unclear results.&lt;/p&gt;
 
 &lt;p&gt;We also invest in &lt;i&gt;Banner Ads&lt;/i&gt; at conferences like Siggraph,
-InterGEO (geographical information systems) and FormNext (additive
+InterGEO (geographical information systems), and FormNext (additive
 manufacturing). While at Siggraph the goal is to show presence to the
 many attendees who know us already, for the other conferences the goal
 is to make people curious and actively search -- &quot;CGAL, What
 might that stand for?&quot;.&lt;/p&gt;
 
-&lt;p&gt;We are not very active on the CGAL youtube channel which is a pity as geometric
-computing is very visual, and we are only a little
+&lt;p&gt;There are however other channels where we are not performing as we should: we are
+not very active on the CGAL youtube channel (which is a pity as geometric
+computing is very visual), and we are only a little
 bit more active on our &lt;a href=&quot;https://twitter.com/TheCGALProject&quot;&gt;twitter feed&lt;/a&gt;,
-but not comparable to some individuals in the geometry processing community
-who communicate on each lemma of each publication and on each implementation detail
-of their own code.&lt;/p&gt;
+but we should strive to communicate as the top: on each lemma of each publication,
+and on each line of code.&lt;/p&gt;
 
-&lt;p&gt; Last but not least, we have the list of &lt;a href=&quot;https://www.cgal.org/projects.html&quot;&gt;Projects Using CGAL&lt;/a&gt;
+&lt;p&gt; Last but not least, we keep a list of &lt;a href=&quot;https://www.cgal.org/projects.html&quot;&gt;Projects Using CGAL&lt;/a&gt;,
 which brings us to the heart of this posting. Most people find this
-long list of real world users a good argument to have a closer look at CGAL.
-Humans trust other humans who made a positive experience and
-who are independent from the self-praising tweets, from paid-for-content,
-and without paid-for-phantastically-rendered magazine images. Real world users are
-trustworthy &lt;i&gt;Influencers&lt;/i&gt;.&lt;/p&gt;
+long list of real-world users a good argument to have a closer look at CGAL.
+Humans trust other humans who have had a positive experience and
+who are independent from the self-praising tweets and paid-for content
+with paid-for-phantastically-rendered magazine images. In other words,
+real-world users are trustworthy &lt;i&gt;Influencers&lt;/i&gt;.&lt;/p&gt;
 
+&lt;br /&gt;
 &lt;h3&gt;Influencers&lt;/h3&gt;
 
 &lt;p&gt;We are glad that you did not stop reading when this ugly word popped up -- influencer. Most of you are
-scientists, you are objective. There must be hard facts, and it needs more than a
+scientists, and thus you are objective. There must be hard facts, and it needs more than a
 good looking teenager telling you that a particular beauty product makes you still more beautiful,
 or a pimple-speckled nerd telling you that Blender is great. Quite similar to Churchill's
 &quot;Democracy is the worst form of government – except for all the others that have been tried.&quot;,
-&lt;i&gt;Influencer Marketing&lt;/i&gt;  is by large the most honest way of advertising.&lt;/p&gt;
+&lt;i&gt;Influencer Marketing&lt;/i&gt; is by large the most honest way of advertising, which is why
+we have embraced it.&lt;/p&gt;
 
+&lt;p&gt;Indeed, the CGAL Project is now a customer of &lt;a href=&quot;https://www.influence4you.com/en&quot;&gt;Influence4You&lt;/a&gt;, the ultimate
+platform for matchmaking organizations and influencers. Without
+going into details, this platform is an efficient lever, pretty much
+like Github co-pilot is the lever in the world of programming.
+The hiccup is that we have only found few influencers on the platform that are
+knowledgeable in geometry processing. It would be good if that
+changed, not only for the CGAL Project, but for many products (yet
+another &quot;ugly&quot; word) who got the SGP Software Award, to name just a few.&lt;p&gt;
 
-&lt;p&gt;The CGAL Project is customer of &lt;a href=&quot;https://www.influence4you.com/en&quot;&gt;Influence4You&lt;/a&gt; the ultimate
-platform for matchmaking of organizations and influencers. Without
-going into details this platform is an efficient lever pretty much
-like github and github co-pilot is the lever in the world of
-programming. The hiccup is that we only found few influencers who are
-knowledgeable in geometry processing and it would be good if that
-changed -- not only for the CGAL Project, but for many products (yet
-another &quot;ugly&quot; word) who got the SGP Software Award, to name just a
-few.&lt;p&gt;
-
-
+&lt;br /&gt;
 &lt;h3&gt;Just Do It&lt;/h3&gt;
 
 &lt;p&gt;To those of you who have blogs and twitter accounts, you should have a look at
-Influence4You.  Admit that you like a big number of readers and subscribers, not
+Influence4You. Admit that you like a big number of readers and subscribers, not
 because you are selfish, but because you know that your opinion counts and you want
 to have maximum impact.&lt;/p&gt;
 
-&lt;p&gt;To those of you who have expertise and strong opinions, but not motivated
-to setup WordPress or create a twitter account, plus the awareness that the first
-three months with less than hundred followers are a humiliating experience,
-note that Influence4You provides the means to get a flying start.&lt;/p&gt;
+&lt;p&gt;To those of you who have expertise and strong opinions, but are not motivated
+to setup WordPress or to create a twitter account, or wish to avoid the humiliating experience
+of having fewer than a hundred followers in the beginning, note that Influence4You
+provides the means to get a flying start.&lt;/p&gt;
 
-&lt;center&gt;
 &lt;br /&gt;
-&lt;img src=&quot;../../../../../images/Lost_in_CGAL_translation.jpg&quot; style=&quot;max-width:85%&quot; /&gt;
-&lt;br /&gt;
-&lt;/center&gt;
-
-&lt;p&gt;&lt;small&gt;CGAL during 30 min on a billboard at the occasion of a 3D printing conference/fair where we exhibited.&lt;/small&gt;&lt;/p&gt;
-
-
-
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;a href=&quot;../../../../images/Lost_in_CGAL_translation.jpg&quot;&gt;&lt;img src=&quot;../../../../images/Lost_in_CGAL_translation.jpg&quot; style=&quot;max-width:85%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+  &lt;br /&gt;&lt;small&gt;CGAL's newest ad on Shibuya Crossing.&lt;/small&gt;
+&lt;/div&gt;
 &lt;/p&gt;&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;
 </description>
                 <link>http://www.cgal.org/news/2023/04/01/Influence4You</link>
