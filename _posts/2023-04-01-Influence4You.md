@@ -39,7 +39,7 @@ for a <I>focused screening</I> of 30 minutes during the social event of a recent
 marketers around the globe as this was the birth of the first ever
 self-serve online advertising platform: Google AdWords.
 The CGAL Project has since then spent a small budget on keywords like
-"Apollonius Graphs" and "Periodic Hyperbolic Triangulations", with unclear results.</p>
+"Apollonius Graphs" and "Periodic Hyperbolic Triangulations".</p>
 
 <p>We also invest in <I>Banner Ads</I> at conferences like Siggraph,
 InterGEO (geographical information systems), and FormNext (additive
@@ -52,8 +52,8 @@ might that stand for?".</p>
 not very active on the CGAL youtube channel (which is a pity as geometric
 computing is very visual), and we are only a little
 bit more active on our <a href="https://twitter.com/TheCGALProject">twitter feed</a>,
-but we should strive to communicate as the top: on each lemma of each publication,
-and on each line of code.</p>
+but we should strive to communicate as the top: on each lemma of a publication,
+and on each implementation detail.</p>
 
 <p> Last but not least, we keep a list of <a
 href="https://www.cgal.org/projects.html">Projects Using CGAL</a>,
@@ -97,6 +97,9 @@ to have maximum impact.</p>
 to setup WordPress or to create a twitter account, or wish to avoid the humiliating experience
 of having fewer than a hundred followers in the beginning, note that Influence4You
 provides the means to get a flying start.</p>
+
+With this new venture, CGAL is embracing both traditional and modern venues,
+and will look forward to the future.
 
 <br>
 <div style="text-align:center;">
