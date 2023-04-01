@@ -52,7 +52,7 @@ might that stand for?".</p>
 
 <p>We are not very active on the CGAL youtube channel which is a pity as geometric
 computing is very visual, and we are only a little
-bit more active on our <a href="https://twitter.com/TheCGALProject">twitter feed</a></p>,
+bit more active on our <a href="https://twitter.com/TheCGALProject">twitter feed</a>,
 but not comparable to some individuals in the geometry processing community
 who communicate on each lemma of each publication and on each implementation detail
 of their own code.</p>
