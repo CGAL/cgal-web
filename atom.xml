@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2023-04-01T12:12:50+00:00</updated>
+ <updated>2023-04-01T12:40:52+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -48,7 +48,7 @@ for a &lt;i&gt;focused screening&lt;/i&gt; of 30 minutes during the social event
 marketers around the globe as this was the birth of the first ever
 self-serve online advertising platform: Google AdWords.
 The CGAL Project has since then spent a small budget on keywords like
-&quot;Apollonius Graphs&quot; and &quot;Periodic Hyperbolic Triangulations&quot;, with unclear results.&lt;/p&gt;
+&quot;Apollonius Graphs&quot; and &quot;Periodic Hyperbolic Triangulations&quot;, with uncertain results.&lt;/p&gt;
 
 &lt;p&gt;We also invest in &lt;i&gt;Banner Ads&lt;/i&gt; at conferences like Siggraph,
 InterGEO (geographical information systems), and FormNext (additive
@@ -61,8 +61,8 @@ might that stand for?&quot;.&lt;/p&gt;
 not very active on the CGAL youtube channel (which is a pity as geometric
 computing is very visual), and we are only a little
 bit more active on our &lt;a href=&quot;https://twitter.com/TheCGALProject&quot;&gt;twitter feed&lt;/a&gt;,
-but we should strive to communicate as the top: on each lemma of each publication,
-and on each line of code.&lt;/p&gt;
+but we should strive to communicate as the top: on each lemma of a publication,
+and on each implementation detail.&lt;/p&gt;
 
 &lt;p&gt; Last but not least, we keep a list of &lt;a href=&quot;https://www.cgal.org/projects.html&quot;&gt;Projects Using CGAL&lt;/a&gt;,
 which brings us to the heart of this posting. Most people find this
@@ -104,6 +104,9 @@ to have maximum impact.&lt;/p&gt;
 to setup WordPress or to create a twitter account, or wish to avoid the humiliating experience
 of having fewer than a hundred followers in the beginning, note that Influence4You
 provides the means to get a flying start.&lt;/p&gt;
+
+With this new venture, CGAL is embracing both traditional and modern venues,
+and will look forward to the future.
 
 &lt;br /&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
