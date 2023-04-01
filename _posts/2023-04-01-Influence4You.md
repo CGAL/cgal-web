@@ -43,7 +43,7 @@ self-serve online advertising platform – Google AdWords.
 The CGAL Project since ever spent a small budget on keywords like
 "Minkowski Sum" and "Hausdorff Distance".</p>
 
-<p>We also invest in <I>Banner Ads<I> at conferences like Siggraph,
+<p>We also invest in <I>Banner Ads</I> at conferences like Siggraph,
 InterGEO (geographical information systems) and FormNext (additive
 manufacturing). While at Siggraph the goal is to show presence to the
 many attendees who know us already, for the other conferences the goal
@@ -64,7 +64,7 @@ long list of real world users a good argument to have a closer look at CGAL.
 Humans trust other humans who made a positive experience and
 who are independent from the self-praising tweets, from paid-for-content,
 and without paid-for-phantastically-rendered magazine images. Real world users are
-trustworthy <I>Influencers<I>.</p>
+trustworthy <I>Influencers</I>.</p>
 
 <H3>Influencers</H3>
 
