@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2023-04-01T08:57:27+00:00</updated>
+ <updated>2023-04-01T09:05:44+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -60,10 +60,10 @@ might that stand for?&quot;.&amp;lt;/p&amp;gt;
 
 &lt;p&gt;We are not very active on the CGAL youtube channel which is a pity as geometric
 computing is very visual, and we are only a little
-bit more active on our &lt;a href=&quot;https://twitter.com/TheCGALProject&quot;&gt;twitter feed&lt;/a&gt;&lt;/p&gt;,
+bit more active on our &lt;a href=&quot;https://twitter.com/TheCGALProject&quot;&gt;twitter feed&lt;/a&gt;,
 but not comparable to some individuals in the geometry processing community
 who communicate on each lemma of each publication and on each implementation detail
-of their own code.&amp;lt;/p&amp;gt;
+of their own code.&lt;/p&gt;
 
 &lt;p&gt; Last but not least, we have the list of &lt;a href=&quot;https://www.cgal.org/projects.html&quot;&gt;Projects Using CGAL&lt;/a&gt;
 which brings us to the heart of this posting. Most people find this
