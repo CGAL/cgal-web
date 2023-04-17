@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "SoCG Test of Time Award"
-description: "SoCG Test of Time Award"
+description: "CGAL to receive the 2023 Award"
 category: "news"
 tags: []
 ---
