@@ -4,13 +4,35 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2023-04-01T12:46:32+00:00</updated>
+ <updated>2023-04-17T13:54:03+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
    <email>cgal-info@inria.fr</email>
  </author>
 
+ 
+ <entry>
+   <title>SoCG Test of Time Award</title>
+   <link href="http://www.cgal.org/news/2023/04/07/SoCG-Test-of-Time-Award"/>
+   <updated>2023-04-07T00:00:00+00:00</updated>
+   <id>http://www.cgal.org/news/2023/04/07/SoCG-Test-of-Time-Award</id>
+   <content type="html">
+&lt;p&gt;We are proud to share the following news with you.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Dear CGAL Editorial Board,&lt;/p&gt;
+&lt;p&gt; The SoCG ToT Award Committee  has chosen the CGAL project as one of the recipients of the 2023 SoCG Test of Time Award.  In this case the Committee deliberately and exceptionally overstepped its mandate of honoring individual papers since it strongly believes that CGAL is a contribution to the SoCG Community whose impact as a whole has been and still is at least as strong and profound as that of any individual paper. The award will be presented at the 2023 CG Week to be held  June 12-15, 2023 at UT Dallas.&lt;/p&gt;
+
+
+&lt;p&gt;Congratulations to all of you for this well deserved recognition.&lt;/p&gt;
+
+ &lt;p&gt;&lt;small&gt;Pankaj Agarwal, Siu-Wing Cheng,  Raimund Seidel,  Emo Welzl (SoCG ToT Award Committee)&lt;/small&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;End of June there will be a follow-up post.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Influence4You</title>
