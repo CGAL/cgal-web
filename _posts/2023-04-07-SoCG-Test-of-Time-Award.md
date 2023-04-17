@@ -7,7 +7,7 @@ tags: []
 ---
 {% include JB/setup %}
 
-<p>We are proud to share the following news with you.</p>
+<p>We are grateful and proud to share the following news with you.</p>
 
 
 <blockquote>
