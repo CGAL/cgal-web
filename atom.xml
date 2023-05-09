@@ -4,13 +4,116 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2023-04-17T15:06:14+00:00</updated>
+ <updated>2023-05-09T08:38:22+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
    <email>cgal-info@inria.fr</email>
  </author>
 
+ 
+ <entry>
+   <title>New in CGAL: Weighted Straight Skeletons and Straight Skeleton Extrusion</title>
+   <link href="http://www.cgal.org/2023/05/09/improved_straight_skeleton"/>
+   <updated>2023-05-09T00:00:00+00:00</updated>
+   <id>http://www.cgal.org/2023/05/09/improved_straight_skeleton</id>
+   <content type="html">
+&lt;h3&gt;&lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Mael Rouxel-Labbé&lt;/a&gt;&lt;/h3&gt;
+&lt;h4&gt;&lt;a href=&quot;http://www.geometryfactory.com&quot; target=&quot;_blank&quot;&gt;GeometryFactory&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Given a 2D polygon, an intuitive way to think of the construction of its straight skeleton is
+to imagine that wavefronts (or grassfires) are spawned at each edge of the polygon, and are moving
+inward. As the fronts progress, they either contract or expand depending on the angles formed
+between polygon edges, and sometimes disappear. Under this transformation, polygon vertices move
+along the angular bisector of the lines subtending the edges, tracing a tree-like structure:
+the straight skeleton.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;a href=&quot;../../../../images/sls_progress.png&quot;&gt;&lt;img src=&quot;../../../../images/sls_progress.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+  &lt;br /&gt;&lt;small&gt;Construction of a straight skeleton: the wavefront interfaces define the straight skeleton (red).&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Straight Skeletons are a fundamental tool in geometric modeling and computational geometry.
+They are used in a variety of applications, such as architecture, animation, and manufacturing.
+Straight Skeletons are also used as a building block for other algorithms, such as the
+offsetting of polygons, which is a fundamental operation in geometric modeling
+and computational geometry.&lt;/p&gt;
+
+&lt;p&gt;The straight skeleton of a polygon is similar to the medial axis and the Voronoi diagram of a polygon
+in the way it partitions it; however, unlike the medial axis and the Voronoi diagram, the bisectors
+are not equidistant to its defining edges but to the supporting lines of such edges. As a result,
+the bisectors of a straight skeleton might not be located in the center of the polygon and thus
+cannot be regarded as a proper medial axis in its geometrical meaning.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3&gt;Weighted Straight Skeletons&lt;/h3&gt;
+
+&lt;p&gt;Weighted straight skeletons are a generalization of straight skeletons: contour edges are assigned
+a weight, which can be understood as assigning a speed to the wavefront spawned from
+the contour edge. Vertices no longer move along the angular bisector between two contour edges,
+but along a *weighted* bisector, which changes its angle.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;a href=&quot;../../../../images/sls_weights.png&quot;&gt;&lt;img src=&quot;../../../../images/sls_weights.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+  &lt;br /&gt;&lt;small&gt;An unweighted straight skeleton (leftmost) and three randomly weighted straight skeletons.&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;The Straight Skeleton package of CGAL now supports the construction of weighted straight skeletons,
+with the restriction that all weights must be positive. For clarity, this functionality is implemented
+in a new set of functions: for existing functions such as &lt;code&gt;CGAL::create_..._straight_skeleton_2()&lt;/code&gt;,
+there now exists a weighted equivalent: &lt;code&gt;CGAL::create_*weighted*_..._straight_skeleton_2()&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3&gt;Straight Skeleton Extrusion&lt;/h3&gt;
+
+&lt;p&gt;Perhaps the first (historically) use-case of straight skeletons was roof construction: given a
+polygon representing the boundary of the roof, the straight skeleton directly gives the layout
+of each tent. If each skeleton edge is lifted from the plane a height equal to its offset distance
+(also sometimes called &quot;time&quot;), the resulting roof is &quot;correct&quot; in that water will always fall down
+to the contour edges (the roof's border), regardless of where it falls on the roof.&lt;/p&gt;
+
+&lt;p&gt;The Straight Skeleton package of CGAL now implements skeleton extrusion for polygons with holes,
+with support for positive multiplicative weights. The output is a closed, combinatorially 2-manifold
+surface triangle mesh.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;a href=&quot;../../../../images/sls_extrusion.png&quot;&gt;&lt;img src=&quot;../../../../images/sls_extrusion.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+  &lt;br /&gt;&lt;small&gt;Input polygon (left), weighted skeleton with colored faces (middle), and extruded skeleton (right).&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Furthermore, it is possible to provide a maximum height, which will truncate the skeleton faces.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;a href=&quot;../../../../images/sls_cropped_extrusion.png&quot;&gt;&lt;img src=&quot;../../../../images/sls_cropped_extrusion.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+  &lt;br /&gt;&lt;small&gt;Input polygon with three holes and its weighted straight skeleton (left), &lt;br /&gt; and two extrusions of the skeleton with different maximum heights (middle and right).&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3&gt;Updated User Manual&lt;/h3&gt;
+
+&lt;p&gt;With the addition of these new features, the complete documentation of the package has been
+substancially updated. In particular, the user manual has been fully rewritten and extended.&lt;/p&gt;
+
+&lt;h3&gt;Status&lt;/h3&gt;
+
+&lt;p&gt;All these new improvements are already integrated in CGAL's master branch on the
+&lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;, and will be officially released
+in the upcoming version of CGAL, CGAL 5.6, scheduled for June 2023.&lt;/p&gt;
+
+&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;a href=&quot;https://doc.cgal.org/5.6/Manual/packages.html#PkgStraightSkeleton2&quot;&gt;Documentation of the package Straight_skeleton_2&lt;/a&gt;
+&lt;br /&gt;
+&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>SoCG Test of Time Award</title>
