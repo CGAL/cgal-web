@@ -21,7 +21,7 @@ tags: []
 </blockquote>
 
 
-<p>End of June there will be a follow-up post.</p>
+<p>Update on June 19: The Award Ceremony is now <a href="https://youtu.be/vqhX-HzWYBw?t=11118">online</a>.</p>
 
 <br><br>
 <div style="text-align:center;">
