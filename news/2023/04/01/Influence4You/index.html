@@ -1,0 +1,305 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Influence4You</title>
+    <meta name="description" content="Help! We need somebody. Help! Not just anybody.">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="CGAL Editorial Board">
+
+    <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/icomoon-social.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+
+    <!--[if lte IE 8]>
+	<link rel="stylesheet" href="css/leaflet.ie.css" />
+	<![endif]-->
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/main.css">
+
+    <!-- atom & rss feed -->
+    <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="https://cgal.github.io/cgal-web/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+
+    <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    
+
+    <!-- Navigation & Logo-->
+    <div class="mainmenu-wrapper">
+    <div class="container">
+    <nav id="mainmenu" class="mainmenu" role="navigation">
+    <ul>
+    <li class="logo-wrapper hidden-xs hidden-sm hidden-md">
+    <a href="https://cgal.github.io/cgal-web/index.html">
+    <img src="https://cgal.github.io/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
+    </a>
+    </li>
+
+    <li class="hidden-lg">
+    <a href="https://cgal.github.io/cgal-web/index.html">
+    <img src="https://cgal.github.io/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
+    </a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/project.html">Project</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/download.html">Download</a>
+    </li>
+
+    <li class="dropdown" style="transition-duration: all 0s ease; transition-delay: all 0s ease;">
+    <a href="#" class="dropdown-toggle" data-hover="dropdown">Packages <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometryProcessing" target="_blank">Geometry Processing</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
+        </ul>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/documentation.html">Documentation</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/news.html">News</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/media.html">Media</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/support.html">Support</a>
+    </li>
+
+    </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="section section-breadcrumbs">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Influence4You </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+<div class="section">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-9">
+        <div class="blog-post blog-single-post">
+          <div class="single-post-title">
+            <h3>Influence4You</h3>
+          </div>
+          <br>
+          <div class="single-post-info">
+            <i class="glyphicon glyphicon-time"></i>
+            01 April 2023
+          </div>
+          <div class="single-post-content">
+            
+<p>Although the CGAL Open Source Project is a non-profit organization, it
+should be clear that we need communication to reach new users and grow
+the community. Today <i>Influencer Marketing</i> is the channel of choice.</p>
+
+<p><br /></p>
+<h3>Communication Theory</h3>
+
+<p>Last century, only big players had one-page advertisements in
+traditional print media, that is newspapers like the New York Times and
+weekly publications like The Economist. Smaller software companies
+advertised in niche publications like <a href="https://www.usinenouvelle.com/">Usine Nouvelle</a> or
+01-Informatique. The end of the century saw the arrival of
+featured content, that is articles written by journalists paid by
+companies, as well as industry fair magazines such as <a href="https://formnext.mesago.com/frankfurt/en/themes-events/fonmag/fonmag_archive.html">fon</a>.</p>
+
+<p>Other old fashioned ways to advertise are electronic billboards. While a
+brand like Pepsi or Nike can afford a permanent screening, we could only pay
+for a <i>focused screening</i> of 30 minutes during the social event of a recent conference.<p>
+
+<br />
+<div style="text-align:center;">
+  <a href="../../../../../images/nycBillboard.jpg"><img src="../../../../../images/nycBillboard.jpg" style="max-width:85%" /></a><br />
+  <br /><small>CGAL during 30 min on a billboard at the occasion of a geophysics conference where we exhibited.</small>
+</div>
+
+<br />
+<p>October 23, 2000, will be a date forever remembered by internet
+marketers around the globe as this was the birth of the first ever
+self-serve online advertising platform: Google AdWords.
+The CGAL Project has since then spent a small budget on keywords like
+"Apollonius Graphs" and "Periodic Hyperbolic Triangulations".</p>
+
+<p>We also invest in <i>Banner Ads</i> at conferences like Siggraph,
+InterGEO (geographical information systems), and FormNext (additive
+manufacturing). While at Siggraph the goal is to show presence to the
+many attendees who know us already, for the other conferences the goal
+is to make people curious and actively search -- "CGAL, What
+might that stand for?".</p>
+
+<p>There are however other channels where we are not performing as we should: we are
+not very active on the CGAL youtube channel (which is a pity as geometric
+computing is very visual), and we are only a little
+bit more active on our <a href="https://twitter.com/TheCGALProject">twitter feed</a>,
+but we should strive to communicate as the top: on each lemma of a publication,
+and on each implementation detail.</p>
+
+<p> Last but not least, we keep a list of <a href="https://www.cgal.org/projects.html">Projects Using CGAL</a>,
+which brings us to the heart of this posting. Most people find this
+long list of real-world users a good argument to have a closer look at CGAL.
+Humans trust other humans who have had a positive experience and
+who are independent from the self-praising tweets and paid-for content
+with paid-for-phantastically-rendered magazine images. In other words,
+real-world users are trustworthy <i>Influencers</i>.</p>
+
+<br />
+<h3>Influencers</h3>
+
+<p>We are glad that you did not stop reading when this ugly word popped up -- influencer. Most of you are
+scientists, and thus you are objective. There must be hard facts, and it needs more than a
+good looking teenager telling you that a particular beauty product makes you still more beautiful,
+or a pimple-speckled nerd telling you that Blender is great. Quite similar to Churchill's
+"Democracy is the worst form of government – except for all the others that have been tried.",
+<i>Influencer Marketing</i> is by large the most honest way of advertising, which is why
+we have embraced it.</p>
+
+<p>Indeed, the CGAL Project is now a customer of <a href="https://www.influence4you.com/en">Influence4You</a>, the ultimate
+platform for matchmaking organizations and influencers. Without
+going into details, this platform is an efficient lever, pretty much
+like Github co-pilot is the lever in the world of programming.
+The hiccup is that we have only found few influencers on the platform that are
+knowledgeable in geometry processing. It would be good if that
+changed, not only for the CGAL Project, but for many products (yet
+another "ugly" word) who got the SGP Software Award, to name just a few.<p>
+
+<br />
+<h3>Just Do It</h3>
+
+<p>To those of you who have blogs and twitter accounts, you should have a look at
+Influence4You. Admit that you like a big number of readers and subscribers, not
+because you are selfish, but because you know that your opinion counts and you want
+to have maximum impact.</p>
+
+<p>To those of you who have expertise and strong opinions, but are not motivated
+to setup WordPress or to create a twitter account, or wish to avoid the humiliating experience
+of having fewer than a hundred followers in the beginning, note that Influence4You
+provides the means to get a flying start.</p>
+
+With this new venture, CGAL is embracing both traditional and modern venues,
+and will look forward to the future.
+
+<br />
+<div style="text-align:center;">
+  <a href="../../../../../images/Lost_in_CGAL_translation.jpg"><img src="../../../../../images/Lost_in_CGAL_translation.jpg" style="max-width:85%" /></a><br />
+  <br /><small>CGAL's newest ad on Shibuya Crossing.</small>
+</div>
+
+<p><b>Just in case it didn't became clear yet, this posting was the annual April joke.</b></p>
+</p></p></p></p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3 blog-sidebar">
+        <h4>Recent Posts</h4>
+        <ul class="recent-posts">
+          
+            
+            
+            <li class="active"><a href="https://cgal.github.io/cgal-web/news/2023/06/13/new-release-cgal56-beta1/index.html" class="active">New release 5.6 Beta 1</a>
+            <br><div style="font-size:12px">June 2023</div></li>
+          
+            
+            
+            <li class="active"><a href="https://cgal.github.io/cgal-web/2023/06/13/cgal56-beta1/index.html" class="active">CGAL 5.6 beta1 released</a>
+            <br><div style="font-size:12px">June 2023</div></li>
+          
+            
+            
+            <li class="active"><a href="https://cgal.github.io/cgal-web/2023/05/09/improved_straight_skeleton/index.html" class="active">New in CGAL: Weighted Straight Skeletons and Straight Skeleton Extrusion</a>
+            <br><div style="font-size:12px">May 2023</div></li>
+          
+            
+            
+            <li class="active"><a href="https://cgal.github.io/cgal-web/news/2023/04/07/SoCG-Test-of-Time-Award/index.html" class="active">SoCG Test of Time Award</a>
+            <br><div style="font-size:12px">April 2023</div></li>
+          
+        </ul>
+        <a href="https://cgal.github.io/cgal-web/news.html" class="btn">Older posts...</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="footer-copyright">
+            <div style="float: left;">
+              <a href="https://twitter.com/TheCGALProject" alt="The CGAL Project's Twitter">
+                <img src="https://cgal.github.io/cgal-web/images/icons/twitter.svg" class="center-block btn-dark-orange" alt="Twitter" height="18"></img>
+              </a>
+            </div>
+            &copy; 1995-2023 The CGAL Project. All rights reserved.
+            <div style="float: right;">
+              <a href="https://cgal.geometryfactory.com/CGAL/Members/wiki/Main_Page" alt="Password protected access to the Developer Wiki">
+                <i class="glyphicon glyphicon-lock"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascripts -->
+    <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery-1.9.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery-1.9.1.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.fitvids.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.sequence-min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.bxslider.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/template.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/bootstrap-hover-dropdown-min.js"></script>
+  </body>
+</html>
+

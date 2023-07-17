@@ -5,8 +5,8 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2023-07-17T14:48:30+00:00</lastBuildDate>
-        <pubDate>2023-07-17T14:48:30+00:00</pubDate>
+        <lastBuildDate>2023-07-17T15:08:47+00:00</lastBuildDate>
+        <pubDate>2023-07-17T15:08:47+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -22,8 +22,8 @@
 
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/news/2023/06/13/new-release-cgal56-beta1</link>
-                <guid>http://www.cgal.org/news/2023/06/13/new-release-cgal56-beta1</guid>
+                <link>http://www.cgal.org/news/2023/06/13/new-release-cgal56-beta1/index.html</link>
+                <guid>http://www.cgal.org/news/2023/06/13/new-release-cgal56-beta1/new-release-cgal56-beta1</guid>
                 <pubDate>2023-06-13T00:00:00+00:00</pubDate>
         </item>
 
@@ -186,8 +186,8 @@
 
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2023/06/13/cgal56-beta1</link>
-                <guid>http://www.cgal.org/2023/06/13/cgal56-beta1</guid>
+                <link>http://www.cgal.org/2023/06/13/cgal56-beta1/index.html</link>
+                <guid>http://www.cgal.org/2023/06/13/cgal56-beta1/cgal56-beta1</guid>
                 <pubDate>2023-06-13T00:00:00+00:00</pubDate>
         </item>
 
@@ -289,8 +289,8 @@ in the upcoming version of CGAL, CGAL 5.6, scheduled for June 2023.&lt;/p&gt;
 &lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2023/05/09/improved_straight_skeleton</link>
-                <guid>http://www.cgal.org/2023/05/09/improved_straight_skeleton</guid>
+                <link>http://www.cgal.org/2023/05/09/improved_straight_skeleton/index.html</link>
+                <guid>http://www.cgal.org/2023/05/09/improved_straight_skeleton/improved_straight_skeleton</guid>
                 <pubDate>2023-05-09T00:00:00+00:00</pubDate>
         </item>
 
@@ -317,8 +317,8 @@ in the upcoming version of CGAL, CGAL 5.6, scheduled for June 2023.&lt;/p&gt;
   &lt;br /&gt;&lt;small&gt;Certificate (click for the pdf).&lt;/small&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/news/2023/04/07/SoCG-Test-of-Time-Award</link>
-                <guid>http://www.cgal.org/news/2023/04/07/SoCG-Test-of-Time-Award</guid>
+                <link>http://www.cgal.org/news/2023/04/07/SoCG-Test-of-Time-Award/index.html</link>
+                <guid>http://www.cgal.org/news/2023/04/07/SoCG-Test-of-Time-Award/SoCG-Test-of-Time-Award</guid>
                 <pubDate>2023-04-07T00:00:00+00:00</pubDate>
         </item>
 
@@ -424,8 +424,8 @@ and will look forward to the future.
 &lt;p&gt;&lt;b&gt;Just in case it didn't became clear yet, this posting was the annual April joke.&lt;/b&gt;&lt;/p&gt;
 &lt;/p&gt;&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/news/2023/04/01/Influence4You</link>
-                <guid>http://www.cgal.org/news/2023/04/01/Influence4You</guid>
+                <link>http://www.cgal.org/news/2023/04/01/Influence4You/index.html</link>
+                <guid>http://www.cgal.org/news/2023/04/01/Influence4You/Influence4You</guid>
                 <pubDate>2023-04-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -436,8 +436,8 @@ and will look forward to the future.
 for the &lt;a href=&quot;https://summerofcode.withgoogle.com/programs/2023&quot;&gt;Google Summer of Code 2023&lt;/a&gt;.
 Have a look at our &lt;a href=&quot;https://github.com/CGAL/cgal/wiki/Project-Ideas&quot;&gt;Project Ideas&lt;/a&gt; page.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/news/2023/03/08/gsoc-2023-mentoring</link>
-                <guid>http://www.cgal.org/news/2023/03/08/gsoc-2023-mentoring</guid>
+                <link>http://www.cgal.org/news/2023/03/08/gsoc-2023-mentoring/index.html</link>
+                <guid>http://www.cgal.org/news/2023/03/08/gsoc-2023-mentoring/gsoc-2023-mentoring</guid>
                 <pubDate>2023-03-08T00:00:00+00:00</pubDate>
         </item>
 
@@ -454,8 +454,8 @@ Have a look at our &lt;a href=&quot;https://github.com/CGAL/cgal/wiki/Project-Id
 The list of fixed bugs since &lt;a href=&quot;../../../../2022/10/12/cgal551&quot;&gt;CGAL 5.5.1&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=sort%3Aupdated-desc+label%3AMerged_in_5.5.2+-label%3AMerged_in_5.5.1&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2023/02/28/cgal552</link>
-                <guid>http://www.cgal.org/2023/02/28/cgal552</guid>
+                <link>http://www.cgal.org/2023/02/28/cgal552/index.html</link>
+                <guid>http://www.cgal.org/2023/02/28/cgal552/cgal552</guid>
                 <pubDate>2023-02-28T00:00:00+00:00</pubDate>
         </item>
 
@@ -472,8 +472,8 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=sort%3Aup
 The list of fixed bugs since &lt;a href=&quot;../../../../2022/10/12/cgal5.4.3/&quot;&gt;CGAL 5.4.3&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AMerged_in_5.4.4+-label%3AMerged_in_5.4.3&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2023/02/28/cgal5.4.4</link>
-                <guid>http://www.cgal.org/2023/02/28/cgal5.4.4</guid>
+                <link>http://www.cgal.org/2023/02/28/cgal5.4.4/index.html</link>
+                <guid>http://www.cgal.org/2023/02/28/cgal5.4.4/cgal5.4.4</guid>
                 <pubDate>2023-02-28T00:00:00+00:00</pubDate>
         </item>
 
@@ -493,8 +493,8 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AM
 
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2022/10/12/new-releases</link>
-                <guid>http://www.cgal.org/2022/10/12/new-releases</guid>
+                <link>http://www.cgal.org/2022/10/12/new-releases/index.html</link>
+                <guid>http://www.cgal.org/2022/10/12/new-releases/new-releases</guid>
                 <pubDate>2022-10-12T00:00:00+00:00</pubDate>
         </item>
 
@@ -511,8 +511,8 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AM
 The list of fixed bugs since &lt;a href=&quot;../../../../2022/07/15/cgal55&quot;&gt;CGAL 5.5&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AMerged_in_5.5.1&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2022/10/12/cgal551</link>
-                <guid>http://www.cgal.org/2022/10/12/cgal551</guid>
+                <link>http://www.cgal.org/2022/10/12/cgal551/index.html</link>
+                <guid>http://www.cgal.org/2022/10/12/cgal551/cgal551</guid>
                 <pubDate>2022-10-12T00:00:00+00:00</pubDate>
         </item>
 
@@ -529,8 +529,8 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AM
 The list of fixed bugs since &lt;a href=&quot;../../../../2022/07/15/cgal5.4.2&quot;&gt;CGAL 5.4.2&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AMerged_in_5.4.3+-label%3AMerged_in_5.4.2&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2022/10/12/cgal5.4.3</link>
-                <guid>http://www.cgal.org/2022/10/12/cgal5.4.3</guid>
+                <link>http://www.cgal.org/2022/10/12/cgal5.4.3/index.html</link>
+                <guid>http://www.cgal.org/2022/10/12/cgal5.4.3/cgal5.4.3</guid>
                 <pubDate>2022-10-12T00:00:00+00:00</pubDate>
         </item>
 
@@ -559,8 +559,8 @@ on Thursday, 11 August, 2022 at 11:10 am in the Labs are (West Building, Ballroo
 
 &lt;p&gt;See you there!&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2022/07/29/siggraph-2022</link>
-                <guid>http://www.cgal.org/2022/07/29/siggraph-2022</guid>
+                <link>http://www.cgal.org/2022/07/29/siggraph-2022/index.html</link>
+                <guid>http://www.cgal.org/2022/07/29/siggraph-2022/siggraph-2022</guid>
                 <pubDate>2022-07-29T00:00:00+00:00</pubDate>
         </item>
 
@@ -580,8 +580,8 @@ on Thursday, 11 August, 2022 at 11:10 am in the Labs are (West Building, Ballroo
 
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2022/07/18/new-releases</link>
-                <guid>http://www.cgal.org/2022/07/18/new-releases</guid>
+                <link>http://www.cgal.org/2022/07/18/new-releases/index.html</link>
+                <guid>http://www.cgal.org/2022/07/18/new-releases/new-releases</guid>
                 <pubDate>2022-07-18T00:00:00+00:00</pubDate>
         </item>
 
@@ -698,8 +698,8 @@ as a post-processing step for the tetrahedral mesh generation.&lt;/li&gt;
 
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2022/07/15/cgal55</link>
-                <guid>http://www.cgal.org/2022/07/15/cgal55</guid>
+                <link>http://www.cgal.org/2022/07/15/cgal55/index.html</link>
+                <guid>http://www.cgal.org/2022/07/15/cgal55/cgal55</guid>
                 <pubDate>2022-07-15T00:00:00+00:00</pubDate>
         </item>
 
@@ -716,8 +716,8 @@ as a post-processing step for the tetrahedral mesh generation.&lt;/li&gt;
 The list of fixed bugs since &lt;a href=&quot;../../../../2022/06/06/cgal541&quot;&gt;CGAL 5.4.1&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AMerged_in_5.4.2+-label%3AMerged_in_5.4.1&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2022/07/15/cgal5.4.2</link>
-                <guid>http://www.cgal.org/2022/07/15/cgal5.4.2</guid>
+                <link>http://www.cgal.org/2022/07/15/cgal5.4.2/index.html</link>
+                <guid>http://www.cgal.org/2022/07/15/cgal5.4.2/cgal5.4.2</guid>
                 <pubDate>2022-07-15T00:00:00+00:00</pubDate>
         </item>
 
@@ -737,8 +737,8 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AM
 
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/news/2022/06/07/three_new_releases</link>
-                <guid>http://www.cgal.org/news/2022/06/07/three_new_releases</guid>
+                <link>http://www.cgal.org/news/2022/06/07/three_new_releases/index.html</link>
+                <guid>http://www.cgal.org/news/2022/06/07/three_new_releases/three_new_releases</guid>
                 <pubDate>2022-06-07T00:00:00+00:00</pubDate>
         </item>
 
@@ -848,8 +848,8 @@ as a post-processing step for the tetrahedral mesh generation.&lt;/li&gt;
 
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2022/06/06/cgal55-beta1</link>
-                <guid>http://www.cgal.org/2022/06/06/cgal55-beta1</guid>
+                <link>http://www.cgal.org/2022/06/06/cgal55-beta1/index.html</link>
+                <guid>http://www.cgal.org/2022/06/06/cgal55-beta1/cgal55-beta1</guid>
                 <pubDate>2022-06-06T00:00:00+00:00</pubDate>
         </item>
 
@@ -866,8 +866,8 @@ as a post-processing step for the tetrahedral mesh generation.&lt;/li&gt;
 The list of fixed bugs since &lt;a href=&quot;../../../../2022/01/31/cgal54&quot;&gt;CGAL 5.4&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AMerged_in_5.4.1&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2022/06/06/cgal541</link>
-                <guid>http://www.cgal.org/2022/06/06/cgal541</guid>
+                <link>http://www.cgal.org/2022/06/06/cgal541/index.html</link>
+                <guid>http://www.cgal.org/2022/06/06/cgal541/cgal541</guid>
                 <pubDate>2022-06-06T00:00:00+00:00</pubDate>
         </item>
 
@@ -884,8 +884,8 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AM
 The list of fixed bugs since &lt;a href=&quot;../../../../2021/12/13/cgal531&quot;&gt;CGAL 5.3.1&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AMerged_in_5.3.2+-label%3AMerged_in_5.3.1&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2022/06/06/cgal532</link>
-                <guid>http://www.cgal.org/2022/06/06/cgal532</guid>
+                <link>http://www.cgal.org/2022/06/06/cgal532/index.html</link>
+                <guid>http://www.cgal.org/2022/06/06/cgal532/cgal532</guid>
                 <pubDate>2022-06-06T00:00:00+00:00</pubDate>
         </item>
 
@@ -1017,8 +1017,8 @@ officially released in the upcoming version of CGAL, CGAL 5.5, scheduled for Jun
 &lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2022/05/18/alpha_wrap</link>
-                <guid>http://www.cgal.org/2022/05/18/alpha_wrap</guid>
+                <link>http://www.cgal.org/2022/05/18/alpha_wrap/index.html</link>
+                <guid>http://www.cgal.org/2022/05/18/alpha_wrap/alpha_wrap</guid>
                 <pubDate>2022-05-18T00:00:00+00:00</pubDate>
         </item>
 
@@ -1066,8 +1066,8 @@ It is not clear that Sonia Delaunay was aware of this, but &lt;i&gt;Ignorantia j
 &lt;p&gt;&lt;b&gt;This April joke came with a &lt;a href=&quot;https://cgal.github.io/cgal-web/April22/index.html&quot;&gt;gallery.&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
 &lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/news/2022/04/01/sxsw</link>
-                <guid>http://www.cgal.org/news/2022/04/01/sxsw</guid>
+                <link>http://www.cgal.org/news/2022/04/01/sxsw/index.html</link>
+                <guid>http://www.cgal.org/news/2022/04/01/sxsw/sxsw</guid>
                 <pubDate>2022-04-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -1078,8 +1078,8 @@ It is not clear that Sonia Delaunay was aware of this, but &lt;i&gt;Ignorantia j
 for the &lt;a href=&quot;https://summerofcode.withgoogle.com/programs/2022&quot;&gt;Google Summer of Code 2022&lt;/a&gt;.
 Have a look at our &lt;a href=&quot;https://github.com/CGAL/cgal/wiki/Project-Ideas&quot;&gt;Project Ideas&lt;/a&gt; page.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/news/2022/03/08/gsoc-2022-mentoring</link>
-                <guid>http://www.cgal.org/news/2022/03/08/gsoc-2022-mentoring</guid>
+                <link>http://www.cgal.org/news/2022/03/08/gsoc-2022-mentoring/index.html</link>
+                <guid>http://www.cgal.org/news/2022/03/08/gsoc-2022-mentoring/gsoc-2022-mentoring</guid>
                 <pubDate>2022-03-08T00:00:00+00:00</pubDate>
         </item>
 
@@ -1233,8 +1233,8 @@ Have a look at our &lt;a href=&quot;https://github.com/CGAL/cgal/wiki/Project-Id
 
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2022/01/31/cgal54</link>
-                <guid>http://www.cgal.org/2022/01/31/cgal54</guid>
+                <link>http://www.cgal.org/2022/01/31/cgal54/index.html</link>
+                <guid>http://www.cgal.org/2022/01/31/cgal54/cgal54</guid>
                 <pubDate>2022-01-31T00:00:00+00:00</pubDate>
         </item>
 
@@ -1385,8 +1385,8 @@ Have a look at our &lt;a href=&quot;https://github.com/CGAL/cgal/wiki/Project-Id
 
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2021/12/17/cgal54-beta1</link>
-                <guid>http://www.cgal.org/2021/12/17/cgal54-beta1</guid>
+                <link>http://www.cgal.org/2021/12/17/cgal54-beta1/index.html</link>
+                <guid>http://www.cgal.org/2021/12/17/cgal54-beta1/cgal54-beta1</guid>
                 <pubDate>2021-12-17T00:00:00+00:00</pubDate>
         </item>
 
@@ -1405,8 +1405,8 @@ Have a look at our &lt;a href=&quot;https://github.com/CGAL/cgal/wiki/Project-Id
 
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/news/2021/12/13/two_new_releases</link>
-                <guid>http://www.cgal.org/news/2021/12/13/two_new_releases</guid>
+                <link>http://www.cgal.org/news/2021/12/13/two_new_releases/index.html</link>
+                <guid>http://www.cgal.org/news/2021/12/13/two_new_releases/two_new_releases</guid>
                 <pubDate>2021-12-13T00:00:00+00:00</pubDate>
         </item>
 
@@ -1423,8 +1423,8 @@ Have a look at our &lt;a href=&quot;https://github.com/CGAL/cgal/wiki/Project-Id
 The list of fixed bugs since &lt;a href=&quot;../../../../2021/07/06/cgal53&quot;&gt;CGAL 5.3&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AMerged_in_5.3.1&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2021/12/13/cgal531</link>
-                <guid>http://www.cgal.org/2021/12/13/cgal531</guid>
+                <link>http://www.cgal.org/2021/12/13/cgal531/index.html</link>
+                <guid>http://www.cgal.org/2021/12/13/cgal531/cgal531</guid>
                 <pubDate>2021-12-13T00:00:00+00:00</pubDate>
         </item>
 
@@ -1441,8 +1441,8 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AM
 The list of fixed bugs since &lt;a href=&quot;../../../../2021/07/06/cgal523&quot;&gt;CGAL 5.2.3&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AMerged_in_5.2.4+-label%3AMerged_in_5.2.3&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2021/12/13/cgal524</link>
-                <guid>http://www.cgal.org/2021/12/13/cgal524</guid>
+                <link>http://www.cgal.org/2021/12/13/cgal524/index.html</link>
+                <guid>http://www.cgal.org/2021/12/13/cgal524/cgal524</guid>
                 <pubDate>2021-12-13T00:00:00+00:00</pubDate>
         </item>
 
@@ -1631,8 +1631,8 @@ officially released in the upcoming version of CGAL, CGAL 5.4, scheduled for Dec
 &lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2021/11/16/shape-regularization</link>
-                <guid>http://www.cgal.org/2021/11/16/shape-regularization</guid>
+                <link>http://www.cgal.org/2021/11/16/shape-regularization/index.html</link>
+                <guid>http://www.cgal.org/2021/11/16/shape-regularization/shape-regularization</guid>
                 <pubDate>2021-11-16T00:00:00+00:00</pubDate>
         </item>
 
@@ -1652,8 +1652,8 @@ officially released in the upcoming version of CGAL, CGAL 5.4, scheduled for Dec
 
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/news/2021/07/06/three_new_releases</link>
-                <guid>http://www.cgal.org/news/2021/07/06/three_new_releases</guid>
+                <link>http://www.cgal.org/news/2021/07/06/three_new_releases/index.html</link>
+                <guid>http://www.cgal.org/news/2021/07/06/three_new_releases/three_new_releases</guid>
                 <pubDate>2021-07-06T00:00:00+00:00</pubDate>
         </item>
 
@@ -1799,8 +1799,8 @@ classifier &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CG
 
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2021/07/06/cgal53</link>
-                <guid>http://www.cgal.org/2021/07/06/cgal53</guid>
+                <link>http://www.cgal.org/2021/07/06/cgal53/index.html</link>
+                <guid>http://www.cgal.org/2021/07/06/cgal53/cgal53</guid>
                 <pubDate>2021-07-06T00:00:00+00:00</pubDate>
         </item>
 
@@ -1817,8 +1817,8 @@ classifier &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CG
 The list of fixed bugs since &lt;a href=&quot;../../../../2021/06/02/cgal522&quot;&gt;CGAL 5.2.2&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AMerged_in_5.2.3+-label%3AMerged_in_5.2.2&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2021/07/06/cgal523</link>
-                <guid>http://www.cgal.org/2021/07/06/cgal523</guid>
+                <link>http://www.cgal.org/2021/07/06/cgal523/index.html</link>
+                <guid>http://www.cgal.org/2021/07/06/cgal523/cgal523</guid>
                 <pubDate>2021-07-06T00:00:00+00:00</pubDate>
         </item>
 
@@ -1835,8 +1835,8 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AM
 The list of fixed bugs since &lt;a href=&quot;../../../../2021/06/02/cgal514&quot;&gt;CGAL 5.1.4&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AMerged_in_5.1.5+-label%3AMerged_in_5.1.4&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2021/07/06/cgal515</link>
-                <guid>http://www.cgal.org/2021/07/06/cgal515</guid>
+                <link>http://www.cgal.org/2021/07/06/cgal515/index.html</link>
+                <guid>http://www.cgal.org/2021/07/06/cgal515/cgal515</guid>
                 <pubDate>2021-07-06T00:00:00+00:00</pubDate>
         </item>
 
@@ -1905,8 +1905,8 @@ officially released in the upcoming version of CGAL, CGAL 5.3, scheduled for Jun
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;
 &lt;/a&gt;&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2021/06/21/Triangulations_on_the_sphere</link>
-                <guid>http://www.cgal.org/2021/06/21/Triangulations_on_the_sphere</guid>
+                <link>http://www.cgal.org/2021/06/21/Triangulations_on_the_sphere/index.html</link>
+                <guid>http://www.cgal.org/2021/06/21/Triangulations_on_the_sphere/Triangulations_on_the_sphere</guid>
                 <pubDate>2021-06-21T00:00:00+00:00</pubDate>
         </item>
 
@@ -2038,8 +2038,8 @@ classifier &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CG
 
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2021/06/04/cgal53-beta1</link>
-                <guid>http://www.cgal.org/2021/06/04/cgal53-beta1</guid>
+                <link>http://www.cgal.org/2021/06/04/cgal53-beta1/index.html</link>
+                <guid>http://www.cgal.org/2021/06/04/cgal53-beta1/cgal53-beta1</guid>
                 <pubDate>2021-06-04T00:00:00+00:00</pubDate>
         </item>
 
@@ -2058,8 +2058,8 @@ classifier &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CG
 
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/news/2021/06/02/new_bugfix_releases</link>
-                <guid>http://www.cgal.org/news/2021/06/02/new_bugfix_releases</guid>
+                <link>http://www.cgal.org/news/2021/06/02/new_bugfix_releases/index.html</link>
+                <guid>http://www.cgal.org/news/2021/06/02/new_bugfix_releases/new_bugfix_releases</guid>
                 <pubDate>2021-06-02T00:00:00+00:00</pubDate>
         </item>
 
@@ -2076,8 +2076,8 @@ classifier &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CG
 The list of fixed bugs since &lt;a href=&quot;../../../../2021/03/17/cgal521&quot;&gt;CGAL 5.2.1&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AMerged_in_5.2.2+-label%3AMerged_in_5.2.1&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2021/06/02/cgal522</link>
-                <guid>http://www.cgal.org/2021/06/02/cgal522</guid>
+                <link>http://www.cgal.org/2021/06/02/cgal522/index.html</link>
+                <guid>http://www.cgal.org/2021/06/02/cgal522/cgal522</guid>
                 <pubDate>2021-06-02T00:00:00+00:00</pubDate>
         </item>
 
@@ -2094,8 +2094,8 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AM
 The list of fixed bugs since &lt;a href=&quot;../../../../2021/03/17/cgal513&quot;&gt;CGAL 5.1.3&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AMerged_in_5.1.4+-label%3AMerged_in_5.1.3&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2021/06/02/cgal514</link>
-                <guid>http://www.cgal.org/2021/06/02/cgal514</guid>
+                <link>http://www.cgal.org/2021/06/02/cgal514/index.html</link>
+                <guid>http://www.cgal.org/2021/06/02/cgal514/cgal514</guid>
                 <pubDate>2021-06-02T00:00:00+00:00</pubDate>
         </item>
 
@@ -2173,8 +2173,8 @@ Octree&lt;/a&gt; &lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2021/04/27/Orthtree</link>
-                <guid>http://www.cgal.org/2021/04/27/Orthtree</guid>
+                <link>http://www.cgal.org/2021/04/27/Orthtree/index.html</link>
+                <guid>http://www.cgal.org/2021/04/27/Orthtree/Orthtree</guid>
                 <pubDate>2021-04-27T00:00:00+00:00</pubDate>
         </item>
 
@@ -2222,8 +2222,8 @@ Regulations. This may or may not be the case when you register in Clubhouse, onc
 
 &lt;p&gt;&lt;b&gt;This April joke came with a &lt;a href=&quot;https://cgal.github.io/cgal-web/April21/index.html&quot;&gt;gallery.&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/news/2021/04/01/Clubhouse</link>
-                <guid>http://www.cgal.org/news/2021/04/01/Clubhouse</guid>
+                <link>http://www.cgal.org/news/2021/04/01/Clubhouse/index.html</link>
+                <guid>http://www.cgal.org/news/2021/04/01/Clubhouse/Clubhouse</guid>
                 <pubDate>2021-04-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -2240,8 +2240,8 @@ Regulations. This may or may not be the case when you register in Clubhouse, onc
 The list of fixed bugs since &lt;a href=&quot;../../../../2020/12/22/cgal52&quot;&gt;CGAL 5.2&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AMerged_in_5.2.1&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2021/03/17/cgal521</link>
-                <guid>http://www.cgal.org/2021/03/17/cgal521</guid>
+                <link>http://www.cgal.org/2021/03/17/cgal521/index.html</link>
+                <guid>http://www.cgal.org/2021/03/17/cgal521/cgal521</guid>
                 <pubDate>2021-03-17T00:00:00+00:00</pubDate>
         </item>
 
@@ -2258,8 +2258,8 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AM
 The list of fixed bugs since &lt;a href=&quot;../../../../2020/12/22/cgal512&quot;&gt;CGAL 5.1.2&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AMerged_in_5.1.3+-label%3AMerged_in_5.1.2&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2021/03/17/cgal513</link>
-                <guid>http://www.cgal.org/2021/03/17/cgal513</guid>
+                <link>http://www.cgal.org/2021/03/17/cgal513/index.html</link>
+                <guid>http://www.cgal.org/2021/03/17/cgal513/cgal513</guid>
                 <pubDate>2021-03-17T00:00:00+00:00</pubDate>
         </item>
 
@@ -2414,8 +2414,8 @@ and &lt;a href=&quot;https://doc.cgal.org/5.2/Triangulation_3/classCGAL_1_1Trian
 
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2020/12/22/cgal52</link>
-                <guid>http://www.cgal.org/2020/12/22/cgal52</guid>
+                <link>http://www.cgal.org/2020/12/22/cgal52/index.html</link>
+                <guid>http://www.cgal.org/2020/12/22/cgal52/cgal52</guid>
                 <pubDate>2020-12-22T00:00:00+00:00</pubDate>
         </item>
 
@@ -2432,8 +2432,8 @@ and &lt;a href=&quot;https://doc.cgal.org/5.2/Triangulation_3/classCGAL_1_1Trian
 The list of fixed bugs since &lt;a href=&quot;../../../../2020/11/16/cgal511&quot;&gt;CGAL 5.1.1&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/pulls?q=label%3AMerged_in_5.1.2+-label%3AMerged_in_5.1.1&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2020/12/22/cgal512</link>
-                <guid>http://www.cgal.org/2020/12/22/cgal512</guid>
+                <link>http://www.cgal.org/2020/12/22/cgal512/index.html</link>
+                <guid>http://www.cgal.org/2020/12/22/cgal512/cgal512</guid>
                 <pubDate>2020-12-22T00:00:00+00:00</pubDate>
         </item>
 
@@ -2588,8 +2588,8 @@ and &lt;a href=&quot;https://doc.cgal.org/5.2/Triangulation_3/classCGAL_1_1Trian
 
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2020/11/18/cgal52-beta1</link>
-                <guid>http://www.cgal.org/2020/11/18/cgal52-beta1</guid>
+                <link>http://www.cgal.org/2020/11/18/cgal52-beta1/index.html</link>
+                <guid>http://www.cgal.org/2020/11/18/cgal52-beta1/cgal52-beta1</guid>
                 <pubDate>2020-11-18T00:00:00+00:00</pubDate>
         </item>
 
@@ -2608,8 +2608,8 @@ and &lt;a href=&quot;https://doc.cgal.org/5.2/Triangulation_3/classCGAL_1_1Trian
 
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/news/2020/11/16/new_bugfix_releases</link>
-                <guid>http://www.cgal.org/news/2020/11/16/new_bugfix_releases</guid>
+                <link>http://www.cgal.org/news/2020/11/16/new_bugfix_releases/index.html</link>
+                <guid>http://www.cgal.org/news/2020/11/16/new_bugfix_releases/new_bugfix_releases</guid>
                 <pubDate>2020-11-16T00:00:00+00:00</pubDate>
         </item>
 
@@ -2626,8 +2626,8 @@ and &lt;a href=&quot;https://doc.cgal.org/5.2/Triangulation_3/classCGAL_1_1Trian
 The list of fixed bugs since &lt;a href=&quot;../../../../2020/09/08/cgal51&quot;&gt;CGAL 5.1&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AMerged_in_5.1.1&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2020/11/16/cgal511</link>
-                <guid>http://www.cgal.org/2020/11/16/cgal511</guid>
+                <link>http://www.cgal.org/2020/11/16/cgal511/index.html</link>
+                <guid>http://www.cgal.org/2020/11/16/cgal511/cgal511</guid>
                 <pubDate>2020-11-16T00:00:00+00:00</pubDate>
         </item>
 
@@ -2644,8 +2644,8 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AM
 The list of fixed bugs since &lt;a href=&quot;../../../../2020/08/03/cgal503&quot;&gt;CGAL 5.0.3&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AMerged_in_5.0.4+-label%3AMerged_in_5.0.3&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2020/11/16/cgal504</link>
-                <guid>http://www.cgal.org/2020/11/16/cgal504</guid>
+                <link>http://www.cgal.org/2020/11/16/cgal504/index.html</link>
+                <guid>http://www.cgal.org/2020/11/16/cgal504/cgal504</guid>
                 <pubDate>2020-11-16T00:00:00+00:00</pubDate>
         </item>
 
@@ -2980,8 +2980,8 @@ if the third party library TBB has been found and linked with, and to
 
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2020/09/08/cgal51</link>
-                <guid>http://www.cgal.org/2020/09/08/cgal51</guid>
+                <link>http://www.cgal.org/2020/09/08/cgal51/index.html</link>
+                <guid>http://www.cgal.org/2020/09/08/cgal51/cgal51</guid>
                 <pubDate>2020-09-08T00:00:00+00:00</pubDate>
         </item>
 
@@ -3051,8 +3051,8 @@ officially released in the upcoming version of CGAL, CGAL 5.1, scheduled for Sep
 &lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2020/08/07/Tetrahedral-remeshing</link>
-                <guid>http://www.cgal.org/2020/08/07/Tetrahedral-remeshing</guid>
+                <link>http://www.cgal.org/2020/08/07/Tetrahedral-remeshing/index.html</link>
+                <guid>http://www.cgal.org/2020/08/07/Tetrahedral-remeshing/Tetrahedral-remeshing</guid>
                 <pubDate>2020-08-07T00:00:00+00:00</pubDate>
         </item>
 
@@ -3069,8 +3069,8 @@ officially released in the upcoming version of CGAL, CGAL 5.1, scheduled for Sep
 The list of fixed bugs since &lt;a href=&quot;../../../../2020/02/25/cgal502&quot;&gt;CGAL 5.0.2&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AMerged_in_5.0.3+-label%3AMerged_in_5.0.2&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2020/08/03/cgal503</link>
-                <guid>http://www.cgal.org/2020/08/03/cgal503</guid>
+                <link>http://www.cgal.org/2020/08/03/cgal503/index.html</link>
+                <guid>http://www.cgal.org/2020/08/03/cgal503/cgal503</guid>
                 <pubDate>2020-08-03T00:00:00+00:00</pubDate>
         </item>
 
@@ -3400,8 +3400,8 @@ if the third party library TBB has been found and linked with, and to
 
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2020/07/28/cgal51-beta2</link>
-                <guid>http://www.cgal.org/2020/07/28/cgal51-beta2</guid>
+                <link>http://www.cgal.org/2020/07/28/cgal51-beta2/index.html</link>
+                <guid>http://www.cgal.org/2020/07/28/cgal51-beta2/cgal51-beta2</guid>
                 <pubDate>2020-07-28T00:00:00+00:00</pubDate>
         </item>
 
@@ -3725,8 +3725,8 @@ if the third party library TBB has been found and linked with, and to
 
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2020/06/09/cgal51-beta1</link>
-                <guid>http://www.cgal.org/2020/06/09/cgal51-beta1</guid>
+                <link>http://www.cgal.org/2020/06/09/cgal51-beta1/index.html</link>
+                <guid>http://www.cgal.org/2020/06/09/cgal51-beta1/cgal51-beta1</guid>
                 <pubDate>2020-06-09T00:00:00+00:00</pubDate>
         </item>
 
@@ -3805,8 +3805,8 @@ officially released in the upcoming version of CGAL, CGAL 5.1, scheduled for Jul
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;
 &lt;/p&gt;&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2020/05/08/Surface_mesh_topology</link>
-                <guid>http://www.cgal.org/2020/05/08/Surface_mesh_topology</guid>
+                <link>http://www.cgal.org/2020/05/08/Surface_mesh_topology/index.html</link>
+                <guid>http://www.cgal.org/2020/05/08/Surface_mesh_topology/Surface_mesh_topology</guid>
                 <pubDate>2020-05-08T00:00:00+00:00</pubDate>
         </item>
 
@@ -3853,8 +3853,8 @@ officially released in the upcoming version of CGAL, CGAL 5.1, scheduled for Jul
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;
 &lt;/p&gt;&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2020/05/04/Tutorial_on_GIS</link>
-                <guid>http://www.cgal.org/2020/05/04/Tutorial_on_GIS</guid>
+                <link>http://www.cgal.org/2020/05/04/Tutorial_on_GIS/index.html</link>
+                <guid>http://www.cgal.org/2020/05/04/Tutorial_on_GIS/Tutorial_on_GIS</guid>
                 <pubDate>2020-05-04T00:00:00+00:00</pubDate>
         </item>
 
@@ -3957,8 +3957,8 @@ officially released in the upcoming version of CGAL, CGAL 5.1, scheduled for Jul
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;
 &lt;/p&gt;&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2020/04/20/Optimal_bounding_box</link>
-                <guid>http://www.cgal.org/2020/04/20/Optimal_bounding_box</guid>
+                <link>http://www.cgal.org/2020/04/20/Optimal_bounding_box/index.html</link>
+                <guid>http://www.cgal.org/2020/04/20/Optimal_bounding_box/Optimal_bounding_box</guid>
                 <pubDate>2020-04-20T00:00:00+00:00</pubDate>
         </item>
 
@@ -4005,8 +4005,8 @@ officially released in the upcoming version of CGAL, CGAL 5.1, scheduled for Jul
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;
 &lt;/p&gt;&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2020/04/02/Tutorial_on_Surface_Reconstruction</link>
-                <guid>http://www.cgal.org/2020/04/02/Tutorial_on_Surface_Reconstruction</guid>
+                <link>http://www.cgal.org/2020/04/02/Tutorial_on_Surface_Reconstruction/index.html</link>
+                <guid>http://www.cgal.org/2020/04/02/Tutorial_on_Surface_Reconstruction/Tutorial_on_Surface_Reconstruction</guid>
                 <pubDate>2020-04-02T00:00:00+00:00</pubDate>
         </item>
 
@@ -4088,8 +4088,8 @@ It even came with a &lt;a href=&quot;https://cgal.github.io/cgal-web/April20/ind
 
 &lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/news/2020/04/01/Bayer</link>
-                <guid>http://www.cgal.org/news/2020/04/01/Bayer</guid>
+                <link>http://www.cgal.org/news/2020/04/01/Bayer/index.html</link>
+                <guid>http://www.cgal.org/news/2020/04/01/Bayer/Bayer</guid>
                 <pubDate>2020-04-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -4133,8 +4133,8 @@ It even came with a &lt;a href=&quot;https://cgal.github.io/cgal-web/April20/ind
 &lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2020/03/23/Registration</link>
-                <guid>http://www.cgal.org/2020/03/23/Registration</guid>
+                <link>http://www.cgal.org/2020/03/23/Registration/index.html</link>
+                <guid>http://www.cgal.org/2020/03/23/Registration/Registration</guid>
                 <pubDate>2020-03-23T00:00:00+00:00</pubDate>
         </item>
 
@@ -4151,8 +4151,8 @@ It even came with a &lt;a href=&quot;https://cgal.github.io/cgal-web/April20/ind
 The list of fixed bugs since &lt;a href=&quot;../../../../2020/01/24/cgal501&quot;&gt;CGAL 5.0.1&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AMerged_in_5.0.2+-label%3AMerged_in_5.0.1&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2020/02/25/cgal502</link>
-                <guid>http://www.cgal.org/2020/02/25/cgal502</guid>
+                <link>http://www.cgal.org/2020/02/25/cgal502/index.html</link>
+                <guid>http://www.cgal.org/2020/02/25/cgal502/cgal502</guid>
                 <pubDate>2020-02-25T00:00:00+00:00</pubDate>
         </item>
 
@@ -4169,8 +4169,8 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AM
 The list of fixed bugs since &lt;a href=&quot;../../../../2019/11/08/cgal4142&quot;&gt;CGAL 4.14.2&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AMerged_in_4.14.3+-label%3AMerged_in_4.14.2&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2020/02/25/cgal4143</link>
-                <guid>http://www.cgal.org/2020/02/25/cgal4143</guid>
+                <link>http://www.cgal.org/2020/02/25/cgal4143/index.html</link>
+                <guid>http://www.cgal.org/2020/02/25/cgal4143/cgal4143</guid>
                 <pubDate>2020-02-25T00:00:00+00:00</pubDate>
         </item>
 
@@ -4181,8 +4181,8 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AM
 for &lt;a href=&quot;https://summerofcode.withgoogle.com/&quot;&gt;Google Summer of Code 2020&lt;/a&gt;.
 Have a look at our &lt;a href=&quot;https://github.com/CGAL/cgal/wiki/Project-Ideas&quot;&gt;Project Ideas&lt;/a&gt; page.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/news/2020/02/20/gsoc-2020-mentoring</link>
-                <guid>http://www.cgal.org/news/2020/02/20/gsoc-2020-mentoring</guid>
+                <link>http://www.cgal.org/news/2020/02/20/gsoc-2020-mentoring/index.html</link>
+                <guid>http://www.cgal.org/news/2020/02/20/gsoc-2020-mentoring/gsoc-2020-mentoring</guid>
                 <pubDate>2020-02-20T00:00:00+00:00</pubDate>
         </item>
 
@@ -4199,8 +4199,8 @@ Have a look at our &lt;a href=&quot;https://github.com/CGAL/cgal/wiki/Project-Id
 The list of fixed bugs since &lt;a href=&quot;../../../../2019/11/08/cgal50&quot;&gt;CGAL 5.0&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AMerged_in_5.0.1+is%3Aclosed&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2020/01/24/cgal501</link>
-                <guid>http://www.cgal.org/2020/01/24/cgal501</guid>
+                <link>http://www.cgal.org/2020/01/24/cgal501/index.html</link>
+                <guid>http://www.cgal.org/2020/01/24/cgal501/cgal501</guid>
                 <pubDate>2020-01-24T00:00:00+00:00</pubDate>
         </item>
 
@@ -4427,8 +4427,8 @@ for solving Mixed Integer Programming (MIP) problems with or without constraints
 
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2019/11/08/cgal50</link>
-                <guid>http://www.cgal.org/2019/11/08/cgal50</guid>
+                <link>http://www.cgal.org/2019/11/08/cgal50/index.html</link>
+                <guid>http://www.cgal.org/2019/11/08/cgal50/cgal50</guid>
                 <pubDate>2019-11-08T00:00:00+00:00</pubDate>
         </item>
 
@@ -4445,8 +4445,8 @@ for solving Mixed Integer Programming (MIP) problems with or without constraints
 The list of fixed bugs since &lt;a href=&quot;../../../../2019/03/29/cgal414&quot;&gt;CGAL 4.14&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=milestone%3A4.14.2&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2019/11/08/cgal4142</link>
-                <guid>http://www.cgal.org/2019/11/08/cgal4142</guid>
+                <link>http://www.cgal.org/2019/11/08/cgal4142/index.html</link>
+                <guid>http://www.cgal.org/2019/11/08/cgal4142/cgal4142</guid>
                 <pubDate>2019-11-08T00:00:00+00:00</pubDate>
         </item>
 
@@ -4673,8 +4673,8 @@ for solving Mixed Integer Programming (MIP) problems with or without constraints
 
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2019/10/31/cgal50-beta2</link>
-                <guid>http://www.cgal.org/2019/10/31/cgal50-beta2</guid>
+                <link>http://www.cgal.org/2019/10/31/cgal50-beta2/index.html</link>
+                <guid>http://www.cgal.org/2019/10/31/cgal50-beta2/cgal50-beta2</guid>
                 <pubDate>2019-10-31T00:00:00+00:00</pubDate>
         </item>
 
@@ -4707,8 +4707,8 @@ CGAL-4.14 and its bug-fix releases.&lt;/p&gt;
 
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/news/2019/09/30/new_releases</link>
-                <guid>http://www.cgal.org/news/2019/09/30/new_releases</guid>
+                <link>http://www.cgal.org/news/2019/09/30/new_releases/index.html</link>
+                <guid>http://www.cgal.org/news/2019/09/30/new_releases/new_releases</guid>
                 <pubDate>2019-09-30T00:00:00+00:00</pubDate>
         </item>
 
@@ -4932,8 +4932,8 @@ for solving Mixed Integer Programming (MIP) problems with or without constraints
 
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2019/09/30/cgal50-beta1</link>
-                <guid>http://www.cgal.org/2019/09/30/cgal50-beta1</guid>
+                <link>http://www.cgal.org/2019/09/30/cgal50-beta1/index.html</link>
+                <guid>http://www.cgal.org/2019/09/30/cgal50-beta1/cgal50-beta1</guid>
                 <pubDate>2019-09-30T00:00:00+00:00</pubDate>
         </item>
 
@@ -4950,8 +4950,8 @@ for solving Mixed Integer Programming (MIP) problems with or without constraints
 The list of fixed bugs since &lt;a href=&quot;../../../../2019/03/29/cgal414&quot;&gt;CGAL 4.14&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=milestone%3A4.14.1&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2019/09/30/cgal4141</link>
-                <guid>http://www.cgal.org/2019/09/30/cgal4141</guid>
+                <link>http://www.cgal.org/2019/09/30/cgal4141/index.html</link>
+                <guid>http://www.cgal.org/2019/09/30/cgal4141/cgal4141</guid>
                 <pubDate>2019-09-30T00:00:00+00:00</pubDate>
         </item>
 
@@ -4968,8 +4968,8 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=milestone
 The list of fixed bugs since &lt;a href=&quot;../../../../2019/04/05/cgal4131&quot;&gt;CGAL 4.13.1&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=milestone%3A4.13.2&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2019/09/30/cgal4132</link>
-                <guid>http://www.cgal.org/2019/09/30/cgal4132</guid>
+                <link>http://www.cgal.org/2019/09/30/cgal4132/index.html</link>
+                <guid>http://www.cgal.org/2019/09/30/cgal4132/cgal4132</guid>
                 <pubDate>2019-09-30T00:00:00+00:00</pubDate>
         </item>
 
@@ -5013,8 +5013,8 @@ and will be officially released in the upcoming version of CGAL, 5.0, scheduled 
 &lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2019/08/05/Polygonal_surface_reconstruction</link>
-                <guid>http://www.cgal.org/2019/08/05/Polygonal_surface_reconstruction</guid>
+                <link>http://www.cgal.org/2019/08/05/Polygonal_surface_reconstruction/index.html</link>
+                <guid>http://www.cgal.org/2019/08/05/Polygonal_surface_reconstruction/Polygonal_surface_reconstruction</guid>
                 <pubDate>2019-08-05T00:00:00+00:00</pubDate>
         </item>
 
@@ -5076,8 +5076,8 @@ and will be officially released in the upcoming version of CGAL, 5.0, scheduled 
 &lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2019/07/30/Shape_detection</link>
-                <guid>http://www.cgal.org/2019/07/30/Shape_detection</guid>
+                <link>http://www.cgal.org/2019/07/30/Shape_detection/index.html</link>
+                <guid>http://www.cgal.org/2019/07/30/Shape_detection/Shape_detection</guid>
                 <pubDate>2019-07-30T00:00:00+00:00</pubDate>
         </item>
 
@@ -5094,8 +5094,8 @@ Los Angeles USA, 28 July-1 August, 2019!&lt;/p&gt;
 
 &lt;p&gt;A plan of the SIGGRAPH 2019 exhibition floor is available &lt;a href=&quot;https://hallerickson.ungerboeck.com/prod/app85.cshtml?AppCode=VFP&amp;amp;OrgCode=16&amp;amp;EvtID=5021&amp;amp;CC=SIG19&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/news/2019/07/28/siggraph-2019</link>
-                <guid>http://www.cgal.org/news/2019/07/28/siggraph-2019</guid>
+                <link>http://www.cgal.org/news/2019/07/28/siggraph-2019/index.html</link>
+                <guid>http://www.cgal.org/news/2019/07/28/siggraph-2019/siggraph-2019</guid>
                 <pubDate>2019-07-28T00:00:00+00:00</pubDate>
         </item>
 
@@ -5104,8 +5104,8 @@ Los Angeles USA, 28 July-1 August, 2019!&lt;/p&gt;
                 <description>
 &lt;p&gt;The so called “Optimal Area Polygonalization” problem was presented as a challenge at SoCG 20; see the &lt;a href=&quot;https://cgshop.ibr.cs.tu-bs.de/&quot;&gt;contest webpage&lt;/a&gt;. We used CGAL extensively in our implementation; see the &lt;a href=&quot;http://acg.cs.tau.ac.il/projects/in-house-projects/optimal-area-polygonalization/optimal-area-polygonalization&quot;&gt;project webpage&lt;/a&gt;. Our team was awarded 3rd place.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/news/2019/06/18/cg-contest</link>
-                <guid>http://www.cgal.org/news/2019/06/18/cg-contest</guid>
+                <link>http://www.cgal.org/news/2019/06/18/cg-contest/index.html</link>
+                <guid>http://www.cgal.org/news/2019/06/18/cg-contest/cg-contest</guid>
                 <pubDate>2019-06-18T00:00:00+00:00</pubDate>
         </item>
 
@@ -5122,8 +5122,8 @@ Los Angeles USA, 28 July-1 August, 2019!&lt;/p&gt;
 The list of fixed bugs since &lt;a href=&quot;../../../../2018/10/01/cgal413&quot;&gt;CGAL 4.13&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=milestone%3A4.13.1&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2019/04/05/cgal4131</link>
-                <guid>http://www.cgal.org/2019/04/05/cgal4131</guid>
+                <link>http://www.cgal.org/2019/04/05/cgal4131/index.html</link>
+                <guid>http://www.cgal.org/2019/04/05/cgal4131/cgal4131</guid>
                 <pubDate>2019-04-05T00:00:00+00:00</pubDate>
         </item>
 
@@ -5140,8 +5140,8 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=milestone
 The list of fixed bugs since &lt;a href=&quot;../../../../2018/09/04/cgal4121&quot;&gt;CGAL 4.12.1&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=milestone%3A4.12.2&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2019/04/05/cgal4122</link>
-                <guid>http://www.cgal.org/2019/04/05/cgal4122</guid>
+                <link>http://www.cgal.org/2019/04/05/cgal4122/index.html</link>
+                <guid>http://www.cgal.org/2019/04/05/cgal4122/cgal4122</guid>
                 <pubDate>2019-04-05T00:00:00+00:00</pubDate>
         </item>
 
@@ -5234,8 +5234,8 @@ It even came with a &lt;a href=&quot;https://cgal.github.io/cgal-web/April2019.h
 
 &lt;/p&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/news/2019/04/01/Nike</link>
-                <guid>http://www.cgal.org/news/2019/04/01/Nike</guid>
+                <link>http://www.cgal.org/news/2019/04/01/Nike/index.html</link>
+                <guid>http://www.cgal.org/news/2019/04/01/Nike/Nike</guid>
                 <pubDate>2019-04-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -5445,8 +5445,8 @@ property map;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2019/03/29/cgal414</link>
-                <guid>http://www.cgal.org/2019/03/29/cgal414</guid>
+                <link>http://www.cgal.org/2019/03/29/cgal414/index.html</link>
+                <guid>http://www.cgal.org/2019/03/29/cgal414/cgal414</guid>
                 <pubDate>2019-03-29T00:00:00+00:00</pubDate>
         </item>
 
@@ -5466,8 +5466,8 @@ property map;&lt;/li&gt;
 &lt;/center&gt;
 
 </description>
-                <link>http://www.cgal.org/2019/03/26/how-to-write-a-paraview-plugin</link>
-                <guid>http://www.cgal.org/2019/03/26/how-to-write-a-paraview-plugin</guid>
+                <link>http://www.cgal.org/2019/03/26/how-to-write-a-paraview-plugin/index.html</link>
+                <guid>http://www.cgal.org/2019/03/26/how-to-write-a-paraview-plugin/how-to-write-a-paraview-plugin</guid>
                 <pubDate>2019-03-26T00:00:00+00:00</pubDate>
         </item>
 
@@ -5680,8 +5680,8 @@ property map;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2019/03/13/cgal414-beta2</link>
-                <guid>http://www.cgal.org/2019/03/13/cgal414-beta2</guid>
+                <link>http://www.cgal.org/2019/03/13/cgal414-beta2/index.html</link>
+                <guid>http://www.cgal.org/2019/03/13/cgal414-beta2/cgal414-beta2</guid>
                 <pubDate>2019-03-13T00:00:00+00:00</pubDate>
         </item>
 
@@ -5891,8 +5891,8 @@ property map;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2019/03/04/cgal414-beta1</link>
-                <guid>http://www.cgal.org/2019/03/04/cgal414-beta1</guid>
+                <link>http://www.cgal.org/2019/03/04/cgal414-beta1/index.html</link>
+                <guid>http://www.cgal.org/2019/03/04/cgal414-beta1/cgal414-beta1</guid>
                 <pubDate>2019-03-04T00:00:00+00:00</pubDate>
         </item>
 
@@ -5903,8 +5903,8 @@ property map;&lt;/li&gt;
 for &lt;a href=&quot;https://summerofcode.withgoogle.com/&quot;&gt;Google Summer of Code 2019&lt;/a&gt;.
 Have a look at our &lt;a href=&quot;https://github.com/CGAL/cgal/wiki/Project-Ideas&quot;&gt;Project Ideas&lt;/a&gt; page.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/news/2019/02/27/gsoc-2019-mentoring</link>
-                <guid>http://www.cgal.org/news/2019/02/27/gsoc-2019-mentoring</guid>
+                <link>http://www.cgal.org/news/2019/02/27/gsoc-2019-mentoring/index.html</link>
+                <guid>http://www.cgal.org/news/2019/02/27/gsoc-2019-mentoring/gsoc-2019-mentoring</guid>
                 <pubDate>2019-02-27T00:00:00+00:00</pubDate>
         </item>
 
@@ -5983,8 +5983,8 @@ and will be officially released in the upcoming version of CGAL, 4.14, scheduled
 &lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2019/02/25/Hyperbolic_triangulations</link>
-                <guid>http://www.cgal.org/2019/02/25/Hyperbolic_triangulations</guid>
+                <link>http://www.cgal.org/2019/02/25/Hyperbolic_triangulations/index.html</link>
+                <guid>http://www.cgal.org/2019/02/25/Hyperbolic_triangulations/Hyperbolic_triangulations</guid>
                 <pubDate>2019-02-25T00:00:00+00:00</pubDate>
         </item>
 
@@ -6071,8 +6071,8 @@ and will be officially released in the upcoming version of CGAL (4.14) scheduled
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;
 &lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2019/01/29/VSA</link>
-                <guid>http://www.cgal.org/2019/01/29/VSA</guid>
+                <link>http://www.cgal.org/2019/01/29/VSA/index.html</link>
+                <guid>http://www.cgal.org/2019/01/29/VSA/VSA</guid>
                 <pubDate>2019-01-29T00:00:00+00:00</pubDate>
         </item>
 
@@ -6164,8 +6164,8 @@ and will be officially released in the upcoming version of CGAL (4.14) scheduled
 &lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2019/01/23/Heat_Method</link>
-                <guid>http://www.cgal.org/2019/01/23/Heat_Method</guid>
+                <link>http://www.cgal.org/2019/01/23/Heat_Method/index.html</link>
+                <guid>http://www.cgal.org/2019/01/23/Heat_Method/Heat_Method</guid>
                 <pubDate>2019-01-23T00:00:00+00:00</pubDate>
         </item>
 
@@ -6176,8 +6176,8 @@ and will be officially released in the upcoming version of CGAL (4.14) scheduled
 internet show Floss For Science.
 The episode is available &lt;a href=&quot;https://flossforscience.github.io/podcast/season-1-episode-10&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/news/2018/10/17/FFS</link>
-                <guid>http://www.cgal.org/news/2018/10/17/FFS</guid>
+                <link>http://www.cgal.org/news/2018/10/17/FFS/index.html</link>
+                <guid>http://www.cgal.org/news/2018/10/17/FFS/FFS</guid>
                 <pubDate>2018-10-17T00:00:00+00:00</pubDate>
         </item>
 
@@ -6196,8 +6196,8 @@ or what algorithm you would like to see in the future in the CGAL library.&lt;/p
 &lt;p&gt;Visit the GeometryFactory Booth No. 12.1C.091 at the exhibition of &lt;a href=&quot;https://www.intergeo.de/intergeo-en/trade-fair.php&quot;&gt;INTERGEO 2018&lt;/a&gt;,
 Frankfurt Germany, 16-18 Oct 2018.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/news/2018/10/16/InterGEO-2018</link>
-                <guid>http://www.cgal.org/news/2018/10/16/InterGEO-2018</guid>
+                <link>http://www.cgal.org/news/2018/10/16/InterGEO-2018/index.html</link>
+                <guid>http://www.cgal.org/news/2018/10/16/InterGEO-2018/InterGEO-2018</guid>
                 <pubDate>2018-10-16T00:00:00+00:00</pubDate>
         </item>
 
@@ -6472,8 +6472,8 @@ objects from Cartesian kernels.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2018/10/01/cgal413</link>
-                <guid>http://www.cgal.org/2018/10/01/cgal413</guid>
+                <link>http://www.cgal.org/2018/10/01/cgal413/index.html</link>
+                <guid>http://www.cgal.org/2018/10/01/cgal413/cgal413</guid>
                 <pubDate>2018-10-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -6745,8 +6745,8 @@ objects from Cartesian kernels.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2018/09/11/cgal413-beta2</link>
-                <guid>http://www.cgal.org/2018/09/11/cgal413-beta2</guid>
+                <link>http://www.cgal.org/2018/09/11/cgal413-beta2/index.html</link>
+                <guid>http://www.cgal.org/2018/09/11/cgal413-beta2/cgal413-beta2</guid>
                 <pubDate>2018-09-11T00:00:00+00:00</pubDate>
         </item>
 
@@ -6820,8 +6820,8 @@ officially released in the upcoming version of CGAL, CGAL 4.13, scheduled for Se
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;
 &lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2018/09/10/Periodic_Mesh_Generation</link>
-                <guid>http://www.cgal.org/2018/09/10/Periodic_Mesh_Generation</guid>
+                <link>http://www.cgal.org/2018/09/10/Periodic_Mesh_Generation/index.html</link>
+                <guid>http://www.cgal.org/2018/09/10/Periodic_Mesh_Generation/Periodic_Mesh_Generation</guid>
                 <pubDate>2018-09-10T00:00:00+00:00</pubDate>
         </item>
 
@@ -6838,8 +6838,8 @@ officially released in the upcoming version of CGAL, CGAL 4.13, scheduled for Se
 The list of fixed bugs since &lt;a href=&quot;../../../../2018/04/25/cgal412&quot;&gt;CGAL 4.12&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=milestone%3A4.12.1&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2018/09/04/cgal4121</link>
-                <guid>http://www.cgal.org/2018/09/04/cgal4121</guid>
+                <link>http://www.cgal.org/2018/09/04/cgal4121/index.html</link>
+                <guid>http://www.cgal.org/2018/09/04/cgal4121/cgal4121</guid>
                 <pubDate>2018-09-04T00:00:00+00:00</pubDate>
         </item>
 
@@ -6858,8 +6858,8 @@ or what algorithm you would like to see in the future.&lt;/p&gt;
 &lt;p&gt;Visit the CGAL Project on Booth No. 1039 at the exhibition of &lt;a href=&quot;http://s2018.siggraph.org/&quot;&gt;SIGGRAPH 2018&lt;/a&gt;,
 Vancouver Canada, 12-18 August 2018.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/news/2018/08/12/siggraph-2018</link>
-                <guid>http://www.cgal.org/news/2018/08/12/siggraph-2018</guid>
+                <link>http://www.cgal.org/news/2018/08/12/siggraph-2018/index.html</link>
+                <guid>http://www.cgal.org/news/2018/08/12/siggraph-2018/siggraph-2018</guid>
                 <pubDate>2018-08-12T00:00:00+00:00</pubDate>
         </item>
 
@@ -7131,8 +7131,8 @@ objects from Cartesian kernels.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2018/08/01/cgal413-beta1</link>
-                <guid>http://www.cgal.org/2018/08/01/cgal413-beta1</guid>
+                <link>http://www.cgal.org/2018/08/01/cgal413-beta1/index.html</link>
+                <guid>http://www.cgal.org/2018/08/01/cgal413-beta1/cgal413-beta1</guid>
                 <pubDate>2018-08-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -7149,8 +7149,8 @@ objects from Cartesian kernels.&lt;/li&gt;
 The list of fixed bugs since &lt;a href=&quot;../../../../2018/07/10/cgal4112&quot;&gt;CGAL 4.11.2&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=milestone%3A4.11.3&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2018/07/31/cgal4113</link>
-                <guid>http://www.cgal.org/2018/07/31/cgal4113</guid>
+                <link>http://www.cgal.org/2018/07/31/cgal4113/index.html</link>
+                <guid>http://www.cgal.org/2018/07/31/cgal4113/cgal4113</guid>
                 <pubDate>2018-07-31T00:00:00+00:00</pubDate>
         </item>
 
@@ -7167,8 +7167,8 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=milestone
 The list of fixed bugs since &lt;a href=&quot;../../../../2018/02/26/cgal4111&quot;&gt;CGAL 4.11.1&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=milestone%3A4.11.2&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2018/07/10/cgal4112</link>
-                <guid>http://www.cgal.org/2018/07/10/cgal4112</guid>
+                <link>http://www.cgal.org/2018/07/10/cgal4112/index.html</link>
+                <guid>http://www.cgal.org/2018/07/10/cgal4112/cgal4112</guid>
                 <pubDate>2018-07-10T00:00:00+00:00</pubDate>
         </item>
 
@@ -7182,8 +7182,8 @@ The course is part of the
 Intensive Research Program in Discrete, Combinatorial and Computational Geometry&lt;/a&gt;
 which takes place in  Barcelona, from April 16 - June 8, 2018.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2018/04/30/irp2017</link>
-                <guid>http://www.cgal.org/2018/04/30/irp2017</guid>
+                <link>http://www.cgal.org/2018/04/30/irp2017/index.html</link>
+                <guid>http://www.cgal.org/2018/04/30/irp2017/irp2017</guid>
                 <pubDate>2018-04-30T00:00:00+00:00</pubDate>
         </item>
 
@@ -7416,8 +7416,8 @@ offered.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2018/04/25/cgal412</link>
-                <guid>http://www.cgal.org/2018/04/25/cgal412</guid>
+                <link>http://www.cgal.org/2018/04/25/cgal412/index.html</link>
+                <guid>http://www.cgal.org/2018/04/25/cgal412/cgal412</guid>
                 <pubDate>2018-04-25T00:00:00+00:00</pubDate>
         </item>
 
@@ -7427,8 +7427,8 @@ offered.&lt;/li&gt;
 &lt;p&gt;The CGAL project welcomes 8 &lt;a href=&quot;https://summerofcode.withgoogle.com/&quot;&gt;GSoC&lt;/a&gt; students.
 Have a look at the &lt;a href=&quot;https://summerofcode.withgoogle.com/organizations/6121660483108864/&quot;&gt;Accepted Projects&lt;/a&gt; page.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/news/2018/04/23/gsoc-2018-projects-accepted</link>
-                <guid>http://www.cgal.org/news/2018/04/23/gsoc-2018-projects-accepted</guid>
+                <link>http://www.cgal.org/news/2018/04/23/gsoc-2018-projects-accepted/index.html</link>
+                <guid>http://www.cgal.org/news/2018/04/23/gsoc-2018-projects-accepted/gsoc-2018-projects-accepted</guid>
                 <pubDate>2018-04-23T00:00:00+00:00</pubDate>
         </item>
 
@@ -7651,8 +7651,8 @@ offered.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2018/04/09/cgal412-beta2</link>
-                <guid>http://www.cgal.org/2018/04/09/cgal412-beta2</guid>
+                <link>http://www.cgal.org/2018/04/09/cgal412-beta2/index.html</link>
+                <guid>http://www.cgal.org/2018/04/09/cgal412-beta2/cgal412-beta2</guid>
                 <pubDate>2018-04-09T00:00:00+00:00</pubDate>
         </item>
 
@@ -7771,8 +7771,8 @@ and from brainstorming sessions we had with companies such as Fairphone Ltd.&lt;
 we only stand at the beginning, so if you have ideas please share them with us.&lt;/p&gt;
 
 </description>
-                <link>http://www.cgal.org/news/2018/04/01/GreenProjectAward</link>
-                <guid>http://www.cgal.org/news/2018/04/01/GreenProjectAward</guid>
+                <link>http://www.cgal.org/news/2018/04/01/GreenProjectAward/index.html</link>
+                <guid>http://www.cgal.org/news/2018/04/01/GreenProjectAward/GreenProjectAward</guid>
                 <pubDate>2018-04-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -7973,8 +7973,8 @@ offered.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2018/02/27/cgal412-beta1</link>
-                <guid>http://www.cgal.org/2018/02/27/cgal412-beta1</guid>
+                <link>http://www.cgal.org/2018/02/27/cgal412-beta1/index.html</link>
+                <guid>http://www.cgal.org/2018/02/27/cgal412-beta1/cgal412-beta1</guid>
                 <pubDate>2018-02-27T00:00:00+00:00</pubDate>
         </item>
 
@@ -7991,8 +7991,8 @@ offered.&lt;/li&gt;
 The list of fixed bugs since &lt;a href=&quot;../../../../2017/09/21/cgal411&quot;&gt;CGAL 4.11&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=milestone%3A4.11.1&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2018/02/26/cgal4111</link>
-                <guid>http://www.cgal.org/2018/02/26/cgal4111</guid>
+                <link>http://www.cgal.org/2018/02/26/cgal4111/index.html</link>
+                <guid>http://www.cgal.org/2018/02/26/cgal4111/cgal4111</guid>
                 <pubDate>2018-02-26T00:00:00+00:00</pubDate>
         </item>
 
@@ -8003,8 +8003,8 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=milestone
 for &lt;a href=&quot;https://summerofcode.withgoogle.com/&quot;&gt;Google Summer of Code 2018&lt;/a&gt;.
 Have a look at our &lt;a href=&quot;https://github.com/CGAL/cgal/wiki/Project-Ideas&quot;&gt;Project Ideas&lt;/a&gt; page.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/news/2018/02/12/gsoc-2018-mentoring</link>
-                <guid>http://www.cgal.org/news/2018/02/12/gsoc-2018-mentoring</guid>
+                <link>http://www.cgal.org/news/2018/02/12/gsoc-2018-mentoring/index.html</link>
+                <guid>http://www.cgal.org/news/2018/02/12/gsoc-2018-mentoring/gsoc-2018-mentoring</guid>
                 <pubDate>2018-02-12T00:00:00+00:00</pubDate>
         </item>
 
@@ -8021,8 +8021,8 @@ Have a look at our &lt;a href=&quot;https://github.com/CGAL/cgal/wiki/Project-Id
 The list of fixed bugs since &lt;a href=&quot;../../../../2017/09/13/cgal-4101&quot;&gt;CGAL 4.10.1&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=milestone%3A4.10.2&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2018/01/16/cgal-4102</link>
-                <guid>http://www.cgal.org/2018/01/16/cgal-4102</guid>
+                <link>http://www.cgal.org/2018/01/16/cgal-4102/index.html</link>
+                <guid>http://www.cgal.org/2018/01/16/cgal-4102/cgal-4102</guid>
                 <pubDate>2018-01-16T00:00:00+00:00</pubDate>
         </item>
 
@@ -8301,8 +8301,8 @@ seam edges.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2017/09/21/cgal411</link>
-                <guid>http://www.cgal.org/2017/09/21/cgal411</guid>
+                <link>http://www.cgal.org/2017/09/21/cgal411/index.html</link>
+                <guid>http://www.cgal.org/2017/09/21/cgal411/cgal411</guid>
                 <pubDate>2017-09-21T00:00:00+00:00</pubDate>
         </item>
 
@@ -8319,8 +8319,8 @@ seam edges.&lt;/li&gt;
 The list of fixed bugs since &lt;a href=&quot;../../../../2017/05/29/cgal410&quot;&gt;CGAL 4.10&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=milestone%3A4.10.1&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2017/09/13/cgal-4101</link>
-                <guid>http://www.cgal.org/2017/09/13/cgal-4101</guid>
+                <link>http://www.cgal.org/2017/09/13/cgal-4101/index.html</link>
+                <guid>http://www.cgal.org/2017/09/13/cgal-4101/cgal-4101</guid>
                 <pubDate>2017-09-13T00:00:00+00:00</pubDate>
         </item>
 
@@ -8357,8 +8357,8 @@ of the API. A word about dual licensing (GPL/commercial).&lt;/p&gt;
 &lt;p&gt;See the &lt;a href=&quot;https://biox.stanford.edu/about/clark-center/map-directions&quot;&gt;map&lt;/a&gt;.
 Please use the Via Ortega garage. (Roth Way Garage is closer, but it has a daily parking limit of 4 hours.)&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2017/08/23/CGAL_in_the_Bay_Area</link>
-                <guid>http://www.cgal.org/2017/08/23/CGAL_in_the_Bay_Area</guid>
+                <link>http://www.cgal.org/2017/08/23/CGAL_in_the_Bay_Area/index.html</link>
+                <guid>http://www.cgal.org/2017/08/23/CGAL_in_the_Bay_Area/CGAL_in_the_Bay_Area</guid>
                 <pubDate>2017-08-23T00:00:00+00:00</pubDate>
         </item>
 
@@ -8611,8 +8611,8 @@ seam edges.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2017/08/01/cgal411-beta1</link>
-                <guid>http://www.cgal.org/2017/08/01/cgal411-beta1</guid>
+                <link>http://www.cgal.org/2017/08/01/cgal411-beta1/index.html</link>
+                <guid>http://www.cgal.org/2017/08/01/cgal411-beta1/cgal411-beta1</guid>
                 <pubDate>2017-08-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -8628,8 +8628,8 @@ You want to present the problem you have to solve, in order to figure out if CGA
 Los Angeles USA, 30 July -3 August 2017.&lt;/p&gt;
 
 </description>
-                <link>http://www.cgal.org/news/2017/07/30/siggraph-2017</link>
-                <guid>http://www.cgal.org/news/2017/07/30/siggraph-2017</guid>
+                <link>http://www.cgal.org/news/2017/07/30/siggraph-2017/index.html</link>
+                <guid>http://www.cgal.org/news/2017/07/30/siggraph-2017/siggraph-2017</guid>
                 <pubDate>2017-07-30T00:00:00+00:00</pubDate>
         </item>
 
@@ -8887,8 +8887,8 @@ its descriptors.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2017/05/29/cgal410</link>
-                <guid>http://www.cgal.org/2017/05/29/cgal410</guid>
+                <link>http://www.cgal.org/2017/05/29/cgal410/index.html</link>
+                <guid>http://www.cgal.org/2017/05/29/cgal410/cgal410</guid>
                 <pubDate>2017-05-29T00:00:00+00:00</pubDate>
         </item>
 
@@ -8904,8 +8904,8 @@ from &lt;a href=&quot;https://www.inria.fr/centre/sophia/&quot;&gt;INRIA&lt;/a&g
 &lt;p&gt;For more information see the
 &lt;a href=&quot;https://www.college-de-france.fr/site/en-jean-daniel-boissonnat/seminar-2017-04-26-18h00.htm&quot;&gt;program&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/news/2017/04/26/cgal-college-de-france</link>
-                <guid>http://www.cgal.org/news/2017/04/26/cgal-college-de-france</guid>
+                <link>http://www.cgal.org/news/2017/04/26/cgal-college-de-france/index.html</link>
+                <guid>http://www.cgal.org/news/2017/04/26/cgal-college-de-france/cgal-college-de-france</guid>
                 <pubDate>2017-04-26T00:00:00+00:00</pubDate>
         </item>
 
@@ -9154,8 +9154,8 @@ its descriptors.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2017/04/20/cgal410-beta1</link>
-                <guid>http://www.cgal.org/2017/04/20/cgal410-beta1</guid>
+                <link>http://www.cgal.org/2017/04/20/cgal410-beta1/index.html</link>
+                <guid>http://www.cgal.org/2017/04/20/cgal410-beta1/cgal410-beta1</guid>
                 <pubDate>2017-04-20T00:00:00+00:00</pubDate>
         </item>
 
@@ -9172,8 +9172,8 @@ its descriptors.&lt;/li&gt;
 The list of fixed bugs since &lt;a href=&quot;../../../../2016/09/19/cgal-49&quot;&gt;CGAL 4.9&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=milestone%3A4.9.1&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2017/04/12/cgal-491</link>
-                <guid>http://www.cgal.org/2017/04/12/cgal-491</guid>
+                <link>http://www.cgal.org/2017/04/12/cgal-491/index.html</link>
+                <guid>http://www.cgal.org/2017/04/12/cgal-491/cgal-491</guid>
                 <pubDate>2017-04-12T00:00:00+00:00</pubDate>
         </item>
 
@@ -9280,8 +9280,8 @@ will be the base for the next Editorial Board meeting co-located with
 
 &lt;p&gt;This post was written on April Fool's Day.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/news/2017/04/01/Swarowski</link>
-                <guid>http://www.cgal.org/news/2017/04/01/Swarowski</guid>
+                <link>http://www.cgal.org/news/2017/04/01/Swarowski/index.html</link>
+                <guid>http://www.cgal.org/news/2017/04/01/Swarowski/Swarowski</guid>
                 <pubDate>2017-04-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -9292,8 +9292,8 @@ will be the base for the next Editorial Board meeting co-located with
 for &lt;a href=&quot;https://summerofcode.withgoogle.com/archive/2017/projects/&quot;&gt;Google Summer of Code 2017&lt;/a&gt;.
 Have a look at our &lt;a href=&quot;https://cgal.github.io/cgal-web/gsoc/2017.html&quot;&gt;Project Ideas&lt;/a&gt; page.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2017/03/06/gsoc-2017-mentoring</link>
-                <guid>http://www.cgal.org/2017/03/06/gsoc-2017-mentoring</guid>
+                <link>http://www.cgal.org/2017/03/06/gsoc-2017-mentoring/index.html</link>
+                <guid>http://www.cgal.org/2017/03/06/gsoc-2017-mentoring/gsoc-2017-mentoring</guid>
                 <pubDate>2017-03-06T00:00:00+00:00</pubDate>
         </item>
 
@@ -9434,8 +9434,8 @@ provided by CGAL, switched on by defining the macro
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2016/09/19/cgal-49</link>
-                <guid>http://www.cgal.org/2016/09/19/cgal-49</guid>
+                <link>http://www.cgal.org/2016/09/19/cgal-49/index.html</link>
+                <guid>http://www.cgal.org/2016/09/19/cgal-49/cgal-49</guid>
                 <pubDate>2016-09-19T00:00:00+00:00</pubDate>
         </item>
 
@@ -9452,8 +9452,8 @@ provided by CGAL, switched on by defining the macro
 The list of fixed bugs since &lt;a href=&quot;../../../../2016/06/13/cgal-481&quot;&gt;CGAL 4.8.1&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=milestone%3A4.8.2&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2016/09/19/cgal-482</link>
-                <guid>http://www.cgal.org/2016/09/19/cgal-482</guid>
+                <link>http://www.cgal.org/2016/09/19/cgal-482/index.html</link>
+                <guid>http://www.cgal.org/2016/09/19/cgal-482/cgal-482</guid>
                 <pubDate>2016-09-19T00:00:00+00:00</pubDate>
         </item>
 
@@ -9594,8 +9594,8 @@ provided by CGAL, switched on by defining the macro
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2016/08/04/cgal49-beta1</link>
-                <guid>http://www.cgal.org/2016/08/04/cgal49-beta1</guid>
+                <link>http://www.cgal.org/2016/08/04/cgal49-beta1/index.html</link>
+                <guid>http://www.cgal.org/2016/08/04/cgal49-beta1/cgal49-beta1</guid>
                 <pubDate>2016-08-04T00:00:00+00:00</pubDate>
         </item>
 
@@ -9620,8 +9620,8 @@ concepts, which enables users, to run, for example,  a CGAL
 mesh segmentation algorithm directly on a mesh of OpenMesh,
 without converting it to a mesh of CGAL.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/news/2016/07/26/siggraph-2016</link>
-                <guid>http://www.cgal.org/news/2016/07/26/siggraph-2016</guid>
+                <link>http://www.cgal.org/news/2016/07/26/siggraph-2016/index.html</link>
+                <guid>http://www.cgal.org/news/2016/07/26/siggraph-2016/siggraph-2016</guid>
                 <pubDate>2016-07-26T00:00:00+00:00</pubDate>
         </item>
 
@@ -9638,8 +9638,8 @@ without converting it to a mesh of CGAL.&lt;/p&gt;
 The list of fixed bugs since &lt;a href=&quot;../../../../2016/04/08/cgal48&quot;&gt;CGAL 4.8&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=milestone%3A4.8.1&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2016/06/13/cgal-481</link>
-                <guid>http://www.cgal.org/2016/06/13/cgal-481</guid>
+                <link>http://www.cgal.org/2016/06/13/cgal-481/index.html</link>
+                <guid>http://www.cgal.org/2016/06/13/cgal-481/cgal-481</guid>
                 <pubDate>2016-06-13T00:00:00+00:00</pubDate>
         </item>
 
@@ -9850,8 +9850,8 @@ efficiently and generically.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2016/04/08/cgal48</link>
-                <guid>http://www.cgal.org/2016/04/08/cgal48</guid>
+                <link>http://www.cgal.org/2016/04/08/cgal48/index.html</link>
+                <guid>http://www.cgal.org/2016/04/08/cgal48/cgal48</guid>
                 <pubDate>2016-04-08T00:00:00+00:00</pubDate>
         </item>
 
@@ -9941,8 +9941,8 @@ please let us know if you are ready for the water.&lt;/p&gt;
 
 &lt;/p&gt;&lt;/p&gt;&lt;/dd&gt;&lt;/dt&gt;&lt;/dt&gt;&lt;/dl&gt;
 </description>
-                <link>http://www.cgal.org/news/2016/04/01/Flashmob</link>
-                <guid>http://www.cgal.org/news/2016/04/01/Flashmob</guid>
+                <link>http://www.cgal.org/news/2016/04/01/Flashmob/index.html</link>
+                <guid>http://www.cgal.org/news/2016/04/01/Flashmob/Flashmob</guid>
                 <pubDate>2016-04-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -10143,8 +10143,8 @@ efficiently and generically.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2016/03/20/cgal48-beta2</link>
-                <guid>http://www.cgal.org/2016/03/20/cgal48-beta2</guid>
+                <link>http://www.cgal.org/2016/03/20/cgal48-beta2/index.html</link>
+                <guid>http://www.cgal.org/2016/03/20/cgal48-beta2/cgal48-beta2</guid>
                 <pubDate>2016-03-20T00:00:00+00:00</pubDate>
         </item>
 
@@ -10345,8 +10345,8 @@ efficiently and generically.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2016/02/10/cgal48-beta1</link>
-                <guid>http://www.cgal.org/2016/02/10/cgal48-beta1</guid>
+                <link>http://www.cgal.org/2016/02/10/cgal48-beta1/index.html</link>
+                <guid>http://www.cgal.org/2016/02/10/cgal48-beta1/cgal48-beta1</guid>
                 <pubDate>2016-02-10T00:00:00+00:00</pubDate>
         </item>
 
@@ -10572,8 +10572,8 @@ tetrahedron (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2015/10/20/cgal-47</link>
-                <guid>http://www.cgal.org/2015/10/20/cgal-47</guid>
+                <link>http://www.cgal.org/2015/10/20/cgal-47/index.html</link>
+                <guid>http://www.cgal.org/2015/10/20/cgal-47/cgal-47</guid>
                 <pubDate>2015-10-20T00:00:00+00:00</pubDate>
         </item>
 
@@ -10799,8 +10799,8 @@ tetrahedron (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2015/09/21/cgal-47-beta2</link>
-                <guid>http://www.cgal.org/2015/09/21/cgal-47-beta2</guid>
+                <link>http://www.cgal.org/2015/09/21/cgal-47-beta2/index.html</link>
+                <guid>http://www.cgal.org/2015/09/21/cgal-47-beta2/cgal-47-beta2</guid>
                 <pubDate>2015-09-21T00:00:00+00:00</pubDate>
         </item>
 
@@ -10817,8 +10817,8 @@ tetrahedron (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;
 The list of fixed bugs since &lt;a href=&quot;../../../../2015/08/20/cgal-462&quot;&gt;CGAL 4.6.2&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=milestone%3A4.6.3&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2015/09/21/cgal-463</link>
-                <guid>http://www.cgal.org/2015/09/21/cgal-463</guid>
+                <link>http://www.cgal.org/2015/09/21/cgal-463/index.html</link>
+                <guid>http://www.cgal.org/2015/09/21/cgal-463/cgal-463</guid>
                 <pubDate>2015-09-21T00:00:00+00:00</pubDate>
         </item>
 
@@ -10835,8 +10835,8 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=milestone
 The list of fixed bugs since &lt;a href=&quot;../../../../2015/06/28/cgal-461&quot;&gt;CGAL 4.6.1&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=milestone%3A4.6.2&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2015/08/20/cgal-462</link>
-                <guid>http://www.cgal.org/2015/08/20/cgal-462</guid>
+                <link>http://www.cgal.org/2015/08/20/cgal-462/index.html</link>
+                <guid>http://www.cgal.org/2015/08/20/cgal-462/cgal-462</guid>
                 <pubDate>2015-08-20T00:00:00+00:00</pubDate>
         </item>
 
@@ -10846,8 +10846,8 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=milestone
 &lt;p&gt;Visit the CGAL Project on Booth No. 328 at the exhibition of &lt;a href=&quot;http://s2015.siggraph.org/&quot;&gt;SIGGRAPH 2015&lt;/a&gt;,
 Los Angeles USA, 9-13 Aug 2015.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/news/2015/08/09/siggraph-2015</link>
-                <guid>http://www.cgal.org/news/2015/08/09/siggraph-2015</guid>
+                <link>http://www.cgal.org/news/2015/08/09/siggraph-2015/index.html</link>
+                <guid>http://www.cgal.org/news/2015/08/09/siggraph-2015/siggraph-2015</guid>
                 <pubDate>2015-08-09T00:00:00+00:00</pubDate>
         </item>
 
@@ -11065,8 +11065,8 @@ tetrahedron (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2015/08/07/cgal-47-beta1</link>
-                <guid>http://www.cgal.org/2015/08/07/cgal-47-beta1</guid>
+                <link>http://www.cgal.org/2015/08/07/cgal-47-beta1/index.html</link>
+                <guid>http://www.cgal.org/2015/08/07/cgal-47-beta1/cgal-47-beta1</guid>
                 <pubDate>2015-08-07T00:00:00+00:00</pubDate>
         </item>
 
@@ -11083,8 +11083,8 @@ tetrahedron (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;
 The list of fixed bugs since &lt;a href=&quot;../../../../2015/04/19/cgal-46&quot;&gt;CGAL 4.6&lt;/a&gt;
 can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=milestone%3A4.6.1&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2015/06/28/cgal-461</link>
-                <guid>http://www.cgal.org/2015/06/28/cgal-461</guid>
+                <link>http://www.cgal.org/2015/06/28/cgal-461/index.html</link>
+                <guid>http://www.cgal.org/2015/06/28/cgal-461/cgal-461</guid>
                 <pubDate>2015-06-28T00:00:00+00:00</pubDate>
         </item>
 
@@ -11256,8 +11256,8 @@ points chosen in a disc.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2015/04/19/cgal-46</link>
-                <guid>http://www.cgal.org/2015/04/19/cgal-46</guid>
+                <link>http://www.cgal.org/2015/04/19/cgal-46/index.html</link>
+                <guid>http://www.cgal.org/2015/04/19/cgal-46/cgal-46</guid>
                 <pubDate>2015-04-19T00:00:00+00:00</pubDate>
         </item>
 
@@ -11288,8 +11288,8 @@ with &lt;a href=&quot;https://cgal.github.io/cgal-web/news/2015/04/01/SpaceX/&qu
 that SpaceX will be hard to beat.&lt;/p&gt;
 &lt;/p&gt;&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2015/04/01/a-new-cgal-homepage</link>
-                <guid>http://www.cgal.org/2015/04/01/a-new-cgal-homepage</guid>
+                <link>http://www.cgal.org/2015/04/01/a-new-cgal-homepage/index.html</link>
+                <guid>http://www.cgal.org/2015/04/01/a-new-cgal-homepage/a-new-cgal-homepage</guid>
                 <pubDate>2015-04-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -11403,8 +11403,8 @@ It even came with a &lt;a href=&quot;https://cgal.github.io/cgal-web/April2015.h
 
 &lt;/p&gt;&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/news/2015/04/01/SpaceX</link>
-                <guid>http://www.cgal.org/news/2015/04/01/SpaceX</guid>
+                <link>http://www.cgal.org/news/2015/04/01/SpaceX/index.html</link>
+                <guid>http://www.cgal.org/news/2015/04/01/SpaceX/SpaceX</guid>
                 <pubDate>2015-04-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -11429,8 +11429,8 @@ cone and torus).
 &lt;/p&gt;
 
 </description>
-                <link>http://www.cgal.org/2015/03/15/cgal-wipRansac</link>
-                <guid>http://www.cgal.org/2015/03/15/cgal-wipRansac</guid>
+                <link>http://www.cgal.org/2015/03/15/cgal-wipRansac/index.html</link>
+                <guid>http://www.cgal.org/2015/03/15/cgal-wipRansac/cgal-wipRansac</guid>
                 <pubDate>2015-03-15T00:00:00+00:00</pubDate>
         </item>
 
@@ -11455,8 +11455,8 @@ cone and torus).
 [1] Andrea Tagliasacchi, Ibraheem Alhashim, Matt Olson, and Hao Zhang. Mean curvature skeletons. Computer Graphics Forum (Proceedings of the Symposium on Geometry Processing), 31(5):1735–1744, 2012.
 &lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2015/02/27/cgal-wipMCF</link>
-                <guid>http://www.cgal.org/2015/02/27/cgal-wipMCF</guid>
+                <link>http://www.cgal.org/2015/02/27/cgal-wipMCF/index.html</link>
+                <guid>http://www.cgal.org/2015/02/27/cgal-wipMCF/cgal-wipMCF</guid>
                 <pubDate>2015-02-27T00:00:00+00:00</pubDate>
         </item>
 
@@ -11626,8 +11626,8 @@ points chosen in a disc.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2015/02/20/cgal-46-beta1</link>
-                <guid>http://www.cgal.org/2015/02/20/cgal-46-beta1</guid>
+                <link>http://www.cgal.org/2015/02/20/cgal-46-beta1/index.html</link>
+                <guid>http://www.cgal.org/2015/02/20/cgal-46-beta1/cgal-46-beta1</guid>
                 <pubDate>2015-02-20T00:00:00+00:00</pubDate>
         </item>
 
@@ -11671,8 +11671,8 @@ create some holes on the surface of the mesh.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2015/02/15/cgal-452</link>
-                <guid>http://www.cgal.org/2015/02/15/cgal-452</guid>
+                <link>http://www.cgal.org/2015/02/15/cgal-452/index.html</link>
+                <guid>http://www.cgal.org/2015/02/15/cgal-452/cgal-452</guid>
                 <pubDate>2015-02-15T00:00:00+00:00</pubDate>
         </item>
 
@@ -11700,8 +11700,8 @@ surface mesh, and identifying its connected components.&lt;/p&gt;
 &lt;/p&gt;
 
 </description>
-                <link>http://www.cgal.org/2015/01/12/cgal-wipPMP</link>
-                <guid>http://www.cgal.org/2015/01/12/cgal-wipPMP</guid>
+                <link>http://www.cgal.org/2015/01/12/cgal-wipPMP/index.html</link>
+                <guid>http://www.cgal.org/2015/01/12/cgal-wipPMP/cgal-wipPMP</guid>
                 <pubDate>2015-01-12T00:00:00+00:00</pubDate>
         </item>
 
@@ -11728,8 +11728,8 @@ surface mesh, and identifying its connected components.&lt;/p&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2014/12/22/cgal-451</link>
-                <guid>http://www.cgal.org/2014/12/22/cgal-451</guid>
+                <link>http://www.cgal.org/2014/12/22/cgal-451/index.html</link>
+                <guid>http://www.cgal.org/2014/12/22/cgal-451/cgal-451</guid>
                 <pubDate>2014-12-22T00:00:00+00:00</pubDate>
         </item>
 
@@ -11744,8 +11744,8 @@ As CGAL uses C++ templates, these libraries are rather empty, and we are working
 
 &lt;p&gt;&lt;b&gt;Status:&lt;/b&gt; Submitted to the Editorial Board and targeted for CGAL 4.7, Autumn 2015&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2014/12/14/cgal-HeaderOnly</link>
-                <guid>http://www.cgal.org/2014/12/14/cgal-HeaderOnly</guid>
+                <link>http://www.cgal.org/2014/12/14/cgal-HeaderOnly/index.html</link>
+                <guid>http://www.cgal.org/2014/12/14/cgal-HeaderOnly/cgal-HeaderOnly</guid>
                 <pubDate>2014-12-14T00:00:00+00:00</pubDate>
         </item>
 
@@ -11943,8 +11943,8 @@ concurrent insertion and removal.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2014/10/10/cgal-45</link>
-                <guid>http://www.cgal.org/2014/10/10/cgal-45</guid>
+                <link>http://www.cgal.org/2014/10/10/cgal-45/index.html</link>
+                <guid>http://www.cgal.org/2014/10/10/cgal-45/cgal-45</guid>
                 <pubDate>2014-10-10T00:00:00+00:00</pubDate>
         </item>
 
@@ -12138,8 +12138,8 @@ concurrent insertion and removal.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2014/08/12/cgal-45-beta1</link>
-                <guid>http://www.cgal.org/2014/08/12/cgal-45-beta1</guid>
+                <link>http://www.cgal.org/2014/08/12/cgal-45-beta1/index.html</link>
+                <guid>http://www.cgal.org/2014/08/12/cgal-45-beta1/cgal-45-beta1</guid>
                 <pubDate>2014-08-12T00:00:00+00:00</pubDate>
         </item>
 
@@ -12149,8 +12149,8 @@ concurrent insertion and removal.&lt;/li&gt;
 &lt;p&gt;Visit the CGAL Project on Booth No. 618 at the exhibition of &lt;a href=&quot;http://s2014.siggraph.org/&quot;&gt;SIGGRAPH 2014&lt;/a&gt;,
 Vancouver Canada, 12-14 July 2014.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/news/2014/08/08/siggraph-2014</link>
-                <guid>http://www.cgal.org/news/2014/08/08/siggraph-2014</guid>
+                <link>http://www.cgal.org/news/2014/08/08/siggraph-2014/index.html</link>
+                <guid>http://www.cgal.org/news/2014/08/08/siggraph-2014/siggraph-2014</guid>
                 <pubDate>2014-08-08T00:00:00+00:00</pubDate>
         </item>
 
@@ -12160,8 +12160,8 @@ Vancouver Canada, 12-14 July 2014.&lt;/p&gt;
 &lt;p&gt;The CGAL project welcomes 7 &lt;a href=&quot;https://code.google.com/soc/&quot;&gt;GSoC&lt;/a&gt; students.
 Have a look at the &lt;a href=&quot;https://cgal.github.io/cgal-web/gsoc/2014.html&quot;&gt;Accepted Projects&lt;/a&gt; page.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/news/2014/05/24/gsoc-2014</link>
-                <guid>http://www.cgal.org/news/2014/05/24/gsoc-2014</guid>
+                <link>http://www.cgal.org/news/2014/05/24/gsoc-2014/index.html</link>
+                <guid>http://www.cgal.org/news/2014/05/24/gsoc-2014/gsoc-2014</guid>
                 <pubDate>2014-05-24T00:00:00+00:00</pubDate>
         </item>
 
@@ -12172,8 +12172,8 @@ Have a look at the &lt;a href=&quot;https://cgal.github.io/cgal-web/gsoc/2014.ht
 for &lt;a href=&quot;https://www.google-melange.com/archive/gsoc/2014&quot;&gt;Google Summer of Code 2014&lt;/a&gt;.
 Have a look at our &lt;a href=&quot;https://cgal.github.io/cgal-web/gsoc/2014.html&quot;&gt;Project Ideas&lt;/a&gt; page.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2014/04/12/gsoc-2014-mentoring</link>
-                <guid>http://www.cgal.org/2014/04/12/gsoc-2014-mentoring</guid>
+                <link>http://www.cgal.org/2014/04/12/gsoc-2014-mentoring/index.html</link>
+                <guid>http://www.cgal.org/2014/04/12/gsoc-2014-mentoring/gsoc-2014-mentoring</guid>
                 <pubDate>2014-04-12T00:00:00+00:00</pubDate>
         </item>
 
@@ -12336,8 +12336,8 @@ map type.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2014/04/04/cgal-44</link>
-                <guid>http://www.cgal.org/2014/04/04/cgal-44</guid>
+                <link>http://www.cgal.org/2014/04/04/cgal-44/index.html</link>
+                <guid>http://www.cgal.org/2014/04/04/cgal-44/cgal-44</guid>
                 <pubDate>2014-04-04T00:00:00+00:00</pubDate>
         </item>
 
@@ -12420,8 +12420,8 @@ It already today makes Blender, CGAL, Crystal Space, Ganglia,
 and MetaBrainz the coolest mentoring organizations of GSoC 2014.&lt;/p&gt;
 &lt;/p&gt;&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/news/2014/04/01/GoogleGrass</link>
-                <guid>http://www.cgal.org/news/2014/04/01/GoogleGrass</guid>
+                <link>http://www.cgal.org/news/2014/04/01/GoogleGrass/index.html</link>
+                <guid>http://www.cgal.org/news/2014/04/01/GoogleGrass/GoogleGrass</guid>
                 <pubDate>2014-04-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -12584,8 +12584,8 @@ map type.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2014/03/07/cgal-44-beta1</link>
-                <guid>http://www.cgal.org/2014/03/07/cgal-44-beta1</guid>
+                <link>http://www.cgal.org/2014/03/07/cgal-44-beta1/index.html</link>
+                <guid>http://www.cgal.org/2014/03/07/cgal-44-beta1/cgal-44-beta1</guid>
                 <pubDate>2014-03-07T00:00:00+00:00</pubDate>
         </item>
 
@@ -12834,8 +12834,8 @@ write shared-memory parallel code.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2013/10/17/cgal-43</link>
-                <guid>http://www.cgal.org/2013/10/17/cgal-43</guid>
+                <link>http://www.cgal.org/2013/10/17/cgal-43/index.html</link>
+                <guid>http://www.cgal.org/2013/10/17/cgal-43/cgal-43</guid>
                 <pubDate>2013-10-17T00:00:00+00:00</pubDate>
         </item>
 
@@ -13084,8 +13084,8 @@ write shared-memory parallel code.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2013/08/23/cgal-43-beta1</link>
-                <guid>http://www.cgal.org/2013/08/23/cgal-43-beta1</guid>
+                <link>http://www.cgal.org/2013/08/23/cgal-43-beta1/index.html</link>
+                <guid>http://www.cgal.org/2013/08/23/cgal-43-beta1/cgal-43-beta1</guid>
                 <pubDate>2013-08-23T00:00:00+00:00</pubDate>
         </item>
 
@@ -13107,8 +13107,8 @@ of visibility polygons. CoRR, abs/1403.3905, 2014. 2
 &lt;/p&gt;
 
 </description>
-                <link>http://www.cgal.org/2013/07/31/wipVisibility</link>
-                <guid>http://www.cgal.org/2013/07/31/wipVisibility</guid>
+                <link>http://www.cgal.org/2013/07/31/wipVisibility/index.html</link>
+                <guid>http://www.cgal.org/2013/07/31/wipVisibility/wipVisibility</guid>
                 <pubDate>2013-07-31T00:00:00+00:00</pubDate>
         </item>
 
@@ -13117,8 +13117,8 @@ of visibility polygons. CoRR, abs/1403.3905, 2014. 2
                 <description>
 &lt;p&gt;Visit the CGAL Project on Booth No. 753 at the exhibition of &lt;a href=&quot;http://s2013.siggraph.org/&quot;&gt;SIGGRAPH 2013&lt;/a&gt;, Anaheim CA, 23-25 July 2013.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2013/07/01/siggraph-2013</link>
-                <guid>http://www.cgal.org/2013/07/01/siggraph-2013</guid>
+                <link>http://www.cgal.org/2013/07/01/siggraph-2013/index.html</link>
+                <guid>http://www.cgal.org/2013/07/01/siggraph-2013/siggraph-2013</guid>
                 <pubDate>2013-07-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -13132,8 +13132,8 @@ of visibility polygons. CoRR, abs/1403.3905, 2014. 2
 &lt;a href=&quot;https://members.loria.fr/Monique.Teillaud/other-geometries/&quot;&gt;other geometries&lt;/a&gt; than the Euclidean spaces R&lt;sup&gt;d&lt;/sup&gt;.&lt;/p&gt;
 
 </description>
-                <link>http://www.cgal.org/2013/04/13/wipTriangulationsInNewSpaces</link>
-                <guid>http://www.cgal.org/2013/04/13/wipTriangulationsInNewSpaces</guid>
+                <link>http://www.cgal.org/2013/04/13/wipTriangulationsInNewSpaces/index.html</link>
+                <guid>http://www.cgal.org/2013/04/13/wipTriangulationsInNewSpaces/wipTriangulationsInNewSpaces</guid>
                 <pubDate>2013-04-13T00:00:00+00:00</pubDate>
         </item>
 
@@ -13145,8 +13145,8 @@ for &lt;a href=&quot;https://www.google-melange.com/archive/gsoc/2013&quot;&gt;G
 Have a look at our &lt;a href=&quot;https://cgal.github.io/cgal-web/gsoc/2013.html&quot;&gt;Project Ideas&lt;/a&gt; page.&lt;/p&gt;
 
 </description>
-                <link>http://www.cgal.org/news/2013/04/12/gsoc-2013</link>
-                <guid>http://www.cgal.org/news/2013/04/12/gsoc-2013</guid>
+                <link>http://www.cgal.org/news/2013/04/12/gsoc-2013/index.html</link>
+                <guid>http://www.cgal.org/news/2013/04/12/gsoc-2013/gsoc-2013</guid>
                 <pubDate>2013-04-12T00:00:00+00:00</pubDate>
         </item>
 
@@ -13275,8 +13275,8 @@ the Polyhedron demo has an option to switch it on.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2013/04/11/cgal-42</link>
-                <guid>http://www.cgal.org/2013/04/11/cgal-42</guid>
+                <link>http://www.cgal.org/2013/04/11/cgal-42/index.html</link>
+                <guid>http://www.cgal.org/2013/04/11/cgal-42/cgal-42</guid>
                 <pubDate>2013-04-11T00:00:00+00:00</pubDate>
         </item>
 
@@ -13405,8 +13405,8 @@ the Polyhedron demo has an option to switch it on.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2013/03/08/cgal-42-beta1</link>
-                <guid>http://www.cgal.org/2013/03/08/cgal-42-beta1</guid>
+                <link>http://www.cgal.org/2013/03/08/cgal-42-beta1/index.html</link>
+                <guid>http://www.cgal.org/2013/03/08/cgal-42-beta1/cgal-42-beta1</guid>
                 <pubDate>2013-03-08T00:00:00+00:00</pubDate>
         </item>
 
@@ -13415,8 +13415,8 @@ the Polyhedron demo has an option to switch it on.&lt;/li&gt;
                 <description>
 &lt;p&gt;We answer CGAL-related questions on &lt;a href=&quot;http://stackoverflow.com/questions/tagged/cgal&quot;&gt;StackOverflow&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2013/03/01/cgal-on-stackoverflow</link>
-                <guid>http://www.cgal.org/2013/03/01/cgal-on-stackoverflow</guid>
+                <link>http://www.cgal.org/2013/03/01/cgal-on-stackoverflow/index.html</link>
+                <guid>http://www.cgal.org/2013/03/01/cgal-on-stackoverflow/cgal-on-stackoverflow</guid>
                 <pubDate>2013-03-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -13499,8 +13499,8 @@ still available for backward compatibility.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2012/10/24/cgal-41</link>
-                <guid>http://www.cgal.org/2012/10/24/cgal-41</guid>
+                <link>http://www.cgal.org/2012/10/24/cgal-41/index.html</link>
+                <guid>http://www.cgal.org/2012/10/24/cgal-41/cgal-41</guid>
                 <pubDate>2012-10-24T00:00:00+00:00</pubDate>
         </item>
 
@@ -13583,8 +13583,8 @@ still available for backward compatibility.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2012/08/17/cgal-41-beta1</link>
-                <guid>http://www.cgal.org/2012/08/17/cgal-41-beta1</guid>
+                <link>http://www.cgal.org/2012/08/17/cgal-41-beta1/index.html</link>
+                <guid>http://www.cgal.org/2012/08/17/cgal-41-beta1/cgal-41-beta1</guid>
                 <pubDate>2012-08-17T00:00:00+00:00</pubDate>
         </item>
 
@@ -13593,8 +13593,8 @@ still available for backward compatibility.&lt;/li&gt;
                 <description>
 &lt;p&gt;Visit the CGAL Project on Booth No. 1014 at the exhibition of &lt;a href=&quot;http://www.siggraph.org/s2012/&quot;&gt;SIGGRAPH 2012&lt;/a&gt;, Los Angeles, 7-9th August 2012.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2012/08/01/siggraph-2012</link>
-                <guid>http://www.cgal.org/2012/08/01/siggraph-2012</guid>
+                <link>http://www.cgal.org/2012/08/01/siggraph-2012/index.html</link>
+                <guid>http://www.cgal.org/2012/08/01/siggraph-2012/siggraph-2012</guid>
                 <pubDate>2012-08-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -13610,8 +13610,8 @@ still available for backward compatibility.&lt;/li&gt;
 &lt;p&gt;This is a bug fix release. It fixes a bug in the &lt;code&gt;CMakeLists.txt&lt;/code&gt; for &lt;a href=&quot;../../../../2012/07/03/cgal-401&quot;&gt;CGAL-4.0.1&lt;/a&gt;, that prevented even
 building the libraries.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2012/07/04/cgal-402</link>
-                <guid>http://www.cgal.org/2012/07/04/cgal-402</guid>
+                <link>http://www.cgal.org/2012/07/04/cgal-402/index.html</link>
+                <guid>http://www.cgal.org/2012/07/04/cgal-402/cgal-402</guid>
                 <pubDate>2012-07-04T00:00:00+00:00</pubDate>
         </item>
 
@@ -13697,8 +13697,8 @@ This fix also affects the usage of that class in the package
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2012/07/03/cgal-401</link>
-                <guid>http://www.cgal.org/2012/07/03/cgal-401</guid>
+                <link>http://www.cgal.org/2012/07/03/cgal-401/index.html</link>
+                <guid>http://www.cgal.org/2012/07/03/cgal-401/cgal-401</guid>
                 <pubDate>2012-07-03T00:00:00+00:00</pubDate>
         </item>
 
@@ -13707,8 +13707,8 @@ This fix also affects the usage of that class in the package
                 <description>
 &lt;p&gt;Follow CGAL during the &lt;a href=&quot;http://socg2012.web.unc.edu/&quot;&gt;CG Week&lt;/a&gt; in Chapel Hill, NC, USA. Two minisymposia: &lt;a href=&quot;http://acg.cs.tau.ac.il/events/cgal-socg-2012/&quot;&gt;CGAL, an Open Gate to Computational Geometry&lt;/a&gt; and &lt;a href=&quot;http://gts2012.tem.uoc.gr/&quot;&gt;Publicly Available Geometric/Topological Software&lt;/a&gt;&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2012/06/01/cgal-at-cg-week</link>
-                <guid>http://www.cgal.org/2012/06/01/cgal-at-cg-week</guid>
+                <link>http://www.cgal.org/2012/06/01/cgal-at-cg-week/index.html</link>
+                <guid>http://www.cgal.org/2012/06/01/cgal-at-cg-week/cgal-at-cg-week</guid>
                 <pubDate>2012-06-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -13719,8 +13719,8 @@ This fix also affects the usage of that class in the package
 for &lt;a href=&quot;https://www.google-melange.com/archive/gsoc/2012&quot;&gt;Google Summer of Code 2012&lt;/a&gt;.
 Have a look at our &lt;a href=&quot;https://cgal.github.io/cgal-web/gsoc/2012.html&quot;&gt;Project Ideas&lt;/a&gt; page.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/news/2012/03/21/gsoc-2012</link>
-                <guid>http://www.cgal.org/news/2012/03/21/gsoc-2012</guid>
+                <link>http://www.cgal.org/news/2012/03/21/gsoc-2012/index.html</link>
+                <guid>http://www.cgal.org/news/2012/03/21/gsoc-2012/gsoc-2012</guid>
                 <pubDate>2012-03-21T00:00:00+00:00</pubDate>
         </item>
 
@@ -13881,8 +13881,8 @@ thread-safety can be deactivated by defining &lt;code class=&quot;language-plain
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2012/03/12/cgal-40</link>
-                <guid>http://www.cgal.org/2012/03/12/cgal-40</guid>
+                <link>http://www.cgal.org/2012/03/12/cgal-40/index.html</link>
+                <guid>http://www.cgal.org/2012/03/12/cgal-40/cgal-40</guid>
                 <pubDate>2012-03-12T00:00:00+00:00</pubDate>
         </item>
 
@@ -14037,8 +14037,8 @@ thread-safety can be deactivated by defining &lt;code class=&quot;language-plain
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2012/02/13/cgal-40-beta1</link>
-                <guid>http://www.cgal.org/2012/02/13/cgal-40-beta1</guid>
+                <link>http://www.cgal.org/2012/02/13/cgal-40-beta1/index.html</link>
+                <guid>http://www.cgal.org/2012/02/13/cgal-40-beta1/cgal-40-beta1</guid>
                 <pubDate>2012-02-13T00:00:00+00:00</pubDate>
         </item>
 
@@ -14047,8 +14047,8 @@ thread-safety can be deactivated by defining &lt;code class=&quot;language-plain
                 <description>
 &lt;p&gt;A book, titled &lt;em&gt;“CGAL Arrangements and Their Applications”&lt;/em&gt; has been published by Springer; see the &lt;a href=&quot;http://www.springer.com/computer/image+processing/book/978-3-642-17282-3&quot;&gt;publisher&lt;/a&gt; and the &lt;a href=&quot;http://acg.cs.tau.ac.il/cgal-arrangement-book&quot;&gt;authors&lt;/a&gt; websites of the book.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2012/02/01/cgal-arrangements-and-their-applications-book</link>
-                <guid>http://www.cgal.org/2012/02/01/cgal-arrangements-and-their-applications-book</guid>
+                <link>http://www.cgal.org/2012/02/01/cgal-arrangements-and-their-applications-book/index.html</link>
+                <guid>http://www.cgal.org/2012/02/01/cgal-arrangements-and-their-applications-book/cgal-arrangements-and-their-applications-book</guid>
                 <pubDate>2012-02-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -14057,8 +14057,8 @@ thread-safety can be deactivated by defining &lt;code class=&quot;language-plain
                 <description>
 &lt;p&gt;The &lt;a href=&quot;https://github.com/CGAL/cgal-swig-bindings&quot;&gt;CGAL-bindings&lt;/a&gt; repository is now open to the public. This project provides an interface to some CGAL algorithms in other languages than C++ (Java, Python, …) using the &lt;a href=&quot;http://www.swig.org&quot;&gt;SWIG&lt;/a&gt; technology.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2012/01/01/swig-bindings-released</link>
-                <guid>http://www.cgal.org/2012/01/01/swig-bindings-released</guid>
+                <link>http://www.cgal.org/2012/01/01/swig-bindings-released/index.html</link>
+                <guid>http://www.cgal.org/2012/01/01/swig-bindings-released/swig-bindings-released</guid>
                 <pubDate>2012-01-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -14067,8 +14067,8 @@ thread-safety can be deactivated by defining &lt;code class=&quot;language-plain
                 <description>
 &lt;p&gt;Jane Tournois, Pierre Alliez, Laurent Rineau, and Mariette Yvinec received the &lt;em&gt;Meshing Maestro Award&lt;/em&gt; at the &lt;a href=&quot;https://imr.sandia.gov/20imr/&quot;&gt;20. International Meshing Roundtable&lt;/a&gt;, for their poster &lt;a href=&quot;https://cgal.github.io/cgal-web/images/MeshingMaestro2011.png&quot;&gt;Meshing with CGAL&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2011/11/01/meshing-maestro-award</link>
-                <guid>http://www.cgal.org/2011/11/01/meshing-maestro-award</guid>
+                <link>http://www.cgal.org/2011/11/01/meshing-maestro-award/index.html</link>
+                <guid>http://www.cgal.org/2011/11/01/meshing-maestro-award/meshing-maestro-award</guid>
                 <pubDate>2011-11-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -14188,8 +14188,8 @@ of the embedding surface were replaced by the following new tags:
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2011/09/27/cgal-39</link>
-                <guid>http://www.cgal.org/2011/09/27/cgal-39</guid>
+                <link>http://www.cgal.org/2011/09/27/cgal-39/index.html</link>
+                <guid>http://www.cgal.org/2011/09/27/cgal-39/cgal-39</guid>
                 <pubDate>2011-09-27T00:00:00+00:00</pubDate>
         </item>
 
@@ -14198,8 +14198,8 @@ of the embedding surface were replaced by the following new tags:
                 <description>
 &lt;p&gt;Visit the CGAL Project on Booth No. 170 at the exhibition of &lt;a href=&quot;http://www.siggraph.org/s2011/&quot;&gt;SIGGRAPH 2011&lt;/a&gt;, Vancouver, 8-11 August 2011.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2011/08/01/siggraph-2011</link>
-                <guid>http://www.cgal.org/2011/08/01/siggraph-2011</guid>
+                <link>http://www.cgal.org/2011/08/01/siggraph-2011/index.html</link>
+                <guid>http://www.cgal.org/2011/08/01/siggraph-2011/siggraph-2011</guid>
                 <pubDate>2011-08-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -14382,8 +14382,8 @@ for arrangement of Bezier curves.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2011/04/19/cgal-38</link>
-                <guid>http://www.cgal.org/2011/04/19/cgal-38</guid>
+                <link>http://www.cgal.org/2011/04/19/cgal-38/index.html</link>
+                <guid>http://www.cgal.org/2011/04/19/cgal-38/cgal-38</guid>
                 <pubDate>2011-04-19T00:00:00+00:00</pubDate>
         </item>
 
@@ -14392,8 +14392,8 @@ for arrangement of Bezier curves.&lt;/li&gt;
                 <description>
 &lt;p&gt;On the &lt;a href=&quot;https://cgal.github.io/cgal-web/April11/FirstOfApril.html&quot;&gt;new homepage&lt;/a&gt;, the CGAL Project agressively uses &lt;em&gt;Web 3.14&lt;/em&gt; technology.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2011/04/01/new-homepage</link>
-                <guid>http://www.cgal.org/2011/04/01/new-homepage</guid>
+                <link>http://www.cgal.org/2011/04/01/new-homepage/index.html</link>
+                <guid>http://www.cgal.org/2011/04/01/new-homepage/new-homepage</guid>
                 <pubDate>2011-04-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -14404,8 +14404,8 @@ for arrangement of Bezier curves.&lt;/li&gt;
 for &lt;a href=&quot;https://www.google-melange.com/archive/gsoc/2011&quot;&gt;Google Summer of Code 2011&lt;/a&gt;.
 Have a look at our &lt;a href=&quot;https://cgal.github.io/cgal-web/gsoc/2011.html&quot;&gt;Project Ideas&lt;/a&gt; page.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/news/2011/03/31/gsoc-2011</link>
-                <guid>http://www.cgal.org/news/2011/03/31/gsoc-2011</guid>
+                <link>http://www.cgal.org/news/2011/03/31/gsoc-2011/index.html</link>
+                <guid>http://www.cgal.org/news/2011/03/31/gsoc-2011/gsoc-2011</guid>
                 <pubDate>2011-03-31T00:00:00+00:00</pubDate>
         </item>
 
@@ -14588,8 +14588,8 @@ for arrangement of Bezier curves.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2011/03/14/cgal-38-beta1</link>
-                <guid>http://www.cgal.org/2011/03/14/cgal-38-beta1</guid>
+                <link>http://www.cgal.org/2011/03/14/cgal-38-beta1/index.html</link>
+                <guid>http://www.cgal.org/2011/03/14/cgal-38-beta1/cgal-38-beta1</guid>
                 <pubDate>2011-03-14T00:00:00+00:00</pubDate>
         </item>
 
@@ -14598,8 +14598,8 @@ for arrangement of Bezier curves.&lt;/li&gt;
                 <description>
 &lt;p&gt;The CGAL Project sponsors &lt;a href=&quot;http://socg2011.inria.fr/&quot;&gt;SoCG 2011&lt;/a&gt;, the 27th Annual Symposium on Computational Geometry.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2010/12/01/cgal-sponsors-socg-2011</link>
-                <guid>http://www.cgal.org/2010/12/01/cgal-sponsors-socg-2011</guid>
+                <link>http://www.cgal.org/2010/12/01/cgal-sponsors-socg-2011/index.html</link>
+                <guid>http://www.cgal.org/2010/12/01/cgal-sponsors-socg-2011/cgal-sponsors-socg-2011</guid>
                 <pubDate>2010-12-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -14743,8 +14743,8 @@ CGAL can deal with large data sets (64 bit addresses).&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2010/10/15/cgal-37</link>
-                <guid>http://www.cgal.org/2010/10/15/cgal-37</guid>
+                <link>http://www.cgal.org/2010/10/15/cgal-37/index.html</link>
+                <guid>http://www.cgal.org/2010/10/15/cgal-37/cgal-37</guid>
                 <pubDate>2010-10-15T00:00:00+00:00</pubDate>
         </item>
 
@@ -14888,8 +14888,8 @@ CGAL can deal with large data sets (64 bit addresses).&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2010/08/23/cgal-37-beta</link>
-                <guid>http://www.cgal.org/2010/08/23/cgal-37-beta</guid>
+                <link>http://www.cgal.org/2010/08/23/cgal-37-beta/index.html</link>
+                <guid>http://www.cgal.org/2010/08/23/cgal-37-beta/cgal-37-beta</guid>
                 <pubDate>2010-08-23T00:00:00+00:00</pubDate>
         </item>
 
@@ -14898,8 +14898,8 @@ CGAL can deal with large data sets (64 bit addresses).&lt;/li&gt;
                 <description>
 &lt;p&gt;Visit the CGAL project on &lt;a href=&quot;http://www.siggraph.org&quot;&gt;Booth No. 1014&lt;/a&gt; at the exhibition of &lt;a href=&quot;http://www.siggraph.org/s2010/&quot;&gt;SIGGRAPH 2010&lt;/a&gt;, Los Angeles, 27-29 July 2010.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2010/07/01/siggraph-2010</link>
-                <guid>http://www.cgal.org/2010/07/01/siggraph-2010</guid>
+                <link>http://www.cgal.org/2010/07/01/siggraph-2010/index.html</link>
+                <guid>http://www.cgal.org/2010/07/01/siggraph-2010/siggraph-2010</guid>
                 <pubDate>2010-07-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -14994,8 +14994,8 @@ instantiated with one of these traits.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2010/06/30/cgal-361</link>
-                <guid>http://www.cgal.org/2010/06/30/cgal-361</guid>
+                <link>http://www.cgal.org/2010/06/30/cgal-361/index.html</link>
+                <guid>http://www.cgal.org/2010/06/30/cgal-361/cgal-361</guid>
                 <pubDate>2010-06-30T00:00:00+00:00</pubDate>
         </item>
 
@@ -15006,8 +15006,8 @@ instantiated with one of these traits.&lt;/li&gt;
 for &lt;a href=&quot;https://www.google-melange.com/archive/gsoc/2010&quot;&gt;Google Summer of Code 2010&lt;/a&gt;.
 Have a look at our &lt;a href=&quot;https://cgal.github.io/cgal-web/gsoc/2010.html&quot;&gt;Project Ideas&lt;/a&gt; page.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/news/2010/03/31/gsoc-2010</link>
-                <guid>http://www.cgal.org/news/2010/03/31/gsoc-2010</guid>
+                <link>http://www.cgal.org/news/2010/03/31/gsoc-2010/index.html</link>
+                <guid>http://www.cgal.org/news/2010/03/31/gsoc-2010/gsoc-2010</guid>
                 <pubDate>2010-03-31T00:00:00+00:00</pubDate>
         </item>
 
@@ -15193,8 +15193,8 @@ computer resources.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2010/03/22/cgal-36</link>
-                <guid>http://www.cgal.org/2010/03/22/cgal-36</guid>
+                <link>http://www.cgal.org/2010/03/22/cgal-36/index.html</link>
+                <guid>http://www.cgal.org/2010/03/22/cgal-36/cgal-36</guid>
                 <pubDate>2010-03-22T00:00:00+00:00</pubDate>
         </item>
 
@@ -15245,8 +15245,8 @@ the parameters in this order.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2009/12/22/cgal-351</link>
-                <guid>http://www.cgal.org/2009/12/22/cgal-351</guid>
+                <link>http://www.cgal.org/2009/12/22/cgal-351/index.html</link>
+                <guid>http://www.cgal.org/2009/12/22/cgal-351/cgal-351</guid>
                 <pubDate>2009-12-22T00:00:00+00:00</pubDate>
         </item>
 
@@ -15255,8 +15255,8 @@ the parameters in this order.&lt;/li&gt;
                 <description>
 &lt;p&gt;Attend a &lt;a href=&quot;http://www.siggraph.org/asia2009/for_attendees/courses_attendees/details/?type=course&amp;amp;id=16&quot;&gt;Course on CGAL&lt;/a&gt; at the classes of &lt;a href=&quot;http://www.siggraph.org/asia2009/&quot;&gt;SIGGRAPH ASIA 2009&lt;/a&gt;, Saturday, 19 December, 9:00 am - 12:45 pm, Room 513, Yokohama, Japan.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2009/12/01/siggraph-asia</link>
-                <guid>http://www.cgal.org/2009/12/01/siggraph-asia</guid>
+                <link>http://www.cgal.org/2009/12/01/siggraph-asia/index.html</link>
+                <guid>http://www.cgal.org/2009/12/01/siggraph-asia/siggraph-asia</guid>
                 <pubDate>2009-12-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -15265,8 +15265,8 @@ the parameters in this order.&lt;/li&gt;
                 <description>
 &lt;p&gt;Attend the CGAL demo session at the &lt;a href=&quot;http://acmgis09.cs.umn.edu/pc.html&quot;&gt;17th ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems&lt;/a&gt;, Seattle, Washington.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2009/11/01/cgalsigspatial</link>
-                <guid>http://www.cgal.org/2009/11/01/cgalsigspatial</guid>
+                <link>http://www.cgal.org/2009/11/01/cgalsigspatial/index.html</link>
+                <guid>http://www.cgal.org/2009/11/01/cgalsigspatial/cgalsigspatial</guid>
                 <pubDate>2009-11-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -15431,8 +15431,8 @@ Plugins for CGAL main 2D algorithm are provided as demo.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2009/10/05/cgal-35</link>
-                <guid>http://www.cgal.org/2009/10/05/cgal-35</guid>
+                <link>http://www.cgal.org/2009/10/05/cgal-35/index.html</link>
+                <guid>http://www.cgal.org/2009/10/05/cgal-35/cgal-35</guid>
                 <pubDate>2009-10-05T00:00:00+00:00</pubDate>
         </item>
 
@@ -15441,8 +15441,8 @@ Plugins for CGAL main 2D algorithm are provided as demo.&lt;/li&gt;
                 <description>
 &lt;p&gt;Attend a demos session on &lt;a href=&quot;http://www.accv2009.org/ACCV2009/Technical_Program.html&quot;&gt; CGAL Point Set Processing and Surface Reconstruction&lt;/a&gt; at &lt;a href=&quot;http://www.accv2009.org/ACCV2009/Home.html&quot;&gt;The Ninth Asian Conference on Computer Vision&lt;/a&gt;, Friday, September 25 and Sunday, September 27; 16:30-18:30), Xi20an, China.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2009/09/01/cgalaccv</link>
-                <guid>http://www.cgal.org/2009/09/01/cgalaccv</guid>
+                <link>http://www.cgal.org/2009/09/01/cgalaccv/index.html</link>
+                <guid>http://www.cgal.org/2009/09/01/cgalaccv/cgalaccv</guid>
                 <pubDate>2009-09-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -15451,8 +15451,8 @@ Plugins for CGAL main 2D algorithm are provided as demo.&lt;/li&gt;
                 <description>
 &lt;p&gt;Visit the CGAL project on &lt;a href=&quot;http://sis.siggraph.org/cgi-bin/procform_SIS_2009.py?preparsed=1&amp;amp;command=pack&amp;amp;formname=exhibitor&amp;amp;booth=3429&quot;&gt;Booth No. 3429&lt;/a&gt; at the exhibition of &lt;a href=&quot;http://www.siggraph.org/s2009/&quot;&gt;SIGGRAPH 2009&lt;/a&gt;, New Orleans, 4-6 08 2009.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2009/08/01/siggraph-2009</link>
-                <guid>http://www.cgal.org/2009/08/01/siggraph-2009</guid>
+                <link>http://www.cgal.org/2009/08/01/siggraph-2009/index.html</link>
+                <guid>http://www.cgal.org/2009/08/01/siggraph-2009/siggraph-2009</guid>
                 <pubDate>2009-08-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -15617,8 +15617,8 @@ Plugins for CGAL main 2D algorithm are provided as demo.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2009/07/30/cgal-35-beta1</link>
-                <guid>http://www.cgal.org/2009/07/30/cgal-35-beta1</guid>
+                <link>http://www.cgal.org/2009/07/30/cgal-35-beta1/index.html</link>
+                <guid>http://www.cgal.org/2009/07/30/cgal-35-beta1/cgal-35-beta1</guid>
                 <pubDate>2009-07-30T00:00:00+00:00</pubDate>
         </item>
 
@@ -15627,8 +15627,8 @@ Plugins for CGAL main 2D algorithm are provided as demo.&lt;/li&gt;
                 <description>
 &lt;p&gt;The new Matlab 2009a now uses CGAL triangulations. Watch the &lt;a href=&quot;https://www.mathworks.com/videos/new-mathematics-features-in-r2009a-69010.html&quot;&gt;video&lt;/a&gt;!&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2009/03/01/matlab-uses-cgal-triangulations</link>
-                <guid>http://www.cgal.org/2009/03/01/matlab-uses-cgal-triangulations</guid>
+                <link>http://www.cgal.org/2009/03/01/matlab-uses-cgal-triangulations/index.html</link>
+                <guid>http://www.cgal.org/2009/03/01/matlab-uses-cgal-triangulations/matlab-uses-cgal-triangulations</guid>
                 <pubDate>2009-03-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -15843,8 +15843,8 @@ offset of a polygon.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2009/01/22/cgal-34</link>
-                <guid>http://www.cgal.org/2009/01/22/cgal-34</guid>
+                <link>http://www.cgal.org/2009/01/22/cgal-34/index.html</link>
+                <guid>http://www.cgal.org/2009/01/22/cgal-34/cgal-34</guid>
                 <pubDate>2009-01-22T00:00:00+00:00</pubDate>
         </item>
 
@@ -15853,8 +15853,8 @@ offset of a polygon.&lt;/li&gt;
                 <description>
 &lt;p&gt;A &lt;a href=&quot;https://www.linkedin.com/groups?viewMembers=&amp;amp;gid=1742497&amp;amp;sik=1232440138990&quot;&gt;CGAL users group&lt;/a&gt; has been created on the &lt;a href=&quot;https://www.linkedin.com/&quot;&gt;LinkedIn&lt;/a&gt; social network.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2009/01/01/cgallinkedin</link>
-                <guid>http://www.cgal.org/2009/01/01/cgallinkedin</guid>
+                <link>http://www.cgal.org/2009/01/01/cgallinkedin/index.html</link>
+                <guid>http://www.cgal.org/2009/01/01/cgallinkedin/cgallinkedin</guid>
                 <pubDate>2009-01-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -16041,8 +16041,8 @@ arrangements of conics, for example, when defining an arc with 5 points.&lt;/li&
 
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2008/12/19/cgal-34-beta1</link>
-                <guid>http://www.cgal.org/2008/12/19/cgal-34-beta1</guid>
+                <link>http://www.cgal.org/2008/12/19/cgal-34-beta1/index.html</link>
+                <guid>http://www.cgal.org/2008/12/19/cgal-34-beta1/cgal-34-beta1</guid>
                 <pubDate>2008-12-19T00:00:00+00:00</pubDate>
         </item>
 
@@ -16051,8 +16051,8 @@ arrangements of conics, for example, when defining an arc with 5 points.&lt;/li&
                 <description>
 &lt;p&gt;Attend the &lt;a href=&quot;http://www.cgal.org/Events/PeriodicSpacesWorkshop/&quot;&gt;CGAL Prospective Workshop on Geometric Computing in Periodic Spaces&lt;/a&gt; on October 20, 2008, at INRIA Sophia Antipolis, France.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2008/10/01/cgalworkshop-on-periodic-spaces</link>
-                <guid>http://www.cgal.org/2008/10/01/cgalworkshop-on-periodic-spaces</guid>
+                <link>http://www.cgal.org/2008/10/01/cgalworkshop-on-periodic-spaces/index.html</link>
+                <guid>http://www.cgal.org/2008/10/01/cgalworkshop-on-periodic-spaces/cgalworkshop-on-periodic-spaces</guid>
                 <pubDate>2008-10-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -16061,8 +16061,8 @@ arrangements of conics, for example, when defining an arc with 5 points.&lt;/li&
                 <description>
 &lt;p&gt;October 12, 2008, the meshing tools of CGAL are presented in a short course, entitled &lt;a href=&quot;http://www.imr.sandia.gov/17imr/ShortCourses.html&quot;&gt; Current trends in Delaunay refinement meshing &lt;/a&gt;, at the &lt;a href=&quot;http://www.imr.sandia.gov/17imr&quot;&gt; 17th International Meshing Roundtable &lt;/a&gt;, Pittsburg, Pennsylvania.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2008/10/01/cgalmeshing-round-table</link>
-                <guid>http://www.cgal.org/2008/10/01/cgalmeshing-round-table</guid>
+                <link>http://www.cgal.org/2008/10/01/cgalmeshing-round-table/index.html</link>
+                <guid>http://www.cgal.org/2008/10/01/cgalmeshing-round-table/cgalmeshing-round-table</guid>
                 <pubDate>2008-10-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -16071,8 +16071,8 @@ arrangements of conics, for example, when defining an arc with 5 points.&lt;/li&
                 <description>
 &lt;p&gt;Attend a &lt;a href=&quot;http://www.siggraph.org/s2008/attendees/program/item/?type=class&amp;amp;id=56&quot;&gt;Course on CGAL&lt;/a&gt; at the classes of &lt;a href=&quot;http://www.siggraph.org/s2008/&quot;&gt;SIGGRAPH 2008&lt;/a&gt;, Thursday, 14th August, 8:30 am - 12:15 pm , Room 411, Los Angeles.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2008/08/01/siggraph-2008-course</link>
-                <guid>http://www.cgal.org/2008/08/01/siggraph-2008-course</guid>
+                <link>http://www.cgal.org/2008/08/01/siggraph-2008-course/index.html</link>
+                <guid>http://www.cgal.org/2008/08/01/siggraph-2008-course/siggraph-2008-course</guid>
                 <pubDate>2008-08-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -16081,8 +16081,8 @@ arrangements of conics, for example, when defining an arc with 5 points.&lt;/li&
                 <description>
 &lt;p&gt;Visit the CGAL project on &lt;a href=&quot;http://sis.siggraph.org/cgi-bin/procform?preparsed=1&amp;amp;command=pack&amp;amp;formname=exhibitor&amp;amp;exhibitorid=126&quot;&gt;Booth No. 1011&lt;/a&gt; at the exhibition of &lt;a href=&quot;http://www.siggraph.org/s2008/&quot;&gt;SIGGRAPH 2008&lt;/a&gt;, Los Angeles, 12-14th August 2008.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2008/08/01/siggraph-2008-booth</link>
-                <guid>http://www.cgal.org/2008/08/01/siggraph-2008-booth</guid>
+                <link>http://www.cgal.org/2008/08/01/siggraph-2008-booth/index.html</link>
+                <guid>http://www.cgal.org/2008/08/01/siggraph-2008-booth/siggraph-2008-booth</guid>
                 <pubDate>2008-08-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -16091,8 +16091,8 @@ arrangements of conics, for example, when defining an arc with 5 points.&lt;/li&
                 <description>
 &lt;p&gt;Sylvain Pion and Andreas Fabri presented CGAL in the &lt;a href=&quot;http://www.youtube.com/watch?v=3DLfkWWw_Tg&quot;&gt;Google TechTalk Series&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2008/03/01/cgalgoogle-tech-talk-series</link>
-                <guid>http://www.cgal.org/2008/03/01/cgalgoogle-tech-talk-series</guid>
+                <link>http://www.cgal.org/2008/03/01/cgalgoogle-tech-talk-series/index.html</link>
+                <guid>http://www.cgal.org/2008/03/01/cgalgoogle-tech-talk-series/cgalgoogle-tech-talk-series</guid>
                 <pubDate>2008-03-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -16101,8 +16101,8 @@ arrangements of conics, for example, when defining an arc with 5 points.&lt;/li&
                 <description>
 &lt;p&gt;The &lt;a href=&quot;https://cgal.github.io/cgal-web/Events/UserWorkshop/2008/index.html&quot;&gt;3rd CGAL User Workshop&lt;/a&gt; will be held on March 17, 2008, immediately before the European Workshop on Computational Geometry in Nancy, France.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2008/03/01/cgal-user-workshop</link>
-                <guid>http://www.cgal.org/2008/03/01/cgal-user-workshop</guid>
+                <link>http://www.cgal.org/2008/03/01/cgal-user-workshop/index.html</link>
+                <guid>http://www.cgal.org/2008/03/01/cgal-user-workshop/cgal-user-workshop</guid>
                 <pubDate>2008-03-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -16227,8 +16227,8 @@ section of &lt;a href=&quot;https://www.cgal.org&quot;&gt;www.cgal.org&lt;/a&gt;
 
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2007/09/04/cgal-331</link>
-                <guid>http://www.cgal.org/2007/09/04/cgal-331</guid>
+                <link>http://www.cgal.org/2007/09/04/cgal-331/index.html</link>
+                <guid>http://www.cgal.org/2007/09/04/cgal-331/cgal-331</guid>
                 <pubDate>2007-09-04T00:00:00+00:00</pubDate>
         </item>
 
@@ -16237,8 +16237,8 @@ section of &lt;a href=&quot;https://www.cgal.org&quot;&gt;www.cgal.org&lt;/a&gt;
                 <description>
 &lt;p&gt;Visit the CGAL project on &lt;a href=&quot;http://esub.siggraph.org/cgi-bin/cgi/idEDetail.html&amp;amp;CompanyID=1076&quot;&gt;Booth No. 325&lt;/a&gt; at the exhibition of &lt;a href=&quot;http://www.siggraph.org/s2007/&quot;&gt;SIGGRAPH 2007&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2007/08/01/siggraph-2007</link>
-                <guid>http://www.cgal.org/2007/08/01/siggraph-2007</guid>
+                <link>http://www.cgal.org/2007/08/01/siggraph-2007/index.html</link>
+                <guid>http://www.cgal.org/2007/08/01/siggraph-2007/siggraph-2007</guid>
                 <pubDate>2007-08-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -16247,8 +16247,8 @@ section of &lt;a href=&quot;https://www.cgal.org&quot;&gt;www.cgal.org&lt;/a&gt;
                 <description>
 &lt;p&gt;&lt;a href=&quot;http://cgal-ipelets.gforge.inria.fr/&quot;&gt;CGAL-Ipelets&lt;/a&gt; 0.9 (plugins for the &lt;a href=&quot;http://ipe.otfried.org/&quot;&gt;Ipe&lt;/a&gt; drawing editor, based on CGAL) is available.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2007/08/01/release-of-cgal-ipelets</link>
-                <guid>http://www.cgal.org/2007/08/01/release-of-cgal-ipelets</guid>
+                <link>http://www.cgal.org/2007/08/01/release-of-cgal-ipelets/index.html</link>
+                <guid>http://www.cgal.org/2007/08/01/release-of-cgal-ipelets/release-of-cgal-ipelets</guid>
                 <pubDate>2007-08-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -16257,8 +16257,8 @@ section of &lt;a href=&quot;https://www.cgal.org&quot;&gt;www.cgal.org&lt;/a&gt;
                 <description>
 &lt;p&gt;Attend the invited talk about Voronoi diagrams in CGAL at the &lt;a href=&quot;http://www.comp.glam.ac.uk/GIS/ISVD07/&quot;&gt;4th ISVD International Symposium on Voronoi Diagrams in Science and Engineering&lt;/a&gt;, at the University of Glamorgan, Wales, UK, from the 9th to the 11th of July 2007.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2007/07/01/cgalisvd</link>
-                <guid>http://www.cgal.org/2007/07/01/cgalisvd</guid>
+                <link>http://www.cgal.org/2007/07/01/cgalisvd/index.html</link>
+                <guid>http://www.cgal.org/2007/07/01/cgalisvd/cgalisvd</guid>
                 <pubDate>2007-07-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -16267,8 +16267,8 @@ section of &lt;a href=&quot;https://www.cgal.org&quot;&gt;www.cgal.org&lt;/a&gt;
                 <description>
 &lt;p&gt;Visit the CGAL project booth at &lt;a href=&quot;http://smi07.liris.cnrs.fr/&quot;&gt;Shape Modeling International 2007&lt;/a&gt;, Lyon, France, 13-15 June 2007.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2007/06/01/cgalsmi</link>
-                <guid>http://www.cgal.org/2007/06/01/cgalsmi</guid>
+                <link>http://www.cgal.org/2007/06/01/cgalsmi/index.html</link>
+                <guid>http://www.cgal.org/2007/06/01/cgalsmi/cgalsmi</guid>
                 <pubDate>2007-06-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -16277,8 +16277,8 @@ section of &lt;a href=&quot;https://www.cgal.org&quot;&gt;www.cgal.org&lt;/a&gt;
                 <description>
 &lt;p&gt;The first &lt;a href=&quot;http://tinyurl.com/ysmv3u&quot;&gt;Special Issue on CGAL&lt;/a&gt; of the journal &lt;em&gt;Computational Geometry - Theory and Applications&lt;/em&gt; has appeared.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2007/06/01/cgalcgta</link>
-                <guid>http://www.cgal.org/2007/06/01/cgalcgta</guid>
+                <link>http://www.cgal.org/2007/06/01/cgalcgta/index.html</link>
+                <guid>http://www.cgal.org/2007/06/01/cgalcgta/cgalcgta</guid>
                 <pubDate>2007-06-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -16493,8 +16493,8 @@ equations and inequalities.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2007/06/01/cgal-33</link>
-                <guid>http://www.cgal.org/2007/06/01/cgal-33</guid>
+                <link>http://www.cgal.org/2007/06/01/cgal-33/index.html</link>
+                <guid>http://www.cgal.org/2007/06/01/cgal-33/cgal-33</guid>
                 <pubDate>2007-06-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -16503,8 +16503,8 @@ equations and inequalities.&lt;/li&gt;
                 <description>
 &lt;p&gt;Attend the &lt;a href=&quot;http://liama.ia.ac.cn/wiki/doku.php?id=projects:10_anniversary:program:eventh&quot;&gt;CGAL Day&lt;/a&gt; at the &lt;a href=&quot;http://liama.ia.ac.cn/&quot;&gt;LIAMA&lt;/a&gt;, Beijing.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2007/01/01/cgalliama</link>
-                <guid>http://www.cgal.org/2007/01/01/cgalliama</guid>
+                <link>http://www.cgal.org/2007/01/01/cgalliama/index.html</link>
+                <guid>http://www.cgal.org/2007/01/01/cgalliama/cgalliama</guid>
                 <pubDate>2007-01-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -16513,8 +16513,8 @@ equations and inequalities.&lt;/li&gt;
                 <description>
 &lt;p&gt;Visit the CGAL project on &lt;a href=&quot;http://esub.siggraph.org/cgi-bin/cgi/idEDetail.html&amp;amp;CompanyID=1076&quot;&gt;Booth No. 314&lt;/a&gt; at the exhibition of &lt;a href=&quot;http://www.siggraph.org/s2006/&quot;&gt;SIGGRAPH 2006&lt;/a&gt;, Boston, 1-3rd August.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2006/08/01/siggraph-2006</link>
-                <guid>http://www.cgal.org/2006/08/01/siggraph-2006</guid>
+                <link>http://www.cgal.org/2006/08/01/siggraph-2006/index.html</link>
+                <guid>http://www.cgal.org/2006/08/01/siggraph-2006/siggraph-2006</guid>
                 <pubDate>2006-08-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -16578,8 +16578,8 @@ ambiguities with Boost’s &lt;code class=&quot;language-plaintext highlighter-r
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2006/07/01/cgal-321</link>
-                <guid>http://www.cgal.org/2006/07/01/cgal-321</guid>
+                <link>http://www.cgal.org/2006/07/01/cgal-321/index.html</link>
+                <guid>http://www.cgal.org/2006/07/01/cgal-321/cgal-321</guid>
                 <pubDate>2006-07-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -16776,8 +16776,8 @@ rewritten.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2006/05/01/cgal-32</link>
-                <guid>http://www.cgal.org/2006/05/01/cgal-32</guid>
+                <link>http://www.cgal.org/2006/05/01/cgal-32/index.html</link>
+                <guid>http://www.cgal.org/2006/05/01/cgal-32/cgal-32</guid>
                 <pubDate>2006-05-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -16786,8 +16786,8 @@ rewritten.&lt;/li&gt;
                 <description>
 &lt;p&gt;&lt;a href=&quot;https://cgal.github.io/cgal-web/project_rules.html&quot;&gt;CGAL Open Source Project Rules and Procedures&lt;/a&gt; published to help users and developers to understand the decision processes behind CGAL and how one can get involved.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2005/10/01/project-rules</link>
-                <guid>http://www.cgal.org/2005/10/01/project-rules</guid>
+                <link>http://www.cgal.org/2005/10/01/project-rules/index.html</link>
+                <guid>http://www.cgal.org/2005/10/01/project-rules/project-rules</guid>
                 <pubDate>2005-10-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -16886,8 +16886,8 @@ journal in computer science published by Elsevier, see
 http://www.elsevier.com/locate/comgeo&lt;/a&gt;.&lt;/p&gt;
 &lt;/p&gt;&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2005/08/01/call-for-papers</link>
-                <guid>http://www.cgal.org/2005/08/01/call-for-papers</guid>
+                <link>http://www.cgal.org/2005/08/01/call-for-papers/index.html</link>
+                <guid>http://www.cgal.org/2005/08/01/call-for-papers/call-for-papers</guid>
                 <pubDate>2005-08-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -16896,8 +16896,8 @@ http://www.elsevier.com/locate/comgeo&lt;/a&gt;.&lt;/p&gt;
                 <description>
 &lt;p&gt;The CGAL project is hosted at &lt;a href=&quot;http://www.siggraph.org/cgi-bin/cgi/idEDetail.html&amp;amp;CompanyID=833&quot;&gt;Inria20s&lt;/a&gt; booth at the exhibition of &lt;a href=&quot;https://www.siggraph.org/soma/dvd-osa/dvd2005/index.html&quot;&gt;SIGGRAPH 2005&lt;/a&gt;. Visit us at Booth No. 1358 from 2-4th August.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2005/07/01/siggraph-2005</link>
-                <guid>http://www.cgal.org/2005/07/01/siggraph-2005</guid>
+                <link>http://www.cgal.org/2005/07/01/siggraph-2005/index.html</link>
+                <guid>http://www.cgal.org/2005/07/01/siggraph-2005/siggraph-2005</guid>
                 <pubDate>2005-07-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -17126,8 +17126,8 @@ facet_degree, edge_flip, and is_closed.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2004/12/01/cgal-31</link>
-                <guid>http://www.cgal.org/2004/12/01/cgal-31</guid>
+                <link>http://www.cgal.org/2004/12/01/cgal-31/index.html</link>
+                <guid>http://www.cgal.org/2004/12/01/cgal-31/cgal-31</guid>
                 <pubDate>2004-12-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -17136,8 +17136,8 @@ facet_degree, edge_flip, and is_closed.&lt;/li&gt;
                 <description>
 &lt;p&gt;CGAL is presented at the Inria booth at the annual &lt;a href=&quot;http://www.birp.com/micad/&quot;&gt;MICAD&lt;/a&gt; CAD/CAM design conference in Paris, France, 30-31 March, 1 April.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2004/03/01/cgalmicad</link>
-                <guid>http://www.cgal.org/2004/03/01/cgalmicad</guid>
+                <link>http://www.cgal.org/2004/03/01/cgalmicad/index.html</link>
+                <guid>http://www.cgal.org/2004/03/01/cgalmicad/cgalmicad</guid>
                 <pubDate>2004-03-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -17206,8 +17206,8 @@ this should speed up some kinds of computations.&lt;/li&gt;
 
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2004/02/01/cgal-301</link>
-                <guid>http://www.cgal.org/2004/02/01/cgal-301</guid>
+                <link>http://www.cgal.org/2004/02/01/cgal-301/index.html</link>
+                <guid>http://www.cgal.org/2004/02/01/cgal-301/cgal-301</guid>
                 <pubDate>2004-02-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -17216,8 +17216,8 @@ this should speed up some kinds of computations.&lt;/li&gt;
                 <description>
 &lt;p&gt;The second &lt;a href=&quot;https://cgal.github.io/cgal-web/Events/UserWorkshop/2004/index.html&quot;&gt;CGAL User Workshop&lt;/a&gt; will be held on 12 June 2004, immediately after the &lt;a href=&quot;http://socg.poly.edu/home.htm&quot;&gt; 20th Annual ACM Symposium on Computational Geometry&lt;/a&gt; in New York, USA.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2004/02/01/2nd-cgal-user-workshop</link>
-                <guid>http://www.cgal.org/2004/02/01/2nd-cgal-user-workshop</guid>
+                <link>http://www.cgal.org/2004/02/01/2nd-cgal-user-workshop/index.html</link>
+                <guid>http://www.cgal.org/2004/02/01/2nd-cgal-user-workshop/2nd-cgal-user-workshop</guid>
                 <pubDate>2004-02-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -17621,8 +17621,8 @@ or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Kernel::Tr
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2003/11/01/cgal-30</link>
-                <guid>http://www.cgal.org/2003/11/01/cgal-30</guid>
+                <link>http://www.cgal.org/2003/11/01/cgal-30/index.html</link>
+                <guid>http://www.cgal.org/2003/11/01/cgal-30/cgal-30</guid>
                 <pubDate>2003-11-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -17631,8 +17631,8 @@ or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Kernel::Tr
                 <description>
 &lt;p&gt;&lt;a href=&quot;http://www.geometryfactory.com&quot;&gt;GeometryFactory&lt;/a&gt; got incorporated as spin-off of the CGAL project. GeometryFactory offers individual CGAL data structures and algorithms under commercial licenses for industrial research and for product development.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2003/01/01/geometryfactory-incorporated</link>
-                <guid>http://www.cgal.org/2003/01/01/geometryfactory-incorporated</guid>
+                <link>http://www.cgal.org/2003/01/01/geometryfactory-incorporated/index.html</link>
+                <guid>http://www.cgal.org/2003/01/01/geometryfactory-incorporated/geometryfactory-incorporated</guid>
                 <pubDate>2003-01-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -17804,8 +17804,8 @@ traits does not compile for either of the above packages.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2002/05/01/cgal-24</link>
-                <guid>http://www.cgal.org/2002/05/01/cgal-24</guid>
+                <link>http://www.cgal.org/2002/05/01/cgal-24/index.html</link>
+                <guid>http://www.cgal.org/2002/05/01/cgal-24/cgal-24</guid>
                 <pubDate>2002-05-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -17814,8 +17814,8 @@ traits does not compile for either of the above packages.&lt;/li&gt;
                 <description>
 &lt;p&gt;The program for the &lt;a href=&quot;https://cgal.github.io/cgal-web/Events/UserWorkshop/2002/index.html&quot;&gt;1st CGAL User Workshop&lt;/a&gt; is now available.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2002/03/01/1st-cgal-user-workshop</link>
-                <guid>http://www.cgal.org/2002/03/01/1st-cgal-user-workshop</guid>
+                <link>http://www.cgal.org/2002/03/01/1st-cgal-user-workshop/index.html</link>
+                <guid>http://www.cgal.org/2002/03/01/1st-cgal-user-workshop/1st-cgal-user-workshop</guid>
                 <pubDate>2002-03-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -18038,8 +18038,8 @@ version of the LEDA window lib.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2001/10/01/cgal-23</link>
-                <guid>http://www.cgal.org/2001/10/01/cgal-23</guid>
+                <link>http://www.cgal.org/2001/10/01/cgal-23/index.html</link>
+                <guid>http://www.cgal.org/2001/10/01/cgal-23/cgal-23</guid>
                 <pubDate>2001-10-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -18048,8 +18048,8 @@ version of the LEDA window lib.&lt;/li&gt;
                 <description>
 &lt;p&gt;Kurt Mehlhorn and Susan Hert recently conducted a short course at the &lt;a href=&quot;http://www.engin.umich.edu/dept/meam/deslab/cadcam/ACMSM/&quot;&gt;2001 ACM Solid Modeling Symposium&lt;/a&gt; entitiled “Programming Support for Geometric Algorithms, Data Structures, and Exact Computation” (also known as “Implementing Geometric Algorithms - LEDA and CGAL”). &lt;a href=&quot;/Tutorials/solid_modeling_01.ps.gz&quot;&gt;PostScript&lt;/a&gt; and &lt;a href=&quot;/Tutorials/solid_modeling_01.pdf&quot;&gt;PDF&lt;/a&gt; versions of the slides are available here.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/2001/06/01/cgalacmsm</link>
-                <guid>http://www.cgal.org/2001/06/01/cgalacmsm</guid>
+                <link>http://www.cgal.org/2001/06/01/cgalacmsm/index.html</link>
+                <guid>http://www.cgal.org/2001/06/01/cgalacmsm/cgalacmsm</guid>
                 <pubDate>2001-06-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -18119,8 +18119,8 @@ is now available.&lt;/li&gt;
 
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2000/10/01/cgal-22</link>
-                <guid>http://www.cgal.org/2000/10/01/cgal-22</guid>
+                <link>http://www.cgal.org/2000/10/01/cgal-22/index.html</link>
+                <guid>http://www.cgal.org/2000/10/01/cgal-22/cgal-22</guid>
                 <pubDate>2000-10-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -18185,8 +18185,8 @@ This package requires LEDA to be installed.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/2000/01/01/cgal-21</link>
-                <guid>http://www.cgal.org/2000/01/01/cgal-21</guid>
+                <link>http://www.cgal.org/2000/01/01/cgal-21/index.html</link>
+                <guid>http://www.cgal.org/2000/01/01/cgal-21/cgal-21</guid>
                 <pubDate>2000-01-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -18195,8 +18195,8 @@ This package requires LEDA to be installed.&lt;/li&gt;
                 <description>
 &lt;p&gt;A tutorial on the library was presented at SoCG’99. The &lt;a href=&quot;/Tutorials/Tutorial_SCG99.tar.gz&quot;&gt;slides and example files&lt;/a&gt; are available here.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/1999/08/01/cgalsocg</link>
-                <guid>http://www.cgal.org/1999/08/01/cgalsocg</guid>
+                <link>http://www.cgal.org/1999/08/01/cgalsocg/index.html</link>
+                <guid>http://www.cgal.org/1999/08/01/cgalsocg/cgalsocg</guid>
                 <pubDate>1999-08-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -18211,8 +18211,8 @@ introduction of namespaces: namespace &lt;code&gt;std::&lt;/code&gt; for code fr
 the standard library and namespace &lt;code&gt;CGAL::&lt;/code&gt; for the CGAL library.
 &lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/1999/06/01/cgal-20</link>
-                <guid>http://www.cgal.org/1999/06/01/cgal-20</guid>
+                <link>http://www.cgal.org/1999/06/01/cgal-20/index.html</link>
+                <guid>http://www.cgal.org/1999/06/01/cgal-20/cgal-20</guid>
                 <pubDate>1999-06-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -18234,8 +18234,8 @@ the standard library and namespace &lt;code&gt;CGAL::&lt;/code&gt; for the CGAL 
   &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-                <link>http://www.cgal.org/1999/01/01/cgal-12</link>
-                <guid>http://www.cgal.org/1999/01/01/cgal-12</guid>
+                <link>http://www.cgal.org/1999/01/01/cgal-12/index.html</link>
+                <guid>http://www.cgal.org/1999/01/01/cgal-12/cgal-12</guid>
                 <pubDate>1999-01-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -18259,8 +18259,8 @@ the standard library and namespace &lt;code&gt;CGAL::&lt;/code&gt; for the CGAL 
   &lt;/div&gt;
 &lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/1998/07/01/cgal-11</link>
-                <guid>http://www.cgal.org/1998/07/01/cgal-11</guid>
+                <link>http://www.cgal.org/1998/07/01/cgal-11/index.html</link>
+                <guid>http://www.cgal.org/1998/07/01/cgal-11/cgal-11</guid>
                 <pubDate>1998-07-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -18284,8 +18284,8 @@ the standard library and namespace &lt;code&gt;CGAL::&lt;/code&gt; for the CGAL 
   &lt;/div&gt;
 &lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/1998/04/01/cgal-10</link>
-                <guid>http://www.cgal.org/1998/04/01/cgal-10</guid>
+                <link>http://www.cgal.org/1998/04/01/cgal-10/index.html</link>
+                <guid>http://www.cgal.org/1998/04/01/cgal-10/cgal-10</guid>
                 <pubDate>1998-04-01T00:00:00+00:00</pubDate>
         </item>
 
@@ -18294,8 +18294,8 @@ the standard library and namespace &lt;code&gt;CGAL::&lt;/code&gt; for the CGAL 
                 <description>
 &lt;p&gt;Initial (beta) release of the CGAL library.&lt;/p&gt;
 </description>
-                <link>http://www.cgal.org/1997/06/01/cgal-09</link>
-                <guid>http://www.cgal.org/1997/06/01/cgal-09</guid>
+                <link>http://www.cgal.org/1997/06/01/cgal-09/index.html</link>
+                <guid>http://www.cgal.org/1997/06/01/cgal-09/cgal-09</guid>
                 <pubDate>1997-06-01T00:00:00+00:00</pubDate>
         </item>
 

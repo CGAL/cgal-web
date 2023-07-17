@@ -1,0 +1,478 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>CGAL 4.11 released</title>
+    <meta name="description" content="CGAL 4.11">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="CGAL Editorial Board">
+
+    <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/icomoon-social.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+
+    <!--[if lte IE 8]>
+	<link rel="stylesheet" href="css/leaflet.ie.css" />
+	<![endif]-->
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/main.css">
+
+    <!-- atom & rss feed -->
+    <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="https://cgal.github.io/cgal-web/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+
+    <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    
+
+    <!-- Navigation & Logo-->
+    <div class="mainmenu-wrapper">
+    <div class="container">
+    <nav id="mainmenu" class="mainmenu" role="navigation">
+    <ul>
+    <li class="logo-wrapper hidden-xs hidden-sm hidden-md">
+    <a href="https://cgal.github.io/cgal-web/index.html">
+    <img src="https://cgal.github.io/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
+    </a>
+    </li>
+
+    <li class="hidden-lg">
+    <a href="https://cgal.github.io/cgal-web/index.html">
+    <img src="https://cgal.github.io/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
+    </a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/project.html">Project</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/download.html">Download</a>
+    </li>
+
+    <li class="dropdown" style="transition-duration: all 0s ease; transition-delay: all 0s ease;">
+    <a href="#" class="dropdown-toggle" data-hover="dropdown">Packages <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometryProcessing" target="_blank">Geometry Processing</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
+        </ul>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/documentation.html">Documentation</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/news.html">News</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/media.html">Media</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/support.html">Support</a>
+    </li>
+
+    </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="section section-breadcrumbs">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>CGAL 4.11 released </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+<div class="section">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-9">
+        <div class="blog-post blog-single-post">
+          <div class="single-post-title">
+            <h3>CGAL 4.11 released</h3>
+          </div>
+          <br>
+          <div class="single-post-info">
+            <i class="glyphicon glyphicon-time"></i>
+            21 September 2017
+          </div>
+          <div class="single-post-content">
+            
+<p><i class="glyphicon glyphicon-download"></i>
+<a href="https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.11">Download CGAL-4.11</a></p>
+
+<p><i class="glyphicon glyphicon-book"></i>
+<a href="https://doc.cgal.org/4.11/Manual/index.html">CGAL-4.11 documentation</a></p>
+
+<p>CGAL 4.11 offers the following improvements and new functionality over
+<a href="../../../../2017/05/29/cgal410">CGAL 4.10</a>:</p>
+
+<div class="product-detail-info">
+
+  <h2 id="changelog">Changelog</h2>
+
+  <h3 id="d-periodic-regular-triangulations-new-feature">3D Periodic Regular Triangulations (new feature)</h3>
+
+  <ul>
+    <li>Added the class <code class="language-plaintext highlighter-rouge">Periodic_3_regular_triangulation_3</code>, which provides
+functionality for 3D periodic weighted Delaunay triangulations. The
+construction is fully dynamic: it provides both point insertion and
+vertex removal.</li>
+  </ul>
+
+  <h3 id="dd-regular-triangulations-new-feature">dD Regular Triangulations (new feature)</h3>
+
+  <ul>
+    <li>Added the class <code class="language-plaintext highlighter-rouge">Regular_triangulation</code>, which provides
+functionality for dD weighted Delaunay triangulations. Note that the
+removal of points is not yet supported.</li>
+  </ul>
+
+  <h3 id="d-and-3d-linear-geometry-kernel-breaking-change">2D and 3D Linear Geometry Kernel (breaking change)</h3>
+
+  <ul>
+    <li><strong>Breaking change</strong>: The dangerous implicit conversions between
+weighted points and points in the concept <code class="language-plaintext highlighter-rouge">Kernel</code> have been
+disabled. Constructors offering to build a weighted point from a
+point (and reversely) are still requested by the concept <code class="language-plaintext highlighter-rouge">Kernel</code>
+but must now be marked with the <code class="language-plaintext highlighter-rouge">explicit</code> specifier.</li>
+    <li><strong>Breaking change</strong>: The removal of implicit conversions between
+points and weighted points in the concept <code class="language-plaintext highlighter-rouge">Kernel</code> has incidentally
+created various minor breaking changes in the following packages: 2D
+Alpha Shapes, 2D and 3D Triangulations, and 3D Mesh Generation. See
+the full changelog for details.</li>
+  </ul>
+
+  <h3 id="surface-mesh">Surface Mesh</h3>
+
+  <ul>
+    <li><strong>Breaking change</strong>:
+<code class="language-plaintext highlighter-rouge">operator &gt;&gt;(std::istream&amp;, Surface_mesh&amp;)</code> no longer clears the surface mesh.</li>
+  </ul>
+
+  <h3 id="triangulated-surface-mesh-parameterization-breaking-change">Triangulated Surface Mesh Parameterization (breaking change)</h3>
+
+  <ul>
+    <li><strong>Breaking change</strong>: The package has been rewritten and can operate
+on any model of the <code class="language-plaintext highlighter-rouge">MutableFaceGraph</code> concept. All previous
+parameterization methods are still offered, although with a
+different, simpler API. The documentation has been updated and
+offers a gentle introduction to the new API. Users who wish to use
+the former API must use a version prior to 4.11.</li>
+    <li><strong>Breaking change</strong>: The adapter to add virtual seams is now the
+class <code class="language-plaintext highlighter-rouge">CGAL::Seam_mesh</code> in the package <em>CGAL and the BGL</em>.</li>
+    <li><strong>Breaking change</strong>: The package has been restructured and most
+headers have been moved. In a general manner, users should replace
+<code class="language-plaintext highlighter-rouge">&lt;CGAL/XXX.h&gt;</code> with <code class="language-plaintext highlighter-rouge">&lt;CGAL/Surface_mesh_parameterization/XXX.h&gt;</code></li>
+    <li>Add the <em>As Rigid As Possible Parameterization</em> method. This
+parameterization allows the user to prioritize angle preservation,
+shape preservation, or a balance of both.</li>
+    <li>Add the <em>Orbifold Tutte Embedding</em> method. This parameterization
+method allows to parameterize meshes that are topological spheres.</li>
+  </ul>
+
+  <h3 id="d-surface-subdivision-methods-breaking-changes">3D Surface Subdivision Methods (breaking changes)</h3>
+
+  <ul>
+    <li>The subdivision algorithms now work on any model of a
+<code class="language-plaintext highlighter-rouge">MutableFaceGraph</code>. A new API to the subdivision methods is offered,
+which uses optional named parameters to pass the number of
+iterations and a vertex property map.</li>
+    <li><strong>Breaking change</strong>: Removed the headers
+<code class="language-plaintext highlighter-rouge">&lt;CGAL/Subdivision_method_3.h&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;CGAL/Subdivision_mask_3.h&gt;</code>.
+The headers <code class="language-plaintext highlighter-rouge">&lt;CGAL/Subdivision_method_3/subdivision_methods_3.h&gt;</code>
+and <code class="language-plaintext highlighter-rouge">&lt;CGAL/Subdivision_method_3/subdivision_masks_3.h&gt;</code> should
+respectively be used instead.</li>
+    <li>Sqrt3 subdivision can now handle input surfaces with a border.</li>
+  </ul>
+
+  <h3 id="scale-space-surface-reconstruction-breaking-change">Scale-Space Surface Reconstruction (breaking change)</h3>
+
+  <ul>
+    <li><strong>Breaking change</strong>: the API was rewritten to separate the smoothing
+and meshing algorithm and making it possible for the user to use
+different ones. The default algorithms used are the same as before
+this API change, but methods are moved to the classes
+<code class="language-plaintext highlighter-rouge">Weighted_PCA_smoother</code> and <code class="language-plaintext highlighter-rouge">Alpha_shape_mesher</code>.</li>
+    <li>Alternative smoothing and meshing methods are provided:
+<code class="language-plaintext highlighter-rouge">Jet_smoother</code> and <code class="language-plaintext highlighter-rouge">Advancing_front_mesher</code>.</li>
+  </ul>
+
+  <h3 id="d-alpha-shapes">2D Alpha Shapes</h3>
+
+  <ul>
+    <li><strong>Breaking change</strong>: Mirrored the concepts of the 2D alpha shape
+package with those of the 3D Alpha Shapes package. Consequently, a
+new concept, <code class="language-plaintext highlighter-rouge">WeightedAlphaShapeTraits_2</code>, is introduced to provide
+requirements on the traits class for 2D weighted alpha shapes. All
+models of the concept <code class="language-plaintext highlighter-rouge">Kernel</code> are models of this new concept.</li>
+    <li>The concept <code class="language-plaintext highlighter-rouge">AlphaShapeTraits_2</code> now provides requirements on the
+traits class for 2D basic alpha shapes, and refines
+<code class="language-plaintext highlighter-rouge">DelaunayTriangulationTraits_2</code>.</li>
+  </ul>
+
+  <h3 id="interpolation">Interpolation</h3>
+
+  <ul>
+    <li><strong>Breaking change</strong>: The concept <code class="language-plaintext highlighter-rouge">GradientFittingTraits</code> now
+additionally requests a weighted point type <code class="language-plaintext highlighter-rouge">Weighted_point_d</code> and a
+functor <code class="language-plaintext highlighter-rouge">Construct_point_d</code>. The model
+<code class="language-plaintext highlighter-rouge">CGAL::Interpolation_gradient_fitting_traits_2</code> has been
+appropriately modified to still be a model of the concept
+<code class="language-plaintext highlighter-rouge">GradientFittingTraits</code>.</li>
+  </ul>
+
+  <h3 id="d-and-3d-triangulations">2D and 3D Triangulations</h3>
+
+  <ul>
+    <li><strong>Breaking change</strong>: Added a new functor requirement,
+<code class="language-plaintext highlighter-rouge">Construct_point_2</code>, to the concepts <code class="language-plaintext highlighter-rouge">TriangulationTraits_2</code> and
+<code class="language-plaintext highlighter-rouge">RegularTriangulationTraits_2</code> and a new functor requirement,
+<code class="language-plaintext highlighter-rouge">Construct_point_3</code>, to the concepts <code class="language-plaintext highlighter-rouge">TriangulationTraits_3</code> and
+<code class="language-plaintext highlighter-rouge">RegularTriangulationTraits_3</code>. All models of the concept <code class="language-plaintext highlighter-rouge">Kernel</code>
+already provide these functors.</li>
+    <li><strong>Breaking change</strong>: Introduced the concepts
+<code class="language-plaintext highlighter-rouge">RegularTriangulationVertexBase_2</code> and
+<code class="language-plaintext highlighter-rouge">RegularTriangulationVertexBase_3</code>. These concepts describe the
+requirements on classes meant to represent a vertex of a regular
+triangulation. Concepts that previously refined
+<code class="language-plaintext highlighter-rouge">TriangulationVertexBase_2</code> or <code class="language-plaintext highlighter-rouge">TriangulationVertexBase_3</code> but
+described in fact a vertex class used in a regular triangulation,
+such as the concept <code class="language-plaintext highlighter-rouge">MeshVertexBase_3</code> in the 3D mesh generation
+package, now refine the corresponding new regular vertex concept.</li>
+    <li><strong>Breaking change</strong>: Uniformized the point type across all vertex
+and cell concepts. The triangulation point type name is now always
+<code class="language-plaintext highlighter-rouge">Point</code>. Note that this does not change the requirements but only
+the name: <code class="language-plaintext highlighter-rouge">Point</code> is still expected to be equal to
+<code class="language-plaintext highlighter-rouge">Traits::Point_[23]</code> for basic and Delaunay triangulations or to
+<code class="language-plaintext highlighter-rouge">Traits::Weighted_point_[23]</code> for regular triangulations.
+Consequently:
+      <ul>
+        <li>The concept <code class="language-plaintext highlighter-rouge">RegularTriangulationVertexBase_2</code> now requests a
+<code class="language-plaintext highlighter-rouge">Point</code> type (equal to <code class="language-plaintext highlighter-rouge">Traits::Weighted_point_2</code>)</li>
+        <li>The concept <code class="language-plaintext highlighter-rouge">RegularTriangulationCellBase_3</code> now requests a
+<code class="language-plaintext highlighter-rouge">Point</code> type instead of a <code class="language-plaintext highlighter-rouge">Weighted_point</code> type (but still equal
+to <code class="language-plaintext highlighter-rouge">Traits::Weighted_point_3</code>)</li>
+        <li>The concept <code class="language-plaintext highlighter-rouge">DelaunayTriangulationCellBase_3</code> now requests a
+<code class="language-plaintext highlighter-rouge">Point</code> type instead of a <code class="language-plaintext highlighter-rouge">Point_3</code> type (but still equal to
+<code class="language-plaintext highlighter-rouge">Traits::Point_3</code>).</li>
+      </ul>
+    </li>
+    <li>Introduced a new concept,
+<code class="language-plaintext highlighter-rouge">RegularTriangulationCellBaseWithWeightedCircumcenter_3</code>, which
+describes the requirements on a cell of a regular triangulation that
+caches its circumcenter. The existing class
+<code class="language-plaintext highlighter-rouge">Regular_triangulation_cell_base_with_weighted_circumcenter_3</code> is
+the default model of this concept.</li>
+    <li>Added a new 3D traits class,
+<code class="language-plaintext highlighter-rouge">Robust_weighted_circumcenter_filtered_traits_3</code> which provides
+robust versions of the kernel functors
+<code class="language-plaintext highlighter-rouge">Construct_weighted_circumcenter_3</code>, <code class="language-plaintext highlighter-rouge">Compute_squared_radius_3</code>, and
+<code class="language-plaintext highlighter-rouge">Compute_squared_radius_smallest_orthogonal_sphere_3</code>. This class
+can be used as traits class in the the <code class="language-plaintext highlighter-rouge">Mesh_3</code> package to
+efficiently yet robustly generate 3D meshes.</li>
+  </ul>
+
+  <h3 id="d-periodic-triangulations">3D Periodic Triangulations</h3>
+
+  <ul>
+    <li>Added new locate and geometric access functions for 3D periodic
+triangulations.</li>
+    <li>The class <code class="language-plaintext highlighter-rouge">Periodic_3_Delaunay_triangulation_traits_3</code> now inherits
+<code class="language-plaintext highlighter-rouge">Periodic_3_triangulation_traits_3</code>.</li>
+    <li><strong>Breaking change</strong>: Some geometric access functions in
+<code class="language-plaintext highlighter-rouge">Periodic_3_triangulation_3</code> were renamed. The introduction of
+<code class="language-plaintext highlighter-rouge">Periodic_3_regular_triangulation_3</code> required to distinguish between
+functions such as <code class="language-plaintext highlighter-rouge">segment()</code> returning a segment of weightless
+points, or a segment of weighted points. As a general rule, previous
+geometrical access functions will return objects with point type
+that of the triangulation (thus, weighted objects when using
+weighted triangulations) and functions containing <code class="language-plaintext highlighter-rouge">construct</code> in the
+name will always return weightless geometrical objects.</li>
+    <li><strong>Breaking change</strong>: The concept <code class="language-plaintext highlighter-rouge">Periodic_3TriangulationTraits_3</code>
+now requests a domain getter: <code class="language-plaintext highlighter-rouge">get_domain()</code>.</li>
+    <li>Introduced a new concept,
+<code class="language-plaintext highlighter-rouge">RegularTriangulationCellBaseWithWeightedCircumcenter_3</code>, which
+describes the requirements on a cell of a regular triangulation that
+caches its circumcenter. The existing class
+<code class="language-plaintext highlighter-rouge">Regular_triangulation_cell_base_with_weighted_circumcenter_3</code> is
+the default model of this concept.</li>
+  </ul>
+
+  <h3 id="d-mesh-generation">3D Mesh Generation</h3>
+
+  <ul>
+    <li><strong>Breaking change</strong>: The type of the surface center in the concept
+<code class="language-plaintext highlighter-rouge">MeshCellBase_3</code> has been changed from <code class="language-plaintext highlighter-rouge">Triangulation::Point</code> to
+<code class="language-plaintext highlighter-rouge">TriangulationTraits::Point_3</code> to reflect that it is a weightless
+point.</li>
+    <li><strong>Breaking change</strong>: The function <code class="language-plaintext highlighter-rouge">invalidate_circumcenter()</code> of the
+concept <code class="language-plaintext highlighter-rouge">MeshCellBase_3</code> is renamed to
+<code class="language-plaintext highlighter-rouge">invalidate_weighted_circumcenter_cache()</code> and moved to the new
+concept <code class="language-plaintext highlighter-rouge">RegularTriangulationCellBaseWithWeightedCircumcenter_3</code>,
+which the concept <code class="language-plaintext highlighter-rouge">MeshCellBase_3</code> now refines.</li>
+    <li>Added a new type of polyhedral domain with features,
+<code class="language-plaintext highlighter-rouge">Polyhedral_complex_mesh_domain_3</code>. The domain is defined by a
+collection of triangulated surfaces, forming a complex.</li>
+  </ul>
+
+  <h3 id="poisson-surface-reconstruction">Poisson Surface Reconstruction</h3>
+
+  <ul>
+    <li>A new global function
+<code class="language-plaintext highlighter-rouge">CGAL::poisson_surface_reconstruction_delaunay()</code> is provided in
+addition to the current class-based API in order to make it easier
+to use.</li>
+  </ul>
+
+  <h3 id="point-set-processing">Point Set Processing</h3>
+
+  <ul>
+    <li>New functions to read from and write to LAS/LAZ files (LIDAR
+format), with or without taking additional properties into account.</li>
+    <li><strong>Breaking change:</strong> The API of the PLY function to read points with
+properties is modified for unification with LAS (see
+<code class="language-plaintext highlighter-rouge">CGAL::read_ply_points_with_properties()</code>). A new function to write
+PLY with properties is provided
+(<code class="language-plaintext highlighter-rouge">CGAL::write_ply_points_with_properties()</code>).</li>
+  </ul>
+
+  <h3 id="spatial-searching">Spatial Searching</h3>
+
+  <ul>
+    <li>Added function <code class="language-plaintext highlighter-rouge">Kd_tree::remove(Point)</code>.</li>
+  </ul>
+
+  <h3 id="d-fast-intersection-and-distance-computation">3D Fast Intersection and Distance Computation</h3>
+
+  <ul>
+    <li>Added a template parameter to <code class="language-plaintext highlighter-rouge">AABB_traits</code> for a property map that
+associates a bounding box to a primitive.</li>
+  </ul>
+
+  <h3 id="cgal-and-the-boost-graph-library">CGAL and the Boost Graph Library</h3>
+
+  <ul>
+    <li>Added a partial specialization for the class
+<code class="language-plaintext highlighter-rouge">CGAL::Linear_cell_complex_for_combinatorial_map</code> so that it is a
+model of the graph concepts <code class="language-plaintext highlighter-rouge">BidirectionalGraph</code> and
+<code class="language-plaintext highlighter-rouge">EdgeAndVertexListGraph</code> and of the concept <code class="language-plaintext highlighter-rouge">MutableFaceGraph</code>. This
+class can thus now be used in all BGL functions and algorithms.</li>
+    <li>Helper functions to create an icosahedron, a regular prism and a
+pyramid have been added.</li>
+    <li>Added class <code class="language-plaintext highlighter-rouge">CGAL::Face_filtered_graph</code> that wraps an existing graph
+and hide all simplices that are not in the selected connected
+components.</li>
+    <li>Added the class <code class="language-plaintext highlighter-rouge">CGAL::Seam_mesh</code>. The <code class="language-plaintext highlighter-rouge">Seam_mesh</code> is a graph
+adaptor which allows to create virtual borders when marking edges as
+seam edges.</li>
+    <li>Added the functions <code class="language-plaintext highlighter-rouge">read_off()</code> and <code class="language-plaintext highlighter-rouge">write_off()</code>.</li>
+  </ul>
+</div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3 blog-sidebar">
+        <h4>Recent Posts</h4>
+        <ul class="recent-posts">
+          
+            
+            
+            <li class="active"><a href="https://cgal.github.io/cgal-web/news/2023/06/13/new-release-cgal56-beta1/index.html" class="active">New release 5.6 Beta 1</a>
+            <br><div style="font-size:12px">June 2023</div></li>
+          
+            
+            
+            <li class="active"><a href="https://cgal.github.io/cgal-web/2023/06/13/cgal56-beta1/index.html" class="active">CGAL 5.6 beta1 released</a>
+            <br><div style="font-size:12px">June 2023</div></li>
+          
+            
+            
+            <li class="active"><a href="https://cgal.github.io/cgal-web/2023/05/09/improved_straight_skeleton/index.html" class="active">New in CGAL: Weighted Straight Skeletons and Straight Skeleton Extrusion</a>
+            <br><div style="font-size:12px">May 2023</div></li>
+          
+            
+            
+            <li class="active"><a href="https://cgal.github.io/cgal-web/news/2023/04/07/SoCG-Test-of-Time-Award/index.html" class="active">SoCG Test of Time Award</a>
+            <br><div style="font-size:12px">April 2023</div></li>
+          
+        </ul>
+        <a href="https://cgal.github.io/cgal-web/news.html" class="btn">Older posts...</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="footer-copyright">
+            <div style="float: left;">
+              <a href="https://twitter.com/TheCGALProject" alt="The CGAL Project's Twitter">
+                <img src="https://cgal.github.io/cgal-web/images/icons/twitter.svg" class="center-block btn-dark-orange" alt="Twitter" height="18"></img>
+              </a>
+            </div>
+            &copy; 1995-2023 The CGAL Project. All rights reserved.
+            <div style="float: right;">
+              <a href="https://cgal.geometryfactory.com/CGAL/Members/wiki/Main_Page" alt="Password protected access to the Developer Wiki">
+                <i class="glyphicon glyphicon-lock"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascripts -->
+    <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery-1.9.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery-1.9.1.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.fitvids.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.sequence-min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.bxslider.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/template.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/bootstrap-hover-dropdown-min.js"></script>
+  </body>
+</html>
+

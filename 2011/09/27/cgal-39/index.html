@@ -1,0 +1,319 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>CGAL 3.9 released</title>
+    <meta name="description" content="CGAL 3.9">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="CGAL Editorial Board">
+
+    <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/icomoon-social.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+
+    <!--[if lte IE 8]>
+	<link rel="stylesheet" href="css/leaflet.ie.css" />
+	<![endif]-->
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/main.css">
+
+    <!-- atom & rss feed -->
+    <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="https://cgal.github.io/cgal-web/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+
+    <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    
+
+    <!-- Navigation & Logo-->
+    <div class="mainmenu-wrapper">
+    <div class="container">
+    <nav id="mainmenu" class="mainmenu" role="navigation">
+    <ul>
+    <li class="logo-wrapper hidden-xs hidden-sm hidden-md">
+    <a href="https://cgal.github.io/cgal-web/index.html">
+    <img src="https://cgal.github.io/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
+    </a>
+    </li>
+
+    <li class="hidden-lg">
+    <a href="https://cgal.github.io/cgal-web/index.html">
+    <img src="https://cgal.github.io/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
+    </a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/project.html">Project</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/download.html">Download</a>
+    </li>
+
+    <li class="dropdown" style="transition-duration: all 0s ease; transition-delay: all 0s ease;">
+    <a href="#" class="dropdown-toggle" data-hover="dropdown">Packages <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometryProcessing" target="_blank">Geometry Processing</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
+        </ul>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/documentation.html">Documentation</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/news.html">News</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/media.html">Media</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/support.html">Support</a>
+    </li>
+
+    </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="section section-breadcrumbs">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>CGAL 3.9 released </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+<div class="section">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-9">
+        <div class="blog-post blog-single-post">
+          <div class="single-post-title">
+            <h3>CGAL 3.9 released</h3>
+          </div>
+          <br>
+          <div class="single-post-info">
+            <i class="glyphicon glyphicon-time"></i>
+            27 September 2011
+          </div>
+          <div class="single-post-content">
+            
+<p><i class="glyphicon glyphicon-download"></i>
+<a href="https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-3.9">Download CGAL-3.9</a></p>
+
+<p><i class="glyphicon glyphicon-book"></i>
+<a href="https://doc.cgal.org/Manual/3.9/doc_html/cgal_manual/packages.html">CGAL-3.9 documentation</a></p>
+
+<p>CGAL 3.9 offers the following improvements and new functionality over
+<a href="../../../../2011/04/19/cgal-38">CGAL 3.8</a>:</p>
+
+<div class="product-detail-info">
+
+  <h2 id="changelog">Changelog</h2>
+
+  <h3 id="general">General</h3>
+
+  <ul>
+    <li>The class <code class="language-plaintext highlighter-rouge">Root_of_2</code> is now deprecated. It is recommended to use
+the class <code class="language-plaintext highlighter-rouge">Sqrt_extension</code> instead.</li>
+    <li>The class <code class="language-plaintext highlighter-rouge">Sqrt_extension</code> is now used everywhere in CGAL where an
+algebraic number of degree 2 is needed. This change has been done in
+the <code class="language-plaintext highlighter-rouge">Root_of_traits</code> mechanism (indirectly packages 2D Circular
+kernel and 3D Spherical kernel) and the packages 2D Segment Delaunay
+Graphs and 2D Arrangements.</li>
+    <li>Various fixes in the manual.</li>
+  </ul>
+
+  <h3 id="combinatorial-maps-new-package">Combinatorial Maps (new package)</h3>
+
+  <ul>
+    <li>This package provides a new combinatorial data structure allowing to
+describe any orientable subdivided object whatever its dimension. It
+describes all cells of the subdivision and all the incidence and
+adjacency relations between these cells. For example it allows to
+describe a 3D object subdivided in vertices, edges, faces and
+volumes. This data structure can be seen as the generalization in dD
+of the halfedge data structure.</li>
+  </ul>
+
+  <h3 id="d-convex-hull-major-performance-improvement">3D Convex Hull (major performance improvement)</h3>
+
+  <ul>
+    <li>The quickhull implementation of CGAL (<code class="language-plaintext highlighter-rouge">CGAL::convex_hull_3</code>) has
+been worked out to provide very better performances.</li>
+    <li>The function <code class="language-plaintext highlighter-rouge">CGAL::convex_hull_3</code> no longer computes the plane
+equations of the facets of the output polyhedron. However an example
+is provided to show how to compute them easily.</li>
+    <li>A global function <code class="language-plaintext highlighter-rouge">convex_hull_3_to_polyhedron_3</code> is now provided to
+extract the convex hull of a 3D points set from a triangulation of
+these points.</li>
+  </ul>
+
+  <h3 id="dd-spatial-searching-major-new-feature-added">dD Spatial Searching (major new feature added)</h3>
+
+  <ul>
+    <li>A traits-class and distance adapter that together with a point
+property map, allow to make nearest neighbor queries on keys instead
+of points have been added.</li>
+    <li>Few bug fixes in the documentation have revealed some
+inconsistencies that have been corrected. Two traits class concept
+are now documented (<code class="language-plaintext highlighter-rouge">RangeSearchTraits</code> and <code class="language-plaintext highlighter-rouge">SearchTraits</code>). Most
+other changes concerns only classes documented as advanced. One
+issue that user can encounter is due to an additional requirement on
+the nested class <code class="language-plaintext highlighter-rouge">Construct_cartesian_const_iterator_d</code> defined in
+the concept SearchTraits that must provide a nested type
+<code class="language-plaintext highlighter-rouge">result_type</code>.</li>
+  </ul>
+
+  <h3 id="spatial-sorting-major-new-feature-added">Spatial Sorting (major new feature added)</h3>
+
+  <ul>
+    <li>General dimension is now supported.</li>
+    <li>Hilbert sorting admits now two policies: splitting at median or at
+middle (see user manual).</li>
+    <li>Using a property map, sorting on keys instead of points is now
+easier</li>
+  </ul>
+
+  <h3 id="dd-kernel">dD Kernel</h3>
+
+  <ul>
+    <li>The d-dimensional kernel concept and models have been modified to
+additionally provide two new functors <code class="language-plaintext highlighter-rouge">Less_coordinate_d</code> and
+<code class="language-plaintext highlighter-rouge">Point_dimension_d</code>.</li>
+  </ul>
+
+  <h3 id="d-arrangements">2D Arrangements</h3>
+
+  <ul>
+    <li>A new geometry-traits class that handles rational arcs, namely
+<code class="language-plaintext highlighter-rouge">Arr_rational_function_traits_2</code>, has been introduced. It replaced
+an old traits class, which handled the same family of curves, but it
+was less efficient. The new traits exploits CGAL algebraic kernels
+and polynomials, which were not available at the time the old traits
+class was developed.</li>
+    <li>A new geometry traits concept called
+<code class="language-plaintext highlighter-rouge">ArrangementOpenBoundaryTraits_2</code> has been introduced. A model of
+this concept supports curves that approach the open boundary of an
+iso-rectangular area called parameter space, which can be unbounded
+or bounded. The general code of the package, however, supports only
+the unbounded parameter space. We intend to enhance the general code
+to support also bounded parameter spaces in a future release.</li>
+    <li>The deprecated member function <code class="language-plaintext highlighter-rouge">is_at_infinity()</code> of
+<code class="language-plaintext highlighter-rouge">Arrangement_2::Vertex</code> has been removed. It has been previously
+replaced new function <code class="language-plaintext highlighter-rouge">is_at_open_boundary()</code>.</li>
+    <li>The tags in the geometry traits that indicate the type of boundary
+of the embedding surface were replaced by the following new tags:
+<code class="language-plaintext highlighter-rouge">Left_side_category</code>, <code class="language-plaintext highlighter-rouge">Bottom_side_category</code>, <code class="language-plaintext highlighter-rouge">Top_side_category</code>, and <code class="language-plaintext highlighter-rouge">Right_side_category</code>.</li>
+    <li>It is still possible not to indicate the tags at all. Default values
+ are assumed. This however will produce warning messages, and should
+ be avoided.</li>
+  </ul>
+</div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3 blog-sidebar">
+        <h4>Recent Posts</h4>
+        <ul class="recent-posts">
+          
+            
+            
+            <li class="active"><a href="https://cgal.github.io/cgal-web/news/2023/06/13/new-release-cgal56-beta1/index.html" class="active">New release 5.6 Beta 1</a>
+            <br><div style="font-size:12px">June 2023</div></li>
+          
+            
+            
+            <li class="active"><a href="https://cgal.github.io/cgal-web/2023/06/13/cgal56-beta1/index.html" class="active">CGAL 5.6 beta1 released</a>
+            <br><div style="font-size:12px">June 2023</div></li>
+          
+            
+            
+            <li class="active"><a href="https://cgal.github.io/cgal-web/2023/05/09/improved_straight_skeleton/index.html" class="active">New in CGAL: Weighted Straight Skeletons and Straight Skeleton Extrusion</a>
+            <br><div style="font-size:12px">May 2023</div></li>
+          
+            
+            
+            <li class="active"><a href="https://cgal.github.io/cgal-web/news/2023/04/07/SoCG-Test-of-Time-Award/index.html" class="active">SoCG Test of Time Award</a>
+            <br><div style="font-size:12px">April 2023</div></li>
+          
+        </ul>
+        <a href="https://cgal.github.io/cgal-web/news.html" class="btn">Older posts...</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="footer-copyright">
+            <div style="float: left;">
+              <a href="https://twitter.com/TheCGALProject" alt="The CGAL Project's Twitter">
+                <img src="https://cgal.github.io/cgal-web/images/icons/twitter.svg" class="center-block btn-dark-orange" alt="Twitter" height="18"></img>
+              </a>
+            </div>
+            &copy; 1995-2023 The CGAL Project. All rights reserved.
+            <div style="float: right;">
+              <a href="https://cgal.geometryfactory.com/CGAL/Members/wiki/Main_Page" alt="Password protected access to the Developer Wiki">
+                <i class="glyphicon glyphicon-lock"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascripts -->
+    <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery-1.9.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery-1.9.1.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.fitvids.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.sequence-min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.bxslider.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/template.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/bootstrap-hover-dropdown-min.js"></script>
+  </body>
+</html>
+

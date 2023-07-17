@@ -1,0 +1,448 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>CGAL 4.10 beta1 released</title>
+    <meta name="description" content="CGAL 4.10 beta1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="CGAL Editorial Board">
+
+    <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/icomoon-social.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+
+    <!--[if lte IE 8]>
+	<link rel="stylesheet" href="css/leaflet.ie.css" />
+	<![endif]-->
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/main.css">
+
+    <!-- atom & rss feed -->
+    <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="https://cgal.github.io/cgal-web/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+
+    <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    
+
+    <!-- Navigation & Logo-->
+    <div class="mainmenu-wrapper">
+    <div class="container">
+    <nav id="mainmenu" class="mainmenu" role="navigation">
+    <ul>
+    <li class="logo-wrapper hidden-xs hidden-sm hidden-md">
+    <a href="https://cgal.github.io/cgal-web/index.html">
+    <img src="https://cgal.github.io/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
+    </a>
+    </li>
+
+    <li class="hidden-lg">
+    <a href="https://cgal.github.io/cgal-web/index.html">
+    <img src="https://cgal.github.io/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
+    </a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/project.html">Project</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/download.html">Download</a>
+    </li>
+
+    <li class="dropdown" style="transition-duration: all 0s ease; transition-delay: all 0s ease;">
+    <a href="#" class="dropdown-toggle" data-hover="dropdown">Packages <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometryProcessing" target="_blank">Geometry Processing</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
+        </ul>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/documentation.html">Documentation</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/news.html">News</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/media.html">Media</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/support.html">Support</a>
+    </li>
+
+    </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="section section-breadcrumbs">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>CGAL 4.10 beta1 released </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+<div class="section">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-9">
+        <div class="blog-post blog-single-post">
+          <div class="single-post-title">
+            <h3>CGAL 4.10 beta1 released</h3>
+          </div>
+          <br>
+          <div class="single-post-info">
+            <i class="glyphicon glyphicon-time"></i>
+            20 April 2017
+          </div>
+          <div class="single-post-content">
+            
+<p><i class="glyphicon glyphicon-download"></i>
+<a href="https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.10-beta1">Download CGAL-4.10-beta1</a></p>
+
+<p><i class="glyphicon glyphicon-book"></i>
+<a href="https://doc.cgal.org/4.10/Manual/index.html">CGAL-4.10-beta1 documentation</a></p>
+
+<p>CGAL 4.10 offers the following improvements and new functionality over
+<a href="../../../../2016/09/19/cgal-49">CGAL 4.9</a>:</p>
+
+<div class="product-detail-info">
+
+  <h2 id="changelog">Changelog</h2>
+
+  <h3 id="installation">Installation</h3>
+
+  <ul>
+    <li>The minimum required version of CMake is now 3.1. All CMake versions
+up to 3.7 are supported.</li>
+    <li>The compilation of some demo may require a C++11 compiler. The CGAL
+library itself still support C++03 compilers.</li>
+    <li>The shell script <code class="language-plaintext highlighter-rouge">cgal_create_cmake_script</code> now enables C++14 by
+default.</li>
+    <li>A new mechanism to check which packages of CGAL are used have been
+added. It is particularly interesting for commercial users to ensure
+they have a valid commercial license for the packages they used.
+This can also be used to make sure only LGPL header files are used.</li>
+    <li>Because of a bug in the g++ compiler about the C++11 keyword
+<code class="language-plaintext highlighter-rouge">thread_local</code>, the CGAL_Core library now always requires
+<code class="language-plaintext highlighter-rouge">Boost.Thread</code> if the g++ compiler is used.</li>
+  </ul>
+
+  <h3 id="generalized-maps-new-package">Generalized Maps (new package)</h3>
+
+  <ul>
+    <li>This package implements Generalized Maps in d dimensions. A
+generalized map is a data structure enabling to represent an
+orientable or non orientable subdivided object by describing all the
+cells of the subdivision (for example in 3D vertices, edges, faces,
+volumes) and all the incidence and adjacency relationships between
+these cells. This data structure is the generalization of the
+combinatorial maps in order to be able to represent non orientable
+objects.</li>
+  </ul>
+
+  <h3 id="d-point-set-new-package">3D Point Set (new package)</h3>
+
+  <ul>
+    <li>This package provides a flexible data structure <code class="language-plaintext highlighter-rouge">CGAL::Point_set_3</code>
+that allows the user to easily handle point sets with an arbitrary
+number of attributes (such as normal vectors, colors, labeling,
+etc.).</li>
+  </ul>
+
+  <h3 id="combinatorial-maps-and-linear-cell-complex">Combinatorial Maps and Linear cell complex</h3>
+
+  <ul>
+    <li><strong>Breaking change</strong>: the requirements of the item class used to
+customize a combinatorial map and a linear cell complex changed.
+Instead of defining the type of darts used, you have to define the
+information you want to add in each dart. You can define the
+<code class="language-plaintext highlighter-rouge">CGAL_CMAP_DART_DEPRECATED</code> macro to keep the old behavior.</li>
+  </ul>
+
+  <h3 id="triangulated-surface-mesh-shortest-paths">Triangulated Surface Mesh Shortest Paths</h3>
+
+  <ul>
+    <li><strong>Breaking change</strong>: Rename all functions, types, and enums using
+<em>barycentric coordinate</em> to <em>barycentric coordinates</em>.</li>
+  </ul>
+
+  <h3 id="cgal-and-the-boost-graph-library-bgl">CGAL and the Boost Graph Library (BGL)</h3>
+
+  <ul>
+    <li><strong>Breaking change</strong>: Addition of a free function <code class="language-plaintext highlighter-rouge">reserve()</code> in the
+concept <code class="language-plaintext highlighter-rouge">MutableFaceGraph</code>. Models provided by CGAL have been
+updated.</li>
+  </ul>
+
+  <h3 id="d-and-3d-linear-geometry-kernel">2D and 3D Linear Geometry Kernel</h3>
+
+  <ul>
+    <li>Added a 2D and 3D weighted point class and predicates and
+constructions.</li>
+    <li>Added functions <code class="language-plaintext highlighter-rouge">l_infinity_distance()</code> for 2D and 3D.</li>
+  </ul>
+
+  <h3 id="d-convex-hull">3D Convex Hull</h3>
+
+  <ul>
+    <li>The convex hull function can also produce a <code class="language-plaintext highlighter-rouge">Surface_mesh</code>, and
+generally speaking any model of the concept <code class="language-plaintext highlighter-rouge">MutableFaceGraph</code></li>
+    <li>The function <code class="language-plaintext highlighter-rouge">convex_hull_3_to_polyhedron_3()</code> is deprecated and
+<code class="language-plaintext highlighter-rouge">convex_hull_3_to_face_graph.h</code> should be used instead.</li>
+    <li>The class <code class="language-plaintext highlighter-rouge">Convex_hull_traits_3</code> now documents a nested type
+<code class="language-plaintext highlighter-rouge">Polygon_mesh</code> instead of <code class="language-plaintext highlighter-rouge">Polyhedron_3</code>. The other nested type is
+kept for backward compatibility.</li>
+    <li>Removed the function <code class="language-plaintext highlighter-rouge">CGAL::convex_hull_incremental_3()</code> deprecated
+since CGAL 4.6.</li>
+  </ul>
+
+  <h3 id="d-boolean-operations-on-nef-polyhedra">3D Boolean Operations on Nef Polyhedra</h3>
+
+  <ul>
+    <li>Added a new constructor from a face graph model</li>
+  </ul>
+
+  <h3 id="linear-cell-complex">Linear cell complex</h3>
+
+  <ul>
+    <li>Deprecated class <code class="language-plaintext highlighter-rouge">Linear_cell_complex</code> which is now renamed
+<code class="language-plaintext highlighter-rouge">Linear_cell_complex_for_combinatorial_map_dart</code>.</li>
+  </ul>
+
+  <h3 id="d-triangulation-data-structure">2D Triangulation data structure</h3>
+
+  <ul>
+    <li>Added function <code class="language-plaintext highlighter-rouge">insert_in_hole</code>.</li>
+  </ul>
+
+  <h3 id="d-triangulations">2D Triangulations</h3>
+
+  <ul>
+    <li><strong>Breaking change</strong>: Removed the arbitrary dimensional weighted
+point class. Users must use a version prior to 4.9 if they need this
+class.</li>
+    <li><strong>Breaking change</strong>:The number type of weighted points in regular
+triangulations is no longer a template parameter but the field type
+of the geometric traits class. Users who need this feature must use
+a version prior to 4.9</li>
+    <li>The class <code class="language-plaintext highlighter-rouge">Regular_triangulation_filtered_traits_2</code> deprecated since
+CGAL 3.6 has been removed.</li>
+    <li>Deprecated the class <code class="language-plaintext highlighter-rouge">Regular_triangulation_euclidean_traits_2</code>, as
+the weighted point and the function objects for weighted points are
+part of the concept <code class="language-plaintext highlighter-rouge">Kernel</code>/</li>
+    <li>The class <code class="language-plaintext highlighter-rouge">Regular_triangulation_2</code> can take a kernel as template
+argument, that is one no longer has to use
+<code class="language-plaintext highlighter-rouge">Regular_triangulation_euclidea_traits_2</code>, although this still
+works.</li>
+  </ul>
+
+  <h3 id="d-triangulations-1">3D Triangulations</h3>
+
+  <ul>
+    <li><strong>Breaking change</strong>: The number type of weighted points in regular
+triangulations is no longer a template parameter but the field type
+of the geometric traits class. Users who need this feature must use
+a version prior to 4.9.</li>
+    <li>The class <code class="language-plaintext highlighter-rouge">Regular_triangulation_filtered_traits_3</code> deprecated since
+CGAL 3.6 has been removed.</li>
+    <li>Deprecated the class <code class="language-plaintext highlighter-rouge">Regular_triangulation_euclidean_traits_3</code>, as
+the weighted point and the function objects for weighted points are
+part of the concept <code class="language-plaintext highlighter-rouge">Kernel</code>/</li>
+    <li>The class <code class="language-plaintext highlighter-rouge">Regular_triangulation_3</code> can take a kernel as template
+argument, that is one no longer has to use
+<code class="language-plaintext highlighter-rouge">Regular_triangulation_euclidean_traits_3</code>, although this still
+works.</li>
+    <li>Added function <code class="language-plaintext highlighter-rouge">link_to_face_graph()</code> to copy the set of faces
+incident to a vertex into a model of <code class="language-plaintext highlighter-rouge">FaceGraph</code>.</li>
+  </ul>
+
+  <h3 id="d-mesh-generation">3D Mesh Generation</h3>
+
+  <ul>
+    <li>The constructor
+<code class="language-plaintext highlighter-rouge">CGAL::Polyhedral_mesh_domain_with_features_3(std::string)</code> is
+deprecated.</li>
+  </ul>
+
+  <h3 id="polygon-mesh-processing">Polygon Mesh Processing</h3>
+
+  <ul>
+    <li>Added fast and robust corefinement and Boolean operation functions for
+triangulated surface meshes:
+      <ul>
+        <li><code class="language-plaintext highlighter-rouge">CGAL::Polygon_mesh_processing::corefine_and_compute_union()</code></li>
+        <li><code class="language-plaintext highlighter-rouge">CGAL::Polygon_mesh_processing::corefine_and_compute_difference()</code></li>
+        <li><code class="language-plaintext highlighter-rouge">CGAL::Polygon_mesh_processing::corefine_and_compute_intersection()</code></li>
+        <li><code class="language-plaintext highlighter-rouge">CGAL::Polygon_mesh_processing::corefine()</code></li>
+        <li><code class="language-plaintext highlighter-rouge">CGAL::Polygon_mesh_processing::does_bound_a_volume()</code></li>
+        <li><code class="language-plaintext highlighter-rouge">CGAL::Polygon_mesh_processing::surface_intersection()</code></li>
+      </ul>
+    </li>
+    <li>Added functions to compute approximated Hausdorff distances between
+two meshes, a mesh and a point set, or a point set and a mesh:
+<code class="language-plaintext highlighter-rouge">sample_triangle_mesh()</code>, <code class="language-plaintext highlighter-rouge">approximated_Hausdorff_distance()</code>,
+<code class="language-plaintext highlighter-rouge">approximated_symmetric_Hausdorff_distance()</code>,
+<code class="language-plaintext highlighter-rouge">max_distance_to_triangle_mesh()</code>, <code class="language-plaintext highlighter-rouge">max_distance_to_point_set()</code>.</li>
+    <li>The function <code class="language-plaintext highlighter-rouge">CGAL::Polygon_mesh_processing::bbox_3()</code> has been
+renamed <code class="language-plaintext highlighter-rouge">CGAL::Polygon_mesh_processing::bbox()</code>.</li>
+  </ul>
+
+  <h3 id="point-set-processing">Point Set Processing</h3>
+
+  <ul>
+    <li>Function <code class="language-plaintext highlighter-rouge">CGAL::remove_outliers()</code> has an additional parameter based
+on a distance threshold to make it easier and more intuitive to use.</li>
+    <li>New functions for automatic scale estimations: either a global scale
+or multiple local scales can be estimated for both 2D and 3D point
+sets based on the assumption that they sample a curve in 2D or a
+surface in 3D.</li>
+  </ul>
+
+  <h3 id="cgal-and-the-boost-graph-library-bgl-1">CGAL and the Boost Graph Library (BGL)</h3>
+
+  <ul>
+    <li>Added function <code class="language-plaintext highlighter-rouge">CGAL::convert_nef_polyhedron_to_polygon_mesh()</code> to
+convert a <code class="language-plaintext highlighter-rouge">Nef_polyhedron_3</code> to any model of the <code class="language-plaintext highlighter-rouge">MutableFaceGraph</code>
+concept.</li>
+    <li>Added class <code class="language-plaintext highlighter-rouge">CGAL::Graph_with_descriptor_with_graph</code> that wraps an
+existing graph and provides a reference to the said graph to all of
+its descriptors.</li>
+  </ul>
+
+  <h3 id="cone-based-spanners">Cone Based Spanners</h3>
+
+  <ul>
+    <li>Added a parameter to compute half Tao graph and half Theta graph.</li>
+    <li>Added an ipelet for this package.</li>
+  </ul>
+
+  <h3 id="geometric-object-generators">Geometric Object Generators</h3>
+
+  <ul>
+    <li>Added the following point random generators:
+      <ul>
+        <li>in a 3D triangle mesh model of the concept <code class="language-plaintext highlighter-rouge">FaceListGraph</code>
+(<code class="language-plaintext highlighter-rouge">CGAL::Random_points_in_triangle_mesh_3</code>),</li>
+        <li>on the boundary of a tetrahedral mesh
+(<code class="language-plaintext highlighter-rouge">CGAL::Random_points_in_tetrahedral_mesh_boundary_3</code>),</li>
+        <li>in a tetrahedral mesh
+(<code class="language-plaintext highlighter-rouge">CGAL::Random_points_in_tetrahedral_mesh_3</code>),</li>
+        <li>in a 2D triangle mesh
+(<code class="language-plaintext highlighter-rouge">CGAL::Random_points_in_triangle_mesh_2</code>),</li>
+        <li>in a range of 2D or 3D triangles
+(<code class="language-plaintext highlighter-rouge">CGAL::Random_points_in_triangles_3</code> and
+<code class="language-plaintext highlighter-rouge">CGAL::Random_points_in_triangles_2</code>).</li>
+        <li>on a 3D segment (<code class="language-plaintext highlighter-rouge">CGAL::Random_points_on_segment_3</code>).</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3 blog-sidebar">
+        <h4>Recent Posts</h4>
+        <ul class="recent-posts">
+          
+            
+            
+            <li class="active"><a href="https://cgal.github.io/cgal-web/news/2023/06/13/new-release-cgal56-beta1/index.html" class="active">New release 5.6 Beta 1</a>
+            <br><div style="font-size:12px">June 2023</div></li>
+          
+            
+            
+            <li class="active"><a href="https://cgal.github.io/cgal-web/2023/06/13/cgal56-beta1/index.html" class="active">CGAL 5.6 beta1 released</a>
+            <br><div style="font-size:12px">June 2023</div></li>
+          
+            
+            
+            <li class="active"><a href="https://cgal.github.io/cgal-web/2023/05/09/improved_straight_skeleton/index.html" class="active">New in CGAL: Weighted Straight Skeletons and Straight Skeleton Extrusion</a>
+            <br><div style="font-size:12px">May 2023</div></li>
+          
+            
+            
+            <li class="active"><a href="https://cgal.github.io/cgal-web/news/2023/04/07/SoCG-Test-of-Time-Award/index.html" class="active">SoCG Test of Time Award</a>
+            <br><div style="font-size:12px">April 2023</div></li>
+          
+        </ul>
+        <a href="https://cgal.github.io/cgal-web/news.html" class="btn">Older posts...</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="footer-copyright">
+            <div style="float: left;">
+              <a href="https://twitter.com/TheCGALProject" alt="The CGAL Project's Twitter">
+                <img src="https://cgal.github.io/cgal-web/images/icons/twitter.svg" class="center-block btn-dark-orange" alt="Twitter" height="18"></img>
+              </a>
+            </div>
+            &copy; 1995-2023 The CGAL Project. All rights reserved.
+            <div style="float: right;">
+              <a href="https://cgal.geometryfactory.com/CGAL/Members/wiki/Main_Page" alt="Password protected access to the Developer Wiki">
+                <i class="glyphicon glyphicon-lock"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascripts -->
+    <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery-1.9.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery-1.9.1.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.fitvids.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.sequence-min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.bxslider.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/template.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/bootstrap-hover-dropdown-min.js"></script>
+  </body>
+</html>
+

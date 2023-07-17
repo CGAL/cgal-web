@@ -1,0 +1,388 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>New in CGAL: Shape Regularization package</title>
+    <meta name="description" content="A new block in CGAL's reconstruction pipeline">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="CGAL Editorial Board">
+
+    <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/icomoon-social.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+
+    <!--[if lte IE 8]>
+	<link rel="stylesheet" href="css/leaflet.ie.css" />
+	<![endif]-->
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/main.css">
+
+    <!-- atom & rss feed -->
+    <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="https://cgal.github.io/cgal-web/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+
+    <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    
+
+    <!-- Navigation & Logo-->
+    <div class="mainmenu-wrapper">
+    <div class="container">
+    <nav id="mainmenu" class="mainmenu" role="navigation">
+    <ul>
+    <li class="logo-wrapper hidden-xs hidden-sm hidden-md">
+    <a href="https://cgal.github.io/cgal-web/index.html">
+    <img src="https://cgal.github.io/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
+    </a>
+    </li>
+
+    <li class="hidden-lg">
+    <a href="https://cgal.github.io/cgal-web/index.html">
+    <img src="https://cgal.github.io/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
+    </a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/project.html">Project</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/download.html">Download</a>
+    </li>
+
+    <li class="dropdown" style="transition-duration: all 0s ease; transition-delay: all 0s ease;">
+    <a href="#" class="dropdown-toggle" data-hover="dropdown">Packages <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometryProcessing" target="_blank">Geometry Processing</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
+        </ul>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/documentation.html">Documentation</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/news.html">News</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/media.html">Media</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/support.html">Support</a>
+    </li>
+
+    </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="section section-breadcrumbs">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>New in CGAL: Shape Regularization package </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+<div class="section">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-9">
+        <div class="blog-post blog-single-post">
+          <div class="single-post-title">
+            <h3>New in CGAL: Shape Regularization package</h3>
+          </div>
+          <br>
+          <div class="single-post-info">
+            <i class="glyphicon glyphicon-time"></i>
+            16 November 2021
+          </div>
+          <div class="single-post-content">
+            
+<h3><a href="https://geometryfactory.com/who-we-are/">Dmitry Anisimov</a>&deg;,
+    <a href="https://sytov.net/about/">Gennadii Sytov</a>,
+    <a href="https://geometryfactory.com/who-we-are/">Simon Giraudot</a>&deg;,
+    <a href="https://www-sop.inria.fr/members/Jean-Philippe.Bauchet/">Jean-Philippe Bauchet</a>&#42;,
+    <a href="https://www-sop.inria.fr/members/Florent.Lafarge/">Florent Lafarge</a>&#42;</h3>
+<h4>&deg;<a href="http://www.geometryfactory.com" target="_blank">GeometryFactory</a>,
+    &#42;<a href="https://www.inria.fr">INRIA Sophia Antipolis</a></h4>
+
+<p><br /></p>
+<p>A typical reconstruction pipeline from a point set includes a *shape regularization* step.
+During this step, geometric shapes, which have been detected in the previous steps,
+such as lines and planes, are being regularized. Usually, three types of regularities
+among these shapes are reinforced:</p>
+
+<ul>
+<li><i>Parallelism:</i> near parallel shapes are made exactly parallel.</li>
+<li><i>Orthogonality:</i> near orthogonal shapes are made exactly orthogonal.</li>
+<li><i>Collinearity:</i> collinear shapes are made exactly collinear.</li>
+</ul>
+
+<p>With the next CGAL release, a new package will add one more step towards a robust and component-based reconstruction pipeline.</p>
+
+<p><br /></p>
+<h3> The Shape Regularization Package</h3>
+
+<p><br /></p>
+<div style="text-align:center;">
+  <a href="../../../../images/shape_regularisation/80.1.svg"><img src="../../../../images/shape_regularisation/80.1.svg" style="max-width:50%" /></a><br />
+</div>
+
+<p><br /></p>
+<p>This new CGAL package enables to regularize a set of segments and open or closed contours in 2D
+and a set of planes in 3D such that all input objects are rotated and aligned with respect
+to user-specified conditions. In addition, it provides a global regularization framework
+that can be adjusted to user needs and for any type of geometric objects.
+This package can also be used in conjunction with the <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Shape_detection/index.html">Shape Detection</a> package.</p>
+
+<p><br /></p>
+<h4>Segments</h4>
+
+<p>Given a set of unordered 2D segments, users can reinforce the three types of regularities above
+among these segments. This regularization component is based on the global regularization framework.
+We call this framework *QP Regularization* because at its core is a *Quadratic Programming (QP)* global
+regularization algorithm. Segments are regularized twofold. The first two types of regularities:
+parallelism and orthogonality make a part of so-called *angle-based regularization* because angles
+are being adjusted while the third regularity: collinearity makes a part of so-called *offset-based
+regularization* because the distance between segments is adjusted. The offset regularization
+is performed after angle regularization. In the figure below, a set of 2D segments before (red)
+and after (green) the angle and offset regularization are depicted.</p>
+
+<p><br /></p>
+<div style="text-align:center;">
+  <a href="../../../../images/shape_regularisation/80.2.svg"><img src="../../../../images/shape_regularisation/80.2.svg" style="max-width:50%" /></a><br />
+</div>
+
+<p><br /></p>
+<p>The example below illustrates how to achieve the result from this figure using shape regularization in CGAL.</p>
+
+<pre><code>
+#include &lt;CGAL/Simple_cartesian.h&gt;
+#include &lt;CGAL/Shape_regularization/regularize_segments.h&gt;
+
+using Kernel = CGAL::Simple_cartesian&lt;double&gt;;
+using Point_2 = typename Kernel::Point_2;
+using Segment_2 = typename Kernel::Segment_2;
+
+int main()
+{
+  // Create input segments.
+  std::vector&lt;Segment_2&gt; segments =
+  {
+    Segment_2(Point_2(0.2, 0.0), Point_2(1.2, 0.0)),
+    Segment_2(Point_2(1.2, 0.1), Point_2(2.2, 0.1)),
+    Segment_2(Point_2(2.2, 0.0), Point_2(2.0, 2.0)),
+    Segment_2(Point_2(2.0, 2.0), Point_2(1.0, 2.0)),
+    Segment_2(Point_2(1.0, 1.9), Point_2(0.0, 1.9)),
+    Segment_2(Point_2(0.0, 2.0), Point_2(0.2, 0.0))
+  };
+
+  // Regularize all segments: both angles and offsets.
+  CGAL::Shape_regularization::Segments::regularize_segments(segments);
+
+  return EXIT_SUCCESS
+}
+</code></pre>
+
+<p><br /></p>
+<h4>Contours</h4>
+
+<p>Given a set of ordered 2D points connected by segments, which form a *contour*, closed or open,
+users can reinforce the three regularities above among consecutive edges of this contour.
+When regularizing contours, we assume that each contour has at least one principal direction
+that is a reference direction towards which the contour edges are rotated.
+Given a set of such directions either estimated or user-specified, each edge is made either parallel
+or orthogonal to these direction(s). In the figure below, a closed contour
+before (red) and after (green)regularization is depicted. The principal direction
+is the direction of the longest edge.</p>
+
+<p><br /></p>
+<div style="text-align:center;">
+  <a href="../../../../images/shape_regularisation/80.13.svg"><img src="../../../../images/shape_regularisation/80.13.svg" style="max-width:50%" /></a><br />
+</div>
+
+<p><br /></p>
+<p>The example below shows the most straightforward entry point to the CGAL algorithm,
+where we regularize a simple closed contour.</p>
+
+<pre><code>
+#include &lt;CGAL/Simple_cartesian.h&gt;
+#include &lt;CGAL/Shape_regularization/regularize_contours.h&gt;
+
+using Kernel = CGAL::Simple_cartesian&lt;double&gt;;
+using Point_2 = typename Kernel::Point_2;
+
+int main()
+{
+  // Create input contour.
+  const std::vector&lt;Point_2&gt; contour =
+  {
+    Point_2(0.00,  0.00),
+    Point_2(0.50, -0.05),
+    Point_2(1.00,  0.00),
+    Point_2(1.05,  0.50),
+    Point_2(1.00,  1.00),
+    Point_2(0.00,  1.00)
+  };
+
+  // Regularize this contour.
+  std::vector&lt;Point_2&gt; regularized;
+  CGAL::Shape_regularization::Contours::regularize_closed_contour(contour, std::back_inserter(regularized));
+
+  return EXIT_SUCCESS;
+}
+</code></pre>
+
+<p><br /></p>
+<h4>Planes</h4>
+
+<p>An old hierarchical plane regularization algorithm that has been a part of CGAL
+<a href="https://cgal.geometryfactory.com/CGAL/doc/master/Shape_detection/index.html">Shape Detection</a>
+component is refactored and its API is improved. The algorithm enables to regularize a set of planes in 3D.</p>
+
+<p><br /></p>
+<h4>Performance</h4>
+
+<p>The performance of the shape regularization for segments based on the global QP regularization framework
+mostly depends on the used QP solver. The plot below shows how the computation time depends on the number
+of input segments when using the external <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Manual/thirdparty.html#thirdpartyOSQP">OSQP</a>) solver.</p>
+
+<p><br /></p>
+<div style="text-align:center;">
+  <a href="../../../../images/shape_regularisation/80.10.svg"><img src="../../../../images/shape_regularisation/80.10.svg" style="max-width:50%" /></a><br />
+</div>
+
+<p><br /></p>
+<p>Time in seconds to regularize angles (solid red) and offsets (solid green) without regrouping input segments
+and with the groups of 10 segments for angles (dashed red) and offsets (dashed green).</p>
+
+<p>The contour regularization algorithms, both closed and open, have, in practice, a near-linear time behavior
+with respect to the number of contour vertices as it can be seen from the plot below.</p>
+
+<p><br /></p>
+<div style="text-align:center;">
+  <a href="../../../../images/shape_regularisation/80.16.svg"><img src="../../../../images/shape_regularisation/80.16.svg" style="max-width:50%" /></a><br />
+</div>
+
+<p><br /></p>
+<p>Time in seconds to regularize closed (red) and open (green) contours.</p>
+
+<p><br /></p>
+<h3>Status</h3>
+
+<p>The package Shape_Regularization is already integrated in CGAL's master branch
+on the <a href="https://github.com/CGAL/cgal/">CGAL GitHub repository</a>, and will be
+officially released in the upcoming version of CGAL, CGAL 5.4, scheduled for December 2021.</p>
+
+<p><i class="glyphicon glyphicon-book"></i>
+<a href="https://doc.cgal.org/5.4/Manual/packages.html#PkgShapeRegularization">Documentation of the package Shape_Regularization</a>
+<br />
+<i class="glyphicon glyphicon-download"></i>
+<a href="https://github.com/CGAL/cgal/tree/master">CGAL master branch on GitHub</a></p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3 blog-sidebar">
+        <h4>Recent Posts</h4>
+        <ul class="recent-posts">
+          
+            
+            
+            <li class="active"><a href="https://cgal.github.io/cgal-web/news/2023/06/13/new-release-cgal56-beta1/index.html" class="active">New release 5.6 Beta 1</a>
+            <br><div style="font-size:12px">June 2023</div></li>
+          
+            
+            
+            <li class="active"><a href="https://cgal.github.io/cgal-web/2023/06/13/cgal56-beta1/index.html" class="active">CGAL 5.6 beta1 released</a>
+            <br><div style="font-size:12px">June 2023</div></li>
+          
+            
+            
+            <li class="active"><a href="https://cgal.github.io/cgal-web/2023/05/09/improved_straight_skeleton/index.html" class="active">New in CGAL: Weighted Straight Skeletons and Straight Skeleton Extrusion</a>
+            <br><div style="font-size:12px">May 2023</div></li>
+          
+            
+            
+            <li class="active"><a href="https://cgal.github.io/cgal-web/news/2023/04/07/SoCG-Test-of-Time-Award/index.html" class="active">SoCG Test of Time Award</a>
+            <br><div style="font-size:12px">April 2023</div></li>
+          
+        </ul>
+        <a href="https://cgal.github.io/cgal-web/news.html" class="btn">Older posts...</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="footer-copyright">
+            <div style="float: left;">
+              <a href="https://twitter.com/TheCGALProject" alt="The CGAL Project's Twitter">
+                <img src="https://cgal.github.io/cgal-web/images/icons/twitter.svg" class="center-block btn-dark-orange" alt="Twitter" height="18"></img>
+              </a>
+            </div>
+            &copy; 1995-2023 The CGAL Project. All rights reserved.
+            <div style="float: right;">
+              <a href="https://cgal.geometryfactory.com/CGAL/Members/wiki/Main_Page" alt="Password protected access to the Developer Wiki">
+                <i class="glyphicon glyphicon-lock"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascripts -->
+    <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery-1.9.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery-1.9.1.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.fitvids.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.sequence-min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.bxslider.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/template.js"></script>
+      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/bootstrap-hover-dropdown-min.js"></script>
+  </body>
+</html>
+
