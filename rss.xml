@@ -5,10 +5,46 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2023-07-17T15:30:40+00:00</lastBuildDate>
-        <pubDate>2023-07-17T15:30:40+00:00</pubDate>
+        <lastBuildDate>2023-07-28T13:00:36+00:00</lastBuildDate>
+        <pubDate>2023-07-28T13:00:36+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>CGAL 5.5.3 released</title>
+                <description>
+&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.5.3&quot;&gt;Download CGAL-5.5.3&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;a href=&quot;https://doc.cgal.org/5.5.3/Manual/index.html&quot;&gt;CGAL-5.5.3 documentation&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;CGAL 5.5.3 is a bug-fix release for &lt;a href=&quot;../../../../2022/07/15/cgal55&quot;&gt;CGAL 5.5&lt;/a&gt;.
+The list of fixed bugs since &lt;a href=&quot;../../../../2023/02/28/cgal552&quot;&gt;CGAL 5.5.2&lt;/a&gt;
+can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=sort%3Aupdated-desc+label%3AMerged_in_5.5.3+-label%3AMerged_in_5.5.2&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
+</description>
+                <link>http://www.cgal.org/2023/07/28/cgal553/</link>
+                <guid>http://www.cgal.org/2023/07/28/cgal553</guid>
+                <pubDate>2023-07-28T00:00:00+00:00</pubDate>
+        </item>
+
+        <item>
+                <title>CGAL 5.4.5 released</title>
+                <description>
+&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.4.5&quot;&gt;Download CGAL-5.4.5&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;a href=&quot;https://doc.cgal.org/5.4.5/Manual/index.html&quot;&gt;CGAL-5.4.5 documentation&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;CGAL 5.4.5 is a bug-fix release for &lt;a href=&quot;../../../../2022/01/31/cgal54&quot;&gt;CGAL 5.4&lt;/a&gt;.
+The list of fixed bugs since &lt;a href=&quot;../../../../2023/02/28/cgal5.4.4/&quot;&gt;CGAL 5.4.4&lt;/a&gt;
+can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AMerged_in_5.4.5+-label%3AMerged_in_5.4.4&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
+</description>
+                <link>http://www.cgal.org/2023/07/28/cgal5.4.5/</link>
+                <guid>http://www.cgal.org/2023/07/28/cgal5.4.5</guid>
+                <pubDate>2023-07-28T00:00:00+00:00</pubDate>
+        </item>
 
         <item>
                 <title>New release 5.6 Beta 1</title>
