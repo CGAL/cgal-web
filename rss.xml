@@ -5,10 +5,26 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2023-07-28T15:42:17+00:00</lastBuildDate>
-        <pubDate>2023-07-28T15:42:17+00:00</pubDate>
+        <lastBuildDate>2023-07-31T08:41:53+00:00</lastBuildDate>
+        <pubDate>2023-07-31T08:41:53+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>CGAL @ SIGGRAPH 2023</title>
+                <description>
+&lt;p&gt;You have an implementation of a geometric algorithm that you would like to contribute?
+You want us to implement an algorithm that you learned about in the technical paper sessions?
+You want to know more about the open source and the commercial licensing options for CGAL?
+You want to present the problem you have to solve, in order to figure out if CGAL might be helpful for you?&lt;/p&gt;
+
+&lt;p&gt;Visit the CGAL Project on Booth No. 745 at the exhibition of &lt;a href=&quot;http://s2023.siggraph.org/&quot;&gt;SIGGRAPH 2023&lt;/a&gt;,
+Los Angeles USA, 28 July-1 August, 2019!&lt;/p&gt;
+</description>
+                <link>http://www.cgal.org/news/2023/07/31/siggraph-2023/</link>
+                <guid>http://www.cgal.org/news/2023/07/31/siggraph-2023</guid>
+                <pubDate>2023-07-31T00:00:00+00:00</pubDate>
+        </item>
 
         <item>
                 <title>Three new CGAL releases</title>
