@@ -1,9 +1,3 @@
-/*!
- * Bootstrap v3.1.1 (http://getbootstrap.com)
- * Copyright 2011-2014 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */html {
   font-family:sans-serif;
   -ms-text-size-adjust:100%;
@@ -2462,11 +2456,11 @@
  }
  @font-face {
   font-family:'Glyphicons Halflings';
-  src:url(/assets/themes/cgal/bootstrap/fonts/glyphicons-halflings-regular.eot);
-  src:url(/assets/themes/cgal/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),
-  url(/assets/themes/cgal/bootstrap/fonts/glyphicons-halflings-regular.woff) format('woff'),
-  url(/assets/themes/cgal/bootstrap/fonts/glyphicons-halflings-regular.ttf) format('truetype'),
-  url(/assets/themes/cgal/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
+  src:url(/cgal-web/assets/themes/cgal/bootstrap/fonts/glyphicons-halflings-regular.eot);
+  src:url(/cgal-web/assets/themes/cgal/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),
+  url(/cgal-web/assets/themes/cgal/bootstrap/fonts/glyphicons-halflings-regular.woff) format('woff'),
+  url(/cgal-web/assets/themes/cgal/bootstrap/fonts/glyphicons-halflings-regular.ttf) format('truetype'),
+  url(/cgal-web/assets/themes/cgal/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
  }
  .glyphicon {
   position:relative;
