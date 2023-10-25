@@ -19,6 +19,7 @@
   "dependencies": {
     "bootstrap": "^5.3.2",
     "bootstrap-hover-dropdown": "^2.2.1",
+    "bxslider": "^4.2.14",
     "jquery": "^3.7.1"
   }
 }
