@@ -17,6 +17,7 @@
     <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
     <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/icomoon-social.css">
+    <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
     <link rel="stylesheet" href="/cgal-web/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 
@@ -255,10 +256,27 @@
     <script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
       <script src="/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.fitvids.js"></script>
-      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.sequence-min.js"></script>
-      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.bxslider.js"></script>
-      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/template.js"></script>
+      <script src="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
+      <script>
+        $(function () {
+          $('.bxslider').bxSlider({
+            auto: true,
+            speed: 0,
+            pause: 5000,
+            infiniteLoop: true,
+            touchEnabled: false,
+            pager: true,
+            pagerCustom: '.custom-pager',
+            controls: false,
+            onSlideBefore: function ($slideElement, oldIndex, newIndex) {
+              $($slideElement).siblings().find('.slideTitle, .slideSubTitle').removeClass('animatedTitle');
+              $($slideElement).find('.slideTitle, .slideSubTitle').addClass('animatedTitle');
+              $($slideElement).siblings().find('.slide').removeClass('slideInFromRight');
+            $($slideElement).find('.slide').addClass('slideInFromRight');
+            }
+          });
+        });
+      </script>
       <script src="/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
     </body>
 </html>

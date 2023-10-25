@@ -17,6 +17,7 @@
     <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
     <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/css/icomoon-social.css">
+    <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
     <link rel="stylesheet" href="/cgal-web/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 
@@ -119,77 +120,68 @@
     
     
 
+<div class="carrousel-wrapper">
+  <div class="carrousel">
 
-
-<div class="homepage-slider">
-  <div id="sequence">
-    <ul class="sequence-canvas">
-       <!-- Base container model by sablebadger, https://www.thingiverse.com/thing:2934997 -->
-      <li style="background-image: url(https://cgal.github.io/cgal-web/images/david_bool_op.png); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
-        <h2 class="title">Boolean Operations</h2>
-        <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::corefine_and_compute_boolean_operations(statue, container);</pre></h3>
+    <ul class="bxslider">
+      <li><img class="slide" src="/cgal-web/images/david_bool_op.png" />
+        <h2 class="slideTitle">Boolean Operations</h2>
+        <h3 class="slideSubTitle">
+          <pre>CGAL::corefine_and_compute_boolean_operations(statue, container);</pre>
+        </h3>
       </li>
-
-      <li style="background-image: url(https://cgal.github.io/cgal-web/images/alpha_wrap.png); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
-        <h2 class="title">Wrapping</h2>
-        <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::alpha_wrap();</pre></h3>
+      <li><img class="slide" src="/cgal-web/images/alpha_wrap.png" />
+        <h2 class="slideTitle">Wrapping</h2>
+        <h3 class="slideSubTitle">
+          <pre>CGAL::alpha_wrap();</pre>
+        </h3>
       </li>
-
-      <li style="background-image: url(https://cgal.github.io/cgal-web/images/ToS2porto.png); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
-        <h2 class="title">Triangulations</h2>
-        <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::make_triangulation();</pre></h3>
+      <li><img class="slide" src="/cgal-web/images/ToS2porto.png" />
+        <h2 class="slideTitle">Triangulations</h2>
+        <h3 class="slideSubTitle">
+          <pre>CGAL::make_triangulation();</pre>
+        </h3>
       </li>
-
-      <li style="background-image: url(https://cgal.github.io/cgal-web/images/aabb_tree.png); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
-        <h2 class="title">Axis Aligned Bounding Box Tree</h2>
-        <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::AABB_tree tree(faces(surface_mesh));</pre></h3>
+      <li><img class="slide" src="/cgal-web/images/aabb_tree.png" />
+        <h2 class="slideTitle">Axis Aligned Bounding Box Tree</h2>
+        <h3 class="slideSubTitle">
+          <pre>CGAL::AABB_tree tree(faces(surface_mesh));</pre>
+        </h3>
       </li>
-
-      <li style="background-image: url(https://cgal.github.io/cgal-web/images/octo_0.png); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
-        <h2 class="title">The Heat Method</h2>
-        <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::Heat_method_3::estimate_geodesic_distances();</pre></h3>
+      <li><img class="slide" src="/cgal-web/images/octo_0.png" />
+        <h2 class="slideTitle">The Heat Method</h2>
+        <h3 class="slideSubTitle">
+          <pre>CGAL::Heat_method_3::estimate_geodesic_distances();</pre>
+        </h3>
       </li>
-
-      <li style="background-image: url(https://cgal.github.io/cgal-web/images/segmentation.png); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
-        <h2 class="title">Mesh Segmentation</h2>
-        <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::sdf_values(surface_mesh);</pre></h3>
+      <li><img class="slide" src="/cgal-web/images/segmentation.png" />
+        <h2 class="slideTitle">Mesh Segmentation</h2>
+        <h3 class="slideSubTitle">
+          <pre>CGAL::sdf_values(surface_mesh);</pre>
+        </h3>
       </li>
-
-      <li style="background-image: url(https://cgal.github.io/cgal-web/images/classif_header_cgal.png); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
-        <h2 class="title">Classification</h2>
-        <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::Classification::classify(las_points);</pre></h3>
+      <li><img class="slide" src="/cgal-web/images/classif_header_cgal.png" />
+        <h2 class="slideTitle">Classification</h2>
+        <h3 class="slideSubTitle">
+          <pre>CGAL::Classification::classify(las_points);</pre>
+        </h3>
       </li>
-
-      <li style="background-image: url(https://cgal.github.io/cgal-web/images/periodic_banner.png); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
-        <h2 class="title">Periodic Mesh Generation</h2>
-        <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::Periodic_tet_mesh mesh = CGAL::make_periodic_mesh();</pre></h3>
+      <li><img class="slide" src="/cgal-web/images/periodic_banner.png" />
+        <h2 class="slideTitle">Periodic Mesh Generation</h2>
+        <h3 class="slideSubTitle">
+          <pre>CGAL::Periodic_tet_mesh mesh = CGAL::make_periodic_mesh();</pre>
+        </h3>
       </li>
-
-<!--
-      <li style="background-image: url(https://cgal.github.io/cgal-web/images/voronoi.png); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
-        <h2 class="title">Voronoi Diagram</h2>
-        <h3 class="subtitle"><pre style='text-shadow:none'>VD = CGAL::make_voronoi(points);</pre></h3>
-      </li>
--->
-
-<!--
-      <li style="background-image: url(https://cgal.github.io/cgal-web/images/polygonal_surface_reconstruction_banner.png); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
-        <h2 class="title">Surface Reconstruction</h2>
-        <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::Polygonal_surface_reconstruction(points);</pre></h3>
-      </li>
--->
     </ul>
-    <div class="sequence-pagination-wrapper">
-      <ul class="sequence-pagination">
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-        <li>6</li>
-        <li>7</li>
-        <li>8</li>
-      </ul>
+    <div class="custom-pager">
+      <a data-slide-index="0" href=""></a>
+      <a data-slide-index="1" href=""></a>
+      <a data-slide-index="2" href=""></a>
+      <a data-slide-index="3" href=""></a>
+      <a data-slide-index="4" href=""></a>
+      <a data-slide-index="5" href=""></a>
+      <a data-slide-index="6" href=""></a>
+      <a data-slide-index="7" href=""></a>
     </div>
   </div>
 </div>
@@ -909,7 +901,6 @@
     <a href="https://cgal.github.io/cgal-web/releases.html" class="btn">Older releases...</a>
   </div>
 </div>
-
     
     <!-- Footer -->
     <div class="footer">
@@ -936,10 +927,27 @@
     <script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
       <script src="/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.fitvids.js"></script>
-      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.sequence-min.js"></script>
-      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/jquery.bxslider.js"></script>
-      <script src="https://cgal.github.io/cgal-web/assets/themes/cgal/bootstrap/js/template.js"></script>
+      <script src="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
+      <script>
+        $(function () {
+          $('.bxslider').bxSlider({
+            auto: true,
+            speed: 0,
+            pause: 5000,
+            infiniteLoop: true,
+            touchEnabled: false,
+            pager: true,
+            pagerCustom: '.custom-pager',
+            controls: false,
+            onSlideBefore: function ($slideElement, oldIndex, newIndex) {
+              $($slideElement).siblings().find('.slideTitle, .slideSubTitle').removeClass('animatedTitle');
+              $($slideElement).find('.slideTitle, .slideSubTitle').addClass('animatedTitle');
+              $($slideElement).siblings().find('.slide').removeClass('slideInFromRight');
+            $($slideElement).find('.slide').addClass('slideInFromRight');
+            }
+          });
+        });
+      </script>
       <script src="/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
     </body>
 </html>
