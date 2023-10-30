@@ -317,11 +317,18 @@ It even came with a <a href="https://cgal.github.io/cgal-web/April2015.html">gal
             pager: true,
             pagerCustom: '.custom-pager',
             controls: false,
+            onSliderLoad: function (currentIndex) {
+              $('.bxslider li').find('.slideTitle, .slideSubTitle').css({
+                transform: 'translate(0)',
+                opacity: 1
+              });
+              $('.bxslider li').eq(currentIndex).find('.slideTitle, .slideSubTitle').addClass('animatedTitle');
+            },
             onSlideBefore: function ($slideElement, oldIndex, newIndex) {
               $($slideElement).siblings().find('.slideTitle, .slideSubTitle').removeClass('animatedTitle');
               $($slideElement).find('.slideTitle, .slideSubTitle').addClass('animatedTitle');
               $($slideElement).siblings().find('.slide').removeClass('slideInFromRight');
-            $($slideElement).find('.slide').addClass('slideInFromRight');
+              $($slideElement).find('.slide').addClass('slideInFromRight');
             }
           });
         });
