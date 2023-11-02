@@ -191,6 +191,23 @@ code {
   padding-left: 15px;
   padding-right: 15px
 }
+.thumbnail{
+  display: block;
+  margin-bottom: 20px;
+  padding: 4px;
+  border: solid 1px #ccc;
+  overflow: hidden;
+}
+
+.thumbnail>img{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @media (min-width: 768px) {
   .container {
@@ -251,5 +268,11 @@ code {
     width: 100%;
     background-color: rgba(128, 128, 128, 0.5);
     padding: 10px 0;
+  }
+}
+
+@media (max-width: 479px) {
+  .bottom-container {
+    display: block;
   }
 }
