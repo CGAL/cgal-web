@@ -14,7 +14,7 @@
 
     <link rel="icon" type="image/png" href="{{ BASE_PATH }}/images/cgal_logo/g-196x196-y.png">
     <link rel="stylesheet" href="{{ site.baseurl }}/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ ASSET_PATH }}/bootstrap/css/icomoon-social.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/node_modules/bxslider/dist/jquery.bxslider.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
@@ -28,8 +28,6 @@
     <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
     <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
 
-
-    <script src="{{ ASSET_PATH }}/bootstrap/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -131,7 +129,7 @@
             &copy; 1995-{{site.time | date: "%Y"}} The CGAL Project. All rights reserved.
             <div style="float: right;">
               <a href="https://cgal.geometryfactory.com/CGAL/Members/wiki/Main_Page" alt="Password protected access to the Developer Wiki">
-                <i class="glyphicon glyphicon-lock"></i>
+                <i class="bi bi-lock-fill fs-5"></i>
               </a>
             </div>
           </div>
