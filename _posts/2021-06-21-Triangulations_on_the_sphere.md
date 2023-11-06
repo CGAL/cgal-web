@@ -62,8 +62,8 @@ and 3D triangulations, hyperbolic triangulations, periodic triangulations, ...<a
 on the <a href="https://github.com/CGAL/cgal/">CGAL GitHub repository</a>, and will be
 officially released in the upcoming version of CGAL, CGAL 5.3, scheduled for June 2021.</p>
 
-<i class="glyphicon glyphicon-book"></i>
+<i class="bi bi-book"></i>
 <a href="https://doc.cgal.org/5.3/Manual/packages.html#PkgTriangulationOnSphere2">Documentation of the package Triangulation_on_sphere_2</a>
 <br>
-<i class="glyphicon glyphicon-download"></i>
+<i class="bi bi-arrow-down-circle"></i>
 <a href="https://github.com/CGAL/cgal/tree/master">CGAL master branch on GitHub</a>

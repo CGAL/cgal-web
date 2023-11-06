@@ -56,8 +56,8 @@ tags: [""]
 on the <a href="https://github.com/CGAL/cgal/">CGAL GitHub repository</a>,
 and will be officially released in the upcoming version of CGAL, 5.0, scheduled for Autumn 2019.</p>
 
-<i class="glyphicon glyphicon-book"></i>
+<i class="bi bi-book"></i>
 <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Shape_detection/index.html#Shape_detection_RegionGrowing">Documentation of the package Shape_detection</a> <br>
 
-<i class="glyphicon glyphicon-download"></i>
+<i class="bi bi-arrow-down-circle"></i>
 <a href="https://github.com/CGAL/cgal/tree/master">CGAL master branch on GitHub</a>

@@ -72,8 +72,8 @@ if two given curves on a combinatorial surface can be continuously deformed one 
 on the <a href="https://github.com/CGAL/cgal/">CGAL GitHub repository</a>, and will be
 officially released in the upcoming version of CGAL, CGAL 5.1, scheduled for July 2020.</p>
 
-<i class="glyphicon glyphicon-book"></i>
+<i class="bi bi-book"></i>
 <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Surface_mesh_topology/index.html">Documentation of the package Surface Mesh Topology</a> <br>
 
-<i class="glyphicon glyphicon-download"></i>
+<i class="bi bi-arrow-down-circle"></i>
 <a href="https://github.com/CGAL/cgal/tree/master">CGAL master branch on GitHub</a>
