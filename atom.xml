@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2023-11-02T14:57:47+00:00</updated>
+ <updated>2023-11-06T14:53:40+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -55,10 +55,10 @@ Los Angeles USA, 28 July-1 August, 2019!&lt;/p&gt;
    <updated>2023-07-28T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2023/07/28/cgal56</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.6&quot;&gt;Download CGAL-5.6&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.6/Manual/index.html&quot;&gt;CGAL-5.6 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.6 offers the following improvements and new functionality over
@@ -230,10 +230,10 @@ Los Angeles USA, 28 July-1 August, 2019!&lt;/p&gt;
    <updated>2023-07-28T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2023/07/28/cgal553</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.5.3&quot;&gt;Download CGAL-5.5.3&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.5.3/Manual/index.html&quot;&gt;CGAL-5.5.3 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.5.3 is a bug-fix release for &lt;a href=&quot;../../../../2022/07/15/cgal55&quot;&gt;CGAL 5.5&lt;/a&gt;.
@@ -248,10 +248,10 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=sort%3Aup
    <updated>2023-07-28T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2023/07/28/cgal5.4.5</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.4.5&quot;&gt;Download CGAL-5.4.5&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.4.5/Manual/index.html&quot;&gt;CGAL-5.4.5 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.4.5 is a bug-fix release for &lt;a href=&quot;../../../../2022/01/31/cgal54&quot;&gt;CGAL 5.4&lt;/a&gt;.
@@ -283,10 +283,10 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AM
    <updated>2023-06-13T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2023/06/13/cgal56-beta1</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.6-beta1&quot;&gt;Download CGAL-5.6-beta1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.6/Manual/index.html&quot;&gt;CGAL-5.6-beta1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.6 offers the following improvements and new functionality over
@@ -536,10 +536,10 @@ substancially updated. In particular, the user manual has been fully rewritten a
 &lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;, and will be officially released
 in the upcoming version of CGAL, CGAL 5.6, scheduled for June 2023.&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.6/Manual/packages.html#PkgStraightSkeleton2&quot;&gt;Documentation of the package Straight_skeleton_2&lt;/a&gt;
 &lt;br /&gt;
-&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
@@ -697,10 +697,10 @@ Have a look at our &lt;a href=&quot;https://github.com/CGAL/cgal/wiki/Project-Id
    <updated>2023-02-28T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2023/02/28/cgal552</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.5.2&quot;&gt;Download CGAL-5.5.2&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.5.2/Manual/index.html&quot;&gt;CGAL-5.5.2 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.5.2 is a bug-fix release for &lt;a href=&quot;../../../../2022/07/15/cgal55&quot;&gt;CGAL 5.5&lt;/a&gt;.
@@ -715,10 +715,10 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=sort%3Aup
    <updated>2023-02-28T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2023/02/28/cgal5.4.4</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.4.4&quot;&gt;Download CGAL-5.4.4&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.4.4/Manual/index.html&quot;&gt;CGAL-5.4.4 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.4.4 is a bug-fix release for &lt;a href=&quot;../../../../2022/01/31/cgal54&quot;&gt;CGAL 5.4&lt;/a&gt;.
@@ -754,10 +754,10 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AM
    <updated>2022-10-12T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2022/10/12/cgal551</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.5.1&quot;&gt;Download CGAL-5.5.1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.5.1/Manual/index.html&quot;&gt;CGAL-5.5.1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.5.1 is a bug-fix release for &lt;a href=&quot;../../../../2022/07/15/cgal55&quot;&gt;CGAL 5.5&lt;/a&gt;.
@@ -772,10 +772,10 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AM
    <updated>2022-10-12T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2022/10/12/cgal5.4.3</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.4.3&quot;&gt;Download CGAL-5.4.3&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.4.3/Manual/index.html&quot;&gt;CGAL-5.4.3 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.4.3 is a bug-fix release for &lt;a href=&quot;../../../../2022/01/31/cgal54&quot;&gt;CGAL 5.4&lt;/a&gt;.
@@ -841,10 +841,10 @@ on Thursday, 11 August, 2022 at 11:10 am in the Labs are (West Building, Ballroo
    <updated>2022-07-15T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2022/07/15/cgal55</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.5&quot;&gt;Download CGAL-5.5&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.5/Manual/index.html&quot;&gt;CGAL-5.5 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.5 offers the following improvements and new functionality over
@@ -959,10 +959,10 @@ as a post-processing step for the tetrahedral mesh generation.&lt;/li&gt;
    <updated>2022-07-15T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2022/07/15/cgal5.4.2</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.4.2&quot;&gt;Download CGAL-5.4.2&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.4.2/Manual/index.html&quot;&gt;CGAL-5.4.2 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.4.2 is a bug-fix release for &lt;a href=&quot;../../../../2022/01/31/cgal54&quot;&gt;CGAL 5.4&lt;/a&gt;.
@@ -998,10 +998,10 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AM
    <updated>2022-06-06T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2022/06/06/cgal55-beta1</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.5-beta1&quot;&gt;Download CGAL-5.5-beta1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.5/Manual/index.html&quot;&gt;CGAL-5.5-beta1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.5 offers the following improvements and new functionality over
@@ -1109,10 +1109,10 @@ as a post-processing step for the tetrahedral mesh generation.&lt;/li&gt;
    <updated>2022-06-06T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2022/06/06/cgal541</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.4.1&quot;&gt;Download CGAL-5.4.1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.4.1/Manual/index.html&quot;&gt;CGAL-5.4.1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.4.1 is a bug-fix release for &lt;a href=&quot;../../../../2022/01/31/cgal54&quot;&gt;CGAL 5.4&lt;/a&gt;.
@@ -1127,10 +1127,10 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AM
    <updated>2022-06-06T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2022/06/06/cgal532</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.3.2&quot;&gt;Download CGAL-5.3.2&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.3.2/Manual/index.html&quot;&gt;CGAL-5.3.2 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.3.2 is a bug-fix release for &lt;a href=&quot;../../../../2021/07/06/cgal53&quot;&gt;CGAL 5.3&lt;/a&gt;.
@@ -1264,10 +1264,10 @@ on input data that combine points, polylines, and triangles.&lt;/p&gt;
 on the &lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;, and will be
 officially released in the upcoming version of CGAL, CGAL 5.5, scheduled for June 2022.&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.5/Manual/packages.html#PkgAlphaWrap3&quot;&gt;Documentation of the package Alpha_wrap_3&lt;/a&gt;
 &lt;br /&gt;
-&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
@@ -1339,10 +1339,10 @@ Have a look at our &lt;a href=&quot;https://github.com/CGAL/cgal/wiki/Project-Id
    <updated>2022-01-31T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2022/01/31/cgal54</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.4&quot;&gt;Download CGAL-5.4&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.4/Manual/index.html&quot;&gt;CGAL-5.4 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.4 offers the following improvements and new functionality over
@@ -1494,10 +1494,10 @@ Have a look at our &lt;a href=&quot;https://github.com/CGAL/cgal/wiki/Project-Id
    <updated>2021-12-17T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2021/12/17/cgal54-beta1</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.4-beta1&quot;&gt;Download CGAL-5.4-beta1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.4/Manual/index.html&quot;&gt;CGAL-5.4-beta1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.4 offers the following improvements and new functionality over
@@ -1666,10 +1666,10 @@ Have a look at our &lt;a href=&quot;https://github.com/CGAL/cgal/wiki/Project-Id
    <updated>2021-12-13T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2021/12/13/cgal531</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.3.1&quot;&gt;Download CGAL-5.3.1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.3.1/Manual/index.html&quot;&gt;CGAL-5.3.1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.3.1 is a bug-fix release for &lt;a href=&quot;../../../../2021/07/06/cgal53&quot;&gt;CGAL 5.3&lt;/a&gt;.
@@ -1684,10 +1684,10 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AM
    <updated>2021-12-13T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2021/12/13/cgal524</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.2.4&quot;&gt;Download CGAL-5.2.4&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.2.4/Manual/index.html&quot;&gt;CGAL-5.2.4 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.2.4 is a bug-fix release for &lt;a href=&quot;../../../../2020/12/22/cgal52&quot;&gt;CGAL 5.2&lt;/a&gt;.
@@ -1878,10 +1878,10 @@ with respect to the number of contour vertices as it can be seen from the plot b
 on the &lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;, and will be
 officially released in the upcoming version of CGAL, CGAL 5.4, scheduled for December 2021.&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.4/Manual/packages.html#PkgShapeRegularization&quot;&gt;Documentation of the package Shape_Regularization&lt;/a&gt;
 &lt;br /&gt;
-&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
@@ -1913,10 +1913,10 @@ officially released in the upcoming version of CGAL, CGAL 5.4, scheduled for Dec
    <updated>2021-07-06T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2021/07/06/cgal53</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.3&quot;&gt;Download CGAL-5.3&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.3/Manual/index.html&quot;&gt;CGAL-5.3 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.3 offers the following improvements and new functionality over
@@ -2060,10 +2060,10 @@ classifier &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CG
    <updated>2021-07-06T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2021/07/06/cgal523</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.2.3&quot;&gt;Download CGAL-5.2.3&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.2.3/Manual/index.html&quot;&gt;CGAL-5.2.3 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.2.3 is a bug-fix release for &lt;a href=&quot;../../../../2020/12/22/cgal52&quot;&gt;CGAL 5.2&lt;/a&gt;.
@@ -2078,10 +2078,10 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AM
    <updated>2021-07-06T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2021/07/06/cgal515</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.1.5&quot;&gt;Download CGAL-5.1.5&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.1.5/Manual/index.html&quot;&gt;CGAL-5.1.5 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.1.5 is a bug-fix release for &lt;a href=&quot;../../../../2020/09/08/cgal51&quot;&gt;CGAL 5.1&lt;/a&gt;.
@@ -2151,10 +2151,10 @@ and 3D triangulations, hyperbolic triangulations, periodic triangulations, ...&l
 on the &lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;, and will be
 officially released in the upcoming version of CGAL, CGAL 5.3, scheduled for June 2021.&lt;/p&gt;
 
-&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.3/Manual/packages.html#PkgTriangulationOnSphere2&quot;&gt;Documentation of the package Triangulation_on_sphere_2&lt;/a&gt;
 &lt;br /&gt;
-&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;
 &lt;/a&gt;&lt;/p&gt;
 </content>
@@ -2166,10 +2166,10 @@ officially released in the upcoming version of CGAL, CGAL 5.3, scheduled for Jun
    <updated>2021-06-04T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2021/06/04/cgal53-beta1</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.3-beta1&quot;&gt;Download CGAL-5.3-beta1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.3/Manual/index.html&quot;&gt;CGAL-5.3-beta1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.3 offers the following improvements and new functionality over
@@ -2319,10 +2319,10 @@ classifier &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CG
    <updated>2021-06-02T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2021/06/02/cgal522</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.2.2&quot;&gt;Download CGAL-5.2.2&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.2.2/Manual/index.html&quot;&gt;CGAL-5.2.2 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.2.2 is a bug-fix release for &lt;a href=&quot;../../../../2020/12/22/cgal52&quot;&gt;CGAL 5.2&lt;/a&gt;.
@@ -2337,10 +2337,10 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AM
    <updated>2021-06-02T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2021/06/02/cgal514</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.1.4&quot;&gt;Download CGAL-5.1.4&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.1.4/Manual/index.html&quot;&gt;CGAL-5.1.4 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.1.4 is a bug-fix release for &lt;a href=&quot;../../../../2020/09/08/cgal51&quot;&gt;CGAL 5.1&lt;/a&gt;.
@@ -2419,11 +2419,11 @@ number of times.&lt;/p&gt;
 &lt;h3&gt;Status and links&lt;/h3&gt;
 &lt;p&gt;The package &lt;em&gt;Orthtree&lt;/em&gt; is available in CGAL's master branch and will be part of the upcoming CGAL 5.3 release.&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/master/Orthtree/index.html&quot;&gt;Documentation of the package
 Octree&lt;/a&gt; &lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
@@ -2483,10 +2483,10 @@ Regulations. This may or may not be the case when you register in Clubhouse, onc
    <updated>2021-03-17T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2021/03/17/cgal521</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.2.1&quot;&gt;Download CGAL-5.2.1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.2.1/Manual/index.html&quot;&gt;CGAL-5.2.1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.2.1 is a bug-fix release for &lt;a href=&quot;../../../../2020/12/22/cgal52&quot;&gt;CGAL 5.2&lt;/a&gt;.
@@ -2501,10 +2501,10 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AM
    <updated>2021-03-17T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2021/03/17/cgal513</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.1.3&quot;&gt;Download CGAL-5.1.3&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.1.3/Manual/index.html&quot;&gt;CGAL-5.1.3 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.1.3 is a bug-fix release for &lt;a href=&quot;../../../../2020/09/08/cgal51&quot;&gt;CGAL 5.1&lt;/a&gt;.
@@ -2519,10 +2519,10 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AM
    <updated>2020-12-22T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2020/12/22/cgal52</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.2&quot;&gt;Download CGAL-5.2&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.2/Manual/index.html&quot;&gt;CGAL-5.2 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.2 offers the following improvements and new functionality over
@@ -2675,10 +2675,10 @@ and &lt;a href=&quot;https://doc.cgal.org/5.2/Triangulation_3/classCGAL_1_1Trian
    <updated>2020-12-22T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2020/12/22/cgal512</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.1.2&quot;&gt;Download CGAL-5.1.2&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.1.2/Manual/index.html&quot;&gt;CGAL-5.1.2 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.1.2 is a bug-fix release for &lt;a href=&quot;../../../../2020/09/08/cgal51&quot;&gt;CGAL 5.1&lt;/a&gt;.
@@ -2693,10 +2693,10 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/pulls?q=label%3AMe
    <updated>2020-11-18T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2020/11/18/cgal52-beta1</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.2-beta1&quot;&gt;Download CGAL-5.2-beta1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.2/Manual/index.html&quot;&gt;CGAL-5.2-beta1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.2 offers the following improvements and new functionality over
@@ -2869,10 +2869,10 @@ and &lt;a href=&quot;https://doc.cgal.org/5.2/Triangulation_3/classCGAL_1_1Trian
    <updated>2020-11-16T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2020/11/16/cgal511</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.1.1&quot;&gt;Download CGAL-5.1.1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.1.1/Manual/index.html&quot;&gt;CGAL-5.1.1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.1.1 is a bug-fix release for &lt;a href=&quot;../../../../2020/09/08/cgal51&quot;&gt;CGAL 5.1&lt;/a&gt;.
@@ -2887,10 +2887,10 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AM
    <updated>2020-11-16T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2020/11/16/cgal504</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.0.4&quot;&gt;Download CGAL-5.0.4&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.0.4/Manual/index.html&quot;&gt;CGAL-5.0.4 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.0.4 is a bug-fix release for &lt;a href=&quot;../../../../2019/11/08/cgal50&quot;&gt;CGAL 5.0&lt;/a&gt;.
@@ -2905,10 +2905,10 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AM
    <updated>2020-09-08T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2020/09/08/cgal51</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.1&quot;&gt;Download CGAL-5.1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.1/Manual/index.html&quot;&gt;CGAL-5.1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.1 offers the following improvements and new functionality over
@@ -3298,10 +3298,10 @@ Tetrahedral remeshing fixes those over-refinements while keeping the geometry an
 on the &lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;, and will be
 officially released in the upcoming version of CGAL, CGAL 5.1, scheduled for September 2020.&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/master/Tetrahedral_remeshing/index.html&quot;&gt;Documentation of the package Tetrahedral Remeshing&lt;/a&gt; &lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
@@ -3312,10 +3312,10 @@ officially released in the upcoming version of CGAL, CGAL 5.1, scheduled for Sep
    <updated>2020-08-03T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2020/08/03/cgal503</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-5.0.3&quot;&gt;Download CGAL-5.0.3&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.0.3/Manual/index.html&quot;&gt;CGAL-5.0.3 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.0.3 is a bug-fix release for &lt;a href=&quot;../../../../2019/11/08/cgal50&quot;&gt;CGAL 5.0&lt;/a&gt;.
@@ -3330,10 +3330,10 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AM
    <updated>2020-07-28T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2020/07/28/cgal51-beta2</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-5.1-beta2&quot;&gt;Download CGAL-5.1-beta2&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.1/Manual/index.html&quot;&gt;CGAL-5.1-beta2 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.1 offers the following improvements and new functionality over
@@ -3661,10 +3661,10 @@ if the third party library TBB has been found and linked with, and to
    <updated>2020-06-09T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2020/06/09/cgal51-beta1</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-5.1-beta1&quot;&gt;Download CGAL-5.1-beta1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.1/Manual/index.html&quot;&gt;CGAL-5.1-beta1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.1 offers the following improvements and new functionality over
@@ -4051,10 +4051,10 @@ if two given curves on a combinatorial surface can be continuously deformed one 
 on the &lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;, and will be
 officially released in the upcoming version of CGAL, CGAL 5.1, scheduled for July 2020.&lt;/p&gt;
 
-&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/master/Surface_mesh_topology/index.html&quot;&gt;Documentation of the package Surface Mesh Topology&lt;/a&gt; &lt;br /&gt;
 
-&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;
 &lt;/p&gt;&lt;/p&gt;
 </content>
@@ -4099,10 +4099,10 @@ officially released in the upcoming version of CGAL, CGAL 5.1, scheduled for Jul
 &lt;/div&gt;
 &lt;br /&gt;
 
-&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/master/Manual/tuto_gis.html&quot;&gt;Tutorial on GIS&lt;/a&gt; &lt;br /&gt;
 
-&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;
 &lt;/p&gt;&lt;/p&gt;
 </content>
@@ -4203,10 +4203,10 @@ Convex hull preprocessing is used to greatly improve speed, and is performed usi
 on the &lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;, and will be
 officially released in the upcoming version of CGAL, CGAL 5.1, scheduled for July 2020.&lt;/p&gt;
 
-&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/master/Optimal_bounding_box/index.html#Chapter_Building_Optimal_Bounding_Box&quot;&gt;Documentation of the package Optimal_bounding_box&lt;/a&gt; &lt;br /&gt;
 
-&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;
 &lt;/p&gt;&lt;/p&gt;
 </content>
@@ -4251,10 +4251,10 @@ officially released in the upcoming version of CGAL, CGAL 5.1, scheduled for Jul
 &lt;/div&gt;
 &lt;br /&gt;
 
-&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/master/Manual/tuto_reconstruction.html&quot;&gt;Tutorial on Surface Reconstruction from Point Clouds&lt;/a&gt; &lt;br /&gt;
 
-&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;
 &lt;/p&gt;&lt;/p&gt;
 </content>
@@ -4380,10 +4380,10 @@ It even came with a &lt;a href=&quot;https://cgal.github.io/cgal-web/April20/ind
 
 &lt;p&gt;Both wrappers are part of the &lt;b&gt;Point set processing&lt;/b&gt; package; two new examples (&lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/master/Point_set_processing_3/Point_set_processing_3_2registration_with_OpenGR_8cpp-example.html&quot;&gt;one for OpenGR&lt;/a&gt;, and &lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/master/Point_set_processing_3/Point_set_processing_3_2registration_with_pointmatcher_8cpp-example.html&quot;&gt;one for Pointmatcher&lt;/a&gt;) have been added to get you quickly started.&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/master/Point_set_processing_3/index.html&quot;&gt;Documentation of the package Point_set_processing_3&lt;/a&gt; &lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
@@ -4394,10 +4394,10 @@ It even came with a &lt;a href=&quot;https://cgal.github.io/cgal-web/April20/ind
    <updated>2020-02-25T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2020/02/25/cgal502</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-5.0.2&quot;&gt;Download CGAL-5.0.2&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.0.2/Manual/index.html&quot;&gt;CGAL-5.0.2 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.0.2 is a bug-fix release for &lt;a href=&quot;../../../../2019/11/08/cgal50&quot;&gt;CGAL 5.0&lt;/a&gt;.
@@ -4412,10 +4412,10 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AM
    <updated>2020-02-25T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2020/02/25/cgal4143</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.14.3&quot;&gt;Download CGAL-4.14.3&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.14.3/Manual/index.html&quot;&gt;CGAL-4.14.3 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.14.2 is a bug-fix release for &lt;a href=&quot;../../../../2019/03/29/cgal414&quot;&gt;CGAL 4.14&lt;/a&gt;.  In particular, it fixes a performance regression in the 3D Triangulations, when the &lt;code&gt;Parallel_tag&lt;/code&gt; is used.
@@ -4442,10 +4442,10 @@ Have a look at our &lt;a href=&quot;https://github.com/CGAL/cgal/wiki/Project-Id
    <updated>2020-01-24T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2020/01/24/cgal501</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-5.0.1&quot;&gt;Download CGAL-5.0.1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.0.1/Manual/index.html&quot;&gt;CGAL-5.0.1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.0.1 is a bug-fix release for &lt;a href=&quot;../../../../2019/11/08/cgal50&quot;&gt;CGAL 5.0&lt;/a&gt;.  In particular, it fixes a performance regression in the 3D Triangulations, when the &lt;code&gt;Parallel_tag&lt;/code&gt; is used.
@@ -4460,10 +4460,10 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AM
    <updated>2019-11-08T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2019/11/08/cgal50</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-5.0&quot;&gt;Download CGAL-5.0&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.0/Manual/index.html&quot;&gt;CGAL-5.0 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.0 offers the following improvements and new functionality over
@@ -4688,10 +4688,10 @@ for solving Mixed Integer Programming (MIP) problems with or without constraints
    <updated>2019-11-08T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2019/11/08/cgal4142</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.14.2&quot;&gt;Download CGAL-4.14.2&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.14.2/Manual/index.html&quot;&gt;CGAL-4.14.2 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.14.2 is a bug-fix release for &lt;a href=&quot;../../../../2019/03/29/cgal414&quot;&gt;CGAL 4.14&lt;/a&gt;.
@@ -4706,10 +4706,10 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=milestone
    <updated>2019-10-31T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2019/10/31/cgal50-beta2</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-5.0-beta2&quot;&gt;Download CGAL-5.0-beta2&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.0/Manual/index.html&quot;&gt;CGAL-5.0-beta2 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.0 offers the following improvements and new functionality over
@@ -4968,10 +4968,10 @@ CGAL-4.14 and its bug-fix releases.&lt;/p&gt;
    <updated>2019-09-30T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2019/09/30/cgal50-beta1</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-5.0-beta1&quot;&gt;Download CGAL-5.0-beta1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.0/Manual/index.html&quot;&gt;CGAL-5.0-beta1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.0 offers the following improvements and new functionality over
@@ -5193,10 +5193,10 @@ for solving Mixed Integer Programming (MIP) problems with or without constraints
    <updated>2019-09-30T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2019/09/30/cgal4141</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.14.1&quot;&gt;Download CGAL-4.14.1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.14.1/Manual/index.html&quot;&gt;CGAL-4.14.1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.14.1 is a bug-fix release for &lt;a href=&quot;../../../../2019/03/29/cgal414&quot;&gt;CGAL 4.14&lt;/a&gt;.
@@ -5211,10 +5211,10 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=milestone
    <updated>2019-09-30T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2019/09/30/cgal4132</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.13.2&quot;&gt;Download CGAL-4.13.2&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.13.2/Manual/index.html&quot;&gt;CGAL-4.13.2 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.13.2 is a bug-fix release for &lt;a href=&quot;../../../../2018/10/01/cgal413&quot;&gt;CGAL 4.13&lt;/a&gt;.
@@ -5260,10 +5260,10 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=milestone
 on the &lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;,
 and will be officially released in the upcoming version of CGAL, 5.0, scheduled for Autumn 2019.&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/master/Polygonal_surface_reconstruction/index.html#Chapter_PolygonalSurfaceReconstruction&quot;&gt;Documentation of the package Polygonal_surface_reconstruction&lt;/a&gt; &lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
@@ -5323,10 +5323,10 @@ and will be officially released in the upcoming version of CGAL, 5.0, scheduled 
 on the &lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;,
 and will be officially released in the upcoming version of CGAL, 5.0, scheduled for Autumn 2019.&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/master/Shape_detection/index.html#Shape_detection_RegionGrowing&quot;&gt;Documentation of the package Shape_detection&lt;/a&gt; &lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
@@ -5365,10 +5365,10 @@ Los Angeles USA, 28 July-1 August, 2019!&lt;/p&gt;
    <updated>2019-04-05T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2019/04/05/cgal4131</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.13.1&quot;&gt;Download CGAL-4.13.1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.13.1/Manual/index.html&quot;&gt;CGAL-4.13.1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.13.1 is a bug-fix release for &lt;a href=&quot;../../../../2018/10/01/cgal413&quot;&gt;CGAL 4.13&lt;/a&gt;.
@@ -5383,10 +5383,10 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=milestone
    <updated>2019-04-05T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2019/04/05/cgal4122</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.12.2&quot;&gt;Download CGAL-4.12.2&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.12.2/Manual/index.html&quot;&gt;CGAL-4.12.2 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.12.2 is a bug-fix release for &lt;a href=&quot;../../../../2018/04/25/cgal412&quot;&gt;CGAL 4.12&lt;/a&gt;.
@@ -5495,10 +5495,10 @@ It even came with a &lt;a href=&quot;https://cgal.github.io/cgal-web/April2019.h
    <updated>2019-03-29T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2019/03/29/cgal414</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.14&quot;&gt;Download CGAL-4.14&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.14/Manual/index.html&quot;&gt;CGAL-4.14 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.14 offers the following improvements and new functionality over
@@ -5727,10 +5727,10 @@ property map;&lt;/li&gt;
    <updated>2019-03-13T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2019/03/13/cgal414-beta2</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.14-beta2&quot;&gt;Download CGAL-4.14-beta2&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.14/Manual/index.html&quot;&gt;CGAL-4.14-beta2 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Compared to CGAL version 4.14 Beta 1, this version fixes &lt;a href=&quot;https://github.com/CGAL/cgal/milestone/42?closed=1&quot;&gt;several
@@ -5941,10 +5941,10 @@ property map;&lt;/li&gt;
    <updated>2019-03-04T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2019/03/04/cgal414-beta1</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.14-beta1&quot;&gt;Download CGAL-4.14-beta1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.14/Manual/index.html&quot;&gt;CGAL-4.14-beta1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.14 offers the following improvements and new functionality over
@@ -6228,12 +6228,12 @@ and edges of the triangulation.&lt;/p&gt;
 on the &lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;,
 and will be officially released in the upcoming version of CGAL, 4.14, scheduled for March 2019.&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.14/Hyperbolic_triangulation_2/index.html#Chapter_2D_Hyperbolic_Triangulations&quot;&gt;Documentation of the package Hyperbolic_triangulation_2&lt;/a&gt; &lt;br /&gt;
-&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.14/Periodic_4_hyperbolic_triangulation_2/index.html#Chapter_2D_Periodic_Hyperbolic_Triangulations&quot;&gt;Documentation of the package Periodic_4_hyperbolic_triangulation_2&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
@@ -6317,10 +6317,10 @@ mentored by Pierre Alliez. It is now available in CGAL's master branch
 on the &lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;,
 and will be officially released in the upcoming version of CGAL (4.14) scheduled for March 2019.&lt;/p&gt;
 
-&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.14/Surface_mesh_approximation/index.html#Chapter_Triangulated_Surface_Mesh_Approximation&quot;&gt;Documentation of the package Surface_mesh_approximation&lt;/a&gt; &lt;br /&gt;
 
-&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;
 &lt;/p&gt;
 </content>
@@ -6411,10 +6411,10 @@ mentored by Keenan Crane and Andreas Fabri. It is now available in CGAL's master
 on the &lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;,
 and will be officially released in the upcoming version of CGAL (4.14) scheduled for March 2019.&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/master/Heat_method_3/index.html#Chapter_HeatMethod&quot;&gt;Documentation of the package Heat_Method_3&lt;/a&gt; &lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
@@ -6459,10 +6459,10 @@ Frankfurt Germany, 16-18 Oct 2018.&lt;/p&gt;
    <content type="html">
 &lt;p&gt;The CGAL Open Source Project is pleased to announce the release 4.13.&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.13&quot;&gt;Download CGAL-4.13&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.13/Manual/index.html&quot;&gt;CGAL-4.13 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.13 offers the following improvements and new functionality over
@@ -6733,10 +6733,10 @@ objects from Cartesian kernels.&lt;/li&gt;
    <updated>2018-09-11T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2018/09/11/cgal413-beta2</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.13-beta2&quot;&gt;Download CGAL-4.13-beta2&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.13/Manual/index.html&quot;&gt;CGAL-4.13-beta2 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.13 offers the following improvements and new functionality over
@@ -7066,10 +7066,10 @@ of sharp edges in a mesh, as well as post-processing steps such as mesh optimiza
 on the &lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;, and will be
 officially released in the upcoming version of CGAL, CGAL 4.13, scheduled for September 2018.&lt;/p&gt;
 
-&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.13/Periodic_3_mesh_3/index.html#Chapter_3D_Periodic_Mesh_Generation&quot;&gt;Documentation of the package Periodic_3_mesh_3&lt;/a&gt;
 &lt;br /&gt;
-&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;
 &lt;/p&gt;
 </content>
@@ -7081,10 +7081,10 @@ officially released in the upcoming version of CGAL, CGAL 4.13, scheduled for Se
    <updated>2018-09-04T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2018/09/04/cgal4121</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.12.1&quot;&gt;Download CGAL-4.12.1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.12.1/Manual/index.html&quot;&gt;CGAL-4.12.1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.12.1 is a bug-fix release for &lt;a href=&quot;../../../../2018/04/25/cgal412&quot;&gt;CGAL 4.12&lt;/a&gt;.
@@ -7119,10 +7119,10 @@ Vancouver Canada, 12-18 August 2018.&lt;/p&gt;
    <updated>2018-08-01T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2018/08/01/cgal413-beta1</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.13-beta1&quot;&gt;Download CGAL-4.13-beta1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.13/Manual/index.html&quot;&gt;CGAL-4.13-beta1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.13 offers the following improvements and new functionality over
@@ -7392,10 +7392,10 @@ objects from Cartesian kernels.&lt;/li&gt;
    <updated>2018-07-31T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2018/07/31/cgal4113</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.11.3&quot;&gt;Download CGAL-4.11.3&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.11.3/Manual/index.html&quot;&gt;CGAL-4.11.3 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.11.3 is a bug-fix release for &lt;a href=&quot;../../../../2017/09/21/cgal411&quot;&gt;CGAL 4.11&lt;/a&gt;.
@@ -7410,10 +7410,10 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=milestone
    <updated>2018-07-10T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2018/07/10/cgal4112</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.11.2&quot;&gt;Download CGAL-4.11.2&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.11.2/Manual/index.html&quot;&gt;CGAL-4.11.2 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.11.2 is a bug-fix release for &lt;a href=&quot;../../../../2017/09/21/cgal411&quot;&gt;CGAL 4.11&lt;/a&gt;.
@@ -7443,10 +7443,10 @@ which takes place in  Barcelona, from April 16 - June 8, 2018.&lt;/p&gt;
    <updated>2018-04-25T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2018/04/25/cgal412</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.12&quot;&gt;Download CGAL-4.12&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.12/Manual/index.html&quot;&gt;CGAL-4.12 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.12 offers the following improvements and new functionality over
@@ -7688,10 +7688,10 @@ Have a look at the &lt;a href=&quot;https://summerofcode.withgoogle.com/organiza
    <updated>2018-04-09T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2018/04/09/cgal412-beta2</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.12-beta2&quot;&gt;Download CGAL-4.12-beta2&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.12/Manual/index.html&quot;&gt;CGAL-4.12-beta2 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.12 offers the following improvements and new functionality over
@@ -8032,10 +8032,10 @@ we only stand at the beginning, so if you have ideas please share them with us.&
    <updated>2018-02-27T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2018/02/27/cgal412-beta1</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.12-beta1&quot;&gt;Download CGAL-4.12-beta1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.12/Manual/index.html&quot;&gt;CGAL-4.12-beta1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.12 offers the following improvements and new functionality over
@@ -8234,10 +8234,10 @@ offered.&lt;/li&gt;
    <updated>2018-02-26T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2018/02/26/cgal4111</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.11.1&quot;&gt;Download CGAL-4.11.1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.11.1/Manual/index.html&quot;&gt;CGAL-4.11.1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.11.1 is a bug-fix release for &lt;a href=&quot;../../../../2017/09/21/cgal411&quot;&gt;CGAL 4.11&lt;/a&gt;.
@@ -8264,10 +8264,10 @@ Have a look at our &lt;a href=&quot;https://github.com/CGAL/cgal/wiki/Project-Id
    <updated>2018-01-16T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2018/01/16/cgal-4102</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.10.2&quot;&gt;Download CGAL-4.10.2&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.10.2/Manual/index.html&quot;&gt;CGAL-4.10.2 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.10.2 is a bug-fix release for &lt;a href=&quot;../../../../2017/05/29/cgal410&quot;&gt;CGAL 4.10&lt;/a&gt;.
@@ -8282,10 +8282,10 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=milestone
    <updated>2017-09-21T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2017/09/21/cgal411</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.11&quot;&gt;Download CGAL-4.11&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.11/Manual/index.html&quot;&gt;CGAL-4.11 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.11 offers the following improvements and new functionality over
@@ -8562,10 +8562,10 @@ seam edges.&lt;/li&gt;
    <updated>2017-09-13T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2017/09/13/cgal-4101</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.10.1&quot;&gt;Download CGAL-4.10.1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.10.1/Manual/index.html&quot;&gt;CGAL-4.10.1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.10.1 is a bug-fix release for &lt;a href=&quot;../../../../2017/05/29/cgal410&quot;&gt;CGAL 4.10&lt;/a&gt;.
@@ -8618,10 +8618,10 @@ Please use the Via Ortega garage. (Roth Way Garage is closer, but it has a daily
    <updated>2017-08-01T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2017/08/01/cgal411-beta1</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.11-beta1&quot;&gt;Download CGAL-4.11-beta1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.11/Manual/index.html&quot;&gt;CGAL-4.11-beta1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.11 offers the following improvements and new functionality over
@@ -8889,10 +8889,10 @@ Los Angeles USA, 30 July -3 August 2017.&lt;/p&gt;
    <updated>2017-05-29T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2017/05/29/cgal410</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.10&quot;&gt;Download CGAL-4.10&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.10/Manual/index.html&quot;&gt;CGAL-4.10 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.10 offers the following improvements and new functionality over
@@ -9165,10 +9165,10 @@ from &lt;a href=&quot;https://www.inria.fr/centre/sophia/&quot;&gt;INRIA&lt;/a&g
    <updated>2017-04-20T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2017/04/20/cgal410-beta1</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.10-beta1&quot;&gt;Download CGAL-4.10-beta1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.10/Manual/index.html&quot;&gt;CGAL-4.10-beta1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.10 offers the following improvements and new functionality over
@@ -9415,10 +9415,10 @@ its descriptors.&lt;/li&gt;
    <updated>2017-04-12T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2017/04/12/cgal-491</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.9.1&quot;&gt;Download CGAL-4.9.1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.9.1/Manual/index.html&quot;&gt;CGAL-4.9.1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.9.1 is a bug-fix release for &lt;a href=&quot;../../../../2016/09/19/cgal-49&quot;&gt;CGAL 4.9&lt;/a&gt;.
@@ -9553,10 +9553,10 @@ Have a look at our &lt;a href=&quot;https://cgal.github.io/cgal-web/gsoc/2017.ht
    <updated>2016-09-19T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2016/09/19/cgal-49</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.9&quot;&gt;Download CGAL-4.9&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.9/Manual/index.html&quot;&gt;CGAL-4.9 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.9 offers the following improvements and new functionality over
@@ -9695,10 +9695,10 @@ provided by CGAL, switched on by defining the macro
    <updated>2016-09-19T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2016/09/19/cgal-482</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.8.2&quot;&gt;Download CGAL-4.8.2&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.8.2/Manual/index.html&quot;&gt;CGAL-4.8.2 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.8.2 is a bug-fix release for &lt;a href=&quot;../../../../2016/04/08/cgal48&quot;&gt;CGAL 4.8&lt;/a&gt;.
@@ -9713,10 +9713,10 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=milestone
    <updated>2016-08-04T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2016/08/04/cgal49-beta1</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.9-beta1&quot;&gt;Download CGAL-4.9-beta1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.9/Manual/index.html&quot;&gt;CGAL-4.9-beta1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.9 offers the following improvements and new functionality over
@@ -9881,10 +9881,10 @@ without converting it to a mesh of CGAL.&lt;/p&gt;
    <updated>2016-06-13T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2016/06/13/cgal-481</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.8.1&quot;&gt;Download CGAL-4.8.1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.8.1/Manual/index.html&quot;&gt;CGAL-4.8.1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.8.1 is a bug-fix release for &lt;a href=&quot;../../../../2016/04/08/cgal48&quot;&gt;CGAL 4.8&lt;/a&gt;.
@@ -9899,10 +9899,10 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=milestone
    <updated>2016-04-08T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2016/04/08/cgal48</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.8&quot;&gt;Download CGAL-4.8&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.8/Manual/index.html&quot;&gt;CGAL-4.8 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.8 offers the following improvements and new functionality over
@@ -10202,10 +10202,10 @@ please let us know if you are ready for the water.&lt;/p&gt;
    <updated>2016-03-20T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2016/03/20/cgal48-beta2</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.8-beta2&quot;&gt;Download CGAL-4.8-beta2&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.8/Manual/index.html&quot;&gt;CGAL-4.8-beta2 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.8 offers the following improvements and new functionality over
@@ -10404,10 +10404,10 @@ efficiently and generically.&lt;/li&gt;
    <updated>2016-02-10T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2016/02/10/cgal48-beta1</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.8-beta1&quot;&gt;Download CGAL-4.8-beta1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.8/Manual/index.html&quot;&gt;CGAL-4.8-beta1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.8 offers the following improvements and new functionality over
@@ -10606,10 +10606,10 @@ efficiently and generically.&lt;/li&gt;
    <updated>2015-10-20T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2015/10/20/cgal-47</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.7&quot;&gt;Download CGAL-4.7&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.7/Manual/index.html&quot;&gt;CGAL-4.7 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.7 offers the following improvements and new functionality over
@@ -10833,10 +10833,10 @@ tetrahedron (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;
    <updated>2015-09-21T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2015/09/21/cgal-47-beta2</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.7-beta2&quot;&gt;Download CGAL-4.7-beta2&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.7/Manual/index.html&quot;&gt;CGAL-4.7-beta2 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.7 offers the following improvements and new functionality over
@@ -11060,10 +11060,10 @@ tetrahedron (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;
    <updated>2015-09-21T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2015/09/21/cgal-463</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.6.3&quot;&gt;Download CGAL-4.6.3&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.6.3/Manual/index.html&quot;&gt;CGAL-4.6.3 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.6.1 is a bug-fix release for &lt;a href=&quot;../../../../2015/04/19/cgal-46&quot;&gt;CGAL 4.6&lt;/a&gt;.
@@ -11078,10 +11078,10 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=milestone
    <updated>2015-08-20T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2015/08/20/cgal-462</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.6.2&quot;&gt;Download CGAL-4.6.2&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.6.2/Manual/index.html&quot;&gt;CGAL-4.6.2 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.6.1 is a bug-fix release for &lt;a href=&quot;../../../../2015/04/19/cgal-46&quot;&gt;CGAL 4.6&lt;/a&gt;.
@@ -11107,10 +11107,10 @@ Los Angeles USA, 9-13 Aug 2015.&lt;/p&gt;
    <updated>2015-08-07T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2015/08/07/cgal-47-beta1</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.7-beta1&quot;&gt;Download CGAL-4.7-beta1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.7/Manual/index.html&quot;&gt;CGAL-4.7-beta1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.7 offers the following improvements and new functionality over
@@ -11326,10 +11326,10 @@ tetrahedron (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;
    <updated>2015-06-28T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2015/06/28/cgal-461</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.6.1&quot;&gt;Download CGAL-4.6.1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.6.1/Manual/index.html&quot;&gt;CGAL-4.6.1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.6.1 is a bug-fix release for &lt;a href=&quot;../../../../2015/04/19/cgal-46&quot;&gt;CGAL 4.6&lt;/a&gt;.
@@ -11344,10 +11344,10 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=milestone
    <updated>2015-04-19T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2015/04/19/cgal-46</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.6&quot;&gt;Download CGAL-4.6&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.6/Manual/index.html&quot;&gt;CGAL-4.6 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.6 offers the following improvements and new functionality over
@@ -11716,10 +11716,10 @@ cone and torus).
    <updated>2015-02-20T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2015/02/20/cgal-46-beta1</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.6-beta1&quot;&gt;Download CGAL-4.6-beta1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.6/Manual/index.html&quot;&gt;CGAL-4.6-beta1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.6 offers the following improvements and new functionality over
@@ -11887,10 +11887,10 @@ points chosen in a disc.&lt;/li&gt;
    <updated>2015-02-15T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2015/02/15/cgal-452</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.5.2&quot;&gt;Download CGAL-4.5.2&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.5.2/Manual/index.html&quot;&gt;CGAL-4.5.2 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;This is a minor bug fix release. The following has been changed since
@@ -11961,10 +11961,10 @@ surface mesh, and identifying its connected components.&lt;/p&gt;
    <updated>2014-12-22T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2014/12/22/cgal-451</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.5.1&quot;&gt;Download CGAL-4.5.1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.5.1/Manual/index.html&quot;&gt;CGAL-4.5.1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;This is a minor bug fix release. The following has been changed since
@@ -12005,10 +12005,10 @@ As CGAL uses C++ templates, these libraries are rather empty, and we are working
    <updated>2014-10-10T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2014/10/10/cgal-45</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.5&quot;&gt;Download CGAL-4.5&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.5/Manual/index.html&quot;&gt;CGAL-4.5 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.5 offers the following improvements and new functionality over
@@ -12204,10 +12204,10 @@ concurrent insertion and removal.&lt;/li&gt;
    <updated>2014-08-12T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2014/08/12/cgal-45-beta1</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.5-beta1&quot;&gt;Download CGAL-4.5-beta1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.5/Manual/index.html&quot;&gt;CGAL-4.5-beta1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.5 offers the following improvements and new functionality over
@@ -12433,10 +12433,10 @@ Have a look at our &lt;a href=&quot;https://cgal.github.io/cgal-web/gsoc/2014.ht
    <updated>2014-04-04T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2014/04/04/cgal-44</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.4&quot;&gt;Download CGAL-4.4&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.4/Manual/index.html&quot;&gt;CGAL-4.4 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.4 offers the following improvements and new functionality over
@@ -12681,10 +12681,10 @@ and MetaBrainz the coolest mentoring organizations of GSoC 2014.&lt;/p&gt;
    <updated>2014-03-07T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2014/03/07/cgal-44-beta1</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.4-beta1&quot;&gt;Download CGAL-4.4-beta1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.4/Manual/index.html&quot;&gt;CGAL-4.4-beta1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.4 offers the following improvements and new functionality over
@@ -12845,10 +12845,10 @@ map type.&lt;/li&gt;
    <updated>2013-10-17T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2013/10/17/cgal-43</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.3&quot;&gt;Download CGAL-4.3&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.3/Manual/index.html&quot;&gt;CGAL-4.3 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.3 offers the following improvements and new functionality over
@@ -13095,10 +13095,10 @@ write shared-memory parallel code.&lt;/li&gt;
    <updated>2013-08-23T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2013/08/23/cgal-43-beta1</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.3-beta1&quot;&gt;Download CGAL-4.3-beta1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.3/Manual/index.html&quot;&gt;CGAL-4.3-beta1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.3 offers the following improvements and new functionality over
@@ -13406,10 +13406,10 @@ Have a look at our &lt;a href=&quot;https://cgal.github.io/cgal-web/gsoc/2013.ht
    <updated>2013-04-11T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2013/04/11/cgal-42</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.2&quot;&gt;Download CGAL-4.2&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.2/Manual/index.html&quot;&gt;CGAL-4.2 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.2 offers the following improvements and new functionality over
@@ -13536,10 +13536,10 @@ the Polyhedron demo has an option to switch it on.&lt;/li&gt;
    <updated>2013-03-08T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2013/03/08/cgal-42-beta1</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.2-beta1&quot;&gt;Download CGAL-4.2-beta1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/4.2/Manual/index.html&quot;&gt;CGAL-4.2-beta1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.2 offers the following improvements and new functionality over
@@ -13676,10 +13676,10 @@ the Polyhedron demo has an option to switch it on.&lt;/li&gt;
    <updated>2012-10-24T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2012/10/24/cgal-41</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.1&quot;&gt;Download CGAL-4.1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/Manual/4.1/doc_html/cgal_manual/packages.html&quot;&gt;CGAL-4.1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.1 offers the following improvements and new functionality over
@@ -13760,10 +13760,10 @@ still available for backward compatibility.&lt;/li&gt;
    <updated>2012-08-17T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2012/08/17/cgal-41-beta1</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.1-beta1&quot;&gt;Download CGAL-4.1-beta1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/Manual/4.1/doc_html/cgal_manual/packages.html&quot;&gt;CGAL-4.1-beta1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 4.1 offers the following improvements and new functionality over
@@ -13854,10 +13854,10 @@ still available for backward compatibility.&lt;/li&gt;
    <updated>2012-07-04T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2012/07/04/cgal-402</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.0.2&quot;&gt;Download CGAL-4.0.2&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/Manual/4.0.2/doc_html/cgal_manual/packages.html&quot;&gt;CGAL-4.0.2 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;This is a bug fix release. It fixes a bug in the &lt;code&gt;CMakeLists.txt&lt;/code&gt; for &lt;a href=&quot;../../../../2012/07/03/cgal-401&quot;&gt;CGAL-4.0.1&lt;/a&gt;, that prevented even
@@ -13871,10 +13871,10 @@ building the libraries.&lt;/p&gt;
    <updated>2012-07-03T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2012/07/03/cgal-401</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.0.1&quot;&gt;Download CGAL-4.0.1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/Manual/4.0.1/doc_html/cgal_manual/packages.html&quot;&gt;CGAL-4.0.1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;This is a bug fix release. Apart various minor fixes in the documentation,
@@ -13980,10 +13980,10 @@ Have a look at our &lt;a href=&quot;https://cgal.github.io/cgal-web/gsoc/2012.ht
    <updated>2012-03-12T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2012/03/12/cgal-40</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-4.0&quot;&gt;Download CGAL-4.0&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/Manual/4.0/doc_html/cgal_manual/packages.html&quot;&gt;CGAL-4.0 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3&gt;License Changes&lt;/h3&gt;
@@ -14328,10 +14328,10 @@ thread-safety can be deactivated by defining &lt;code class=&quot;language-plain
    <updated>2011-09-27T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2011/09/27/cgal-39</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-3.9&quot;&gt;Download CGAL-3.9&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/Manual/3.9/doc_html/cgal_manual/packages.html&quot;&gt;CGAL-3.9 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 3.9 offers the following improvements and new functionality over
@@ -14459,10 +14459,10 @@ of the embedding surface were replaced by the following new tags:
    <updated>2011-04-19T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2011/04/19/cgal-38</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-3.8&quot;&gt;Download CGAL-3.8&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/Manual/3.8/doc_html/cgal_manual/packages.html&quot;&gt;CGAL-3.8 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 3.8 offers the following improvements and new functionality over
@@ -14665,10 +14665,10 @@ Have a look at our &lt;a href=&quot;https://cgal.github.io/cgal-web/gsoc/2011.ht
    <updated>2011-03-14T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2011/03/14/cgal-38-beta1</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-3.8-beta1&quot;&gt;Download CGAL-3.8 beta1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/Manual/3.8/doc_html/cgal_manual/packages.html&quot;&gt;CGAL-3.8 beta documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 3.8 offers the following improvements and new functionality over
@@ -14859,10 +14859,10 @@ for arrangement of Bezier curves.&lt;/li&gt;
    <updated>2010-10-15T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2010/10/15/cgal-37</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-3.7&quot;&gt;Download CGAL-3.7&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/Manual/3.7/doc_html/cgal_manual/packages.html&quot;&gt;CGAL-3.7 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 3.7 offers the following improvements and new functionality over
@@ -15004,10 +15004,10 @@ CGAL can deal with large data sets (64 bit addresses).&lt;/li&gt;
    <updated>2010-08-23T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2010/08/23/cgal-37-beta</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-3.7-beta1&quot;&gt;Download CGAL-3.7 beta&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/Manual/3.7/doc_html/cgal_manual/packages.html&quot;&gt;CGAL-3.7 beta documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 3.7 offers the following improvements and new functionality over
@@ -15159,10 +15159,10 @@ CGAL can deal with large data sets (64 bit addresses).&lt;/li&gt;
    <updated>2010-06-30T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2010/06/30/cgal-361</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-3.6.1&quot;&gt;Download CGAL-3.6.1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/Manual/3.6.1/doc_html/cgal_manual/packages.html&quot;&gt;CGAL-3.6.1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;This is a bug fix release. The following has been changed since &lt;a href=&quot;../../../../2010/03/22/cgal-36&quot;&gt;CGAL 3.6&lt;/a&gt;:&lt;/p&gt;
@@ -15267,10 +15267,10 @@ Have a look at our &lt;a href=&quot;https://cgal.github.io/cgal-web/gsoc/2010.ht
    <updated>2010-03-22T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2010/03/22/cgal-36</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-3.6&quot;&gt;Download CGAL-3.6&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/Manual/3.6/doc_html/cgal_manual/packages.html&quot;&gt;CGAL-3.6 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 3.6 offers the following improvements and new functionality over
@@ -15454,10 +15454,10 @@ computer resources.&lt;/li&gt;
    <updated>2009-12-22T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2009/12/22/cgal-351</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-3.5.1&quot;&gt;Download CGAL-3.5.1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/Manual/3.5.1/doc_html/cgal_manual/packages.html&quot;&gt;CGAL-3.5.1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;This is a bug fix release for &lt;a href=&quot;../../../../2009/10/05/cgal-35&quot;&gt;CGAL 3.5&lt;/a&gt;.&lt;/p&gt;
@@ -15526,10 +15526,10 @@ the parameters in this order.&lt;/li&gt;
    <updated>2009-10-05T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2009/10/05/cgal-35</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-3.5&quot;&gt;Download CGAL-3.5&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/Manual/3.5/doc_html/cgal_manual/packages.html&quot;&gt;CGAL-3.5 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;b&gt;CGAL releases will now be published about every six months. As a transition
@@ -15712,10 +15712,10 @@ Plugins for CGAL main 2D algorithm are provided as demo.&lt;/li&gt;
    <updated>2009-07-30T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2009/07/30/cgal-35-beta1</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-3.5-beta1&quot;&gt;Download CGAL-3.5 beta1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/Manual/3.5/doc_html/cgal_manual/packages.html&quot;&gt;CGAL-3.5 beta1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;b&gt;CGAL releases will now be published about every six months. As a transition
@@ -15888,10 +15888,10 @@ Plugins for CGAL main 2D algorithm are provided as demo.&lt;/li&gt;
    <updated>2009-01-22T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2009/01/22/cgal-34</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-3.4&quot;&gt;Download CGAL-3.4&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/Manual/3.4/doc_html/cgal_manual/packages.html&quot;&gt;CGAL-3.4 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 3.4 differs from &lt;a href=&quot;../../../../2007/09/04/cgal-331&quot;&gt;CGAL 3.3.1&lt;/a&gt; in the platforms that are supported and
@@ -16114,10 +16114,10 @@ offset of a polygon.&lt;/li&gt;
    <updated>2008-12-19T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2008/12/19/cgal-34-beta1</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-3.4-beta1&quot;&gt;Download CGAL-3.4 beta1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/Manual/3.4/doc_html/cgal_manual/packages.html&quot;&gt;CGAL-3.4 beta1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 3.4 differs from &lt;a href=&quot;../../../../2007/09/04/cgal-331&quot;&gt;CGAL 3.3.1&lt;/a&gt; in the platforms that are supported and
@@ -16362,10 +16362,10 @@ arrangements of conics, for example, when defining an arc with 5 points.&lt;/li&
    <updated>2007-09-04T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2007/09/04/cgal-331</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-3.3.1&quot;&gt;Download CGAL-3.3.1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/Manual/3.3.1/doc_html/cgal_manual/packages.html&quot;&gt;CGAL-3.3.1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;This is a bug fix release for &lt;a href=&quot;../../../../2007/06/01/cgal-33&quot;&gt;CGAL 3.3&lt;/a&gt;.&lt;/p&gt;
@@ -16538,10 +16538,10 @@ section of &lt;a href=&quot;https://www.cgal.org&quot;&gt;www.cgal.org&lt;/a&gt;
    <updated>2007-06-01T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2007/06/01/cgal-33</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-3.3&quot;&gt;Download CGAL-3.3&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/Manual/3.3/doc_html/cgal_manual/packages.html&quot;&gt;CGAL-3.3 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 3.3 differs from &lt;a href=&quot;../../../../2006/05/01/cgal-32&quot;&gt;CGAL 3.2&lt;/a&gt; in the platforms that are supported and
@@ -16774,10 +16774,10 @@ equations and inequalities.&lt;/li&gt;
    <updated>2006-07-01T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2006/07/01/cgal-321</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-3.2.1&quot;&gt;Download CGAL-3.2.1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/Manual/3.2.1/doc_html/cgal_manual/packages.html&quot;&gt;CGAL-3.2.1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;This is a bug fix release for &lt;a href=&quot;../../../../2006/05/01/cgal-32&quot;&gt;CGAL 3.2&lt;/a&gt;.&lt;/p&gt;
@@ -16839,10 +16839,10 @@ ambiguities with Boost’s &lt;code class=&quot;language-plaintext highlighter-r
    <updated>2006-05-01T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2006/05/01/cgal-32</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-3.2&quot;&gt;Download CGAL-3.2&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/Manual/3.2/doc_html/cgal_manual/packages.html&quot;&gt;CGAL-3.2 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 3.2 differs from &lt;a href=&quot;../../../../2004/12/01/cgal-31&quot;&gt;CGAL 3.1&lt;/a&gt; in the platforms that are supported and
@@ -17157,10 +17157,10 @@ http://www.elsevier.com/locate/comgeo&lt;/a&gt;.&lt;/p&gt;
    <updated>2004-12-01T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2004/12/01/cgal-31</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-3.1&quot;&gt;Download CGAL-3.1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/Manual/3.1/doc_html/cgal_manual/packages.html&quot;&gt;CGAL-3.1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 3.1 differs from &lt;a href=&quot;../../../../2003/11/01/cgal-30&quot;&gt;CGAL 3.0&lt;/a&gt; in the platforms that are supported and
@@ -17397,7 +17397,7 @@ facet_degree, edge_flip, and is_closed.&lt;/li&gt;
    <updated>2004-02-01T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2004/02/01/cgal-301</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-3.0.1&quot;&gt;Download CGAL-3.0.1&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;This is a bug-fix release. No new features have been added in 3.0.1. Here is the list of bug-fixes:&lt;/p&gt;
@@ -17477,7 +17477,7 @@ this should speed up some kinds of computations.&lt;/li&gt;
    <updated>2003-11-01T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2003/11/01/cgal-30</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-3.0&quot;&gt;Download CGAL-3.0&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 3.0 differs from &lt;a href=&quot;../../../../2002/05/01/cgal-24&quot;&gt;CGAL 2.4&lt;/a&gt; in the platforms that are supported and
@@ -17892,7 +17892,7 @@ or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Kernel::Tr
    <updated>2002-05-01T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2002/05/01/cgal-24</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-2.4&quot;&gt;Download CGAL-2.4&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 2.4 differs from &lt;a href=&quot;../../../../2001/10/01/cgal-23&quot;&gt;CGAL 2.3&lt;/a&gt; in the platforms that are supported and
@@ -18075,7 +18075,7 @@ traits does not compile for either of the above packages.&lt;/li&gt;
    <updated>2001-10-01T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2001/10/01/cgal-23</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-2.3&quot;&gt;Download CGAL-2.3&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 2.3 differs from &lt;a href=&quot;../../../../2000/10/01/cgal-22&quot;&gt;CGAL 2.2&lt;/a&gt; in the platforms
@@ -18309,7 +18309,7 @@ version of the LEDA window lib.&lt;/li&gt;
    <updated>2000-10-01T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2000/10/01/cgal-22</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-2.2&quot;&gt;Download CGAL-2.2&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 2.2 differs from &lt;a href=&quot;../../../../2000/01/01/cgal-21&quot;&gt;CGAL 2.1&lt;/a&gt; in the platforms that are supported and
@@ -18380,7 +18380,7 @@ is now available.&lt;/li&gt;
    <updated>2000-01-01T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2000/01/01/cgal-21</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-2.1&quot;&gt;Download CGAL 2.1&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 2.1 differs from &lt;a href=&quot;../../../../1999/06/01/cgal-20&quot;&gt;CGAL 2.0&lt;/a&gt; in the platforms
@@ -18456,7 +18456,7 @@ This package requires LEDA to be installed.&lt;/li&gt;
    <updated>1999-06-01T00:00:00+00:00</updated>
    <id>http://www.cgal.org/1999/06/01/cgal-20</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-2.0&quot;&gt;Download CGAL-2.0&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;The main difference from &lt;a href=&quot;../../../../1999/01/01/cgal-12&quot;&gt;CGAL 1.2&lt;/a&gt; is the
@@ -18472,7 +18472,7 @@ the standard library and namespace &lt;code&gt;CGAL::&lt;/code&gt; for the CGAL 
    <updated>1999-01-01T00:00:00+00:00</updated>
    <id>http://www.cgal.org/1999/01/01/cgal-12</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-1.2&quot;&gt;Download CGAL-1.2&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Additions to &lt;a href=&quot;../../../../1998/07/01/cgal-11&quot;&gt;CGAL 1.1&lt;/a&gt; include: &lt;/p&gt;
@@ -18495,7 +18495,7 @@ the standard library and namespace &lt;code&gt;CGAL::&lt;/code&gt; for the CGAL 
    <updated>1998-07-01T00:00:00+00:00</updated>
    <id>http://www.cgal.org/1998/07/01/cgal-11</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-1.1&quot;&gt;Download CGAL-1.1&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Additions to &lt;a href=&quot;../../../../1998/04/01/cgal-10&quot;&gt;CGAL 1.0&lt;/a&gt; include:
@@ -18520,7 +18520,7 @@ the standard library and namespace &lt;code&gt;CGAL::&lt;/code&gt; for the CGAL 
    <updated>1998-04-01T00:00:00+00:00</updated>
    <id>http://www.cgal.org/1998/04/01/cgal-10</id>
    <content type="html">
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/releases%2FCGAL-1.0&quot;&gt;Download CGAL-1.0&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Additions to &lt;a href=&quot;../../../../1997/06/01/cgal-09&quot;&gt;CGAL 0.9&lt;/a&gt; include:
