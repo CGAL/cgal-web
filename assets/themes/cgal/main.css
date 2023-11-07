@@ -2,7 +2,7 @@
 	General Style
 --------------------------------------------------------------------------*/
 body {
-  background: #f5f5f2;/*url(../../img/page-background.png);*/
+  background: #f5f5f2;/*url(./img/page-background.png);*/
 }
 .section {
   padding: 20px 0;
@@ -1334,7 +1334,7 @@ span.color-red {
   top: 5px;
   width: 24px;
   height: 24px;
-  background-image: url(../../img/social-login.png);
+  background-image: url(./img/social-login.png);
   background-repeat: no-repeat;
 }
 .social-login .btn-facebook-login {
@@ -1396,7 +1396,7 @@ span.color-red {
   right: 20px;
   width: 120px;
   height: 32px;
-  background-image: url(../../img/in-press.png);
+  background-image: url(./img/in-press.png);
   background-repeat: no-repeat;
   -webkit-transition: .25s linear;
   -moz-transition: .25s linear;
@@ -1708,7 +1708,7 @@ span.color-red {
 .section-breadcrumbs {
   background: #222;
   background: rgba(34, 34, 34, 0.8);
-  background-image: url(../../img/banner-background.png);
+  background-image: url(./img/banner-background.png);
 }
 .section-breadcrumbs h1 {
   color: #FAFAFA;
@@ -1747,7 +1747,7 @@ span.color-red {
   display: block;
   width: 115px;
   height: 40px;
-  background: url(../../img/stay-connected.png);
+  background: url(./img/stay-connected.png);
   -webkit-opacity: 0.5;
   -moz-opacity: 0.5;
   opacity: 0.5;
@@ -2213,7 +2213,7 @@ span.color-red {
 /* LOADER */
 .bx-wrapper .bx-loading {
   min-height: 50px;
-  background: url(../../img/bx_loader.gif) center center no-repeat #fff;
+  background: url(./img/bx_loader.gif) center center no-repeat #fff;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -2258,11 +2258,11 @@ span.color-red {
 /* DIRECTION CONTROLS (NEXT / PREV) */
 .bx-wrapper .bx-prev {
   left: 10px;
-  background: url(../../img/controls.png) no-repeat 0 -32px;
+  background: url(./img/controls.png) no-repeat 0 -32px;
 }
 .bx-wrapper .bx-next {
   right: 10px;
-  background: url(../../img/controls.png) no-repeat -43px -32px;
+  background: url(./img/controls.png) no-repeat -43px -32px;
 }
 .bx-wrapper .bx-prev:hover {
   background-position: 0 0;
@@ -2293,7 +2293,7 @@ span.color-red {
   width: 10px;
   height: 11px;
   outline: 0;
-  background: url(../../img/controls.png) -86px -11px no-repeat;
+  background: url(./img/controls.png) -86px -11px no-repeat;
   margin: 0 3px;
 }
 .bx-wrapper .bx-controls-auto .bx-start:hover,
@@ -2306,7 +2306,7 @@ span.color-red {
   width: 9px;
   height: 11px;
   outline: 0;
-  background: url(../../img/controls.png) -86px -44px no-repeat;
+  background: url(./img/controls.png) -86px -44px no-repeat;
   margin: 0 3px;
 }
 .bx-wrapper .bx-controls-auto .bx-stop:hover,
