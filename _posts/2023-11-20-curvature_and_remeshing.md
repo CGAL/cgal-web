@@ -47,14 +47,14 @@ and using the Interpolated Corrected Curvature Measures function for curvature c
 <br>
 <div style="text-align:center;">
   <a href="../../../../images/david_comparison.png"><img src="../../../../images/david_comparison.png" style="max-width:95%"/></a><br>
-  <br><small>Input Mesh (left), curvature based isotropic remeshing(right).</small>
+  <br><small>Input Mesh (left), curvature based isotropic remeshing (right).</small>
 </div>
 
 <br>
 <br>
 <div style="text-align:center;">
   <a href="../../../../images/thorvaldsen_comparison.png"><img src="../../../../images/thorvaldsen_comparison.png" style="max-width:95%"/></a><br>
-  <br><small>Input Mesh (left), curvature based isotropic remeshing(right).</small>
+  <br><small>Input Mesh (left), curvature based isotropic remeshing (right).</small>
 </div>
 <br>
 
