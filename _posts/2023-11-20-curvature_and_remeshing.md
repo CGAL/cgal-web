@@ -7,7 +7,6 @@ tags: [""]
 ---
 {% include JB/setup %}
 
-<br>
 <p>
 The CGAL project has been participating to 12 editions of the <a hef="https://summerofcode.withgoogle.com/">Google Summer of Code</a>
 internship program. It is a great opportunity to welcome new members to our community, both contributors and mentors.
@@ -32,8 +31,9 @@ the surface mesh.
   <a href="../../../../images/bimba_curvature.png"><img src="../../../../images/bimba_curvature.png" style="max-width:95%"/></a><br>
   <br><small> Mean curvature, Gaussian curvature, minimal principal curvature direction and maximal principal curvature direction on a mesh (ball radius set to 0.04).</small>
 </div>
-
 <br>
+<br>
+
 <h3>Isotropic Remeshing with Sizing Field</h3>
 
 Almost since the introduction of the Polygon Mesh Processing package in CGAL, the function <code>isotropic_remeshing()</code>
@@ -50,10 +50,13 @@ and using the Interpolated Corrected Curvature Measures function for curvature c
 </div>
 
 <br>
+<br>
 <div style="text-align:center;">
   <a href="../../../../images/thorvaldsen_comparison.png"><img src="../../../../images/thorvaldsen_comparison.png" style="max-width:95%"/></a><br>
   <br><small>Input Mesh (left), curvature based isotropic remeshing(right).</small>
 </div>
+<br>
+
 
 <h3>Status</h3>
 
