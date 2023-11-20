@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2023-11-20T16:08:42+00:00</updated>
+ <updated>2023-11-20T16:22:08+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -18,9 +18,6 @@
    <updated>2023-11-20T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2023/11/20/curvature_and_remeshing</id>
    <content type="html">
-&lt;h3&gt;&lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Sébastien Loriot&lt;/a&gt;&lt;/h3&gt;
-&lt;h4&gt;&lt;a href=&quot;http://www.geometryfactory.com&quot; target=&quot;_blank&quot;&gt;GeometryFactory&lt;/a&gt;&lt;/h4&gt;
-
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;
 The CGAL project has been participating to 12 editions of the &lt;a hef=&quot;https://summerofcode.withgoogle.com/&quot;&gt;Google Summer of Code&lt;/a&gt;
