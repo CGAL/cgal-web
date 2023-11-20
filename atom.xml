@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2023-11-20T16:59:34+00:00</updated>
+ <updated>2023-11-20T17:00:15+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -58,14 +58,14 @@ and using the Interpolated Corrected Curvature Measures function for curvature c
 &lt;br /&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
   &lt;a href=&quot;../../../../images/david_comparison.png&quot;&gt;&lt;img src=&quot;../../../../images/david_comparison.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
-  &lt;br /&gt;&lt;small&gt;Input Mesh (left), curvature based isotropic remeshing(right).&lt;/small&gt;
+  &lt;br /&gt;&lt;small&gt;Input Mesh (left), curvature based isotropic remeshing (right).&lt;/small&gt;
 &lt;/div&gt;
 
 &lt;br /&gt;
 &lt;br /&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
   &lt;a href=&quot;../../../../images/thorvaldsen_comparison.png&quot;&gt;&lt;img src=&quot;../../../../images/thorvaldsen_comparison.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
-  &lt;br /&gt;&lt;small&gt;Input Mesh (left), curvature based isotropic remeshing(right).&lt;/small&gt;
+  &lt;br /&gt;&lt;small&gt;Input Mesh (left), curvature based isotropic remeshing (right).&lt;/small&gt;
 &lt;/div&gt;
 &lt;br /&gt;
 
