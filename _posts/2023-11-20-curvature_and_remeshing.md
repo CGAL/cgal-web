@@ -24,7 +24,8 @@ the Polygon Mesh Processing package of CGAL now contains the function <code>inte
 is able to compute the Gaussian curvature, the mean curvature, and the principal curvature and directions at every vertex (or a single one)
 of a surface mesh. An additional parameter, the ball radius, is provided so that the curvature estimation is summed over the neigborhood within
 a ball centered at each vertex (rather than using its 1-ring neighborhood) to accomodate for possible noise in the positions of vertices of
-the surface mesh.
+the surface mesh.   Additionally,  if the polygonal mesh has a user-prescribed normal vector field, as opposed to only relying solely on the geometric information
+(e.g., post-processed normal vectors, normal vectors from normal maps), the corrected curvature measures can adapt accordingly.
 
 <br>
 <div style="text-align:center;">
