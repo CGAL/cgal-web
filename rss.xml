@@ -5,15 +5,14 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2023-11-20T16:25:16+00:00</lastBuildDate>
-        <pubDate>2023-11-20T16:25:16+00:00</pubDate>
+        <lastBuildDate>2023-11-20T16:26:45+00:00</lastBuildDate>
+        <pubDate>2023-11-20T16:26:45+00:00</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
                 <title>New in CGAL: Interpolated Corrected Curvature Measures and Isotropic Remeshing with Sizing Field</title>
                 <description>
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;
 The CGAL project has been participating to 12 editions of the &lt;a hef=&quot;https://summerofcode.withgoogle.com/&quot;&gt;Google Summer of Code&lt;/a&gt;
 internship program. It is a great opportunity to welcome new members to our community, both contributors and mentors.
