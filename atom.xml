@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2023-11-20T16:26:45+00:00</updated>
+ <updated>2023-11-20T16:59:34+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -35,7 +35,8 @@ the Polygon Mesh Processing package of CGAL now contains the function &lt;code&g
 is able to compute the Gaussian curvature, the mean curvature, and the principal curvature and directions at every vertex (or a single one)
 of a surface mesh. An additional parameter, the ball radius, is provided so that the curvature estimation is summed over the neigborhood within
 a ball centered at each vertex (rather than using its 1-ring neighborhood) to accomodate for possible noise in the positions of vertices of
-the surface mesh.
+the surface mesh.   Additionally,  if the polygonal mesh has a user-prescribed normal vector field, as opposed to only relying solely on the geometric information
+(e.g., post-processed normal vectors, normal vectors from normal maps), the corrected curvature measures can adapt accordingly.
 
 &lt;br /&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
