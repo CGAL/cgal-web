@@ -153,8 +153,8 @@ We present them together, as the second one relies on the first.
 Based on the article <a href="https://doi.org/10.1111/cgf.14067"><i>Lachaud, J.-O., Romon, P., Thibert, B. and Coeurjolly, D. (2020), Interpolated corrected curvature measures for polygonal surfaces. Computer Graphics Forum, 39: 41-54</i></a>,
 the <em>Polygon Mesh Processing</em> package of CGAL now contains the function <code>interpolated_corrected_curvatures()</code>. This function
 can compute the Gaussian curvature, the mean curvature, and the principal curvatures and directions at every vertex (or a single one)
-of a surface mesh. An additional parameter, the ball radius, is provided so that the curvature estimation is summed over the neigborhood within
-a ball centered at each vertex (rather than using its 1-ring neighborhood) to accomodate for possible noise in the positions of vertices of
+of a surface mesh. An additional parameter, the ball radius, is provided so that the curvature estimation is summed over the neighborhood within
+a ball centered at each vertex (rather than using its 1-ring neighborhood) to accommodate for possible noise in the positions of vertices of
 the surface mesh.   Additionally,  if the polygonal mesh has a user-prescribed normal vector field, as opposed to only relying on the geometric information
 (e.g., post-processed normal vectors, normal vectors from normal maps), the corrected curvature measures can adapt accordingly.
 
