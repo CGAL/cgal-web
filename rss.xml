@@ -5,8 +5,8 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2023-11-21T08:59:04+00:00</lastBuildDate>
-        <pubDate>2023-11-21T08:59:04+00:00</pubDate>
+        <lastBuildDate>2023-11-21T10:45:38+00:00</lastBuildDate>
+        <pubDate>2023-11-21T10:45:38+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -14,19 +14,23 @@
                 <title>New in CGAL: Interpolated Corrected Curvature Measures and Isotropic Remeshing with Sizing Field</title>
                 <description>
 &lt;p&gt;
-The CGAL project has been participating to 12 editions of the &lt;a hef=&quot;https://summerofcode.withgoogle.com/&quot;&gt;Google Summer of Code&lt;/a&gt;
+The CGAL project has been participating in 12 editions of the &lt;a hef=&quot;https://summerofcode.withgoogle.com/&quot;&gt;Google Summer of Code&lt;/a&gt;
 internship program. It is a great opportunity to welcome new members to our community, both contributors and mentors.
-Today, we highlight the inclusion into the library of a 2022 contribution from &lt;a href=&quot;https://www.linkedin.com/in/hossam-saeed-1abab91b3/&quot;&gt;Hossam Mohamed Seed&lt;/a&gt;
+This post introduces two contributions that have been incorporated into the CGAL library.
+
+First, &lt;em&gt;Interpolated Corrected Curvature Measures&lt;/em&gt; from GSoC'22, by &lt;a href=&quot;https://www.linkedin.com/in/hossam-saeed-1abab91b3/&quot;&gt;Hossam Mohamed Seed&lt;/a&gt;
 mentored by &lt;a href=&quot;https://perso.liris.cnrs.fr/david.coeurjolly/&quot;&gt;David Coeurjolly&lt;/a&gt;,
-&lt;a href=&quot;https://jacquesolivierlachaud.github.io/&quot;&gt;Jacques-Olivier Lachaud&lt;/a&gt; and &lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Sébastien Loriot&lt;/a&gt; on the one hand,
-and of a 2023 contribution from &lt;a href=&quot;https://3d.bk.tudelft.nl/ipaden/&quot;&gt;Ivan Pađen&lt;/a&gt; mentored by
-&lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Jane Tournois&lt;/a&gt; and &lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Sébastien Loriot&lt;/a&gt; on the other hand.
-The reason why we present them both together is because one is using the other one.
+&lt;a href=&quot;https://jacquesolivierlachaud.github.io/&quot;&gt;Jacques-Olivier Lachaud&lt;/a&gt;, and &lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Sébastien Loriot&lt;/a&gt;.
+
+Second,  &lt;em&gt;Isotropic Remeshing with Sizing Field&amp;lt;/h3&amp;gt;&lt;/em&gt; from GSoC'23  by &lt;a href=&quot;https://3d.bk.tudelft.nl/ipaden/&quot;&gt;Ivan Pađen&lt;/a&gt; mentored by
+&lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Jane Tournois&lt;/a&gt; and &lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Sébastien Loriot&lt;/a&gt;.
+
+We present them together, as the second one relies on the first.
 
 &lt;br /&gt;
 &lt;h3&gt;Interpolated Corrected Curvature Measures&lt;/h3&gt;
 Based on the article &lt;a href=&quot;https://doi.org/10.1111/cgf.14067&quot;&gt;&lt;i&gt;Lachaud, J.-O., Romon, P., Thibert, B. and Coeurjolly, D. (2020), Interpolated corrected curvature measures for polygonal surfaces. Computer Graphics Forum, 39: 41-54&lt;/i&gt;&lt;/a&gt;,
-the Polygon Mesh Processing package of CGAL now contains the function &lt;code&gt;interpolated_corrected_curvatures()&lt;/code&gt;. This function
+the &lt;em&gt;Polygon Mesh Processing&lt;/em&gt; package of CGAL now contains the function &lt;code&gt;interpolated_corrected_curvatures()&lt;/code&gt;. This function
 is able to compute the Gaussian curvature, the mean curvature, and the principal curvature and directions at every vertex (or a single one)
 of a surface mesh. An additional parameter, the ball radius, is provided so that the curvature estimation is summed over the neigborhood within
 a ball centered at each vertex (rather than using its 1-ring neighborhood) to accomodate for possible noise in the positions of vertices of
