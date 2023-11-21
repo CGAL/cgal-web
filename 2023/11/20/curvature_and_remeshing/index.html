@@ -168,24 +168,24 @@ the surface mesh.   Additionally,  if the polygonal mesh has a user-prescribed n
 
 <h3>Isotropic Remeshing with Sizing Field</h3>
 
-Almost since the introduction of the Polygon Mesh Processing package in CGAL, the function <code>isotropic_remeshing()</code>
+Almost since the introduction of the <em>Polygon Mesh Processing</em> package in CGAL, the function <code>isotropic_remeshing()</code>
 has provided a way to isotropically and uniformly remesh a triangle mesh, given a target edge length. This implementation
 includes the preservation of (sharp) feature lines, as well as the possibility to only remesh a portion of the mesh.
-Extending this work, a concept of sizing field as been incorporated in the function, and a first model has been
+Extending this work, a concept of sizing field has been incorporated to the function, and a first model has been
 implemented following the article <a href="https://diglib.eg.org/handle/10.2312/conf.EG2013.short.029-032"><i>Dunyach, Marion, et al. "Adaptive remeshing for real-time mesh deformation." Eurographics 2013. The Eurographics Association, 2013.</i></a>
-and using the Interpolated Corrected Curvature Measures function for curvature computation.
+and using the <em>Interpolated Corrected Curvature Measures</em> function for curvature computation.
 
 <br />
 <div style="text-align:center;">
   <a href="../../../../images/david_comparison.png"><img src="../../../../images/david_comparison.png" style="max-width:95%" /></a><br />
-  <br /><small>Input Mesh (left), curvature based isotropic remeshing (right).</small>
+  <br /><small>Input Mesh (left), Curvature based isotropic remeshing (right).</small>
 </div>
 
 <br />
 <br />
 <div style="text-align:center;">
   <a href="../../../../images/thorvaldsen_comparison.png"><img src="../../../../images/thorvaldsen_comparison.png" style="max-width:95%" /></a><br />
-  <br /><small>Input Mesh (left), curvature based isotropic remeshing (right).</small>
+  <br /><small>Input Mesh (left), Curvature based isotropic remeshing (right).</small>
 </div>
 <br />
 

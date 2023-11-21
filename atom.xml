@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2023-11-21T10:46:29+00:00</updated>
+ <updated>2023-11-21T10:47:24+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -52,24 +52,24 @@ the surface mesh.   Additionally,  if the polygonal mesh has a user-prescribed n
 
 &lt;h3&gt;Isotropic Remeshing with Sizing Field&lt;/h3&gt;
 
-Almost since the introduction of the Polygon Mesh Processing package in CGAL, the function &lt;code&gt;isotropic_remeshing()&lt;/code&gt;
+Almost since the introduction of the &lt;em&gt;Polygon Mesh Processing&lt;/em&gt; package in CGAL, the function &lt;code&gt;isotropic_remeshing()&lt;/code&gt;
 has provided a way to isotropically and uniformly remesh a triangle mesh, given a target edge length. This implementation
 includes the preservation of (sharp) feature lines, as well as the possibility to only remesh a portion of the mesh.
-Extending this work, a concept of sizing field as been incorporated in the function, and a first model has been
+Extending this work, a concept of sizing field has been incorporated to the function, and a first model has been
 implemented following the article &lt;a href=&quot;https://diglib.eg.org/handle/10.2312/conf.EG2013.short.029-032&quot;&gt;&lt;i&gt;Dunyach, Marion, et al. &quot;Adaptive remeshing for real-time mesh deformation.&quot; Eurographics 2013. The Eurographics Association, 2013.&lt;/i&gt;&lt;/a&gt;
-and using the Interpolated Corrected Curvature Measures function for curvature computation.
+and using the &lt;em&gt;Interpolated Corrected Curvature Measures&lt;/em&gt; function for curvature computation.
 
 &lt;br /&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
   &lt;a href=&quot;../../../../images/david_comparison.png&quot;&gt;&lt;img src=&quot;../../../../images/david_comparison.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
-  &lt;br /&gt;&lt;small&gt;Input Mesh (left), curvature based isotropic remeshing (right).&lt;/small&gt;
+  &lt;br /&gt;&lt;small&gt;Input Mesh (left), Curvature based isotropic remeshing (right).&lt;/small&gt;
 &lt;/div&gt;
 
 &lt;br /&gt;
 &lt;br /&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
   &lt;a href=&quot;../../../../images/thorvaldsen_comparison.png&quot;&gt;&lt;img src=&quot;../../../../images/thorvaldsen_comparison.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
-  &lt;br /&gt;&lt;small&gt;Input Mesh (left), curvature based isotropic remeshing (right).&lt;/small&gt;
+  &lt;br /&gt;&lt;small&gt;Input Mesh (left), Curvature based isotropic remeshing (right).&lt;/small&gt;
 &lt;/div&gt;
 &lt;br /&gt;
 
