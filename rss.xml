@@ -5,8 +5,8 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2023-11-21T10:59:04+00:00</lastBuildDate>
-        <pubDate>2023-11-21T10:59:04+00:00</pubDate>
+        <lastBuildDate>2023-11-21T13:53:03+00:00</lastBuildDate>
+        <pubDate>2023-11-21T13:53:03+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -22,7 +22,7 @@ First, &lt;em&gt;Interpolated Corrected Curvature Measures&lt;/em&gt; from GSoC'
 mentored by &lt;a href=&quot;https://perso.liris.cnrs.fr/david.coeurjolly/&quot;&gt;David Coeurjolly&lt;/a&gt;,
 &lt;a href=&quot;https://jacquesolivierlachaud.github.io/&quot;&gt;Jacques-Olivier Lachaud&lt;/a&gt;, and &lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Sébastien Loriot&lt;/a&gt;.
 
-Second,  &lt;em&gt;Isotropic Remeshing with Sizing Field&amp;lt;/h3&amp;gt;&lt;/em&gt; from GSoC'23  by &lt;a href=&quot;https://3d.bk.tudelft.nl/ipaden/&quot;&gt;Ivan Pađen&lt;/a&gt; mentored by
+Second,  &lt;em&gt;Isotropic Remeshing with Sizing Field&lt;/em&gt; from GSoC'23  by &lt;a href=&quot;https://3d.bk.tudelft.nl/ipaden/&quot;&gt;Ivan Pađen&lt;/a&gt; mentored by
 &lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Jane Tournois&lt;/a&gt; and &lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Sébastien Loriot&lt;/a&gt;.
 
 We present them together, as the second one relies on the first.
