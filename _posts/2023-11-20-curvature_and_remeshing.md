@@ -32,6 +32,7 @@ the surface mesh.   Additionally,  if the polygonal mesh has a user-prescribed n
 (e.g., post-processed normal vectors, normal vectors from normal maps), the corrected curvature measures can adapt accordingly.
 
 <br>
+<br>
 <div style="text-align:center;">
   <a href="../../../../images/bimba_curvature.png"><img src="../../../../images/bimba_curvature.png" style="max-width:95%"/></a><br>
   <br><small> Mean curvature, Gaussian curvature, Minimal principal curvature directions and Maximal principal curvature directions on a mesh.</small>
