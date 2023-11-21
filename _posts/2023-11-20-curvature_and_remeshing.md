@@ -16,7 +16,7 @@ First, <em>Interpolated Corrected Curvature Measures</em> from GSoC'22, by <a hr
 mentored by <a href="https://perso.liris.cnrs.fr/david.coeurjolly/">David Coeurjolly</a>,
 <a href="https://jacquesolivierlachaud.github.io/">Jacques-Olivier Lachaud</a>, and <a href="https://geometryfactory.com/who-we-are/">Sébastien Loriot</a>.
 
-Second,  <em>Isotropic Remeshing with Sizing Field</h3></em> from GSoC'23  by <a href="https://3d.bk.tudelft.nl/ipaden/">Ivan Pađen</a> mentored by
+Second,  <em>Isotropic Remeshing with Sizing Field</em> from GSoC'23  by <a href="https://3d.bk.tudelft.nl/ipaden/">Ivan Pađen</a> mentored by
 <a href="https://geometryfactory.com/who-we-are/">Jane Tournois</a> and <a href="https://geometryfactory.com/who-we-are/">Sébastien Loriot</a>.
 
 We present them together, as the second one relies on the first.
