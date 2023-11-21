@@ -10,7 +10,7 @@ tags: [""]
 <p>
 The CGAL project has been participating to 12 editions of the <a hef="https://summerofcode.withgoogle.com/">Google Summer of Code</a>
 internship program. It is a great opportunity to welcome new members to our community, both contributors and mentors.
-Today, we highlight the inclusion into the library of a 2022 contribution from <a href="https://github.com/hoskillua">Hossam Mohamed Seed</a>
+Today, we highlight the inclusion into the library of a 2022 contribution from <a href="https://www.linkedin.com/in/hossam-saeed-1abab91b3/">Hossam Mohamed Seed</a>
 mentored by <a href="https://perso.liris.cnrs.fr/david.coeurjolly/">David Coeurjolly</a>,
 <a href="https://jacquesolivierlachaud.github.io/">Jacques-Olivier Lachaud</a> and <a href="https://geometryfactory.com/who-we-are/">Sébastien Loriot</a> on the one hand,
 and of a 2023 contribution from <a href="https://3d.bk.tudelft.nl/ipaden/">Ivan Pađen</a> mentored by
@@ -38,7 +38,7 @@ the surface mesh.   Additionally,  if the polygonal mesh has a user-prescribed n
 <h3>Isotropic Remeshing with Sizing Field</h3>
 
 Almost since the introduction of the Polygon Mesh Processing package in CGAL, the function <code>isotropic_remeshing()</code>
-provides a way to isotropically and uniformly remesh a triangle mesh, given a target edge length. This implementation
+has provided a way to isotropically and uniformly remesh a triangle mesh, given a target edge length. This implementation
 includes the preservation of (sharp) feature lines, as well as the possibility to only remesh a portion of the mesh.
 Extending this work, a concept of sizing field as been incorporated in the function, and a first model has been
 implemented following the article <a href="https://diglib.eg.org/handle/10.2312/conf.EG2013.short.029-032"><i>Dunyach, Marion, et al. "Adaptive remeshing for real-time mesh deformation." Eurographics 2013. The Eurographics Association, 2013.</i></a>
@@ -61,7 +61,7 @@ and using the Interpolated Corrected Curvature Measures function for curvature c
 
 <h3>Status</h3>
 
-<p>All these additions are already integrated in CGAL's master branch on the
+<p>All these additions already are integrated in CGAL's master branch on the
 <a href="https://github.com/CGAL/cgal/">CGAL GitHub repository</a>, and will be officially released
 in the upcoming version of CGAL, CGAL 6.0, scheduled for mid 2024.</p>
 
