@@ -8,7 +8,7 @@ tags: [""]
 {% include JB/setup %}
 
 <p>
-The CGAL project has been participating in 12 editions of the <a hef="https://summerofcode.withgoogle.com/">Google Summer of Code</a>
+The CGAL project has been participating in 12 editions of the <a href="https://summerofcode.withgoogle.com/">Google Summer of Code</a>
 internship program. It is a great opportunity to welcome new members to our community, both contributors and mentors.
 This post introduces two contributions that have been incorporated into the CGAL library.
 
