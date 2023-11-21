@@ -5,8 +5,8 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2023-11-20T17:00:15+00:00</lastBuildDate>
-        <pubDate>2023-11-20T17:00:15+00:00</pubDate>
+        <lastBuildDate>2023-11-21T08:59:04+00:00</lastBuildDate>
+        <pubDate>2023-11-21T08:59:04+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -16,7 +16,7 @@
 &lt;p&gt;
 The CGAL project has been participating to 12 editions of the &lt;a hef=&quot;https://summerofcode.withgoogle.com/&quot;&gt;Google Summer of Code&lt;/a&gt;
 internship program. It is a great opportunity to welcome new members to our community, both contributors and mentors.
-Today, we highlight the inclusion into the library of a 2022 contribution from &lt;a href=&quot;https://github.com/hoskillua&quot;&gt;Hossam Mohamed Seed&lt;/a&gt;
+Today, we highlight the inclusion into the library of a 2022 contribution from &lt;a href=&quot;https://www.linkedin.com/in/hossam-saeed-1abab91b3/&quot;&gt;Hossam Mohamed Seed&lt;/a&gt;
 mentored by &lt;a href=&quot;https://perso.liris.cnrs.fr/david.coeurjolly/&quot;&gt;David Coeurjolly&lt;/a&gt;,
 &lt;a href=&quot;https://jacquesolivierlachaud.github.io/&quot;&gt;Jacques-Olivier Lachaud&lt;/a&gt; and &lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Sébastien Loriot&lt;/a&gt; on the one hand,
 and of a 2023 contribution from &lt;a href=&quot;https://3d.bk.tudelft.nl/ipaden/&quot;&gt;Ivan Pađen&lt;/a&gt; mentored by
@@ -44,7 +44,7 @@ the surface mesh.   Additionally,  if the polygonal mesh has a user-prescribed n
 &lt;h3&gt;Isotropic Remeshing with Sizing Field&lt;/h3&gt;
 
 Almost since the introduction of the Polygon Mesh Processing package in CGAL, the function &lt;code&gt;isotropic_remeshing()&lt;/code&gt;
-provides a way to isotropically and uniformly remesh a triangle mesh, given a target edge length. This implementation
+has provided a way to isotropically and uniformly remesh a triangle mesh, given a target edge length. This implementation
 includes the preservation of (sharp) feature lines, as well as the possibility to only remesh a portion of the mesh.
 Extending this work, a concept of sizing field as been incorporated in the function, and a first model has been
 implemented following the article &lt;a href=&quot;https://diglib.eg.org/handle/10.2312/conf.EG2013.short.029-032&quot;&gt;&lt;i&gt;Dunyach, Marion, et al. &quot;Adaptive remeshing for real-time mesh deformation.&quot; Eurographics 2013. The Eurographics Association, 2013.&lt;/i&gt;&lt;/a&gt;
@@ -67,7 +67,7 @@ and using the Interpolated Corrected Curvature Measures function for curvature c
 
 &lt;h3&gt;Status&lt;/h3&gt;
 
-&lt;p&gt;All these additions are already integrated in CGAL's master branch on the
+&lt;p&gt;All these additions already are integrated in CGAL's master branch on the
 &lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;, and will be officially released
 in the upcoming version of CGAL, CGAL 6.0, scheduled for mid 2024.&lt;/p&gt;
 
