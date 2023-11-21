@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2023-11-21T10:48:06+00:00</updated>
+ <updated>2023-11-21T10:49:21+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -42,6 +42,7 @@ a ball centered at each vertex (rather than using its 1-ring neighborhood) to ac
 the surface mesh.   Additionally,  if the polygonal mesh has a user-prescribed normal vector field, as opposed to only relying on the geometric information
 (e.g., post-processed normal vectors, normal vectors from normal maps), the corrected curvature measures can adapt accordingly.
 
+&lt;br /&gt;
 &lt;br /&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
   &lt;a href=&quot;../../../../images/bimba_curvature.png&quot;&gt;&lt;img src=&quot;../../../../images/bimba_curvature.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
