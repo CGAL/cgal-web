@@ -25,7 +25,7 @@ jobs:
       github.event.workflow_run.conclusion == 'success'
     steps:
       - name: 'Download artifact github pages'
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         id: artifactgh-pages
         with:
           script: |
@@ -62,7 +62,7 @@ jobs:
       github.event.workflow_run.conclusion == 'success'
     steps: 
         - name: get PR number
-          uses: actions/github-script@v6
+          uses: actions/github-script@v7
           with:
             script: |
               var artifacts = await github.rest.actions.listWorkflowRunArtifacts({
@@ -88,7 +88,7 @@ jobs:
             unzip pr_number.zip
             echo "number=$(cat pr_number.txt)" >> $GITHUB_OUTPUT
         - name: Post address
-          uses: actions/github-script@v6
+          uses: actions/github-script@v7
           if: ${{ success()}}
           with:
            github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -100,7 +100,7 @@ jobs:
               issue_number: ${{steps.prnumber.outputs.number}}
             });
         - name: Post error
-          uses: actions/github-script@v6
+          uses: actions/github-script@v7
           if: ${{ failure()}}
           with:
            github-token: ${{ secrets.GITHUB_TOKEN }}
