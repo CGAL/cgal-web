@@ -5,98 +5,10 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2023-12-18T15:43:18+00:00</lastBuildDate>
-        <pubDate>2023-12-18T15:43:18+00:00</pubDate>
+        <lastBuildDate>2023-12-19T10:48:03+00:00</lastBuildDate>
+        <pubDate>2023-12-19T10:48:03+00:00</pubDate>
         <ttl>1800</ttl>
 
-
-        <item>
-                <title>New in CGAL: Improvements for 3D Alpha Wrapping</title>
-                <description>
-&lt;h3&gt;&lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Mael Rouxel-Labbé&lt;/a&gt;&lt;/h3&gt;
-&lt;h4&gt;&lt;a href=&quot;http://www.geometryfactory.com&quot; target=&quot;_blank&quot;&gt;GeometryFactory&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;Introduced in CGAL 5.5, the package
-&lt;a href=&quot;https://doc.cgal.org/latest/Manual/packages.html#PkgAlphaWrap3&quot; text=&quot;3D Alpha Wrapping&quot;&gt;3D Alpha Wrapping&lt;/a&gt;
-can be used to generate watertight, manifold surface triangle meshes from any given inputs provided we can compute distances
-and intersections to this input. This enables the method to guarantee output properties,
-and genericity with respect to the input format (triangles, polylines, ...).
-In addition, it is guaranteed to strictly encloses the input, which is a mandatory property
-for applications needing conservative distance queries, such as collision avoidance,
-or motion planning. Finally, it is fully robust to defects in the input such as self-intersections,
-degeneracies, non-manifoldness...&lt;/p&gt;
-
-&lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/christmas_wrap.png&quot;&gt;&lt;img src=&quot;../../../../images/christmas_wrap.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
-  &lt;br /&gt;&lt;small&gt;Season's wrappings.&lt;/small&gt;
-&lt;/div&gt;
-
-&lt;p&gt;In the upcoming CGAL release, CGAL 6.0, we introduce a few improvements to the 3D Alpha Wrapping package:
-pause &amp;amp; resuming functionalities, fast &quot;LOD&quot; wrapping, generation of volumetric wraps, and some speed-ups.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3&gt;Resume and Restart Functionalities&lt;/h3&gt;
-
-&lt;p&gt;The input of the 3D Alpha Wrapping main function is a set of data, and two input parameters describing
-the feature size (alpha), and the isosurface of the distance field on which the mesh will live (offset,
-also named delta). The parameter alpha can be understood as the size of a spoon carving around the input.
-A larger alpha will thus remove small features and fill large gaps, and a small alpha will preserve those features,
-and enter the gaps and cavities (see also Section &lt;a href=&quot;https://doc.cgal.org/latest/Alpha_wrap_3/index.html#title5&quot;&gt;Choosing Parameters&lt;/a&gt;
-of the documentation). Although the physicality can be understood, it might be that one
-is not exactly sure which value should be used; or, one might simply wish to create a wrap that is
-as detailed as possible within a fixed amount of time.&lt;/p&gt;
-
-&lt;p&gt;This is now possible thanks to the addition of a visitor to the wrapping algorithm, which gives
-more information and control to the user during the wrapping process. An example illustrating
-has been added: &lt;a href=&quot;https://github.com/CGAL/cgal/blob/master/Alpha_wrap_3/examples/Alpha_wrap_3/pause_and_resume_wrapping.cpp&quot;&gt;pause_and_resume_wrapping.cpp&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Another closely related feature being added is the possibility of generating multiple wraps for different
-values of alpha for the same input, for example to generate different levels of detail (LODs).
-One could of course simply launch the wrapping process from scratch as many times as needed, but
-the resuming functionality improves greatly on this: by sorting the value of alpha in decreasing order
-(coarse to fine), we can restart from a previous result to generate the next version.
-By avoiding a recomputation from scratch, a lot of time is saved. Here is a new example
-illustrating the process: &lt;a href=&quot;https://github.com/CGAL/cgal/blob/master/Alpha_wrap_3/examples/Alpha_wrap_3/successive_wraps.cpp&quot;&gt;successive_wraps.cpp&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3&gt;Volumetric Meshing&lt;/h3&gt;
-
-&lt;p&gt;The wrapping algorithm constructs an underlying 3D triangulation of which the final wrap is a selected
-set of faces. Thus, at the end of the algorithm, we have a tetrahedrization of the volume bounded
-by the wrap. This tetrahedral mesh was totally unused so far, but a getter has been added.
-By combining this with the recent package &lt;a href=&quot;https://doc.cgal.org/latest/Manual/packages.html#PkgTetrahedralRemeshing&quot; text=&quot;Tetrahedral Remeshing&quot;&gt;Tetrahedral Remeshing&lt;/a&gt;,
-one can generate high-quality volumetric tetrahedral meshes of the space enclosed by the wrap.&lt;/p&gt;
-
-&lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/volumetric_wrap.png&quot;&gt;&lt;img src=&quot;../../../../images/volumetric_wrap.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
-  &lt;br /&gt;&lt;small&gt;Volumetric mesh of the notoriously painful input &lt;a href=&quot;https://ten-thousand-models.appspot.com/detail.html?file_id=996816&quot;&gt;996816.stl&lt;/a&gt; (Thingi10k).&lt;/small&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The following example describes this process: &lt;a href=&quot;https://github.com/CGAL/cgal/blob/master/Alpha_wrap_3/examples/Alpha_wrap_3/volumetric_wrap.cpp&quot;&gt;volumetric_wrap.cpp&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3&gt;Speed-up&lt;/h3&gt;
-
-&lt;p&gt;Finally, we always look for improvements while working on code. Various enhancements
-to the wrapping algorithms have resulted in a 2x speed-up of the code since CGAL 5.6!&lt;/p&gt;
-
-&lt;h3&gt;Status&lt;/h3&gt;
-
-&lt;p&gt;All these new improvements are already integrated in CGAL's master branch on the
-&lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;, and will be officially released
-in the upcoming version of CGAL, CGAL 6.0, scheduled for June 2024.&lt;/p&gt;
-
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
-&lt;a href=&quot;https://doc.cgal.org/latest/Manual/packages.html#PkgAlphaWrap3&quot;&gt;Documentation of the package Alpha_wrap_3&lt;/a&gt;
-&lt;br /&gt;
-&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
-&lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;&lt;/p&gt;
-</description>
-                <link>http://www.cgal.org/news/2023/12/17/alpha_wrapping_improvements/</link>
-                <guid>http://www.cgal.org/news/2023/12/17/alpha_wrapping_improvements</guid>
-                <pubDate>2023-12-17T00:00:00+00:00</pubDate>
-        </item>
 
         <item>
                 <title>New in CGAL: Interpolated Corrected Curvature Measures and Isotropic Remeshing with Sizing Field</title>
