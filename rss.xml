@@ -5,8 +5,8 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2023-12-20T10:46:33+00:00</lastBuildDate>
-        <pubDate>2023-12-20T10:46:33+00:00</pubDate>
+        <lastBuildDate>2023-12-20T11:12:31+00:00</lastBuildDate>
+        <pubDate>2023-12-20T11:12:31+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -77,7 +77,7 @@ one can generate high-quality volumetric tetrahedral meshes of the space enclose
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
   &lt;a href=&quot;../../../../images/volumetric_wrap.png&quot;&gt;&lt;img src=&quot;../../../../images/volumetric_wrap.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
-  &lt;br /&gt;&lt;small&gt;Volumetric mesh of the notoriously painful input &lt;a href=&quot;https://ten-thousand-models.appspot.com/detail.html?file_id=996816&quot;&gt;996816.stl&lt;/a&gt; (Thingi10k). 380k vertices in ~10s.&lt;/small&gt;
+  &lt;br /&gt;&lt;small&gt;Volumetric mesh of the notoriously painful input &lt;a href=&quot;https://ten-thousand-models.appspot.com/detail.html?file_id=996816&quot;&gt;996816.stl&lt;/a&gt; (Thingi10k). 380k cells in ~10s.&lt;/small&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
