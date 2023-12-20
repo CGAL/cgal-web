@@ -26,15 +26,16 @@ degeneracies, non-manifoldness...</p>
   <br><small>Season's wrappings.</small>
 </div>
 
+<br><br>
 <p>In the upcoming CGAL release, CGAL 6.0, we introduce a few improvements to the 3D Alpha Wrapping package:
 pause & resuming functionalities, fast "LOD" wrapping, generation of volumetric wraps, and some speed-ups.</p>
 
 <br>
 <h3>Resume and Restart Functionalities</h3>
 
-<p>The input of the 3D Alpha Wrapping main function is a set of data, and two input parameters describing
-the feature size (alpha), and the isosurface of the distance field on which the mesh will live (offset,
-also named delta). The parameter alpha can be understood as the size of a spoon carving around the input.
+<p>The main function of the package 3D Alpha Wrapping takes two input parameters: the size of the
+the feature size (<i>alpha</i>), and the isosurface of the distance field on which new vertices are created
+(offset, also named <i>delta</i>). The parameter alpha can be understood as the size of a spoon carving around the input.
 A larger alpha will thus remove small features and fill large gaps, and a small alpha will preserve those features,
 and enter the gaps and cavities (see also Section <a href="https://doc.cgal.org/latest/Alpha_wrap_3/index.html#title5">Choosing Parameters</a>
 of the documentation). Although the physicality can be understood, it might be that one
@@ -42,8 +43,9 @@ is not exactly sure which value should be used; or, one might simply wish to cre
 as detailed as possible within a fixed amount of time.</p>
 
 <p>This is now possible thanks to the addition of a visitor to the wrapping algorithm, which gives
-more information and control to the user during the wrapping process. An example illustrating
-has been added: <a href="https://github.com/CGAL/cgal/blob/master/Alpha_wrap_3/examples/Alpha_wrap_3/pause_and_resume_wrapping.cpp">pause_and_resume_wrapping.cpp</a>.</p>
+more information and control to the user during the wrapping process. An example showing how to use
+the visitor to pause and resume a wrapping process has been added:
+<a href="https://github.com/CGAL/cgal/blob/master/Alpha_wrap_3/examples/Alpha_wrap_3/pause_and_resume_wrapping.cpp">pause_and_resume_wrapping.cpp</a>.</p>
 
 <p>Another closely related feature being added is the possibility of generating multiple wraps for different
 values of alpha for the same input, for example to generate different levels of detail (LODs).
@@ -52,6 +54,11 @@ the resuming functionality improves greatly on this: by sorting the value of alp
 (coarse to fine), we can restart from a previous result to generate the next version.
 By avoiding a recomputation from scratch, a lot of time is saved. Here is a new example
 illustrating the process: <a href="https://github.com/CGAL/cgal/blob/master/Alpha_wrap_3/examples/Alpha_wrap_3/successive_wraps.cpp">successive_wraps.cpp</a>.</p>
+
+<div style="text-align:center;">
+  <a href="../../../../images/alpha_wrap.png"><img src="../../../../images/alpha_wrap.png" style="max-width:95%"/></a><br>
+  <br><small>Wrapping of an engine piece with complex interior (left) for different values of alpha.</small>
+</div>
 
 <br>
 <h3>Volumetric Meshing</h3>
@@ -64,9 +71,10 @@ one can generate high-quality volumetric tetrahedral meshes of the space enclose
 
 <div style="text-align:center;">
   <a href="../../../../images/volumetric_wrap.png"><img src="../../../../images/volumetric_wrap.png" style="max-width:95%"/></a><br>
-  <br><small>Volumetric mesh of the notoriously painful input <a href="https://ten-thousand-models.appspot.com/detail.html?file_id=996816">996816.stl</a> (Thingi10k).</small>
+  <br><small>Volumetric mesh of the notoriously painful input <a href="https://ten-thousand-models.appspot.com/detail.html?file_id=996816">996816.stl</a> (Thingi10k). 380k vertices in ~10s.</small>
 </div>
 
+<br>
 <p>The following example describes this process: <a href="https://github.com/CGAL/cgal/blob/master/Alpha_wrap_3/examples/Alpha_wrap_3/volumetric_wrap.cpp">volumetric_wrap.cpp</a>.</p>
 
 <br>
