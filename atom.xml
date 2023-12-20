@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2023-12-20T10:41:59+00:00</updated>
+ <updated>2023-12-20T10:46:33+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>New in CGAL: Improvements for 3D Alpha Wrapping</title>
-   <link href="http://www.cgal.org/news/2023/12/17/alpha_wrapping_improvements/"/>
+   <link href="http://www.cgal.org/2023/12/17/alpha_wrapping_improvements/"/>
    <updated>2023-12-17T00:00:00+00:00</updated>
-   <id>http://www.cgal.org/news/2023/12/17/alpha_wrapping_improvements</id>
+   <id>http://www.cgal.org/2023/12/17/alpha_wrapping_improvements</id>
    <content type="html">
 &lt;h3&gt;&lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Mael Rouxel-Labbé&lt;/a&gt;&lt;/h3&gt;
 &lt;h4&gt;&lt;a href=&quot;http://www.geometryfactory.com&quot; target=&quot;_blank&quot;&gt;GeometryFactory&lt;/a&gt;&lt;/h4&gt;
