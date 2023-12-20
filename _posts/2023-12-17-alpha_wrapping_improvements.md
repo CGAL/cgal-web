@@ -2,7 +2,7 @@
 layout: post
 title: "New in CGAL: Improvements for 3D Alpha Wrapping"
 description: "New features, and speed-up"
-category: "news"
+category:
 tags: [""]
 ---
 {% include JB/setup %}
