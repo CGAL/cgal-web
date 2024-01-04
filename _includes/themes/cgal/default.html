@@ -107,8 +107,11 @@
     <div class="section section-breadcrumbs">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12 home-title">
             <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
+            <a style="text-align: right;" href="https://github.com/cgal/cgal" alt="The CGAL Project's github">
+              <span class="btn-dark-orange github-link fs-5">CGAL/cgal <i class="bi bi-github"></i></span>
+            </a>
           </div>
         </div>
       </div>
@@ -122,9 +125,6 @@
         <div class="col-md-12">
           <div class="footer-copyright">
             <div style="float: left;">
-              <a href="https://github.com/cgal/cgal" alt="The CGAL Project's github">
-                <i class="bi bi-github btn-dark-orange"></i>
-              </a>
               <a href="https://twitter.com/TheCGALProject" alt="The CGAL Project's Twitter">
                 <img src="{{ BASE_PATH }}/images/icons/twitter.svg" class="center-block btn-dark-orange" alt="Twitter" height="18"></img>
               </a>

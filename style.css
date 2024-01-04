@@ -1,9 +1,27 @@
+html {
+  font-size: 85%;
+}
+
 a {
   text-decoration: none;
 }
 
+.home-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.github-link {
+  margin-left: auto;
+}
+
 .download-service-wrapper {
   text-align: center !important;
+}
+
+.home-description {
+  margin-bottom: 15px;
 }
 
 .download-row {
@@ -12,6 +30,10 @@ a {
 
 .bottom-container {
   display: flex;
+}
+
+.bottom-container>div {
+  padding: 0 10px;
 }
 
 .dropdown-menu {
@@ -97,8 +119,8 @@ code {
   transition: width 0.5s ease;
 }
 
-.bx-wrapper{
-  border : none;
+.bx-wrapper {
+  border: none;
 }
 
 
@@ -198,7 +220,8 @@ code {
   padding-left: 15px;
   padding-right: 15px
 }
-.thumbnail{
+
+.thumbnail {
   display: block;
   margin-bottom: 20px;
   padding: 4px;
@@ -206,7 +229,7 @@ code {
   overflow: hidden;
 }
 
-.thumbnail>img{
+.thumbnail>img {
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
