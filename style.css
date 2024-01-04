@@ -90,10 +90,17 @@ code {
 .carrousel {
   position: relative;
   height: 400px;
-  width: 75%;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto 30px auto;
   overflow: hidden;
   transition: width 0.5s ease;
 }
+
+.bx-wrapper{
+  border : none;
+}
+
 
 .slide {
   width: 100%;
