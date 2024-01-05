@@ -23,11 +23,16 @@ a {
 .home-description {
   margin-bottom: 15px;
 }
-
+.row > div {
+  padding: 0 15px;
+}
 .download-row {
   display: flex;
 }
 
+.download-row > div {
+  padding: 0 15px;
+}
 .bottom-container {
   display: flex;
 }
