@@ -28,10 +28,18 @@ a {
 }
 .download-row {
   display: flex;
+  width: inherit;
+  padding-right: 15px;
 }
 
 .download-row > div {
   padding: 0 15px;
+}
+.Windows-download {
+  padding-left: 5px !important;
+}
+.macOS-download {
+  padding-right: 20px !important;
 }
 .bottom-container {
   display: flex;
