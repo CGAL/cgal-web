@@ -21,4 +21,10 @@ tags: []
 </blockquote>
 
 
-<p>End of June there will be a follow-up post.</p>
+<p>Update on June 19: The Award Ceremony is now <a href="https://youtu.be/vqhX-HzWYBw?t=11118">online</a>.</p>
+
+<br><br>
+<div style="text-align:center;">
+  <a href="../../../../../images/SoCG_2023_ToT_CGAL.pdf"><img src="../../../../../images/SoCG_2023_ToT_CGAL.png" style="max-width:95%"/></a><br>
+  <br><small>Certificate (click for the pdf).</small>
+</div>
