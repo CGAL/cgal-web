@@ -5,10 +5,46 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2024-02-13T12:35:37+00:00</lastBuildDate>
-        <pubDate>2024-02-13T12:35:37+00:00</pubDate>
+        <lastBuildDate>2024-02-28T14:52:45+00:00</lastBuildDate>
+        <pubDate>2024-02-28T14:52:45+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>CGAL 5.6.1 released</title>
+                <description>
+&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.6.1&quot;&gt;Download CGAL-5.6.1&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;a href=&quot;https://doc.cgal.org/5.6.1/Manual/index.html&quot;&gt;CGAL-5.6.1 documentation&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;CGAL 5.6.1 is a bug-fix release for &lt;a href=&quot;../../../../2023/07/28/cgal56&quot;&gt;CGAL 5.6&lt;/a&gt;.
+The list of fixed bugs since &lt;a href=&quot;../../../../2023/07/28/cgal56&quot;&gt;CGAL 5.6&lt;/a&gt;
+can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AMerged_in_5.6.1&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
+</description>
+                <link>http://www.cgal.org/2024/02/28/cgal561/</link>
+                <guid>http://www.cgal.org/2024/02/28/cgal561</guid>
+                <pubDate>2024-02-28T00:00:00+00:00</pubDate>
+        </item>
+
+        <item>
+                <title>CGAL 5.5.4 released</title>
+                <description>
+&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.5.4&quot;&gt;Download CGAL-5.5.4&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;a href=&quot;https://doc.cgal.org/5.5.4/Manual/index.html&quot;&gt;CGAL-5.5.4 documentation&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;CGAL 5.5.4 is a bug-fix release for &lt;a href=&quot;../../../../2022/07/15/cgal55&quot;&gt;CGAL 5.5&lt;/a&gt;.
+The list of fixed bugs since &lt;a href=&quot;../../../../2023/07/28/cgal553&quot;&gt;CGAL 5.5.3&lt;/a&gt;
+can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=sort%3Aupdated-desc+label%3AMerged_in_5.5.4+-label%3AMerged_in_5.5.3&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
+</description>
+                <link>http://www.cgal.org/2024/02/28/cgal554/</link>
+                <guid>http://www.cgal.org/2024/02/28/cgal554</guid>
+                <pubDate>2024-02-28T00:00:00+00:00</pubDate>
+        </item>
 
         <item>
                 <title>New in CGAL: Improvements for 3D Alpha Wrapping</title>
