@@ -2,7 +2,9 @@
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:year/:month/:day/:title/
 
-include: [.htaccess]
+include:
+  - .htaccess
+  - node_modules
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "web_old"]
 highlighter: pygments
 

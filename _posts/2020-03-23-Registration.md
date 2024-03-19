@@ -38,8 +38,8 @@ tags: [""]
 
 Both wrappers are part of the <b>Point set processing</b> package; two new examples (<a href="https://cgal.geometryfactory.com/CGAL/doc/master/Point_set_processing_3/Point_set_processing_3_2registration_with_OpenGR_8cpp-example.html">one for OpenGR</a>, and <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Point_set_processing_3/Point_set_processing_3_2registration_with_pointmatcher_8cpp-example.html">one for Pointmatcher</a>) have been added to get you quickly started.
 
-<i class="glyphicon glyphicon-book"></i>
+<i class="bi bi-book"></i>
 <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Point_set_processing_3/index.html">Documentation of the package Point_set_processing_3</a> <br>
 
-<i class="glyphicon glyphicon-download"></i>
+<i class="bi bi-arrow-down-circle"></i>
 <a href="https://github.com/CGAL/cgal/tree/master">CGAL master branch on GitHub</a>

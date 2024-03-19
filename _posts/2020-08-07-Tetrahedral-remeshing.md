@@ -63,8 +63,8 @@ Tetrahedral remeshing fixes those over-refinements while keeping the geometry an
 on the <a href="https://github.com/CGAL/cgal/">CGAL GitHub repository</a>, and will be
 officially released in the upcoming version of CGAL, CGAL 5.1, scheduled for September 2020.</p>
 
-<i class="glyphicon glyphicon-book"></i>
+<i class="bi bi-book"></i>
 <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Tetrahedral_remeshing/index.html">Documentation of the package Tetrahedral Remeshing</a> <br>
 
-<i class="glyphicon glyphicon-download"></i>
+<i class="bi bi-arrow-down-circle"></i>
 <a href="https://github.com/CGAL/cgal/tree/master">CGAL master branch on GitHub</a>

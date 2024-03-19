@@ -96,8 +96,8 @@ substancially updated. In particular, the user manual has been fully rewritten a
 <a href="https://github.com/CGAL/cgal/">CGAL GitHub repository</a>, and will be officially released
 in the upcoming version of CGAL, CGAL 5.6, scheduled for June 2023.</p>
 
-<i class="glyphicon glyphicon-book"></i>
+<i class="bi bi-book"></i>
 <a href="https://doc.cgal.org/5.6/Manual/packages.html#PkgStraightSkeleton2">Documentation of the package Straight_skeleton_2</a>
 <br>
-<i class="glyphicon glyphicon-download"></i>
+<i class="bi bi-arrow-down-circle"></i>
 <a href="https://github.com/CGAL/cgal/tree/master">CGAL master branch on GitHub</a>

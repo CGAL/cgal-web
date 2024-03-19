@@ -38,8 +38,8 @@ tags: [""]
 on the <a href="https://github.com/CGAL/cgal/">CGAL GitHub repository</a>,
 and will be officially released in the upcoming version of CGAL, 5.0, scheduled for Autumn 2019.</p>
 
-<i class="glyphicon glyphicon-book"></i>
+<i class="bi bi-book"></i>
 <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Polygonal_surface_reconstruction/index.html#Chapter_PolygonalSurfaceReconstruction">Documentation of the package Polygonal_surface_reconstruction</a> <br>
 
-<i class="glyphicon glyphicon-download"></i>
+<i class="bi bi-arrow-down-circle"></i>
 <a href="https://github.com/CGAL/cgal/tree/master">CGAL master branch on GitHub</a>
