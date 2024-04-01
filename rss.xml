@@ -5,8 +5,8 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2024-04-01T08:56:20+00:00</lastBuildDate>
-        <pubDate>2024-04-01T08:56:20+00:00</pubDate>
+        <lastBuildDate>2024-04-01T09:04:16+00:00</lastBuildDate>
+        <pubDate>2024-04-01T09:04:16+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -37,7 +37,7 @@ with &lt;em&gt;Nicolas Bourbaki&lt;/em&gt;, who currently works at &lt;em&gt;Eco
 
 &lt;p&gt;Nicolas first contribution will be a &lt;em&gt;Curves and Surfaces&lt;/em&gt; package,
 featuring the &lt;a href=&quot;https://mathcurve.com/courbes2d.gb/oeuf/oeuf.shtml&quot;&gt;Huegelschaeffer Egg&lt;/a&gt;
-and the &amp;lt;a href=&quot;https://mathcurve.com/courbes2d.gb/conchoiddecercle/conchoiddecercle.shtml&quot;Conchoid&amp;lt;/a&amp;gt; curve, as well as the &lt;a href=&quot;https://mathcurve.com/surfaces/seifert/seifert.shtml&quot;&gt;Seifert&lt;/a&gt; surface.&lt;/p&gt;
+and the &lt;a href=&quot;https://mathcurve.com/courbes2d.gb/conchoiddecercle/conchoiddecercle.shtml&quot;&gt;Conchoid&lt;/a&gt; curve, as well as the &lt;a href=&quot;https://mathcurve.com/surfaces/seifert/seifert.shtml&quot;&gt;Seifert&lt;/a&gt; surface.&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
   &lt;a href=&quot;../../../../../images/April24/huegelschaeffer.gif&quot;&gt;&lt;img src=&quot;../../../../../images/April24/huegelschaeffer.gif&quot; style=&quot;max-width:85%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
@@ -51,11 +51,11 @@ while the Seifert surface led to the invention of the
 
 &lt;h3&gt;Back to the Physical World&lt;/h3&gt;
 
-&lt;p&gt;While a &lt;a href=&quot;https://www.cgal.org/people.html&quot;&gt;People&amp;lt;/p&amp;gt; web page is a nice living document
+&lt;p&gt;While a &lt;a href=&quot;https://www.cgal.org/people.html&quot;&gt;People&lt;/a&gt; web page is a nice living document
 we decided to produce a &lt;em&gt;physical twin&lt;/em&gt; with portrait photos not made with an iphone
 but by a portrait photograph. We are grateful to the Inria research center in Sophia-Antipolis
 which offers a physical wall in the Gilles Kahn Auditorium for hosting the CGAL Editorial Board Gallery.
-&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 </description>
                 <link>http://www.cgal.org/news/2024/04/01/Bourbaki/</link>
                 <guid>http://www.cgal.org/news/2024/04/01/Bourbaki</guid>
