@@ -7,4 +7,4 @@ tags: []
 ---
 {% include JB/setup %}
 
-The so called "Optimal Area Polygonalization" problem was presented as a challenge at SoCG 20; see the [contest webpage](https://cgshop.ibr.cs.tu-bs.de/). We used CGAL extensively in our implementation; see the [project webpage](http://acg.cs.tau.ac.il/projects/in-house-projects/optimal-area-polygonalization/optimal-area-polygonalization). Our team was awarded 3rd place.
+The so called "Optimal Area Polygonalization" problem was presented as a challenge at SoCG 20; see the [contest webpage](https://cgshop.ibr.cs.tu-bs.de/). We used CGAL extensively in our implementation; see the [project webpage](https://www.cgl.cs.tau.ac.il/projects/optimal-area-polygonalization/). Our team was awarded 3rd place.
