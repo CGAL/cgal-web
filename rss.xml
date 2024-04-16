@@ -5,8 +5,8 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2024-04-16T14:31:24+00:00</lastBuildDate>
-        <pubDate>2024-04-16T14:31:24+00:00</pubDate>
+        <lastBuildDate>2024-04-16T14:37:49+00:00</lastBuildDate>
+        <pubDate>2024-04-16T14:37:49+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -16616,10 +16616,9 @@ in matter.
 &lt;p&gt;
 What turned hypothetical existence in reality is the combination
 of 
-	* the photon collisions observed in the recently inaugurated
-	&lt;a href=&quot; http://en.wikipedia.org/wiki/Large_Hadron_Collide&quot;&gt;Large Hadron Collider (LHC)&lt;/a&gt;
-	together with 
-	* the Periodic Triangulation package of CGAL, which allows
+(i) the photon collisions observed in the recently inaugurated &lt;a href=&quot; http://en.wikipedia.org/wiki/Large_Hadron_Collide&quot;&gt;Large Hadron
+Collider (LHC)&lt;/a&gt; together with 
+(ii) the Periodic Triangulation package of CGAL, which allows
 to compute Delaunay triangulations of toroidal spaces in order to apply
 finite difference simulations without dealing with artificial boundary
 conditions.
