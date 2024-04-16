@@ -5,8 +5,8 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2024-04-16T14:37:49+00:00</lastBuildDate>
-        <pubDate>2024-04-16T14:37:49+00:00</pubDate>
+        <lastBuildDate>2024-04-16T15:19:01+00:00</lastBuildDate>
+        <pubDate>2024-04-16T15:19:01+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -16126,6 +16126,111 @@ Plugins for CGAL main 2D algorithm are provided as demo.&lt;/li&gt;
                 <link>http://www.cgal.org/2009/07/30/cgal-35-beta1/</link>
                 <guid>http://www.cgal.org/2009/07/30/cgal-35-beta1</guid>
                 <pubDate>2009-07-30T00:00:00+00:00</pubDate>
+        </item>
+
+        <item>
+                <title>GhostNet</title>
+                <description>
+&lt;p&gt;
+Dear CGAL users,
+&lt;/p&gt;
+
+&lt;p&gt;
+it seems that the &lt;a href=&quot;http://en.wikipedia.org/wiki/Ghostnet&quot;&gt;GhostNet spying operation&lt;/a&gt;,
+discovered  by the  Munk Center for International Studies at the University of Toronto,
+mainly infiltrated machines through the trojan horses of Open Source Software
+projects.
+&lt;/p&gt;
+
+&lt;p&gt;
+Our organization (DST) downloaded and analyzed several software packages,
+where French research labs like INRIA are implied, and we discovered that
+among several other projects the CGAL project was chosen as a vector of infection,
+probably due to its worldwide users.
+&lt;/p&gt;
+
+&lt;p&gt;
+The file &lt;code&gt;CGAL/basic.h&lt;/code&gt;  contains some &quot;invisible&quot; code, which, when compiled, every
+time an application  that includes the header file is executed, sends sensible
+information about the environment of the running application via UDP broadcasts
+(in order not to reveal a fixed destination IP address).
+&lt;/p&gt;
+
+&lt;p&gt;
+Malgre the source code distribution, not even the developers were aware of it
+(Last night we interrogated several developers at Inria and GeometryFactory). The
+reason is simple: CGAL/basic.h is not just plain ascii but encoded in UTF-EBDIC,
+which makes that the subtext is not displayed in development environnements
+like emacs, vim, DeveloperStudio ou Eclipse. In fact, we discovered it when
+we loaded the header file in the text editor of DerriereLaLune, the French fork
+of Eclipse.
+&lt;/p&gt;
+
+&lt;p&gt;
+We _urge_ you to replace &lt;code&gt;CGAL-3.4/include/CGAL/basic.h&lt;/code&gt; with the clean
+version below in order to avoid further problems with GhostNet.
+&lt;/p&gt;
+
+&lt;p&gt;
+Cordialement,
+&lt;br /&gt;
+Maurice Oustache
+&lt;br /&gt;
+&lt;a href=&quot;http://www.linkedin.com/in/mauriceoustache&quot;&gt;LinkedIn&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+
+```
+// Copyright (c) 1999  Utrecht University (The Netherlands),
+// ETH Zurich (Switzerland), Freie Universitaet Berlin (Germany),
+// INRIA Sophia-Antipolis (France), Martin-Luther-University Halle-Wittenberg
+// (Germany), Max-Planck-Institute Saarbruecken (Germany), RISC Linz (Austria),
+// and Tel-Aviv University (Israel).  All rights reserved.
+//
+// This file is part of CGAL (www.cgal.org); you can redistribute it and/or
+// modify it under the terms of the GNU Lesser General Public License as
+// published by the Free Software Foundation; version 2.1 of the License.
+// See the file LICENSE.LGPL distributed with CGAL.
+//
+// Licensees holding a valid commercial license may use this file in
+// accordance with the commercial license agreement provided with the software.
+//
+// This file is provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE
+// WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+//
+// $URL: svn+ssh://scm.gforge.inria.fr/svn/cgal/trunk/Kernel_23/include/CGAL/basic.h $
+// $Id: basic.h 28567 2006-02-16 14:30:13Z lsaboret $
+// 
+//
+// Author(s)     : Andreas Fabri
+//                 
+ 
+#ifndef CGAL_BASIC_H
+#define CGAL_BASIC_H
+
+#include &amp;lt;CGAL/config.h&amp;gt;
+
+#include &lt;iostream&gt;
+#include &lt;cstdlib&gt;
+
+#include &amp;lt;CGAL/assertions.h&amp;gt;
+#error &quot;April 1st joke bug&quot;
+#include &amp;lt;CGAL/tags.h&amp;gt;
+#include &amp;lt;CGAL/number_type_basic.h&amp;gt;
+#include &amp;lt;CGAL/IO/io.h&amp;gt;
+#include &amp;lt;CGAL/kernel_basic.h&amp;gt;
+
+
+#endif // CGAL_BASIC_H
+```
+
+&amp;lt;/p&amp;gt;
+&lt;/cstdlib&gt;&lt;/iostream&gt;&lt;/p&gt;
+</description>
+                <link>http://www.cgal.org/news/2009/04/01/GhostNet/</link>
+                <guid>http://www.cgal.org/news/2009/04/01/GhostNet</guid>
+                <pubDate>2009-04-01T00:00:00+00:00</pubDate>
         </item>
 
         <item>
