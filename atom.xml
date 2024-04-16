@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2024-04-16T14:18:44+00:00</updated>
+ <updated>2024-04-16T14:31:24+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -16621,27 +16621,25 @@ in matter.
 &lt;p&gt;
 What turned hypothetical existence in reality is the combination
 of 
-&lt;ol type=&quot;i&quot;&gt;
-&lt;li&gt;the photon collisions observed in the recently inaugurated
-&lt;a href=&quot; http://en.wikipedia.org/wiki/Large_Hadron_Collide&quot;&gt;Large Hadron Collider (LHC)&lt;/a&gt;
-together with 
-&lt;li&gt; the Periodic Triangulation package of CGAL, which allows
+	* the photon collisions observed in the recently inaugurated
+	&lt;a href=&quot; http://en.wikipedia.org/wiki/Large_Hadron_Collide&quot;&gt;Large Hadron Collider (LHC)&lt;/a&gt;
+	together with 
+	* the Periodic Triangulation package of CGAL, which allows
 to compute Delaunay triangulations of toroidal spaces in order to apply
 finite difference simulations without dealing with artificial boundary
 conditions.
-&amp;lt;/ol&amp;gt;
-&amp;lt;/p&amp;gt;
+&lt;/p&gt;
 
 &lt;p&gt;
 &quot;We knew that hardware alone, buried in a circular tunnel under the Alps,
 and combined with a 128K triple-core processor grid, simply wouldn't do
-the job,&quot;,  
+the job,&quot;, 
 said Irene Eneri, the LHC project leader, &quot;What it additionaly
 needed were cleverly designed algorithms for complex shapes, and what we got
 from the folks of the CGAL project was beyond the keenest expectations
 of everybody -- even of the project officer of our EU funded Hicks project.&quot;
 &lt;/p&gt;
-  
+
 &lt;p&gt;
 The downside of this breakthrough result is that the PhD student who worked
 on the periodic triangulations stopped working, telling everybody, that whatever
@@ -16658,7 +16656,6 @@ The directors,
 &lt;br /&gt;
 Robert Aymar (CERN), Andreas Fabri (GeometryFactory), Sylvain Pion (cgal.org)
 &lt;/p&gt;
-&lt;/li&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/p&gt;
 </content>
  </entry>
  
