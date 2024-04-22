@@ -319,3 +319,13 @@ code {
     display: block;
   }
 }
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service-wrapper > div {
+  padding: 0;
+}
