@@ -16,6 +16,8 @@ jobs:
         run: yq -i '.JB.BASE_PATH = "${{ vars.CGAL_WEB_SITE_URL }}"' _config.yml
       - name: Remove demo/ (temporarily)
         run: rm -rf demo/
+      - name: setup nodejs
+        run: npm install
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
