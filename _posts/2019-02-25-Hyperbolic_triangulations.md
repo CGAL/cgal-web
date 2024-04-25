@@ -71,10 +71,10 @@ and edges of the triangulation.</p>
 on the <a href="https://github.com/CGAL/cgal/">CGAL GitHub repository</a>,
 and will be officially released in the upcoming version of CGAL, 4.14, scheduled for March 2019.</p>
 
-<i class="glyphicon glyphicon-book"></i>
+<i class="bi bi-book"></i>
 <a href="https://doc.cgal.org/4.14/Hyperbolic_triangulation_2/index.html#Chapter_2D_Hyperbolic_Triangulations">Documentation of the package Hyperbolic_triangulation_2</a> <br>
-<i class="glyphicon glyphicon-book"></i>
+<i class="bi bi-book"></i>
 <a href="https://doc.cgal.org/4.14/Periodic_4_hyperbolic_triangulation_2/index.html#Chapter_2D_Periodic_Hyperbolic_Triangulations">Documentation of the package Periodic_4_hyperbolic_triangulation_2</a>
 
-<i class="glyphicon glyphicon-download"></i>
+<i class="bi bi-arrow-down-circle"></i>
 <a href="https://github.com/CGAL/cgal/tree/master">CGAL master branch on GitHub</a>
