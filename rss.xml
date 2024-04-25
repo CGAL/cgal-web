@@ -5,8 +5,8 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2024-04-24T08:56:49+00:00</lastBuildDate>
-        <pubDate>2024-04-24T08:56:49+00:00</pubDate>
+        <lastBuildDate>2024-04-25T13:57:24+00:00</lastBuildDate>
+        <pubDate>2024-04-25T13:57:24+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -68,10 +68,10 @@ which offers a physical wall in the Gilles Kahn Auditorium for hosting the CGAL 
         <item>
                 <title>CGAL 5.6.1 released</title>
                 <description>
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.6.1&quot;&gt;Download CGAL-5.6.1&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.6.1/Manual/index.html&quot;&gt;CGAL-5.6.1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.6.1 is a bug-fix release for &lt;a href=&quot;../../../../2023/07/28/cgal56&quot;&gt;CGAL 5.6&lt;/a&gt;.
@@ -86,10 +86,10 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AM
         <item>
                 <title>CGAL 5.5.4 released</title>
                 <description>
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v5.5.4&quot;&gt;Download CGAL-5.5.4&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.5.4/Manual/index.html&quot;&gt;CGAL-5.5.4 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 5.5.4 is a bug-fix release for &lt;a href=&quot;../../../../2022/07/15/cgal55&quot;&gt;CGAL 5.5&lt;/a&gt;.
@@ -186,10 +186,10 @@ to the wrapping algorithms have resulted in a 2x speed-up of the code since CGAL
 &lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;, and will be officially released
 in the upcoming version of CGAL, CGAL 6.0, scheduled for June 2024.&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/latest/Manual/packages.html#PkgAlphaWrap3&quot;&gt;Documentation of the package Alpha_wrap_3&lt;/a&gt;
 &lt;br /&gt;
-&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;&lt;/p&gt;
 </description>
                 <link>http://www.cgal.org/2023/12/17/alpha_wrapping_improvements/</link>
@@ -263,19 +263,20 @@ and using the &lt;em&gt;Interpolated Corrected Curvature Measures&lt;/em&gt; fun
 &lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;, and will be officially released
 in the upcoming version of CGAL, CGAL 6.0, scheduled for mid 2024.&lt;/p&gt;
 
-&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/5.6/Manual/packages.html#PkgPolygonMeshProcessing&quot;&gt;Documentation of the package Polygon Mesh Processing&lt;/a&gt;
 &lt;br /&gt;
 
-&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/master/Polygon_mesh_processing/index.html#title59&quot;&gt;Documentation section of the master branch about &lt;code&gt;interpolated_corrected_curvatures()&lt;/code&gt;&lt;/a&gt;
 &lt;br /&gt;
 
-&lt;i class=&quot;glyphicon glyphicon-book&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/master/Polygon_mesh_processing/index.html#title8&quot;&gt;Documentation section of the master branch about &lt;code&gt;isotropic_remeshing()&lt;/code&gt;&lt;/a&gt;
 &lt;br /&gt;
 
-&lt;i class=&quot;glyphicon glyphicon-download&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
+
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;
 &lt;/p&gt;
 </description>
