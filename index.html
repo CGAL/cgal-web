@@ -122,7 +122,7 @@ tagline:
           {% unless post.dontshow %}
           {% unless post.tags contains "WIP" %}
             <li class="active">{{this_month}} {{this_year}}
-            <a href="{{ BASE_PATH }}{{post.url}}" class="active">{{post.title}}</a><!--
+            <a href="{{ site.baseurl }}{{post.url}}" class="active">{{post.title}}</a><!--
             -->{% unless post.description == "" %} -- {{post.description}}{% endunless %}
             </li>
             {% assign news_counter = news_counter | plus: 1 %}
@@ -134,7 +134,7 @@ tagline:
           {% endunless %}
         {% endfor %}
       </ul>
-      <a href="{{ BASE_PATH}}/news.html" class="btn">Older news and announcements...</a>
+      <a href="{{ site.baseurl }}/news.html" class="btn">Older news and announcements...</a>
     </div>
     <div class="col-md-4">
       {% assign news = site.posts %}
@@ -146,14 +146,14 @@ tagline:
           {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
 
           {% if post.tags contains "latest-release" %}
-            <li class="active"><b>Latest stable release:</b> <a href="{{ BASE_PATH }}{{post.url}}" class="active">{{post.description}}</a></li>
+            <li class="active"><b>Latest stable release:</b> <a href="{{ site.baseurl }}{{post.url}}" class="active">{{post.description}}</a></li>
             {% break %}
           {% endif %}
         {% endfor %}
         {% for post in news %}
           {% if post.tags contains "active-beta-release" %}
             {% assign exist_active_beta = true %}
-            <li class="active"><b>Active beta release:</b> <a href="{{ BASE_PATH }}{{post.url}}" class="active">{{post.description}}</a></li>
+            <li class="active"><b>Active beta release:</b> <a href="{{ site.baseurl }}{{post.url}}" class="active">{{post.description}}</a></li>
             {% break %}
           {% endif %}
         {% endfor %}
@@ -173,7 +173,7 @@ tagline:
           {% unless post.tags contains "WIP" %}
           {% if post.tags contains "release" %}
           {% unless post.tags contains "latest" or post.tags contains "active" %}
-            <li class="active">{{this_month}} {{this_year}} <a href="{{ BASE_PATH }}{{post.url}}" class="active">{{post.description}}</a></li>
+            <li class="active">{{this_month}} {{this_year}} <a href="{{ site.baseurl }}{{post.url}}" class="active">{{post.description}}</a></li>
             {% assign releases_counter = releases_counter | plus: 1 %}
             {% if releases_counter >= max_releases_number %}
               {% break %}
@@ -184,7 +184,7 @@ tagline:
           {% endunless %}
         {% endfor %}
       </ul>
-      <a href="{{ BASE_PATH}}/releases.html" class="btn">Older releases...</a>
+      <a href="{{ site.baseurl }}/releases.html" class="btn">Older releases...</a>
     </div>
   </div>
 </div>

@@ -9,22 +9,22 @@ tagline:
 <div class="homepage-slider">
   <div id="sequence">
     <ul class="sequence-canvas">
-      <li style="background-image: url({{ BASE_PATH }}/images/A1.jpg); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+      <li style="background-image: url({{ site.baseurl }}/images/A1.jpg); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
         <h2 class="title">AABB tree in the MakerBot driver</h2>
         <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::AABB_tree tree(faces(surface));</pre></h3>
       </li>
 	  
-      <li style="background-image: url({{ BASE_PATH }}/images/A2.jpg); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+      <li style="background-image: url({{ site.baseurl }}/images/A2.jpg); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
         <h2 class="title">Meshing on a Raspberry Pi<sup>3</sup> Cluster </h2>
         <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::parallel::make_periodic_mesh_3(S);</pre></h3>
       </li>
 	  
-      <li style="background-image: url({{ BASE_PATH }}/images/A3.jpg); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+      <li style="background-image: url({{ site.baseurl }}/images/A3.jpg); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
         <h2 class="title">Voice Interpolation in the Intercom</h2>
         <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::sibson_c1_interpolation_square(p, N);</pre></h3>
       </li>
 
-      <li style="background-image: url({{ BASE_PATH }}/images/A4.jpg); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+      <li style="background-image: url({{ site.baseurl }}/images/A4.jpg); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
         <h2 class="title">Sweat&reg;:  Energy from Water and CO<sub>2</sub> </h2>
         <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::parallel::make_periodic_mesh_3(S);</pre></h3>
       </li>
@@ -59,12 +59,12 @@ tagline:
         {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
         {% unless post.dontshow %}
         {% unless post.tags contains "WIP"%}
-          <li class="active">{{this_month}} {{this_year}} <a href="{{ BASE_PATH }}{{post.url}}" class="active">{{post.title}}: {{post.description}}</a></li>
+          <li class="active">{{this_month}} {{this_year}} <a href="{{ site.baseurl }}{{post.url}}" class="active">{{post.title}}: {{post.description}}</a></li>
         {% endunless %}
         {% endunless %}
         {% endfor %}
       </ul>
-      <a href="{{ BASE_PATH}}/news.html" class="btn">Older news and announcements...</a>
+      <a href="{{ site.baseurl }}/news.html" class="btn">Older news and announcements...</a>
     </div>
   </div>
 </div>

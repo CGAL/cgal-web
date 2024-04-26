@@ -41,10 +41,10 @@ documentation at that time.</p>
         {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
 
         {% if post.tags contains "latest-release" or post.tags contains "active-beta-release" %}
-          <li><b><a href="{{ BASE_PATH }}{{post.url}}" class="active">{{post.description}}</a> ({{this_month}} {{this_year}})</b></li>
+          <li><b><a href="{{ site.baseurl }}{{post.url}}" class="active">{{post.description}}</a> ({{this_month}} {{this_year}})</b></li>
         {% else %}
           {% unless post.tags contains "beta-release" %}
-            <li><a href="{{ BASE_PATH }}{{post.url}}" class="active">{{post.description}}</a> ({{this_month}} {{this_year}})</li>
+            <li><a href="{{ site.baseurl }}{{post.url}}" class="active">{{post.description}}</a> ({{this_month}} {{this_year}})</li>
           {% endunless %}
         {% endif %}
       {% endfor %}
