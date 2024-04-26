@@ -11,19 +11,27 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Change BASE_PATH
-        run: yq -i '.JB.BASE_PATH = "https://cgal.github.io/cgal-web"' _config.yml
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.0'
+          bundler-cache: true
+      - name: Setup Jekyll
+        run: |
+          gem install jekyll bundler
+      - name: Update Configuration
+        run: |
+          yq -i '.JB.BASE_PATH = ""' _config.yml
+          yq -i '.baseurl = "https://cgal.github.io/cgal-web"' _config.yml
+          yq -i '.JB.ASSET_PATH = "https://cgal.github.io/cgal-web/assets/themes/cgal/"' _config.yml
       - name: Remove demo/ (temporarily)
         run: rm -rf demo/
-      - name: setup nodejs
-        run: npm install
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./
-          destination: ./_site
+      - name: setup nodejs
+        run: npm install
+      - name: Build with jekyll
+        run: jekyll build --destination ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
       - name: Create PR number file

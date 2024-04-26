@@ -27,5 +27,5 @@ a geometric algorithm with <em>O(n log log n)</em> amortized runtime complexity.
 We identified and contacted some users, who were willing to provide us with 
 images and testimonials.
 We today start our series of <em>User Portraits</em> 
-with <a href="{{BASE_PATH}}/news/2015/04/01/SpaceX/">SpaceX</a>. Stay tuned, even if you think
+with <a href="{{ site.baseurl }}/news/2015/04/01/SpaceX/">SpaceX</a>. Stay tuned, even if you think
 that SpaceX will be hard to beat.</p>

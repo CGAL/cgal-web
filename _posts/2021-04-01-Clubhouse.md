@@ -49,4 +49,4 @@ we will organize a short interview to hear if you really come across.</p>
 Regulations. This may or may not be the case when you register in Clubhouse, once you get chosen.</p>
 
 
-<p><b>This April joke came with a <a href="{{BASE_PATH}}/April21/index.html">gallery.</a></b></p>
+<p><b>This April joke came with a <a href="{{ site.baseurl }}/April21/index.html">gallery.</a></b></p>

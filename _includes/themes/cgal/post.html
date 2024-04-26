@@ -24,11 +24,11 @@
           {% for post in site.posts limit:4 %}
             {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
             {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
-            <li class="active"><a href="{{ BASE_PATH }}{{post.url}}" class="active">{{post.title}}</a>
+            <li class="active"><a href="{{ site.baseurl }}{{post.url}}" class="active">{{post.title}}</a>
             <br><div style="font-size:12px">{{this_month}} {{this_year}}</div></li>
           {% endfor %}
         </ul>
-        <a href="{{ BASE_PATH}}/news.html" class="btn">Older posts...</a>
+        <a href="{{ site.baseurl }}/news.html" class="btn">Older posts...</a>
       </div>
     </div>
   </div>

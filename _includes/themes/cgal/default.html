@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="author" content="{{ site.author.name }}">
 
-    <link rel="icon" type="image/png" href="{{ BASE_PATH }}/images/cgal_logo/g-196x196-y.png">
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/images/cgal_logo/g-196x196-y.png">
     <link rel="stylesheet" href="{{ site.baseurl }}/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/node_modules/bxslider/dist/jquery.bxslider.css">
@@ -25,8 +25,8 @@
     <link rel="stylesheet" href="{{ ASSET_PATH }}/main.css">
 
     <!-- atom & rss feed -->
-    <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-    <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    <link href="{{ site.baseurl }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="{{ site.baseurl }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
 
   </head>
   <body>
@@ -41,23 +41,23 @@
     <nav id="mainmenu" class="mainmenu" role="navigation">
     <ul>
     <li class="logo-wrapper hidden-xs hidden-sm hidden-md">
-    <a href="{{ BASE_PATH }}/index.html">
-    <img src="{{ BASE_PATH }}/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
+    <a href="{{ site.baseurl }}/index.html">
+    <img src="{{ site.baseurl }}/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
     </a>
     </li>
 
     <li class="hidden-lg">
-    <a href="{{ BASE_PATH }}/index.html">
-    <img src="{{ BASE_PATH }}/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
+    <a href="{{ site.baseurl }}/index.html">
+    <img src="{{ site.baseurl }}/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
     </a>
     </li>
 
     <li>
-    <a href="{{ BASE_PATH }}/project.html">Project</a>
+    <a href="{{ site.baseurl }}/project.html">Project</a>
     </li>
 
     <li>
-    <a href="{{ BASE_PATH }}/download.html">Download</a>
+    <a href="{{ site.baseurl }}/download.html">Download</a>
     </li>
 
     <li class="dropdown">
@@ -84,19 +84,19 @@
     </li>
 
     <li>
-    <a href="{{ BASE_PATH }}/documentation.html">Documentation</a>
+    <a href="{{ site.baseurl }}/documentation.html">Documentation</a>
     </li>
 
     <li>
-    <a href="{{ BASE_PATH }}/news.html">News</a>
+    <a href="{{ site.baseurl }}/news.html">News</a>
     </li>
 
     <li>
-    <a href="{{ BASE_PATH }}/media.html">Media</a>
+    <a href="{{ site.baseurl }}/media.html">Media</a>
     </li>
 
     <li>
-    <a href="{{ BASE_PATH }}/support.html">Support</a>
+    <a href="{{ site.baseurl }}/support.html">Support</a>
     </li>
 
     </ul>
@@ -126,7 +126,7 @@
           <div class="footer-copyright">
             <div style="float: left;">
               <a href="https://twitter.com/TheCGALProject" alt="The CGAL Project's Twitter">
-                <img src="{{ BASE_PATH }}/images/icons/twitter.svg" class="center-block btn-dark-orange" alt="Twitter" height="18"></img>
+                <img src="{{ site.baseurl }}/images/icons/twitter.svg" class="center-block btn-dark-orange" alt="Twitter" height="18"></img>
               </a>
             </div>
             &copy; 1995-{{site.time | date: "%Y"}} The CGAL Project. All rights reserved.

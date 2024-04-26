@@ -9,4 +9,4 @@ tags: [gsoc,gsoc2014]
 
 The CGAL Project is a <a href="https://www.google-melange.com/archive/gsoc/2014/orgs/cgal">mentoring organization</a>
 for <a href="https://www.google-melange.com/archive/gsoc/2014">Google Summer of Code 2014</a>.
-Have a look at our <a href="{{BASE_PATH}}/gsoc/2014.html">Project Ideas</a> page.
+Have a look at our <a href="{{ site.baseurl }}/gsoc/2014.html">Project Ideas</a> page.
