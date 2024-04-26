@@ -25,7 +25,6 @@ jobs:
           yq -i '.JB.BASE_PATH = ""' _config.yml
           yq -i '.baseurl = "${{ vars.CGAL_WEB_SITE_URL }}"' _config.yml
           yq -i '.JB.ASSET_PATH = "${{ vars.CGAL_WEB_SITE_URL }}/assets/themes/cgal/"' _config.yml
-      - run: cat _config.yml
       - name: Remove demo/ (temporarily)
         run: rm -rf demo/
       - name: setup nodejs
