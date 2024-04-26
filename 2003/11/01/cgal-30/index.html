@@ -15,16 +15,16 @@
     <meta name="author" content="CGAL Editorial Board">
 
     <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
-    <link rel="stylesheet" href="/cgal-web/style.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 
     <!--[if lte IE 8]>
 	<link rel="stylesheet" href="css/leaflet.ie.css" />
 	<![endif]-->
-    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/main.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal//main.css">
 
     <!-- atom & rss feed -->
     <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
@@ -171,8 +171,8 @@ GeometryFactory.</p>
   <h3 id="general">General</h3>
   <ul>
     <li>The CORE library for exact computations is now distributed as part of CGAL as well.</li>
-    <li><code class="language-plaintext highlighter-rouge">Largest_empty_rectangle_2</code>: Given a set of points P in the plane, the class
-<code class="language-plaintext highlighter-rouge">Largest_empty_iso_rectangle_2</code> is a data structure that
+    <li><code>Largest_empty_rectangle_2</code>: Given a set of points P in the plane, the class
+<code>Largest_empty_iso_rectangle_2</code> is a data structure that
 maintains an iso-rectangle with the largest area among all
 iso-rectangles that are inside a given iso-rectangle bounding box,
 and that do not contain any point of the point set P.</li>
@@ -182,13 +182,13 @@ and that do not contain any point of the point set P.</li>
   <ul>
     <li>3 typedefs have been added to ease the choice of a robust and fast kernel:
       <ul>
-        <li><code class="language-plaintext highlighter-rouge">Exact_predicates_inexact_constructions_kernel</code></li>
-        <li><code class="language-plaintext highlighter-rouge">Exact_predicates_exact_constructions_kernel</code></li>
-        <li><code class="language-plaintext highlighter-rouge">Exact_predicates_exact_constructions_kernel_with_sqrt</code></li>
+        <li><code>Exact_predicates_inexact_constructions_kernel</code></li>
+        <li><code>Exact_predicates_exact_constructions_kernel</code></li>
+        <li><code>Exact_predicates_exact_constructions_kernel_with_sqrt</code></li>
       </ul>
     </li>
     <li>Progress has been made towards the complete adaptability and extensibility of our kernels.</li>
-    <li>New faster <code class="language-plaintext highlighter-rouge">Triangle_3</code> intersection test routines. <code class="language-plaintext highlighter-rouge">(see Erratum at the bottom)</code></li>
+    <li>New faster <code>Triangle_3</code> intersection test routines. <code>(see Erratum at the bottom)</code></li>
     <li>Added a Kernel concept archetype to check that generic algorithms
   don’t use more functionality than they should.</li>
     <li>A few more miscellaneous functions.</li>
@@ -217,19 +217,19 @@ dynamic.</li>
 enclosing sphere of a given set of spheres in R<sup>d</sup>.
 The package provides
 an algorithm with maximal expected running time
-<code class="language-plaintext highlighter-rouge">O(2&lt;sup&gt;O(d)&lt;/sup&gt; n)</code> and a
+<code>O(2&lt;sup&gt;O(d)&lt;/sup&gt; n)</code> and a
 fast and robust heuristic (for dimension less than 30).</li>
   </ul>
 
   <h3 id="spatial-searching-new-package">Spatial Searching (new package)</h3>
   <ul>
-    <li>Provides exact and approximate distance browsing in a set of points in <code class="language-plaintext highlighter-rouge">d</code>-dimensional
+    <li>Provides exact and approximate distance browsing in a set of points in <code>d</code>-dimensional
 space using implementations of algorithms supporting:
       <ul>
         <li>both nearest and furthest neighbor searching</li>
         <li>both exact and approximate searching</li>
         <li>(approximate) range searching</li>
-        <li>(approximate) <code class="language-plaintext highlighter-rouge">k</code>-nearest and <code class="language-plaintext highlighter-rouge">k</code>-furthest neighbor searching</li>
+        <li>(approximate) <code>k</code>-nearest and <code>k</code>-furthest neighbor searching</li>
         <li>(approximate) incremental nearest and incremental furthest neighbor searching</li>
         <li>query items representing points and spatial objects.</li>
       </ul>
@@ -252,30 +252,30 @@ This means that it is possible for the user to derive its own Face
 of Vertex base class, adding a functionality that makes use of
 types defined by the triangulation data structure like Face_handle
 or Vertex_handle.</li>
-    <li>New classes <code class="language-plaintext highlighter-rouge">Triangulation_vertex_base_with_info_2</code> (and 3) and
-<code class="language-plaintext highlighter-rouge">Triangulation_face_base_with_info_2</code> (and 3) to make easier the
+    <li>New classes <code>Triangulation_vertex_base_with_info_2</code> (and 3) and
+<code>Triangulation_face_base_with_info_2</code> (and 3) to make easier the
 customisation of base classes in most cases.</li>
   </ul>
 
   <h3 id="d-triangulation">2D Triangulation</h3>
   <ul>
     <li>Regular triangulation provides an easy access to hidden points.</li>
-    <li>The <code class="language-plaintext highlighter-rouge">Triangulation_hierarchy_2</code>, which provides an efficient location
+    <li>The <code>Triangulation_hierarchy_2</code>, which provides an efficient location
 data structure, can now be used with any 2D triangulation class plugged
 in (including regular triangulations).</li>
   </ul>
 
   <h3 id="d-triangulation-1">3D Triangulation</h3>
   <ul>
-    <li>Faster vertex removal function in <code class="language-plaintext highlighter-rouge">Delaunay_triangulation_3</code>.</li>
-    <li><code class="language-plaintext highlighter-rouge">Delaunay_triangulation_3</code> is now independent of the order of insertions
+    <li>Faster vertex removal function in <code>Delaunay_triangulation_3</code>.</li>
+    <li><code>Delaunay_triangulation_3</code> is now independent of the order of insertions
  of the points (in case of degenerate cosphericity).</li>
-    <li><code class="language-plaintext highlighter-rouge">Regular_triangulation_3</code> now hides vertices (and updates itself) when
+    <li><code>Regular_triangulation_3</code> now hides vertices (and updates itself) when
 inserting a coinciding point with greater weight.  This required a new
 predicate.</li>
-    <li>Deprecated functions: <code class="language-plaintext highlighter-rouge">copy_triangulation()</code>, <code class="language-plaintext highlighter-rouge">push_back()</code>,
-<code class="language-plaintext highlighter-rouge">set_number_of_vertices()</code>.</li>
-    <li><code class="language-plaintext highlighter-rouge">Triangulation_3</code> now gives non-const access to its data structure.</li>
+    <li>Deprecated functions: <code>copy_triangulation()</code>, <code>push_back()</code>,
+<code>set_number_of_vertices()</code>.</li>
+    <li><code>Triangulation_3</code> now gives non-const access to its data structure.</li>
   </ul>
 
   <h3 id="planar-maps-and-arrangements">Planar Maps and Arrangements</h3>
@@ -285,7 +285,7 @@ predicate.</li>
 The set of requirements was made sound and complete. A couple of
 requirements were eliminated, few others were redefined, and some
 were renamed. A hierarchy of three traits classes for the
-<code class="language-plaintext highlighter-rouge">Planar_map_2</code>, <code class="language-plaintext highlighter-rouge">Planar_map_with_intersections_2</code>, and <code class="language-plaintext highlighter-rouge">Arrangement_2</code>
+<code>Planar_map_2</code>, <code>Planar_map_with_intersections_2</code>, and <code>Arrangement_2</code>
 types was established to include only the necessary requirements at
 each level. It was determined that for the aggregate insertion-
 operation based on a sweep-line algorithm only a subset of the
@@ -293,53 +293,53 @@ requirements is needed. Preconditions were added where appropriate
 to tighten the requirements further.</li>
     <li>The following functions have been renamed:
       <ul>
-        <li><code class="language-plaintext highlighter-rouge">point_is_same()</code> renamed to <code class="language-plaintext highlighter-rouge">point_equal()</code></li>
-        <li><code class="language-plaintext highlighter-rouge">curve_is_same()</code> renamed to <code class="language-plaintext highlighter-rouge">curve_equal()</code></li>
-        <li><code class="language-plaintext highlighter-rouge">curve_is_in_x_range()</code> renamed to <code class="language-plaintext highlighter-rouge">point_in_x_range()</code></li>
-        <li><code class="language-plaintext highlighter-rouge">curve_compare_at_x()</code> renamed to <code class="language-plaintext highlighter-rouge">curves_compare_y_at_x()</code>.
+        <li><code>point_is_same()</code> renamed to <code>point_equal()</code></li>
+        <li><code>curve_is_same()</code> renamed to <code>curve_equal()</code></li>
+        <li><code>curve_is_in_x_range()</code> renamed to <code>point_in_x_range()</code></li>
+        <li><code>curve_compare_at_x()</code> renamed to <code>curves_compare_y_at_x()</code>.
 Furthermore, a precondition has been added that the reference
 point is in the x-range of both curves.</li>
-        <li><code class="language-plaintext highlighter-rouge">curve_compare_at_x_right()</code> renamed to <code class="language-plaintext highlighter-rouge">curves_compare_y_at_x_to_right()</code>.
+        <li><code>curve_compare_at_x_right()</code> renamed to <code>curves_compare_y_at_x_to_right()</code>.
 Furthermore, a precondition has been added that both curves are
 equal at the reference point and defined to its right.</li>
-        <li><code class="language-plaintext highlighter-rouge">curve_compare_at_x_left()</code> renamed to <code class="language-plaintext highlighter-rouge">curves_compare_y_at_x_to_left()</code>.
+        <li><code>curve_compare_at_x_left()</code> renamed to <code>curves_compare_y_at_x_to_left()</code>.
 Furthermore, a precondition has been added that both curves are
 equal at the reference point and defined to its right.</li>
-        <li><code class="language-plaintext highlighter-rouge">curve_get_point_status()</code> renamed to <code class="language-plaintext highlighter-rouge">curve_compare_y_at_x()</code>.
+        <li><code>curve_get_point_status()</code> renamed to <code>curve_compare_y_at_x()</code>.
 Furthermore, a precondition has been added that the point is in
 the x-range of the curve. Consequently, the function now returns a
 Comparison_result (instead of a special enum).</li>
-        <li><code class="language-plaintext highlighter-rouge">make_x_monotone()</code> renamed to <code class="language-plaintext highlighter-rouge">curve_make_x_monotone()</code>. See more details below.</li>
-        <li><code class="language-plaintext highlighter-rouge">curve_flip()</code> renamed to <code class="language-plaintext highlighter-rouge">curve_opposite()</code></li>
+        <li><code>make_x_monotone()</code> renamed to <code>curve_make_x_monotone()</code>. See more details below.</li>
+        <li><code>curve_flip()</code> renamed to <code>curve_opposite()</code></li>
       </ul>
     </li>
     <li>The following functions have been removed:
       <ul>
-        <li><code class="language-plaintext highlighter-rouge">curve_is_between_cw()</code></li>
-        <li><code class="language-plaintext highlighter-rouge">point_to_left()</code></li>
-        <li><code class="language-plaintext highlighter-rouge">point_to_right()</code></li>
-        <li><code class="language-plaintext highlighter-rouge">is_x_monotone()</code></li>
-        <li><code class="language-plaintext highlighter-rouge">point_reflect_in_x_and_y()</code></li>
-        <li><code class="language-plaintext highlighter-rouge">curve_reflect_in_x_and_y()</code></li>
-        <li><code class="language-plaintext highlighter-rouge">do_intersect_to_right()</code></li>
-        <li><code class="language-plaintext highlighter-rouge">do_intersect_to_left()</code></li>
+        <li><code>curve_is_between_cw()</code></li>
+        <li><code>point_to_left()</code></li>
+        <li><code>point_to_right()</code></li>
+        <li><code>is_x_monotone()</code></li>
+        <li><code>point_reflect_in_x_and_y()</code></li>
+        <li><code>curve_reflect_in_x_and_y()</code></li>
+        <li><code>do_intersect_to_right()</code></li>
+        <li><code>do_intersect_to_left()</code></li>
       </ul>
     </li>
-    <li>Most functions, are required by the <code class="language-plaintext highlighter-rouge">PlanarMapTraits_2</code> concept,
-except for the <code class="language-plaintext highlighter-rouge">make_x_monotone()</code>, <code class="language-plaintext highlighter-rouge">nearest_intersection_to_right()</code>,
-<code class="language-plaintext highlighter-rouge">nearest_intersection_to_left()</code>, <code class="language-plaintext highlighter-rouge">curves_overlap()</code> and
-<code class="language-plaintext highlighter-rouge">curve_opposite()</code>. <code class="language-plaintext highlighter-rouge">PlanarMapWithIntersectionsTraits_2</code> requires all
-these functions, except <code class="language-plaintext highlighter-rouge">curve_opposite()</code>, needed only by the
-<code class="language-plaintext highlighter-rouge">ArrangementTraits_2</code> concept.
-Furthermore, the two functions <code class="language-plaintext highlighter-rouge">curve_compare_at_x_left()</code> and
-<code class="language-plaintext highlighter-rouge">nearest_intersection_to_left()</code> can be omitted, if the two functions
-<code class="language-plaintext highlighter-rouge">point_reflect_in_x()</code> and <code class="language-plaintext highlighter-rouge">curve_reflect_in_x()</code> are implemented.
+    <li>Most functions, are required by the <code>PlanarMapTraits_2</code> concept,
+except for the <code>make_x_monotone()</code>, <code>nearest_intersection_to_right()</code>,
+<code>nearest_intersection_to_left()</code>, <code>curves_overlap()</code> and
+<code>curve_opposite()</code>. <code>PlanarMapWithIntersectionsTraits_2</code> requires all
+these functions, except <code>curve_opposite()</code>, needed only by the
+<code>ArrangementTraits_2</code> concept.
+Furthermore, the two functions <code>curve_compare_at_x_left()</code> and
+<code>nearest_intersection_to_left()</code> can be omitted, if the two functions
+<code>point_reflect_in_x()</code> and <code>curve_reflect_in_x()</code> are implemented.
 Reflection can be avoided, if the two _left functions are supplied.</li>
     <li>The type X_curve_2 of the PlanarMapWithIntersectionsTraits_2
 concept was renamed to X_monotone_curve_2, and the distinction
 between this type and the Curve_2 type was made firm. The method
-<code class="language-plaintext highlighter-rouge">is_x_monotone()</code> of the PlanarMapWithIntersectionsTraits_2 concept
-was removed. The related method <code class="language-plaintext highlighter-rouge">curve_make_x_monotone()</code> is now
+<code>is_x_monotone()</code> of the PlanarMapWithIntersectionsTraits_2 concept
+was removed. The related method <code>curve_make_x_monotone()</code> is now
 called for each input curve of type Curve_2 when curves are inserted
 into a Planar_map_with_intersections_2 to subdivide the input curve
 into x-monotone sub-curves (and in case the curve is already
@@ -347,21 +347,21 @@ x-monotone, this function is responsible for casting it to an
 x-monotone curve).</li>
     <li>New and improved traits classes:
       <ul>
-        <li>Conic traits - <code class="language-plaintext highlighter-rouge">Arr_conic_traits_2</code>
+        <li>Conic traits - <code>Arr_conic_traits_2</code>
 Support finite segments of ellipses, hyperbolas and parabolas, as
 well as line segments. The traits require an exact real number-
-type, such as leda_real or <code class="language-plaintext highlighter-rouge">CORE::Expr</code>.</li>
-        <li>Segment cached traits - <code class="language-plaintext highlighter-rouge">Arr_segment_cached_traits_2</code>
+type, such as leda_real or <code>CORE::Expr</code>.</li>
+        <li>Segment cached traits - <code>Arr_segment_cached_traits_2</code>
 This class uses an improved representation for segments that helps
 avoiding cascaded computations, thus achieving faster running
 times. To work properly, an exact rational number-type should be
 used.</li>
-        <li>Polyline traits - <code class="language-plaintext highlighter-rouge">Arr_polyline_traits_2</code>
+        <li>Polyline traits - <code>Arr_polyline_traits_2</code>
 The polyline traits class has been reimplemented to work in a more
 efficient, generic manner. The new class replaces the obsolete
 Arr_polyline_traits class. It is parameterized with a segment
 traits class.</li>
-        <li>Hyperbola and segment traits - <code class="language-plaintext highlighter-rouge">Arr_hyper_segment_traits_2</code>
+        <li>Hyperbola and segment traits - <code>Arr_hyper_segment_traits_2</code>
 Supports line segments and segments of canonical hyperbolas.
 This is the type of curves that arise when projecting segments
 in three-space rotationally around a line onto a plane containing
@@ -370,27 +370,27 @@ the line. Such projections are often useful in CAD/CAM problems.</li>
     </li>
     <li>Removed old traits class:
       <ul>
-        <li>The models of the <code class="language-plaintext highlighter-rouge">PlanarMapWithIntersectionsTraits_2</code> concept
+        <li>The models of the <code>PlanarMapWithIntersectionsTraits_2</code> concept
 below became obsolete, as the new conic traits, namely
-<code class="language-plaintext highlighter-rouge">Arr_conic_traits_2</code>, supports the same functionality and is much
+<code>Arr_conic_traits_2</code>, supports the same functionality and is much
 more efficient.</li>
-        <li><code class="language-plaintext highlighter-rouge">Arr_circles_real_traits</code></li>
-        <li><code class="language-plaintext highlighter-rouge">Arr_segment_circle_traits</code></li>
+        <li><code>Arr_circles_real_traits</code></li>
+        <li><code>Arr_segment_circle_traits</code></li>
       </ul>
     </li>
     <li>The segment traits class and the new polyline traits class were
 reimplemented using standard CGAL-kernel calls. This essentially
 eliminated the corresponding leda traits classes, namely:
       <ul>
-        <li><code class="language-plaintext highlighter-rouge">Pm_leda_segment_traits_2</code></li>
-        <li><code class="language-plaintext highlighter-rouge">Arr_leda_segment_traits_2</code></li>
-        <li><code class="language-plaintext highlighter-rouge">Arr_leda_polyline_traits</code></li>
+        <li><code>Pm_leda_segment_traits_2</code></li>
+        <li><code>Arr_leda_segment_traits_2</code></li>
+        <li><code>Arr_leda_polyline_traits</code></li>
       </ul>
     </li>
     <li>With the use of the Leda_rat_kernel new external package the same
 functionality can be achieved with less overhead and more
 efficiency.</li>
-    <li>New interface functions to the <code class="language-plaintext highlighter-rouge">Planar_map_with_intersections_2</code> class.
+    <li>New interface functions to the <code>Planar_map_with_intersections_2</code> class.
 The Planar_map_with_intersections_2 class maintains a planar map of
 input curves that possibly intersect each other and are not necessarily
 x-monotone. If an input curve, or a set of input curves, are known to
@@ -400,25 +400,25 @@ used to insert them into the map efficiently.</li>
 
   <h3 id="d-sweep-line">2D Sweep Line</h3>
   <ul>
-    <li>The <code class="language-plaintext highlighter-rouge">Sweep_line_2</code> package was reimplemented. As a consequence it is much
+    <li>The <code>Sweep_line_2</code> package was reimplemented. As a consequence it is much
 more efficient, its traits is tighter (namely neither the two _left nor
 the reflection functions are required), and its interface has changed a bit.</li>
     <li>The following global functions have been removed:
       <ul>
-        <li><code class="language-plaintext highlighter-rouge">sweep_to_produce_subcurves_2()</code></li>
-        <li><code class="language-plaintext highlighter-rouge">sweep_to_produce_points_2()</code></li>
-        <li><code class="language-plaintext highlighter-rouge">sweep_to_construct_planar_map_2()</code></li>
+        <li><code>sweep_to_produce_subcurves_2()</code></li>
+        <li><code>sweep_to_produce_points_2()</code></li>
+        <li><code>sweep_to_construct_planar_map_2()</code></li>
       </ul>
     </li>
     <li>Instead, the public methods of the Sweep_line_2 class listed below were introduced:
       <ul>
-        <li><code class="language-plaintext highlighter-rouge">get_subcurves()</code> - Given a container of curves, this function
+        <li><code>get_subcurves()</code> - Given a container of curves, this function
  returns a list of curves that are created by intersecting the
  input curves.</li>
-        <li><code class="language-plaintext highlighter-rouge">get_intersection_points()</code> - Given a range of curves, this function
+        <li><code>get_intersection_points()</code> - Given a range of curves, this function
  returns a list of points that are the intersection points of the
  curves.</li>
-        <li><code class="language-plaintext highlighter-rouge">get_intersecting_curves()</code> - Given a range of curves, this function
+        <li><code>get_intersecting_curves()</code> - Given a range of curves, this function
  returns an iterator to the beginning of a range that contains the
  list of curves for each intersection point between any two curves
  in the specified range.</li>
@@ -433,13 +433,13 @@ efficiently.</li>
   <h3 id="polyhedral-surface">Polyhedral Surface</h3>
   <ul>
     <li>The old design that was deprecated since CGAL 2.3 has been removed.</li>
-    <li>Class <code class="language-plaintext highlighter-rouge">Polyhedron_incremental_builder_3</code>:</li>
-    <li>Renamed local enum <code class="language-plaintext highlighter-rouge">ABSOLUTE</code> to <code class="language-plaintext highlighter-rouge">ABSOLUTE_INDEXING</code>, and <code class="language-plaintext highlighter-rouge">RELATIVE</code> to
-  <code class="language-plaintext highlighter-rouge">RELATIVE_INDEXING</code> to avoid conflicts with similarly named macros of another library.</li>
-    <li>Changed member functions <code class="language-plaintext highlighter-rouge">add_vertex()</code>, <code class="language-plaintext highlighter-rouge">begin_facet()</code>, and <code class="language-plaintext highlighter-rouge">end_facet()</code> to return
+    <li>Class <code>Polyhedron_incremental_builder_3</code>:</li>
+    <li>Renamed local enum <code>ABSOLUTE</code> to <code>ABSOLUTE_INDEXING</code>, and <code>RELATIVE</code> to
+  <code>RELATIVE_INDEXING</code> to avoid conflicts with similarly named macros of another library.</li>
+    <li>Changed member functions <code>add_vertex()</code>, <code>begin_facet()</code>, and <code>end_facet()</code> to return
   useful handles.</li>
-    <li>Added <code class="language-plaintext highlighter-rouge">test_facet()</code> to check facets for validity before adding them.</li>
-    <li>Added <code class="language-plaintext highlighter-rouge">vertex( size_t i)</code> to return <code class="language-plaintext highlighter-rouge">Vertex_handle</code> for index <code class="language-plaintext highlighter-rouge">i</code>.</li>
+    <li>Added <code>test_facet()</code> to check facets for validity before adding them.</li>
+    <li>Added <code>vertex( size_t i)</code> to return <code>Vertex_handle</code> for index <code>i</code>.</li>
   </ul>
 
   <h3 id="halfedge-data-structure">Halfedge Data Structure</h3>
@@ -449,8 +449,8 @@ efficiently.</li>
 
   <h3 id="support-library">Support Library</h3>
   <ul>
-    <li>New container class <code class="language-plaintext highlighter-rouge">Compact_container</code>, which (roughly) provides the
-flexibility of <code class="language-plaintext highlighter-rouge">std::list</code>, with the memory compactness of std::vector.</li>
+    <li>New container class <code>Compact_container</code>, which (roughly) provides the
+flexibility of <code>std::list</code>, with the memory compactness of std::vector.</li>
     <li>Geomview_stream: added a function
   gv.draw_triangles(InputIterator begin, InputIterator end)
   which draws a set of triangles much more quickly than one by one.</li>
@@ -459,10 +459,10 @@ flexibility of <code class="language-plaintext highlighter-rouge">std::list</cod
   <h4 id="number-types">Number types:</h4>
   <ul>
     <li>number types are now required to provide a function:
-<code class="language-plaintext highlighter-rouge">std::pair&lt;double, double&gt;  to_interval(const NT&amp;)</code>.</li>
+<code>std::pair&lt;double, double&gt;  to_interval(const NT&amp;)</code>.</li>
     <li>number types are now required to provide mixed operators with “int”.</li>
     <li>CLN support removed.</li>
-    <li>faster <code class="language-plaintext highlighter-rouge">square()</code> for MP_Float.</li>
+    <li>faster <code>square()</code> for MP_Float.</li>
     <li>added Gmp_q.</li>
   </ul>
 
@@ -470,13 +470,13 @@ flexibility of <code class="language-plaintext highlighter-rouge">std::list</cod
   <ul>
     <li>New classes:
       <ul>
-        <li><code class="language-plaintext highlighter-rouge">Qt_help_window</code>: provides a simple way to show some helpful
+        <li><code>Qt_help_window</code>: provides a simple way to show some helpful
 information about a demo as an HTML page.</li>
-        <li><code class="language-plaintext highlighter-rouge">Qt_widget_history</code>: provides basic functionality to manipulate
-intervals of <code class="language-plaintext highlighter-rouge">Qt_widget</code> class. The current visible area of <code class="language-plaintext highlighter-rouge">Qt_widget</code>
+        <li><code>Qt_widget_history</code>: provides basic functionality to manipulate
+intervals of <code>Qt_widget</code> class. The current visible area of <code>Qt_widget</code>
 is mapped to an interval. Each interval could be stored in the
-<code class="language-plaintext highlighter-rouge">Qt_widget_history</code> object. So you can use this object to navigate in
-history.  It is mostly used by <code class="language-plaintext highlighter-rouge">Qt_widget_standard_toolbar</code>.</li>
+<code>Qt_widget_history</code> object. So you can use this object to navigate in
+history.  It is mostly used by <code>Qt_widget_standard_toolbar</code>.</li>
       </ul>
     </li>
     <li>Changes:
@@ -490,17 +490,17 @@ toolbar use to navigate.</li>
     </li>
     <li>Deprecated members of Qt_widget:
       <ul>
-        <li><code class="language-plaintext highlighter-rouge">add_to_history()</code>, <code class="language-plaintext highlighter-rouge">clear_history()</code>, <code class="language-plaintext highlighter-rouge">back()</code>, <code class="language-plaintext highlighter-rouge">forth()</code>: use <code class="language-plaintext highlighter-rouge">forward()</code>,
-<code class="language-plaintext highlighter-rouge">back()</code> and <code class="language-plaintext highlighter-rouge">clear_history()</code> of the <code class="language-plaintext highlighter-rouge">Qt_widget_standard_toolbar</code> instead.</li>
-        <li><code class="language-plaintext highlighter-rouge">custom_redraw()</code>: use <code class="language-plaintext highlighter-rouge">redraw_on_back()</code> and <code class="language-plaintext highlighter-rouge">redraw_on_front()</code> instead.</li>
+        <li><code>add_to_history()</code>, <code>clear_history()</code>, <code>back()</code>, <code>forth()</code>: use <code>forward()</code>,
+<code>back()</code> and <code>clear_history()</code> of the <code>Qt_widget_standard_toolbar</code> instead.</li>
+        <li><code>custom_redraw()</code>: use <code>redraw_on_back()</code> and <code>redraw_on_front()</code> instead.</li>
       </ul>
     </li>
     <li>Optimizations:
       <ul>
         <li>The output operators of the following classes have been optimized:</li>
-        <li><code class="language-plaintext highlighter-rouge">CGAL::Segment_2</code> (now tests for intersection with the drawing area)</li>
-        <li><code class="language-plaintext highlighter-rouge">CGAL::Triangle_2</code> (now tests for intersection with the drawing area)</li>
-        <li><code class="language-plaintext highlighter-rouge">CGAL::Triangulation_2</code> (is optimized for faster display on zooming)</li>
+        <li><code>CGAL::Segment_2</code> (now tests for intersection with the drawing area)</li>
+        <li><code>CGAL::Triangle_2</code> (now tests for intersection with the drawing area)</li>
+        <li><code>CGAL::Triangulation_2</code> (is optimized for faster display on zooming)</li>
       </ul>
     </li>
   </ul>
@@ -510,24 +510,24 @@ toolbar use to navigate.</li>
   <h4 id="intersection-test-routines">Intersection test routines</h4>
   <ul>
     <li>The documentation of CGAL::do_intersect should mention, for the 3D case:
-also, in three-dimensional space <code class="language-plaintext highlighter-rouge">Type1</code> can be either <code class="language-plaintext highlighter-rouge">Plane_3&lt;Kernel&gt;</code>
-  or <code class="language-plaintext highlighter-rouge">Triangle_3&lt;Kernel&gt;</code> and <code class="language-plaintext highlighter-rouge">Type2</code> any of:
+also, in three-dimensional space <code>Type1</code> can be either <code>Plane_3&lt;Kernel&gt;</code>
+  or <code>Triangle_3&lt;Kernel&gt;</code> and <code>Type2</code> any of:
       <ul>
-        <li><code class="language-plaintext highlighter-rouge">Plane_3&lt;Kernel&gt;</code></li>
-        <li><code class="language-plaintext highlighter-rouge">Line_3&lt;Kernel&gt;</code></li>
-        <li><code class="language-plaintext highlighter-rouge">Ray_3&lt;Kernel&gt;</code></li>
-        <li><code class="language-plaintext highlighter-rouge">Segment_3&lt;Kernel&gt;</code></li>
-        <li><code class="language-plaintext highlighter-rouge">Triangle_3&lt;Kernel&gt;</code></li>
+        <li><code>Plane_3&lt;Kernel&gt;</code></li>
+        <li><code>Line_3&lt;Kernel&gt;</code></li>
+        <li><code>Ray_3&lt;Kernel&gt;</code></li>
+        <li><code>Segment_3&lt;Kernel&gt;</code></li>
+        <li><code>Triangle_3&lt;Kernel&gt;</code></li>
       </ul>
     </li>
-    <li>In the same way, for <code class="language-plaintext highlighter-rouge">Kernel::DoIntersect_3</code>: for all pairs <code class="language-plaintext highlighter-rouge">Type1</code> and <code class="language-plaintext highlighter-rouge">Type2</code>, where the type <code class="language-plaintext highlighter-rouge">Type1</code> is either <code class="language-plaintext highlighter-rouge">Kernel::Plane_3</code>
-or <code class="language-plaintext highlighter-rouge">Kernel::Triangle_3</code> and <code class="language-plaintext highlighter-rouge">Type2</code> can be any of the following:
+    <li>In the same way, for <code>Kernel::DoIntersect_3</code>: for all pairs <code>Type1</code> and <code>Type2</code>, where the type <code>Type1</code> is either <code>Kernel::Plane_3</code>
+or <code>Kernel::Triangle_3</code> and <code>Type2</code> can be any of the following:
       <ul>
-        <li><code class="language-plaintext highlighter-rouge">Kernel::Plane_3</code></li>
-        <li><code class="language-plaintext highlighter-rouge">Kernel::Line_3</code></li>
-        <li><code class="language-plaintext highlighter-rouge">Kernel::Ray_3</code></li>
-        <li><code class="language-plaintext highlighter-rouge">Kernel::Segment_3</code></li>
-        <li><code class="language-plaintext highlighter-rouge">Kernel::Triangle_3</code></li>
+        <li><code>Kernel::Plane_3</code></li>
+        <li><code>Kernel::Line_3</code></li>
+        <li><code>Kernel::Ray_3</code></li>
+        <li><code>Kernel::Segment_3</code></li>
+        <li><code>Kernel::Triangle_3</code></li>
       </ul>
     </li>
     <li>Philippe Guigue (I<small>NRIA</small> Sophia-Antipolis) should be mentioned as one of the authors.</li>
@@ -593,10 +593,10 @@ or <code class="language-plaintext highlighter-rouge">Kernel::Triangle_3</code> 
     </div>
 
     <!-- Javascripts -->
-    <script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
-      <script src="/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
+    <script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
       <script>
         $(function () {
           $('.bxslider').bxSlider({
@@ -624,7 +624,7 @@ or <code class="language-plaintext highlighter-rouge">Kernel::Triangle_3</code> 
           });
         });
       </script>
-      <script src="/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
     </body>
 </html>
 

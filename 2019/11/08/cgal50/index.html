@@ -15,16 +15,16 @@
     <meta name="author" content="CGAL Editorial Board">
 
     <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
-    <link rel="stylesheet" href="/cgal-web/style.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 
     <!--[if lte IE 8]>
 	<link rel="stylesheet" href="css/leaflet.ie.css" />
 	<![endif]-->
-    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/main.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal//main.css">
 
     <!-- atom & rss feed -->
     <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
@@ -186,60 +186,60 @@ the associated <a href="https://www.cgal.org/2019/08/05/Polygonal_surface_recons
 
   <h3 id="shape-detection-major-changes"><a href="https://doc.cgal.org/5.0/Manual/packages.html#PkgShapeDetection">Shape Detection</a> (major changes)</h3>
   <ul>
-    <li><strong>Breaking change:</strong> The concept <code class="language-plaintext highlighter-rouge">ShapeDetectionTraits</code> has been renamed to <a href="https://doc.cgal.org/5.0/Shape_detection/classEfficientRANSACTraits.html"><code class="language-plaintext highlighter-rouge">EfficientRANSACTraits</code></a>.</li>
-    <li><strong>Breaking change:</strong> The <code class="language-plaintext highlighter-rouge">Shape_detection_3</code> namespace has been renamed to <a href="https://doc.cgal.org/5.0/Shape_detection/annotated.html"><code class="language-plaintext highlighter-rouge">Shape_detection</code></a>.</li>
+    <li><strong>Breaking change:</strong> The concept <code>ShapeDetectionTraits</code> has been renamed to <a href="https://doc.cgal.org/5.0/Shape_detection/classEfficientRANSACTraits.html"><code>EfficientRANSACTraits</code></a>.</li>
+    <li><strong>Breaking change:</strong> The <code>Shape_detection_3</code> namespace has been renamed to <a href="https://doc.cgal.org/5.0/Shape_detection/annotated.html"><code>Shape_detection</code></a>.</li>
     <li>Added a new, generic implementation of region growing. This enables for example applying region growing to inputs such as 2D and 3D point sets,
-or models of the <a href="https://doc.cgal.org/5.0/BGL/classFaceGraph.html"><code class="language-plaintext highlighter-rouge">FaceGraph</code></a> concept. Learn more about this new algorithm with this <a href="https://www.cgal.org/2019/07/30/Shape_detection/">blog entry</a>.</li>
+or models of the <a href="https://doc.cgal.org/5.0/BGL/classFaceGraph.html"><code>FaceGraph</code></a> concept. Learn more about this new algorithm with this <a href="https://www.cgal.org/2019/07/30/Shape_detection/">blog entry</a>.</li>
   </ul>
 
   <h3 id="dd-geometry-kernel"><a href="https://doc.cgal.org/5.0/Manual/packages.html#PkgKernelD">dD Geometry Kernel</a></h3>
   <ul>
-    <li>A new exact kernel, <a href="https://doc.cgal.org/5.0/Kernel_d/structCGAL_1_1Epeck__d.html"><code class="language-plaintext highlighter-rouge">Epeck_d</code></a>, is now available.</li>
+    <li>A new exact kernel, <a href="https://doc.cgal.org/5.0/Kernel_d/structCGAL_1_1Epeck__d.html"><code>Epeck_d</code></a>, is now available.</li>
   </ul>
 
   <h3 id="d-and-3d-linear-geometry-kernel"><a href="https://doc.cgal.org/5.0/Manual/packages.html#PkgKernel23">2D and 3D Linear Geometry Kernel</a></h3>
   <ul>
-    <li>Added a new concept, <a href="https://doc.cgal.org/5.0/Kernel_23/classKernel_1_1ComputeApproximateAngle__3.html"><code class="language-plaintext highlighter-rouge">ComputeApproximateAngle_3</code></a>,
+    <li>Added a new concept, <a href="https://doc.cgal.org/5.0/Kernel_23/classKernel_1_1ComputeApproximateAngle__3.html"><code>ComputeApproximateAngle_3</code></a>,
 to the 3D Kernel concepts to compute the approximate angle between two 3D vectors. Corresponding functors
-in the model (<a href="https://doc.cgal.org/5.0/Kernel_23/classKernel.html#a183c9ac358a4ccddc04e680f8ed16c0b"><code class="language-plaintext highlighter-rouge">Compute_approximate_angle_3</code></a>) 
-and free function (<a href="https://doc.cgal.org/5.0/Kernel_23/group__approximate__angle__grp.html"><code class="language-plaintext highlighter-rouge">approximate_angle</code></a>)
+in the model (<a href="https://doc.cgal.org/5.0/Kernel_23/classKernel.html#a183c9ac358a4ccddc04e680f8ed16c0b"><code>Compute_approximate_angle_3</code></a>) 
+and free function (<a href="https://doc.cgal.org/5.0/Kernel_23/group__approximate__angle__grp.html"><code>approximate_angle</code></a>)
 have also been added.</li>
     <li>The following objects are now hashable and thus trivially usable 
-with <a href="https://en.cppreference.com/w/cpp/container/unordered_set"><code class="language-plaintext highlighter-rouge">std::unordered_set</code></a> 
-and <a href="https://en.cppreference.com/w/cpp/header/unordered_map"><code class="language-plaintext highlighter-rouge">std::unordered_map</code></a>:
-<code class="language-plaintext highlighter-rouge">CGAL::Aff_transformation_2</code>, <code class="language-plaintext highlighter-rouge">CGAL::Aff_transformation_3</code>,
-<code class="language-plaintext highlighter-rouge">CGAL::Bbox_2</code>, <code class="language-plaintext highlighter-rouge">CGAL::Bbox_3</code>, <code class="language-plaintext highlighter-rouge">CGAL::Circle_2</code>,
-<code class="language-plaintext highlighter-rouge">CGAL::Iso_cuboid_3</code>, <code class="language-plaintext highlighter-rouge">CGAL::Iso_rectangle_2</code>, <code class="language-plaintext highlighter-rouge">CGAL::Point_2</code>,
-<code class="language-plaintext highlighter-rouge">CGAL::Point_3</code>, <code class="language-plaintext highlighter-rouge">CGAL::Segment_2</code>, <code class="language-plaintext highlighter-rouge">CGAL::Segment_3</code>,
-<code class="language-plaintext highlighter-rouge">CGAL::Sphere_3</code>, <code class="language-plaintext highlighter-rouge">CGAL::Vector_2</code>, <code class="language-plaintext highlighter-rouge">CGAL::Vector_3</code>,
-<code class="language-plaintext highlighter-rouge">CGAL::Weighted_point_2</code> and <code class="language-plaintext highlighter-rouge">CGAL::Weighted_point_3</code>.</li>
+with <a href="https://en.cppreference.com/w/cpp/container/unordered_set"><code>std::unordered_set</code></a> 
+and <a href="https://en.cppreference.com/w/cpp/header/unordered_map"><code>std::unordered_map</code></a>:
+<code>CGAL::Aff_transformation_2</code>, <code>CGAL::Aff_transformation_3</code>,
+<code>CGAL::Bbox_2</code>, <code>CGAL::Bbox_3</code>, <code>CGAL::Circle_2</code>,
+<code>CGAL::Iso_cuboid_3</code>, <code>CGAL::Iso_rectangle_2</code>, <code>CGAL::Point_2</code>,
+<code>CGAL::Point_3</code>, <code>CGAL::Segment_2</code>, <code>CGAL::Segment_3</code>,
+<code>CGAL::Sphere_3</code>, <code>CGAL::Vector_2</code>, <code>CGAL::Vector_3</code>,
+<code>CGAL::Weighted_point_2</code> and <code>CGAL::Weighted_point_3</code>.</li>
   </ul>
 
   <h3 id="polygon-mesh-processing"><a href="https://doc.cgal.org/latest/Manual/packages.html#PkgPolygonMeshProcessing">Polygon Mesh Processing</a></h3>
   <ul>
     <li>Introduced a <a href="https://doc.cgal.org/5.0/Polygon_mesh_processing/index.html#title36">wide range of new functions</a> 
 related to location of queries on a triangle mesh,
-such as <a href="https://doc.cgal.org/5.0/Polygon_mesh_processing/group__PMP__locate__grp.html#gada09bd8740ba69ead9deca597d53cf15"><code class="language-plaintext highlighter-rouge">CGAL::Polygon_mesh_processing::locate(Point, Mesh)</code></a>.
+such as <a href="https://doc.cgal.org/5.0/Polygon_mesh_processing/group__PMP__locate__grp.html#gada09bd8740ba69ead9deca597d53cf15"><code>CGAL::Polygon_mesh_processing::locate(Point, Mesh)</code></a>.
 The location of a point on a triangle mesh is expressed as the pair of a face and the barycentric
 coordinates of the point in this face, enabling robust manipulation of locations 
 (for example, intersections of two 3D segments living within the same face).</li>
-    <li>Added the mesh smoothing function <a href="https://doc.cgal.org/5.0/Polygon_mesh_processing/group__PMP__meshing__grp.html#gaa0551d546f6ab2cd9402bea12d8332a3"><code class="language-plaintext highlighter-rouge">smooth_mesh()</code></a>,
+    <li>Added the mesh smoothing function <a href="https://doc.cgal.org/5.0/Polygon_mesh_processing/group__PMP__meshing__grp.html#gaa0551d546f6ab2cd9402bea12d8332a3"><code>smooth_mesh()</code></a>,
 which can be used to improve the quality of triangle elements based on various geometric characteristics.</li>
-    <li>Added the shape smoothing function <a href="https://doc.cgal.org/5.0/Polygon_mesh_processing/group__PMP__meshing__grp.html#gaaa083ec78bcecf351e04d1bbf460b4a2"><code class="language-plaintext highlighter-rouge">smooth_shape()</code></a>,
+    <li>Added the shape smoothing function <a href="https://doc.cgal.org/5.0/Polygon_mesh_processing/group__PMP__meshing__grp.html#gaaa083ec78bcecf351e04d1bbf460b4a2"><code>smooth_shape()</code></a>,
 which can be used to smooth the surface of a triangle mesh, using the mean curvature flow to perform noise removal.
 (See also the new entry in the <a href="https://doc.cgal.org/5.0/Polygon_mesh_processing/index.html#title8">User Manual</a>)</li>
-    <li>Added the function <a href="https://doc.cgal.org/5.0/Polygon_mesh_processing/group__measure__grp.html#ga6da5119ce2c50729fda11a90ae7fb9ba"><code class="language-plaintext highlighter-rouge">CGAL::Polygon_mesh_processing::centroid()</code></a>,
+    <li>Added the function <a href="https://doc.cgal.org/5.0/Polygon_mesh_processing/group__measure__grp.html#ga6da5119ce2c50729fda11a90ae7fb9ba"><code>CGAL::Polygon_mesh_processing::centroid()</code></a>,
 which computes the centroid of a closed triangle mesh.</li>
-    <li>Added the functions <a href="https://doc.cgal.org/5.0/Polygon_mesh_processing/group__PMP__repairing__grp.html#ga9c12c4878c08a117b3733bb45f1a34cf"><code class="language-plaintext highlighter-rouge">CGAL::Polygon_mesh_processing::stitch_boundary_cycle()</code></a>
-and <a href="https://doc.cgal.org/5.0/Polygon_mesh_processing/group__PMP__repairing__grp.html#ga24d5ae37f62064b3fc576ba48a4ccc63"><code class="language-plaintext highlighter-rouge">CGAL::Polygon_mesh_processing::stitch_boundary_cycles()</code></a>,
+    <li>Added the functions <a href="https://doc.cgal.org/5.0/Polygon_mesh_processing/group__PMP__repairing__grp.html#ga9c12c4878c08a117b3733bb45f1a34cf"><code>CGAL::Polygon_mesh_processing::stitch_boundary_cycle()</code></a>
+and <a href="https://doc.cgal.org/5.0/Polygon_mesh_processing/group__PMP__repairing__grp.html#ga24d5ae37f62064b3fc576ba48a4ccc63"><code>CGAL::Polygon_mesh_processing::stitch_boundary_cycles()</code></a>,
 which can be used to try and merge together geometrically compatible but combinatorially different halfedges
 that belong to the same boundary cycle.</li>
-    <li>It is now possible to pass a face-size property map to <a href="https://doc.cgal.org/5.0/Polygon_mesh_processing/group__keep__connected__components__grp.html#ga48e7b3e6922ee78cf8ce801e3e325d9a"><code class="language-plaintext highlighter-rouge">CGAL::Polygon_mesh_processing::keep_large_connected_components()</code></a>
-and <a href="https://doc.cgal.org/5.0/Polygon_mesh_processing/group__keep__connected__components__grp.html#ga68c6c29dfc6a26a6a2f8befe6944f19d"><code class="language-plaintext highlighter-rouge">CGAL::Polygon_mesh_processing::keep_largest_connected_components()</code></a>, enabling users to define
+    <li>It is now possible to pass a face-size property map to <a href="https://doc.cgal.org/5.0/Polygon_mesh_processing/group__keep__connected__components__grp.html#ga48e7b3e6922ee78cf8ce801e3e325d9a"><code>CGAL::Polygon_mesh_processing::keep_large_connected_components()</code></a>
+and <a href="https://doc.cgal.org/5.0/Polygon_mesh_processing/group__keep__connected__components__grp.html#ga68c6c29dfc6a26a6a2f8befe6944f19d"><code>CGAL::Polygon_mesh_processing::keep_largest_connected_components()</code></a>, enabling users to define
 how the size of a face is computed (the size of the connected component is the sum of the sizes of its faces).
 If no property map is passed, the behavior is unchanged to previous versions: the size
 of a connected component is the number of faces it contains.</li>
-    <li>Added the function <a href="https://doc.cgal.org/5.0/Polygon_mesh_processing/group__PMP__repairing__grp.html#ga36098d2415efd0604b7b996163bc22db"><code class="language-plaintext highlighter-rouge">CGAL::Polygon_mesh_processing::non_manifold_vertices()</code></a>,
+    <li>Added the function <a href="https://doc.cgal.org/5.0/Polygon_mesh_processing/group__PMP__repairing__grp.html#ga36098d2415efd0604b7b996163bc22db"><code>CGAL::Polygon_mesh_processing::non_manifold_vertices()</code></a>,
 which can be used to collect all the non-manifold vertices (i.e. pinched vertices,
 or vertices appearing in multiple umbrellas) of a mesh.</li>
   </ul>
@@ -255,60 +255,60 @@ read/write comments from/in the PLY header.</li>
     <li><strong>Breaking change</strong>: the API using iterators and overloads for optional parameters (deprecated since
 CGAL 4.12) has been removed. The current (and now only) API uses ranges and Named Parameters.</li>
     <li>Added the possibility to use the named parameter
-<a href="https://doc.cgal.org/5.0/Point_set_processing_3/group__psp__namedparameters.html#PSP_neighbor_radius"><code class="language-plaintext highlighter-rouge">neighbor_radius</code></a> 
+<a href="https://doc.cgal.org/5.0/Point_set_processing_3/group__psp__namedparameters.html#PSP_neighbor_radius"><code>neighbor_radius</code></a> 
 to use spherical neighbor queries instead of K-nearest neighbors queries for the following functions:
-<a href="https://doc.cgal.org/5.0/Point_set_processing_3/group__PkgPointSetProcessing3Algorithms.html#ga4f82723e2f0bb33f3677e29e0208a256"><code class="language-plaintext highlighter-rouge">CGAL::bilateral_smooth_point_set()</code></a>,
-<a href="https://doc.cgal.org/5.0/Point_set_processing_3/group__PkgPointSetProcessing3Algorithms.html#ga0cd0f87de690d4edf82740e856efa491"><code class="language-plaintext highlighter-rouge">CGAL::jet_estimate_normals()</code></a>,
-<a href="https://doc.cgal.org/5.0/Point_set_processing_3/group__PkgPointSetProcessing3Algorithms.html#ga549402c0a8a8b6b71875181e93961521"><code class="language-plaintext highlighter-rouge">CGAL::jet_smooth_point_set()</code></a>,
-<a href="https://doc.cgal.org/5.0/Point_set_processing_3/group__PkgPointSetProcessing3Algorithms.html#ga50c98d5c5ae5535bce6f32eddbd03f33"><code class="language-plaintext highlighter-rouge">CGAL::mst_orient_normals()</code></a>,
-<a href="https://doc.cgal.org/5.0/Point_set_processing_3/group__PkgPointSetProcessing3Algorithms.html#ga8c642da96a025ab32445aeb6cc219b0b"><code class="language-plaintext highlighter-rouge">CGAL::pca_estimate_normals()</code></a> and
-<a href="https://doc.cgal.org/5.0/Point_set_processing_3/group__PkgPointSetProcessing3Algorithms.html#gafd0b5a21ec5042e4bca09cb43f1847f9"><code class="language-plaintext highlighter-rouge">CGAL::remove_outliers()</code></a>.</li>
+<a href="https://doc.cgal.org/5.0/Point_set_processing_3/group__PkgPointSetProcessing3Algorithms.html#ga4f82723e2f0bb33f3677e29e0208a256"><code>CGAL::bilateral_smooth_point_set()</code></a>,
+<a href="https://doc.cgal.org/5.0/Point_set_processing_3/group__PkgPointSetProcessing3Algorithms.html#ga0cd0f87de690d4edf82740e856efa491"><code>CGAL::jet_estimate_normals()</code></a>,
+<a href="https://doc.cgal.org/5.0/Point_set_processing_3/group__PkgPointSetProcessing3Algorithms.html#ga549402c0a8a8b6b71875181e93961521"><code>CGAL::jet_smooth_point_set()</code></a>,
+<a href="https://doc.cgal.org/5.0/Point_set_processing_3/group__PkgPointSetProcessing3Algorithms.html#ga50c98d5c5ae5535bce6f32eddbd03f33"><code>CGAL::mst_orient_normals()</code></a>,
+<a href="https://doc.cgal.org/5.0/Point_set_processing_3/group__PkgPointSetProcessing3Algorithms.html#ga8c642da96a025ab32445aeb6cc219b0b"><code>CGAL::pca_estimate_normals()</code></a> and
+<a href="https://doc.cgal.org/5.0/Point_set_processing_3/group__PkgPointSetProcessing3Algorithms.html#gafd0b5a21ec5042e4bca09cb43f1847f9"><code>CGAL::remove_outliers()</code></a>.</li>
   </ul>
 
   <h3 id="d-triangulations"><a href="https://doc.cgal.org/5.0/Manual/packages.html#PkgTriangulation2">2D Triangulations</a></h3>
   <ul>
-    <li><strong>Breaking change</strong>: Removed the deprecated functions <code class="language-plaintext highlighter-rouge">CGAL::Constrained_triangulation_plus_2::
+    <li><strong>Breaking change</strong>: Removed the deprecated functions <code>CGAL::Constrained_triangulation_plus_2::
 vertices_in_constraint_{begin/end}(Vertex_handle va, Vertex_handle vb) const;</code>,
-and <code class="language-plaintext highlighter-rouge">CGAL::Constrained_triangulation_plus_2::remove_constraint(Vertex_handle va, Vertex_handle vb)</code>,
+and <code>CGAL::Constrained_triangulation_plus_2::remove_constraint(Vertex_handle va, Vertex_handle vb)</code>,
 that is a pair of vertex handles is no longer a key for a polyline constraint.
 Users must use a version prior to 5.0 if they need this functionality.</li>
-    <li><strong>Breaking change</strong>: Removed the deprecated classes <code class="language-plaintext highlighter-rouge">CGAL::Regular_triangulation_euclidean_traits_2</code>,
-<code class="language-plaintext highlighter-rouge">CGAL::Regular_triangulation_filtered_traits_2</code>. Users must use a version prior to 5.0 if they need these classes.</li>
+    <li><strong>Breaking change</strong>: Removed the deprecated classes <code>CGAL::Regular_triangulation_euclidean_traits_2</code>,
+<code>CGAL::Regular_triangulation_filtered_traits_2</code>. Users must use a version prior to 5.0 if they need these classes.</li>
     <li><strong>Breaking change</strong>: The <a href="https://doc.cgal.org/5.0/BGL/group__PkgBGLTraits.html">graph traits</a> enabling CGAL’s 2D triangulations to be used as a parameter
-for any graph-based algorithm of CGAL (or boost) have been improved to fully model the <a href="https://doc.cgal.org/5.0/BGL/classFaceGraph.html"><code class="language-plaintext highlighter-rouge">FaceGraph</code></a> concept.
+for any graph-based algorithm of CGAL (or boost) have been improved to fully model the <a href="https://doc.cgal.org/5.0/BGL/classFaceGraph.html"><code>FaceGraph</code></a> concept.
 In addition, only the finite simplicies (those not incident to the infinite vertex) of the 2D triangulations
 are now visibile through this scope. The complete triangulation can still be accessed as a graph,
 by using the graph traits of the underlying triangulation data structure (usually,
-<a href="https://doc.cgal.org/5.0/TDS_2/classCGAL_1_1Triangulation__data__structure__2.html"><code class="language-plaintext highlighter-rouge">CGAL::Triangulation_data_structure_2</code></a>).</li>
-    <li><strong>Breaking change</strong>: The <code class="language-plaintext highlighter-rouge">insert()</code> function
+<a href="https://doc.cgal.org/5.0/TDS_2/classCGAL_1_1Triangulation__data__structure__2.html"><code>CGAL::Triangulation_data_structure_2</code></a>).</li>
+    <li><strong>Breaking change</strong>: The <code>insert()</code> function
 of
-<a href="https://doc.cgal.org/latest/Triangulation_2/classCGAL_1_1Triangulation__2.html"><code class="language-plaintext highlighter-rouge">CGAL::Triangulation_2</code></a>
+<a href="https://doc.cgal.org/latest/Triangulation_2/classCGAL_1_1Triangulation__2.html"><code>CGAL::Triangulation_2</code></a>
 which takes a range of points as argument is now guaranteed to
-insert the points following the order of <code class="language-plaintext highlighter-rouge">InputIterator</code>.  Note
-that this change only affects the base class <code class="language-plaintext highlighter-rouge">Triangulation_2</code>
-and not any derived class, such as <code class="language-plaintext highlighter-rouge">Delaunay_triangulation_2</code>.</li>
+insert the points following the order of <code>InputIterator</code>.  Note
+that this change only affects the base class <code>Triangulation_2</code>
+and not any derived class, such as <code>Delaunay_triangulation_2</code>.</li>
     <li>Added a new <a href="https://doc.cgal.org/5.0/Triangulation_2/classCGAL_1_1Triangulation__2.html#a6cfa7d3aaa375a25d217858b49e2eb07=">constructor</a>
- and <a href="https://doc.cgal.org/5.0/Triangulation_2/classCGAL_1_1Triangulation__2.html#ac5e9bc8adef80dc01a0b31c2d0234545"><code class="language-plaintext highlighter-rouge">insert()</code></a>
- function to <a href="https://doc.cgal.org/5.0/Triangulation_2/classCGAL_1_1Triangulation__2.html"><code class="language-plaintext highlighter-rouge">CGAL::Triangulation_2</code></a>
+ and <a href="https://doc.cgal.org/5.0/Triangulation_2/classCGAL_1_1Triangulation__2.html#ac5e9bc8adef80dc01a0b31c2d0234545"><code>insert()</code></a>
+ function to <a href="https://doc.cgal.org/5.0/Triangulation_2/classCGAL_1_1Triangulation__2.html"><code>CGAL::Triangulation_2</code></a>
  that takes a range of points with info.</li>
-    <li>Introduced a new face base class, <a href="https://doc.cgal.org/5.0/BGL/classCGAL_1_1Triangulation__face__base__with__id__2.html"><code class="language-plaintext highlighter-rouge">Triangulation_face_base_with_id_2</code></a>
+    <li>Introduced a new face base class, <a href="https://doc.cgal.org/5.0/BGL/classCGAL_1_1Triangulation__face__base__with__id__2.html"><code>Triangulation_face_base_with_id_2</code></a>
 which enables storing user-defined integer IDs in the face of any 2D triangulation, a precondition to use some
 BGL algorithms.</li>
-    <li>Added range types and functions that return ranges, for example for all vertices, enabling the use of <code class="language-plaintext highlighter-rouge">C++11</code> <code class="language-plaintext highlighter-rouge">for</code>-loops.
+    <li>Added range types and functions that return ranges, for example for all vertices, enabling the use of <code>C++11</code> <code>for</code>-loops.
 See <a href="https://doc.cgal.org/5.0/Triangulation_2/Triangulation_2_2for_loop_2_8cpp-example.html">this new example</a> for a usage demonstration.</li>
   </ul>
 
   <h3 id="d-triangulations-1"><a href="https://doc.cgal.org/5.0/Manual/packages.html#PkgTriangulation3">3D Triangulations</a></h3>
   <ul>
     <li><strong>Breaking change</strong>: The <a href="https://doc.cgal.org/5.0/Triangulation_3/classCGAL_1_1Triangulation__3.html#a63f67cf6aaadcee14318cf56a36d247a">constructor</a>
-and the <a href="https://doc.cgal.org/5.0/Triangulation_3/classCGAL_1_1Triangulation__3.html#ad3353128386bbb51f79d0263e7f67337"><code class="language-plaintext highlighter-rouge">insert()</code></a>
-function of <a href="https://doc.cgal.org/5.0/Triangulation_3/classCGAL_1_1Triangulation__3.html"><code class="language-plaintext highlighter-rouge">CGAL::Triangulation_3</code></a> 
+and the <a href="https://doc.cgal.org/5.0/Triangulation_3/classCGAL_1_1Triangulation__3.html#ad3353128386bbb51f79d0263e7f67337"><code>insert()</code></a>
+function of <a href="https://doc.cgal.org/5.0/Triangulation_3/classCGAL_1_1Triangulation__3.html"><code>CGAL::Triangulation_3</code></a> 
 which take a range of points as argument are now guaranteed to
-insert the points following the order of <code class="language-plaintext highlighter-rouge">InputIterator</code>. Note
-that this change only affects the base class <code class="language-plaintext highlighter-rouge">Triangulation_3</code>
-and not any derived class, such as <code class="language-plaintext highlighter-rouge">Delaunay_triangulation_3</code>.</li>
-    <li>Added constructor and <a href="https://doc.cgal.org/5.0/Triangulation_3/classCGAL_1_1Triangulation__3.html#a8aa85f88733d30aa3ec5385538e13ace"><code class="language-plaintext highlighter-rouge">insert()</code></a>
-function to <code class="language-plaintext highlighter-rouge">CGAL::Triangulation_3</code> that takes a range of points with info.</li>
+insert the points following the order of <code>InputIterator</code>. Note
+that this change only affects the base class <code>Triangulation_3</code>
+and not any derived class, such as <code>Delaunay_triangulation_3</code>.</li>
+    <li>Added constructor and <a href="https://doc.cgal.org/5.0/Triangulation_3/classCGAL_1_1Triangulation__3.html#a8aa85f88733d30aa3ec5385538e13ace"><code>insert()</code></a>
+function to <code>CGAL::Triangulation_3</code> that takes a range of points with info.</li>
     <li>Added range types and functions that return ranges, for example for all vertices, which enables to use C++11 for-loops.
 See <a href="https://doc.cgal.org/5.0/Triangulation_3/Triangulation_3_2for_loop_8cpp-example.html">this new example</a> for a usage demonstration.</li>
   </ul>
@@ -316,8 +316,8 @@ See <a href="https://doc.cgal.org/5.0/Triangulation_3/Triangulation_3_2for_loop_
   <h3 id="surface-mesh"><a href="https://doc.cgal.org/5.0/Manual/packages.html#PkgSurfaceMesh">Surface Mesh</a></h3>
   <ul>
     <li>Introduced new functions to read and write using the PLY format,
-<a href="https://doc.cgal.org/5.0/Surface_mesh/group__PkgSurface__mesh.html#ga42f6ad486ddab74e13d3dc53f511c343"><code class="language-plaintext highlighter-rouge">CGAL::read_ply()</code></a> 
-and <a href="https://doc.cgal.org/5.0/Surface_mesh/group__PkgSurface__mesh.html#ga77bbb79d449c981895eedb6c3c23bd14"><code class="language-plaintext highlighter-rouge">CGAL::write_ply()</code></a>, 
+<a href="https://doc.cgal.org/5.0/Surface_mesh/group__PkgSurface__mesh.html#ga42f6ad486ddab74e13d3dc53f511c343"><code>CGAL::read_ply()</code></a> 
+and <a href="https://doc.cgal.org/5.0/Surface_mesh/group__PkgSurface__mesh.html#ga77bbb79d449c981895eedb6c3c23bd14"><code>CGAL::write_ply()</code></a>, 
 enabling users to save and load additional property maps of the surface mesh.</li>
   </ul>
 
@@ -330,27 +330,27 @@ for solving Mixed Integer Programming (MIP) problems with or without constraints
 
   <h3 id="d-boolean-operations-on-nef-polyhedra"><a href="https://doc.cgal.org/5.0/Manual/packages.html#PkgNef3">3D Boolean Operations on Nef Polyhedra</a></h3>
   <ul>
-    <li>Added a function to convert a Nef_polyhedron_3 to a polygon soup: <a href="https://doc.cgal.org/5.0/Nef_3/group__PkgNef3IOFunctions.html#ga28a9eb4da0cd6153f0c16f7f9eaf6665"><code class="language-plaintext highlighter-rouge">CGAL::convert_nef_polyhedron_to_polygon_soup()</code></a></li>
+    <li>Added a function to convert a Nef_polyhedron_3 to a polygon soup: <a href="https://doc.cgal.org/5.0/Nef_3/group__PkgNef3IOFunctions.html#ga28a9eb4da0cd6153f0c16f7f9eaf6665"><code>CGAL::convert_nef_polyhedron_to_polygon_soup()</code></a></li>
   </ul>
 
   <h3 id="io-streams"><a href="https://doc.cgal.org/5.0/Manual/packages.html#PkgStreamSupport">IO Streams</a></h3>
   <ul>
-    <li><strong>Breaking change:</strong> The API of <a href="https://doc.cgal.org/5.0/Stream_support/classCGAL_1_1Color.html"><code class="language-plaintext highlighter-rouge">CGAL::Color</code></a> has been cleaned up.</li>
+    <li><strong>Breaking change:</strong> The API of <a href="https://doc.cgal.org/5.0/Stream_support/classCGAL_1_1Color.html"><code>CGAL::Color</code></a> has been cleaned up.</li>
     <li>Added new functions to support some parts of the WKT file format:
       <ul>
-        <li><a href="https://doc.cgal.org/5.0/Stream_support/group__PkgStreamSupportRef.html#gad2872abfe6fcf17d705d38567fdd6248"><code class="language-plaintext highlighter-rouge">CGAL::read_WKT()</code></a></li>
-        <li><a href="https://doc.cgal.org/5.0/Stream_support/group__PkgStreamSupportRef.html#gadbd2705b183e467507abd2f167446eba"><code class="language-plaintext highlighter-rouge">CGAL::read_point_WKT()</code></a></li>
-        <li><a href="https://doc.cgal.org/5.0/Stream_support/group__PkgStreamSupportRef.html#ga4fb72e49a1fd385bbed35ea20297aa8d"><code class="language-plaintext highlighter-rouge">CGAL::read_multi_point_WKT()</code></a></li>
-        <li><a href="https://doc.cgal.org/5.0/Stream_support/group__PkgStreamSupportRef.html#gaaa236308b9da5dbf217ef281fdb55de4"><code class="language-plaintext highlighter-rouge">CGAL::read_linestring_WKT()</code></a></li>
-        <li><a href="https://doc.cgal.org/5.0/Stream_support/group__PkgStreamSupportRef.html#gad6046c7f9d36512b8a014be82c1e2220"><code class="language-plaintext highlighter-rouge">CGAL::read_multi_linestring_WKT()</code></a></li>
-        <li><a href="https://doc.cgal.org/5.0/Stream_support/group__PkgStreamSupportRef.html#gaa36ccd3ac4b3fe3e3fd8a76715c56b9a"><code class="language-plaintext highlighter-rouge">CGAL::read_polygon_WKT()</code></a></li>
-        <li><a href="https://doc.cgal.org/5.0/Stream_support/group__PkgStreamSupportRef.html#ga4ceaa71b9cb3b3f7984bed19afff6fc6"><code class="language-plaintext highlighter-rouge">CGAL::read_multi_polygon_WKT()</code></a></li>
-        <li><a href="https://doc.cgal.org/5.0/Stream_support/group__PkgStreamSupportRef.html#gab1a2d277b43c218bf128a2056eb53ced"><code class="language-plaintext highlighter-rouge">CGAL::write_point_WKT()</code></a></li>
-        <li><a href="https://doc.cgal.org/5.0/Stream_support/group__PkgStreamSupportRef.html#gab5365a4726893aa4f51739ede63f5a09"><code class="language-plaintext highlighter-rouge">CGAL::write_polygon_WKT()</code></a></li>
-        <li><a href="https://doc.cgal.org/5.0/Stream_support/group__PkgStreamSupportRef.html#gaa37ed77d1a01567b93c872a48198efa6"><code class="language-plaintext highlighter-rouge">CGAL::write_linestring_WKT()</code></a></li>
-        <li><a href="https://doc.cgal.org/5.0/Stream_support/group__PkgStreamSupportRef.html#ga98de4b4e5cccb370febe5daf66bb582d"><code class="language-plaintext highlighter-rouge">CGAL::write_multi_point_WKT()</code></a></li>
-        <li><a href="https://doc.cgal.org/5.0/Stream_support/group__PkgStreamSupportRef.html#ga4ded40ab50f57e0b410640e28964935e"><code class="language-plaintext highlighter-rouge">CGAL::write_multi_polygon_WKT()</code></a></li>
-        <li><a href="https://doc.cgal.org/5.0/Stream_support/group__PkgStreamSupportRef.html#ga219987f7a9c0b871c1733aa0c38f26b3"><code class="language-plaintext highlighter-rouge">CGAL::write_multi_linestring_WKT()</code></a></li>
+        <li><a href="https://doc.cgal.org/5.0/Stream_support/group__PkgStreamSupportRef.html#gad2872abfe6fcf17d705d38567fdd6248"><code>CGAL::read_WKT()</code></a></li>
+        <li><a href="https://doc.cgal.org/5.0/Stream_support/group__PkgStreamSupportRef.html#gadbd2705b183e467507abd2f167446eba"><code>CGAL::read_point_WKT()</code></a></li>
+        <li><a href="https://doc.cgal.org/5.0/Stream_support/group__PkgStreamSupportRef.html#ga4fb72e49a1fd385bbed35ea20297aa8d"><code>CGAL::read_multi_point_WKT()</code></a></li>
+        <li><a href="https://doc.cgal.org/5.0/Stream_support/group__PkgStreamSupportRef.html#gaaa236308b9da5dbf217ef281fdb55de4"><code>CGAL::read_linestring_WKT()</code></a></li>
+        <li><a href="https://doc.cgal.org/5.0/Stream_support/group__PkgStreamSupportRef.html#gad6046c7f9d36512b8a014be82c1e2220"><code>CGAL::read_multi_linestring_WKT()</code></a></li>
+        <li><a href="https://doc.cgal.org/5.0/Stream_support/group__PkgStreamSupportRef.html#gaa36ccd3ac4b3fe3e3fd8a76715c56b9a"><code>CGAL::read_polygon_WKT()</code></a></li>
+        <li><a href="https://doc.cgal.org/5.0/Stream_support/group__PkgStreamSupportRef.html#ga4ceaa71b9cb3b3f7984bed19afff6fc6"><code>CGAL::read_multi_polygon_WKT()</code></a></li>
+        <li><a href="https://doc.cgal.org/5.0/Stream_support/group__PkgStreamSupportRef.html#gab1a2d277b43c218bf128a2056eb53ced"><code>CGAL::write_point_WKT()</code></a></li>
+        <li><a href="https://doc.cgal.org/5.0/Stream_support/group__PkgStreamSupportRef.html#gab5365a4726893aa4f51739ede63f5a09"><code>CGAL::write_polygon_WKT()</code></a></li>
+        <li><a href="https://doc.cgal.org/5.0/Stream_support/group__PkgStreamSupportRef.html#gaa37ed77d1a01567b93c872a48198efa6"><code>CGAL::write_linestring_WKT()</code></a></li>
+        <li><a href="https://doc.cgal.org/5.0/Stream_support/group__PkgStreamSupportRef.html#ga98de4b4e5cccb370febe5daf66bb582d"><code>CGAL::write_multi_point_WKT()</code></a></li>
+        <li><a href="https://doc.cgal.org/5.0/Stream_support/group__PkgStreamSupportRef.html#ga4ded40ab50f57e0b410640e28964935e"><code>CGAL::write_multi_polygon_WKT()</code></a></li>
+        <li><a href="https://doc.cgal.org/5.0/Stream_support/group__PkgStreamSupportRef.html#ga219987f7a9c0b871c1733aa0c38f26b3"><code>CGAL::write_multi_linestring_WKT()</code></a></li>
       </ul>
     </li>
   </ul>
@@ -416,10 +416,10 @@ for solving Mixed Integer Programming (MIP) problems with or without constraints
     </div>
 
     <!-- Javascripts -->
-    <script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
-      <script src="/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
+    <script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
       <script>
         $(function () {
           $('.bxslider').bxSlider({
@@ -447,7 +447,7 @@ for solving Mixed Integer Programming (MIP) problems with or without constraints
           });
         });
       </script>
-      <script src="/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
     </body>
 </html>
 

@@ -15,16 +15,16 @@
     <meta name="author" content="CGAL Editorial Board">
 
     <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
-    <link rel="stylesheet" href="/cgal-web/style.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 
     <!--[if lte IE 8]>
 	<link rel="stylesheet" href="css/leaflet.ie.css" />
 	<![endif]-->
-    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/main.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal//main.css">
 
     <!-- atom & rss feed -->
     <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
@@ -161,9 +161,9 @@ is now back into CGAL.</li>
   <h3 id="d-and-3d-geometry-kernel">2D and 3D Geometry Kernel</h3>
 
   <ul>
-    <li>Fixed a bug in the <code class="language-plaintext highlighter-rouge">Segment_3-Triangle_3</code> intersection function in the
+    <li>Fixed a bug in the <code>Segment_3-Triangle_3</code> intersection function in the
 case the segment is collinear with a triangle edge.</li>
-    <li>Fixed a bug in the <code class="language-plaintext highlighter-rouge">Projection_traits_.._3</code> class in the case a
+    <li>Fixed a bug in the <code>Projection_traits_.._3</code> class in the case a
 segment was parallel to the x-axis.</li>
   </ul>
 
@@ -178,7 +178,7 @@ units using the algebraic kernel are linked.</li>
 
   <ul>
     <li>Fixed a memory leak due to the usage of an internal mechanism that has
-been replaced by <code class="language-plaintext highlighter-rouge">boost::any</code>. This also influences the packages 2D
+been replaced by <code>boost::any</code>. This also influences the packages 2D
 Boolean Operations on Nef Polygons, 3D Boolean Operations on Nef
 Polyhedra, Convex Decomposition of Polyhedra, and 3D Minkowski Sum
 of Polyhedra.</li>
@@ -194,15 +194,15 @@ of Polyhedra.</li>
 
   <ul>
     <li>Fixed a compilation error in the header
-<code class="language-plaintext highlighter-rouge">&lt;CGAL/Mesh_2/Do_not_refine_edges.h&gt;</code> when g++ version 4.7 is used.</li>
+<code>&lt;CGAL/Mesh_2/Do_not_refine_edges.h&gt;</code> when g++ version 4.7 is used.</li>
   </ul>
 
   <h3 id="surface-mesh-generation-and-3d-mesh-generation">Surface Mesh Generation and 3D Mesh Generation</h3>
 
   <ul>
-    <li>Fixed an important bug in the <code class="language-plaintext highlighter-rouge">CGAL_ImageIO</code> library, that could lead
+    <li>Fixed an important bug in the <code>CGAL_ImageIO</code> library, that could lead
 to wrong result when meshing from a 3D image.</li>
-    <li>Fixed the compilation of the demo in <code class="language-plaintext highlighter-rouge">demo/Surface_mesher</code>, when Boost
+    <li>Fixed the compilation of the demo in <code>demo/Surface_mesher</code>, when Boost
 version 1.48 or 1.49 is used.</li>
   </ul>
 
@@ -210,7 +210,7 @@ version 1.48 or 1.49 is used.</li>
 
   <ul>
     <li>Fixed a memory leak.</li>
-    <li>Fixed a compatibility issue with Eigen-3.1 of <code class="language-plaintext highlighter-rouge">Eigen_solver_traits</code>.
+    <li>Fixed a compatibility issue with Eigen-3.1 of <code>Eigen_solver_traits</code>.
 This fix also affects the usage of that class in the package
 <em>Surface Reconstruction from Point Sets</em>.</li>
   </ul>
@@ -275,10 +275,10 @@ This fix also affects the usage of that class in the package
     </div>
 
     <!-- Javascripts -->
-    <script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
-      <script src="/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
+    <script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
       <script>
         $(function () {
           $('.bxslider').bxSlider({
@@ -306,7 +306,7 @@ This fix also affects the usage of that class in the package
           });
         });
       </script>
-      <script src="/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
     </body>
 </html>
 

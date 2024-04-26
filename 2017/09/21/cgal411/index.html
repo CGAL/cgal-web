@@ -15,16 +15,16 @@
     <meta name="author" content="CGAL Editorial Board">
 
     <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
-    <link rel="stylesheet" href="/cgal-web/style.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 
     <!--[if lte IE 8]>
 	<link rel="stylesheet" href="css/leaflet.ie.css" />
 	<![endif]-->
-    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/main.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal//main.css">
 
     <!-- atom & rss feed -->
     <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
@@ -153,7 +153,7 @@
   <h3 id="d-periodic-regular-triangulations-new-feature">3D Periodic Regular Triangulations (new feature)</h3>
 
   <ul>
-    <li>Added the class <code class="language-plaintext highlighter-rouge">Periodic_3_regular_triangulation_3</code>, which provides
+    <li>Added the class <code>Periodic_3_regular_triangulation_3</code>, which provides
 functionality for 3D periodic weighted Delaunay triangulations. The
 construction is fully dynamic: it provides both point insertion and
 vertex removal.</li>
@@ -162,7 +162,7 @@ vertex removal.</li>
   <h3 id="dd-regular-triangulations-new-feature">dD Regular Triangulations (new feature)</h3>
 
   <ul>
-    <li>Added the class <code class="language-plaintext highlighter-rouge">Regular_triangulation</code>, which provides
+    <li>Added the class <code>Regular_triangulation</code>, which provides
 functionality for dD weighted Delaunay triangulations. Note that the
 removal of points is not yet supported.</li>
   </ul>
@@ -171,12 +171,12 @@ removal of points is not yet supported.</li>
 
   <ul>
     <li><strong>Breaking change</strong>: The dangerous implicit conversions between
-weighted points and points in the concept <code class="language-plaintext highlighter-rouge">Kernel</code> have been
+weighted points and points in the concept <code>Kernel</code> have been
 disabled. Constructors offering to build a weighted point from a
-point (and reversely) are still requested by the concept <code class="language-plaintext highlighter-rouge">Kernel</code>
-but must now be marked with the <code class="language-plaintext highlighter-rouge">explicit</code> specifier.</li>
+point (and reversely) are still requested by the concept <code>Kernel</code>
+but must now be marked with the <code>explicit</code> specifier.</li>
     <li><strong>Breaking change</strong>: The removal of implicit conversions between
-points and weighted points in the concept <code class="language-plaintext highlighter-rouge">Kernel</code> has incidentally
+points and weighted points in the concept <code>Kernel</code> has incidentally
 created various minor breaking changes in the following packages: 2D
 Alpha Shapes, 2D and 3D Triangulations, and 3D Mesh Generation. See
 the full changelog for details.</li>
@@ -186,23 +186,23 @@ the full changelog for details.</li>
 
   <ul>
     <li><strong>Breaking change</strong>:
-<code class="language-plaintext highlighter-rouge">operator &gt;&gt;(std::istream&amp;, Surface_mesh&amp;)</code> no longer clears the surface mesh.</li>
+<code>operator &gt;&gt;(std::istream&amp;, Surface_mesh&amp;)</code> no longer clears the surface mesh.</li>
   </ul>
 
   <h3 id="triangulated-surface-mesh-parameterization-breaking-change">Triangulated Surface Mesh Parameterization (breaking change)</h3>
 
   <ul>
     <li><strong>Breaking change</strong>: The package has been rewritten and can operate
-on any model of the <code class="language-plaintext highlighter-rouge">MutableFaceGraph</code> concept. All previous
+on any model of the <code>MutableFaceGraph</code> concept. All previous
 parameterization methods are still offered, although with a
 different, simpler API. The documentation has been updated and
 offers a gentle introduction to the new API. Users who wish to use
 the former API must use a version prior to 4.11.</li>
     <li><strong>Breaking change</strong>: The adapter to add virtual seams is now the
-class <code class="language-plaintext highlighter-rouge">CGAL::Seam_mesh</code> in the package <em>CGAL and the BGL</em>.</li>
+class <code>CGAL::Seam_mesh</code> in the package <em>CGAL and the BGL</em>.</li>
     <li><strong>Breaking change</strong>: The package has been restructured and most
 headers have been moved. In a general manner, users should replace
-<code class="language-plaintext highlighter-rouge">&lt;CGAL/XXX.h&gt;</code> with <code class="language-plaintext highlighter-rouge">&lt;CGAL/Surface_mesh_parameterization/XXX.h&gt;</code></li>
+<code>&lt;CGAL/XXX.h&gt;</code> with <code>&lt;CGAL/Surface_mesh_parameterization/XXX.h&gt;</code></li>
     <li>Add the <em>As Rigid As Possible Parameterization</em> method. This
 parameterization allows the user to prioritize angle preservation,
 shape preservation, or a balance of both.</li>
@@ -214,13 +214,13 @@ method allows to parameterize meshes that are topological spheres.</li>
 
   <ul>
     <li>The subdivision algorithms now work on any model of a
-<code class="language-plaintext highlighter-rouge">MutableFaceGraph</code>. A new API to the subdivision methods is offered,
+<code>MutableFaceGraph</code>. A new API to the subdivision methods is offered,
 which uses optional named parameters to pass the number of
 iterations and a vertex property map.</li>
     <li><strong>Breaking change</strong>: Removed the headers
-<code class="language-plaintext highlighter-rouge">&lt;CGAL/Subdivision_method_3.h&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;CGAL/Subdivision_mask_3.h&gt;</code>.
-The headers <code class="language-plaintext highlighter-rouge">&lt;CGAL/Subdivision_method_3/subdivision_methods_3.h&gt;</code>
-and <code class="language-plaintext highlighter-rouge">&lt;CGAL/Subdivision_method_3/subdivision_masks_3.h&gt;</code> should
+<code>&lt;CGAL/Subdivision_method_3.h&gt;</code> and <code>&lt;CGAL/Subdivision_mask_3.h&gt;</code>.
+The headers <code>&lt;CGAL/Subdivision_method_3/subdivision_methods_3.h&gt;</code>
+and <code>&lt;CGAL/Subdivision_method_3/subdivision_masks_3.h&gt;</code> should
 respectively be used instead.</li>
     <li>Sqrt3 subdivision can now handle input surfaces with a border.</li>
   </ul>
@@ -232,9 +232,9 @@ respectively be used instead.</li>
 and meshing algorithm and making it possible for the user to use
 different ones. The default algorithms used are the same as before
 this API change, but methods are moved to the classes
-<code class="language-plaintext highlighter-rouge">Weighted_PCA_smoother</code> and <code class="language-plaintext highlighter-rouge">Alpha_shape_mesher</code>.</li>
+<code>Weighted_PCA_smoother</code> and <code>Alpha_shape_mesher</code>.</li>
     <li>Alternative smoothing and meshing methods are provided:
-<code class="language-plaintext highlighter-rouge">Jet_smoother</code> and <code class="language-plaintext highlighter-rouge">Advancing_front_mesher</code>.</li>
+<code>Jet_smoother</code> and <code>Advancing_front_mesher</code>.</li>
   </ul>
 
   <h3 id="d-alpha-shapes">2D Alpha Shapes</h3>
@@ -242,73 +242,73 @@ this API change, but methods are moved to the classes
   <ul>
     <li><strong>Breaking change</strong>: Mirrored the concepts of the 2D alpha shape
 package with those of the 3D Alpha Shapes package. Consequently, a
-new concept, <code class="language-plaintext highlighter-rouge">WeightedAlphaShapeTraits_2</code>, is introduced to provide
+new concept, <code>WeightedAlphaShapeTraits_2</code>, is introduced to provide
 requirements on the traits class for 2D weighted alpha shapes. All
-models of the concept <code class="language-plaintext highlighter-rouge">Kernel</code> are models of this new concept.</li>
-    <li>The concept <code class="language-plaintext highlighter-rouge">AlphaShapeTraits_2</code> now provides requirements on the
+models of the concept <code>Kernel</code> are models of this new concept.</li>
+    <li>The concept <code>AlphaShapeTraits_2</code> now provides requirements on the
 traits class for 2D basic alpha shapes, and refines
-<code class="language-plaintext highlighter-rouge">DelaunayTriangulationTraits_2</code>.</li>
+<code>DelaunayTriangulationTraits_2</code>.</li>
   </ul>
 
   <h3 id="interpolation">Interpolation</h3>
 
   <ul>
-    <li><strong>Breaking change</strong>: The concept <code class="language-plaintext highlighter-rouge">GradientFittingTraits</code> now
-additionally requests a weighted point type <code class="language-plaintext highlighter-rouge">Weighted_point_d</code> and a
-functor <code class="language-plaintext highlighter-rouge">Construct_point_d</code>. The model
-<code class="language-plaintext highlighter-rouge">CGAL::Interpolation_gradient_fitting_traits_2</code> has been
+    <li><strong>Breaking change</strong>: The concept <code>GradientFittingTraits</code> now
+additionally requests a weighted point type <code>Weighted_point_d</code> and a
+functor <code>Construct_point_d</code>. The model
+<code>CGAL::Interpolation_gradient_fitting_traits_2</code> has been
 appropriately modified to still be a model of the concept
-<code class="language-plaintext highlighter-rouge">GradientFittingTraits</code>.</li>
+<code>GradientFittingTraits</code>.</li>
   </ul>
 
   <h3 id="d-and-3d-triangulations">2D and 3D Triangulations</h3>
 
   <ul>
     <li><strong>Breaking change</strong>: Added a new functor requirement,
-<code class="language-plaintext highlighter-rouge">Construct_point_2</code>, to the concepts <code class="language-plaintext highlighter-rouge">TriangulationTraits_2</code> and
-<code class="language-plaintext highlighter-rouge">RegularTriangulationTraits_2</code> and a new functor requirement,
-<code class="language-plaintext highlighter-rouge">Construct_point_3</code>, to the concepts <code class="language-plaintext highlighter-rouge">TriangulationTraits_3</code> and
-<code class="language-plaintext highlighter-rouge">RegularTriangulationTraits_3</code>. All models of the concept <code class="language-plaintext highlighter-rouge">Kernel</code>
+<code>Construct_point_2</code>, to the concepts <code>TriangulationTraits_2</code> and
+<code>RegularTriangulationTraits_2</code> and a new functor requirement,
+<code>Construct_point_3</code>, to the concepts <code>TriangulationTraits_3</code> and
+<code>RegularTriangulationTraits_3</code>. All models of the concept <code>Kernel</code>
 already provide these functors.</li>
     <li><strong>Breaking change</strong>: Introduced the concepts
-<code class="language-plaintext highlighter-rouge">RegularTriangulationVertexBase_2</code> and
-<code class="language-plaintext highlighter-rouge">RegularTriangulationVertexBase_3</code>. These concepts describe the
+<code>RegularTriangulationVertexBase_2</code> and
+<code>RegularTriangulationVertexBase_3</code>. These concepts describe the
 requirements on classes meant to represent a vertex of a regular
 triangulation. Concepts that previously refined
-<code class="language-plaintext highlighter-rouge">TriangulationVertexBase_2</code> or <code class="language-plaintext highlighter-rouge">TriangulationVertexBase_3</code> but
+<code>TriangulationVertexBase_2</code> or <code>TriangulationVertexBase_3</code> but
 described in fact a vertex class used in a regular triangulation,
-such as the concept <code class="language-plaintext highlighter-rouge">MeshVertexBase_3</code> in the 3D mesh generation
+such as the concept <code>MeshVertexBase_3</code> in the 3D mesh generation
 package, now refine the corresponding new regular vertex concept.</li>
     <li><strong>Breaking change</strong>: Uniformized the point type across all vertex
 and cell concepts. The triangulation point type name is now always
-<code class="language-plaintext highlighter-rouge">Point</code>. Note that this does not change the requirements but only
-the name: <code class="language-plaintext highlighter-rouge">Point</code> is still expected to be equal to
-<code class="language-plaintext highlighter-rouge">Traits::Point_[23]</code> for basic and Delaunay triangulations or to
-<code class="language-plaintext highlighter-rouge">Traits::Weighted_point_[23]</code> for regular triangulations.
+<code>Point</code>. Note that this does not change the requirements but only
+the name: <code>Point</code> is still expected to be equal to
+<code>Traits::Point_[23]</code> for basic and Delaunay triangulations or to
+<code>Traits::Weighted_point_[23]</code> for regular triangulations.
 Consequently:
       <ul>
-        <li>The concept <code class="language-plaintext highlighter-rouge">RegularTriangulationVertexBase_2</code> now requests a
-<code class="language-plaintext highlighter-rouge">Point</code> type (equal to <code class="language-plaintext highlighter-rouge">Traits::Weighted_point_2</code>)</li>
-        <li>The concept <code class="language-plaintext highlighter-rouge">RegularTriangulationCellBase_3</code> now requests a
-<code class="language-plaintext highlighter-rouge">Point</code> type instead of a <code class="language-plaintext highlighter-rouge">Weighted_point</code> type (but still equal
-to <code class="language-plaintext highlighter-rouge">Traits::Weighted_point_3</code>)</li>
-        <li>The concept <code class="language-plaintext highlighter-rouge">DelaunayTriangulationCellBase_3</code> now requests a
-<code class="language-plaintext highlighter-rouge">Point</code> type instead of a <code class="language-plaintext highlighter-rouge">Point_3</code> type (but still equal to
-<code class="language-plaintext highlighter-rouge">Traits::Point_3</code>).</li>
+        <li>The concept <code>RegularTriangulationVertexBase_2</code> now requests a
+<code>Point</code> type (equal to <code>Traits::Weighted_point_2</code>)</li>
+        <li>The concept <code>RegularTriangulationCellBase_3</code> now requests a
+<code>Point</code> type instead of a <code>Weighted_point</code> type (but still equal
+to <code>Traits::Weighted_point_3</code>)</li>
+        <li>The concept <code>DelaunayTriangulationCellBase_3</code> now requests a
+<code>Point</code> type instead of a <code>Point_3</code> type (but still equal to
+<code>Traits::Point_3</code>).</li>
       </ul>
     </li>
     <li>Introduced a new concept,
-<code class="language-plaintext highlighter-rouge">RegularTriangulationCellBaseWithWeightedCircumcenter_3</code>, which
+<code>RegularTriangulationCellBaseWithWeightedCircumcenter_3</code>, which
 describes the requirements on a cell of a regular triangulation that
 caches its circumcenter. The existing class
-<code class="language-plaintext highlighter-rouge">Regular_triangulation_cell_base_with_weighted_circumcenter_3</code> is
+<code>Regular_triangulation_cell_base_with_weighted_circumcenter_3</code> is
 the default model of this concept.</li>
     <li>Added a new 3D traits class,
-<code class="language-plaintext highlighter-rouge">Robust_weighted_circumcenter_filtered_traits_3</code> which provides
+<code>Robust_weighted_circumcenter_filtered_traits_3</code> which provides
 robust versions of the kernel functors
-<code class="language-plaintext highlighter-rouge">Construct_weighted_circumcenter_3</code>, <code class="language-plaintext highlighter-rouge">Compute_squared_radius_3</code>, and
-<code class="language-plaintext highlighter-rouge">Compute_squared_radius_smallest_orthogonal_sphere_3</code>. This class
-can be used as traits class in the the <code class="language-plaintext highlighter-rouge">Mesh_3</code> package to
+<code>Construct_weighted_circumcenter_3</code>, <code>Compute_squared_radius_3</code>, and
+<code>Compute_squared_radius_smallest_orthogonal_sphere_3</code>. This class
+can be used as traits class in the the <code>Mesh_3</code> package to
 efficiently yet robustly generate 3D meshes.</li>
   </ul>
 
@@ -317,24 +317,24 @@ efficiently yet robustly generate 3D meshes.</li>
   <ul>
     <li>Added new locate and geometric access functions for 3D periodic
 triangulations.</li>
-    <li>The class <code class="language-plaintext highlighter-rouge">Periodic_3_Delaunay_triangulation_traits_3</code> now inherits
-<code class="language-plaintext highlighter-rouge">Periodic_3_triangulation_traits_3</code>.</li>
+    <li>The class <code>Periodic_3_Delaunay_triangulation_traits_3</code> now inherits
+<code>Periodic_3_triangulation_traits_3</code>.</li>
     <li><strong>Breaking change</strong>: Some geometric access functions in
-<code class="language-plaintext highlighter-rouge">Periodic_3_triangulation_3</code> were renamed. The introduction of
-<code class="language-plaintext highlighter-rouge">Periodic_3_regular_triangulation_3</code> required to distinguish between
-functions such as <code class="language-plaintext highlighter-rouge">segment()</code> returning a segment of weightless
+<code>Periodic_3_triangulation_3</code> were renamed. The introduction of
+<code>Periodic_3_regular_triangulation_3</code> required to distinguish between
+functions such as <code>segment()</code> returning a segment of weightless
 points, or a segment of weighted points. As a general rule, previous
 geometrical access functions will return objects with point type
 that of the triangulation (thus, weighted objects when using
-weighted triangulations) and functions containing <code class="language-plaintext highlighter-rouge">construct</code> in the
+weighted triangulations) and functions containing <code>construct</code> in the
 name will always return weightless geometrical objects.</li>
-    <li><strong>Breaking change</strong>: The concept <code class="language-plaintext highlighter-rouge">Periodic_3TriangulationTraits_3</code>
-now requests a domain getter: <code class="language-plaintext highlighter-rouge">get_domain()</code>.</li>
+    <li><strong>Breaking change</strong>: The concept <code>Periodic_3TriangulationTraits_3</code>
+now requests a domain getter: <code>get_domain()</code>.</li>
     <li>Introduced a new concept,
-<code class="language-plaintext highlighter-rouge">RegularTriangulationCellBaseWithWeightedCircumcenter_3</code>, which
+<code>RegularTriangulationCellBaseWithWeightedCircumcenter_3</code>, which
 describes the requirements on a cell of a regular triangulation that
 caches its circumcenter. The existing class
-<code class="language-plaintext highlighter-rouge">Regular_triangulation_cell_base_with_weighted_circumcenter_3</code> is
+<code>Regular_triangulation_cell_base_with_weighted_circumcenter_3</code> is
 the default model of this concept.</li>
   </ul>
 
@@ -342,16 +342,16 @@ the default model of this concept.</li>
 
   <ul>
     <li><strong>Breaking change</strong>: The type of the surface center in the concept
-<code class="language-plaintext highlighter-rouge">MeshCellBase_3</code> has been changed from <code class="language-plaintext highlighter-rouge">Triangulation::Point</code> to
-<code class="language-plaintext highlighter-rouge">TriangulationTraits::Point_3</code> to reflect that it is a weightless
+<code>MeshCellBase_3</code> has been changed from <code>Triangulation::Point</code> to
+<code>TriangulationTraits::Point_3</code> to reflect that it is a weightless
 point.</li>
-    <li><strong>Breaking change</strong>: The function <code class="language-plaintext highlighter-rouge">invalidate_circumcenter()</code> of the
-concept <code class="language-plaintext highlighter-rouge">MeshCellBase_3</code> is renamed to
-<code class="language-plaintext highlighter-rouge">invalidate_weighted_circumcenter_cache()</code> and moved to the new
-concept <code class="language-plaintext highlighter-rouge">RegularTriangulationCellBaseWithWeightedCircumcenter_3</code>,
-which the concept <code class="language-plaintext highlighter-rouge">MeshCellBase_3</code> now refines.</li>
+    <li><strong>Breaking change</strong>: The function <code>invalidate_circumcenter()</code> of the
+concept <code>MeshCellBase_3</code> is renamed to
+<code>invalidate_weighted_circumcenter_cache()</code> and moved to the new
+concept <code>RegularTriangulationCellBaseWithWeightedCircumcenter_3</code>,
+which the concept <code>MeshCellBase_3</code> now refines.</li>
     <li>Added a new type of polyhedral domain with features,
-<code class="language-plaintext highlighter-rouge">Polyhedral_complex_mesh_domain_3</code>. The domain is defined by a
+<code>Polyhedral_complex_mesh_domain_3</code>. The domain is defined by a
 collection of triangulated surfaces, forming a complex.</li>
   </ul>
 
@@ -359,7 +359,7 @@ collection of triangulated surfaces, forming a complex.</li>
 
   <ul>
     <li>A new global function
-<code class="language-plaintext highlighter-rouge">CGAL::poisson_surface_reconstruction_delaunay()</code> is provided in
+<code>CGAL::poisson_surface_reconstruction_delaunay()</code> is provided in
 addition to the current class-based API in order to make it easier
 to use.</li>
   </ul>
@@ -371,21 +371,21 @@ to use.</li>
 format), with or without taking additional properties into account.</li>
     <li><strong>Breaking change:</strong> The API of the PLY function to read points with
 properties is modified for unification with LAS (see
-<code class="language-plaintext highlighter-rouge">CGAL::read_ply_points_with_properties()</code>). A new function to write
+<code>CGAL::read_ply_points_with_properties()</code>). A new function to write
 PLY with properties is provided
-(<code class="language-plaintext highlighter-rouge">CGAL::write_ply_points_with_properties()</code>).</li>
+(<code>CGAL::write_ply_points_with_properties()</code>).</li>
   </ul>
 
   <h3 id="spatial-searching">Spatial Searching</h3>
 
   <ul>
-    <li>Added function <code class="language-plaintext highlighter-rouge">Kd_tree::remove(Point)</code>.</li>
+    <li>Added function <code>Kd_tree::remove(Point)</code>.</li>
   </ul>
 
   <h3 id="d-fast-intersection-and-distance-computation">3D Fast Intersection and Distance Computation</h3>
 
   <ul>
-    <li>Added a template parameter to <code class="language-plaintext highlighter-rouge">AABB_traits</code> for a property map that
+    <li>Added a template parameter to <code>AABB_traits</code> for a property map that
 associates a bounding box to a primitive.</li>
   </ul>
 
@@ -393,19 +393,19 @@ associates a bounding box to a primitive.</li>
 
   <ul>
     <li>Added a partial specialization for the class
-<code class="language-plaintext highlighter-rouge">CGAL::Linear_cell_complex_for_combinatorial_map</code> so that it is a
-model of the graph concepts <code class="language-plaintext highlighter-rouge">BidirectionalGraph</code> and
-<code class="language-plaintext highlighter-rouge">EdgeAndVertexListGraph</code> and of the concept <code class="language-plaintext highlighter-rouge">MutableFaceGraph</code>. This
+<code>CGAL::Linear_cell_complex_for_combinatorial_map</code> so that it is a
+model of the graph concepts <code>BidirectionalGraph</code> and
+<code>EdgeAndVertexListGraph</code> and of the concept <code>MutableFaceGraph</code>. This
 class can thus now be used in all BGL functions and algorithms.</li>
     <li>Helper functions to create an icosahedron, a regular prism and a
 pyramid have been added.</li>
-    <li>Added class <code class="language-plaintext highlighter-rouge">CGAL::Face_filtered_graph</code> that wraps an existing graph
+    <li>Added class <code>CGAL::Face_filtered_graph</code> that wraps an existing graph
 and hide all simplices that are not in the selected connected
 components.</li>
-    <li>Added the class <code class="language-plaintext highlighter-rouge">CGAL::Seam_mesh</code>. The <code class="language-plaintext highlighter-rouge">Seam_mesh</code> is a graph
+    <li>Added the class <code>CGAL::Seam_mesh</code>. The <code>Seam_mesh</code> is a graph
 adaptor which allows to create virtual borders when marking edges as
 seam edges.</li>
-    <li>Added the functions <code class="language-plaintext highlighter-rouge">read_off()</code> and <code class="language-plaintext highlighter-rouge">write_off()</code>.</li>
+    <li>Added the functions <code>read_off()</code> and <code>write_off()</code>.</li>
   </ul>
 </div>
 
@@ -468,10 +468,10 @@ seam edges.</li>
     </div>
 
     <!-- Javascripts -->
-    <script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
-      <script src="/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
+    <script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
       <script>
         $(function () {
           $('.bxslider').bxSlider({
@@ -499,7 +499,7 @@ seam edges.</li>
           });
         });
       </script>
-      <script src="/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
     </body>
 </html>
 

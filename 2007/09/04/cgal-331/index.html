@@ -15,16 +15,16 @@
     <meta name="author" content="CGAL Editorial Board">
 
     <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
-    <link rel="stylesheet" href="/cgal-web/style.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 
     <!--[if lte IE 8]>
 	<link rel="stylesheet" href="css/leaflet.ie.css" />
 	<![endif]-->
-    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/main.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal//main.css">
 
     <!-- atom & rss feed -->
     <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
@@ -164,7 +164,7 @@ are used for modeling large molecules in biological computing.</li>
     <li>Intel C++ 9 was wrongly recognized as unsupported by install_cgal.</li>
     <li>Added autolink (for Visual C++) for the CGALImageIO and CGALPDB
 libraries.</li>
-    <li>Fixed bug in <code class="language-plaintext highlighter-rouge">Memory_sizer</code> when using more than 4GB of memory
+    <li>Fixed bug in <code>Memory_sizer</code> when using more than 4GB of memory
 (64bit).</li>
   </ul>
 
@@ -173,31 +173,31 @@ libraries.</li>
   <ul>
     <li>Fixed bug in FPU rounding mode macros (affected only the alpha architecture).</li>
     <li>Fixed bug in MP_Float constructor from double for some particular values.</li>
-    <li>Fixed bug in <code class="language-plaintext highlighter-rouge">to_double(Lazy_exact_nt)</code> sometimes returning <code class="language-plaintext highlighter-rouge">NaN</code>.</li>
+    <li>Fixed bug in <code>to_double(Lazy_exact_nt)</code> sometimes returning <code>NaN</code>.</li>
   </ul>
 
   <h3 id="kernel">Kernel</h3>
 
   <ul>
-    <li>Fixed forgotten derivation in <code class="language-plaintext highlighter-rouge">Circular_kernel_2::Has_on_2</code>.</li>
-    <li>Added some missing functions in <code class="language-plaintext highlighter-rouge">Bbox_3</code> compared to <code class="language-plaintext highlighter-rouge">Bbox_2</code>.</li>
+    <li>Fixed forgotten derivation in <code>Circular_kernel_2::Has_on_2</code>.</li>
+    <li>Added some missing functions in <code>Bbox_3</code> compared to <code>Bbox_2</code>.</li>
   </ul>
 
   <h3 id="arrangements">Arrangements</h3>
 
   <ul>
-    <li>Fixed a bug in the <code class="language-plaintext highlighter-rouge">Arrangement_2</code> package in dual arrangement
+    <li>Fixed a bug in the <code>Arrangement_2</code> package in dual arrangement
 representation for Boost graphs when reporting all halfedges of a
 face.</li>
     <li>Fixed a bug in the Arrangement sweep-line when using a specific
 polyline configuration.</li>
-    <li>Fixed bug in <code class="language-plaintext highlighter-rouge">Arrangement_2</code> in walk along a line point location for
+    <li>Fixed bug in <code>Arrangement_2</code> in walk along a line point location for
 unbounded curves.</li>
-    <li>Fixed bug in aggregated insertion to <code class="language-plaintext highlighter-rouge">Arrangement_2</code>.</li>
-    <li>Fixed bug in <code class="language-plaintext highlighter-rouge">Arrangment_2</code> class when inserting an unbounded curve
+    <li>Fixed bug in aggregated insertion to <code>Arrangement_2</code>.</li>
+    <li>Fixed bug in <code>Arrangment_2</code> class when inserting an unbounded curve
 from an existing vertex.</li>
     <li>Fixed bug when dealing with a degenerate conic arc in
-<code class="language-plaintext highlighter-rouge">Arr_conic_traits_2</code> of the Arrangment package, meaning a line
+<code>Arr_conic_traits_2</code> of the Arrangment package, meaning a line
 segment which is part of a degenerate parabola/hyperbola.</li>
     <li>Fixed bug in the Bezier traits-class: properly handle line segments.
 properly handle comparison near a vertical tangency.</li>
@@ -206,23 +206,23 @@ properly handle comparison near a vertical tangency.</li>
   <h3 id="d-polygon">2D Polygon</h3>
 
   <ul>
-    <li>Fixed bug in degenerate case of <code class="language-plaintext highlighter-rouge">Polygon_2::is_convex()</code> for equal points.</li>
+    <li>Fixed bug in degenerate case of <code>Polygon_2::is_convex()</code> for equal points.</li>
   </ul>
 
   <h3 id="d-triangulations">2D Triangulations</h3>
 
   <ul>
-    <li>Fixed bug in <code class="language-plaintext highlighter-rouge">Regular_triangulation_2</code>.</li>
+    <li>Fixed bug in <code>Regular_triangulation_2</code>.</li>
   </ul>
 
   <h3 id="d-triangulations-1">3D Triangulations</h3>
 
   <ul>
-    <li>Added a <code class="language-plaintext highlighter-rouge">circumcenter()</code> function in the default Cell type parameter
-<code class="language-plaintext highlighter-rouge">Triangulation_ds_cell_base_3</code>, so that the <code class="language-plaintext highlighter-rouge">dual()</code> member
+    <li>Added a <code>circumcenter()</code> function in the default Cell type parameter
+<code>Triangulation_ds_cell_base_3</code>, so that the <code>dual()</code> member
 function of Delaunay still work as before, without requiring the
-explicit use of <code class="language-plaintext highlighter-rouge">Triangulation_cell_base</code>.</li>
-    <li>Added missing <code class="language-plaintext highlighter-rouge">operator-&gt;()</code> to <code class="language-plaintext highlighter-rouge">Facet_circulator</code>.</li>
+explicit use of <code>Triangulation_cell_base</code>.</li>
+    <li>Added missing <code>operator-&gt;()</code> to <code>Facet_circulator</code>.</li>
   </ul>
 
   <h3 id="interpolation">Interpolation</h3>
@@ -235,11 +235,11 @@ initialization.</li>
   <h3 id="d-boolean-operations-on-nef-polyhedra">3D Boolean Operations on Nef Polyhedra</h3>
 
   <ul>
-    <li>Fixed bug in construction of <code class="language-plaintext highlighter-rouge">Nef_polyhedron_3</code> from off-file. Now,
+    <li>Fixed bug in construction of <code>Nef_polyhedron_3</code> from off-file. Now,
 always the inner volume is selected.</li>
-    <li>Fixed bug in conversion from <code class="language-plaintext highlighter-rouge">Nef_polyhedron_3</code> to <code class="language-plaintext highlighter-rouge">Polyhedron_3</code>.
-<code class="language-plaintext highlighter-rouge">Polyhedron_3</code> was not cleared at the beginning.</li>
-    <li>Fixed bug in <code class="language-plaintext highlighter-rouge">Nef_polyhedron_3</code> in update of indexes for
+    <li>Fixed bug in conversion from <code>Nef_polyhedron_3</code> to <code>Polyhedron_3</code>.
+<code>Polyhedron_3</code> was not cleared at the beginning.</li>
+    <li>Fixed bug in <code>Nef_polyhedron_3</code> in update of indexes for
 construction of external structure.</li>
   </ul>
 
@@ -314,10 +314,10 @@ section of <a href="https://www.cgal.org">www.cgal.org</a>.</li>
     </div>
 
     <!-- Javascripts -->
-    <script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
-      <script src="/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
+    <script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
       <script>
         $(function () {
           $('.bxslider').bxSlider({
@@ -345,7 +345,7 @@ section of <a href="https://www.cgal.org">www.cgal.org</a>.</li>
           });
         });
       </script>
-      <script src="/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
     </body>
 </html>
 

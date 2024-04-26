@@ -15,16 +15,16 @@
     <meta name="author" content="CGAL Editorial Board">
 
     <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
-    <link rel="stylesheet" href="/cgal-web/style.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 
     <!--[if lte IE 8]>
 	<link rel="stylesheet" href="css/leaflet.ie.css" />
 	<![endif]-->
-    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/main.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal//main.css">
 
     <!-- atom & rss feed -->
     <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
@@ -157,15 +157,15 @@
 up to 3.7 are supported.</li>
     <li>The compilation of some demo may require a C++11 compiler. The CGAL
 library itself still support C++03 compilers.</li>
-    <li>The shell script <code class="language-plaintext highlighter-rouge">cgal_create_cmake_script</code> now enables C++14 by
+    <li>The shell script <code>cgal_create_cmake_script</code> now enables C++14 by
 default.</li>
     <li>A new mechanism to check which packages of CGAL are used have been
 added. It is particularly interesting for commercial users to ensure
 they have a valid commercial license for the packages they used.
 This can also be used to make sure only LGPL header files are used.</li>
     <li>Because of a bug in the g++ compiler about the C++11 keyword
-<code class="language-plaintext highlighter-rouge">thread_local</code>, the CGAL_Core library now always requires
-<code class="language-plaintext highlighter-rouge">Boost.Thread</code> if the g++ compiler is used.</li>
+<code>thread_local</code>, the CGAL_Core library now always requires
+<code>Boost.Thread</code> if the g++ compiler is used.</li>
   </ul>
 
   <h3 id="generalized-maps-new-package">Generalized Maps (new package)</h3>
@@ -184,7 +184,7 @@ objects.</li>
   <h3 id="d-point-set-new-package">3D Point Set (new package)</h3>
 
   <ul>
-    <li>This package provides a flexible data structure <code class="language-plaintext highlighter-rouge">CGAL::Point_set_3</code>
+    <li>This package provides a flexible data structure <code>CGAL::Point_set_3</code>
 that allows the user to easily handle point sets with an arbitrary
 number of attributes (such as normal vectors, colors, labeling,
 etc.).</li>
@@ -197,7 +197,7 @@ etc.).</li>
 customize a combinatorial map and a linear cell complex changed.
 Instead of defining the type of darts used, you have to define the
 information you want to add in each dart. You can define the
-<code class="language-plaintext highlighter-rouge">CGAL_CMAP_DART_DEPRECATED</code> macro to keep the old behavior.</li>
+<code>CGAL_CMAP_DART_DEPRECATED</code> macro to keep the old behavior.</li>
   </ul>
 
   <h3 id="triangulated-surface-mesh-shortest-paths">Triangulated Surface Mesh Shortest Paths</h3>
@@ -210,8 +210,8 @@ information you want to add in each dart. You can define the
   <h3 id="cgal-and-the-boost-graph-library-bgl">CGAL and the Boost Graph Library (BGL)</h3>
 
   <ul>
-    <li><strong>Breaking change</strong>: Addition of a free function <code class="language-plaintext highlighter-rouge">reserve()</code> in the
-concept <code class="language-plaintext highlighter-rouge">MutableFaceGraph</code>. Models provided by CGAL have been
+    <li><strong>Breaking change</strong>: Addition of a free function <code>reserve()</code> in the
+concept <code>MutableFaceGraph</code>. Models provided by CGAL have been
 updated.</li>
   </ul>
 
@@ -220,20 +220,20 @@ updated.</li>
   <ul>
     <li>Added a 2D and 3D weighted point class and predicates and
 constructions.</li>
-    <li>Added functions <code class="language-plaintext highlighter-rouge">l_infinity_distance()</code> for 2D and 3D.</li>
+    <li>Added functions <code>l_infinity_distance()</code> for 2D and 3D.</li>
   </ul>
 
   <h3 id="d-convex-hull">3D Convex Hull</h3>
 
   <ul>
-    <li>The convex hull function can also produce a <code class="language-plaintext highlighter-rouge">Surface_mesh</code>, and
-generally speaking any model of the concept <code class="language-plaintext highlighter-rouge">MutableFaceGraph</code></li>
-    <li>The function <code class="language-plaintext highlighter-rouge">convex_hull_3_to_polyhedron_3()</code> is deprecated and
-<code class="language-plaintext highlighter-rouge">convex_hull_3_to_face_graph.h</code> should be used instead.</li>
-    <li>The class <code class="language-plaintext highlighter-rouge">Convex_hull_traits_3</code> now documents a nested type
-<code class="language-plaintext highlighter-rouge">Polygon_mesh</code> instead of <code class="language-plaintext highlighter-rouge">Polyhedron_3</code>. The other nested type is
+    <li>The convex hull function can also produce a <code>Surface_mesh</code>, and
+generally speaking any model of the concept <code>MutableFaceGraph</code></li>
+    <li>The function <code>convex_hull_3_to_polyhedron_3()</code> is deprecated and
+<code>convex_hull_3_to_face_graph.h</code> should be used instead.</li>
+    <li>The class <code>Convex_hull_traits_3</code> now documents a nested type
+<code>Polygon_mesh</code> instead of <code>Polyhedron_3</code>. The other nested type is
 kept for backward compatibility.</li>
-    <li>Removed the function <code class="language-plaintext highlighter-rouge">CGAL::convex_hull_incremental_3()</code> deprecated
+    <li>Removed the function <code>CGAL::convex_hull_incremental_3()</code> deprecated
 since CGAL 4.6.</li>
   </ul>
 
@@ -246,14 +246,14 @@ since CGAL 4.6.</li>
   <h3 id="linear-cell-complex">Linear cell complex</h3>
 
   <ul>
-    <li>Deprecated class <code class="language-plaintext highlighter-rouge">Linear_cell_complex</code> which is now renamed
-<code class="language-plaintext highlighter-rouge">Linear_cell_complex_for_combinatorial_map_dart</code>.</li>
+    <li>Deprecated class <code>Linear_cell_complex</code> which is now renamed
+<code>Linear_cell_complex_for_combinatorial_map_dart</code>.</li>
   </ul>
 
   <h3 id="d-triangulation-data-structure">2D Triangulation data structure</h3>
 
   <ul>
-    <li>Added function <code class="language-plaintext highlighter-rouge">insert_in_hole</code>.</li>
+    <li>Added function <code>insert_in_hole</code>.</li>
   </ul>
 
   <h3 id="d-triangulations">2D Triangulations</h3>
@@ -266,14 +266,14 @@ class.</li>
 triangulations is no longer a template parameter but the field type
 of the geometric traits class. Users who need this feature must use
 a version prior to 4.9</li>
-    <li>The class <code class="language-plaintext highlighter-rouge">Regular_triangulation_filtered_traits_2</code> deprecated since
+    <li>The class <code>Regular_triangulation_filtered_traits_2</code> deprecated since
 CGAL 3.6 has been removed.</li>
-    <li>Deprecated the class <code class="language-plaintext highlighter-rouge">Regular_triangulation_euclidean_traits_2</code>, as
+    <li>Deprecated the class <code>Regular_triangulation_euclidean_traits_2</code>, as
 the weighted point and the function objects for weighted points are
-part of the concept <code class="language-plaintext highlighter-rouge">Kernel</code>/</li>
-    <li>The class <code class="language-plaintext highlighter-rouge">Regular_triangulation_2</code> can take a kernel as template
+part of the concept <code>Kernel</code>/</li>
+    <li>The class <code>Regular_triangulation_2</code> can take a kernel as template
 argument, that is one no longer has to use
-<code class="language-plaintext highlighter-rouge">Regular_triangulation_euclidea_traits_2</code>, although this still
+<code>Regular_triangulation_euclidea_traits_2</code>, although this still
 works.</li>
   </ul>
 
@@ -284,24 +284,24 @@ works.</li>
 triangulations is no longer a template parameter but the field type
 of the geometric traits class. Users who need this feature must use
 a version prior to 4.9.</li>
-    <li>The class <code class="language-plaintext highlighter-rouge">Regular_triangulation_filtered_traits_3</code> deprecated since
+    <li>The class <code>Regular_triangulation_filtered_traits_3</code> deprecated since
 CGAL 3.6 has been removed.</li>
-    <li>Deprecated the class <code class="language-plaintext highlighter-rouge">Regular_triangulation_euclidean_traits_3</code>, as
+    <li>Deprecated the class <code>Regular_triangulation_euclidean_traits_3</code>, as
 the weighted point and the function objects for weighted points are
-part of the concept <code class="language-plaintext highlighter-rouge">Kernel</code>/</li>
-    <li>The class <code class="language-plaintext highlighter-rouge">Regular_triangulation_3</code> can take a kernel as template
+part of the concept <code>Kernel</code>/</li>
+    <li>The class <code>Regular_triangulation_3</code> can take a kernel as template
 argument, that is one no longer has to use
-<code class="language-plaintext highlighter-rouge">Regular_triangulation_euclidean_traits_3</code>, although this still
+<code>Regular_triangulation_euclidean_traits_3</code>, although this still
 works.</li>
-    <li>Added function <code class="language-plaintext highlighter-rouge">link_to_face_graph()</code> to copy the set of faces
-incident to a vertex into a model of <code class="language-plaintext highlighter-rouge">FaceGraph</code>.</li>
+    <li>Added function <code>link_to_face_graph()</code> to copy the set of faces
+incident to a vertex into a model of <code>FaceGraph</code>.</li>
   </ul>
 
   <h3 id="d-mesh-generation">3D Mesh Generation</h3>
 
   <ul>
     <li>The constructor
-<code class="language-plaintext highlighter-rouge">CGAL::Polyhedral_mesh_domain_with_features_3(std::string)</code> is
+<code>CGAL::Polyhedral_mesh_domain_with_features_3(std::string)</code> is
 deprecated.</li>
   </ul>
 
@@ -311,27 +311,27 @@ deprecated.</li>
     <li>Added fast and robust corefinement and Boolean operation functions for
 triangulated surface meshes:
       <ul>
-        <li><code class="language-plaintext highlighter-rouge">CGAL::Polygon_mesh_processing::corefine_and_compute_union()</code></li>
-        <li><code class="language-plaintext highlighter-rouge">CGAL::Polygon_mesh_processing::corefine_and_compute_difference()</code></li>
-        <li><code class="language-plaintext highlighter-rouge">CGAL::Polygon_mesh_processing::corefine_and_compute_intersection()</code></li>
-        <li><code class="language-plaintext highlighter-rouge">CGAL::Polygon_mesh_processing::corefine()</code></li>
-        <li><code class="language-plaintext highlighter-rouge">CGAL::Polygon_mesh_processing::does_bound_a_volume()</code></li>
-        <li><code class="language-plaintext highlighter-rouge">CGAL::Polygon_mesh_processing::surface_intersection()</code></li>
+        <li><code>CGAL::Polygon_mesh_processing::corefine_and_compute_union()</code></li>
+        <li><code>CGAL::Polygon_mesh_processing::corefine_and_compute_difference()</code></li>
+        <li><code>CGAL::Polygon_mesh_processing::corefine_and_compute_intersection()</code></li>
+        <li><code>CGAL::Polygon_mesh_processing::corefine()</code></li>
+        <li><code>CGAL::Polygon_mesh_processing::does_bound_a_volume()</code></li>
+        <li><code>CGAL::Polygon_mesh_processing::surface_intersection()</code></li>
       </ul>
     </li>
     <li>Added functions to compute approximated Hausdorff distances between
 two meshes, a mesh and a point set, or a point set and a mesh:
-<code class="language-plaintext highlighter-rouge">sample_triangle_mesh()</code>, <code class="language-plaintext highlighter-rouge">approximated_Hausdorff_distance()</code>,
-<code class="language-plaintext highlighter-rouge">approximated_symmetric_Hausdorff_distance()</code>,
-<code class="language-plaintext highlighter-rouge">max_distance_to_triangle_mesh()</code>, <code class="language-plaintext highlighter-rouge">max_distance_to_point_set()</code>.</li>
-    <li>The function <code class="language-plaintext highlighter-rouge">CGAL::Polygon_mesh_processing::bbox_3()</code> has been
-renamed <code class="language-plaintext highlighter-rouge">CGAL::Polygon_mesh_processing::bbox()</code>.</li>
+<code>sample_triangle_mesh()</code>, <code>approximated_Hausdorff_distance()</code>,
+<code>approximated_symmetric_Hausdorff_distance()</code>,
+<code>max_distance_to_triangle_mesh()</code>, <code>max_distance_to_point_set()</code>.</li>
+    <li>The function <code>CGAL::Polygon_mesh_processing::bbox_3()</code> has been
+renamed <code>CGAL::Polygon_mesh_processing::bbox()</code>.</li>
   </ul>
 
   <h3 id="point-set-processing">Point Set Processing</h3>
 
   <ul>
-    <li>Function <code class="language-plaintext highlighter-rouge">CGAL::remove_outliers()</code> has an additional parameter based
+    <li>Function <code>CGAL::remove_outliers()</code> has an additional parameter based
 on a distance threshold to make it easier and more intuitive to use.</li>
     <li>New functions for automatic scale estimations: either a global scale
 or multiple local scales can be estimated for both 2D and 3D point
@@ -342,10 +342,10 @@ surface in 3D.</li>
   <h3 id="cgal-and-the-boost-graph-library-bgl-1">CGAL and the Boost Graph Library (BGL)</h3>
 
   <ul>
-    <li>Added function <code class="language-plaintext highlighter-rouge">CGAL::convert_nef_polyhedron_to_polygon_mesh()</code> to
-convert a <code class="language-plaintext highlighter-rouge">Nef_polyhedron_3</code> to any model of the <code class="language-plaintext highlighter-rouge">MutableFaceGraph</code>
+    <li>Added function <code>CGAL::convert_nef_polyhedron_to_polygon_mesh()</code> to
+convert a <code>Nef_polyhedron_3</code> to any model of the <code>MutableFaceGraph</code>
 concept.</li>
-    <li>Added class <code class="language-plaintext highlighter-rouge">CGAL::Graph_with_descriptor_with_graph</code> that wraps an
+    <li>Added class <code>CGAL::Graph_with_descriptor_with_graph</code> that wraps an
 existing graph and provides a reference to the said graph to all of
 its descriptors.</li>
   </ul>
@@ -362,18 +362,18 @@ its descriptors.</li>
   <ul>
     <li>Added the following point random generators:
       <ul>
-        <li>in a 3D triangle mesh model of the concept <code class="language-plaintext highlighter-rouge">FaceListGraph</code>
-(<code class="language-plaintext highlighter-rouge">CGAL::Random_points_in_triangle_mesh_3</code>),</li>
+        <li>in a 3D triangle mesh model of the concept <code>FaceListGraph</code>
+(<code>CGAL::Random_points_in_triangle_mesh_3</code>),</li>
         <li>on the boundary of a tetrahedral mesh
-(<code class="language-plaintext highlighter-rouge">CGAL::Random_points_in_tetrahedral_mesh_boundary_3</code>),</li>
+(<code>CGAL::Random_points_in_tetrahedral_mesh_boundary_3</code>),</li>
         <li>in a tetrahedral mesh
-(<code class="language-plaintext highlighter-rouge">CGAL::Random_points_in_tetrahedral_mesh_3</code>),</li>
+(<code>CGAL::Random_points_in_tetrahedral_mesh_3</code>),</li>
         <li>in a 2D triangle mesh
-(<code class="language-plaintext highlighter-rouge">CGAL::Random_points_in_triangle_mesh_2</code>),</li>
+(<code>CGAL::Random_points_in_triangle_mesh_2</code>),</li>
         <li>in a range of 2D or 3D triangles
-(<code class="language-plaintext highlighter-rouge">CGAL::Random_points_in_triangles_3</code> and
-<code class="language-plaintext highlighter-rouge">CGAL::Random_points_in_triangles_2</code>).</li>
-        <li>on a 3D segment (<code class="language-plaintext highlighter-rouge">CGAL::Random_points_on_segment_3</code>).</li>
+(<code>CGAL::Random_points_in_triangles_3</code> and
+<code>CGAL::Random_points_in_triangles_2</code>).</li>
+        <li>on a 3D segment (<code>CGAL::Random_points_on_segment_3</code>).</li>
       </ul>
     </li>
   </ul>
@@ -438,10 +438,10 @@ its descriptors.</li>
     </div>
 
     <!-- Javascripts -->
-    <script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
-      <script src="/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
+    <script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
       <script>
         $(function () {
           $('.bxslider').bxSlider({
@@ -469,7 +469,7 @@ its descriptors.</li>
           });
         });
       </script>
-      <script src="/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
     </body>
 </html>
 

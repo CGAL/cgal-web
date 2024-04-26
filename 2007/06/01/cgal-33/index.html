@@ -15,16 +15,16 @@
     <meta name="author" content="CGAL Editorial Board">
 
     <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
-    <link rel="stylesheet" href="/cgal-web/style.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 
     <!--[if lte IE 8]>
 	<link rel="stylesheet" href="css/leaflet.ie.css" />
 	<![endif]-->
-    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/main.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal//main.css">
 
     <!-- atom & rss feed -->
     <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
@@ -167,7 +167,7 @@ in functionality. There have also been a number of bug fixes for this release.</
     <li>CGAL now supports Visual C++ “Checked iterators” as well as the debug
 mode of GNU g++’s STL (-D_GLIBCXX_DEBUG).</li>
     <li>CGAL now works around the preprocessor macros ‘min’ and ‘max’ defined in
-<code class="language-plaintext highlighter-rouge">&lt;windows.h&gt;</code> which were clashing with min/max functions.</li>
+<code>&lt;windows.h&gt;</code> which were clashing with min/max functions.</li>
   </ul>
 
   <h3 id="installation">Installation</h3>
@@ -265,7 +265,7 @@ objects, namely lines, rays and line segments.</li>
     <li>Added a traits class that supports Bezier curves.</li>
     <li>Enhanced the traits class that supports rational functions to
 handle unbounded (as well as bounded) arcs</li>
-    <li>Added a free function called <code class="language-plaintext highlighter-rouge">decompose()</code> that produces the
+    <li>Added a free function called <code>decompose()</code> that produces the
 symbolic vertical decomposition of a given arrangement,
 performing a batched vertical ray-shooting query from all
 arrangement vertices.</li>
@@ -278,11 +278,11 @@ arrangement vertices.</li>
     <li>Added the DCEL as a default template parameter to the
 General_polygon_set_2 and Polygon_set_2 classes. This
 allows users to extend the DCEL of the underlying arrangement.</li>
-    <li>Added a function template called <code class="language-plaintext highlighter-rouge">connect_holes()</code> that connects
+    <li>Added a function template called <code>connect_holes()</code> that connects
 the holes in a given polygon with holes, turning it into a
 sequence of points, where the holes are connceted to the outer
 boundary using zero-width passages.</li>
-    <li>Added a non-const function member to <code class="language-plaintext highlighter-rouge">General_polygon_set_2</code>
+    <li>Added a non-const function member to <code>General_polygon_set_2</code>
 that obtains the underlying arrangement.</li>
   </ul>
 
@@ -295,30 +295,30 @@ insertion.</li>
 
   <h3 id="optimal-distances">Optimal Distances</h3>
   <ul>
-    <li><code class="language-plaintext highlighter-rouge">Polytope_distance_d</code>: has support for homogeneous points; bugfix in fast exact version.</li>
+    <li><code>Polytope_distance_d</code>: has support for homogeneous points; bugfix in fast exact version.</li>
   </ul>
 
   <h3 id="bounding-volumes">Bounding Volumes</h3>
   <ul>
-    <li><code class="language-plaintext highlighter-rouge">Min_annulus_d</code> has support for homogeneous points; bugfix in fast exact version.</li>
+    <li><code>Min_annulus_d</code> has support for homogeneous points; bugfix in fast exact version.</li>
   </ul>
 
   <h3 id="number-types">Number Types</h3>
   <ul>
-    <li><code class="language-plaintext highlighter-rouge">Fixed_precision_nt</code> and <code class="language-plaintext highlighter-rouge">Filtered_exact</code> number types have been removed.</li>
+    <li><code>Fixed_precision_nt</code> and <code>Filtered_exact</code> number types have been removed.</li>
   </ul>
 
   <h3 id="d-circular-kernel">2D Circular Kernel</h3>
   <ul>
     <li>Efficiency improved through geometric filtering of predicates,
 introduced with the filtered kernel
-<code class="language-plaintext highlighter-rouge">Filtered_bbox_circular_kernel_2</code>, and also chosen for
-the predefined kernel <code class="language-plaintext highlighter-rouge">Exact_circular_kernel_2</code>.</li>
+<code>Filtered_bbox_circular_kernel_2</code>, and also chosen for
+the predefined kernel <code>Exact_circular_kernel_2</code>.</li>
   </ul>
 
   <h3 id="linear-kernel">Linear Kernel</h3>
   <ul>
-    <li><code class="language-plaintext highlighter-rouge">Exact_predicates_exact_constructions_kernel</code> memory and run-time
+    <li><code>Exact_predicates_exact_constructions_kernel</code> memory and run-time
 improvements through usage of lazy geometric constructions instead
 of lazy arithmetic.</li>
   </ul>
@@ -404,10 +404,10 @@ equations and inequalities.</li>
     </div>
 
     <!-- Javascripts -->
-    <script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
-      <script src="/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
+    <script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
       <script>
         $(function () {
           $('.bxslider').bxSlider({
@@ -435,7 +435,7 @@ equations and inequalities.</li>
           });
         });
       </script>
-      <script src="/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
     </body>
 </html>
 

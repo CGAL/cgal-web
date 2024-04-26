@@ -15,16 +15,16 @@
     <meta name="author" content="CGAL Editorial Board">
 
     <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
-    <link rel="stylesheet" href="/cgal-web/style.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 
     <!--[if lte IE 8]>
 	<link rel="stylesheet" href="css/leaflet.ie.css" />
 	<![endif]-->
-    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/main.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal//main.css">
 
     <!-- atom & rss feed -->
     <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
@@ -163,7 +163,7 @@ the leda namespace.</li>
 
   <h3 id="kernels">Kernels</h3>
   <ul>
-    <li><code class="language-plaintext highlighter-rouge">Point_d</code> has been removed from the 2D and 3D kernels. This type is
+    <li><code>Point_d</code> has been removed from the 2D and 3D kernels. This type is
 now available from the d-dimensional kernel only.</li>
   </ul>
 
@@ -183,7 +183,7 @@ subcurves or a planar map.</li>
 
   <h3 id="planar-maps-and-arrangements">Planar Maps and Arrangements</h3>
   <ul>
-    <li>New quicker insertion functions of <code class="language-plaintext highlighter-rouge">Planar_map_2</code> for cases where more
+    <li>New quicker insertion functions of <code>Planar_map_2</code> for cases where more
 precomputed information is available regarding the position of
 the inserted curve in the map.</li>
     <li>New query function for planar maps that determines whether a given
@@ -224,21 +224,21 @@ into edges of the triangulations.</li>
     <li>Various improvements and small functionalities added:
     - Triangulation_3&lt;GT,Tds&gt;::triangle() returns a triangle oriented
  towards the outside of the cell c for facet (c,i)
-    - New function <code class="language-plaintext highlighter-rouge">insert(Point, Locate_type, Cell_handle, int, int)</code> which avoids the location step.
-    - New function to get access to cells in conflict in a Delaunay insertion: <code class="language-plaintext highlighter-rouge">find_conflicts()</code> and <code class="language-plaintext highlighter-rouge">insert_in_hole()</code>.
-    - New function <code class="language-plaintext highlighter-rouge">TDS::delete_cells(begin, end)</code>.
-    - New functions <code class="language-plaintext highlighter-rouge">degree(v)</code>, <code class="language-plaintext highlighter-rouge">reorient()</code>, <code class="language-plaintext highlighter-rouge">remove_decrease_dimension()</code>, <code class="language-plaintext highlighter-rouge">remove_from_simplex()</code>.</li>
+    - New function <code>insert(Point, Locate_type, Cell_handle, int, int)</code> which avoids the location step.
+    - New function to get access to cells in conflict in a Delaunay insertion: <code>find_conflicts()</code> and <code>insert_in_hole()</code>.
+    - New function <code>TDS::delete_cells(begin, end)</code>.
+    - New functions <code>degree(v)</code>, <code>reorient()</code>, <code>remove_decrease_dimension()</code>, <code>remove_from_simplex()</code>.</li>
     <li>Changes of interface:
     -  Vertices and cells are the same for the triangulation data structure and the geometric triangulation.
-    -  The triangulation data structure uses <code class="language-plaintext highlighter-rouge">Vertex_handle</code> (resp <code class="language-plaintext highlighter-rouge">Cell_handle</code>) instead of <code class="language-plaintext highlighter-rouge">Vertex*</code> (resp <code class="language-plaintext highlighter-rouge">Cell*</code>).
-    -  <code class="language-plaintext highlighter-rouge">incident_cells()</code> and <code class="language-plaintext highlighter-rouge">incident_vertices()</code> are templated by output iterators.
+    -  The triangulation data structure uses <code>Vertex_handle</code> (resp <code>Cell_handle</code>) instead of <code>Vertex*</code> (resp <code>Cell*</code>).
+    -  <code>incident_cells()</code> and <code>incident_vertices()</code> are templated by output iterators.
     -  changes in the iterators and circulators interface:
       <ul>
         <li>Iterators and circulators are convertible to handles
-automatically, no need to call <code class="language-plaintext highlighter-rouge">-&gt;handle()</code> anymore.</li>
-        <li><code class="language-plaintext highlighter-rouge">Vertex_iterator</code> split into <code class="language-plaintext highlighter-rouge">All_vertices_iterator</code> and <code class="language-plaintext highlighter-rouge">Finite_vertices_iterator</code>
+automatically, no need to call <code>-&gt;handle()</code> anymore.</li>
+        <li><code>Vertex_iterator</code> split into <code>All_vertices_iterator</code> and <code>Finite_vertices_iterator</code>
 (and similar for cells…).</li>
-        <li><code class="language-plaintext highlighter-rouge">TDS::Edge/Facet</code> iterators now support <code class="language-plaintext highlighter-rouge">operator-&gt;</code>.</li>
+        <li><code>TDS::Edge/Facet</code> iterators now support <code>operator-&gt;</code>.</li>
       </ul>
     </li>
   </ul>
@@ -361,10 +361,10 @@ traits does not compile for either of the above packages.</li>
     </div>
 
     <!-- Javascripts -->
-    <script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
-      <script src="/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
+    <script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
       <script>
         $(function () {
           $('.bxslider').bxSlider({
@@ -392,7 +392,7 @@ traits does not compile for either of the above packages.</li>
           });
         });
       </script>
-      <script src="/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
     </body>
 </html>
 

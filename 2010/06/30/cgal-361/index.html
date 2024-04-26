@@ -15,16 +15,16 @@
     <meta name="author" content="CGAL Editorial Board">
 
     <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
-    <link rel="stylesheet" href="/cgal-web/style.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 
     <!--[if lte IE 8]>
 	<link rel="stylesheet" href="css/leaflet.ie.css" />
 	<![endif]-->
-    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/main.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal//main.css">
 
     <!-- atom & rss feed -->
     <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
@@ -172,7 +172,7 @@ the Intel C++ compiler.</li>
     <li>Fix a compilation errors in demo/Polyhedron/:</li>
     <li>issue with the location of qglobal.h of Qt4 on MacOS X,</li>
     <li>missing texture.cpp, if TAUCS is used,</li>
-    <li>Fix the location of built plugins of <code class="language-plaintext highlighter-rouge">demo/Polyhedron/</code>, when CGAL is
+    <li>Fix the location of built plugins of <code>demo/Polyhedron/</code>, when CGAL is
 configured with WITH_demos=ON</li>
   </ul>
 
@@ -187,7 +187,7 @@ triangulations.</li>
 
   <ul>
     <li>Fixed a bug that lead to precondition violation.</li>
-    <li>Improve the user manual about the member function <code class="language-plaintext highlighter-rouge">is_in_domain()</code> of the <code class="language-plaintext highlighter-rouge">Face</code> type.</li>
+    <li>Improve the user manual about the member function <code>is_in_domain()</code> of the <code>Face</code> type.</li>
     <li>The 2D meshing process is now deterministic (sorting of bad faces no
 longer relies on pointers comparisons).</li>
   </ul>
@@ -196,31 +196,31 @@ longer relies on pointers comparisons).</li>
 
   <ul>
     <li>Fix a linking errors (duplicate symbols) when
-<code class="language-plaintext highlighter-rouge">&lt;CGAL/refine_mesh_3.h&gt;</code> is included in different compilation units.</li>
+<code>&lt;CGAL/refine_mesh_3.h&gt;</code> is included in different compilation units.</li>
   </ul>
 
   <h3 id="spatial-searching">Spatial Searching</h3>
 
   <ul>
-    <li>Fix a bug in <code class="language-plaintext highlighter-rouge">&lt;CGAL/Orthogonal_k_neighbor_search.h&gt;</code> when several
+    <li>Fix a bug in <code>&lt;CGAL/Orthogonal_k_neighbor_search.h&gt;</code> when several
 nearest neighbors are at the same distance from the query point.</li>
   </ul>
 
   <h3 id="io-streams">IO Streams</h3>
 
   <ul>
-    <li>Fix a bug in <code class="language-plaintext highlighter-rouge">&lt;CGAL/IO/VRML_2_ostream.h&gt;</code> that generated VRML 2
+    <li>Fix a bug in <code>&lt;CGAL/IO/VRML_2_ostream.h&gt;</code> that generated VRML 2
 files with an invalid syntax for IndexedFaceSet nodes.</li>
   </ul>
 
   <h3 id="triangulation2">Triangulation_2</h3>
 
   <ul>
-    <li>Added missing <code class="language-plaintext highlighter-rouge">Compare_distance_2</code> functor in trait classes
-<code class="language-plaintext highlighter-rouge">Triangulation_euclidean_traits_xy_3</code>
-<code class="language-plaintext highlighter-rouge">Triangulation_euclidean_traits_yz_3</code> and
-<code class="language-plaintext highlighter-rouge">Triangulation_euclidean_traits_xz_3</code>. This was preventing calling
-member function nearest_vertex of <code class="language-plaintext highlighter-rouge">Delaunay_triangulation_2</code>
+    <li>Added missing <code>Compare_distance_2</code> functor in trait classes
+<code>Triangulation_euclidean_traits_xy_3</code>
+<code>Triangulation_euclidean_traits_yz_3</code> and
+<code>Triangulation_euclidean_traits_xz_3</code>. This was preventing calling
+member function nearest_vertex of <code>Delaunay_triangulation_2</code>
 instantiated with one of these traits.</li>
   </ul>
 </div>
@@ -284,10 +284,10 @@ instantiated with one of these traits.</li>
     </div>
 
     <!-- Javascripts -->
-    <script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
-      <script src="/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
+    <script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
       <script>
         $(function () {
           $('.bxslider').bxSlider({
@@ -315,7 +315,7 @@ instantiated with one of these traits.</li>
           });
         });
       </script>
-      <script src="/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
     </body>
 </html>
 

@@ -15,16 +15,16 @@
     <meta name="author" content="CGAL Editorial Board">
 
     <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
-    <link rel="stylesheet" href="/cgal-web/style.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 
     <!--[if lte IE 8]>
 	<link rel="stylesheet" href="css/leaflet.ie.css" />
 	<![endif]-->
-    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/main.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal//main.css">
 
     <!-- atom & rss feed -->
     <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
@@ -177,7 +177,7 @@ present in the description of the input domain.</li>
   <ul>
     <li>Added a way to efficiently insert a range of points with information
 into a 2D Delaunay and regular triangulation.</li>
-    <li>Added member function <code class="language-plaintext highlighter-rouge">mirror_edge()</code> taking an edge as parameter.</li>
+    <li>Added member function <code>mirror_edge()</code> taking an edge as parameter.</li>
     <li>Fixed an infinite loop in constrained triangulation.</li>
   </ul>
 
@@ -188,11 +188,11 @@ into a 2D Delaunay and regular triangulation.</li>
 into a 3D Delaunay and regular triangulation.</li>
     <li>Added a member function to remove a cluster of points from a Delaunay
 or regular triangulation.</li>
-    <li>The function <code class="language-plaintext highlighter-rouge">vertices_in_conflict()</code> is renamed
-<code class="language-plaintext highlighter-rouge">vertices_on_conflict_zone_boundary()</code> for Delaunay and regular
-triangulation. Function <code class="language-plaintext highlighter-rouge">vertices_inside_conflict_zone()</code> is added to
+    <li>The function <code>vertices_in_conflict()</code> is renamed
+<code>vertices_on_conflict_zone_boundary()</code> for Delaunay and regular
+triangulation. Function <code>vertices_inside_conflict_zone()</code> is added to
 regular triangulation.</li>
-    <li>Structural filtering is now internally used in the <code class="language-plaintext highlighter-rouge">locate()</code> function of
+    <li>Structural filtering is now internally used in the <code>locate()</code> function of
 Delaunay and regular triangulation. It improves average construction
 time by 20%.</li>
     <li>Added demo.</li>
@@ -201,7 +201,7 @@ time by 20%.</li>
   <h3 id="d-alpha-shapes-major-new-feature-added">3D Alpha Shapes (major new feature added)</h3>
 
   <ul>
-    <li>The new class <code class="language-plaintext highlighter-rouge">Fixed_alpha_shape_3</code> provides a robust and faster
+    <li>The new class <code>Fixed_alpha_shape_3</code> provides a robust and faster
 way to compute one alpha shape (with a fixed value of alpha).</li>
   </ul>
 
@@ -216,26 +216,26 @@ tree and to build it only when no further insertion is needed.</li>
 
   <ul>
     <li>Better handling of 2D points with elevation (3D points projected
-onto trivial planes). More general traits classes (<code class="language-plaintext highlighter-rouge">Projection_traits_xy_3</code>,
-<code class="language-plaintext highlighter-rouge">Projection_traits_yz_3</code>, <code class="language-plaintext highlighter-rouge">Projection_traits_yz_3</code>) are provided to
+onto trivial planes). More general traits classes (<code>Projection_traits_xy_3</code>,
+<code>Projection_traits_yz_3</code>, <code>Projection_traits_yz_3</code>) are provided to
 work with triangulations, algorithms on polygons, alpha-shapes,
 convex hull algorithm… Usage of former equivalent traits classes
 in different packages is now deprecated.</li>
-    <li><code class="language-plaintext highlighter-rouge">Exact_predicates_exact_constructions_kernel</code> now better use the
+    <li><code>Exact_predicates_exact_constructions_kernel</code> now better use the
 static filters which leads to performance improvements.</li>
     <li>Add an overload for the global function angle, taking three 3D
 points.</li>
     <li>In the 2D and 3D kernel concept, the constant Boolean
 Has_filtered_predicates is now deprecated. It is now required to
-use Has_filtered_predicates_tag (being either <code class="language-plaintext highlighter-rouge">Tag_true</code> or
-<code class="language-plaintext highlighter-rouge">Tag_false</code>).</li>
-    <li><code class="language-plaintext highlighter-rouge">Compare_distance_2</code> and <code class="language-plaintext highlighter-rouge">Compare_distance_3</code> provide additional
+use Has_filtered_predicates_tag (being either <code>Tag_true</code> or
+<code>Tag_false</code>).</li>
+    <li><code>Compare_distance_2</code> and <code>Compare_distance_3</code> provide additional
 operators for 3 and 4 elements.</li>
     <li>Add intersection test and intersection computation capabilities
-between an object of type <code class="language-plaintext highlighter-rouge">Ray_3</code> and either an object of type
-<code class="language-plaintext highlighter-rouge">Line_3</code>, <code class="language-plaintext highlighter-rouge">Segment_3</code> or <code class="language-plaintext highlighter-rouge">Ray_3</code>.</li>
+between an object of type <code>Ray_3</code> and either an object of type
+<code>Line_3</code>, <code>Segment_3</code> or <code>Ray_3</code>.</li>
     <li>Improve intersection test performance between an object of type
-<code class="language-plaintext highlighter-rouge">Bbox_3</code> and an object of type <code class="language-plaintext highlighter-rouge">Plane_3</code> or <code class="language-plaintext highlighter-rouge">Triangle_3</code> by avoiding
+<code>Bbox_3</code> and an object of type <code>Plane_3</code> or <code>Triangle_3</code> by avoiding
 arithmetic filter failures.</li>
   </ul>
 
@@ -249,7 +249,7 @@ be used instead.</li>
   <h3 id="d-envelope-1">3D Envelope</h3>
 
   <ul>
-    <li>A new demo program called <code class="language-plaintext highlighter-rouge">L1_Voronoi_diagram_2</code> has been
+    <li>A new demo program called <code>L1_Voronoi_diagram_2</code> has been
 introduced. It demonstrates how 2D Voronoi diagrams of points under
 the L1 metric are constructed using lower envelopes.</li>
   </ul>
@@ -257,21 +257,21 @@ the L1 metric are constructed using lower envelopes.</li>
   <h3 id="dd-kernel">dD Kernel</h3>
 
   <ul>
-    <li>Added functor <code class="language-plaintext highlighter-rouge">Compute_coordinate_d</code> to the <code class="language-plaintext highlighter-rouge">Kernel_d</code> concept.</li>
+    <li>Added functor <code>Compute_coordinate_d</code> to the <code>Kernel_d</code> concept.</li>
   </ul>
 
   <h3 id="geometric-object-generators">Geometric Object Generators</h3>
 
   <ul>
-    <li><code class="language-plaintext highlighter-rouge">CGAL::Random</code> uses <code class="language-plaintext highlighter-rouge">boost::rand48</code> instead of <code class="language-plaintext highlighter-rouge">std::rand</code>.</li>
-    <li>Added to <code class="language-plaintext highlighter-rouge">CGAL::Random</code> a way to generate random integers.</li>
+    <li><code>CGAL::Random</code> uses <code>boost::rand48</code> instead of <code>std::rand</code>.</li>
+    <li>Added to <code>CGAL::Random</code> a way to generate random integers.</li>
     <li>Added generators for dD points.</li>
   </ul>
 
   <h3 id="algebraic-foundations">Algebraic Foundations</h3>
 
   <ul>
-    <li><code class="language-plaintext highlighter-rouge">Algebraic_structure_traits</code> now provides an Inverse functor for
+    <li><code>Algebraic_structure_traits</code> now provides an Inverse functor for
 Fields. There is also a new global function inverse.</li>
   </ul>
 
@@ -300,9 +300,9 @@ criteria are removed (if possible).</li>
   <h3 id="d-arrangements">2D Arrangements</h3>
 
   <ul>
-    <li>Fixe a bug in the method insert_at_vertices of the <code class="language-plaintext highlighter-rouge">Arrangement_2</code>
+    <li>Fixe a bug in the method insert_at_vertices of the <code>Arrangement_2</code>
 class.</li>
-    <li>Fixed several bugs in the traits class <code class="language-plaintext highlighter-rouge">Arr_Bezier_curve_traits_2</code>
+    <li>Fixed several bugs in the traits class <code>Arr_Bezier_curve_traits_2</code>
 for arrangement of Bezier curves.</li>
   </ul>
 
@@ -372,10 +372,10 @@ for arrangement of Bezier curves.</li>
     </div>
 
     <!-- Javascripts -->
-    <script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
-      <script src="/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
+    <script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
       <script>
         $(function () {
           $('.bxslider').bxSlider({
@@ -403,7 +403,7 @@ for arrangement of Bezier curves.</li>
           });
         });
       </script>
-      <script src="/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
     </body>
 </html>
 

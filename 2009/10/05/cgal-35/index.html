@@ -15,16 +15,16 @@
     <meta name="author" content="CGAL Editorial Board">
 
     <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
-    <link rel="stylesheet" href="/cgal-web/style.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 
     <!--[if lte IE 8]>
 	<link rel="stylesheet" href="css/leaflet.ie.css" />
 	<![endif]-->
-    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/main.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal//main.css">
 
     <!-- atom & rss feed -->
     <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
@@ -163,7 +163,7 @@ in functionality. There have also been a number of bug fixes for this release.</
       </ul>
     </li>
     <li>Fixed ABI incompatibilities when mixing CGAL and Boost Program
-  Options on Windows/Visual C++ (the compilation flag <code class="language-plaintext highlighter-rouge">-D_SECURE_SCL=0</code> is no longer used in Debug mode).</li>
+  Options on Windows/Visual C++ (the compilation flag <code>-D_SECURE_SCL=0</code> is no longer used in Debug mode).</li>
   </ul>
 
   <h3 id="geometry-kernels">Geometry Kernels</h3>
@@ -194,18 +194,18 @@ in functionality. There have also been a number of bug fixes for this release.</
   <h4 id="d-arrangements">2D Arrangements</h4>
 
   <ul>
-    <li>The member function <code class="language-plaintext highlighter-rouge">is_at_infinity()</code> of <code class="language-plaintext highlighter-rouge">Arrangement_2::Vertex</code> was
-replaced by the new function <code class="language-plaintext highlighter-rouge">is_at_open_boundary()</code>. The former is
+    <li>The member function <code>is_at_infinity()</code> of <code>Arrangement_2::Vertex</code> was
+replaced by the new function <code>is_at_open_boundary()</code>. The former is
 deprecated. While still supported in version 3.5, It will not be
 supported in future releases. The member functions
-<code class="language-plaintext highlighter-rouge">boundary_type_in_x() and </code>boundary_type_in_y()<code class="language-plaintext highlighter-rouge"> were permanently
+<code>boundary_type_in_x() and </code>boundary_type_in_y()<code> were permanently
 replaced by the functions </code>parameter_space_in_x()` and
 parameter_space_in_y(), respectively. The 2 new functions return
 an enumeration of a new type, namely Arr_parameter_space.</li>
     <li>The tags in the geometry traits that indicate the type of boundary
 of the embedding surface were replaced by the following new tags:
-<code class="language-plaintext highlighter-rouge">Arr_left_side_tag</code>, <code class="language-plaintext highlighter-rouge">Arr_bottom_side_tag</code>, <code class="language-plaintext highlighter-rouge">Arr_top_side_tag</code>, and
-<code class="language-plaintext highlighter-rouge">Arr_right_side_tag</code> In addition, the code was change, and now it
+<code>Arr_left_side_tag</code>, <code>Arr_bottom_side_tag</code>, <code>Arr_top_side_tag</code>, and
+<code>Arr_right_side_tag</code> In addition, the code was change, and now it
 is possible not to indicate the tags at all. Default values are
 assumed. This however will produce warning messages, and should be
 avoided.</li>
@@ -262,7 +262,7 @@ surfaces.</li>
 
   <ul>
     <li><strong>Breaking change:</strong> in the passing of the visitor object.</li>
-    <li>Fixed a bug in the <code class="language-plaintext highlighter-rouge">link_condition</code> test</li>
+    <li>Fixed a bug in the <code>link_condition</code> test</li>
     <li>Added a geometric test to avoid folding of facets</li>
     <li>Fixed a bug in the handling of overflow in the LindstromTurk computations.</li>
     <li>Updated the manual to account for the new visitor interface.</li>
@@ -354,10 +354,10 @@ Plugins for CGAL main 2D algorithm are provided as demo.</li>
     </div>
 
     <!-- Javascripts -->
-    <script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
-      <script src="/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
+    <script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
       <script>
         $(function () {
           $('.bxslider').bxSlider({
@@ -385,7 +385,7 @@ Plugins for CGAL main 2D algorithm are provided as demo.</li>
           });
         });
       </script>
-      <script src="/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
     </body>
 </html>
 

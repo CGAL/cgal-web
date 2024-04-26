@@ -15,16 +15,16 @@
     <meta name="author" content="CGAL Editorial Board">
 
     <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
-    <link rel="stylesheet" href="/cgal-web/style.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 
     <!--[if lte IE 8]>
 	<link rel="stylesheet" href="css/leaflet.ie.css" />
 	<![endif]-->
-    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/main.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal//main.css">
 
     <!-- atom & rss feed -->
     <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
@@ -164,7 +164,7 @@ may be removed in subsequent releases.</li>
     <li>Assertion behaviour: It is not possible anymore to set the CONTINUE
 mode for assertion failures. Functions that allow to change the
 assertion behaviour are now declared in
-<code class="language-plaintext highlighter-rouge">&lt;CGAL/assertions_behaviour.h&gt;</code>.</li>
+<code>&lt;CGAL/assertions_behaviour.h&gt;</code>.</li>
     <li>Qt3 based demos are still there but the documentation has been
 removed as the CGAL::Qt_Widget will be deprecated.</li>
     <li>Qt4 based demos use the Qt GraphicsView framework and the
@@ -174,14 +174,14 @@ libQGLViewer.</li>
   <h3 id="installation">Installation</h3>
 
   <ul>
-    <li><code class="language-plaintext highlighter-rouge">install_cgal</code> has been replaced by CMake.</li>
+    <li><code>install_cgal</code> has been replaced by CMake.</li>
   </ul>
 
   <h3 id="polynomial-new-package">Polynomial (new package)</h3>
 
   <ul>
-    <li>This package introduces a concept, <code class="language-plaintext highlighter-rouge">Polynomial_d</code>, for
-multivariate polynomials in <code class="language-plaintext highlighter-rouge">d</code> variables.</li>
+    <li>This package introduces a concept, <code>Polynomial_d</code>, for
+multivariate polynomials in <code>d</code> variables.</li>
   </ul>
 
   <h3 id="modular-arithmetic-new-package">Modular Arithmetic (new package)</h3>
@@ -193,9 +193,9 @@ multivariate polynomials in <code class="language-plaintext highlighter-rouge">d
   <h3 id="number-types">Number Types</h3>
 
   <ul>
-    <li>The counter <code class="language-plaintext highlighter-rouge">Interval_nt::number_of_failures()</code> has been removed,
-replaced by a profiling counter enabled with <code class="language-plaintext highlighter-rouge">CGAL_PROFILE</code>.</li>
-    <li>Fix of a bug in <code class="language-plaintext highlighter-rouge">CORE/Expr.h</code>. As a consequence, the arrangement demo
+    <li>The counter <code>Interval_nt::number_of_failures()</code> has been removed,
+replaced by a profiling counter enabled with <code>CGAL_PROFILE</code>.</li>
+    <li>Fix of a bug in <code>CORE/Expr.h</code>. As a consequence, the arrangement demo
 works properly when handling arrangements of conics, for example,
 when defining an arc with 5 points.</li>
   </ul>
@@ -211,27 +211,27 @@ in the 3D space.</li>
   <h3 id="linear-kernel">Linear Kernel</h3>
 
   <ul>
-    <li>We recommend that you use the <code class="language-plaintext highlighter-rouge">object_cast()</code> function instead of
-<code class="language-plaintext highlighter-rouge">assign()</code> to extract an object from a <code class="language-plaintext highlighter-rouge">CGAL::Object</code>, for efficiency
+    <li>We recommend that you use the <code>object_cast()</code> function instead of
+<code>assign()</code> to extract an object from a <code>CGAL::Object</code>, for efficiency
 reasons.</li>
     <li>The Kernel archetypes provided by the 2D/3D linear kernel have been
 removed.</li>
-    <li>The deprecated linear kernel functors <code class="language-plaintext highlighter-rouge">Construct_supporting_line_2</code>
-and <code class="language-plaintext highlighter-rouge">Construct_supporting_line_3</code> have been removed.</li>
+    <li>The deprecated linear kernel functors <code>Construct_supporting_line_2</code>
+and <code>Construct_supporting_line_3</code> have been removed.</li>
     <li>Ambiant_dimension and Feature_dimenison have been added to
 retrieve the potentially compile-time dimension of a space or of an
 object.</li>
-    <li><code class="language-plaintext highlighter-rouge">barycenter()</code> functions have been added.</li>
-    <li>The geometric object <code class="language-plaintext highlighter-rouge">Circle_3</code> as well as predicates and
+    <li><code>barycenter()</code> functions have been added.</li>
+    <li>The geometric object <code>Circle_3</code> as well as predicates and
 constructions have been added to the kernel</li>
-    <li>The missing intersection/do_intersect between <code class="language-plaintext highlighter-rouge">Line_3</code> and <code class="language-plaintext highlighter-rouge">Line_3</code>
+    <li>The missing intersection/do_intersect between <code>Line_3</code> and <code>Line_3</code>
 has been added as well.</li>
   </ul>
 
   <h3 id="d-triangulations">3D Triangulations</h3>
 
   <ul>
-    <li>Removed the deprecated functions <code class="language-plaintext highlighter-rouge">Cell:mirror_index()</code> and <code class="language-plaintext highlighter-rouge">Cell::mirror_vertex()</code>.</li>
+    <li>Removed the deprecated functions <code>Cell:mirror_index()</code> and <code>Cell::mirror_vertex()</code>.</li>
     <li>Derecursification of two functions that in some cases lead to stack overflows.</li>
   </ul>
 
@@ -255,21 +255,21 @@ has been added as well.</li>
     <li>The functor adaptors for argument binding and composition (bind_*,
 compose, compose_shared, swap_*, negate, along with the helper
 functions set_arity_* and Arity class and Arity_tag typedefs)
-which were provided by <code class="language-plaintext highlighter-rouge">&lt;CGAL/functional.h&gt;</code> have been removed.
+which were provided by <code>&lt;CGAL/functional.h&gt;</code> have been removed.
 Please use the better boost::bind mecanism instead. The concept
 AdaptableFunctor has been changed accordingly such that only a
 nested result_type is required.</li>
     <li>The accessory classes Twotuple, Threetuple, Fourtuple and Sixtuple
 are also deprecated (use CGAL::array instead).</li>
-    <li><code class="language-plaintext highlighter-rouge">CGAL::Triple</code> and <code class="language-plaintext highlighter-rouge">CGAL::Quadruple</code> are in the process of being
+    <li><code>CGAL::Triple</code> and <code>CGAL::Quadruple</code> are in the process of being
 replaced by boost::tuple. As a first step, we strongly recommend
-that you replace the direct access to the data members (<code class="language-plaintext highlighter-rouge">.first</code>,
-<code class="language-plaintext highlighter-rouge">.second</code>, <code class="language-plaintext highlighter-rouge">.third</code>, <code class="language-plaintext highlighter-rouge">.fourth</code>), by the <code class="language-plaintext highlighter-rouge">get&lt;&gt;()</code> member function;
+that you replace the direct access to the data members (<code>.first</code>,
+<code>.second</code>, <code>.third</code>, <code>.fourth</code>), by the <code>get&lt;&gt;()</code> member function;
 and replace the make_triple and make_quadruple maker functions by
 make_tuple.
 This way, in a further release, we will be able to switch to
-<code class="language-plaintext highlighter-rouge">boost::tuple</code> more easily.</li>
-    <li>The class <code class="language-plaintext highlighter-rouge">CGAL::Uncertain</code> has been documented. It is
+<code>boost::tuple</code> more easily.</li>
+    <li>The class <code>CGAL::Uncertain</code> has been documented. It is
 typically used to report uncertain results for predicates using
 interval arithmetic, and other filtering techniques.</li>
   </ul>
@@ -277,19 +277,19 @@ interval arithmetic, and other filtering techniques.</li>
   <h3 id="d-arrangements">2D Arrangements</h3>
 
   <ul>
-    <li>Changed the name of the arrangement package from <code class="language-plaintext highlighter-rouge">Arrangement_2</code> to
-<code class="language-plaintext highlighter-rouge">Arrangement_on_surface_2</code> to reflect the potential capabilities of
+    <li>Changed the name of the arrangement package from <code>Arrangement_2</code> to
+<code>Arrangement_on_surface_2</code> to reflect the potential capabilities of
 the package to construct and maintain arrangements induced by curves
 embedded on two dimensional surfaces in three space. Most of these
 capabilities will become available only in future releases though.</li>
     <li>Enhanced the geometry traits concept to handle arrangements embedded
 on surfaces. Each geometry-traits class must now define the
 ‘Boundary_category’ tag.</li>
-    <li>Fixed a bug in <code class="language-plaintext highlighter-rouge">Arr_polyline_traits_2.h</code>, where the operator that
+    <li>Fixed a bug in <code>Arr_polyline_traits_2.h</code>, where the operator that
 compares two curves failed to evaluate the correct result (true)
 when the curves are different, but their graphs are identical.</li>
-    <li>Permanently removed <code class="language-plaintext highlighter-rouge">IO/Arr_postscript_file_stream.h</code> and
-<code class="language-plaintext highlighter-rouge">IO/Polyline_2_postscript_file_stream.h</code>, as they depend on
+    <li>Permanently removed <code>IO/Arr_postscript_file_stream.h</code> and
+<code>IO/Polyline_2_postscript_file_stream.h</code>, as they depend on
 obsolete features and LEDA.</li>
     <li>Fixed several bugs in the arrangement demo and enhanced it. e.g.,
 fixed background color change, allowed vertex coloring , enabled
@@ -297,10 +297,10 @@ fixed background color change, allowed vertex coloring , enabled
     <li>Enhanced the arrangement demo with new features, such as allowing
 the abortion of the merge function (de-select), updated the how-to
 description, etc.</li>
-    <li>Replace the functions <code class="language-plaintext highlighter-rouge">CGAL::insert_curve()</code>, <code class="language-plaintext highlighter-rouge">CGAL::insert_curves()</code>,
-<code class="language-plaintext highlighter-rouge">CGAL::insert_x_monotone_curve()</code>, and
-<code class="language-plaintext highlighter-rouge">CGAL::insert_x_monotone_curves()</code> with a single overloaded
-function <code class="language-plaintext highlighter-rouge">CGAL::insert()</code>. The former 4 functions are now deprecated,
+    <li>Replace the functions <code>CGAL::insert_curve()</code>, <code>CGAL::insert_curves()</code>,
+<code>CGAL::insert_x_monotone_curve()</code>, and
+<code>CGAL::insert_x_monotone_curves()</code> with a single overloaded
+function <code>CGAL::insert()</code>. The former 4 functions are now deprecated,
 and may no longer be supported in future releases.</li>
   </ul>
 
@@ -314,15 +314,15 @@ caused by multiple removals of vertices at infinity.</li>
   <h3 id="d-regularized-boolean-set-operations">2D Regularized Boolean Set-Operations</h3>
 
   <ul>
-    <li>Fixed a bug in <code class="language-plaintext highlighter-rouge">connect_holes()</code> that caused failures when connecting
+    <li>Fixed a bug in <code>connect_holes()</code> that caused failures when connecting
 holes touching the outer boundary.</li>
-    <li>Fixed the concept <code class="language-plaintext highlighter-rouge">GeneralPolygonSetTraits_2</code>. Introduced two new
-<code class="language-plaintext highlighter-rouge">concepts GpsTraitsGeneralPolygon_2</code> and
-<code class="language-plaintext highlighter-rouge">GpsTraitsGeneralPolygonWithHoles_2</code>. Fixed the definition of the two
-nested required types <code class="language-plaintext highlighter-rouge">Polygon_2</code> and <code class="language-plaintext highlighter-rouge">Polygon_with_holes_2</code> of the
-<code class="language-plaintext highlighter-rouge">GeneralPolygonSetTraits_2</code> concept. They must model now the two new
+    <li>Fixed the concept <code>GeneralPolygonSetTraits_2</code>. Introduced two new
+<code>concepts GpsTraitsGeneralPolygon_2</code> and
+<code>GpsTraitsGeneralPolygonWithHoles_2</code>. Fixed the definition of the two
+nested required types <code>Polygon_2</code> and <code>Polygon_with_holes_2</code> of the
+<code>GeneralPolygonSetTraits_2</code> concept. They must model now the two new
 concepts above.</li>
-    <li>Added a default template parameter to <code class="language-plaintext highlighter-rouge">General_polygon_set_2</code> to
+    <li>Added a default template parameter to <code>General_polygon_set_2</code> to
 allow users to pass their specialized DCEL used to instantiate the
 underlying arrangement.</li>
     <li>Enhanced the BOP demo to use multiple windows.</li>
@@ -339,7 +339,7 @@ the convolution cycles.</li>
     <li>Optimized the approximate offset function (reduced time consumption
 up to a factor of 2 in some cases).</li>
     <li>Added functionality to compute the offset (or to approximate the
-offset) of a <code class="language-plaintext highlighter-rouge">Polygon_with_holes_2</code> (and not just of a <code class="language-plaintext highlighter-rouge">Polygon_2</code>).</li>
+offset) of a <code>Polygon_with_holes_2</code> (and not just of a <code>Polygon_2</code>).</li>
     <li>Added the functionality to compute (or to approximate) the inner
 offset of a polygon.</li>
   </ul>
@@ -404,10 +404,10 @@ offset of a polygon.</li>
     </div>
 
     <!-- Javascripts -->
-    <script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
-      <script src="/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
+    <script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
       <script>
         $(function () {
           $('.bxslider').bxSlider({
@@ -435,7 +435,7 @@ offset of a polygon.</li>
           });
         });
       </script>
-      <script src="/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
     </body>
 </html>
 

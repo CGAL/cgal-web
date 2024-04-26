@@ -15,16 +15,16 @@
     <meta name="author" content="CGAL Editorial Board">
 
     <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
-    <link rel="stylesheet" href="/cgal-web/style.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 
     <!--[if lte IE 8]>
 	<link rel="stylesheet" href="css/leaflet.ie.css" />
 	<![endif]-->
-    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/main.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal//main.css">
 
     <!-- atom & rss feed -->
     <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
@@ -158,10 +158,10 @@
     <li>All Qt4 demos have been updated and now require Qt5 to be compiled.
 Qt5 version 5.3 or higher is required. The support for Qt4 is
 dropped. To compile libCGAL_Qt5 and demos, you must set the cmake
-or environment variable <code class="language-plaintext highlighter-rouge">Qt5_DIR</code> to point to the path to the
-directory containing the file <code class="language-plaintext highlighter-rouge">Qt5Config.cmake</code> created by your Qt5
+or environment variable <code>Qt5_DIR</code> to point to the path to the
+directory containing the file <code>Qt5Config.cmake</code> created by your Qt5
 installation. If you are using the open source edition it should be
-<code class="language-plaintext highlighter-rouge">/path-to/qt-everywhere-opensource-src-&lt;version&gt;/qtbase/lib/cmake/Qt5</code>.</li>
+<code>/path-to/qt-everywhere-opensource-src-&lt;version&gt;/qtbase/lib/cmake/Qt5</code>.</li>
     <li>The code of the 3D demos now uses modern OpenGL, with shaders,
 instead of the fixed pipeline API of OpenGL-1.</li>
   </ul>
@@ -249,14 +249,14 @@ Botsch et al.’s book on polygon mesh processing.</li>
   <h3 id="approximation-of-ridges-and-umbilics-on-triangulated-surface-meshes">Approximation of Ridges and Umbilics on Triangulated Surface Meshes</h3>
 
   <ul>
-    <li>This package now supports any model of the concept <code class="language-plaintext highlighter-rouge">FaceGraph</code>.</li>
+    <li>This package now supports any model of the concept <code>FaceGraph</code>.</li>
     <li><strong>Breaking change:</strong> The package no longer supports models of
-<code class="language-plaintext highlighter-rouge">TriangulatedSurfaceMesh</code> which are not at the same time models of
-the concept <code class="language-plaintext highlighter-rouge">FaceGraph</code>.
+<code>TriangulatedSurfaceMesh</code> which are not at the same time models of
+the concept <code>FaceGraph</code>.
       <h3 id="dd-geometry-kernel">dD Geometry Kernel</h3>
     </li>
-    <li>Epick_d gains 3 new functors: <code class="language-plaintext highlighter-rouge">Construct_circumcenter_d</code>,
-<code class="language-plaintext highlighter-rouge">Compute_squared_radius_d</code>, <code class="language-plaintext highlighter-rouge">Side_of_bounded_sphere_d</code>. Those are
+    <li>Epick_d gains 3 new functors: <code>Construct_circumcenter_d</code>,
+<code>Compute_squared_radius_d</code>, <code>Side_of_bounded_sphere_d</code>. Those are
 essential for the computation of alpha-shapes.</li>
   </ul>
 
@@ -264,18 +264,18 @@ essential for the computation of alpha-shapes.</li>
 
   <ul>
     <li>Introduced a new traits class, called
-<code class="language-plaintext highlighter-rouge">Arr_polycurve_traits_2&lt;SubcurveTraits&gt;</code>, which handles general
+<code>Arr_polycurve_traits_2&lt;SubcurveTraits&gt;</code>, which handles general
 piece-wise (polycurve) curves. The pieces do not necessarily have to
 be linear.</li>
-    <li>Introduced two new concepts called <code class="language-plaintext highlighter-rouge">ArrangementApproximateTraits_2</code>
-and <code class="language-plaintext highlighter-rouge">ArrangementConstructXMonotoneCurveTraits_2</code>.</li>
-    <li>The existing <code class="language-plaintext highlighter-rouge">ArrangementLandmarkTraits_2</code> concept, which has
+    <li>Introduced two new concepts called <code>ArrangementApproximateTraits_2</code>
+and <code>ArrangementConstructXMonotoneCurveTraits_2</code>.</li>
+    <li>The existing <code>ArrangementLandmarkTraits_2</code> concept, which has
 two requirements, now refines the two respective concepts above.</li>
     <li>The template parameter of the existing
-<code class="language-plaintext highlighter-rouge">Arr_polyline_traits_2&lt;SegmentTraits&gt;</code> template must be
+<code>Arr_polyline_traits_2&lt;SegmentTraits&gt;</code> template must be
 substituted with a traits class that is a model of the
-<code class="language-plaintext highlighter-rouge">ArrangementConstructXMonotoneTraits_2</code> concept among the other
-when <code class="language-plaintext highlighter-rouge">Arr_polyline_traits_2</code> is instantiated.</li>
+<code>ArrangementConstructXMonotoneTraits_2</code> concept among the other
+when <code>Arr_polyline_traits_2</code> is instantiated.</li>
   </ul>
 
   <h3 id="d-minkowski-sums">2D Minkowski Sums</h3>
@@ -290,7 +290,7 @@ new method supports polygons with holes and in many cases out
 pergorms the implementation of the exsisting (full) convolution
 method.</li>
     <li>Introduced two new classes that decompose polygons into convex
-pieces (models of the <code class="language-plaintext highlighter-rouge">PolygonConvexDecomposition_2</code> concept)
+pieces (models of the <code>PolygonConvexDecomposition_2</code> concept)
 based on vertical decomposition and constrained Delaunay
 triangulation, respectively. These new models also support the
 convex decomposition of polygons with holes.</li>
@@ -299,34 +299,34 @@ convex decomposition of polygons with holes.</li>
   <h3 id="d-periodic-triangulations">3D Periodic Triangulations</h3>
 
   <ul>
-    <li>Renamed <code class="language-plaintext highlighter-rouge">Periodic_3_triangulation_traits_3</code> to
-<code class="language-plaintext highlighter-rouge">Periodic_3_Delaunay_triangulation_traits_3</code>.</li>
-    <li>Renamed the concept <code class="language-plaintext highlighter-rouge">Periodic_3TriangulationTraits_3</code> to
-<code class="language-plaintext highlighter-rouge">Periodic_3DelaunayTriangulationTraits_3</code>.</li>
-    <li>Created <code class="language-plaintext highlighter-rouge">Periodic_3_triangulation_traits_3</code> and the concept
-<code class="language-plaintext highlighter-rouge">Periodic_3TriangulationTraits_3</code>.</li>
+    <li>Renamed <code>Periodic_3_triangulation_traits_3</code> to
+<code>Periodic_3_Delaunay_triangulation_traits_3</code>.</li>
+    <li>Renamed the concept <code>Periodic_3TriangulationTraits_3</code> to
+<code>Periodic_3DelaunayTriangulationTraits_3</code>.</li>
+    <li>Created <code>Periodic_3_triangulation_traits_3</code> and the concept
+<code>Periodic_3TriangulationTraits_3</code>.</li>
   </ul>
 
   <h3 id="d-conforming-triangulations-and-meshes">2D Conforming Triangulations and Meshes</h3>
 
   <ul>
-    <li>Added an optimization method <code class="language-plaintext highlighter-rouge">CGAL::lloyd_optimize_mesh_2()</code> that
+    <li>Added an optimization method <code>CGAL::lloyd_optimize_mesh_2()</code> that
 implements the Lloyd (or Centroidal Voronoi Tesselation)
 optimization algorithm in a Constrained Delaunay Triangulation. For
 optimization, the triangulation data structure on which the mesher
-relies needs its <code class="language-plaintext highlighter-rouge">VertexBase</code> template parameter to be a model of
-the new concept <code class="language-plaintext highlighter-rouge">DelaunayMeshVertexBase_2</code>.</li>
+relies needs its <code>VertexBase</code> template parameter to be a model of
+the new concept <code>DelaunayMeshVertexBase_2</code>.</li>
   </ul>
 
   <h3 id="point-set-processing-and-surface-reconstruction-from-point-sets">Point Set Processing and Surface Reconstruction from Point Sets</h3>
 
   <ul>
-    <li>Added the function <code class="language-plaintext highlighter-rouge">CGAL::compute_vcm()</code> for computing the Voronoi
+    <li>Added the function <code>CGAL::compute_vcm()</code> for computing the Voronoi
 Covariance Measure (VCM) of a point set. The output of this function
-can be used with the function <code class="language-plaintext highlighter-rouge">CGAL::vcm_is_on_feature_edge()</code> to
+can be used with the function <code>CGAL::vcm_is_on_feature_edge()</code> to
 determine whether a point is on or close to a feature edge. The
 former function is also internally used by
-<code class="language-plaintext highlighter-rouge">CGAL::vcm_estimate_normals()</code> to estimate the normals of a point
+<code>CGAL::vcm_estimate_normals()</code> to estimate the normals of a point
 set and it is particularly suited to point sets with noise.</li>
   </ul>
 
@@ -334,17 +334,17 @@ set and it is particularly suited to point sets with noise.</li>
 
   <ul>
     <li>Added the possibility to sort points on a sphere along a space-filling
-curve using the functions <code class="language-plaintext highlighter-rouge">CGAL::hilbert_sort_on_sphere</code> and
-<code class="language-plaintext highlighter-rouge">CGAL::spatial_sort_on_sphere</code>.</li>
+curve using the functions <code>CGAL::hilbert_sort_on_sphere</code> and
+<code>CGAL::spatial_sort_on_sphere</code>.</li>
   </ul>
 
   <h3 id="geometric-object-generators">Geometric Object Generators</h3>
 
   <ul>
     <li>Added new random generator of points in a 2D and 3D triangle and in a
-tetrahedron (<code class="language-plaintext highlighter-rouge">CGAL::Random_points_in_triangle_2</code>,
-<code class="language-plaintext highlighter-rouge">CGAL::Random_points_in_triangle_3</code>,
-<code class="language-plaintext highlighter-rouge">CGAL::Random_points_in_tetrahedron_3</code>).</li>
+tetrahedron (<code>CGAL::Random_points_in_triangle_2</code>,
+<code>CGAL::Random_points_in_triangle_3</code>,
+<code>CGAL::Random_points_in_tetrahedron_3</code>).</li>
   </ul>
 </div>
 
@@ -407,10 +407,10 @@ tetrahedron (<code class="language-plaintext highlighter-rouge">CGAL::Random_poi
     </div>
 
     <!-- Javascripts -->
-    <script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
-      <script src="/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
+    <script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
       <script>
         $(function () {
           $('.bxslider').bxSlider({
@@ -438,7 +438,7 @@ tetrahedron (<code class="language-plaintext highlighter-rouge">CGAL::Random_poi
           });
         });
       </script>
-      <script src="/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
     </body>
 </html>
 

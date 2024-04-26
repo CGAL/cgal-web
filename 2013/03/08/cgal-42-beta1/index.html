@@ -15,16 +15,16 @@
     <meta name="author" content="CGAL Editorial Board">
 
     <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
-    <link rel="stylesheet" href="/cgal-web/style.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 
     <!--[if lte IE 8]>
 	<link rel="stylesheet" href="css/leaflet.ie.css" />
 	<![endif]-->
-    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/main.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal//main.css">
 
     <!-- atom & rss feed -->
     <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
@@ -160,25 +160,25 @@ supported.</li>
       </ul>
     </li>
     <li>With Microsoft Visual C++ (all supported versions), the compiler
-flags <code class="language-plaintext highlighter-rouge">/bigobj</code> and <code class="language-plaintext highlighter-rouge">/wd4503</code> are added by CGAL CMake scripts.</li>
-    <li>This is the last release whose “<code class="language-plaintext highlighter-rouge">UseCGAL.cmake</code>” file (if using CGAL
+flags <code>/bigobj</code> and <code>/wd4503</code> are added by CGAL CMake scripts.</li>
+    <li>This is the last release whose “<code>UseCGAL.cmake</code>” file (if using CGAL
 in a CMake build environment) contains the line
-      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      link_libraries(${CGAL_LIBRARIES_DIR} ${CGAL_3RD_PARTY_LIBRARIES_DIRS})
-</code></pre></div>      </div>
+      <pre><code>      link_libraries(${CGAL_LIBRARIES_DIR} ${CGAL_3RD_PARTY_LIBRARIES_DIRS})
+</code></pre>
       <p>as this is a deprecated CMake command. The correct way to link with
 CGAL’s libraries (as for required 3rd party libraries) is to use
-‘<code class="language-plaintext highlighter-rouge">target_link_libraries</code>’ which specifies for each build target
+‘<code>target_link_libraries</code>’ which specifies for each build target
 which libraries should be linked. The following serves as example:</p>
-      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      find_package(CGAL)
+      <pre><code>      find_package(CGAL)
       include(${CGAL_USE_FILE})
       add_executable(myexe main.cpp)
       target_link_libraries(myexe ${CGAL_LIBRARIES}
                                   ${CGAL_3RD_PARTY_LIBRARIES})
-</code></pre></div>      </div>
+</code></pre>
       <p>We also expect further changes in CGAL’s CMake setup (change of
 variable names, consistency of filename and output, removing
 essential libraries, building executables, removal of
-‘<code class="language-plaintext highlighter-rouge">${CGAL_3RD_PARTY_LIBRARIES}</code>’).</p>
+‘<code>${CGAL_3RD_PARTY_LIBRARIES}</code>’).</p>
     </li>
   </ul>
 
@@ -208,17 +208,17 @@ circles.</li>
 
   <ul>
     <li>Added mechanism to avoid call stack overflow in
-<code class="language-plaintext highlighter-rouge">Delaunay_triangulation_2</code> and
-<code class="language-plaintext highlighter-rouge">Constrained_Delaunay_triangulation_2</code>.</li>
-    <li>Added a constructor for <code class="language-plaintext highlighter-rouge">Regular_triangulation_2</code> and
-<code class="language-plaintext highlighter-rouge">Delaunay_triangulation_2</code> from a range of points or a range of
+<code>Delaunay_triangulation_2</code> and
+<code>Constrained_Delaunay_triangulation_2</code>.</li>
+    <li>Added a constructor for <code>Regular_triangulation_2</code> and
+<code>Delaunay_triangulation_2</code> from a range of points or a range of
 points with info.</li>
   </ul>
 
   <h3 id="d-voronoi-diagram-adaptor">2D Voronoi Diagram Adaptor</h3>
 
   <ul>
-    <li>Bug-fix: Added <code class="language-plaintext highlighter-rouge">ccb()</code> method in face type as documented.</li>
+    <li>Bug-fix: Added <code>ccb()</code> method in face type as documented.</li>
   </ul>
 
   <h3 id="d-minkowski-sum-of-polyhedra">3D Minkowski Sum of Polyhedra</h3>
@@ -230,24 +230,24 @@ points with info.</li>
   <h3 id="d-fast-intersection-and-distance-computation">3D Fast Intersection and Distance Computation</h3>
 
   <ul>
-    <li>Updated requirements of the concepts <code class="language-plaintext highlighter-rouge">AABBTraits</code> and
-<code class="language-plaintext highlighter-rouge">AABBGeomTraits</code> to match the implementation of the package.</li>
+    <li>Updated requirements of the concepts <code>AABBTraits</code> and
+<code>AABBGeomTraits</code> to match the implementation of the package.</li>
   </ul>
 
   <h3 id="generator">Generator</h3>
 
   <ul>
-    <li>Addition of the <code class="language-plaintext highlighter-rouge">Combination_enumerator</code>.</li>
+    <li>Addition of the <code>Combination_enumerator</code>.</li>
   </ul>
 
   <h3 id="stl-extensions">STL Extensions</h3>
 
   <ul>
-    <li>Introduction of <code class="language-plaintext highlighter-rouge">CGAL::cpp11::result_of</code> as an alias to the tr1
-implementation from boost of the <code class="language-plaintext highlighter-rouge">result_of</code> mechanism. When all
+    <li>Introduction of <code>CGAL::cpp11::result_of</code> as an alias to the tr1
+implementation from boost of the <code>result_of</code> mechanism. When all
 compilers supported by CGAL will have a Standard compliant
-implemention of the C++11 <code class="language-plaintext highlighter-rouge">decltype</code> feature, it will become an
-alias to <code class="language-plaintext highlighter-rouge">std::result_of</code>.</li>
+implemention of the C++11 <code>decltype</code> feature, it will become an
+alias to <code>std::result_of</code>.</li>
   </ul>
 
   <h3 id="surface-reconstruction-from-point-sets">Surface Reconstruction from Point Sets</h3>
@@ -318,10 +318,10 @@ the Polyhedron demo has an option to switch it on.</li>
     </div>
 
     <!-- Javascripts -->
-    <script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
-      <script src="/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
+    <script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
       <script>
         $(function () {
           $('.bxslider').bxSlider({
@@ -349,7 +349,7 @@ the Polyhedron demo has an option to switch it on.</li>
           });
         });
       </script>
-      <script src="/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
     </body>
 </html>
 

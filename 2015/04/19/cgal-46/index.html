@@ -15,16 +15,16 @@
     <meta name="author" content="CGAL Editorial Board">
 
     <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
-    <link rel="stylesheet" href="/cgal-web/style.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 
     <!--[if lte IE 8]>
 	<link rel="stylesheet" href="css/leaflet.ie.css" />
 	<![endif]-->
-    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/main.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal//main.css">
 
     <!-- atom & rss feed -->
     <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
@@ -191,8 +191,8 @@ necessarily a valid (manifold) polyhedral surface.</li>
   <ul>
     <li>The surface mesh class provided by this package is an implementation
 of the halfedge data structure allowing to represent polyhedral
-surfaces. It is an alternative to the packages <code class="language-plaintext highlighter-rouge">CGAL::Polyhedron_3</code>
-and <code class="language-plaintext highlighter-rouge">CGAL::HalfedgeDS</code>.</li>
+surfaces. It is an alternative to the packages <code>CGAL::Polyhedron_3</code>
+and <code>CGAL::HalfedgeDS</code>.</li>
   </ul>
 
   <h3 id="dd-triangulation-new-package">dD Triangulation (new package)</h3>
@@ -214,7 +214,7 @@ be used instead.</li>
   <h3 id="dd-geometry-kernel">dD Geometry Kernel</h3>
 
   <ul>
-    <li>It has been reported that the recently introduced <code class="language-plaintext highlighter-rouge">Epick_d</code> kernel
+    <li>It has been reported that the recently introduced <code>Epick_d</code> kernel
 may not work with Intel C++ Compiler prior to version 15.
 Documentation has been updated.</li>
   </ul>
@@ -222,24 +222,24 @@ Documentation has been updated.</li>
   <h3 id="d-convex-hulls">3D Convex Hulls</h3>
 
   <ul>
-    <li>Added functions <code class="language-plaintext highlighter-rouge">halfspace_intersection_3</code> and
-<code class="language-plaintext highlighter-rouge">halfspace_intersection_with_constructions_3</code> to compute the
+    <li>Added functions <code>halfspace_intersection_3</code> and
+<code>halfspace_intersection_with_constructions_3</code> to compute the
 intersection of halfspaces defining a closed polyhedron.</li>
     <li>Fixed a bug introduced in CGAL 4.5 that can appear while computing the
 convex hull of coplanar points.</li>
-    <li>Fixed a robustness issue in <code class="language-plaintext highlighter-rouge">Convex_hull_traits_3</code>. This traits is
+    <li>Fixed a robustness issue in <code>Convex_hull_traits_3</code>. This traits is
 used by default with the kernel
-<code class="language-plaintext highlighter-rouge">Exact_predicates_inexact_constructions_kernel</code>.</li>
-    <li>The function <code class="language-plaintext highlighter-rouge">CGAL::convex_hull_incremental_3</code> is deprecated and the
-function <code class="language-plaintext highlighter-rouge">convex_hull_3</code> should be used instead.</li>
+<code>Exact_predicates_inexact_constructions_kernel</code>.</li>
+    <li>The function <code>CGAL::convex_hull_incremental_3</code> is deprecated and the
+function <code>convex_hull_3</code> should be used instead.</li>
   </ul>
 
   <h3 id="combinatorial-maps-and-linear-cell-complex">Combinatorial Maps and Linear Cell Complex</h3>
 
   <ul>
-    <li>Added <code class="language-plaintext highlighter-rouge">correct_invalid_attributes</code>,
-<code class="language-plaintext highlighter-rouge">set_automatic_attributes_management</code> and
-<code class="language-plaintext highlighter-rouge">are_attributes_automatically_managed</code> methods in <code class="language-plaintext highlighter-rouge">CombinatorialMap</code>
+    <li>Added <code>correct_invalid_attributes</code>,
+<code>set_automatic_attributes_management</code> and
+<code>are_attributes_automatically_managed</code> methods in <code>CombinatorialMap</code>
 concept. This allows high level operations to not update non void
 attributes during massive calls of these operations, but only after
 the end of their executions.</li>
@@ -248,55 +248,55 @@ the end of their executions.</li>
   <h3 id="d-triangulations">2D Triangulations</h3>
 
   <ul>
-    <li>The class <code class="language-plaintext highlighter-rouge">Constrained_triangulation_plus_2</code> now can handle
+    <li>The class <code>Constrained_triangulation_plus_2</code> now can handle
 polylines as constraints.</li>
-    <li>As a consequence a <code class="language-plaintext highlighter-rouge">Constraint_id</code> has been introduced which
-replaces <code class="language-plaintext highlighter-rouge">pair&lt;Vertex_handle,Vertex_handle&gt;</code> as identifier of a
+    <li>As a consequence a <code>Constraint_id</code> has been introduced which
+replaces <code>pair&lt;Vertex_handle,Vertex_handle&gt;</code> as identifier of a
 constraint.</li>
   </ul>
 
   <h3 id="d-mesh-generation">3D Mesh Generation</h3>
 
   <ul>
-    <li>Added member functions <code class="language-plaintext highlighter-rouge">output_boundary_to_off</code> and
-<code class="language-plaintext highlighter-rouge">output_facets_in_complex_to_off</code> in the class
-<code class="language-plaintext highlighter-rouge">CGAL::Mesh_complex_3_in_triangulation_3</code> to export the boundary of
+    <li>Added member functions <code>output_boundary_to_off</code> and
+<code>output_facets_in_complex_to_off</code> in the class
+<code>CGAL::Mesh_complex_3_in_triangulation_3</code> to export the boundary of
 a domain or a subdomain.</li>
   </ul>
 
   <h3 id="d-fast-intersection-and-distance-computation">3D Fast Intersection and Distance Computation</h3>
 
   <ul>
-    <li>Added new constructors to <code class="language-plaintext highlighter-rouge">AABB_halfedge_graph_segment_primitive</code> and
-<code class="language-plaintext highlighter-rouge">AABB_face_graph_triangle_primitive</code> in order to be able to build
+    <li>Added new constructors to <code>AABB_halfedge_graph_segment_primitive</code> and
+<code>AABB_face_graph_triangle_primitive</code> in order to be able to build
 primitives one by one.</li>
   </ul>
 
   <h3 id="spatial-searching">Spatial Searching</h3>
 
   <ul>
-    <li>Fixed a bug in <code class="language-plaintext highlighter-rouge">CGAL::Splitters.h</code> sliding midpoint rule, where
+    <li>Fixed a bug in <code>CGAL::Splitters.h</code> sliding midpoint rule, where
 degenerated point sets (e.g.,points on segment) caused the kd-tree
 to get linear.</li>
-    <li>Improved performance of <code class="language-plaintext highlighter-rouge">Orthogonal_k_neighbor_search</code>. Note that VC
-2013 does not compile <code class="language-plaintext highlighter-rouge">boost::container::deque</code> of Boost 1_55 and
+    <li>Improved performance of <code>Orthogonal_k_neighbor_search</code>. Note that VC
+2013 does not compile <code>boost::container::deque</code> of Boost 1_55 and
 does hence have a workaround which does not have the improvement.</li>
-    <li><strong>Breaking change:</strong> The concept <code class="language-plaintext highlighter-rouge">OrthogonalDistance</code> has new
-function overloads for <code class="language-plaintext highlighter-rouge">min_distance_to_rectangle</code> and
-<code class="language-plaintext highlighter-rouge">max_distance_to_rectangle</code> with an additional reference parameter
-<code class="language-plaintext highlighter-rouge">std::vector</code>.</li>
+    <li><strong>Breaking change:</strong> The concept <code>OrthogonalDistance</code> has new
+function overloads for <code>min_distance_to_rectangle</code> and
+<code>max_distance_to_rectangle</code> with an additional reference parameter
+<code>std::vector</code>.</li>
     <li><strong>Breaking change:</strong> The order of the points in the iterator range
-<code class="language-plaintext highlighter-rouge">[tree.begin(),tree.end()]</code> is not the order of insertion of the
+<code>[tree.begin(),tree.end()]</code> is not the order of insertion of the
 points into the tree. This was not guaranteed before but might have
 been observed and exploited by users.</li>
-    <li>Derived <code class="language-plaintext highlighter-rouge">kd_tree_leaf_node</code> and <code class="language-plaintext highlighter-rouge">kd_tree_internal_node</code> from
-<code class="language-plaintext highlighter-rouge">kd_tree_node</code> to save memory.</li>
+    <li>Derived <code>kd_tree_leaf_node</code> and <code>kd_tree_internal_node</code> from
+<code>kd_tree_node</code> to save memory.</li>
   </ul>
 
   <h3 id="geometric-object-generators">Geometric Object Generators</h3>
 
   <ul>
-    <li>Added a new function <code class="language-plaintext highlighter-rouge">random_convex_hull_in_disc_2</code> that efficiently
+    <li>Added a new function <code>random_convex_hull_in_disc_2</code> that efficiently
 generates a random polygon as the convex hull of uniform random
 points chosen in a disc.</li>
   </ul>
@@ -361,10 +361,10 @@ points chosen in a disc.</li>
     </div>
 
     <!-- Javascripts -->
-    <script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
-      <script src="/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
+    <script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
       <script>
         $(function () {
           $('.bxslider').bxSlider({
@@ -392,7 +392,7 @@ points chosen in a disc.</li>
           });
         });
       </script>
-      <script src="/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
     </body>
 </html>
 

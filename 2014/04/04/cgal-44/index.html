@@ -15,16 +15,16 @@
     <meta name="author" content="CGAL Editorial Board">
 
     <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
-    <link rel="stylesheet" href="/cgal-web/style.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 
     <!--[if lte IE 8]>
 	<link rel="stylesheet" href="css/leaflet.ie.css" />
 	<![endif]-->
-    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/main.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal//main.css">
 
     <!-- atom & rss feed -->
     <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
@@ -175,7 +175,7 @@ defined alternative to the SDF.</li>
   <h3 id="number-types">Number Types</h3>
 
   <ul>
-    <li>A new class <code class="language-plaintext highlighter-rouge">CGAL::Mpzf</code> is introduced on some platforms for exact
+    <li>A new class <code>CGAL::Mpzf</code> is introduced on some platforms for exact
 ring operations. It is used to improve the speed of the evaluation
 of predicates in degenerate situations.</li>
   </ul>
@@ -191,24 +191,24 @@ two 3D triangles.</li>
 
   <ul>
     <li>Bug-fix to make the partition algorithms working with a Lazy kernel
-such as <code class="language-plaintext highlighter-rouge">Exact_predicates_exact_constructions_kernel</code>.</li>
+such as <code>Exact_predicates_exact_constructions_kernel</code>.</li>
   </ul>
 
   <h3 id="d-regularized-boolean-set-operations">2D Regularized Boolean Set-Operations</h3>
 
   <ul>
-    <li>Fixed two memory leaks in <code class="language-plaintext highlighter-rouge">CGAL::General_polygon_set_2</code>.</li>
+    <li>Fixed two memory leaks in <code>CGAL::General_polygon_set_2</code>.</li>
   </ul>
 
   <h3 id="combinatorial-maps-and-linear-cell-complex">Combinatorial Maps and Linear Cell Complex</h3>
 
   <ul>
-    <li><code class="language-plaintext highlighter-rouge">null_dart_handle</code> is no longer a static data member in the
-<code class="language-plaintext highlighter-rouge">CombinatorialMap</code> concept. This implies to move the following
-methods of <code class="language-plaintext highlighter-rouge">Dart</code> concept into <code class="language-plaintext highlighter-rouge">CombinatorialMap</code> concept:
-<code class="language-plaintext highlighter-rouge">is_free</code>, <code class="language-plaintext highlighter-rouge">highest_nonfree_dimension</code>, <code class="language-plaintext highlighter-rouge">opposite</code> and
-<code class="language-plaintext highlighter-rouge">other_extremity</code>. We also transform the static methods
-<code class="language-plaintext highlighter-rouge">vertex_attribute</code> and <code class="language-plaintext highlighter-rouge">point</code> of <code class="language-plaintext highlighter-rouge">Linear_cell_complex</code> class into
+    <li><code>null_dart_handle</code> is no longer a static data member in the
+<code>CombinatorialMap</code> concept. This implies to move the following
+methods of <code>Dart</code> concept into <code>CombinatorialMap</code> concept:
+<code>is_free</code>, <code>highest_nonfree_dimension</code>, <code>opposite</code> and
+<code>other_extremity</code>. We also transform the static methods
+<code>vertex_attribute</code> and <code>point</code> of <code>Linear_cell_complex</code> class into
 non static methods. You can define the CGAL_CMAP_DEPRECATED macro
 to keep the old behavior.</li>
   </ul>
@@ -231,7 +231,7 @@ segments of a polyline.</li>
   <h3 id="d-triangulations">2D Triangulations</h3>
 
   <ul>
-    <li>Added different overloads of the function <code class="language-plaintext highlighter-rouge">insert_constraints</code> that
+    <li>Added different overloads of the function <code>insert_constraints</code> that
 inserts a range of points and segments, or a range of segments.
 These functions uses the spatial sorting in order to speed up the
 time needed for the insertion.</li>
@@ -240,9 +240,9 @@ time needed for the insertion.</li>
   <h3 id="d-alpha-shapes">3D Alpha Shapes</h3>
 
   <ul>
-    <li>Added member functions in <code class="language-plaintext highlighter-rouge">CGAL::Alpha_shape_3</code> to give access to the
-alpha status of edges and facets (<code class="language-plaintext highlighter-rouge">get_alpha_status())</code>.</li>
-    <li>Added another filtration method (<code class="language-plaintext highlighter-rouge">filtration_with_alpha_values()</code>)
+    <li>Added member functions in <code>CGAL::Alpha_shape_3</code> to give access to the
+alpha status of edges and facets (<code>get_alpha_status())</code>.</li>
+    <li>Added another filtration method (<code>filtration_with_alpha_values()</code>)
 that reports the alpha value at which each face appears in the
 filtration.</li>
   </ul>
@@ -250,8 +250,8 @@ filtration.</li>
   <h3 id="d-mesh-generation">3D Mesh Generation</h3>
 
   <ul>
-    <li>Fixed the access to functions <code class="language-plaintext highlighter-rouge">number_of_facets</code> and <code class="language-plaintext highlighter-rouge">number_of_cells</code>
-in <code class="language-plaintext highlighter-rouge">Mesh_complex_3_in_triangulation_3</code>.</li>
+    <li>Fixed the access to functions <code>number_of_facets</code> and <code>number_of_cells</code>
+in <code>Mesh_complex_3_in_triangulation_3</code>.</li>
     <li>Changed the internal API of the sliver perturber, to make possible
 for developers to optimize another criterion than the (default)
 minimal dihedral angle. Developers can also define a new
@@ -259,7 +259,7 @@ perturbation vector (for angles we had gradient of squared
 circumradius, gradient of volume, gradient of minimal dihedral
 angle, and random) which is better suitable to optimize their
 criterion.</li>
-    <li>Improved the use of cache values in <code class="language-plaintext highlighter-rouge">Mesh_cell_base_3</code> to (re)compute
+    <li>Improved the use of cache values in <code>Mesh_cell_base_3</code> to (re)compute
 circumcenters and sliver criterion values only when needed.</li>
   </ul>
 
@@ -267,16 +267,16 @@ circumcenters and sliver criterion values only when needed.</li>
 
   <ul>
     <li>Fixed a bug in the way edges can be marked as non-removable by adding
-a named-parameter <code class="language-plaintext highlighter-rouge">edge_is_constrained_map</code> to the function
-<code class="language-plaintext highlighter-rouge">edge_collapse</code></li>
+a named-parameter <code>edge_is_constrained_map</code> to the function
+<code>edge_collapse</code></li>
   </ul>
 
   <h3 id="dd-spatial-searching">dD Spatial Searching</h3>
 
   <ul>
     <li>Fixed a documentation bug: The property map passed as template
-parameter to the classes <code class="language-plaintext highlighter-rouge">Search_traits_adapter</code> and
-<code class="language-plaintext highlighter-rouge">Distance_adapter</code> must be a lvalue property map. To avoid incorrect
+parameter to the classes <code>Search_traits_adapter</code> and
+<code>Distance_adapter</code> must be a lvalue property map. To avoid incorrect
 usage, a static assertion has been added in the CGAL code to prevent
 the user from instantiating these classes with an incorrect property
 map type.</li>
@@ -352,10 +352,10 @@ map type.</li>
     </div>
 
     <!-- Javascripts -->
-    <script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
-      <script src="/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
+    <script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
       <script>
         $(function () {
           $('.bxslider').bxSlider({
@@ -383,7 +383,7 @@ map type.</li>
           });
         });
       </script>
-      <script src="/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
     </body>
 </html>
 

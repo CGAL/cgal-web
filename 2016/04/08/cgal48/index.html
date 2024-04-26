@@ -15,16 +15,16 @@
     <meta name="author" content="CGAL Editorial Board">
 
     <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
-    <link rel="stylesheet" href="/cgal-web/style.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 
     <!--[if lte IE 8]>
 	<link rel="stylesheet" href="css/leaflet.ie.css" />
 	<![endif]-->
-    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/main.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal//main.css">
 
     <!-- atom & rss feed -->
     <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
@@ -159,9 +159,9 @@
   <h3 id="installation">Installation</h3>
 
   <ul>
-    <li>Starting with Visual C++ 2015 we no longer require <code class="language-plaintext highlighter-rouge">Boost.Thread</code> as
-we use the C++11 keyword <code class="language-plaintext highlighter-rouge">thread_local</code> and the C+11 class
-<code class="language-plaintext highlighter-rouge">std::mutex</code> .</li>
+    <li>Starting with Visual C++ 2015 we no longer require <code>Boost.Thread</code> as
+we use the C++11 keyword <code>thread_local</code> and the C+11 class
+<code>std::mutex</code> .</li>
     <li>The same holds for g++ 4.8 or later when the C++11 standard is used.</li>
   </ul>
 
@@ -180,10 +180,10 @@ segments and isolated points which approximate the input points.</li>
     <li>Improved the performance of operations in some settings.
 <strong>Breaking change</strong>: This improvement requires changes of the face
 and halfedge type of the underlying arrangement Dcel. See the
-concepts <code class="language-plaintext highlighter-rouge">GeneralPolygonSetDcelHalfedge</code> and
-<code class="language-plaintext highlighter-rouge">GeneralPolygonSetDcelFace</code> for more details. If you use a different
-simplex types, inheriting your simplices from <code class="language-plaintext highlighter-rouge">CGAL::Gps_face_base</code>
-and <code class="language-plaintext highlighter-rouge">CGAL::Gps_halfedge_base</code> is sufficient to accommodate for the
+concepts <code>GeneralPolygonSetDcelHalfedge</code> and
+<code>GeneralPolygonSetDcelFace</code> for more details. If you use a different
+simplex types, inheriting your simplices from <code>CGAL::Gps_face_base</code>
+and <code>CGAL::Gps_halfedge_base</code> is sufficient to accommodate for the
 update.</li>
   </ul>
 
@@ -198,8 +198,8 @@ segment.</li>
 
   <ul>
     <li><strong>Breaking change</strong>: Changed the type of Boolean marks, old type is
-int, new type is <code class="language-plaintext highlighter-rouge">size_type</code>. If no more mark is available,
-<code class="language-plaintext highlighter-rouge">get_new_mark</code> throws an exception, instead of returning <code class="language-plaintext highlighter-rouge">-1</code>.</li>
+int, new type is <code>size_type</code>. If no more mark is available,
+<code>get_new_mark</code> throws an exception, instead of returning <code>-1</code>.</li>
   </ul>
 
   <h3 id="d-arrangements">2D Arrangements</h3>
@@ -224,19 +224,19 @@ points coincide).</li>
   <ul>
     <li>Added support of 3D gray level images as input for the tetrahedral
 mesh generation.</li>
-    <li><strong>Breaking change:</strong> All models of the concept <code class="language-plaintext highlighter-rouge">MeshDomain_3</code> must
-now provide a member function <code class="language-plaintext highlighter-rouge">bbox()</code>.</li>
+    <li><strong>Breaking change:</strong> All models of the concept <code>MeshDomain_3</code> must
+now provide a member function <code>bbox()</code>.</li>
   </ul>
 
   <h3 id="advancing-front-surface-reconstruction">Advancing Front Surface Reconstruction</h3>
 
   <ul>
-    <li>Optional template functor <code class="language-plaintext highlighter-rouge">Filter</code> is replaced by another optional
-template functor <code class="language-plaintext highlighter-rouge">Priority</code>. This allows to change the way facets
+    <li>Optional template functor <code>Filter</code> is replaced by another optional
+template functor <code>Priority</code>. This allows to change the way facets
 are prioritized by the algorithm instead of having a simple option
 to reject some facets.
-<strong>Breaking change</strong>: Programs using the old <code class="language-plaintext highlighter-rouge">Filter</code> API will not
-compile anymore as it must be replaced with the <code class="language-plaintext highlighter-rouge">Priority</code> API as
+<strong>Breaking change</strong>: Programs using the old <code>Filter</code> API will not
+compile anymore as it must be replaced with the <code>Priority</code> API as
 described in the manual. Codes using the default behavior are not
 impacted.</li>
   </ul>
@@ -246,54 +246,54 @@ impacted.</li>
   <ul>
     <li>Added a new triangle-based isotropic remeshing algorithm for
 triangulated surface meshes,
-<code class="language-plaintext highlighter-rouge">CGAL::Polygon_mesh_processing::isotropic_remeshing()</code> and a helper
+<code>CGAL::Polygon_mesh_processing::isotropic_remeshing()</code> and a helper
 function for isotropic remeshing :
-<code class="language-plaintext highlighter-rouge">CGAL::Polygon_mesh_processing::split_long_edges()</code></li>
-    <li>Added the function <code class="language-plaintext highlighter-rouge">CGAL::Polygon_mesh_processing::border_halfedges()</code>
+<code>CGAL::Polygon_mesh_processing::split_long_edges()</code></li>
+    <li>Added the function <code>CGAL::Polygon_mesh_processing::border_halfedges()</code>
 to collect the border of a given face range</li>
     <li>Added the function
-<code class="language-plaintext highlighter-rouge">CGAL::Polygon_mesh_processing::remove_isolated_vertices()</code> to be
+<code>CGAL::Polygon_mesh_processing::remove_isolated_vertices()</code> to be
 used on any polygon mesh</li>
-    <li>Added the function <code class="language-plaintext highlighter-rouge">CGAL::Polygon_mesh_processing::triangulate_face()</code>
+    <li>Added the function <code>CGAL::Polygon_mesh_processing::triangulate_face()</code>
 to triangulate a single face of a polygon mesh</li>
     <li>Added an overload for
-<code class="language-plaintext highlighter-rouge">CGAL::Polygon_mesh_processing::triangulate_faces()</code> to triangulate
+<code>CGAL::Polygon_mesh_processing::triangulate_faces()</code> to triangulate
 a range of faces of a polygon mesh</li>
-    <li>Added function <code class="language-plaintext highlighter-rouge">keep_large_connected_components()</code></li>
+    <li>Added function <code>keep_large_connected_components()</code></li>
     <li>Added measuring functions for polygon meshes, to compute length, area,
 and volume of simplices or group of simplices of a polygon mesh.</li>
-    <li>Added function <code class="language-plaintext highlighter-rouge">bbox_3()</code> to compute the bounding box of a polygon
+    <li>Added function <code>bbox_3()</code> to compute the bounding box of a polygon
 mesh.</li>
   </ul>
 
   <h3 id="point-set-processing">Point Set Processing</h3>
 
   <ul>
-    <li><strong>Breaking change:</strong> new template parameter <code class="language-plaintext highlighter-rouge">Concurrency_tag</code> for
-the functions <code class="language-plaintext highlighter-rouge">compute_average_spacing()</code>,
-<code class="language-plaintext highlighter-rouge">edge_aware_upsample_point_set()</code>, <code class="language-plaintext highlighter-rouge">jet_estimate_normals()</code>,
-<code class="language-plaintext highlighter-rouge">jet_smooth_point_set()</code>, and <code class="language-plaintext highlighter-rouge">pca_estimate_normals()</code>. To update
+    <li><strong>Breaking change:</strong> new template parameter <code>Concurrency_tag</code> for
+the functions <code>compute_average_spacing()</code>,
+<code>edge_aware_upsample_point_set()</code>, <code>jet_estimate_normals()</code>,
+<code>jet_smooth_point_set()</code>, and <code>pca_estimate_normals()</code>. To update
 your code simply add as first template parameter
-<code class="language-plaintext highlighter-rouge">CGAL::Sequential_tag</code> or <code class="language-plaintext highlighter-rouge">CGAL::Parallel_tag</code> when calling one of
+<code>CGAL::Sequential_tag</code> or <code>CGAL::Parallel_tag</code> when calling one of
 these functions.</li>
-    <li><code class="language-plaintext highlighter-rouge">CGAL::Parallel_tag</code> can no longer be used in Point Set Processing
+    <li><code>CGAL::Parallel_tag</code> can no longer be used in Point Set Processing
 algorithms if TBB is not available.</li>
     <li>Added a new simplification algorithm based on hierarchical clustering:
-<code class="language-plaintext highlighter-rouge">CGAL::hierarchy_simplify_point_set()</code>. It allows either to
+<code>CGAL::hierarchy_simplify_point_set()</code>. It allows either to
 uniformly simplify the point set or to automatically adapt the local
 density of points to the local variation of the input computed by
 principal component analysis.</li>
     <li>New IO functions for PLY format (Polygon File Format):
-<code class="language-plaintext highlighter-rouge">CGAL::read_ply_points()</code>, <code class="language-plaintext highlighter-rouge">CGAL::read_ply_points_and_normals()</code>,
-<code class="language-plaintext highlighter-rouge">CGAL::write_ply_points()</code> and
-<code class="language-plaintext highlighter-rouge">CGAL::write_ply_points_and_normals()</code>.</li>
+<code>CGAL::read_ply_points()</code>, <code>CGAL::read_ply_points_and_normals()</code>,
+<code>CGAL::write_ply_points()</code> and
+<code>CGAL::write_ply_points_and_normals()</code>.</li>
   </ul>
 
   <h3 id="surface-mesh-parameterization">Surface Mesh Parameterization</h3>
 
   <ul>
-    <li><code class="language-plaintext highlighter-rouge">LSCM_parameterizer_3</code> now uses by default Eigen instead of OpenNL
-as a model of <code class="language-plaintext highlighter-rouge">SparseLinearAlgebraTraits_d</code>.</li>
+    <li><code>LSCM_parameterizer_3</code> now uses by default Eigen instead of OpenNL
+as a model of <code>SparseLinearAlgebraTraits_d</code>.</li>
   </ul>
 
   <h3 id="spatial-searching">Spatial Searching</h3>
@@ -306,12 +306,12 @@ points, nor the closest one.</li>
   <h3 id="principal-component-analysis">Principal Component Analysis</h3>
 
   <ul>
-    <li>Added a template parameter <code class="language-plaintext highlighter-rouge">DiagonalizeTraits</code> for functions
-<code class="language-plaintext highlighter-rouge">CGAL::linear_least_squares_fitting_2()</code> and
-<code class="language-plaintext highlighter-rouge">CGAL::linear_least_squares_fitting_3()</code>. This allows to either
+    <li>Added a template parameter <code>DiagonalizeTraits</code> for functions
+<code>CGAL::linear_least_squares_fitting_2()</code> and
+<code>CGAL::linear_least_squares_fitting_3()</code>. This allows to either
 choose the legacy internal diagonalization code from CGAL or the
 Eigen implementation (or any class that is a model of
-<code class="language-plaintext highlighter-rouge">DiagonalizeTraits</code>). Variants of the function that automatically
+<code>DiagonalizeTraits</code>). Variants of the function that automatically
 deduce the kernel also automatically select the diagonalizer, so the
 API is mostly preserved.</li>
   </ul>
@@ -326,17 +326,17 @@ using the third party Eigen library.</li>
   <h3 id="cgal-and-the-boost-graph-library-bgl">CGAL and the Boost Graph Library (BGL)</h3>
 
   <ul>
-    <li>Added function <code class="language-plaintext highlighter-rouge">CGAL::split_graph_into_polylines()</code> that allows to
+    <li>Added function <code>CGAL::split_graph_into_polylines()</code> that allows to
 extract from a soup of segments given as a graph, polylines with
 nodes of degree at most 2. In addition a functor can be passed to
 the function to specify additional polyline endpoints.</li>
     <li>New functions to manipulate selection of faces, edges and vertices
-in a halfedge graph are added: <code class="language-plaintext highlighter-rouge">CGAL::expand_face_selection()</code>,
-<code class="language-plaintext highlighter-rouge">CGAL::reduce_face_selection()</code>, <code class="language-plaintext highlighter-rouge">CGAL::expand_edge_selection()</code>,
-<code class="language-plaintext highlighter-rouge">CGAL::reduce_edge_selection()</code> <code class="language-plaintext highlighter-rouge">CGAL::expand_vertex_selection()</code>,
-<code class="language-plaintext highlighter-rouge">CGAL::reduce_vertex_selection()</code> and
-<code class="language-plaintext highlighter-rouge">CGAL::select_incident_faces()</code>.</li>
-    <li>Added a helper function <code class="language-plaintext highlighter-rouge">CGAL::clear</code> which clears a MutableFaceGraph
+in a halfedge graph are added: <code>CGAL::expand_face_selection()</code>,
+<code>CGAL::reduce_face_selection()</code>, <code>CGAL::expand_edge_selection()</code>,
+<code>CGAL::reduce_edge_selection()</code> <code>CGAL::expand_vertex_selection()</code>,
+<code>CGAL::reduce_vertex_selection()</code> and
+<code>CGAL::select_incident_faces()</code>.</li>
+    <li>Added a helper function <code>CGAL::clear</code> which clears a MutableFaceGraph
 efficiently and generically.</li>
   </ul>
 </div>
@@ -400,10 +400,10 @@ efficiently and generically.</li>
     </div>
 
     <!-- Javascripts -->
-    <script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
-      <script src="/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
+    <script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
       <script>
         $(function () {
           $('.bxslider').bxSlider({
@@ -431,7 +431,7 @@ efficiently and generically.</li>
           });
         });
       </script>
-      <script src="/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
     </body>
 </html>
 

@@ -15,16 +15,16 @@
     <meta name="author" content="CGAL Editorial Board">
 
     <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
-    <link rel="stylesheet" href="/cgal-web/style.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 
     <!--[if lte IE 8]>
 	<link rel="stylesheet" href="css/leaflet.ie.css" />
 	<![endif]-->
-    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/main.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal//main.css">
 
     <!-- atom & rss feed -->
     <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
@@ -171,12 +171,12 @@ vertices on the plane and the directions of cone boundaries.</li>
 
   <ul>
     <li>Introduced a convex decomposition strategy, namely
-<code class="language-plaintext highlighter-rouge">Polygon_nop_decomposition_2</code>, that merely passed the input polygon
+<code>Polygon_nop_decomposition_2</code>, that merely passed the input polygon
 to the list of output polygons.</li>
-    <li>Introduced overloads of the function <code class="language-plaintext highlighter-rouge">minkowski_sum_2()</code>, which
+    <li>Introduced overloads of the function <code>minkowski_sum_2()</code>, which
 accepts 2 decomposition strategies.</li>
     <li>Introduced an overloaded function called
-<code class="language-plaintext highlighter-rouge">minkowski_sum_by_decomposition_2(P, Q, decom_no_holes,     decomp_with_holes)</code>,
+<code>minkowski_sum_by_decomposition_2(P, Q, decom_no_holes,     decomp_with_holes)</code>,
 which computes the 2D Minkowski sum using optimal choices of
 decomposition strategies.</li>
   </ul>
@@ -184,26 +184,26 @@ decomposition strategies.</li>
   <h3 id="combinatorial-maps">Combinatorial Maps</h3>
 
   <ul>
-    <li>Deprecated global functions (<code class="language-plaintext highlighter-rouge">make_combinatorial_hexahedron()</code>,
-<code class="language-plaintext highlighter-rouge">make_combinatorial_polygon()</code>, <code class="language-plaintext highlighter-rouge">make_combinatorial_tetrahedron()</code>,
-<code class="language-plaintext highlighter-rouge">make_edge()</code>, <code class="language-plaintext highlighter-rouge">insert_cell_0_in_cell_1()</code>,
-<code class="language-plaintext highlighter-rouge">insert_cell_0_in_cell_2()</code>, <code class="language-plaintext highlighter-rouge">insert_cell_1_in_cell_2()</code>,
-<code class="language-plaintext highlighter-rouge">insert_cell_2_in_cell_3()</code>, <code class="language-plaintext highlighter-rouge">insert_dangling_cell_1_in_cell_2()</code>,
-<code class="language-plaintext highlighter-rouge">is_insertable_cell_1_in_cell_2()</code>,
-<code class="language-plaintext highlighter-rouge">is_insertable_cell_2_in_cell_3()</code>, <code class="language-plaintext highlighter-rouge">is_removable()</code>,
-<code class="language-plaintext highlighter-rouge">remove_cell()</code>) which are now member functions in the
-<code class="language-plaintext highlighter-rouge">CombinatorialMap</code> concept.</li>
+    <li>Deprecated global functions (<code>make_combinatorial_hexahedron()</code>,
+<code>make_combinatorial_polygon()</code>, <code>make_combinatorial_tetrahedron()</code>,
+<code>make_edge()</code>, <code>insert_cell_0_in_cell_1()</code>,
+<code>insert_cell_0_in_cell_2()</code>, <code>insert_cell_1_in_cell_2()</code>,
+<code>insert_cell_2_in_cell_3()</code>, <code>insert_dangling_cell_1_in_cell_2()</code>,
+<code>is_insertable_cell_1_in_cell_2()</code>,
+<code>is_insertable_cell_2_in_cell_3()</code>, <code>is_removable()</code>,
+<code>remove_cell()</code>) which are now member functions in the
+<code>CombinatorialMap</code> concept.</li>
     <li>It is not longer possible to use the old API switched on by defining
-the macro <code class="language-plaintext highlighter-rouge">CGAL_CMAP_DEPRECATED</code>. This API was deprecated since CGAL
+the macro <code>CGAL_CMAP_DEPRECATED</code>. This API was deprecated since CGAL
 4.4.</li>
   </ul>
 
   <h3 id="point-set-processing">Point Set Processing</h3>
 
   <ul>
-    <li>New function <code class="language-plaintext highlighter-rouge">CGAL::read_ply_custom_points()</code> that allows the user
+    <li>New function <code>CGAL::read_ply_custom_points()</code> that allows the user
 to read any additional point attribute from a PLY input point set.</li>
-    <li><code class="language-plaintext highlighter-rouge">CGAL::structure_point_set()</code>: new algorithm that takes advantage of
+    <li><code>CGAL::structure_point_set()</code>: new algorithm that takes advantage of
 detected planes to produce a structured point set (with flat
 regions, sharp edges and vertices).</li>
   </ul>
@@ -211,7 +211,7 @@ regions, sharp edges and vertices).</li>
   <h3 id="point-set-shape-detection">Point Set Shape Detection</h3>
 
   <ul>
-    <li>New post-processing algorithm: <code class="language-plaintext highlighter-rouge">CGAL::regularize_planes()</code>. This
+    <li>New post-processing algorithm: <code>CGAL::regularize_planes()</code>. This
 allows the user to favor parallelism, orthogonality, coplanarity
 and/or axial symmetry between detected planes.</li>
   </ul>
@@ -220,9 +220,9 @@ and/or axial symmetry between detected planes.</li>
 
   <ul>
     <li>Added the function
-<code class="language-plaintext highlighter-rouge">CGAL::Polygon_mesh_processing::is_polygon_soup_a_polygon_mesh()</code> to
+<code>CGAL::Polygon_mesh_processing::is_polygon_soup_a_polygon_mesh()</code> to
 check whether a polygon soup is a polygon mesh.</li>
-    <li>Added some new features to <code class="language-plaintext highlighter-rouge">CGAL::isotropic_remeshing()</code>:
+    <li>Added some new features to <code>CGAL::isotropic_remeshing()</code>:
       <ul>
         <li>It is now possible to select fixed vertices that survive the
 remeshing process, and to keep face attributes such as colors
@@ -232,33 +232,33 @@ each loop, and to run 1-dimensional relaxation along constrained
 polylines.</li>
       </ul>
     </li>
-    <li>The functions <code class="language-plaintext highlighter-rouge">CGAL::Polygon_mesh_processing::triangulate_face()</code>
-and <code class="language-plaintext highlighter-rouge">CGAL::Polygon_mesh_processing::triangulate_faces()</code> now
+    <li>The functions <code>CGAL::Polygon_mesh_processing::triangulate_face()</code>
+and <code>CGAL::Polygon_mesh_processing::triangulate_faces()</code> now
 indicate whether some faces have not been triangulated.</li>
   </ul>
 
   <h3 id="surface-mesh-deformation">Surface Mesh Deformation</h3>
 
   <ul>
-    <li>Added a new tag <code class="language-plaintext highlighter-rouge">SRE_ARAP</code> to use the Smoothed Rotation Enhanced
+    <li>Added a new tag <code>SRE_ARAP</code> to use the Smoothed Rotation Enhanced
 As-Rigid-As-Possible deformation algorithm.</li>
   </ul>
 
   <h3 id="d-fast-intersection-and-distance-computation">3D Fast Intersection and Distance Computation</h3>
 
   <ul>
-    <li>Added the functions <code class="language-plaintext highlighter-rouge">AABB_tree::first_intersection()</code> and
-<code class="language-plaintext highlighter-rouge">AABB_tree::first_intersected_primitive()</code> that compute the
+    <li>Added the functions <code>AABB_tree::first_intersection()</code> and
+<code>AABB_tree::first_intersected_primitive()</code> that compute the
 intersection which is closest to the source of a ray</li>
   </ul>
 
   <h3 id="cgal-and-the-boost-graph-library-bgl">CGAL and the Boost Graph Library (BGL)</h3>
 
   <ul>
-    <li>Added a helper function <code class="language-plaintext highlighter-rouge">CGAL::copy_face_graph()</code> to copy a source
+    <li>Added a helper function <code>CGAL::copy_face_graph()</code> to copy a source
 FaceListGraph into another FaceListGraph of different type.</li>
-    <li>Added a class <code class="language-plaintext highlighter-rouge">CGAL::Dual</code> that creates the dual view of a <code class="language-plaintext highlighter-rouge">FaceGraph</code>
-and a creation function <code class="language-plaintext highlighter-rouge">CGAL::dual(primal)</code>.</li>
+    <li>Added a class <code>CGAL::Dual</code> that creates the dual view of a <code>FaceGraph</code>
+and a creation function <code>CGAL::dual(primal)</code>.</li>
   </ul>
 
   <h4 id="cgal-and-boost-property-maps">CGAL and Boost Property Maps</h4>
@@ -266,7 +266,7 @@ and a creation function <code class="language-plaintext highlighter-rouge">CGAL:
   <ul>
     <li>It is not longer possible to use the old API of the property maps
 provided by CGAL, switched on by defining the macro
-<code class="language-plaintext highlighter-rouge">CGAL_USE_PROPERTY_MAPS_API_V1</code>. This API was deprecated since CGAL
+<code>CGAL_USE_PROPERTY_MAPS_API_V1</code>. This API was deprecated since CGAL
 4.3.</li>
   </ul>
 </div>
@@ -330,10 +330,10 @@ provided by CGAL, switched on by defining the macro
     </div>
 
     <!-- Javascripts -->
-    <script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
-      <script src="/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
+    <script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
       <script>
         $(function () {
           $('.bxslider').bxSlider({
@@ -361,7 +361,7 @@ provided by CGAL, switched on by defining the macro
           });
         });
       </script>
-      <script src="/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
     </body>
 </html>
 

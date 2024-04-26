@@ -15,16 +15,16 @@
     <meta name="author" content="CGAL Editorial Board">
 
     <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
-    <link rel="stylesheet" href="/cgal-web/style.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 
     <!--[if lte IE 8]>
 	<link rel="stylesheet" href="css/leaflet.ie.css" />
 	<![endif]-->
-    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/main.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal//main.css">
 
     <!-- atom & rss feed -->
     <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
@@ -153,11 +153,11 @@
   <h3 id="general">General</h3>
 
   <ul>
-    <li>The class <code class="language-plaintext highlighter-rouge">Root_of_2</code> is now deprecated. It is recommended to use
-the class <code class="language-plaintext highlighter-rouge">Sqrt_extension</code> instead.</li>
-    <li>The class <code class="language-plaintext highlighter-rouge">Sqrt_extension</code> is now used everywhere in CGAL where an
+    <li>The class <code>Root_of_2</code> is now deprecated. It is recommended to use
+the class <code>Sqrt_extension</code> instead.</li>
+    <li>The class <code>Sqrt_extension</code> is now used everywhere in CGAL where an
 algebraic number of degree 2 is needed. This change has been done in
-the <code class="language-plaintext highlighter-rouge">Root_of_traits</code> mechanism (indirectly packages 2D Circular
+the <code>Root_of_traits</code> mechanism (indirectly packages 2D Circular
 kernel and 3D Spherical kernel) and the packages 2D Segment Delaunay
 Graphs and 2D Arrangements.</li>
     <li>Various fixes in the manual.</li>
@@ -178,12 +178,12 @@ of the halfedge data structure.</li>
   <h3 id="d-convex-hull-major-performance-improvement">3D Convex Hull (major performance improvement)</h3>
 
   <ul>
-    <li>The quickhull implementation of CGAL (<code class="language-plaintext highlighter-rouge">CGAL::convex_hull_3</code>) has
+    <li>The quickhull implementation of CGAL (<code>CGAL::convex_hull_3</code>) has
 been worked out to provide very better performances.</li>
-    <li>The function <code class="language-plaintext highlighter-rouge">CGAL::convex_hull_3</code> no longer computes the plane
+    <li>The function <code>CGAL::convex_hull_3</code> no longer computes the plane
 equations of the facets of the output polyhedron. However an example
 is provided to show how to compute them easily.</li>
-    <li>A global function <code class="language-plaintext highlighter-rouge">convex_hull_3_to_polyhedron_3</code> is now provided to
+    <li>A global function <code>convex_hull_3_to_polyhedron_3</code> is now provided to
 extract the convex hull of a 3D points set from a triangulation of
 these points.</li>
   </ul>
@@ -196,12 +196,12 @@ property map, allow to make nearest neighbor queries on keys instead
 of points have been added.</li>
     <li>Few bug fixes in the documentation have revealed some
 inconsistencies that have been corrected. Two traits class concept
-are now documented (<code class="language-plaintext highlighter-rouge">RangeSearchTraits</code> and <code class="language-plaintext highlighter-rouge">SearchTraits</code>). Most
+are now documented (<code>RangeSearchTraits</code> and <code>SearchTraits</code>). Most
 other changes concerns only classes documented as advanced. One
 issue that user can encounter is due to an additional requirement on
-the nested class <code class="language-plaintext highlighter-rouge">Construct_cartesian_const_iterator_d</code> defined in
+the nested class <code>Construct_cartesian_const_iterator_d</code> defined in
 the concept SearchTraits that must provide a nested type
-<code class="language-plaintext highlighter-rouge">result_type</code>.</li>
+<code>result_type</code>.</li>
   </ul>
 
   <h3 id="spatial-sorting-major-new-feature-added">Spatial Sorting (major new feature added)</h3>
@@ -218,32 +218,32 @@ easier</li>
 
   <ul>
     <li>The d-dimensional kernel concept and models have been modified to
-additionally provide two new functors <code class="language-plaintext highlighter-rouge">Less_coordinate_d</code> and
-<code class="language-plaintext highlighter-rouge">Point_dimension_d</code>.</li>
+additionally provide two new functors <code>Less_coordinate_d</code> and
+<code>Point_dimension_d</code>.</li>
   </ul>
 
   <h3 id="d-arrangements">2D Arrangements</h3>
 
   <ul>
     <li>A new geometry-traits class that handles rational arcs, namely
-<code class="language-plaintext highlighter-rouge">Arr_rational_function_traits_2</code>, has been introduced. It replaced
+<code>Arr_rational_function_traits_2</code>, has been introduced. It replaced
 an old traits class, which handled the same family of curves, but it
 was less efficient. The new traits exploits CGAL algebraic kernels
 and polynomials, which were not available at the time the old traits
 class was developed.</li>
     <li>A new geometry traits concept called
-<code class="language-plaintext highlighter-rouge">ArrangementOpenBoundaryTraits_2</code> has been introduced. A model of
+<code>ArrangementOpenBoundaryTraits_2</code> has been introduced. A model of
 this concept supports curves that approach the open boundary of an
 iso-rectangular area called parameter space, which can be unbounded
 or bounded. The general code of the package, however, supports only
 the unbounded parameter space. We intend to enhance the general code
 to support also bounded parameter spaces in a future release.</li>
-    <li>The deprecated member function <code class="language-plaintext highlighter-rouge">is_at_infinity()</code> of
-<code class="language-plaintext highlighter-rouge">Arrangement_2::Vertex</code> has been removed. It has been previously
-replaced new function <code class="language-plaintext highlighter-rouge">is_at_open_boundary()</code>.</li>
+    <li>The deprecated member function <code>is_at_infinity()</code> of
+<code>Arrangement_2::Vertex</code> has been removed. It has been previously
+replaced new function <code>is_at_open_boundary()</code>.</li>
     <li>The tags in the geometry traits that indicate the type of boundary
 of the embedding surface were replaced by the following new tags:
-<code class="language-plaintext highlighter-rouge">Left_side_category</code>, <code class="language-plaintext highlighter-rouge">Bottom_side_category</code>, <code class="language-plaintext highlighter-rouge">Top_side_category</code>, and <code class="language-plaintext highlighter-rouge">Right_side_category</code>.</li>
+<code>Left_side_category</code>, <code>Bottom_side_category</code>, <code>Top_side_category</code>, and <code>Right_side_category</code>.</li>
     <li>It is still possible not to indicate the tags at all. Default values
  are assumed. This however will produce warning messages, and should
  be avoided.</li>
@@ -309,10 +309,10 @@ of the embedding surface were replaced by the following new tags:
     </div>
 
     <!-- Javascripts -->
-    <script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
-      <script src="/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
+    <script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
       <script>
         $(function () {
           $('.bxslider').bxSlider({
@@ -340,7 +340,7 @@ of the embedding surface were replaced by the following new tags:
           });
         });
       </script>
-      <script src="/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
     </body>
 </html>
 

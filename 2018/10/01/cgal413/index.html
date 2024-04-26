@@ -15,16 +15,16 @@
     <meta name="author" content="CGAL Editorial Board">
 
     <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
-    <link rel="stylesheet" href="/cgal-web/style.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 
     <!--[if lte IE 8]>
 	<link rel="stylesheet" href="css/leaflet.ie.css" />
 	<![endif]-->
-    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/main.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal//main.css">
 
     <!-- atom & rss feed -->
     <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
@@ -169,16 +169,16 @@ for a quick overview of this new package.</li>
   <h3 id="installation">Installation</h3>
 
   <ul>
-    <li>The library <code class="language-plaintext highlighter-rouge">CGAL_Qt5</code> now contains a fork of the version 2.7.0 of
-<code class="language-plaintext highlighter-rouge">libQGLViewer</code>.  The corresponding code is in the package
-<code class="language-plaintext highlighter-rouge">GraphicsView</code>.  The dependency for the external library
-<code class="language-plaintext highlighter-rouge">libQGLViewer</code> is therefore dropped for all demos.</li>
+    <li>The library <code>CGAL_Qt5</code> now contains a fork of the version 2.7.0 of
+<code>libQGLViewer</code>.  The corresponding code is in the package
+<code>GraphicsView</code>.  The dependency for the external library
+<code>libQGLViewer</code> is therefore dropped for all demos.</li>
   </ul>
 
   <h3 id="general">General</h3>
 
   <ul>
-    <li>A new function <code class="language-plaintext highlighter-rouge">CGAL::draw()</code> is added in the packages Polyhedral
+    <li>A new function <code>CGAL::draw()</code> is added in the packages Polyhedral
 Surface, Surface Mesh, Linear Cell Complex, 2D Triangulations, and
 3D Triangulations, enabling to draw the corresponding data
 structures.</li>
@@ -187,17 +187,17 @@ structures.</li>
   <h3 id="d-and-3d-linear-geometry-kernel">2D and 3D Linear Geometry Kernel</h3>
 
   <ul>
-    <li>An <code class="language-plaintext highlighter-rouge">operator()</code> that takes a <code class="language-plaintext highlighter-rouge">Ray_3</code> has been added to the concept
-<code class="language-plaintext highlighter-rouge">ConstructProjectedPoint_3</code>.</li>
+    <li>An <code>operator()</code> that takes a <code>Ray_3</code> has been added to the concept
+<code>ConstructProjectedPoint_3</code>.</li>
   </ul>
 
   <h3 id="convex-hull-3">Convex Hull 3</h3>
 
   <ul>
-    <li>Added the function <code class="language-plaintext highlighter-rouge">extreme_points_3()</code> computing the points on
+    <li>Added the function <code>extreme_points_3()</code> computing the points on
 the convex hull without underlying connectivity.</li>
-    <li>Added a traits adapter called <code class="language-plaintext highlighter-rouge">Extreme_points_traits_adapter_3</code>
-that enables the use of the function <code class="language-plaintext highlighter-rouge">extreme_points_3()</code> on a
+    <li>Added a traits adapter called <code>Extreme_points_traits_adapter_3</code>
+that enables the use of the function <code>extreme_points_3()</code> on a
 range of keys, each key being associated to 3D point using a
 property map.  This can be used to get the vertices of a mesh that
 are on it convex hull, or the indices of points in a range that
@@ -211,69 +211,69 @@ belong to the minimal convex hull.</li>
 
   <ul>
     <li>Added a new type of intersection to handle the insertion of
-intersecting constraints in a <code class="language-plaintext highlighter-rouge">Constrained_triangulation_2</code>.</li>
+intersecting constraints in a <code>Constrained_triangulation_2</code>.</li>
     <li><strong>Breaking change:</strong> The long-deprecated class
-<code class="language-plaintext highlighter-rouge">Triangulation_cell_base_with_circumcenter_3</code> and its associated
+<code>Triangulation_cell_base_with_circumcenter_3</code> and its associated
 concept have been removed. Users should use the classes
-<code class="language-plaintext highlighter-rouge">Delaunay_cell_base_with_circumcenter_3</code> or
-<code class="language-plaintext highlighter-rouge">Regular_cell_base_with_circumcenter_3</code>, depending on which type
+<code>Delaunay_cell_base_with_circumcenter_3</code> or
+<code>Regular_cell_base_with_circumcenter_3</code>, depending on which type
 of triangulation they are using.</li>
-    <li><strong>Breaking change:</strong> The deprecated functions <code class="language-plaintext highlighter-rouge">mirror_index</code> and
-<code class="language-plaintext highlighter-rouge">mirror_vertex</code> of the class <code class="language-plaintext highlighter-rouge">Triangulation_face_base_2</code> have been
+    <li><strong>Breaking change:</strong> The deprecated functions <code>mirror_index</code> and
+<code>mirror_vertex</code> of the class <code>Triangulation_face_base_2</code> have been
 removed. Users should use the equivalent functions from the class
-<code class="language-plaintext highlighter-rouge">Triangulation_2</code>.</li>
+<code>Triangulation_2</code>.</li>
   </ul>
 
   <h3 id="d-mesh-generation">3D Mesh Generation</h3>
 
   <ul>
     <li><strong>Breaking change:</strong> The template parameters of the class template
-<code class="language-plaintext highlighter-rouge">Labeled_mesh_domain_3</code> have been simplified. The three
+<code>Labeled_mesh_domain_3</code> have been simplified. The three
 constructors of that class template have been replaced by a new
 unique constructor using Boost named parameters. Three new static
 template member functions that act as named constructors have been
 added:
       <ul>
-        <li><code class="language-plaintext highlighter-rouge">create_gray_image_mesh_domain()</code>, to create a domain from a 3D
+        <li><code>create_gray_image_mesh_domain()</code>, to create a domain from a 3D
 gray image,</li>
-        <li><code class="language-plaintext highlighter-rouge">create_labeled_image_mesh_domain()</code>, to create a domain from a 3D
+        <li><code>create_labeled_image_mesh_domain()</code>, to create a domain from a 3D
 labeled image, and</li>
-        <li><code class="language-plaintext highlighter-rouge">create_implicit_mesh_domain()</code>, to create a domain from an
+        <li><code>create_implicit_mesh_domain()</code>, to create a domain from an
 implicit function.</li>
       </ul>
     </li>
-    <li>The class templates <code class="language-plaintext highlighter-rouge">Implicit_mesh_domain_3</code>,
-<code class="language-plaintext highlighter-rouge">Gray_image_mesh_domain_3</code>, and <code class="language-plaintext highlighter-rouge">Labeled_image_mesh_domain_3</code> are
+    <li>The class templates <code>Implicit_mesh_domain_3</code>,
+<code>Gray_image_mesh_domain_3</code>, and <code>Labeled_image_mesh_domain_3</code> are
 now deprecated.</li>
     <li><strong>Breaking change:</strong> The headers
-<code class="language-plaintext highlighter-rouge">&lt;CGAL/Mesh_3/Implicit_to_labeled_function_wrapper.h&gt;</code> and
-<code class="language-plaintext highlighter-rouge">&lt;CGAL/Mesh_3/Labeled_mesh_domain_3.h&gt;</code>, that were deprecated
+<code>&lt;CGAL/Mesh_3/Implicit_to_labeled_function_wrapper.h&gt;</code> and
+<code>&lt;CGAL/Mesh_3/Labeled_mesh_domain_3.h&gt;</code>, that were deprecated
 since CGAL 4.5, have been removed.</li>
-    <li><strong>Breaking change:</strong> the concepts <code class="language-plaintext highlighter-rouge">MeshCellCriteria_3</code> and
-<code class="language-plaintext highlighter-rouge">MeshFacetCriteria_3</code> now require the triangulation to be passed
-in their <code class="language-plaintext highlighter-rouge">operator()</code>.  Models of these concepts that are provided
+    <li><strong>Breaking change:</strong> the concepts <code>MeshCellCriteria_3</code> and
+<code>MeshFacetCriteria_3</code> now require the triangulation to be passed
+in their <code>operator()</code>.  Models of these concepts that are provided
 by CGAL have been modified accordingly.</li>
     <li><strong>Breaking change:</strong> It is no longer possible to use the
-deprecated, pre-CGAL 3.8 specifications in <code class="language-plaintext highlighter-rouge">MeshCellCriteria_3</code>
-and <code class="language-plaintext highlighter-rouge">MeshFacetCriteria_3</code> (that is, using <code class="language-plaintext highlighter-rouge">Facet_badness</code> and
-<code class="language-plaintext highlighter-rouge">Cell_badness</code> instead of <code class="language-plaintext highlighter-rouge">Is_facet_bad</code> and <code class="language-plaintext highlighter-rouge">Is_cell_bad</code>).</li>
-    <li>The concept <code class="language-plaintext highlighter-rouge">MeshFacetCriteria_3</code> no longer requires the function
-<code class="language-plaintext highlighter-rouge">operator()(Cell_handle c, int i)</code>.</li>
-    <li>The concept <code class="language-plaintext highlighter-rouge">MeshEdgeCriteria_3</code> no longer requires the function
-<code class="language-plaintext highlighter-rouge">operator()(const Edge&amp; e)</code>.</li>
-    <li>The concept <code class="language-plaintext highlighter-rouge">MeshComplexWithFeatures_3InTriangulation_3</code> no longer
-requires the functions <code class="language-plaintext highlighter-rouge">number_of_edges(Curve_index index)</code> and
-<code class="language-plaintext highlighter-rouge">number_of_corners(Corner_index index)</code>.</li>
-    <li>Introduced the concept <code class="language-plaintext highlighter-rouge">MeshTriangulationTraits_3</code>, which covers
-the needs of the traits class used in <code class="language-plaintext highlighter-rouge">Mesh_3</code> (and
-<code class="language-plaintext highlighter-rouge">Periodic_3_mesh_3</code>). The traits class used as template parameter
-of <code class="language-plaintext highlighter-rouge">Mesh_triangulation_3</code> and <code class="language-plaintext highlighter-rouge">Periodic_3_mesh_triangulation_3</code>
+deprecated, pre-CGAL 3.8 specifications in <code>MeshCellCriteria_3</code>
+and <code>MeshFacetCriteria_3</code> (that is, using <code>Facet_badness</code> and
+<code>Cell_badness</code> instead of <code>Is_facet_bad</code> and <code>Is_cell_bad</code>).</li>
+    <li>The concept <code>MeshFacetCriteria_3</code> no longer requires the function
+<code>operator()(Cell_handle c, int i)</code>.</li>
+    <li>The concept <code>MeshEdgeCriteria_3</code> no longer requires the function
+<code>operator()(const Edge&amp; e)</code>.</li>
+    <li>The concept <code>MeshComplexWithFeatures_3InTriangulation_3</code> no longer
+requires the functions <code>number_of_edges(Curve_index index)</code> and
+<code>number_of_corners(Corner_index index)</code>.</li>
+    <li>Introduced the concept <code>MeshTriangulationTraits_3</code>, which covers
+the needs of the traits class used in <code>Mesh_3</code> (and
+<code>Periodic_3_mesh_3</code>). The traits class used as template parameter
+of <code>Mesh_triangulation_3</code> and <code>Periodic_3_mesh_triangulation_3</code>
 must be a model of this concept.</li>
     <li>Added the function
-<code class="language-plaintext highlighter-rouge">Mesh_domain_with_polyline_features_3::add_corner()</code>, which allows
+<code>Mesh_domain_with_polyline_features_3::add_corner()</code>, which allows
 users to add a single corner (that is not incident to any
 polyline) to the mesh complex.</li>
-    <li><strong>Breaking change</strong>: <code class="language-plaintext highlighter-rouge">CGAL::lloyd_optimize_mesh_3</code> now depends on
+    <li><strong>Breaking change</strong>: <code>CGAL::lloyd_optimize_mesh_3</code> now depends on
 the <em>Eigen</em> library.</li>
   </ul>
 
@@ -283,32 +283,32 @@ the <em>Eigen</em> library.</li>
     <li>Added a named parameter in stitching functions that allows to
 choose whether the operation should be performed per connected
 component or globally.</li>
-    <li>Added a function, <code class="language-plaintext highlighter-rouge">CGAL::Polygon_mesh_processing::transform()</code>, to
+    <li>Added a function, <code>CGAL::Polygon_mesh_processing::transform()</code>, to
 apply a transformation to a mesh.</li>
-    <li>Added a named parameter <code class="language-plaintext highlighter-rouge">visitor</code> in corefinement-related
+    <li>Added a named parameter <code>visitor</code> in corefinement-related
 functions that makes it possible to pass a visitor to the function
 in order to track the creation of new faces.</li>
-    <li>Added a named parameter <code class="language-plaintext highlighter-rouge">throw_on_self_intersection</code> in all
+    <li>Added a named parameter <code>throw_on_self_intersection</code> in all
 corefinement-related functions, which enables to check for
 self-intersecting faces involved in the intersection before trying
 to corefine the input meshes. This new parameter replaces the
-<code class="language-plaintext highlighter-rouge">bool</code> parameter in <code class="language-plaintext highlighter-rouge">corefine()</code>.</li>
-    <li>Added the function <code class="language-plaintext highlighter-rouge">corefine_and_compute_boolean_operations()</code>,
+<code>bool</code> parameter in <code>corefine()</code>.</li>
+    <li>Added the function <code>corefine_and_compute_boolean_operations()</code>,
 which can be used to compute the result of several Boolean
 operations between two volumes at the same time.</li>
-    <li>Added the function <code class="language-plaintext highlighter-rouge">clip()</code>, which can be used to clip a
+    <li>Added the function <code>clip()</code>, which can be used to clip a
 triangulated surface mesh by a plane or a clipping volume.</li>
     <li>Constrained vertices are now guaranteed to be kept in the mesh
-after calling <code class="language-plaintext highlighter-rouge">isotropic_remeshing()</code> (and not only the points
+after calling <code>isotropic_remeshing()</code> (and not only the points
 associated to constrained vertices, as it was before).</li>
-    <li>Added a function, <code class="language-plaintext highlighter-rouge">CGAL::Polygon_mesh_processing::extrude_mesh()</code>,
+    <li>Added a function, <code>CGAL::Polygon_mesh_processing::extrude_mesh()</code>,
 to perform an extrusion of an open polygon mesh.</li>
   </ul>
 
   <h3 id="estimation-of-local-differential-properties-of-point-sampled-surfaces-reference">Estimation of Local Differential Properties of Point-Sampled Surfaces Reference</h3>
 
   <ul>
-    <li><strong>Breaking change</strong>: <code class="language-plaintext highlighter-rouge">CGAL::Monge_via_jet_fitting</code> now depends on
+    <li><strong>Breaking change</strong>: <code>CGAL::Monge_via_jet_fitting</code> now depends on
 the <em>Eigen</em> library.</li>
   </ul>
 
@@ -316,13 +316,13 @@ the <em>Eigen</em> library.</li>
 
   <ul>
     <li>Added a callback mechanism to the following functions:
-<code class="language-plaintext highlighter-rouge">CGAL::bilateral_smooth_point_set()</code>,
-<code class="language-plaintext highlighter-rouge">CGAL::compute_average_spacing()</code>,
-<code class="language-plaintext highlighter-rouge">CGAL::grid_simplify_point_set()</code>,
-<code class="language-plaintext highlighter-rouge">CGAL::hierarchy_simplify_point_set()</code>,
-<code class="language-plaintext highlighter-rouge">CGAL::jet_estimate_normals()</code>, <code class="language-plaintext highlighter-rouge">CGAL::jet_smooth_point_set()</code>,
-<code class="language-plaintext highlighter-rouge">CGAL::pca_estimate_normals()</code>, <code class="language-plaintext highlighter-rouge">CGAL::remove_outliers()</code> and
-<code class="language-plaintext highlighter-rouge">CGAL::wlop_simplify_and_regularize_point_set()</code>.</li>
+<code>CGAL::bilateral_smooth_point_set()</code>,
+<code>CGAL::compute_average_spacing()</code>,
+<code>CGAL::grid_simplify_point_set()</code>,
+<code>CGAL::hierarchy_simplify_point_set()</code>,
+<code>CGAL::jet_estimate_normals()</code>, <code>CGAL::jet_smooth_point_set()</code>,
+<code>CGAL::pca_estimate_normals()</code>, <code>CGAL::remove_outliers()</code> and
+<code>CGAL::wlop_simplify_and_regularize_point_set()</code>.</li>
   </ul>
 
   <h3 id="classification">Classification</h3>
@@ -336,14 +336,14 @@ eigenvalues are replaced by simple eigenvalue features. Features
 based on statistics on the HSV color channels are replaced by
 simple HSV color channel features.</li>
     <li><strong>Breaking change</strong>: the API of
-<code class="language-plaintext highlighter-rouge">CGAL::Classification::Point_set_feature_generator</code> has been
+<code>CGAL::Classification::Point_set_feature_generator</code> has been
 simplified.</li>
   </ul>
 
   <h3 id="bounding-volumes">Bounding Volumes</h3>
 
   <ul>
-    <li><strong>Breaking change</strong>: <code class="language-plaintext highlighter-rouge">CGAL::Approximate_min_ellipsoid_d</code> now
+    <li><strong>Breaking change</strong>: <code>CGAL::Approximate_min_ellipsoid_d</code> now
 depends on the <em>Eigen</em> library.</li>
   </ul>
 
@@ -361,7 +361,7 @@ The combination of these two changes allow, for example, to
 operate with Vertex/Coordinate pairs, which enables a more
 efficient access to values and gradients by storing information
 directly in the vertex.</li>
-    <li>The concepts <code class="language-plaintext highlighter-rouge">InterpolationTraits</code> and <code class="language-plaintext highlighter-rouge">GradientFittingTraits</code>
+    <li>The concepts <code>InterpolationTraits</code> and <code>GradientFittingTraits</code>
 have been updated to reflect the real needs of the code (some
 types and operators were used in the code but did not appear in
 the concepts).</li>
@@ -370,12 +370,12 @@ the concepts).</li>
   <h3 id="cgal-and-the-boost-graph-library-bgl">CGAL and the Boost Graph Library (BGL)</h3>
 
   <ul>
-    <li>Added a helper function, <code class="language-plaintext highlighter-rouge">CGAL::is_valid_polygon_mesh</code>, that
+    <li>Added a helper function, <code>CGAL::is_valid_polygon_mesh</code>, that
 checks the validity of a polygon mesh using BGL functions.</li>
-    <li>Improved the function <code class="language-plaintext highlighter-rouge">CGAL::Euler::collapse_edge</code> such that the
+    <li>Improved the function <code>CGAL::Euler::collapse_edge</code> such that the
 target vertex of the collapsed edge is now always kept after the
 collapse.</li>
-    <li>The function <code class="language-plaintext highlighter-rouge">copy_face_graph()</code> now uses named parameters, some
+    <li>The function <code>copy_face_graph()</code> now uses named parameters, some
 allowing it to use property maps instead of output iterators.</li>
     <li>Addition of the following named parameters :
       <ul>
@@ -392,8 +392,8 @@ allowing it to use property maps instead of output iterators.</li>
   <h3 id="cgal-and-solvers">CGAL and Solvers</h3>
 
   <ul>
-    <li><strong>Breaking change</strong>: <code class="language-plaintext highlighter-rouge">CGAL::Diagonalize_traits</code> is now deprecated
-and should not be used. The class <code class="language-plaintext highlighter-rouge">CGAL::Eigen_diagonalize_traits</code>
+    <li><strong>Breaking change</strong>: <code>CGAL::Diagonalize_traits</code> is now deprecated
+and should not be used. The class <code>CGAL::Eigen_diagonalize_traits</code>
 (along with the <em>Eigen</em> library) should be used instead.</li>
   </ul>
 
@@ -464,10 +464,10 @@ objects from Cartesian kernels.</li>
     </div>
 
     <!-- Javascripts -->
-    <script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
-      <script src="/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
+    <script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
       <script>
         $(function () {
           $('.bxslider').bxSlider({
@@ -495,7 +495,7 @@ objects from Cartesian kernels.</li>
           });
         });
       </script>
-      <script src="/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
     </body>
 </html>
 

@@ -15,16 +15,16 @@
     <meta name="author" content="CGAL Editorial Board">
 
     <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
-    <link rel="stylesheet" href="/cgal-web/style.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 
     <!--[if lte IE 8]>
 	<link rel="stylesheet" href="css/leaflet.ie.css" />
 	<![endif]-->
-    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/main.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal//main.css">
 
     <!-- atom & rss feed -->
     <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
@@ -173,26 +173,26 @@ primitives to build the dual Voronoi diagrams.</li>
 
   <ul>
     <li>The intersection functions and functors used to return a
-<code class="language-plaintext highlighter-rouge">CGAL::Object</code> in order to deal with the different possible return
+<code>CGAL::Object</code> in order to deal with the different possible return
 types. However, depending on the arguments it is possible to reduce
 the possible return types to a small set. For this reason and to
 take advantage of the type safety, we decided to use
-<code class="language-plaintext highlighter-rouge">boost::variant</code> instead of <code class="language-plaintext highlighter-rouge">CGAL::Object</code>. The <code class="language-plaintext highlighter-rouge">result_of</code> protocol
+<code>boost::variant</code> instead of <code>CGAL::Object</code>. The <code>result_of</code> protocol
 is now even more useful to determine the return type of the
 intersection functions and functors. The change should be relatively
 transparent to the user thanks to the implicit constructor added to
-<code class="language-plaintext highlighter-rouge">CGAL::Object</code>. However, it is recommended to upgrade your code. The
+<code>CGAL::Object</code>. However, it is recommended to upgrade your code. The
 previous behavior can be restored by defining the macro
-<code class="language-plaintext highlighter-rouge">CGAL_INTERSECTION_VERSION</code> to 1.</li>
+<code>CGAL_INTERSECTION_VERSION</code> to 1.</li>
   </ul>
 
   <h4 id="d-arrangements">2D Arrangements</h4>
 
   <ul>
     <li>The type of the result of point location queries changed to
-<code class="language-plaintext highlighter-rouge">boost::variant</code> (from <code class="language-plaintext highlighter-rouge">CGAL::Object</code>). For convenience, the
+<code>boost::variant</code> (from <code>CGAL::Object</code>). For convenience, the
 previous behavior can be restored by defining the macro
-<code class="language-plaintext highlighter-rouge">CGAL_ARR_POINT_LOCATION_VERSION</code> to 1.</li>
+<code>CGAL_ARR_POINT_LOCATION_VERSION</code> to 1.</li>
     <li>Introduced an optimization for operations on large and dense
 arrangements.</li>
   </ul>
@@ -200,41 +200,41 @@ arrangements.</li>
   <h4 id="d-fast-intersection-and-distance-computation">3D Fast Intersection and Distance Computation</h4>
 
   <ul>
-    <li>Following the intersection API change, <code class="language-plaintext highlighter-rouge">Object_and_primitive_id</code> has
+    <li>Following the intersection API change, <code>Object_and_primitive_id</code> has
 been replaced by a template class
-<code class="language-plaintext highlighter-rouge">Intersection_and_primitive_id&lt;Query&gt;</code> to determine the type
+<code>Intersection_and_primitive_id&lt;Query&gt;</code> to determine the type
 depending on the query object type.</li>
   </ul>
 
   <h4 id="cgal-and-boost-property-maps">CGAL and Boost Property Maps</h4>
 
   <ul>
-    <li>The <code class="language-plaintext highlighter-rouge">key_type</code> of the property maps provided by CGAL used to be an
-iterator. In order to be more easily re-used, the <code class="language-plaintext highlighter-rouge">key_type</code> has
-been changed to be the <code class="language-plaintext highlighter-rouge">value_type</code> of the iterator. The packages
+    <li>The <code>key_type</code> of the property maps provided by CGAL used to be an
+iterator. In order to be more easily re-used, the <code>key_type</code> has
+been changed to be the <code>value_type</code> of the iterator. The packages
 that have been updated to match these changes are <strong>Point Set
 Processing</strong> and <strong>Surface Reconstruction from Point Sets</strong>.
 However, for most users this change should be transparent if the
 default property maps were used. For convenience, the former
 behavior can be enabled by defining the macro
-<code class="language-plaintext highlighter-rouge">CGAL_USE_PROPERTY_MAPS_API_V1</code>.</li>
+<code>CGAL_USE_PROPERTY_MAPS_API_V1</code>.</li>
   </ul>
 
   <h3 id="algebraic-foundations">Algebraic Foundations</h3>
 
   <ul>
-    <li>For convenience, added an overload of <code class="language-plaintext highlighter-rouge">make_rational()</code> taking a pair
+    <li>For convenience, added an overload of <code>make_rational()</code> taking a pair
 of numbers.</li>
   </ul>
 
   <h3 id="d-and-3d-geometry-kernel-1">2D and 3D Geometry Kernel</h3>
 
   <ul>
-    <li>A <code class="language-plaintext highlighter-rouge">Iso_rectangle_2</code> can now be constructed from a <code class="language-plaintext highlighter-rouge">Bbox_2</code> and an
-<code class="language-plaintext highlighter-rouge">Iso_cuboid_3</code> from a <code class="language-plaintext highlighter-rouge">Bbox_3</code>.</li>
-    <li>The implementation of <code class="language-plaintext highlighter-rouge">CGAL::Object</code> has been updated and now uses
-<code class="language-plaintext highlighter-rouge">boost::shared_ptr</code> and <code class="language-plaintext highlighter-rouge">boost::any</code>. This implementation is faster.</li>
-    <li>Added to <code class="language-plaintext highlighter-rouge">Bbox_2</code> and <code class="language-plaintext highlighter-rouge">Bbox_3</code> a <code class="language-plaintext highlighter-rouge">+=</code> operator as well as free
+    <li>A <code>Iso_rectangle_2</code> can now be constructed from a <code>Bbox_2</code> and an
+<code>Iso_cuboid_3</code> from a <code>Bbox_3</code>.</li>
+    <li>The implementation of <code>CGAL::Object</code> has been updated and now uses
+<code>boost::shared_ptr</code> and <code>boost::any</code>. This implementation is faster.</li>
+    <li>Added to <code>Bbox_2</code> and <code>Bbox_3</code> a <code>+=</code> operator as well as free
 functions to get the bounding box of a range of geometric objects.</li>
   </ul>
 
@@ -259,15 +259,15 @@ component of a combinatorial map.</li>
   <h3 id="d-boolean-operations-on-nef-polyhedra">3D Boolean Operations on Nef Polyhedra</h3>
 
   <ul>
-    <li>Bug-fix in IO when using <code class="language-plaintext highlighter-rouge">Lazy_exact_nt</code> as number type or
-<code class="language-plaintext highlighter-rouge">Exact_predicates_exact_constructions_kernel</code> as kernel.</li>
+    <li>Bug-fix in IO when using <code>Lazy_exact_nt</code> as number type or
+<code>Exact_predicates_exact_constructions_kernel</code> as kernel.</li>
   </ul>
 
   <h3 id="d-triangulations">2D Triangulations</h3>
 
   <ul>
-    <li>Extended the concept <code class="language-plaintext highlighter-rouge">TriangulationDataStructure_2</code> to require a more
-general <code class="language-plaintext highlighter-rouge">copy_tds</code> function that allows a copy between TDS of
+    <li>Extended the concept <code>TriangulationDataStructure_2</code> to require a more
+general <code>copy_tds</code> function that allows a copy between TDS of
 different types. The CGAL model has been updated.</li>
     <li>Added a way to efficiently insert a range of points with information
 into the 2D constrained Delaunay triangulations.</li>
@@ -276,23 +276,23 @@ into the 2D constrained Delaunay triangulations.</li>
   <h3 id="d-triangulations-1">3D Triangulations</h3>
 
   <ul>
-    <li>Extended the concept <code class="language-plaintext highlighter-rouge">TriangulationDataStructure_3</code> to require a more
-general <code class="language-plaintext highlighter-rouge">copy_tds</code> function that allows a copy between TDS of
+    <li>Extended the concept <code>TriangulationDataStructure_3</code> to require a more
+general <code>copy_tds</code> function that allows a copy between TDS of
 different types. The CGAL model has been updated.</li>
     <li>Added an advanced function to set the infinite vertex of the
 triangulation for low level operations</li>
     <li>Fixed a bug in the function inserting a range of points with info when
-the <code class="language-plaintext highlighter-rouge">Fast_location</code> tag is used</li>
+the <code>Fast_location</code> tag is used</li>
   </ul>
 
   <h3 id="d-segment-delaunay-graph">2D Segment Delaunay Graph</h3>
 
   <ul>
-    <li>Added functions <code class="language-plaintext highlighter-rouge">insert_points</code> and <code class="language-plaintext highlighter-rouge">insert_segments</code> to insert a
+    <li>Added functions <code>insert_points</code> and <code>insert_segments</code> to insert a
 range of points and segments. These functions uses the spatial
 sorting in order to speed up the time needed for the insertion. The
 function
-<code class="language-plaintext highlighter-rouge">insert(Input_iterator first, Input_iterator beyond,       Tag_true)</code>
+<code>insert(Input_iterator first, Input_iterator beyond,       Tag_true)</code>
 has been updated to dispatch the input when possible to these
 functions.</li>
   </ul>
@@ -309,21 +309,21 @@ version.</li>
   <h3 id="d-mesh-generation">3D Mesh Generation</h3>
 
   <ul>
-    <li>Sped-up <code class="language-plaintext highlighter-rouge">Mesh_3</code> and in particular the global optimizers (Lloyd and
-ODT) by introducing a parameter <code class="language-plaintext highlighter-rouge">do_freeze</code> to prevent from moving
+    <li>Sped-up <code>Mesh_3</code> and in particular the global optimizers (Lloyd and
+ODT) by introducing a parameter <code>do_freeze</code> to prevent from moving
 vertices which would move of very small displacements.</li>
     <li>Introduce new data structures and options for speed-up and
-compacity. Note that <code class="language-plaintext highlighter-rouge">Compact_mesh_cell_base_3</code> and
-<code class="language-plaintext highlighter-rouge">Mesh_vertex_base_3</code> are now our favoured implementations of the
+compacity. Note that <code>Compact_mesh_cell_base_3</code> and
+<code>Mesh_vertex_base_3</code> are now our favoured implementations of the
 concepts MeshCellBase_3 and MeshVertexBase_3.</li>
-    <li>Introduced a new constructor for <code class="language-plaintext highlighter-rouge">Polyhedral_mesh_domain_3</code> that
+    <li>Introduced a new constructor for <code>Polyhedral_mesh_domain_3</code> that
 takes a bounding polyhedron to be meshed along with a polyhedral
 surface entirely included in it. This allows the user to mesh a
 polyhedral domain with internal surface(s) which can be
 non-watertight and even non-manifold.</li>
     <li>Several documentation bug fixes.</li>
     <li>Provided the ability to plug in custom cell_base/vertex_base
-classes into the <code class="language-plaintext highlighter-rouge">Mesh_triangulation_3</code> class.</li>
+classes into the <code>Mesh_triangulation_3</code> class.</li>
   </ul>
 
   <h3 id="triangulated-surface-mesh-simplification">Triangulated Surface Mesh Simplification</h3>
@@ -336,46 +336,46 @@ length 0 were in the input mesh.</li>
   <h3 id="d-fast-intersection-and-distance-computation-1">3D Fast Intersection and Distance Computation</h3>
 
   <ul>
-    <li>Following the intersection API change, <code class="language-plaintext highlighter-rouge">Object_and_primitive_id</code> has
+    <li>Following the intersection API change, <code>Object_and_primitive_id</code> has
 been replaced by a template class
-<code class="language-plaintext highlighter-rouge">Intersection_and_primitive_id&lt;Query&gt;</code> to determine the type
+<code>Intersection_and_primitive_id&lt;Query&gt;</code> to determine the type
 depending on the query object type.</li>
-    <li>Introduced the class <code class="language-plaintext highlighter-rouge">AABB_halfedge_graph_segment_primitive</code>, which
-replaces the class <code class="language-plaintext highlighter-rouge">AABB_polyhedron_segment_primitive</code> (which is now
+    <li>Introduced the class <code>AABB_halfedge_graph_segment_primitive</code>, which
+replaces the class <code>AABB_polyhedron_segment_primitive</code> (which is now
 deprecated). The new class is more general and can be used with any
-model of <code class="language-plaintext highlighter-rouge">HalfedgeGraph</code>.</li>
-    <li>Introduced the class <code class="language-plaintext highlighter-rouge">AABB_face_graph_triangle_primitive</code> which
-replaces the class <code class="language-plaintext highlighter-rouge">AABB_polyhedron_triangle_primitive</code> (which is
+model of <code>HalfedgeGraph</code>.</li>
+    <li>Introduced the class <code>AABB_face_graph_triangle_primitive</code> which
+replaces the class <code>AABB_polyhedron_triangle_primitive</code> (which is
 now deprecated).</li>
-    <li>Documented the classes <code class="language-plaintext highlighter-rouge">AABB_segment_primitive</code> and
-<code class="language-plaintext highlighter-rouge">AABB_triangle_primitive</code> that were already used in some examples.</li>
-    <li>Add a generic primitive class <code class="language-plaintext highlighter-rouge">AABB_primitive</code> that allows to define
+    <li>Documented the classes <code>AABB_segment_primitive</code> and
+<code>AABB_triangle_primitive</code> that were already used in some examples.</li>
+    <li>Add a generic primitive class <code>AABB_primitive</code> that allows to define
 a primitive type by defining only two property maps.</li>
-    <li>Introduced a new concept of primitive <code class="language-plaintext highlighter-rouge">AABBPrimitiveWithSharedData</code>.
+    <li>Introduced a new concept of primitive <code>AABBPrimitiveWithSharedData</code>.
 It allows to have some data shared between the primitives stored in
-a <code class="language-plaintext highlighter-rouge">AABB_tree</code>. With this you can, for example have a primitive
+a <code>AABB_tree</code>. With this you can, for example have a primitive
 wrapping an integer which refers to the position of a geometric
-object in a <code class="language-plaintext highlighter-rouge">std::vector</code>. Only one reference to this vector will be
-stored in the traits of the tree. The concept <code class="language-plaintext highlighter-rouge">AABBTraits</code>, its
-model <code class="language-plaintext highlighter-rouge">AABB_traits</code> and the class <code class="language-plaintext highlighter-rouge">AABB_tree</code> have been updated
+object in a <code>std::vector</code>. Only one reference to this vector will be
+stored in the traits of the tree. The concept <code>AABBTraits</code>, its
+model <code>AABB_traits</code> and the class <code>AABB_tree</code> have been updated
 accordingly. However, everything is backward compatible.</li>
-    <li>Fixed a memory leak in the destructor of the class <code class="language-plaintext highlighter-rouge">AABB-tree</code></li>
+    <li>Fixed a memory leak in the destructor of the class <code>AABB-tree</code></li>
   </ul>
 
   <h3 id="stl-extensions-for-cgal">STL Extensions for CGAL</h3>
 
   <ul>
-    <li>Added to <code class="language-plaintext highlighter-rouge">Dispatch_output_iterator</code> and
-<code class="language-plaintext highlighter-rouge">Dispatch_or_drop_output_iterator</code> an operator to accept and
+    <li>Added to <code>Dispatch_output_iterator</code> and
+<code>Dispatch_or_drop_output_iterator</code> an operator to accept and
 dispatch a tuple of values.</li>
   </ul>
 
   <h3 id="concurrency-in-cgal">Concurrency in CGAL</h3>
 
   <ul>
-    <li>Added a <code class="language-plaintext highlighter-rouge">FindTBB</code> CMake module so that one can easily link with TBB to
+    <li>Added a <code>FindTBB</code> CMake module so that one can easily link with TBB to
 write shared-memory parallel code.</li>
-    <li>Introduce two new tags: <code class="language-plaintext highlighter-rouge">Sequential_tag</code> and <code class="language-plaintext highlighter-rouge">Parallel_tag</code>.</li>
+    <li>Introduce two new tags: <code>Sequential_tag</code> and <code>Parallel_tag</code>.</li>
   </ul>
 </div>
 
@@ -438,10 +438,10 @@ write shared-memory parallel code.</li>
     </div>
 
     <!-- Javascripts -->
-    <script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
-      <script src="/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
+    <script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
       <script>
         $(function () {
           $('.bxslider').bxSlider({
@@ -469,7 +469,7 @@ write shared-memory parallel code.</li>
           });
         });
       </script>
-      <script src="/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
     </body>
 </html>
 

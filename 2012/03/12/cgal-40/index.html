@@ -15,16 +15,16 @@
     <meta name="author" content="CGAL Editorial Board">
 
     <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
-    <link rel="stylesheet" href="/cgal-web/style.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 
     <!--[if lte IE 8]>
 	<link rel="stylesheet" href="css/leaflet.ie.css" />
 	<![endif]-->
-    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal/main.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal//main.css">
 
     <!-- atom & rss feed -->
     <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
@@ -200,7 +200,7 @@ is described by a combinatorial map, representing all the cells of
 the object plus the incidence and adjacency relations between cells.
 Geometry is added to combinatorial maps simply by associating a
 point to each vertex of the map. This data structure can be seen as
-the generalization in dD of the <code class="language-plaintext highlighter-rouge">Polyhedron_3</code>.</li>
+the generalization in dD of the <code>Polyhedron_3</code>.</li>
   </ul>
 
   <h3 id="d-voronoi-diagram-adaptor-temporarily-removed">2D Voronoi Diagram Adaptor (temporarily removed)</h3>
@@ -217,26 +217,26 @@ Apollonius graph.</li>
   <h3 id="aabb-tree">AABB Tree</h3>
 
   <ul>
-    <li>Documented the constness of member functions of the <code class="language-plaintext highlighter-rouge">AABB_tree</code> class.</li>
-    <li>The class <code class="language-plaintext highlighter-rouge">AABB_tree</code> is now guaranteed to be read-only thread-safe.
+    <li>Documented the constness of member functions of the <code>AABB_tree</code> class.</li>
+    <li>The class <code>AABB_tree</code> is now guaranteed to be read-only thread-safe.
 As usual in CGAL, this small overhead introduced for thread-safety
-can be deactivated by defining <code class="language-plaintext highlighter-rouge">CGAL_HAS_NO_THREADS</code>.</li>
+can be deactivated by defining <code>CGAL_HAS_NO_THREADS</code>.</li>
   </ul>
 
   <h3 id="d-alpha-shapes">2D Alpha Shapes</h3>
 
   <ul>
-    <li>Added an extra template parameter to the class <code class="language-plaintext highlighter-rouge">Alpha_shape_2</code> that
+    <li>Added an extra template parameter to the class <code>Alpha_shape_2</code> that
 allows a certified construction using a traits class with exact
 predicates and inexact constructions.</li>
-    <li>An object of type <code class="language-plaintext highlighter-rouge">Alpha_shape_2</code> can now be constructed from a
+    <li>An object of type <code>Alpha_shape_2</code> can now be constructed from a
 triangulation.</li>
   </ul>
 
   <h3 id="d-alpha-shapes-1">3D Alpha Shapes</h3>
 
   <ul>
-    <li>Added an extra template parameter to the class <code class="language-plaintext highlighter-rouge">Alpha_shape_3</code> that
+    <li>Added an extra template parameter to the class <code>Alpha_shape_3</code> that
 allows a certified construction using a traits class with exact
 predicates and inexact constructions.</li>
   </ul>
@@ -244,8 +244,8 @@ predicates and inexact constructions.</li>
   <h3 id="geometric-object-generators">Geometric Object Generators</h3>
 
   <ul>
-    <li><code class="language-plaintext highlighter-rouge">Random_points_in_iso_box_d</code> (deprecated since 3.8) has been
-removed. Use <code class="language-plaintext highlighter-rouge">Random_points_in_cube_d</code> instead.</li>
+    <li><code>Random_points_in_iso_box_d</code> (deprecated since 3.8) has been
+removed. Use <code>Random_points_in_cube_d</code> instead.</li>
   </ul>
 
   <h3 id="linear-and-quadratic-programming-solver">Linear and Quadratic Programming Solver</h3>
@@ -260,11 +260,11 @@ removed. Use <code class="language-plaintext highlighter-rouge">Random_points_in
     <li>The const-correctness of this package have been worked out. The
 transition for users should be smooth in general, however adding few
 const in user code might be needed in some cases.</li>
-    <li>The class <code class="language-plaintext highlighter-rouge">Kd_tree</code> is now guaranteed to be read-only thread-safe.
+    <li>The class <code>Kd_tree</code> is now guaranteed to be read-only thread-safe.
 As usual in CGAL, this small overhead introduced for thread-safety
-can be deactivated by defining <code class="language-plaintext highlighter-rouge">CGAL_HAS_NO_THREADS</code>.</li>
-    <li>Bug-fix in <code class="language-plaintext highlighter-rouge">Orthogonal_incremental_neighbor_search</code> and
-<code class="language-plaintext highlighter-rouge">Incremental_neighbor_search</code> classes. Several calls to <code class="language-plaintext highlighter-rouge">begin()</code>
+can be deactivated by defining <code>CGAL_HAS_NO_THREADS</code>.</li>
+    <li>Bug-fix in <code>Orthogonal_incremental_neighbor_search</code> and
+<code>Incremental_neighbor_search</code> classes. Several calls to <code>begin()</code>
 now allow to make several nearest neighbor search queries
 independently.</li>
   </ul>
@@ -272,21 +272,21 @@ independently.</li>
   <h3 id="stl-extension">STL Extension</h3>
 
   <ul>
-    <li><code class="language-plaintext highlighter-rouge">CGAL::copy_n</code> is now deprecated for <code class="language-plaintext highlighter-rouge">CGAL::cpp0x::copy_n</code> which
-uses <code class="language-plaintext highlighter-rouge">std::copy_n</code>, if available on the platform.</li>
-    <li><code class="language-plaintext highlighter-rouge">CGAL::successor</code> and <code class="language-plaintext highlighter-rouge">CGAL::predecessor</code> are now deprecated for
-<code class="language-plaintext highlighter-rouge">CGAL::cpp0x::next</code> and <code class="language-plaintext highlighter-rouge">CGAL::cpp0x::prev</code>. These functions use the
+    <li><code>CGAL::copy_n</code> is now deprecated for <code>CGAL::cpp0x::copy_n</code> which
+uses <code>std::copy_n</code>, if available on the platform.</li>
+    <li><code>CGAL::successor</code> and <code>CGAL::predecessor</code> are now deprecated for
+<code>CGAL::cpp0x::next</code> and <code>CGAL::cpp0x::prev</code>. These functions use the
 standard versions if available on the platform. Otherwise,
-<code class="language-plaintext highlighter-rouge">boost::next</code> and <code class="language-plaintext highlighter-rouge">boost::prior</code> are used.</li>
+<code>boost::next</code> and <code>boost::prior</code> are used.</li>
   </ul>
 
   <h3 id="triangulation2">Triangulation_2</h3>
 
   <ul>
-    <li>Fixed a thread-safety issue in <code class="language-plaintext highlighter-rouge">Delaunay_triangulation_2</code> remove
+    <li>Fixed a thread-safety issue in <code>Delaunay_triangulation_2</code> remove
 functions. As usual in CGAL, the small overhead introduced for
-thread-safety can be deactivated by defining <code class="language-plaintext highlighter-rouge">CGAL_HAS_NO_THREADS</code>.</li>
-    <li>Add extraction operator for the class <code class="language-plaintext highlighter-rouge">Constrained_triangulation_2</code>
+thread-safety can be deactivated by defining <code>CGAL_HAS_NO_THREADS</code>.</li>
+    <li>Add extraction operator for the class <code>Constrained_triangulation_2</code>
 (and thus to all inheriting classes).</li>
   </ul>
 </div>
@@ -350,10 +350,10 @@ thread-safety can be deactivated by defining <code class="language-plaintext hig
     </div>
 
     <!-- Javascripts -->
-    <script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
-      <script src="/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
+    <script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
       <script>
         $(function () {
           $('.bxslider').bxSlider({
@@ -381,7 +381,7 @@ thread-safety can be deactivated by defining <code class="language-plaintext hig
           });
         });
       </script>
-      <script src="/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
     </body>
 </html>
 
