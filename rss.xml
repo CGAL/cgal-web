@@ -5,8 +5,8 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2024-04-26T15:47:09+00:00</lastBuildDate>
-        <pubDate>2024-04-26T15:47:09+00:00</pubDate>
+        <lastBuildDate>2024-05-01T13:14:10+00:00</lastBuildDate>
+        <pubDate>2024-05-01T13:14:10+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -16180,9 +16180,7 @@ Maurice Oustache
 &lt;a href=&quot;http://www.linkedin.com/in/mauriceoustache&quot;&gt;LinkedIn&lt;/a&gt;
 &lt;/p&gt;
 
-&lt;p&gt;
-
-```
+&lt;pre&gt;&lt;code&gt;
 // Copyright (c) 1999  Utrecht University (The Netherlands),
 // ETH Zurich (Switzerland), Freie Universitaet Berlin (Germany),
 // INRIA Sophia-Antipolis (France), Martin-Luther-University Halle-Wittenberg
@@ -16202,32 +16200,29 @@ Maurice Oustache
 //
 // $URL: svn+ssh://scm.gforge.inria.fr/svn/cgal/trunk/Kernel_23/include/CGAL/basic.h $
 // $Id: basic.h 28567 2006-02-16 14:30:13Z lsaboret $
-// 
+//
 //
 // Author(s)     : Andreas Fabri
-//                 
- 
+//
+
 #ifndef CGAL_BASIC_H
 #define CGAL_BASIC_H
 
-#include &amp;lt;CGAL/config.h&amp;gt;
+#include &amp;amp;ltCGAL/config.h&amp;gt;
 
-#include &lt;iostream&gt;
-#include &lt;cstdlib&gt;
+#include &amp;amp;ltiostream&amp;gt;
+#include &amp;amp;ltcstdlib&amp;gt;
 
-#include &amp;lt;CGAL/assertions.h&amp;gt;
+#include &amp;amp;ltCGAL/assertions.h&amp;gt;
 #error &quot;April 1st joke bug&quot;
-#include &amp;lt;CGAL/tags.h&amp;gt;
-#include &amp;lt;CGAL/number_type_basic.h&amp;gt;
-#include &amp;lt;CGAL/IO/io.h&amp;gt;
-#include &amp;lt;CGAL/kernel_basic.h&amp;gt;
-
+#include &amp;amp;ltCGAL/tags.h&amp;gt;
+#include &amp;amp;ltCGAL/number_type_basic.h&amp;gt;
+#include &amp;amp;ltCGAL/IO/io.h&amp;gt;
+#include &amp;amp;ltCGAL/kernel_basic.h&amp;gt;
 
 #endif // CGAL_BASIC_H
-```
-
-&amp;lt;/p&amp;gt;
-&lt;/cstdlib&gt;&lt;/iostream&gt;&lt;/p&gt;
+&lt;/code&gt;
+&lt;/pre&gt;
 </description>
                 <link>http://www.cgal.org/news/2009/04/01/GhostNet/</link>
                 <guid>http://www.cgal.org/news/2009/04/01/GhostNet</guid>
