@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2024-05-15T15:37:18+00:00</updated>
+ <updated>2024-05-15T15:51:07+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -14218,6 +14218,116 @@ This fix also affects the usage of that class in the package
    <id>http://www.cgal.org/2012/06/01/cgal-at-cg-week</id>
    <content type="html">
 &lt;p&gt;Follow CGAL during the &lt;a href=&quot;http://socg2012.web.unc.edu/&quot;&gt;CG Week&lt;/a&gt; in Chapel Hill, NC, USA. Two minisymposia: &lt;a href=&quot;http://acg.cs.tau.ac.il/events/cgal-socg-2012/&quot;&gt;CGAL, an Open Gate to Computational Geometry&lt;/a&gt; and &lt;a href=&quot;http://gts2012.tem.uoc.gr/&quot;&gt;Publicly Available Geometric/Topological Software&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Biometry application</title>
+   <link href="http://www.cgal.org/news/2012/04/01/biometry/"/>
+   <updated>2012-04-01T00:00:00+00:00</updated>
+   <id>http://www.cgal.org/news/2012/04/01/biometry</id>
+   <content type="html">
+&lt;p&gt;
+April 1st, 2012
+&lt;p&gt;
+
+&lt;p&gt;
+Dear CGAL developers, Dear CGAL users,
+&lt;/p&gt;
+
+&lt;p&gt;
+In order to put an end to rumors about GeometryFactory
+selling CGAL to Facebook for a biometry application,
+let me give you the background, and let me explain why
+we think that what we do is not evil.
+&lt;/p&gt;
+
+&lt;p&gt;
+Just as nuclear energy can be good or bad, biometry is
+neutral as such. The particular application we contribute
+to is about matching lip prints on cigarette butts with
+Facebook users who threw the butts away. This allows people
+to act, who are fed up with cigarette butts lying around
+virtually  everywhere: in front of the Statue of Liberty,
+as well as along trails in Yellowstone National Park.
+&lt;/p&gt;
+
+&lt;p&gt;
+One of the goals of social networks is social engineering,
+that is making mankind better. The workflow of the
+biometry application is
+&lt;br /&gt; 1 that you take a picture of a cigarette butt lying at a
+   place where it should not,
+&lt;br /&gt; 2 that you upload this picture to FB together with the GPS
+   coordinate of where you shot the picture, so that FB can
+   identify the culprit by matching the lip print on the
+   cigarette butt with the extensive database of faces.
+&lt;br /&gt;3 that FB tells him or her that this is not a well educated
+   behavior (smokers in fact know that it is not nice), and
+   puts repeat offenders on a wall of shame.
+&lt;/p&gt;
+
+&lt;p&gt;
+As it is technically rather fascinating, let me just
+tell you why it is not a trivial problem. We can&apos;t reveal
+all the details as we filed a patent. Lips leave prints,
+just like fingers do, but fingers tips are flat compared
+to lips, cigarettes are cylindrical, the max curvatures
+of lips and cigarettes are mostly orthogonal where
+they touch. Just as maps are distorted towards the poles,
+so are the photos of lips and cigarette butts.  Additionally,
+only a small part of the lips touches the cigarette,
+only one side of a cigarette butt is visible, and it needs
+several uploaded photos of FB users to get a high
+fidelity lip model.  To get a grip on the orthogonal
+curvatures and distortion we throw in the anisotropic
+surface mesh generator Jane Tournois works on, and
+we implemented the Lipschitz distance estimator to
+get the confidence value for the lip-cigarette-butt match.
+&lt;/p&gt;
+
+&lt;p&gt;
+FB opted for CGAL, as the exact computing paradigm
+helps to avoid false negatives (FB has to avoid accusing
+people who not even smoke). The floating point filters
+are key to not only being exact but also fast, as there
+are millions of smokers who have to be identified.
+Obviously, FB combines that with yellow-finger detection,
+the timeline information they have (&quot;Hey, I am in Venice&quot;),
+and whatever other data available.
+&lt;/p&gt;
+
+&lt;p&gt;
+As I wrote in the beginning, biometry is not evil as
+such, and improving society seems a more moral goal
+to us than target advertising. Similar applications
+we have in mind, are the detection of counterfeit Dolce
+and Gabana glasses, Lacoste T-shirts, and Louis Vuitton
+handbags. FB Singapore pointed out that identifying
+chewing gums on the sidewalk would interest them, but
+it is not clear yet how to adapt the Lipschitz distance
+estimator.
+&lt;/p&gt;
+
+&lt;p&gt;
+It was a mistake not to have discussed this at the last
+CGAL developer meeting or openly in the forums, but I
+had not expected such strong reactions when some of you
+heard from Jane that we work on &quot;some biometry stuff&quot;.
+&lt;/p&gt;
+
+&lt;p&gt;
+best regards,
+&lt;/p&gt;
+
+&lt;p&gt;
+andreas
+&lt;br /&gt;-- 
+&lt;br /&gt;Andreas Fabri, PhD
+&lt;br /&gt;Chief Officer, GeometryFactory
+&lt;br /&gt;Editor, The CGAL Project
+&lt;/p&gt;
+&lt;/p&gt;&lt;/p&gt;
 </content>
  </entry>
  
