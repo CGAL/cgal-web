@@ -5,8 +5,8 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2024-05-15T17:09:46+00:00</lastBuildDate>
-        <pubDate>2024-05-15T17:09:46+00:00</pubDate>
+        <lastBuildDate>2024-05-16T12:21:08+00:00</lastBuildDate>
+        <pubDate>2024-05-16T12:21:08+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -13785,6 +13785,149 @@ the Polyhedron demo has an option to switch it on.&lt;/li&gt;
                 <link>http://www.cgal.org/2013/04/11/cgal-42/</link>
                 <guid>http://www.cgal.org/2013/04/11/cgal-42</guid>
                 <pubDate>2013-04-11T00:00:00+00:00</pubDate>
+        </item>
+
+        <item>
+                <title>About the New CGAL Logo</title>
+                <description>
+&lt;p&gt;
+April 1st, 2013
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../../../April13/img/quad-seagull.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;
+Changing a logo is a big decision, source of controversies
+and only in the long run we will see if we made a good choice.
+&lt;/p&gt;
+
+&lt;p&gt;
+As the CGAL Project is an Open Source project, we like transparency
+and that&apos;s why we decided to present you how it came to the new
+logo, and what alternatives we explored. At the end you will see
+that the choice we made was simply natural.
+&lt;/p&gt;
+
+&lt;p&gt;
+As an Open Source project we also would appreciate to get user feeback,
+as the only people who count for us are you, the users.
+&lt;/p&gt;
+
+&lt;h4&gt;The Problem with the Old Logo&lt;/h4&gt;
+
+&lt;p&gt;
+The old CGAL logo used letters constructed with compass and rulers,
+as described in the  book written by
+&lt;a href=&quot;http://www.goines.net/&quot;&gt;David Lance Goines&lt;/a&gt;:
+&lt;i&gt;A Constructed Roman Alphabet: a Geometric Analysis
+of the Greek and Roman Capitals and of the Arabic Numerals.&lt;/i&gt; 
+David R. Gordine, Boston, 1982.
+&lt;/p&gt;
+
+&lt;p&gt;
+&quot;&lt;i&gt;
+Construct first a square ABCD, and bisect AC at E, BD at F, AB at G, and CD
+at H. Draw the straight lines EF and GH, thereby establishing a point I at
+their intersection. From the center I, describe a circle JIK on EF, the diameter
+of which is one-ninth the distance AB. Using that same radius, describe
+a circle LJI, thereby establishing a point N on the perimeter of the
+circle I. ....... &lt;/i&gt;&quot;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../../../April13/img/c.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;
+Although CGAL developers
+liked these constructions a lot, the CGAL Editorial Board had to make a drastic change. An
+opinion poll performed among decision makers in the computer graphics industry during Siggraph 2012 showed 
+that the CGAL project started to be perceived as old fashioned.
+&lt;/p&gt;
+
+&lt;h4&gt;Idea&lt;/h4&gt;
+&lt;p&gt;
+Several desperate brain storming sessions later, the breakthrough idea came by coincidence,
+when we met  Madeleine Ouette, the cover designer at O&apos;Reilly, in order to choose the 
+animal for the upcoming CGAL book. For Madeleine a 
+&lt;a href=&quot;http://www.merriam-webster.com/dictionary/seagull&quot;&gt;&lt;i&gt;seagull&lt;/i&gt;&lt;/a&gt; 
+was the most natural choice as the word is a 
+&lt;a href=&quot;https://media.merriam-webster.com/audio/prons/en/us/mp3/s/seagul01.mp3&quot;&gt;homophone&lt;/a&gt;
+for &lt;i&gt;CGAL&lt;/i&gt;, and we were lucky that it was not already taken.
+&lt;/p&gt;
+
+&lt;p&gt;
+A quick word on the book: It is about CGAL 5.0 which will be released in September 2013. 
+The change of the major release number is due to the fact, that we fully exploit the
+features of C++11, that is lamdas, the auto type, variadic templates, decltype, etc.
+This will lead to some compilers no longer being supported, and some CGAL users having to 
+revise their C++ language skills (hence the book), but it leads to a phenomenal clarity 
+and elegance of the CGAL APIs. We simply had to do it.
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../../../April13/img/book.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h4&gt;A Drawing is Not a Logo&lt;/h4&gt;
+
+&lt;p&gt;
+Having the seagull on the CGAL book, and the fact that this bird is elegant and dynamic, 
+led to the decision to come up with a &quot;seagull&quot; logo. We were tempted to simply take the 
+drawing of the O&apos;Reilly CGAL book, but this was impossible because O&apos;Reilly considers 
+these drawings as part of their brand. The next idea was to find a cool picture of 
+a seagull flying through a stormy sky.
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../../../April13/img/seagull.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;
+Luckily we contacted an expert in logos and brand development.
+&lt;/p&gt;
+
+&lt;p&gt;
+&quot;&lt;i&gt;A logo is an abstraction&lt;/i&gt;&quot; explained Mark Höwe,  Chief Creative of 
+the web agency Haatchi&amp;amp;Haatchi, and he illustrated what he meant
+with the image below.
+
+&lt;br /&gt;&lt;img src=&quot;../../../../../April13/img/painted-seagull.png&quot; /&gt;
+
+&lt;br /&gt;&quot;&lt;i&gt;CGAL is not a zoo, right!&lt;/i&gt;&quot;  Mark said, and he continued
+&quot;&lt;i&gt;Was CGAL an application like Picasa, inkscape, or gimp, a painting would 
+have been a serious option.&lt;/i&gt;&quot; 
+&lt;/p&gt;
+
+&lt;p&gt;
+Here we are in 3D. 
+
+&lt;br /&gt;&lt;img src=&quot;../../../../../April13/img/quad-seagull.png&quot; /&gt;
+
+&lt;br /&gt;We see quad meshes flying rapidly over a terrain model.
+Additionally, we see the mesh at two levels of detail.  
+&quot;&lt;i&gt;In a world of devices ranging from smartphones, over tablets,
+to workstations with huge screens, multi resolution algorithms are key!&lt;/i&gt;&quot;
+according to Mark, and he added  &quot;&lt;i&gt;As Samsung Maps  and Huawei Maps also enter 
+the market of GIS for the masses, a logo with a terrain model, makes 
+absolute sense for a geometry library like CGAL.&lt;/i&gt;&quot;
+&lt;/p&gt;
+
+&lt;p&gt;
+If CGAL was only 2D algorithms this tangram would have worked too.
+&quot;&lt;i&gt;The fact that it is composed of basic shapes which can be recombined
+in an unlimited number of ways captures the essence of CGAL.&lt;/i&gt;&quot; Mark said. 
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../../../April13/img/tangram-seagull.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;
+The outline is easy to recognize, but because it can be seen on many
+windows to avoid real birds hitting the window, it is almost impossible 
+to establish a new connotation between the shape and the geometry
+library.
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../../../April13/img/outline-seagull.png&quot; /&gt;&lt;/p&gt;
+
+</description>
+                <link>http://www.cgal.org/news/2013/04/01/newlogo/</link>
+                <guid>http://www.cgal.org/news/2013/04/01/newlogo</guid>
+                <pubDate>2013-04-01T00:00:00+00:00</pubDate>
         </item>
 
         <item>
