@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2024-05-16T12:34:27+00:00</updated>
+ <updated>2024-05-16T12:48:43+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -17017,7 +17017,7 @@ arrangements of conics, for example, when defining an arc with 5 points.&lt;/li&
  </entry>
  
  <entry>
-   <title>CGAL and the Higgs Boson</title>
+   <title>Joint CERN/GeometryFactory/CGAL Project Press Release</title>
    <link href="http://www.cgal.org/news/2008/04/01/Higgs/"/>
    <updated>2008-04-01T00:00:00+00:00</updated>
    <id>http://www.cgal.org/news/2008/04/01/Higgs</id>
