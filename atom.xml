@@ -4,13 +4,77 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2024-05-17T14:01:14+00:00</updated>
+ <updated>2024-05-29T17:01:56+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
    <email>cgal-info@inria.fr</email>
  </author>
 
+ 
+ <entry>
+   <title>New in CGAL: Kinetic Space Partition and Kinetic Surface Reconstruction</title>
+   <link href="http://www.cgal.org/2024/05/29/Kinetic_surface_reconstruction/"/>
+   <updated>2024-05-29T00:00:00+00:00</updated>
+   <id>http://www.cgal.org/2024/05/29/Kinetic_surface_reconstruction</id>
+   <content type="html">
+&lt;h3&gt;&lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Sven Oesau&lt;/a&gt;,
+&lt;a href=&quot;https://www-sop.inria.fr/members/Florent.Lafarge/&quot;&gt;Florent Lafarge&lt;/a&gt;.
+&lt;/h3&gt;
+&lt;h4&gt;&lt;a href=&quot;https://geometryfactory.com/&quot;&gt;GeometryFactory&lt;/a&gt;, &lt;a href=&quot;https://team.inria.fr/titane/&quot;&gt;INRIA Sophia Antipolis&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3&gt;Kinetic Surface Reconstruction&lt;/h3&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;a href=&quot;../../../../images/KSR_meeting_room_outside.png&quot;&gt;&lt;img src=&quot;../../../../images/KSR_meeting_room_outside.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+  &lt;br /&gt;&lt;small&gt;Indoor LiDAR point cloud and low-polygonal mesh from Kinetic Surface Reconstruction.&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Acquired point clouds suffer from various defects like noise, missing data and clutter. Reconstruction methods are required to fill in missing parts reasonably to provide a complete reconstruction. Common methods for reconstructing smooth surfaces, e.g., the &lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/master/Poisson_surface_reconstruction_3/index.html&quot;&gt;Poisson Surface Reconstruction&lt;/a&gt;, fit an implicit function to the point cloud and extract the level set. However, those methods have difficulties in reconstructing sharp features and piecewise-planar objects. In addition, they often provide a large number of triangles.&lt;/p&gt;
+&lt;p&gt;Having architecture and man-made objects with a piecewise-linear geometry in mind, a popular approach to guarantee a watertight volume is by creating a space partitioning. An occupancy labeling divides the cells of the partitioning into empty or occupied space and thus generates a closed surface. A typical choice to fill in unobserved parts of the object is to use the extensions of detected shapes in the point cloud.&lt;/p&gt;
+&lt;p&gt;The Kinetic Surface Reconstruction &lt;code&gt;CGAL::Kinetic_surface_reconstruction_3&lt;/code&gt; provides a state of the art 3D reconstruction pipeline based on the &lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/master/Kinetic_space_partition/index.html&quot;&gt;Kinetic Space Partition&lt;/a&gt;&lt;code&gt;CGAL::Kinetic_shape_partition_3&lt;/code&gt;. While the Kinetic Space Partition is the core mechanism providing the geometry for the reconstruction, other steps are necessary to feed the partition with planar shapes and to extract the 3D surface from the partition. Our pipeline, based on &lt;a href=&quot;https://inria.hal.science/hal-02924409/file/tog2020.pdf&quot;&gt;Bauchet, J.-P., &amp;amp; Lafarge, F. (2020). Kinetic Shape Reconstruction. In ACM Transactions of Graphics, 39(5), 2020&lt;/a&gt;, takes an oriented point cloud as input and generates a watertight 3D polygonal surface.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;a href=&quot;../../../../images/KSR_indoor_overlay.png&quot;&gt;&lt;img src=&quot;../../../../images/KSR_indoor_overlay.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+  &lt;br /&gt;&lt;small&gt;Indoor LiDAR point cloud and low-polygonal mesh from Kinetic Surface Reconstruction.&lt;/small&gt;
+
+&lt;/div&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;a href=&quot;../../../../images/KSR_indoor_reconstruction.png&quot;&gt;&lt;img src=&quot;../../../../images/KSR_indoor_reconstruction.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+  &lt;br /&gt;&lt;small&gt;Polygon mesh only.&lt;/small&gt;
+&lt;/div&gt;
+&lt;p&gt;While the reconstruction pipeline has several parameters, which are directly passed to methods from the &lt;a href=&quot;https://doc.cgal.org/latest/Shape_detection/index.html&quot;&gt;Shape Detection package&lt;/a&gt; and &lt;a href=&quot;https://doc.cgal.org/latest/Shape_regularization/index.html&quot;&gt;Shape Regularization package&lt;/a&gt;, the Kinetic Space Partition and Kinetic Surface Reconstruction add a few parameters to give the user control over the reconstruction. The complexity of the surface can be adapted to favor simpler surfaces, i.e., with a lower polygon count.&lt;/p&gt;
+&lt;p&gt;
+The occupancy labeling may consider the sides of the bounding boxes as empty space, e.g., for the reconstruction of objects, or individually as occupied space, e.g., the bottom or ground side in the case of aerial LiDAR. Also the bounding box for the space partition can be axis-aligned or oriented without transforming the input data.&lt;/p&gt;
+
+&lt;p&gt;All reconstructions shown here have been created with the example &lt;a href=&quot;https://github.com/CGAL/cgal/blob/master/Kinetic_surface_reconstruction/examples/Kinetic_surface_reconstruction/ksr_parameters.cpp&quot;&gt;ksr_parameters.cpp&lt;/a&gt;. The used parameters are listed in the &lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/master/Kinetic_surface_reconstruction/index.html#title9&quot;&gt;Performance&lt;/a&gt; chapter in the user manual and the &lt;a href=&quot;https://files.inria.fr/titane/KSR42_dataset.zip&quot;&gt;datasets&lt;/a&gt; can be found on the &lt;a href=&quot;https://team.inria.fr/titane/&quot;&gt;INRIA Titane webpage&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;a href=&quot;../../../../images/KSR_church_parameters.png&quot;&gt;&lt;img src=&quot;../../../../images/KSR_church_parameters.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+  &lt;br /&gt;&lt;small&gt;Reconstruction of aerial LiDAR of a church with different complexity parameters (a) and (b). (c) shows the reconstruction with an axis-aligned bounding box and (d) sets the bottom bounding box face to be labeled as empty.&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;Kinetic Space Partition&lt;/h3&gt;
+&lt;p&gt;The major challenges of space decomposition and labeling methods are high computational complexity and a large number of small cells which are caused by the often indefinite extension of planar shapes. The Kinetic Space Partition overcomes these limitations by following a kinetic approach. Planar input shapes are not extended indefinitely, but extend over time until they collide with other input shapes. A user-provided parameter to adjust the overall complexity of the partition limits the extension of shapes after a number of intersections with other shapes. Thus, the Kinetic Space Partition is a subset of a full plane arrangement and small input shapes are limited to only have a local impact on the partition.&lt;/p&gt;
+&lt;p&gt;A subdivision by using an octree allows to split up the input shapes into smaller Kinetic Space Partitions and thus provide a significant speedup. The mechanism is fully transparent as the smaller partitions are fused into one conformal partition.&lt;/p&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;a href=&quot;../../../../images/KSP_horse_octree.png&quot;&gt;&lt;img src=&quot;../../../../images/KSP_horse_octree.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+  &lt;br /&gt;&lt;small&gt;Point cloud of a horse split into 127 kinetic space partitions using an octree.&lt;/small&gt;
+&lt;/div&gt;
+&lt;h4&gt;Performance&lt;/h4&gt;
+&lt;p&gt;The running time of the Kinetic Surface Reconstruction depends mostly on the Shape Detection and the Kinetic Space Partition. The use of Shape Regularization is optional, but can increase the performance and the quality of the reconstruction, particularly in the case of architecture and piecewise-planar objects. The indoor point cloud used in the first two figures has around 3 million points and the reconstruction of the model takes around 132 seconds. The church model has around 1.2 million points and was reconstructed in around 36s.&lt;/p&gt;
+&lt;h4&gt;Status&lt;/h4&gt;
+&lt;p&gt;The Kinetic Shape Partition and the Kinetic Surface Reconstruction are already integrated in CGAL&apos;s master branch on the &lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;, and will be officially released in the upcoming version of CGAL, CGAL 6.0, scheduled for June 2024.&lt;/p&gt;
+
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
+&lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/master/Kinetic_surface_reconstruction/index.html&quot;&gt;Documentation of the package Kinetic Surface Reconstruction&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/master/Kinetic_space_partition/index.html&quot;&gt;Documentation of the package Kinetic Space Partition&lt;/a&gt; &lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
+&lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Welcome: Nicolas Bourbaki</title>
