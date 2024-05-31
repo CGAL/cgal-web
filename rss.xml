@@ -5,8 +5,8 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2024-05-29T17:01:56+00:00</lastBuildDate>
-        <pubDate>2024-05-29T17:01:56+00:00</pubDate>
+        <lastBuildDate>2024-05-31T11:39:36+00:00</lastBuildDate>
+        <pubDate>2024-05-31T11:39:36+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -35,6 +35,7 @@
   &lt;br /&gt;&lt;small&gt;Indoor LiDAR point cloud and low-polygonal mesh from Kinetic Surface Reconstruction.&lt;/small&gt;
 
 &lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
   &lt;a href=&quot;../../../../images/KSR_indoor_reconstruction.png&quot;&gt;&lt;img src=&quot;../../../../images/KSR_indoor_reconstruction.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
   &lt;br /&gt;&lt;small&gt;Polygon mesh only.&lt;/small&gt;
