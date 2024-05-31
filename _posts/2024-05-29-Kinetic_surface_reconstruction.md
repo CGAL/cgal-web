@@ -28,7 +28,9 @@ tags: [""]
   <a href="../../../../images/KSR_indoor_overlay.png"><img src="../../../../images/KSR_indoor_overlay.png" style="max-width:95%"/></a><br>
   <br><small>Indoor LiDAR point cloud and low-polygonal mesh from Kinetic Surface Reconstruction.</small>
 
-</div><div style="text-align:center;">
+</div>
+<br>
+<div style="text-align:center;">
   <a href="../../../../images/KSR_indoor_reconstruction.png"><img src="../../../../images/KSR_indoor_reconstruction.png" style="max-width:95%"/></a><br>
   <br><small>Polygon mesh only.</small>
 </div>
