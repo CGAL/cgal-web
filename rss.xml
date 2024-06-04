@@ -5,8 +5,8 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2024-06-04T08:59:56+00:00</lastBuildDate>
-        <pubDate>2024-06-04T08:59:56+00:00</pubDate>
+        <lastBuildDate>2024-06-04T09:31:17+00:00</lastBuildDate>
+        <pubDate>2024-06-04T09:31:17+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -43,7 +43,7 @@
   &lt;br /&gt;&lt;small&gt;Polygon mesh only.&lt;/small&gt;
 &lt;/div&gt;
 
-&lt;p&gt;While the reconstruction pipeline has several parameters, which are directly passed to methods from the &lt;a href=&quot;https://doc.cgal.org/latest/Shape_detection/index.html&quot;&gt;Shape Detection package&lt;/a&gt; and &lt;a href=&quot;https://doc.cgal.org/latest/Shape_regularization/index.html&quot;&gt;Shape Regularization package&lt;/a&gt;, the Kinetic Space Partition and Kinetic Surface Reconstruction package add a few parameters to give the user control over the reconstruction. The complexity of the surface can be adapted to favor simpler surfaces, i.e., with a lower polygon count.&lt;/p&gt;
+&lt;p&gt;While the reconstruction pipeline has several parameters, which are directly passed to methods from the &lt;a href=&quot;https://doc.cgal.org/latest/Shape_detection/index.html&quot;&gt;Shape Detection package&lt;/a&gt; and &lt;a href=&quot;https://doc.cgal.org/latest/Shape_regularization/index.html&quot;&gt;Shape Regularization package&lt;/a&gt;, the Kinetic Space Partition and Kinetic Surface Reconstruction add a few parameters to give the user control over the reconstruction. The complexity of the surface can be adapted to favor simpler surfaces, i.e., with a lower polygon count.&lt;/p&gt;
 
 &lt;p&gt;The occupancy labeling may consider the sides of the bounding boxes as empty space, e.g., for the reconstruction of objects, or individually as occupied space, e.g., the bottom or ground side in the case of aerial LiDAR. Also the bounding box for the space partition can be axis-aligned or oriented without transforming the input data.&lt;/p&gt;
 
@@ -51,13 +51,13 @@
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
   &lt;a href=&quot;../../../../images/KSR_church_parameters.png&quot;&gt;&lt;img src=&quot;../../../../images/KSR_church_parameters.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
-  &lt;br /&gt;&lt;small&gt;Reconstruction of aerial LiDAR of a church with different complexity parameters. &lt;br /&gt;(middle right) shows the reconstruction with an axis-aligned bounding box and (left) sets the bottom bounding box face to be labeled as empty.&lt;/small&gt;
+  &lt;br /&gt;&lt;small&gt;Reconstruction of aerial LiDAR of a church with different complexity parameters. &lt;br /&gt;(middle right) shows the reconstruction with an axis-aligned bounding box and (right) sets the bottom bounding box face to be labeled as empty.&lt;/small&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h3&gt;Kinetic Space Partition&lt;/h3&gt;
 
-&lt;p&gt;The major challenges of space decomposition and labeling methods are high computational complexity, and a large number of small cells which are caused by the often indefinite extension of planar shapes. The Kinetic Space Partition overcomes these limitations by following a kinetic approach: planar input shapes are not extended indefinitely, but extend over time until they collide with other input shapes. A user-provided parameter to adjust the overall complexity of the partition limits the extension of shapes after a number of intersections with other shapes. Thus, the Kinetic Space Partition is a subset of a full plane arrangement and small input shapes are limited to only have a local impact on the partition.&lt;/p&gt;
+&lt;p&gt;The major challenges of space decomposition and labeling methods are high computational complexity and a large number of small cells which are caused by the often indefinite extension of planar shapes. The Kinetic Space Partition overcomes these limitations by following a kinetic approach: planar input shapes are not extended indefinitely, but extend over time until they collide with other input shapes. A user-provided parameter to adjust the overall complexity of the partition limits the extension of shapes after a number of intersections with other shapes. Thus, the Kinetic Space Partition is a subset of a full plane arrangement and small input shapes are limited to only have a local impact on the partition.&lt;/p&gt;
 &lt;p&gt;A subdivision by using an octree allows to split up the input shapes into smaller Kinetic Space Partitions and thus provide a significant speedup. The mechanism is fully transparent as the smaller partitions are fused into one conformal partition.&lt;/p&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
   &lt;a href=&quot;../../../../images/KSP_horse_octree.png&quot;&gt;&lt;img src=&quot;../../../../images/KSP_horse_octree.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;

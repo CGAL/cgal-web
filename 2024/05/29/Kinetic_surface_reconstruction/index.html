@@ -167,7 +167,7 @@
   <br /><small>Polygon mesh only.</small>
 </div>
 
-<p>While the reconstruction pipeline has several parameters, which are directly passed to methods from the <a href="https://doc.cgal.org/latest/Shape_detection/index.html">Shape Detection package</a> and <a href="https://doc.cgal.org/latest/Shape_regularization/index.html">Shape Regularization package</a>, the Kinetic Space Partition and Kinetic Surface Reconstruction package add a few parameters to give the user control over the reconstruction. The complexity of the surface can be adapted to favor simpler surfaces, i.e., with a lower polygon count.</p>
+<p>While the reconstruction pipeline has several parameters, which are directly passed to methods from the <a href="https://doc.cgal.org/latest/Shape_detection/index.html">Shape Detection package</a> and <a href="https://doc.cgal.org/latest/Shape_regularization/index.html">Shape Regularization package</a>, the Kinetic Space Partition and Kinetic Surface Reconstruction add a few parameters to give the user control over the reconstruction. The complexity of the surface can be adapted to favor simpler surfaces, i.e., with a lower polygon count.</p>
 
 <p>The occupancy labeling may consider the sides of the bounding boxes as empty space, e.g., for the reconstruction of objects, or individually as occupied space, e.g., the bottom or ground side in the case of aerial LiDAR. Also the bounding box for the space partition can be axis-aligned or oriented without transforming the input data.</p>
 
@@ -175,13 +175,13 @@
 
 <div style="text-align:center;">
   <a href="../../../../images/KSR_church_parameters.png"><img src="../../../../images/KSR_church_parameters.png" style="max-width:95%" /></a><br />
-  <br /><small>Reconstruction of aerial LiDAR of a church with different complexity parameters. <br />(middle right) shows the reconstruction with an axis-aligned bounding box and (left) sets the bottom bounding box face to be labeled as empty.</small>
+  <br /><small>Reconstruction of aerial LiDAR of a church with different complexity parameters. <br />(middle right) shows the reconstruction with an axis-aligned bounding box and (right) sets the bottom bounding box face to be labeled as empty.</small>
 </div>
 
 <p><br /></p>
 <h3>Kinetic Space Partition</h3>
 
-<p>The major challenges of space decomposition and labeling methods are high computational complexity, and a large number of small cells which are caused by the often indefinite extension of planar shapes. The Kinetic Space Partition overcomes these limitations by following a kinetic approach: planar input shapes are not extended indefinitely, but extend over time until they collide with other input shapes. A user-provided parameter to adjust the overall complexity of the partition limits the extension of shapes after a number of intersections with other shapes. Thus, the Kinetic Space Partition is a subset of a full plane arrangement and small input shapes are limited to only have a local impact on the partition.</p>
+<p>The major challenges of space decomposition and labeling methods are high computational complexity and a large number of small cells which are caused by the often indefinite extension of planar shapes. The Kinetic Space Partition overcomes these limitations by following a kinetic approach: planar input shapes are not extended indefinitely, but extend over time until they collide with other input shapes. A user-provided parameter to adjust the overall complexity of the partition limits the extension of shapes after a number of intersections with other shapes. Thus, the Kinetic Space Partition is a subset of a full plane arrangement and small input shapes are limited to only have a local impact on the partition.</p>
 <p>A subdivision by using an octree allows to split up the input shapes into smaller Kinetic Space Partitions and thus provide a significant speedup. The mechanism is fully transparent as the smaller partitions are fused into one conformal partition.</p>
 <div style="text-align:center;">
   <a href="../../../../images/KSP_horse_octree.png"><img src="../../../../images/KSP_horse_octree.png" style="max-width:95%" /></a><br />
