@@ -1,0 +1,297 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>New in CGAL: Kinetic Space Partition and Kinetic Surface Reconstruction</title>
+    <meta name="description" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="CGAL Editorial Board">
+
+    <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+
+    <!--[if lte IE 8]>
+	<link rel="stylesheet" href="css/leaflet.ie.css" />
+	<![endif]-->
+    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal//main.css">
+
+    <!-- atom & rss feed -->
+    <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="https://cgal.github.io/cgal-web/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    
+
+    <!-- Navigation & Logo-->
+    <div class="mainmenu-wrapper">
+    <div class="container">
+    <nav id="mainmenu" class="mainmenu" role="navigation">
+    <ul>
+    <li class="logo-wrapper hidden-xs hidden-sm hidden-md">
+    <a href="https://cgal.github.io/cgal-web/index.html">
+    <img src="https://cgal.github.io/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
+    </a>
+    </li>
+
+    <li class="hidden-lg">
+    <a href="https://cgal.github.io/cgal-web/index.html">
+    <img src="https://cgal.github.io/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
+    </a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/project.html">Project</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/download.html">Download</a>
+    </li>
+
+    <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Packages</a>
+        <ul class="dropdown-menu">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometryProcessing" target="_blank">Geometry Processing</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
+        </ul>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/documentation.html">Documentation</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/news.html">News</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/media.html">Media</a>
+    </li>
+
+    <li>
+    <a href="https://cgal.github.io/cgal-web/support.html">Support</a>
+    </li>
+
+    </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="section section-breadcrumbs">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 home-title">
+            <h1>New in CGAL: Kinetic Space Partition and Kinetic Surface Reconstruction </h1>
+            <a style="text-align: right;" href="https://github.com/cgal/cgal" alt="The CGAL Project's github">
+              <span class="btn-dark-orange github-link fs-5">CGAL/cgal <i class="bi bi-github"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+<div class="section">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-9">
+        <div class="blog-post blog-single-post">
+          <div class="single-post-title">
+            <h3>New in CGAL: Kinetic Space Partition and Kinetic Surface Reconstruction</h3>
+          </div>
+          <br>
+          <div class="single-post-info">
+            <i class="bi bi-clock"></i>
+            29 May 2024
+          </div>
+          <div class="single-post-content">
+            
+<h3><a href="https://geometryfactory.com/who-we-are/">Sven Oesau</a>&deg;,
+<a href="https://www-sop.inria.fr/members/Florent.Lafarge/">Florent Lafarge</a>&#42;.
+</h3>
+<h4>&deg;<a href="https://geometryfactory.com/">GeometryFactory</a>, &#42;<a href="https://team.inria.fr/titane/">INRIA Sophia Antipolis</a></h4>
+<p><br /></p>
+
+<p>Acquired point clouds suffer from various defects like noise, missing data and clutter. Reconstruction methods are required to fill in missing parts reasonably to provide a complete reconstruction. Common methods for reconstructing smooth surfaces, e.g., the <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Poisson_surface_reconstruction_3/index.html">Poisson Surface Reconstruction</a>, fit an implicit function to the point cloud and extract the level set. However, those methods have difficulties in reconstructing sharp features and piecewise-planar objects. In addition, they often provide a large number of triangles.</p>
+<p>Keeping architecture and man-made objects with piecewise-linear geometries in mind, a popular approach to guarantee a watertight volume is to use space partitioning. An occupancy labeling then divides the cells of the partition into "empty" or "occupied" space, and thus generates a closed surface. A typical choice to fill in unobserved parts of the object is to use the extensions of detected shapes in the point cloud.</p>
+
+<h3>Kinetic Surface Reconstruction</h3>
+
+<p>Kinetic Surface Reconstruction (<code>CGAL::Kinetic_surface_reconstruction_3</code>) is a new package that implements a state-of-the-art 3D reconstruction pipeline based on another new package, <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Kinetic_space_partition/index.html">Kinetic Space Partition</a>(<code>CGAL::Kinetic_shape_partition_3</code>). While the Kinetic Space Partition is the core mechanism providing the geometry for the reconstruction (more on that later), other steps are necessary to extract the 3D surface from the partition. Our pipeline is based on <a href="https://inria.hal.science/hal-02924409/file/tog2020.pdf">Bauchet, J.-P., &amp; Lafarge, F. (2020). Kinetic Shape Reconstruction. In ACM Transactions of Graphics, 39(5), 2020</a>, and takes an oriented point cloud as input and generates a watertight 3D polygonal surface.</p>
+
+<div style="text-align:center;">
+  <a href="../../../../images/KSR_meeting_room_outside.png"><img src="../../../../images/KSR_meeting_room_outside.png" style="max-width:95%" /></a>
+  <br /><small>Indoor LiDAR point cloud and low-polygonal mesh from Kinetic Surface Reconstruction.</small>
+</div>
+
+<p><br /></p>
+<div style="text-align:center;">
+  <a href="../../../../images/KSR_indoor_overlay.png"><img src="../../../../images/KSR_indoor_overlay.png" style="max-width:95%" /></a>
+  <br /><small>Indoor LiDAR point cloud and low-polygonal mesh from Kinetic Surface Reconstruction.</small>
+</div>
+
+<p><br /></p>
+<div style="text-align:center;">
+  <a href="../../../../images/KSR_indoor_reconstruction.png"><img src="../../../../images/KSR_indoor_reconstruction.png" style="max-width:95%" /></a>
+  <br /><small>Polygon mesh only.</small>
+</div>
+
+<p>While the reconstruction pipeline has several parameters, which are directly passed to methods from the <a href="https://doc.cgal.org/latest/Shape_detection/index.html">Shape Detection package</a> and <a href="https://doc.cgal.org/latest/Shape_regularization/index.html">Shape Regularization package</a>, the Kinetic Space Partition and Kinetic Surface Reconstruction add a few parameters to give the user control over the reconstruction. The complexity of the surface can be adapted to favor simpler surfaces, i.e., with a lower polygon count.</p>
+
+<p>The occupancy labeling may consider the sides of the bounding boxes as empty space, e.g., for the reconstruction of objects, or individually as occupied space, e.g., the bottom or ground side in the case of aerial LiDAR. Also the bounding box for the space partition can be axis-aligned or oriented without transforming the input data.</p>
+
+<p>All reconstructions shown here have been created with the example <a href="https://github.com/CGAL/cgal/blob/master/Kinetic_surface_reconstruction/examples/Kinetic_surface_reconstruction/ksr_parameters.cpp">ksr_parameters.cpp</a>. The used parameters are listed in the <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Kinetic_surface_reconstruction/index.html#title9">Performance</a> chapter in the user manual and the <a href="https://files.inria.fr/titane/KSR42_dataset.zip">datasets</a> can be found on the <a href="https://team.inria.fr/titane/">INRIA Titane webpage</a>.</p>
+
+<div style="text-align:center;">
+  <a href="../../../../images/KSR_church_parameters.png"><img src="../../../../images/KSR_church_parameters.png" style="max-width:95%" /></a><br />
+  <br /><small>Reconstruction of aerial LiDAR of a church with different complexity parameters. <br />(middle right) shows the reconstruction with an axis-aligned bounding box and (right) sets the bottom bounding box face to be labeled as empty.</small>
+</div>
+
+<p><br /></p>
+<h3>Kinetic Space Partition</h3>
+
+<p>The major challenges of space decomposition and labeling methods are high computational complexity and a large number of small cells which are caused by the often indefinite extension of planar shapes. The Kinetic Space Partition overcomes these limitations by following a kinetic approach: planar input shapes are not extended indefinitely, but extend over time until they collide with other input shapes. A user-provided parameter to adjust the overall complexity of the partition limits the extension of shapes after a number of intersections with other shapes. Thus, the Kinetic Space Partition is a subset of a full plane arrangement and small input shapes are limited to only have a local impact on the partition.</p>
+<p>A subdivision by using an octree allows to split up the input shapes into smaller Kinetic Space Partitions and thus provide a significant speedup. The mechanism is fully transparent as the smaller partitions are fused into one conformal partition.</p>
+<div style="text-align:center;">
+  <a href="../../../../images/KSP_horse_octree.png"><img src="../../../../images/KSP_horse_octree.png" style="max-width:95%" /></a><br />
+  <br /><small>Point cloud of a horse split into 127 kinetic space partitions using an octree.</small>
+</div>
+
+<h4>Performance</h4>
+<p>The runtime of the Kinetic Surface Reconstruction depends mostly on the Shape Detection and the Kinetic Space Partition. The use of Shape Regularization is optional, but can increase the performance and the quality of the reconstruction, particularly in the case of architecture and piecewise-planar objects. The indoor point cloud used in the first two figures has around 3 million points and the reconstruction of the model takes around 132 seconds. The church model has around 1.2 million points and was reconstructed in around 36s.</p>
+
+<h4>Status</h4>
+<p>The Kinetic Shape Partition and the Kinetic Surface Reconstruction are already integrated in CGAL's master branch on the <a href="https://github.com/CGAL/cgal/">CGAL GitHub repository</a>, and will be officially released in the upcoming version of CGAL, CGAL 6.0, scheduled for June 2024.</p>
+
+<p><i class="bi bi-book"></i>
+<a href="https://cgal.geometryfactory.com/CGAL/doc/master/Kinetic_surface_reconstruction/index.html">Documentation of the package Kinetic Surface Reconstruction</a><br />
+<a href="https://cgal.geometryfactory.com/CGAL/doc/master/Kinetic_space_partition/index.html">Documentation of the package Kinetic Space Partition</a> <br /></p>
+
+<p><i class="bi bi-arrow-down-circle"></i>
+<a href="https://github.com/CGAL/cgal/tree/master">CGAL master branch on GitHub</a></p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3 blog-sidebar">
+        <h4>Recent Posts</h4>
+        <ul class="recent-posts">
+          
+            
+            
+            <li class="active"><a href="https://cgal.github.io/cgal-web/2024/05/29/Kinetic_surface_reconstruction/" class="active">New in CGAL: Kinetic Space Partition and Kinetic Surface Reconstruction</a>
+            <br><div style="font-size:12px">May 2024</div></li>
+          
+            
+            
+            <li class="active"><a href="https://cgal.github.io/cgal-web/news/2024/04/01/Bourbaki/" class="active">Welcome: Nicolas Bourbaki</a>
+            <br><div style="font-size:12px">April 2024</div></li>
+          
+            
+            
+            <li class="active"><a href="https://cgal.github.io/cgal-web/2024/02/28/cgal561/" class="active">CGAL 5.6.1 released</a>
+            <br><div style="font-size:12px">February 2024</div></li>
+          
+            
+            
+            <li class="active"><a href="https://cgal.github.io/cgal-web/2024/02/28/cgal554/" class="active">CGAL 5.5.4 released</a>
+            <br><div style="font-size:12px">February 2024</div></li>
+          
+        </ul>
+        <a href="https://cgal.github.io/cgal-web/news.html" class="btn">Older posts...</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="footer-copyright">
+            <div style="float: left;">
+              <a href="https://twitter.com/TheCGALProject" alt="The CGAL Project's Twitter">
+                <img src="https://cgal.github.io/cgal-web/images/icons/twitter.svg" class="center-block btn-dark-orange" alt="Twitter" height="18"></img>
+              </a>
+            </div>
+            &copy; 1995-2024 The CGAL Project. All rights reserved.
+            <div style="float: right;">
+              <a href="https://cgal.geometryfactory.com/CGAL/Members/wiki/Main_Page" alt="Password protected access to the Developer Wiki">
+                <i class="bi bi-file-lock fs-5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascripts -->
+    <script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
+      <script>
+        $(function () {
+          $('.bxslider').bxSlider({
+            auto: true,
+            speed: 0,
+            pause: 5000,
+            infiniteLoop: true,
+            touchEnabled: false,
+            pager: true,
+            pagerCustom: '.custom-pager',
+            controls: false,
+            onSliderLoad: function (currentIndex) {
+              $('.bxslider li').find('.slideTitle, .slideSubTitle').css({
+                transform: 'translate(0)',
+                opacity: 1
+              });
+              $('.bxslider li').eq(currentIndex).find('.slideTitle, .slideSubTitle').addClass('animatedTitle');
+            },
+            onSlideBefore: function ($slideElement, oldIndex, newIndex) {
+              $($slideElement).siblings().find('.slideTitle, .slideSubTitle').removeClass('animatedTitle');
+              $($slideElement).find('.slideTitle, .slideSubTitle').addClass('animatedTitle');
+              $($slideElement).siblings().find('.slide').removeClass('slideInFromRight');
+              $($slideElement).find('.slide').addClass('slideInFromRight');
+            }
+          });
+        });
+      </script>
+      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+    </body>
+</html>
+
