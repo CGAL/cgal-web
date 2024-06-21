@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2024-06-21T16:22:57+00:00</updated>
+ <updated>2024-06-21T16:31:49+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -40,7 +40,7 @@
 &lt;a href=&quot;https://doc.cgal.org/6.0/Manual/index.html&quot;&gt;CGAL-6.0-beta1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 6.0 offers the following improvements and new functionality over
-&lt;a href=&quot;../../../../2022/07/15/cgal55&quot;&gt;CGAL 5.6&lt;/a&gt;:&lt;/p&gt;
+&lt;a href=&quot;../../../../2023/07/28/cgal56&quot;&gt;CGAL 5.6&lt;/a&gt;:&lt;/p&gt;
 
 &lt;div class=&quot;product-detail-info&quot;&gt;
 
