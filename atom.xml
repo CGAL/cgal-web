@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2024-07-04T09:12:57+00:00</updated>
+ <updated>2024-07-04T09:30:43+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -36,15 +36,14 @@ Mostafa Ashraf.
 
 int main(int argc, char* argv[])
 {
-  using Point=CGAL::Simple_cartesian&lt;double&gt;::Point_3;
-  CGAL::Surface_mesh&lt;Point&gt; sm;
+  using Point=CGAL::Simple_cartesian&amp;lt;double&amp;gt;::Point_3;
+  CGAL::Surface_mesh&amp;lt;Point&amp;gt; sm;
   CGAL::IO::read_polygon_mesh(argv[1], sm);
   CGAL::draw(sm);
-  return EXIT_SUCCESS
+  return EXIT_SUCCESS;
 }
-&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;br /&gt;
 &lt;p&gt;However this solutions has several limitations. It is not easy to customize the drawing (changing the color or hiding of some elements); it is not possible to draw different data structures simultaneously; it is not easy to add interaction with the drawing or to use it in an higher level widget. All these limitations are solved in this new package: the CGAL Basic viewer.
 
 &lt;h3&gt;Basic viewer&lt;/h3&gt;
@@ -96,7 +95,7 @@ int main(int argc, char* argv[])
 
 &lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;
-&lt;/p&gt;&lt;/Point&gt;&lt;/double&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/p&gt;
 </content>
  </entry>
  
