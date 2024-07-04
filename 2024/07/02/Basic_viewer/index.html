@@ -155,13 +155,13 @@ Mostafa Ashraf.
 
 int main(int argc, char* argv[])
 {
-  using Point=CGAL::Simple_cartesian<double>::Point_3;
-  CGAL::Surface_mesh<Point> sm;
+  using Point=CGAL::Simple_cartesian&lt;double&gt;::Point_3;
+  CGAL::Surface_mesh&lt;Point&gt; sm;
   CGAL::IO::read_polygon_mesh(argv[1], sm);
   CGAL::draw(sm);
   return EXIT_SUCCESS;
 }
-&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
 
 <p>However this solutions has several limitations. It is not easy to customize the drawing (changing the color or hiding of some elements); it is not possible to draw different data structures simultaneously; it is not easy to add interaction with the drawing or to use it in an higher level widget. All these limitations are solved in this new package: the CGAL Basic viewer.
 
@@ -207,14 +207,14 @@ int main(int argc, char* argv[])
 </div>
 
 <h4>Status</h4>
-<p>The basic viewer package is already integrated in CGAL's master branch on the <a href="https://github.com/CGAL/cgal/">CGAL GitHub repository</a>, and will be officially released in the upcoming version of CGAL, CGAL 6.0. As future work, a version based on GLFW is planned, avoiding the dependency to Qt</p>
+<p>The basic viewer package is already integrated in CGAL's master branch on the <a href="https://github.com/CGAL/cgal/">CGAL GitHub repository</a>, and will be officially released in the upcoming version of CGAL, CGAL 6.0. The code was started by Mostafa Ashraf during his 2022 GSoC project, then Guillaume Damiand, who mentored the project, reworked large parts of the package. As future work, a version based on GLFW is planned, avoiding the dependency to Qt</p>
 
 <i class="bi bi-book"></i>
 <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Basic_viewer/index.html">Documentation of the Basic viewer package</a><br />
 
 <i class="bi bi-arrow-down-circle"></i>
 <a href="https://github.com/CGAL/cgal/tree/master">CGAL master branch on GitHub</a>
-</p></Point></double></code></pre>
+</p>
 
           </div>
         </div>
