@@ -29,11 +29,10 @@ int main(int argc, char* argv[])
   CGAL::Surface_mesh<Point> sm;
   CGAL::IO::read_polygon_mesh(argv[1], sm);
   CGAL::draw(sm);
-  return EXIT_SUCCESS
+  return EXIT_SUCCESS;
 }
 </code></pre>
 
-<br>
 <p>However this solutions has several limitations. It is not easy to customize the drawing (changing the color or hiding of some elements); it is not possible to draw different data structures simultaneously; it is not easy to add interaction with the drawing or to use it in an higher level widget. All these limitations are solved in this new package: the CGAL Basic viewer.
 
 <h3>Basic viewer</h3>
