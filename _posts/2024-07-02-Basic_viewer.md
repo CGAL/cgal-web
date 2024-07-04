@@ -13,7 +13,25 @@ Mostafa Ashraf.
 <h4>&deg;<a href="https://liris.cnrs.fr/">LIRIS / CNRS</a></h4>
 <br>
 
-<p>CGAL being the computational geometry algorithms library, it is often required to visualize a given data structure of the results of a certain algorithm. Since CGAL 4.13, global functions draw exist allowing to visualize (almost) all the CGAL data structures. Call a draw function opens a new interactive window showing the given model and allowing to navigate in the scene, show or hide some specific cells, show the interior of the model if any, etc. </p>
+<p>CGAL being the computational geometry algorithms library, it is often required to visualize a given data structure of the results of a certain algorithm. Since CGAL 4.13, global functions <code>draw</code> exist allowing to visualize (almost) all the CGAL data structures. Call a <code>draw</code> function opens a new interactive window showing the given model and allowing to navigate in the scene, show or hide some specific cells, show the interior of the model if any, etc. </p>
+
+<br>
+<p>The example below illustrates how we can use such a <code>draw</code> function to visualize an off file loaded into a <code>Surface_mesh</code> data structure.</p>
+
+<pre><code>
+#include &lt;CGAL/Simple_cartesian.h&gt;
+#include &lt;CGAL/Surface_mesh.h&gt;
+#include &lt;CGAL/draw_surface_mesh.h&gt;
+
+int main(int argc, char* argv[])
+{
+  using Point=CGAL::Simple_cartesian<double>::Point_3;
+  CGAL::Surface_mesh<Point> sm;
+  CGAL::IO::read_polygon_mesh(argv[1], sm);
+  CGAL::draw(sm);
+  return EXIT_SUCCESS
+}
+</code></pre>
 
 <p>However this solutions has several limitations. It is not easy to customize the drawing (changing the color or hiding of some elements); it is not possible to draw different data structures simultaneously; it is not easy to add interaction with the drawing or to use it in an higher level widget. All these limitations are solved in this new package: the CGAL Basic viewer.
 
