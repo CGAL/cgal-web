@@ -8,7 +8,7 @@ tags: [""]
 {% include JB/setup %}
 
 <h3><a href="https://perso.liris.cnrs.fr/guillaume.damiand/">Guillaume Damiand</a>&deg;,
-Mostafa Ashraf&#42;.
+Mostafa Ashraf.
 </h3>
 <h4>&deg;<a href="https://liris.cnrs.fr/">LIRIS / CNRS</a></h4>
 <br>
