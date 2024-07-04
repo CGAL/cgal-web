@@ -77,7 +77,7 @@ int main(int argc, char* argv[])
 </div>
 
 <h4>Status</h4>
-<p>The basic viewer package is already integrated in CGAL's master branch on the <a href="https://github.com/CGAL/cgal/">CGAL GitHub repository</a>, and will be officially released in the upcoming version of CGAL, CGAL 6.0. As future work, a version based on GLFW is planned, avoiding the dependency to Qt</p>
+<p>The basic viewer package is already integrated in CGAL's master branch on the <a href="https://github.com/CGAL/cgal/">CGAL GitHub repository</a>, and will be officially released in the upcoming version of CGAL, CGAL 6.0. The code was started by Mostafa Ashraf during his 2022 GSoC project, then Guillaume Damiand, who mentored the project, reworked large parts of the package. As future work, a version based on GLFW is planned, avoiding the dependency to Qt</p>
 
 <i class="bi bi-book"></i>
 <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Basic_viewer/index.html">Documentation of the Basic viewer package</a><br>
