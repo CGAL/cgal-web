@@ -5,97 +5,10 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2024-07-04T10:18:06+00:00</lastBuildDate>
-        <pubDate>2024-07-04T10:18:06+00:00</pubDate>
+        <lastBuildDate>2024-07-04T14:22:48+00:00</lastBuildDate>
+        <pubDate>2024-07-04T14:22:48+00:00</pubDate>
         <ttl>1800</ttl>
 
-
-        <item>
-                <title>New in CGAL: Basic viewer</title>
-                <description>
-&lt;h3&gt;&lt;a href=&quot;https://perso.liris.cnrs.fr/guillaume.damiand/&quot;&gt;Guillaume Damiand&lt;/a&gt;&amp;deg;,
-Mostafa Ashraf.
-&lt;/h3&gt;
-&lt;h4&gt;&amp;deg;&lt;a href=&quot;https://liris.cnrs.fr/&quot;&gt;LIRIS / CNRS&lt;/a&gt;&lt;/h4&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;CGAL being the computational geometry algorithms library, it is often required to visualize a given data structure of the results of a certain algorithm. Since CGAL 4.13, global functions &lt;code&gt;draw&lt;/code&gt; exist allowing to visualize (almost) all the CGAL data structures. Call a &lt;code&gt;draw&lt;/code&gt; function opens a new interactive window showing the given model and allowing to navigate in the scene, show or hide some specific cells, show the interior of the model if any, etc. &lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;The example below illustrates how we can use such a &lt;code&gt;draw&lt;/code&gt; function to visualize an off file loaded into a &lt;code&gt;Surface_mesh&lt;/code&gt; data structure.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-#include &amp;lt;CGAL/Simple_cartesian.h&amp;gt;
-#include &amp;lt;CGAL/Surface_mesh.h&amp;gt;
-#include &amp;lt;CGAL/draw_surface_mesh.h&amp;gt;
-
-int main(int argc, char* argv[])
-{
-  using Point=CGAL::Simple_cartesian&amp;lt;double&amp;gt;::Point_3;
-  CGAL::Surface_mesh&amp;lt;Point&amp;gt; sm;
-  CGAL::IO::read_polygon_mesh(argv[1], sm);
-  CGAL::draw(sm);
-  return EXIT_SUCCESS;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;However this solutions has several limitations. It is not easy to customize the drawing (changing the color or hiding of some elements); it is not possible to draw different data structures simultaneously; it is not easy to add interaction with the drawing or to use it in an higher level widget. All these limitations are solved in this new package: the CGAL Basic viewer.
-
-&lt;h3&gt;Basic viewer&lt;/h3&gt;
-
-&lt;p&gt;The goal of this package is:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;to add a possibility to easily customize the drawing by using the &lt;code&gt;Graphics_scene_options&lt;/code&gt; class;&lt;/li&gt;
-&lt;li&gt;add different data structures in a same viewer, by using the &lt;code&gt;Graphics_scene&lt;/code&gt; class;&lt;/li&gt;
-&lt;li&gt;use the basic viewer in a full Qt application, thanks to the widget &lt;code&gt;CGAL::Qt::Basic_viewer&lt;/code&gt;;&lt;/li&gt;
-&lt;li&gt;add some (limited) interaction with users, through different key pressed, by using the class &lt;code&gt;CGAL::Qt::QApplication_and_basic_viewer&lt;/code&gt; which regroups a &amp;lt;/code&amp;gt;Qt::QApplication and a &lt;code&gt;CGAL::Qt::Basic_viewer&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/draw_surface_mesh_vcolor.png&quot;&gt;&lt;img src=&quot;../../../../images/draw_surface_mesh_vcolor.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
-  &lt;br /&gt;&lt;small&gt;Example of tuned drawing of a 3D surface mesh where some vertex colors are changed.&lt;/small&gt;
-&lt;/div&gt;
-
-&lt;br /&gt;
-&lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/draw_surface_height.png&quot;&gt;&lt;img src=&quot;../../../../images/draw_surface_height.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
-  &lt;br /&gt;&lt;small&gt;Example of mesh drawing with a color for each face computed depending on its height.&lt;/small&gt;
-&lt;/div&gt;
-
-&lt;br /&gt;
-&lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/draw_mesh_and_points.png&quot;&gt;&lt;img src=&quot;../../../../images/draw_mesh_and_points.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
-  &lt;br /&gt;&lt;small&gt;Example of drawing of a point cloud and a polyhedron in a same viewer.&lt;/small&gt;
-&lt;/div&gt;
-
-&lt;br /&gt;
-&lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/draw_several_windows.png&quot;&gt;&lt;img src=&quot;../../../../images/draw_several_windows.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
-  &lt;br /&gt;&lt;small&gt;Example of drawing of two Basic_viewer side by side.&lt;/small&gt;
-&lt;/div&gt;
-
-&lt;br /&gt;
-&lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/draw_surface_mesh_small_faces.png&quot;&gt;&lt;img src=&quot;../../../../images/draw_surface_mesh_small_faces.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
-  &lt;br /&gt;&lt;small&gt;Two examples of drawing of a mesh with small faces in red. Left: With the initial threshold. Right: After having increased the threshold.&lt;/small&gt;
-&lt;/div&gt;
-
-&lt;h4&gt;Status&lt;/h4&gt;
-&lt;p&gt;The basic viewer package is already integrated in CGAL&apos;s master branch on the &lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;, and will be officially released in the upcoming version of CGAL, CGAL 6.0. The code was started by Mostafa Ashraf during his 2022 GSoC project, then Guillaume Damiand, who mentored the project, reworked large parts of the package. As future work, a version based on GLFW is planned, avoiding the dependency to Qt&lt;/p&gt;
-
-&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
-&lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/master/Basic_viewer/index.html&quot;&gt;Documentation of the Basic viewer package&lt;/a&gt;&lt;br /&gt;
-
-&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
-&lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;
-&lt;/p&gt;
-</description>
-                <link>http://www.cgal.org/2024/07/02/Basic_viewer/</link>
-                <guid>http://www.cgal.org/2024/07/02/Basic_viewer</guid>
-                <pubDate>2024-07-02T00:00:00+00:00</pubDate>
-        </item>
 
         <item>
                 <title>New release 6.0 beta 1</title>
