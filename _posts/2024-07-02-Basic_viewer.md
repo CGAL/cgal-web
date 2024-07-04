@@ -25,8 +25,8 @@ Mostafa Ashraf.
 
 int main(int argc, char* argv[])
 {
-  using Point=CGAL::Simple_cartesian<double>::Point_3;
-  CGAL::Surface_mesh<Point> sm;
+  using Point=CGAL::Simple_cartesian&lt;double&gt;::Point_3;
+  CGAL::Surface_mesh&lt;Point&gt; sm;
   CGAL::IO::read_polygon_mesh(argv[1], sm);
   CGAL::draw(sm);
   return EXIT_SUCCESS;
