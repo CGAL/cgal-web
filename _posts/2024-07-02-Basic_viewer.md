@@ -1,0 +1,68 @@
+---
+layout: post
+title: "New in CGAL: Basic viewer"
+description: ""
+category:
+tags: [""]
+---
+{% include JB/setup %}
+
+<h3><a href="https://perso.liris.cnrs.fr/guillaume.damiand/">Guillaume Damiand</a>&deg;,
+Mostafa Ashraf&#42;.
+</h3>
+<h4>&deg;<a href="https://liris.cnrs.fr/">LIRIS / CNRS</a></h4>
+<br>
+
+<p>CGAL being the computational geometry algorithms library, it is often required to visualize a given data structure of the results of a certain algorithm. Since CGAL 4.13, global functions draw exist allowing to visualize (almost) all the CGAL data structures. Call a draw function opens a new interactive window showing the given model and allowing to navigate in the scene, show or hide some specific cells, show the interior of the model if any, etc. </p>
+
+<p>However this solutions has several limitations. It is not easy to customize the drawing (changing the color or hiding of some elements); it is not possible to draw different data structures simultaneously; it is not easy to add interaction with the drawing or to use it in an higher level widget. All these limitations are solved in this new package: the CGAL Basic viewer.
+
+<h3>Basic viewer</h3>
+
+<p>The goal of this package is:</p>
+
+<ul>
+<li>to add a possibility to easily customize the drawing by using the <code>Graphics_scene_options</code> class;</li>
+<li>add different data structures in a same viewer, by using the <code>Graphics_scene</code> class;</li>
+<li>use the basic viewer in a full Qt application, thanks to the widget <code>CGAL::Qt::Basic_viewer</code>;</li>
+<li>add some (limited) interaction with users, through different key pressed, by using the class <code>CGAL::Qt::QApplication_and_basic_viewer</code> which regroups a </code>Qt::QApplication and a <code>CGAL::Qt::Basic_viewer</code>.</li>
+</ul>
+
+
+<div style="text-align:center;">
+  <a href="../../../../images/draw_surface_mesh_vcolor.png"><img src="../../../../images/draw_surface_mesh_vcolor.png" style="max-width:95%"/></a>
+  <br><small>Example of tuned drawing of a 3D surface mesh where some vertex colors are changed.</small>
+</div>
+
+<br>
+<div style="text-align:center;">
+  <a href="../../../../images/draw_surface_height.png"><img src="../../../../images/draw_surface_height.png" style="max-width:95%"/></a>
+  <br><small>Example of mesh drawing with a color for each face computed depending on its height.</small>
+</div>
+
+<br>
+<div style="text-align:center;">
+  <a href="../../../../images/draw_mesh_and_points.png"><img src="../../../../images/draw_mesh_and_points.png" style="max-width:95%"/></a>
+  <br><small>Example of drawing of a point cloud and a polyhedron in a same viewer.</small>
+</div>
+
+<br>
+<div style="text-align:center;">
+  <a href="../../../../images/draw_several_windows.png"><img src="../../../../images/draw_several_windows.png" style="max-width:95%"/></a>
+  <br><small>Example of drawing of two Basic_viewer side by side.</small>
+</div>
+
+<br>
+<div style="text-align:center;">
+  <a href="../../../../images/draw_surface_mesh_small_faces.png"><img src="../../../../images/draw_surface_mesh_small_faces.png" style="max-width:95%"/></a>
+  <br><small>Two examples of drawing of a mesh with small faces in red. Left: With the initial threshold. Right: After having increased the threshold.</small>
+</div>
+
+<h4>Status</h4>
+<p>The basic viewer package is already integrated in CGAL's master branch on the <a href="https://github.com/CGAL/cgal/">CGAL GitHub repository</a>, and will be officially released in the upcoming version of CGAL, CGAL 6.0. As future work, a version based on GLFW is planned, avoiding the dependency to Qt</p>
+
+<i class="bi bi-book"></i>
+<a href="https://cgal.geometryfactory.com/CGAL/doc/master/Basic_viewer/index.html">Documentation of the Basic viewer package</a><br>
+
+<i class="bi bi-arrow-down-circle"></i>
+<a href="https://github.com/CGAL/cgal/tree/master">CGAL master branch on GitHub</a>
