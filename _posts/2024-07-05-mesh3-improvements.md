@@ -29,9 +29,9 @@ mesh generation algorithm to represent the input surface in a more accurate way,
 <br>
 <p>Recent releases of CGAL have introduced improvements to the 3D Tetrahedral Mesh Generation package:
 detection and protection of triple lines from labeled images,
-use of weighted labeled images,
-dealing with self-intersecting input surfaces,
-and a new approximation error criterion for polyline features.</p>
+generation and use of weighted labeled images,
+a new approximation error criterion for polyline features,
+and the ability to deal with self-intersecting input surfaces.</p>
 
 <br>
 <h3>Triple lines from labeled images</h3>
@@ -90,20 +90,25 @@ presents challenges. A new method that combines feature detection and weighted l
 designed and implemented in CGAL, achieving smooth and feature preserving output meshes.
 This method leverages the best of these two new functionalities.</p>
 
-<!--
-<div style="text-align:center;">
-  <a href="../../../../images/volumetric_wrap.png"><img src="../../../../images/volumetric_wrap.png" style="max-width:95%"/></a><br>
-  <br><small>Volumetric mesh of the notoriously painful input <a href="https://ten-thousand-models.appspot.com/detail.html?file_id=996816">996816.stl</a> (Thingi10k). 380k cells in ~10s.</small>
-</div>
--->
-
-<br>
-<h3>Self-intersecting input surfaces</h3>
-
 
 <br>
 <h3>Approximation Criterion on Feature Edges</h3>
 
+<p>A Delaunay refinement algorithm is guided by meshing criteria that trigger Steiner vertices insertions,
+until they are satisfied.
+The list of CGAL meshing criteria has been enriched with a new criterion that enables the user to
+define an upper bound on the distance between the input feature graph and the output feature edges.</p>
+
+<p>The following example shows how to use this new criterion, called <i>edge_distance</i>:
+<a href="https://doc.cgal.org/6.0-beta1/Mesh_3/Mesh_3_2mesh_polyhedral_domain_with_edge_distance_8cpp-example.html">
+mesh_polyhedral_domain_with_edge_distance.cpp</a>.</p>
+
+#TODO : add image here to illustrate edge_distance
+
+<br>
+<h3>Self-intersecting input surfaces</h3>
+
+#TODO : write another news entry on that topic
 
 <h3>Status</h3>
 
