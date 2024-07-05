@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2024-07-05T08:02:25+00:00</updated>
+ <updated>2024-07-05T12:45:06+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -37,7 +37,7 @@ mesh generation algorithm to represent the input surface in a more accurate way,
 &lt;/div&gt;
 --&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;Recent releases of CGAL have introduced improvements to the 3D Tetrahedral Mesh Generation package:
 detection and protection of triple lines from labeled images,
 use of weighted labeled images,
@@ -79,7 +79,7 @@ It consists in generating a second input image, made of integer coefficients cal
 smoother domain boundaries. The 3D image of weights can be generated using &lt;i&gt;CGAL::Mesh_3::generate_label_weights()&lt;/i&gt;.&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/mesh3_weigthed_images.png&quot;&gt;&lt;img src=&quot;../../../../images/mesh3_weigthed_images.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+  &lt;a href=&quot;../../../../images/mesh3_weighted_images.png&quot;&gt;&lt;img src=&quot;../../../../images/mesh3_weighted_images.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
   &lt;br /&gt;&lt;small&gt;Mesh generation from labeled image without weights (left, 88,000 vertices)
    and with weights (right, 67,000 vertices).&lt;/small&gt;
 &lt;/div&gt;
