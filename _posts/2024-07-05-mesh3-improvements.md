@@ -26,7 +26,7 @@ mesh generation algorithm to represent the input surface in a more accurate way,
 </div>
 -->
 
-<br><br>
+<br>
 <p>Recent releases of CGAL have introduced improvements to the 3D Tetrahedral Mesh Generation package:
 detection and protection of triple lines from labeled images,
 use of weighted labeled images,
@@ -68,7 +68,7 @@ It consists in generating a second input image, made of integer coefficients cal
 smoother domain boundaries. The 3D image of weights can be generated using <i>CGAL::Mesh_3::generate_label_weights()</i>.</p>
 
 <div style="text-align:center;">
-  <a href="../../../../images/mesh3_weigthed_images.png"><img src="../../../../images/mesh3_weigthed_images.png" style="max-width:95%"/></a><br>
+  <a href="../../../../images/mesh3_weighted_images.png"><img src="../../../../images/mesh3_weighted_images.png" style="max-width:95%"/></a><br>
   <br><small>Mesh generation from labeled image without weights (left, 88,000 vertices)
    and with weights (right, 67,000 vertices).</small>
 </div>
@@ -87,8 +87,6 @@ This method leverages the best of these two new functionalities.</p>
   <br><small>Volumetric mesh of the notoriously painful input <a href="https://ten-thousand-models.appspot.com/detail.html?file_id=996816">996816.stl</a> (Thingi10k). 380k cells in ~10s.</small>
 </div>
 -->
-
-
 
 <br>
 <h3>Self-intersecting input surfaces</h3>
