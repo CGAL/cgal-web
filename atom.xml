@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2024-07-05T12:45:06+00:00</updated>
+ <updated>2024-07-05T13:19:47+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Mesh_3 improvements</title>
-   <link href="http://www.cgal.org/news/2024/07/05/mesh3-improvements/"/>
+   <link href="http://www.cgal.org/2024/07/05/mesh3-improvements/"/>
    <updated>2024-07-05T00:00:00+00:00</updated>
-   <id>http://www.cgal.org/news/2024/07/05/mesh3-improvements</id>
+   <id>http://www.cgal.org/2024/07/05/mesh3-improvements</id>
    <content type="html">
 &lt;h3&gt;&lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Jane Tournois&lt;/a&gt;&lt;/h3&gt;
 &lt;h4&gt;&lt;a href=&quot;http://www.geometryfactory.com&quot; target=&quot;_blank&quot;&gt;GeometryFactory&lt;/a&gt;&lt;/h4&gt;
