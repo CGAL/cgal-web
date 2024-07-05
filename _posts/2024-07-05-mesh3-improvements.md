@@ -57,6 +57,15 @@ are added to the feature graph of the domain for feature protection.</p>
 </ul>
 </p>
 
+<div style="text-align:center;">
+  <a href="../../../../images/mesh3_triple_lines_protection.png"><img src="../../../../images/mesh3_triple_lines_protection.png" style="max-width:95%"/></a><br>
+  <br><small>Mesh generation from labeled image without (left)
+   and with triple lines detection and protection (right).
+   The polylines lying at the intersection of three or more subdomains are
+   a lot more precise with a lot fewer vertices.</small>
+</div>
+
+
 <br>
 <h3>Weighted Labeled Images</h3>
 
