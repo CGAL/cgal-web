@@ -2,7 +2,7 @@
 layout: post
 title: "Mesh_3 improvements"
 description: "Mesh_3 improvements in CGAL-6.0"
-category: "news"
+category:
 tags: [""]
 ---
 {% include JB/setup %}
