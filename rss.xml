@@ -5,8 +5,8 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2024-07-05T13:19:47+00:00</lastBuildDate>
-        <pubDate>2024-07-05T13:19:47+00:00</pubDate>
+        <lastBuildDate>2024-07-05T13:49:44+00:00</lastBuildDate>
+        <pubDate>2024-07-05T13:49:44+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -62,6 +62,14 @@ are added to the feature graph of the domain for feature protection.&lt;/p&gt;
     that lie at the intersection of two or more subdomains and the bounding box of the input labeled image.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;a href=&quot;../../../../images/mesh3_triple_lines_protection.png&quot;&gt;&lt;img src=&quot;../../../../images/mesh3_triple_lines_protection.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+  &lt;br /&gt;&lt;small&gt;Mesh generation from labeled image without (left)
+   and with triple lines detection and protection (right).
+   The polylines lying at the intersection of three or more subdomains are
+   a lot more precise with a lot fewer vertices.&lt;/small&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h3&gt;Weighted Labeled Images&lt;/h3&gt;
