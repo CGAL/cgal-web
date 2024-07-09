@@ -16,7 +16,7 @@ Mostafa Ashraf.
 <p>Visualizing the data structures used by CGAL's algorithms can help understand and analyze results. Since CGAL 4.13, the global function <code>CGAL::draw(...)</code> can be used to visualize (almost) all CGAL data structures including point sets, polygon meshes, cell complexes, and straight skeletons. Calling <code>CGAL::draw(...)</code> opens an interactive window displaying the data structure, enabling users to navigate the scene, show or hide specific elements, and even view the interior of the model, if applicable.</p>
 
 <br>
-<p>The example below illustrates how we can use such a <code>draw</code> function to visualize an off file loaded into a <code>Surface_mesh</code> data structure.</p>
+<p>The example below illustrates how we can use the function <code>CGAL::draw()</code> to visualize an OFF file loaded into a <code>CGAL::Surface_mesh</code> data structure.</p>
 
 <pre><code>
 #include &lt;CGAL/Simple_cartesian.h&gt;
