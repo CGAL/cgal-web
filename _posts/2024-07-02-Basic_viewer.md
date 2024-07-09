@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "New in CGAL: Basic viewer"
+title: "New in CGAL: Basic Viewer"
 description: ""
 category:
 tags: [""]
