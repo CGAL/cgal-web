@@ -13,7 +13,7 @@ Mostafa Ashraf.
 <h4>&deg;<a href="https://liris.cnrs.fr/">LIRIS / CNRS</a></h4>
 <br>
 
-<p>CGAL being the computational geometry algorithms library, it is often required to visualize a given data structure of the results of a certain algorithm. Since CGAL 4.13, global functions <code>draw</code> exist allowing to visualize (almost) all the CGAL data structures. Call a <code>draw</code> function opens a new interactive window showing the given model and allowing to navigate in the scene, show or hide some specific cells, show the interior of the model if any, etc. </p>
+<p>Visualizing the data structures used by CGAL's algorithms can help understand and analyze results. Since CGAL 4.13, the global function <code>CGAL::draw(...)</code> can be used to visualize (almost) all CGAL data structures including point sets, polygon meshes, cell complexes, and straight skeletons. Calling <code>CGAL::draw(...)</code> opens an interactive window displaying the data structure, enabling users to navigate the scene, show or hide specific elements, and even view the interior of the model, if applicable.</p>
 
 <br>
 <p>The example below illustrates how we can use such a <code>draw</code> function to visualize an off file loaded into a <code>Surface_mesh</code> data structure.</p>
