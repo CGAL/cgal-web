@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2024-07-09T09:45:30+00:00</updated>
+ <updated>2024-07-09T09:46:01+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -88,7 +88,9 @@ int main(int argc, char* argv[])
 &lt;/div&gt;
 
 &lt;h4&gt;Status&lt;/h4&gt;
-&lt;p&gt;The basic viewer package is already integrated in CGAL&apos;s master branch on the &lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;, and will be officially released in the upcoming version of CGAL, CGAL 6.0. The code was started by Mostafa Ashraf during his 2022 GSoC project, then Guillaume Damiand, who mentored the project, reworked large parts of the package. As future work, a version based on GLFW is planned, avoiding the dependency to Qt&lt;/p&gt;
+&lt;p&gt;This work was initiated by Mostafa Ashraf during his 2022 GSoC project. Guillaume Damiand, who mentored the GSoC project, reworked large parts of the package afterwards. As future work, a version based on GLFW is planned, avoiding the dependency to Qt.&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;The Basic Viewer package is already integrated in CGAL&apos;s master branch on the &lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;, and will be officially released in the upcoming version of CGAL, CGAL 6.0.&lt;/p&gt;
 
 &lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/master/Basic_viewer/index.html&quot;&gt;Documentation of the Basic viewer package&lt;/a&gt;&lt;br /&gt;
