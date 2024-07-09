@@ -42,7 +42,7 @@ int main(int argc, char* argv[])
 <ul>
 <li>to enable easy customization of the drawing by using the <code>Graphics_scene_options</code> class;</li>
 <li>to enable different data structures within the same window, by using the <code>Graphics_scene</code> class;</li>
-<li>use the basic viewer in a full Qt application, thanks to the widget <code>CGAL::Qt::Basic_viewer</code>;</li>
+<li>to use the basic viewer in a full Qt application, thanks to the widget <code>CGAL::Qt::Basic_viewer</code>;</li>
 <li>add some (limited) interaction with users, through different key pressed, by using the class <code>CGAL::Qt::QApplication_and_basic_viewer</code> which regroups a </code>Qt::QApplication and a <code>CGAL::Qt::Basic_viewer</code>.</li>
 </ul>
 
