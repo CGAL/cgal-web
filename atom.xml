@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2024-07-09T09:44:34+00:00</updated>
+ <updated>2024-07-09T09:45:30+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -51,10 +51,10 @@ int main(int argc, char* argv[])
 &lt;p&gt;The goal of this package is:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;to add a possibility to easily customize the drawing by using the &lt;code&gt;Graphics_scene_options&lt;/code&gt; class;&lt;/li&gt;
-&lt;li&gt;add different data structures in a same viewer, by using the &lt;code&gt;Graphics_scene&lt;/code&gt; class;&lt;/li&gt;
-&lt;li&gt;use the basic viewer in a full Qt application, thanks to the widget &lt;code&gt;CGAL::Qt::Basic_viewer&lt;/code&gt;;&lt;/li&gt;
-&lt;li&gt;add some (limited) interaction with users, through different key pressed, by using the class &lt;code&gt;CGAL::Qt::QApplication_and_basic_viewer&lt;/code&gt; which regroups a &amp;lt;/code&amp;gt;Qt::QApplication and a &lt;code&gt;CGAL::Qt::Basic_viewer&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;to enable easy customization of the drawing by using the &lt;code&gt;Graphics_scene_options&lt;/code&gt; class;&lt;/li&gt;
+&lt;li&gt;to enable different data structures within the same window, by using the &lt;code&gt;Graphics_scene&lt;/code&gt; class;&lt;/li&gt;
+&lt;li&gt;to use the basic viewer in a full Qt application, thanks to the widget &lt;code&gt;CGAL::Qt::Basic_viewer&lt;/code&gt;;&lt;/li&gt;
+&lt;li&gt;to add some (limited) interaction with users, through different keyboard shortcuts, by using the class &lt;code&gt;CGAL::Qt::QApplication_and_basic_viewer&lt;/code&gt; which regroups a &amp;lt;/code&amp;gt;Qt::QApplication and a &lt;code&gt;CGAL::Qt::Basic_viewer&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 
