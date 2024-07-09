@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2024-07-05T15:06:21+00:00</updated>
+ <updated>2024-07-09T09:42:23+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -13,123 +13,89 @@
 
  
  <entry>
-   <title>Mesh_3 improvements</title>
-   <link href="http://www.cgal.org/2024/07/05/mesh3-improvements/"/>
-   <updated>2024-07-05T00:00:00+00:00</updated>
-   <id>http://www.cgal.org/2024/07/05/mesh3-improvements</id>
+   <title>New in CGAL: Basic Viewer</title>
+   <link href="http://www.cgal.org/2024/07/02/Basic_viewer/"/>
+   <updated>2024-07-02T00:00:00+00:00</updated>
+   <id>http://www.cgal.org/2024/07/02/Basic_viewer</id>
    <content type="html">
-&lt;h3&gt;&lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Jane Tournois&lt;/a&gt;&lt;/h3&gt;
-&lt;h4&gt;&lt;a href=&quot;http://www.geometryfactory.com&quot; target=&quot;_blank&quot;&gt;GeometryFactory&lt;/a&gt;&lt;/h4&gt;
+&lt;h3&gt;&lt;a href=&quot;https://perso.liris.cnrs.fr/guillaume.damiand/&quot;&gt;Guillaume Damiand&lt;/a&gt;&amp;deg;,
+Mostafa Ashraf.
+&lt;/h3&gt;
+&lt;h4&gt;&amp;deg;&lt;a href=&quot;https://liris.cnrs.fr/&quot;&gt;LIRIS / CNRS&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;CGAL being the computational geometry algorithms library, it is often required to visualize a given data structure of the results of a certain algorithm. Since CGAL 4.13, global functions &lt;code&gt;draw&lt;/code&gt; exist allowing to visualize (almost) all the CGAL data structures. Call a &lt;code&gt;draw&lt;/code&gt; function opens a new interactive window showing the given model and allowing to navigate in the scene, show or hide some specific cells, show the interior of the model if any, etc. &lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;Introduced in CGAL 3.5, the package
-&lt;a href=&quot;https://doc.cgal.org/latest/Manual/packages.html#PkgMesh3&quot; text=&quot;3D Mesh Generation&quot;&gt;3D Mesh Generation&lt;/a&gt;
-is designed to generate a isotropic simplicial meshes discretizing 3D domains.
-Since then, multiple improvements in mesh quality, performances, and versatility have been made available in CGAL.
-Lately, CGAL authors have focused more on the quality of the output mesh, the ability of the
-mesh generation algorithm to represent the input surface in a more accurate way, for a wider range of input data types.
-&lt;/p&gt;
+&lt;p&gt;The example below illustrates how we can use such a &lt;code&gt;draw&lt;/code&gt; function to visualize an off file loaded into a &lt;code&gt;Surface_mesh&lt;/code&gt; data structure.&lt;/p&gt;
 
-&lt;!--
-&lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/christmas_wrap.png&quot;&gt;&lt;img src=&quot;../../../../images/christmas_wrap.png&quot; style=&quot;max-width:95%&quot;/&gt;&lt;/a&gt;&lt;br&gt;
-  &lt;br&gt;&lt;small&gt;Season&apos;s wrappings.&lt;/small&gt;
-&lt;/div&gt;
---&gt;
+&lt;pre&gt;&lt;code&gt;
+#include &amp;lt;CGAL/Simple_cartesian.h&amp;gt;
+#include &amp;lt;CGAL/Surface_mesh.h&amp;gt;
+#include &amp;lt;CGAL/draw_surface_mesh.h&amp;gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;Recent releases of CGAL have introduced improvements to the 3D Tetrahedral Mesh Generation package:
-detection and protection of triple lines from labeled images,
-generation and use of weighted labeled images,
-a new approximation error criterion for polyline features,
-and the ability to deal with self-intersecting input surfaces.&lt;/p&gt;
+int main(int argc, char* argv[])
+{
+  using Point=CGAL::Simple_cartesian&amp;lt;double&amp;gt;::Point_3;
+  CGAL::Surface_mesh&amp;lt;Point&amp;gt; sm;
+  CGAL::IO::read_polygon_mesh(argv[1], sm);
+  CGAL::draw(sm);
+  return EXIT_SUCCESS;
+}
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3&gt;Triple lines from labeled images&lt;/h3&gt;
+&lt;p&gt;However this solutions has several limitations. It is not easy to customize the drawing (changing the color or hiding of some elements); it is not possible to draw different data structures simultaneously; it is not easy to add interaction with the drawing or to use it in an higher level widget. All these limitations are solved in this new package: the CGAL Basic viewer.
 
-&lt;p&gt;CGAL&apos;s tetrahedral mesh generation algorithm is able to compute tetrahedral meshes from 3D segmented images.
-For all types of inputs, detection and construction of one-dimensional features must be done a priori for the
-feature protection algorithm to be able to represent them properly in the generated mesh.
-In 3D segmented images, such features correspond to the intersections of the bounding box of the image with the surfaces defined by the image, as well as polylines that lie at the intersection of three or more subdomains (including the outside).&lt;/p&gt;
+&lt;h3&gt;Basic viewer&lt;/h3&gt;
 
-&lt;p&gt;The article
-&lt;a href=&quot;https://opus4.kobv.de/opus4-zib/frontdoor/index/index/docId/274&quot;&gt;&lt;i&gt;Hege, H. C., Seebass, M., Stalling, D., &amp;amp; Zöckler, M. (1997), A generalized marching cubes algorithm based on non-binary classifications&lt;/i&gt;&lt;/a&gt;, provides a list of possible voxel configurations. This description has been generalized for tetrahedral mesh generation needs, and
-implemented in CGAL.&lt;/p&gt;
+&lt;p&gt;The goal of this package is:&lt;/p&gt;
 
-&lt;p&gt;After feature lines detection, similarly to what is done for polyhedral surfaces, the polyline features
-are added to the feature graph of the domain for feature protection.&lt;/p&gt;
-
-&lt;p&gt;Two detection functors are provided :
 &lt;ul&gt;
-  &lt;li&gt;&lt;i&gt;CGAL::Detect_features_in_image()&lt;/i&gt;, that detects and constructs all
-    polylines lying at the intersection of three or more subdomains, and&lt;/li&gt;
-  &lt;li&gt;&lt;i&gt;CGAL::Detect_features_on_image_bbox()&lt;/i&gt;, that detects and constructs the polylines
-    that lie at the intersection of two or more subdomains and the bounding box of the input labeled image.&lt;/li&gt;
+&lt;li&gt;to add a possibility to easily customize the drawing by using the &lt;code&gt;Graphics_scene_options&lt;/code&gt; class;&lt;/li&gt;
+&lt;li&gt;add different data structures in a same viewer, by using the &lt;code&gt;Graphics_scene&lt;/code&gt; class;&lt;/li&gt;
+&lt;li&gt;use the basic viewer in a full Qt application, thanks to the widget &lt;code&gt;CGAL::Qt::Basic_viewer&lt;/code&gt;;&lt;/li&gt;
+&lt;li&gt;add some (limited) interaction with users, through different key pressed, by using the class &lt;code&gt;CGAL::Qt::QApplication_and_basic_viewer&lt;/code&gt; which regroups a &amp;lt;/code&amp;gt;Qt::QApplication and a &lt;code&gt;CGAL::Qt::Basic_viewer&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/p&gt;
+
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/mesh3_triple_lines_protection.png&quot;&gt;&lt;img src=&quot;../../../../images/mesh3_triple_lines_protection.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
-  &lt;br /&gt;&lt;small&gt;Mesh generation from labeled image without (left)
-   and with triple lines detection and protection (right).
-   The polylines lying at the intersection of three or more subdomains are
-   a lot more precise with a lot fewer vertices.&lt;/small&gt;
+  &lt;a href=&quot;../../../../images/draw_surface_mesh_vcolor.png&quot;&gt;&lt;img src=&quot;../../../../images/draw_surface_mesh_vcolor.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
+  &lt;br /&gt;&lt;small&gt;Example of tuned drawing of a 3D surface mesh where some vertex colors are changed.&lt;/small&gt;
 &lt;/div&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3&gt;Weighted Labeled Images&lt;/h3&gt;
-
-&lt;p&gt;When a segmented image is given as input for tetrahedral mesh generation,
-the generated mesh surface sometimes sticks too closely to the voxels surface, causing an aliasing effect. A solution to generate
-a smooth and accurate output surface was described by Stalling et al in
-&lt;a href=&quot;https://opus4.kobv.de/opus4-zib/frontdoor/index/index/docId/382&quot;&gt;&lt;i&gt;Stalling, D., Zöckler, M., Sander, O., &amp;amp; Hege, H. C. (1998), Weighted labels for 3D image segmentation&lt;/i&gt;&lt;/a&gt;.
-It consists in generating a second input image, made of integer coefficients called weights, and use those weights to define
-smoother domain boundaries. The 3D image of weights can be generated using &lt;i&gt;CGAL::Mesh_3::generate_label_weights()&lt;/i&gt;.&lt;/p&gt;
-
-&lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/mesh3_weighted_images.png&quot;&gt;&lt;img src=&quot;../../../../images/mesh3_weighted_images.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
-  &lt;br /&gt;&lt;small&gt;Mesh generation from labeled image without weights (left, 88,000 vertices)
-   and with weights (right, 67,000 vertices).&lt;/small&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;The following example shows how to use weighted labeled images: &lt;a href=&quot;https://doc.cgal.org/latest/Mesh_3/Mesh_3_2mesh_3D_weighted_image_8cpp-example.html&quot;&gt;mesh_3D_weighted_image.cpp&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Utilizing tetrahedral mesh generation from labeled images, incorporating both feature detection and weighted labels,
-presents challenges. A new method that combines feature detection and weighted labels has been
-designed and implemented in CGAL, achieving smooth and feature preserving output meshes.
-This method leverages the best of these two new functionalities.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3&gt;Approximation Criterion on Feature Edges&lt;/h3&gt;
-
-&lt;p&gt;A Delaunay refinement algorithm is guided by meshing criteria that trigger Steiner vertices insertions,
-until they are satisfied.
-The list of CGAL meshing criteria has been enriched with a new criterion that enables the user to
-define an upper bound on the distance between the input feature graph and the output feature edges.&lt;/p&gt;
-
-&lt;p&gt;The following example shows how to use this new criterion, called &lt;i&gt;edge_distance&lt;/i&gt;:
-&lt;a href=&quot;https://doc.cgal.org/6.0-beta1/Mesh_3/Mesh_3_2mesh_polyhedral_domain_with_edge_distance_8cpp-example.html&quot;&gt;
-mesh_polyhedral_domain_with_edge_distance.cpp&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;#TODO : add image here to illustrate edge_distance&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3&gt;Self-intersecting input surfaces&lt;/h3&gt;
-
-&lt;p&gt;#TODO : write another news entry on that topic&lt;/p&gt;
-
-&lt;h3&gt;Status&lt;/h3&gt;
-
-&lt;p&gt;All these new improvements are already integrated in CGAL&apos;s master branch on the
-&lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;, and has just been officially released
-in the latest version of CGAL, CGAL 6.0-beta1.&lt;/p&gt;
-
-&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
-&lt;a href=&quot;https://doc.cgal.org/latest/Manual/packages.html#PkgMesh3&quot;&gt;Documentation of the package Mesh_3&lt;/a&gt;
 &lt;br /&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;a href=&quot;../../../../images/draw_surface_height.png&quot;&gt;&lt;img src=&quot;../../../../images/draw_surface_height.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
+  &lt;br /&gt;&lt;small&gt;Example of mesh drawing with a color for each face computed depending on its height.&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;br /&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;a href=&quot;../../../../images/draw_mesh_and_points.png&quot;&gt;&lt;img src=&quot;../../../../images/draw_mesh_and_points.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
+  &lt;br /&gt;&lt;small&gt;Example of drawing of a point cloud and a polyhedron in a same viewer.&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;br /&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;a href=&quot;../../../../images/draw_several_windows.png&quot;&gt;&lt;img src=&quot;../../../../images/draw_several_windows.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
+  &lt;br /&gt;&lt;small&gt;Example of drawing of two Basic_viewer side by side.&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;br /&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;a href=&quot;../../../../images/draw_surface_mesh_small_faces.png&quot;&gt;&lt;img src=&quot;../../../../images/draw_surface_mesh_small_faces.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
+  &lt;br /&gt;&lt;small&gt;Two examples of drawing of a mesh with small faces in red. Left: With the initial threshold. Right: After having increased the threshold.&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;h4&gt;Status&lt;/h4&gt;
+&lt;p&gt;The basic viewer package is already integrated in CGAL&apos;s master branch on the &lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;, and will be officially released in the upcoming version of CGAL, CGAL 6.0. The code was started by Mostafa Ashraf during his 2022 GSoC project, then Guillaume Damiand, who mentored the project, reworked large parts of the package. As future work, a version based on GLFW is planned, avoiding the dependency to Qt&lt;/p&gt;
+
+&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
+&lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/master/Basic_viewer/index.html&quot;&gt;Documentation of the Basic viewer package&lt;/a&gt;&lt;br /&gt;
+
 &lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
-&lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;
+&lt;/p&gt;
 </content>
  </entry>
  
