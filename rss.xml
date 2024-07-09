@@ -5,8 +5,8 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2024-07-09T09:43:37+00:00</lastBuildDate>
-        <pubDate>2024-07-09T09:43:37+00:00</pubDate>
+        <lastBuildDate>2024-07-09T09:44:34+00:00</lastBuildDate>
+        <pubDate>2024-07-09T09:44:34+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -22,7 +22,7 @@ Mostafa Ashraf.
 &lt;p&gt;Visualizing the data structures used by CGAL&apos;s algorithms can help understand and analyze results. Since CGAL 4.13, the global function &lt;code&gt;CGAL::draw(...)&lt;/code&gt; can be used to visualize (almost) all CGAL data structures including point sets, polygon meshes, cell complexes, and straight skeletons. Calling &lt;code&gt;CGAL::draw(...)&lt;/code&gt; opens an interactive window displaying the data structure, enabling users to navigate the scene, show or hide specific elements, and even view the interior of the model, if applicable.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;The example below illustrates how we can use such a &lt;code&gt;draw&lt;/code&gt; function to visualize an off file loaded into a &lt;code&gt;Surface_mesh&lt;/code&gt; data structure.&lt;/p&gt;
+&lt;p&gt;The example below illustrates how we can use the function &lt;code&gt;CGAL::draw()&lt;/code&gt; to visualize an OFF file loaded into a &lt;code&gt;CGAL::Surface_mesh&lt;/code&gt; data structure.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;
 #include &amp;lt;CGAL/Simple_cartesian.h&amp;gt;
@@ -39,7 +39,7 @@ int main(int argc, char* argv[])
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;However this solutions has several limitations. It is not easy to customize the drawing (changing the color or hiding of some elements); it is not possible to draw different data structures simultaneously; it is not easy to add interaction with the drawing or to use it in an higher level widget. All these limitations are solved in this new package: the CGAL Basic viewer.
+&lt;p&gt;Unfortunately, this function had several limitations. Firstly, it was not easy to customize the drawing, for example changing the color or hiding of some elements. Secondly, it was not possible to draw different data structures simultaneously. Finally, it was not easy to add interaction with the drawing, or to use it in an higher level widget. All these limitations are solved with a new package: the CGAL Basic Viewer.
 
 &lt;h3&gt;Basic viewer&lt;/h3&gt;
 
