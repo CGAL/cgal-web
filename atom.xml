@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2024-07-09T09:42:23+00:00</updated>
+ <updated>2024-07-09T09:43:37+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -24,7 +24,7 @@ Mostafa Ashraf.
 &lt;h4&gt;&amp;deg;&lt;a href=&quot;https://liris.cnrs.fr/&quot;&gt;LIRIS / CNRS&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;CGAL being the computational geometry algorithms library, it is often required to visualize a given data structure of the results of a certain algorithm. Since CGAL 4.13, global functions &lt;code&gt;draw&lt;/code&gt; exist allowing to visualize (almost) all the CGAL data structures. Call a &lt;code&gt;draw&lt;/code&gt; function opens a new interactive window showing the given model and allowing to navigate in the scene, show or hide some specific cells, show the interior of the model if any, etc. &lt;/p&gt;
+&lt;p&gt;Visualizing the data structures used by CGAL&apos;s algorithms can help understand and analyze results. Since CGAL 4.13, the global function &lt;code&gt;CGAL::draw(...)&lt;/code&gt; can be used to visualize (almost) all CGAL data structures including point sets, polygon meshes, cell complexes, and straight skeletons. Calling &lt;code&gt;CGAL::draw(...)&lt;/code&gt; opens an interactive window displaying the data structure, enabling users to navigate the scene, show or hide specific elements, and even view the interior of the model, if applicable.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;The example below illustrates how we can use such a &lt;code&gt;draw&lt;/code&gt; function to visualize an off file loaded into a &lt;code&gt;Surface_mesh&lt;/code&gt; data structure.&lt;/p&gt;
