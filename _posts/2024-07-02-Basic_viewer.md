@@ -33,7 +33,7 @@ int main(int argc, char* argv[])
 }
 </code></pre>
 
-<p>However this solutions has several limitations. It is not easy to customize the drawing (changing the color or hiding of some elements); it is not possible to draw different data structures simultaneously; it is not easy to add interaction with the drawing or to use it in an higher level widget. All these limitations are solved in this new package: the CGAL Basic viewer.
+<p>Unfortunately, this function had several limitations. Firstly, it was not easy to customize the drawing, for example changing the color or hiding of some elements. Secondly, it was not possible to draw different data structures simultaneously. Finally, it was not easy to add interaction with the drawing, or to use it in an higher level widget. All these limitations are solved with a new package: the CGAL Basic Viewer.
 
 <h3>Basic viewer</h3>
 
