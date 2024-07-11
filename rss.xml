@@ -5,8 +5,8 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2024-07-09T09:46:01+00:00</lastBuildDate>
-        <pubDate>2024-07-09T09:46:01+00:00</pubDate>
+        <lastBuildDate>2024-07-11T07:15:34+00:00</lastBuildDate>
+        <pubDate>2024-07-11T07:15:34+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -49,7 +49,7 @@ int main(int argc, char* argv[])
 &lt;li&gt;to enable easy customization of the drawing by using the &lt;code&gt;Graphics_scene_options&lt;/code&gt; class;&lt;/li&gt;
 &lt;li&gt;to enable different data structures within the same window, by using the &lt;code&gt;Graphics_scene&lt;/code&gt; class;&lt;/li&gt;
 &lt;li&gt;to use the basic viewer in a full Qt application, thanks to the widget &lt;code&gt;CGAL::Qt::Basic_viewer&lt;/code&gt;;&lt;/li&gt;
-&lt;li&gt;to add some (limited) interaction with users, through different keyboard shortcuts, by using the class &lt;code&gt;CGAL::Qt::QApplication_and_basic_viewer&lt;/code&gt; which regroups a &amp;lt;/code&amp;gt;Qt::QApplication and a &lt;code&gt;CGAL::Qt::Basic_viewer&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;to add some (limited) interaction with users, through different keyboard shortcuts, by using the class &lt;code&gt;CGAL::Qt::QApplication_and_basic_viewer&lt;/code&gt; which regroups a &lt;code&gt;Qt::QApplication&lt;/code&gt; and a &lt;code&gt;CGAL::Qt::Basic_viewer&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 
