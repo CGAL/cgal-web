@@ -18,20 +18,20 @@ Mostafa Ashraf.
 <br>
 <p>The example below illustrates how we can use the function <code>CGAL::draw()</code> to visualize an OFF file loaded into a <code>CGAL::Surface_mesh</code> data structure.</p>
 
-<pre><code>
-#include &lt;CGAL/Simple_cartesian.h&gt;
-#include &lt;CGAL/Surface_mesh.h&gt;
-#include &lt;CGAL/draw_surface_mesh.h&gt;
+```c++
+#include <CGAL/Simple_cartesian.h>
+#include <CGAL/Surface_mesh.h>
+#include <CGAL/draw_surface_mesh.h>
 
 int main(int argc, char* argv[])
 {
-  using Point=CGAL::Simple_cartesian&lt;double&gt;::Point_3;
-  CGAL::Surface_mesh&lt;Point&gt; sm;
+  using Point=CGAL::Simple_cartesian<double>::Point_3;
+  CGAL::Surface_mesh<Point> sm;
   CGAL::IO::read_polygon_mesh(argv[1], sm);
   CGAL::draw(sm);
   return EXIT_SUCCESS;
 }
-</code></pre>
+```
 
 <p>Unfortunately, this function had several limitations. Firstly, it was not easy to customize the drawing, for example changing the color or hiding of some elements. Secondly, it was not possible to draw different data structures simultaneously. Finally, it was not easy to add interaction with the drawing, or to use it in an higher level widget. All these limitations are solved with a new package: the CGAL Basic Viewer.
 

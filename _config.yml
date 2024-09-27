@@ -130,3 +130,17 @@ JB :
   # and include your custom code. Your custom file must be defined at:
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
+
+markdown : kramdown
+
+highlighter: coderay
+
+kramdown:
+  use_coderay: true
+  syntax_highlighter: coderay
+  syntax_highlighter_opts:
+    line_numbers: no
+    bold_every: 5
+  input: GFM
+  auto_ids:       true
+  toc_levels:     1..3
