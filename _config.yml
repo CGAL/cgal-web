@@ -133,14 +133,7 @@ JB :
 
 markdown : kramdown
 
-highlighter: coderay
-
 kramdown:
-  use_coderay: true
-  syntax_highlighter: coderay
-  syntax_highlighter_opts:
-    line_numbers: no
-    bold_every: 5
   input: GFM
   auto_ids:       true
   toc_levels:     1..3
