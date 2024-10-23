@@ -4,7 +4,16 @@ permalink: /:categories/:year/:month/:day/:title/
 include:
   - .htaccess
   - node_modules
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "web_old"]
+exclude:
+  - ".rvmrc"
+  - ".rbenv-version"
+  - "README.md"
+  - "Rakefile"
+  - "changelog.md"
+  - "web_old"
+  - node_modules/*/docs_src
+  - node_modules/*/src
+  - node_modules/bootstrap/js
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
