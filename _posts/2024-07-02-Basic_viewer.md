@@ -18,7 +18,7 @@ Mostafa Ashraf.
 <br>
 <p>The example below illustrates how we can use the function <code>CGAL::draw()</code> to visualize an OFF file loaded into a <code>CGAL::Surface_mesh</code> data structure.</p>
 
-```c++
+```cpp
 #include <CGAL/Simple_cartesian.h>
 #include <CGAL/Surface_mesh.h>
 #include <CGAL/draw_surface_mesh.h>
