@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2024-10-23T13:25:50+00:00</updated>
+ <updated>2024-10-23T14:04:28+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -22,7 +22,7 @@
 
 &lt;h3 id=&quot;cgal-version-60&quot;&gt;CGAL version 6.0&lt;/h3&gt;
 
-&lt;p&gt;CGAL version &lt;a href=&quot;/cgal-web/2024/09/27/cgal60/&quot;&gt;6.0&lt;/a&gt; was published on September 27, 2024. After bugs were detected early, version &lt;a href=&quot;/cgal-web/2024/10/22/cgal601/&quot;&gt;6.0.1&lt;/a&gt; was published on October 22, 2024.&lt;/p&gt;
+&lt;p&gt;CGAL version &lt;a href=&quot;/cgal-web/2024/09/27/cgal60/&quot;&gt;6.0&lt;/a&gt; was released on September 27, 2024. Following the discovery of early issues, version &lt;a href=&quot;/cgal-web/2024/10/22/cgal601/&quot;&gt;6.0.1&lt;/a&gt; was subsequently released on October 22, 2024.&lt;/p&gt;
 
 &lt;p&gt;This version is a major release, with many new features and improvements.&lt;/p&gt;
 
@@ -66,7 +66,7 @@
   &lt;li&gt;&lt;a href=&quot;/cgal-web/2024/10/22/cgal562/&quot;&gt;CGAL version 5.6.2&lt;/a&gt; has been published. This is the second bug-fix release for CGAL-5.6.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;The development of CGAL will now focus on the future CGAL-6.1 (planned for late 2025), with bug-fixes regularly backported to the branches for CGAL-5.6.x and CGAL-5.5.x.&lt;/p&gt;
+&lt;p&gt;The development of CGAL will now focus on the future CGAL-6.1 (planned for late 2025), with bug-fixes regularly backported to the branches for CGAL-5.6.x and CGAL-6.0.x.&lt;/p&gt;
 
 </content>
  </entry>
