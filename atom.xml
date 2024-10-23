@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2024-10-23T11:51:01+00:00</updated>
+ <updated>2024-10-23T13:25:50+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -32,7 +32,7 @@
   &lt;li&gt;&lt;strong&gt;C++17 Requirement&lt;/strong&gt;: CGAL 6.0 requires a C++17 compatible compiler.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;GMP/MPFR Optional&lt;/strong&gt;: GMP/MPFR are no longer mandatory; Boost.Multiprecision can be used.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Qt6 Demos&lt;/strong&gt;: All demos are now based on Qt6.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Polyhedral Surface&lt;/strong&gt;: Demo renamed to “CGAL Lab” and moved to its own directory in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;demo/Lab/&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Polyhedral Surface&lt;/strong&gt;: The demo has been renamed to “CGAL Lab” and moved to its own directory in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;demo/Lab/&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4 id=&quot;new-packages&quot;&gt;New Packages&lt;/h4&gt;
