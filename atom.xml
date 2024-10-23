@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2024-10-23T14:04:28+00:00</updated>
+ <updated>2024-10-23T15:30:45+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -18,7 +18,7 @@
    <updated>2024-10-23T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2024/10/23/CGAL-6.0</id>
    <content type="html">
-&lt;p&gt;The CGAL Open Source Project is pleased to announce new CGAL versions that were published recently.&lt;/p&gt;
+&lt;p&gt;The CGAL Open Source Project is pleased to announce the recent releases of CGAL versions 5.5.5, 5.6.2, 6.0, and 6.0.1.&lt;/p&gt;
 
 &lt;h3 id=&quot;cgal-version-60&quot;&gt;CGAL version 6.0&lt;/h3&gt;
 
