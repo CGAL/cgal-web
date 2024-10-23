@@ -14,21 +14,21 @@
     <meta name="viewport" content="width=device-width">
     <meta name="author" content="CGAL Editorial Board">
 
-    <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
-    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
-    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/style.css">
+    <link rel="icon" type="image/png" href="/cgal-web/images/cgal_logo/g-196x196-y.png">
+    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
+    <link rel="stylesheet" href="/cgal-web/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 
     <!--[if lte IE 8]>
 	<link rel="stylesheet" href="css/leaflet.ie.css" />
 	<![endif]-->
-    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal//main.css">
+    <link rel="stylesheet" href="/cgal-web/assets/themes/cgal/main.css">
 
     <!-- atom & rss feed -->
-    <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-    <link href="https://cgal.github.io/cgal-web/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    <link href="/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/cgal-web/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
 
   </head>
   <body>
@@ -43,23 +43,23 @@
     <nav id="mainmenu" class="mainmenu" role="navigation">
     <ul>
     <li class="logo-wrapper hidden-xs hidden-sm hidden-md">
-    <a href="https://cgal.github.io/cgal-web/index.html">
-    <img src="https://cgal.github.io/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
+    <a href="/cgal-web/index.html">
+    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
     </a>
     </li>
 
     <li class="hidden-lg">
-    <a href="https://cgal.github.io/cgal-web/index.html">
-    <img src="https://cgal.github.io/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
+    <a href="/cgal-web/index.html">
+    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
     </a>
     </li>
 
     <li>
-    <a href="https://cgal.github.io/cgal-web/project.html">Project</a>
+    <a href="/cgal-web/project.html">Project</a>
     </li>
 
     <li>
-    <a href="https://cgal.github.io/cgal-web/download.html">Download</a>
+    <a href="/cgal-web/download.html">Download</a>
     </li>
 
     <li class="dropdown">
@@ -86,19 +86,19 @@
     </li>
 
     <li>
-    <a href="https://cgal.github.io/cgal-web/documentation.html">Documentation</a>
+    <a href="/cgal-web/documentation.html">Documentation</a>
     </li>
 
     <li>
-    <a href="https://cgal.github.io/cgal-web/news.html">News</a>
+    <a href="/cgal-web/news.html">News</a>
     </li>
 
     <li>
-    <a href="https://cgal.github.io/cgal-web/media.html">Media</a>
+    <a href="/cgal-web/media.html">Media</a>
     </li>
 
     <li>
-    <a href="https://cgal.github.io/cgal-web/support.html">Support</a>
+    <a href="/cgal-web/support.html">Support</a>
     </li>
 
     </ul>
@@ -181,10 +181,10 @@ on the MPFR and MPFI libraries respectively.</li>
   <h4 id="d-and-3d-geometry-kernel">2D and 3D Geometry Kernel</h4>
 
   <ul>
-    <li>Add new <code>do_intersect()</code> and <code>intersection()</code> overloads:
+    <li>Add new <code class="language-plaintext highlighter-rouge">do_intersect()</code> and <code class="language-plaintext highlighter-rouge">intersection()</code> overloads:
       <ul>
-        <li><code>do_intersect(Bbox_3, Bbox_3/Line_3/Ray_3/Segment_3)</code></li>
-        <li><code>intersection(Triangle_3, Line_3/Ray_3/Segment_3)</code></li>
+        <li><code class="language-plaintext highlighter-rouge">do_intersect(Bbox_3, Bbox_3/Line_3/Ray_3/Segment_3)</code></li>
+        <li><code class="language-plaintext highlighter-rouge">intersection(Triangle_3, Line_3/Ray_3/Segment_3)</code></li>
       </ul>
     </li>
   </ul>
@@ -194,7 +194,7 @@ on the MPFR and MPFI libraries respectively.</li>
   <h4 id="d-regularized-boolean-set-operations">2D Regularized Boolean Set-Operations</h4>
 
   <ul>
-    <li>Fixed <code>General_polygon_set_2::arrangement()</code> to return the proper type of object.</li>
+    <li>Fixed <code class="language-plaintext highlighter-rouge">General_polygon_set_2::arrangement()</code> to return the proper type of object.</li>
   </ul>
 
   <h3 id="arrangement">Arrangement</h3>
@@ -202,23 +202,23 @@ on the MPFR and MPFI libraries respectively.</li>
   <h4 id="d-arrangements">2D Arrangements</h4>
 
   <ul>
-    <li>Fixed passing a (const) traits object to the constructor of <code>Arrangement_2</code>.</li>
-    <li>Introduced <code>Arrangement_2::fictitious_face()</code>, which returns the
+    <li>Fixed passing a (const) traits object to the constructor of <code class="language-plaintext highlighter-rouge">Arrangement_2</code>.</li>
+    <li>Introduced <code class="language-plaintext highlighter-rouge">Arrangement_2::fictitious_face()</code>, which returns the
 fictitious face in case of an unbounded arrangement.</li>
     <li>Fixed a bug in Bezier-curve handling.</li>
-    <li>Added (back) iterator, <code>number_of_holes()</code>, <code>holes_begin()</code>, and
-<code>holes_end()</code> to the default DCEL for backward compatibility.</li>
-    <li>Added (simple) versions of the free <code>overlay()</code> function. It employs
+    <li>Added (back) iterator, <code class="language-plaintext highlighter-rouge">number_of_holes()</code>, <code class="language-plaintext highlighter-rouge">holes_begin()</code>, and
+<code class="language-plaintext highlighter-rouge">holes_end()</code> to the default DCEL for backward compatibility.</li>
+    <li>Added (simple) versions of the free <code class="language-plaintext highlighter-rouge">overlay()</code> function. It employs
 the default overlay-traits, which practically does nothing.</li>
   </ul>
 
   <h3 id="polyhedron">Polyhedron</h3>
 
   <ul>
-    <li>Fixed a compilation errors in <code>demo/Polyhedron/</code>:
+    <li>Fixed a compilation errors in <code class="language-plaintext highlighter-rouge">demo/Polyhedron/</code>:
       <ul>
-        <li>issue with the location of <code>qglobal.h</code> of Qt4 on MacOS X,</li>
-        <li>missing <code>texture.cpp</code>, if TAUCS is used,</li>
+        <li>issue with the location of <code class="language-plaintext highlighter-rouge">qglobal.h</code> of Qt4 on MacOS X,</li>
+        <li>missing <code class="language-plaintext highlighter-rouge">texture.cpp</code>, if TAUCS is used,</li>
       </ul>
     </li>
     <li>Fixed the location of built plugins of demo/Polyhedron/, when CGAL is
@@ -239,19 +239,19 @@ no other facet incident to that vertex breaks the manifold property.</li>
   <h4 id="d-triangulations">3D Triangulations</h4>
 
   <ul>
-    <li><code>Regular_triangulation_3</code>: semi-static floating-point filters are
+    <li><code class="language-plaintext highlighter-rouge">Regular_triangulation_3</code>: semi-static floating-point filters are
 now used in its predicates, which can speed up its construction by a
-factor of about 3 when <code>Exact_predicates_inexact_constructions_kernel</code> is used.</li>
-    <li>The class <code>Regular_triangulation_filtered_traits_3</code> is deprecated,
-the class <code>Regular_triangulation_euclidean_traits_3</code> must be used
+factor of about 3 when <code class="language-plaintext highlighter-rouge">Exact_predicates_inexact_constructions_kernel</code> is used.</li>
+    <li>The class <code class="language-plaintext highlighter-rouge">Regular_triangulation_filtered_traits_3</code> is deprecated,
+the class <code class="language-plaintext highlighter-rouge">Regular_triangulation_euclidean_traits_3</code> must be used
 instead. The predicates of that traits will be filtered if the
 kernel given as template parameter of that traits is itself a
 filtered kernel.</li>
-    <li><code>Triangulation_hierarchy_3</code> is now deprecated, and replaced by a
+    <li><code class="language-plaintext highlighter-rouge">Triangulation_hierarchy_3</code> is now deprecated, and replaced by a
 simpler CGAL::Fast_location policy template parameter of
-<code>Delaunay_triangulation_3</code>.</li>
-    <li>The old version of <code>remove()</code> (enabled with
-<code>CGAL_DELAUNAY_3_OLD_REMOVE</code>) has been deleted.</li>
+<code class="language-plaintext highlighter-rouge">Delaunay_triangulation_3</code>.</li>
+    <li>The old version of <code class="language-plaintext highlighter-rouge">remove()</code> (enabled with
+<code class="language-plaintext highlighter-rouge">CGAL_DELAUNAY_3_OLD_REMOVE</code>) has been deleted.</li>
   </ul>
 
   <h4 id="d-periodic-triangulations">3D Periodic Triangulations</h4>
@@ -267,8 +267,8 @@ compute periodic alpha shapes.</li>
   <h4 id="d-alpha-shapes">3D Alpha shapes</h4>
 
   <ul>
-    <li>The class <code>Weighted_alpha_shape_euclidean_traits_3</code> is
-deprecated, the class <code>Regular_triangulation_euclidean_traits_3</code>
+    <li>The class <code class="language-plaintext highlighter-rouge">Weighted_alpha_shape_euclidean_traits_3</code> is
+deprecated, the class <code class="language-plaintext highlighter-rouge">Regular_triangulation_euclidean_traits_3</code>
 must be used instead.</li>
     <li>The package can now be used together with the 3D Periodic
 Triangulation package to compute periodic alpha shapes.</li>
@@ -289,7 +289,7 @@ run).</li>
   <ul>
     <li>The 2D mesh generator can now be used with a constrained Delaunay
 triangulation with constraints hierarchy
-(<code>Constrained_triangulation_plus_2</code>).</li>
+(<code class="language-plaintext highlighter-rouge">Constrained_triangulation_plus_2</code>).</li>
     <li>In some cases (refinement of a constrained edge that is on the
 convex hull), the 2D mesh generator from CGAL-3.4 and CGAL-3.5 could
 create invalid triangulations. This bug is now fixed.</li>
@@ -326,26 +326,26 @@ computer resources.</li>
           
             
             
-            <li class="active"><a href="https://cgal.github.io/cgal-web/2024/10/22/cgal601/" class="active">CGAL 6.0.1 released</a>
+            <li class="active"><a href="/cgal-web/2024/10/22/cgal601/" class="active">CGAL 6.0.1 released</a>
             <br><div style="font-size:12px">October 2024</div></li>
           
             
             
-            <li class="active"><a href="https://cgal.github.io/cgal-web/2024/09/27/cgal60/" class="active">CGAL 6.0 released</a>
+            <li class="active"><a href="/cgal-web/2024/09/27/cgal60/" class="active">CGAL 6.0 released</a>
             <br><div style="font-size:12px">September 2024</div></li>
           
             
             
-            <li class="active"><a href="https://cgal.github.io/cgal-web/2024/07/02/Basic_viewer/" class="active">New in CGAL: Basic Viewer</a>
+            <li class="active"><a href="/cgal-web/2024/07/02/Basic_viewer/" class="active">New in CGAL: Basic Viewer</a>
             <br><div style="font-size:12px">July 2024</div></li>
           
             
             
-            <li class="active"><a href="https://cgal.github.io/cgal-web/news/2024/06/21/new-release-cgal6.0-beta1/" class="active">New release 6.0 beta 1</a>
+            <li class="active"><a href="/cgal-web/news/2024/06/21/new-release-cgal6.0-beta1/" class="active">New release 6.0 beta 1</a>
             <br><div style="font-size:12px">June 2024</div></li>
           
         </ul>
-        <a href="https://cgal.github.io/cgal-web/news.html" class="btn">Older posts...</a>
+        <a href="/cgal-web/news.html" class="btn">Older posts...</a>
       </div>
     </div>
   </div>
@@ -360,7 +360,7 @@ computer resources.</li>
           <div class="footer-copyright">
             <div style="float: left;">
               <a href="https://twitter.com/TheCGALProject" alt="The CGAL Project's Twitter">
-                <img src="https://cgal.github.io/cgal-web/images/icons/twitter.svg" class="center-block btn-dark-orange" alt="Twitter" height="18"></img>
+                <img src="/cgal-web/images/icons/twitter.svg" class="center-block btn-dark-orange" alt="Twitter" height="18"></img>
               </a>
             </div>
             &copy; 1995-2024 The CGAL Project. All rights reserved.
@@ -375,10 +375,10 @@ computer resources.</li>
     </div>
 
     <!-- Javascripts -->
-    <script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
-      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
+    <script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+      <script src="/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
       <script>
         $(function () {
           $('.bxslider').bxSlider({
@@ -406,7 +406,7 @@ computer resources.</li>
           });
         });
       </script>
-      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+      <script src="/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
     </body>
 </html>
 

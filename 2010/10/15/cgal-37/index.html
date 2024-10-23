@@ -14,21 +14,21 @@
     <meta name="viewport" content="width=device-width">
     <meta name="author" content="CGAL Editorial Board">
 
-    <link rel="icon" type="image/png" href="https://cgal.github.io/cgal-web/images/cgal_logo/g-196x196-y.png">
-    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
-    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/style.css">
+    <link rel="icon" type="image/png" href="/cgal-web/images/cgal_logo/g-196x196-y.png">
+    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
+    <link rel="stylesheet" href="/cgal-web/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 
     <!--[if lte IE 8]>
 	<link rel="stylesheet" href="css/leaflet.ie.css" />
 	<![endif]-->
-    <link rel="stylesheet" href="https://cgal.github.io/cgal-web/assets/themes/cgal//main.css">
+    <link rel="stylesheet" href="/cgal-web/assets/themes/cgal/main.css">
 
     <!-- atom & rss feed -->
-    <link href="https://cgal.github.io/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-    <link href="https://cgal.github.io/cgal-web/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    <link href="/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/cgal-web/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
 
   </head>
   <body>
@@ -43,23 +43,23 @@
     <nav id="mainmenu" class="mainmenu" role="navigation">
     <ul>
     <li class="logo-wrapper hidden-xs hidden-sm hidden-md">
-    <a href="https://cgal.github.io/cgal-web/index.html">
-    <img src="https://cgal.github.io/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
+    <a href="/cgal-web/index.html">
+    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
     </a>
     </li>
 
     <li class="hidden-lg">
-    <a href="https://cgal.github.io/cgal-web/index.html">
-    <img src="https://cgal.github.io/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
+    <a href="/cgal-web/index.html">
+    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
     </a>
     </li>
 
     <li>
-    <a href="https://cgal.github.io/cgal-web/project.html">Project</a>
+    <a href="/cgal-web/project.html">Project</a>
     </li>
 
     <li>
-    <a href="https://cgal.github.io/cgal-web/download.html">Download</a>
+    <a href="/cgal-web/download.html">Download</a>
     </li>
 
     <li class="dropdown">
@@ -86,19 +86,19 @@
     </li>
 
     <li>
-    <a href="https://cgal.github.io/cgal-web/documentation.html">Documentation</a>
+    <a href="/cgal-web/documentation.html">Documentation</a>
     </li>
 
     <li>
-    <a href="https://cgal.github.io/cgal-web/news.html">News</a>
+    <a href="/cgal-web/news.html">News</a>
     </li>
 
     <li>
-    <a href="https://cgal.github.io/cgal-web/media.html">Media</a>
+    <a href="/cgal-web/media.html">Media</a>
     </li>
 
     <li>
-    <a href="https://cgal.github.io/cgal-web/support.html">Support</a>
+    <a href="/cgal-web/support.html">Support</a>
     </li>
 
     </ul>
@@ -187,7 +187,7 @@ platforms.</li>
   <h3 id="arithmetic-and-algebra">Arithmetic and Algebra</h3>
 
   <ul>
-    <li>New models <code>Algebraic_kernel_d_1</code> and <code>Algebraic_kernel_d_2</code> for
+    <li>New models <code class="language-plaintext highlighter-rouge">Algebraic_kernel_d_1</code> and <code class="language-plaintext highlighter-rouge">Algebraic_kernel_d_2</code> for
 the corresponding concepts. They provide generic support for various
 coefficient types.</li>
   </ul>
@@ -195,8 +195,8 @@ coefficient types.</li>
   <h3 id="arrangements">Arrangements</h3>
 
   <ul>
-    <li>A new model <code>Arr_algebraic_segment_traits_2</code> of
-<code>ArrangementTraits_2</code> that supports algebraic curves of arbitrary
+    <li>A new model <code class="language-plaintext highlighter-rouge">Arr_algebraic_segment_traits_2</code> of
+<code class="language-plaintext highlighter-rouge">ArrangementTraits_2</code> that supports algebraic curves of arbitrary
 degree in the plane</li>
   </ul>
 
@@ -206,35 +206,35 @@ degree in the plane</li>
     <li>The Delaunay and regular 2D triangulations now use a symbolic
 perturbation to choose a particular triangulation in co-circular
 cases.</li>
-    <li>The return type of the template member function <code>insert(It beg, It
+    <li>The return type of the template member function <code class="language-plaintext highlighter-rouge">insert(It beg, It
 end)</code>, taking an iterator range of points, has been changed from int
-to <code>std::ptrdiff_t</code>.</li>
-    <li>Classes <code>Triangulation_euclidean_traits_xy_3,</code>
-<code>Triangulation_euclidean_traits_yz_3</code> and
-<code>Triangulation_euclidean_traits_xz_3</code> are now model of the concept
+to <code class="language-plaintext highlighter-rouge">std::ptrdiff_t</code>.</li>
+    <li>Classes <code class="language-plaintext highlighter-rouge">Triangulation_euclidean_traits_xy_3,</code>
+<code class="language-plaintext highlighter-rouge">Triangulation_euclidean_traits_yz_3</code> and
+<code class="language-plaintext highlighter-rouge">Triangulation_euclidean_traits_xz_3</code> are now model of the concept
 ConstrainedTriangulationTraits_2. They can be used with and without
 intersection of constraints.</li>
     <li>2D Delaunay and basic triangulations now provide vertex relocation
 by the mean of these two new methods: move and
 move_if_no_collision. The methods are also available for the
-hierarchy (<code>Triangulation_hierarchy_2</code>).</li>
+hierarchy (<code class="language-plaintext highlighter-rouge">Triangulation_hierarchy_2</code>).</li>
   </ul>
 
   <h3 id="d-triangulations-1">3D Triangulations</h3>
 
   <ul>
-    <li>The return type of the template member function <code>insert(It beg, It
+    <li>The return type of the template member function <code class="language-plaintext highlighter-rouge">insert(It beg, It
 end)</code>, taking an iterator range of points, has been changed from int
-to <code>std::ptrdiff_t</code>.</li>
+to <code class="language-plaintext highlighter-rouge">std::ptrdiff_t</code>.</li>
     <li>3D Delaunay triangulations now provide vertex relocation by the mean
 of these two new methods: move and move_if_no_collision. This
-works in both <code>Compact_policy</code> and <code>Fast_policy</code>.</li>
+works in both <code class="language-plaintext highlighter-rouge">Compact_policy</code> and <code class="language-plaintext highlighter-rouge">Fast_policy</code>.</li>
   </ul>
 
   <h3 id="d-and-3d-alpha-shapes">2D and 3D Alpha Shapes</h3>
 
   <ul>
-    <li>The type <code>int</code> in the API has been changed to <code>std::size_t</code> so that
+    <li>The type <code class="language-plaintext highlighter-rouge">int</code> in the API has been changed to <code class="language-plaintext highlighter-rouge">std::size_t</code> so that
 CGAL can deal with large data sets (64 bit addresses).</li>
   </ul>
 
@@ -255,7 +255,7 @@ generator strategy which implies that a surface component that is
 not detected at the surface mesher level will never be discovered by
 chance, owing to the refinement of some tetrahedra, as it could
 happen before. Please note that defining the macro
-<code>CGAL_MESH_3_USE_OLD_SURFACE_RESTRICTED_DELAUNAY_UPDATE</code>
+<code class="language-plaintext highlighter-rouge">CGAL_MESH_3_USE_OLD_SURFACE_RESTRICTED_DELAUNAY_UPDATE</code>
 switches back to the old behavior.</li>
     <li>A demo program is now available.</li>
   </ul>
@@ -269,7 +269,7 @@ switches back to the old behavior.</li>
   <h3 id="d-range-and-neighbor-search">2D Range and Neighbor Search</h3>
 
   <ul>
-    <li>The type <code>int</code> in the API has been changed to <code>std::size_t</code> so that
+    <li>The type <code class="language-plaintext highlighter-rouge">int</code> in the API has been changed to <code class="language-plaintext highlighter-rouge">std::size_t</code> so that
 CGAL can deal with large data sets (64 bit addresses).</li>
   </ul>
 </div>
@@ -284,26 +284,26 @@ CGAL can deal with large data sets (64 bit addresses).</li>
           
             
             
-            <li class="active"><a href="https://cgal.github.io/cgal-web/2024/10/22/cgal601/" class="active">CGAL 6.0.1 released</a>
+            <li class="active"><a href="/cgal-web/2024/10/22/cgal601/" class="active">CGAL 6.0.1 released</a>
             <br><div style="font-size:12px">October 2024</div></li>
           
             
             
-            <li class="active"><a href="https://cgal.github.io/cgal-web/2024/09/27/cgal60/" class="active">CGAL 6.0 released</a>
+            <li class="active"><a href="/cgal-web/2024/09/27/cgal60/" class="active">CGAL 6.0 released</a>
             <br><div style="font-size:12px">September 2024</div></li>
           
             
             
-            <li class="active"><a href="https://cgal.github.io/cgal-web/2024/07/02/Basic_viewer/" class="active">New in CGAL: Basic Viewer</a>
+            <li class="active"><a href="/cgal-web/2024/07/02/Basic_viewer/" class="active">New in CGAL: Basic Viewer</a>
             <br><div style="font-size:12px">July 2024</div></li>
           
             
             
-            <li class="active"><a href="https://cgal.github.io/cgal-web/news/2024/06/21/new-release-cgal6.0-beta1/" class="active">New release 6.0 beta 1</a>
+            <li class="active"><a href="/cgal-web/news/2024/06/21/new-release-cgal6.0-beta1/" class="active">New release 6.0 beta 1</a>
             <br><div style="font-size:12px">June 2024</div></li>
           
         </ul>
-        <a href="https://cgal.github.io/cgal-web/news.html" class="btn">Older posts...</a>
+        <a href="/cgal-web/news.html" class="btn">Older posts...</a>
       </div>
     </div>
   </div>
@@ -318,7 +318,7 @@ CGAL can deal with large data sets (64 bit addresses).</li>
           <div class="footer-copyright">
             <div style="float: left;">
               <a href="https://twitter.com/TheCGALProject" alt="The CGAL Project's Twitter">
-                <img src="https://cgal.github.io/cgal-web/images/icons/twitter.svg" class="center-block btn-dark-orange" alt="Twitter" height="18"></img>
+                <img src="/cgal-web/images/icons/twitter.svg" class="center-block btn-dark-orange" alt="Twitter" height="18"></img>
               </a>
             </div>
             &copy; 1995-2024 The CGAL Project. All rights reserved.
@@ -333,10 +333,10 @@ CGAL can deal with large data sets (64 bit addresses).</li>
     </div>
 
     <!-- Javascripts -->
-    <script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="https://cgal.github.io/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
-      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="https://cgal.github.io/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
+    <script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+      <script src="/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
       <script>
         $(function () {
           $('.bxslider').bxSlider({
@@ -364,7 +364,7 @@ CGAL can deal with large data sets (64 bit addresses).</li>
           });
         });
       </script>
-      <script src="https://cgal.github.io/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+      <script src="/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
     </body>
 </html>
 
