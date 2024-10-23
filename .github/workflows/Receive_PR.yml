@@ -21,9 +21,8 @@ jobs:
           gem install jekyll bundler
       - name: Update Configuration
         run: |
-          yq -i '.JB.BASE_PATH = ""' _config.yml
-          yq -i '.baseurl = "https://cgal.github.io/cgal-web"' _config.yml
-          yq -i '.JB.ASSET_PATH = "https://cgal.github.io/cgal-web/assets/themes/cgal/"' _config.yml
+          yq -i '.JB.BASE_PATH = "https://cgal.github.io/cgal-web"' _config.yml
+          yq -i '.baseurl = "/cgal-web"' _config.yml
       - name: Remove demo/ (temporarily)
         run: rm -rf demo/
       - name: Setup Pages
