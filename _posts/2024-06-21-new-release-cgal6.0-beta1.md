@@ -2,7 +2,7 @@
 layout: post
 title: "New release 6.0 beta 1"
 description: "CGAL-6.0-beta1 is the first beta release for CGAL-6.0"
-category: "news"
+category:
 tags: [""]
 ---
 {% include JB/setup %}
