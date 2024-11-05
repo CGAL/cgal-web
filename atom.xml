@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2024-10-29T09:56:18+00:00</updated>
+ <updated>2024-11-05T08:02:50+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -774,9 +774,9 @@ Mostafa Ashraf.
  
  <entry>
    <title>New release 6.0 beta 1</title>
-   <link href="http://www.cgal.org/news/2024/06/21/new-release-cgal6.0-beta1/"/>
+   <link href="http://www.cgal.org/2024/06/21/new-release-cgal6.0-beta1/"/>
    <updated>2024-06-21T00:00:00+00:00</updated>
-   <id>http://www.cgal.org/news/2024/06/21/new-release-cgal6.0-beta1</id>
+   <id>http://www.cgal.org/2024/06/21/new-release-cgal6.0-beta1</id>
    <content type="html">
 &lt;div&gt;
   &lt;p&gt;The CGAL Open Source Project is pleased to announce the &lt;a href=&quot;/2024/06/21/cgal60-beta1&quot;&gt;release 6.0 beta 1&lt;/a&gt; of CGAL, the Computational Geometry Algorithms Library.&lt;/p&gt;
