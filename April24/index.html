@@ -40,6 +40,14 @@
     <!-- Navigation & Logo-->
     <div class="mainmenu-wrapper">
     <div class="container">
+    <div class="mobile-header">
+      <a href="/cgal-web/index.html" class="mobile-logo">
+        <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="30">
+      </a>
+      <button class="menu-toggle" aria-label="Menu">
+        Menu
+      </button>
+    </div>
     <nav id="mainmenu" class="mainmenu" role="navigation">
     <ul>
     <li class="logo-wrapper hidden-xs hidden-sm hidden-md">
@@ -1016,6 +1024,16 @@
             }
           });
         });
+
+        document.addEventListener('DOMContentLoaded', function() {
+          const menuToggle = document.querySelector('.menu-toggle');
+          const mainMenu = document.getElementById('mainmenu');
+
+          menuToggle.addEventListener('click', function() {
+              mainMenu.classList.toggle('active');
+              menuToggle.classList.toggle('active');
+          });
+      });
       </script>
       <script src="/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
     </body>

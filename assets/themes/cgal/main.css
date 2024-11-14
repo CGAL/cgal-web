@@ -2461,41 +2461,97 @@ span.color-red {
     padding-left: 10px;
   }
 }
+
+.mobile-header {
+  display: none;
+}
+
 @media screen and (max-width: 479px) {
-  .mainmenu {
-    font-size: 120%;
-    border: none;
-  }
-  .mainmenu > ul,
-  .mainmenu .mainmenu-submenu-inner {
-    width: 100%;
+  .mainmenu-wrapper {
     padding: 0;
+    border-bottom: 4px solid #725e49;
   }
-  .mainmenu .mainmenu-submenu-inner {
-    padding: 0 1.5em;
-    font-size: 75%;
+
+  .mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #fff;
   }
-  .mainmenu > ul > li {
+
+  .mobile-logo {
     display: block;
-    border-bottom: 4px solid #47a3da;
   }
-  .mainmenu > ul > li > a {
+
+  .mobile-logo img {
+    height: 30px;
+    width: auto;
+  }
+
+  .menu-toggle {
     display: block;
-    padding: 1em 3em;
-  }
-  .mainmenu > ul > li:last-child {
+    background: none;
     border: none;
+    padding: 8px 12px;
+    color: #725e49;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
   }
-  .mainmenu .mainmenu-submenu {
+
+  .logo-wrapper.hidden-xs {
+    display: none !important;
+  }
+
+  .mainmenu {
     position: relative;
   }
-  .mainmenu-submenu h4 {
-    padding-top: 0.6em;
-  }
-  .mainmenu .mainmenu-submenu-inner > div {
+
+  .mainmenu > ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
     width: 100%;
-    float: none;
+    background: white;
     padding: 0;
+    margin: 0;
+    border-top: 1px solid #e8e8e8;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+
+  .mainmenu.active > ul {
+    display: block;
+  }
+
+  .mainmenu > ul > li:not(.logo-wrapper) {
+    display: block;
+    border-bottom: 1px solid #e8e8e8;
+  }
+
+  .mainmenu > ul > li > a {
+    display: block;
+    padding: 15px;
+    color: #333;
+  }
+
+  .mainmenu .dropdown-menu {
+    position: static !important;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    background: #f8f8f8;
+  }
+
+  .mainmenu .dropdown-menu li a {
+    padding: 12px 30px;
+    display: block;
   }
 }
 /*--------------------------------------------------------------------------
