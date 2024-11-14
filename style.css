@@ -315,6 +315,20 @@ code {
 }
 
 @media (max-width: 479px) {
+  .service-wrapper {
+    margin: 20px 15px;
+  }
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .col-sm-6, .col-sm-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .bottom-container {
     display: block;
   }
@@ -450,10 +464,8 @@ code {
 .service-wrapper {
   display: block;
   width: 100%;
-  margin: 0;
+  margin: 20px 10px;
   padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
   background: #fff;
   transition: all 0.3s ease;
 }
@@ -473,8 +485,6 @@ code {
 }
 
 .vert_align_middle img {
-  width: 65px;
-  height: 65px;
   max-width: none;
   object-fit: contain;
 }
