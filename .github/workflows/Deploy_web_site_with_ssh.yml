@@ -15,22 +15,17 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.0'
+          ruby-version: '3.3'
           bundler-cache: true
       - name: Setup Jekyll
         run: |
           gem install jekyll bundler
-      - name: Update Configuration
-        run: |
-          yq -i '.JB.BASE_PATH = ""' _config.yml
-          yq -i '.baseurl = "${{ vars.CGAL_WEB_SITE_URL }}"' _config.yml
-          yq -i '.JB.ASSET_PATH = "${{ vars.CGAL_WEB_SITE_URL }}/assets/themes/cgal/"' _config.yml
       - name: Remove demo/ (temporarily)
         run: rm -rf demo/
       - name: setup nodejs
         run: npm install
       - name: Build with jekyll
-        run: jekyll build --destination ./_site
+        run: bundle exec jekyll build --destination ./_site
       - name: install ssh keys
         run: |
           install -m 600 -D /dev/null ~/.ssh/id_rsa
