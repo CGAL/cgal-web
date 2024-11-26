@@ -150,10 +150,10 @@
 
 <p>Introduced in CGAL 3.5, the package
 <a href="https://doc.cgal.org/latest/Manual/packages.html#PkgMesh3" text="3D Mesh Generation">3D Mesh Generation</a>
-is designed to generate a isotropic simplicial meshes discretizing 3D domains.
-Since then, multiple improvements in mesh quality, performances, and versatility have been made available in CGAL.
-Lately, CGAL authors have focused more on the quality of the output mesh, the ability of the
-mesh generation algorithm to represent the input surface in a more accurate way, for a wider range of input data types.
+enables the generation of isotropic simplicial meshes discretizing 3D domains.
+Since then, multiple improvements in mesh quality, performance, and versatility have been made available in CGAL.
+Lately, we have focused more on the quality of the output mesh, the ability of the
+mesh generation algorithm to represent the input surface in a more accurate way, and for a wider range of input data types.
 </p>
 
 <p><br /></p>
@@ -163,7 +163,7 @@ generation and use of weighted labeled images,
 and a new approximation error criterion for polyline features.</p>
 
 <p><br /></p>
-<h3>Triple lines from labeled images</h3>
+<h3>Triple Lines from Labeled Images</h3>
 
 <p>CGAL's tetrahedral mesh generation algorithm is able to compute tetrahedral meshes from 3D segmented images.
 For all types of inputs, detection and construction of one-dimensional features must be done a priori for the
@@ -202,7 +202,7 @@ are added to the feature graph of the domain for feature protection.</p>
 
 <p>When a segmented image is given as input for tetrahedral mesh generation,
 the generated mesh surface sometimes sticks too closely to the voxels surface, causing an aliasing effect. A solution to generate
-a smooth and accurate output surface was described by Stalling et al in
+a smooth and accurate output surface was described by Stalling et al. in
 <a href="https://opus4.kobv.de/opus4-zib/frontdoor/index/index/docId/382"><i>Stalling, D., Zöckler, M., Sander, O., &amp; Hege, H. C. (1998),
 Weighted labels for 3D image segmentation</i></a>.
 It consists in generating a second input image, made of integer coefficients called weights, and use those weights to define

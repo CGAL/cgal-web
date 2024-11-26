@@ -5,8 +5,8 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2024-11-26T10:27:21+00:00</lastBuildDate>
-        <pubDate>2024-11-26T10:27:21+00:00</pubDate>
+        <lastBuildDate>2024-11-26T11:09:50+00:00</lastBuildDate>
+        <pubDate>2024-11-26T11:09:50+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -18,10 +18,10 @@
 
 &lt;p&gt;Introduced in CGAL 3.5, the package
 &lt;a href=&quot;https://doc.cgal.org/latest/Manual/packages.html#PkgMesh3&quot; text=&quot;3D Mesh Generation&quot;&gt;3D Mesh Generation&lt;/a&gt;
-is designed to generate a isotropic simplicial meshes discretizing 3D domains.
-Since then, multiple improvements in mesh quality, performances, and versatility have been made available in CGAL.
-Lately, CGAL authors have focused more on the quality of the output mesh, the ability of the
-mesh generation algorithm to represent the input surface in a more accurate way, for a wider range of input data types.
+enables the generation of isotropic simplicial meshes discretizing 3D domains.
+Since then, multiple improvements in mesh quality, performance, and versatility have been made available in CGAL.
+Lately, we have focused more on the quality of the output mesh, the ability of the
+mesh generation algorithm to represent the input surface in a more accurate way, and for a wider range of input data types.
 &lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -31,7 +31,7 @@ generation and use of weighted labeled images,
 and a new approximation error criterion for polyline features.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3&gt;Triple lines from labeled images&lt;/h3&gt;
+&lt;h3&gt;Triple Lines from Labeled Images&lt;/h3&gt;
 
 &lt;p&gt;CGAL&apos;s tetrahedral mesh generation algorithm is able to compute tetrahedral meshes from 3D segmented images.
 For all types of inputs, detection and construction of one-dimensional features must be done a priori for the
@@ -70,7 +70,7 @@ are added to the feature graph of the domain for feature protection.&lt;/p&gt;
 
 &lt;p&gt;When a segmented image is given as input for tetrahedral mesh generation,
 the generated mesh surface sometimes sticks too closely to the voxels surface, causing an aliasing effect. A solution to generate
-a smooth and accurate output surface was described by Stalling et al in
+a smooth and accurate output surface was described by Stalling et al. in
 &lt;a href=&quot;https://opus4.kobv.de/opus4-zib/frontdoor/index/index/docId/382&quot;&gt;&lt;i&gt;Stalling, D., Zöckler, M., Sander, O., &amp;amp; Hege, H. C. (1998),
 Weighted labels for 3D image segmentation&lt;/i&gt;&lt;/a&gt;.
 It consists in generating a second input image, made of integer coefficients called weights, and use those weights to define
