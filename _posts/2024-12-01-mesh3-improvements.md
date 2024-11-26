@@ -96,9 +96,8 @@ until they are satisfied.
 The list of CGAL meshing criteria has been enriched with a new criterion that enables the user to
 define an upper bound on the distance between the input feature graph and the output feature edges.</p>
 
-<p>The following example shows how to use this new criterion, called <code>edge_distance</code>:
-<a href="https://doc.cgal.org/6.0.1/Mesh_3/Mesh_3_2mesh_polyhedral_domain_with_edge_distance_8cpp-example.html">
-mesh_polyhedral_domain_with_edge_distance.cpp</a>.</p>
+<p>The example <a href="https://doc.cgal.org/6.0.1/Mesh_3/Mesh_3_2mesh_polyhedral_domain_with_edge_distance_8cpp-example.html">
+mesh_polyhedral_domain_with_edge_distance.cpp</a> shows how to use this new criterion, called <code>edge_distance</code>.</p>
 
 <div style="text-align:center;">
   <a href="../../../../images/mesh3_edge_distance_stool.png"><img src="../../../../images/mesh3_edge_distance_stool.png" style="max-width:65%"/></a><br>
