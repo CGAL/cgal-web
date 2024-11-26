@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2024-11-26T15:03:10+00:00</updated>
+ <updated>2024-11-26T16:02:19+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -103,9 +103,8 @@ until they are satisfied.
 The list of CGAL meshing criteria has been enriched with a new criterion that enables the user to
 define an upper bound on the distance between the input feature graph and the output feature edges.&lt;/p&gt;
 
-&lt;p&gt;The following example shows how to use this new criterion, called &lt;code&gt;edge_distance&lt;/code&gt;:
-&lt;a href=&quot;https://doc.cgal.org/6.0.1/Mesh_3/Mesh_3_2mesh_polyhedral_domain_with_edge_distance_8cpp-example.html&quot;&gt;
-mesh_polyhedral_domain_with_edge_distance.cpp&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The example &lt;a href=&quot;https://doc.cgal.org/6.0.1/Mesh_3/Mesh_3_2mesh_polyhedral_domain_with_edge_distance_8cpp-example.html&quot;&gt;
+mesh_polyhedral_domain_with_edge_distance.cpp&lt;/a&gt; shows how to use this new criterion, called &lt;code&gt;edge_distance&lt;/code&gt;.&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
   &lt;a href=&quot;../../../../images/mesh3_edge_distance_stool.png&quot;&gt;&lt;img src=&quot;../../../../images/mesh3_edge_distance_stool.png&quot; style=&quot;max-width:65%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
