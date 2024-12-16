@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tetrahedral Mesh Generation Improvements"
-description: "Tetrahedral Mesh Generation Improvements in CGAL-6.0.1"
+description: "Tetrahedral Mesh Generation Improvements in CGAL 6"
 category:
 tags: [""]
 ---
