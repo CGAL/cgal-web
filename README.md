@@ -15,3 +15,5 @@ Then:
 ```shell
     bundle exec jekyll serve
 ```
+
+_(This project is tested with BrowserStack.)_
