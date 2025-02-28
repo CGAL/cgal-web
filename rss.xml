@@ -5,8 +5,8 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2025-02-17T13:36:01+00:00</lastBuildDate>
-        <pubDate>2025-02-17T13:36:01+00:00</pubDate>
+        <lastBuildDate>2025-02-28T12:32:07+00:00</lastBuildDate>
+        <pubDate>2025-02-28T12:32:07+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -1324,6 +1324,18 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=sort%3Aup
         </item>
 
         <item>
+                <title>CGAL to participate in the Google Summer of Code 2024</title>
+                <description>
+&lt;p&gt;The CGAL Project is a &lt;a href=&quot;https://summerofcode.withgoogle.com/programs/2024/organizations/cgal-project&quot;&gt;mentoring organization&lt;/a&gt;
+for the &lt;a href=&quot;https://summerofcode.withgoogle.com/programs/2024&quot;&gt;Google Summer of Code 2024&lt;/a&gt;.
+Have a look at our &lt;a href=&quot;https://github.com/CGAL/cgal/wiki/GSoC_2024&quot;&gt;Project Ideas&lt;/a&gt; page.&lt;/p&gt;
+</description>
+                <link>http://www.cgal.org/news/2024/02/21/gsoc-2024-mentoring/</link>
+                <guid>http://www.cgal.org/news/2024/02/21/gsoc-2024-mentoring</guid>
+                <pubDate>2024-02-21T00:00:00+00:00</pubDate>
+        </item>
+
+        <item>
                 <title>New in CGAL: Improvements for 3D Alpha Wrapping</title>
                 <description>
 &lt;h3&gt;&lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Mael Rouxel-Labbé&lt;/a&gt;&lt;/h3&gt;
@@ -2163,7 +2175,7 @@ and will look forward to the future.
                 <description>
 &lt;p&gt;The CGAL Project is a &lt;a href=&quot;https://summerofcode.withgoogle.com/programs/2023/organizations/cgal-project&quot;&gt;mentoring organization&lt;/a&gt;
 for the &lt;a href=&quot;https://summerofcode.withgoogle.com/programs/2023&quot;&gt;Google Summer of Code 2023&lt;/a&gt;.
-Have a look at our &lt;a href=&quot;https://github.com/CGAL/cgal/wiki/Project-Ideas&quot;&gt;Project Ideas&lt;/a&gt; page.&lt;/p&gt;
+Have a look at our &lt;a href=&quot;https://github.com/CGAL/cgal/wiki/GSoC_2023&quot;&gt;Project Ideas&lt;/a&gt; page.&lt;/p&gt;
 </description>
                 <link>http://www.cgal.org/news/2023/03/08/gsoc-2023-mentoring/</link>
                 <guid>http://www.cgal.org/news/2023/03/08/gsoc-2023-mentoring</guid>
@@ -2805,7 +2817,7 @@ It is not clear that Sonia Delaunay was aware of this, but &lt;i&gt;Ignorantia j
                 <description>
 &lt;p&gt;The CGAL Project is a &lt;a href=&quot;https://summerofcode.withgoogle.com/programs/2022/organizations/cgal-project&quot;&gt;mentoring organization&lt;/a&gt;
 for the &lt;a href=&quot;https://summerofcode.withgoogle.com/programs/2022&quot;&gt;Google Summer of Code 2022&lt;/a&gt;.
-Have a look at our &lt;a href=&quot;https://github.com/CGAL/cgal/wiki/Project-Ideas&quot;&gt;Project Ideas&lt;/a&gt; page.&lt;/p&gt;
+Have a look at our &lt;a href=&quot;https://github.com/CGAL/cgal/wiki/GSoC_2022&quot;&gt;Project Ideas&lt;/a&gt; page.&lt;/p&gt;
 </description>
                 <link>http://www.cgal.org/news/2022/03/08/gsoc-2022-mentoring/</link>
                 <guid>http://www.cgal.org/news/2022/03/08/gsoc-2022-mentoring</guid>
@@ -3990,6 +4002,18 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AM
                 <link>http://www.cgal.org/2021/03/17/cgal513/</link>
                 <guid>http://www.cgal.org/2021/03/17/cgal513</guid>
                 <pubDate>2021-03-17T00:00:00+00:00</pubDate>
+        </item>
+
+        <item>
+                <title>CGAL to participate in the Google Summer of Code 2021</title>
+                <description>
+&lt;p&gt;The CGAL Project is a &lt;a href=&quot;https://summerofcode.withgoogle.com/organizations/5350535705657344/&quot;&gt;mentoring organization&lt;/a&gt;
+for &lt;a href=&quot;https://summerofcode.withgoogle.com/&quot;&gt;Google Summer of Code 2021&lt;/a&gt;.
+Have a look at our &lt;a href=&quot;https://github.com/CGAL/cgal/wiki/GSoC_2021&quot;&gt;Project Ideas&lt;/a&gt; page.&lt;/p&gt;
+</description>
+                <link>http://www.cgal.org/news/2021/02/20/gsoc-2021-mentoring/</link>
+                <guid>http://www.cgal.org/news/2021/02/20/gsoc-2021-mentoring</guid>
+                <pubDate>2021-02-20T00:00:00+00:00</pubDate>
         </item>
 
         <item>
@@ -5908,7 +5932,7 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AM
                 <description>
 &lt;p&gt;The CGAL Project is a &lt;a href=&quot;https://summerofcode.withgoogle.com/organizations/5350535705657344/&quot;&gt;mentoring organization&lt;/a&gt;
 for &lt;a href=&quot;https://summerofcode.withgoogle.com/&quot;&gt;Google Summer of Code 2020&lt;/a&gt;.
-Have a look at our &lt;a href=&quot;https://github.com/CGAL/cgal/wiki/Project-Ideas&quot;&gt;Project Ideas&lt;/a&gt; page.&lt;/p&gt;
+Have a look at our &lt;a href=&quot;https://github.com/CGAL/cgal/wiki/GSoC_2020&quot;&gt;Project Ideas&lt;/a&gt; page.&lt;/p&gt;
 </description>
                 <link>http://www.cgal.org/news/2020/02/20/gsoc-2020-mentoring/</link>
                 <guid>http://www.cgal.org/news/2020/02/20/gsoc-2020-mentoring</guid>
@@ -7630,7 +7654,7 @@ property map;&lt;/li&gt;
                 <description>
 &lt;p&gt;The CGAL Project is a &lt;a href=&quot;https://summerofcode.withgoogle.com/organizations/5935622787694592/&quot;&gt;mentoring organization&lt;/a&gt;
 for &lt;a href=&quot;https://summerofcode.withgoogle.com/&quot;&gt;Google Summer of Code 2019&lt;/a&gt;.
-Have a look at our &lt;a href=&quot;https://github.com/CGAL/cgal/wiki/Project-Ideas&quot;&gt;Project Ideas&lt;/a&gt; page.&lt;/p&gt;
+Have a look at our &lt;a href=&quot;https://github.com/CGAL/cgal/wiki/GSoC_2019&quot;&gt;Project Ideas&lt;/a&gt; page.&lt;/p&gt;
 </description>
                 <link>http://www.cgal.org/news/2019/02/27/gsoc-2019-mentoring/</link>
                 <guid>http://www.cgal.org/news/2019/02/27/gsoc-2019-mentoring</guid>
@@ -9730,7 +9754,7 @@ can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=milestone
                 <description>
 &lt;p&gt;The CGAL Project is a &lt;a href=&quot;https://summerofcode.withgoogle.com/organizations/6121660483108864/&quot;&gt;mentoring organization&lt;/a&gt;
 for &lt;a href=&quot;https://summerofcode.withgoogle.com/&quot;&gt;Google Summer of Code 2018&lt;/a&gt;.
-Have a look at our &lt;a href=&quot;https://github.com/CGAL/cgal/wiki/Project-Ideas&quot;&gt;Project Ideas&lt;/a&gt; page.&lt;/p&gt;
+Have a look at our &lt;a href=&quot;https://github.com/CGAL/cgal/wiki/GSoC_2018&quot;&gt;Project Ideas&lt;/a&gt; page.&lt;/p&gt;
 </description>
                 <link>http://www.cgal.org/news/2018/02/12/gsoc-2018-mentoring/</link>
                 <guid>http://www.cgal.org/news/2018/02/12/gsoc-2018-mentoring</guid>
