@@ -5,10 +5,22 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2025-02-28T12:32:07+00:00</lastBuildDate>
-        <pubDate>2025-02-28T12:32:07+00:00</pubDate>
+        <lastBuildDate>2025-03-01T20:33:24+00:00</lastBuildDate>
+        <pubDate>2025-03-01T20:33:24+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>CGAL to participate in the Google Summer of Code 2025</title>
+                <description>
+&lt;p&gt;The CGAL Project is a &lt;a href=&quot;https://summerofcode.withgoogle.com/programs/2025/organizations/cgal-project&quot;&gt;mentoring organization&lt;/a&gt;
+for the &lt;a href=&quot;https://summerofcode.withgoogle.com/programs/2025&quot;&gt;Google Summer of Code 2025&lt;/a&gt;.
+Have a look at our &lt;a href=&quot;https://github.com/CGAL/cgal/wiki/Project-Ideas&quot;&gt;Project Ideas&lt;/a&gt; page.&lt;/p&gt;
+</description>
+                <link>http://www.cgal.org/news/2025/02/28/gsoc-2025-mentoring/</link>
+                <guid>http://www.cgal.org/news/2025/02/28/gsoc-2025-mentoring</guid>
+                <pubDate>2025-02-28T00:00:00+00:00</pubDate>
+        </item>
 
         <item>
                 <title>Tetrahedral Mesh Generation Improvements</title>
