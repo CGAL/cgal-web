@@ -32,7 +32,7 @@ Usage:
       <ul>
     {% endif %}
 
-    <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+    <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         <br><div style="color:#afaa98;font-size:12px">{{ post.date | date: "%B %e, %Y" }}</div>
     </li>
 

@@ -87,8 +87,8 @@ mentored by Keenan Crane and Andreas Fabri. It is now available in CGAL's master
 on the <a href="https://github.com/CGAL/cgal/">CGAL GitHub repository</a>,
 and will be officially released in the upcoming version of CGAL (4.14) scheduled for March 2019.</p>
 
-<i class="glyphicon glyphicon-book"></i>
+<i class="bi bi-book"></i>
 <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Heat_method_3/index.html#Chapter_HeatMethod">Documentation of the package Heat_Method_3</a> <br>
 
-<i class="glyphicon glyphicon-download"></i>
+<i class="bi bi-arrow-down-circle"></i>
 <a href="https://github.com/CGAL/cgal/tree/master">CGAL master branch on GitHub</a>

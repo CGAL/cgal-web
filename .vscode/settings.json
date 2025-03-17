@@ -1,0 +1,7 @@
+{
+        "livePreview.defaultPreviewPath": "_site/",
+        "livePreview.serverRoot": "_site/",
+        "livePreview.showServerStatusNotifications": true,
+        "livePreview.autoRefreshPreview": "On Changes to Saved Files",
+        "livePreview.previewDebounceDelay": 1000
+}

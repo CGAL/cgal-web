@@ -183,8 +183,8 @@ with respect to the number of contour vertices as it can be seen from the plot b
 on the <a href="https://github.com/CGAL/cgal/">CGAL GitHub repository</a>, and will be
 officially released in the upcoming version of CGAL, CGAL 5.4, scheduled for December 2021.</p>
 
-<i class="glyphicon glyphicon-book"></i>
+<i class="bi bi-book"></i>
 <a href="https://doc.cgal.org/5.4/Manual/packages.html#PkgShapeRegularization">Documentation of the package Shape_Regularization</a>
 <br>
-<i class="glyphicon glyphicon-download"></i>
+<i class="bi bi-arrow-down-circle"></i>
 <a href="https://github.com/CGAL/cgal/tree/master">CGAL master branch on GitHub</a>

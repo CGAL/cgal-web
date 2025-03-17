@@ -12,15 +12,20 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Change BASE_PATH
-        run: yq -i '.JB.BASE_PATH = "${{ vars.CGAL_WEB_SITE_URL }}"' _config.yml
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+      - name: Setup Jekyll
+        run: |
+          gem install jekyll bundler
       - name: Remove demo/ (temporarily)
         run: rm -rf demo/
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./
-          destination: ./_site
+      - name: setup nodejs
+        run: npm install
+      - name: Build with jekyll
+        run: bundle exec jekyll build --destination ./_site
       - name: install ssh keys
         run: |
           install -m 600 -D /dev/null ~/.ssh/id_rsa

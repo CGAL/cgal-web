@@ -9,4 +9,4 @@ tags: [gsoc,gsoc2020]
 
 The CGAL Project is a <a href="https://summerofcode.withgoogle.com/organizations/5350535705657344/">mentoring organization</a>
 for <a href="https://summerofcode.withgoogle.com/">Google Summer of Code 2020</a>.
-Have a look at our <a href="https://github.com/CGAL/cgal/wiki/Project-Ideas">Project Ideas</a> page.
+Have a look at our <a href="https://github.com/CGAL/cgal/wiki/GSoC_2020">Project Ideas</a> page.

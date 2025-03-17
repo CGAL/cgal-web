@@ -12,22 +12,22 @@
     <meta name="viewport" content="width=device-width">
     <meta name="author" content="{{ site.author.name }}">
 
-    <link rel="icon" type="image/png" href="{{ BASE_PATH }}/images/cgal_logo/g-196x196-y.png">
-    <link rel="stylesheet" href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ ASSET_PATH }}/bootstrap/css/icomoon-social.css">
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/images/cgal_logo/g-196x196-y.png">
+    <link rel="stylesheet" href="{{ site.baseurl }}/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/node_modules/bxslider/dist/jquery.bxslider.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 
     <!--[if lte IE 8]>
 	<link rel="stylesheet" href="css/leaflet.ie.css" />
 	<![endif]-->
-    <link rel="stylesheet" href="{{ ASSET_PATH }}/bootstrap/css/main.css">
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/main.css">
 
     <!-- atom & rss feed -->
-    <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-    <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    <link href="{{ site.baseurl }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="{{ site.baseurl }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
 
-
-    <script src="{{ ASSET_PATH }}/bootstrap/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -38,30 +38,38 @@
     <!-- Navigation & Logo-->
     <div class="mainmenu-wrapper">
     <div class="container">
+    <div class="mobile-header">
+      <a href="{{ site.baseurl }}/index.html" class="mobile-logo">
+        <img src="{{ site.baseurl }}/images/cgal_front_page_2013.png" alt="CGAL Logo" height="30">
+      </a>
+      <button class="menu-toggle" aria-label="Menu">
+        Menu
+      </button>
+    </div>
     <nav id="mainmenu" class="mainmenu" role="navigation">
     <ul>
     <li class="logo-wrapper hidden-xs hidden-sm hidden-md">
-    <a href="{{ BASE_PATH }}/index.html">
-    <img src="{{ BASE_PATH }}/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
+    <a href="{{ site.baseurl }}/index.html">
+    <img src="{{ site.baseurl }}/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
     </a>
     </li>
 
     <li class="hidden-lg">
-    <a href="{{ BASE_PATH }}/index.html">
-    <img src="{{ BASE_PATH }}/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
+    <a href="{{ site.baseurl }}/index.html">
+    <img src="{{ site.baseurl }}/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
     </a>
     </li>
 
     <li>
-    <a href="{{ BASE_PATH }}/project.html">Project</a>
+    <a href="{{ site.baseurl }}/project.html">Project</a>
     </li>
 
     <li>
-    <a href="{{ BASE_PATH }}/download.html">Download</a>
+    <a href="{{ site.baseurl }}/download.html">Download</a>
     </li>
 
-    <li class="dropdown" style="transition-duration: all 0s ease; transition-delay: all 0s ease;">
-    <a href="#" class="dropdown-toggle" data-hover="dropdown">Packages <span class="caret"></span></a>
+    <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Packages</a>
         <ul class="dropdown-menu">
           <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
           <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
@@ -84,19 +92,19 @@
     </li>
 
     <li>
-    <a href="{{ BASE_PATH }}/documentation.html">Documentation</a>
+    <a href="{{ site.baseurl }}/documentation.html">Documentation</a>
     </li>
 
     <li>
-    <a href="{{ BASE_PATH }}/news.html">News</a>
+    <a href="{{ site.baseurl }}/news.html">News</a>
     </li>
 
     <li>
-    <a href="{{ BASE_PATH }}/media.html">Media</a>
+    <a href="{{ site.baseurl }}/media.html">Media</a>
     </li>
 
     <li>
-    <a href="{{ BASE_PATH }}/support.html">Support</a>
+    <a href="{{ site.baseurl }}/support.html">Support</a>
     </li>
 
     </ul>
@@ -107,8 +115,11 @@
     <div class="section section-breadcrumbs">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12 home-title">
             <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
+            <a style="text-align: right;" href="https://github.com/cgal/cgal" alt="The CGAL Project's github">
+              <span class="btn-dark-orange github-link fs-5">CGAL/cgal <i class="bi bi-github"></i></span>
+            </a>
           </div>
         </div>
       </div>
@@ -123,13 +134,13 @@
           <div class="footer-copyright">
             <div style="float: left;">
               <a href="https://twitter.com/TheCGALProject" alt="The CGAL Project's Twitter">
-                <img src="{{ BASE_PATH }}/images/icons/twitter.svg" class="center-block btn-dark-orange" alt="Twitter" height="18"></img>
+                <img src="{{ site.baseurl }}/images/icons/twitter.svg" class="center-block btn-dark-orange" alt="Twitter" height="18"></img>
               </a>
             </div>
             &copy; 1995-{{site.time | date: "%Y"}} The CGAL Project. All rights reserved.
             <div style="float: right;">
               <a href="https://cgal.geometryfactory.com/CGAL/Members/wiki/Main_Page" alt="Password protected access to the Developer Wiki">
-                <i class="glyphicon glyphicon-lock"></i>
+                <i class="bi bi-file-lock fs-5"></i>
               </a>
             </div>
           </div>
@@ -138,13 +149,47 @@
     </div>
 
     <!-- Javascripts -->
-    <script src="{{ ASSET_PATH }}/bootstrap/js/jquery-1.9.1.min.js"></script>
-    <script>window.jQuery || document.write('<script src="{{ ASSET_PATH }}/bootstrap/js/jquery-1.9.1.min.js"><\/script>')</script>
-      <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
-      <script src="{{ ASSET_PATH }}/bootstrap/js/jquery.fitvids.js"></script>
-      <script src="{{ ASSET_PATH }}/bootstrap/js/jquery.sequence-min.js"></script>
-      <script src="{{ ASSET_PATH }}/bootstrap/js/jquery.bxslider.js"></script>
-      <script src="{{ ASSET_PATH }}/bootstrap/js/template.js"></script>
-      <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap-hover-dropdown-min.js"></script>
-  </body>
+    <script src="{{ site.baseurl }}/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="{{ site.baseurl }}/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+      <script src="{{ site.baseurl }}/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="{{ site.baseurl }}/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
+      <script>
+        $(function () {
+          $('.bxslider').bxSlider({
+            auto: true,
+            speed: 0,
+            pause: 5000,
+            infiniteLoop: true,
+            touchEnabled: false,
+            pager: true,
+            pagerCustom: '.custom-pager',
+            controls: false,
+            onSliderLoad: function (currentIndex) {
+              $('.bxslider li').find('.slideTitle, .slideSubTitle').css({
+                transform: 'translate(0)',
+                opacity: 1
+              });
+              $('.bxslider li').eq(currentIndex).find('.slideTitle, .slideSubTitle').addClass('animatedTitle');
+            },
+            onSlideBefore: function ($slideElement, oldIndex, newIndex) {
+              $($slideElement).siblings().find('.slideTitle, .slideSubTitle').removeClass('animatedTitle');
+              $($slideElement).find('.slideTitle, .slideSubTitle').addClass('animatedTitle');
+              $($slideElement).siblings().find('.slide').removeClass('slideInFromRight');
+              $($slideElement).find('.slide').addClass('slideInFromRight');
+            }
+          });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+          const menuToggle = document.querySelector('.menu-toggle');
+          const mainMenu = document.getElementById('mainmenu');
+
+          menuToggle.addEventListener('click', function() {
+              mainMenu.classList.toggle('active');
+              menuToggle.classList.toggle('active');
+          });
+      });
+      </script>
+      <script src="{{ site.baseurl }}/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+    </body>
 </html>

@@ -9,32 +9,32 @@ tagline:
 <div class="homepage-slider">
   <div id="sequence">
     <ul class="sequence-canvas">
-      <li style="background-image: url({{ BASE_PATH }}/April22/22_SXSW.png); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+      <li style="background-image: url({{ site.baseurl }}/April22/22_SXSW.png); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
         <h2 class="title">Arrangements</h2>
         <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::Arrangement_2();</pre></h3>
       </li>
 
-      <li style="background-image: url({{ BASE_PATH }}/April22/apes.JPG); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+      <li style="background-image: url({{ site.baseurl }}/April22/apes.JPG); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
         <h2 class="title">Axis Aligned Bounding Box Tree</h2>
         <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::AABB_tree tree(faces(ape_mesh));</pre></h3>
       </li>
 
-      <li style="background-image: url({{ BASE_PATH }}/April22/tracks.JPG); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+      <li style="background-image: url({{ site.baseurl }}/April22/tracks.JPG); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
         <h2 class="title">The Heat Method</h2>
         <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::Heat_method_3::estimate_geodesic_distances();</pre></h3>
       </li>
 
-      <li style="background-image: url({{ BASE_PATH }}/April22/doodles.JPG); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+      <li style="background-image: url({{ site.baseurl }}/April22/doodles.JPG); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
         <h2 class="title">Image Segmentation</h2>
         <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::connected_components(doodles));</pre></h3>
       </li>
 
-      <li style="background-image: url({{ BASE_PATH }}/April22/experience.JPG); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+      <li style="background-image: url({{ site.baseurl }}/April22/experience.JPG); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
         <h2 class="title">Classification</h2>
         <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::Classification::classify(experiences);</pre></h3>
       </li>
 
-      <li style="background-image: url({{ BASE_PATH }}/April22/session.JPG); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+      <li style="background-image: url({{ site.baseurl }}/April22/session.JPG); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
         <h2 class="title">Periodic Mesh Generation</h2>
         <h3 class="subtitle"><pre style='text-shadow:none'>CGAL::Periodic_tet_mesh mesh = CGAL::make_periodic_mesh();</pre></h3>
       </li>
@@ -100,7 +100,7 @@ tagline:
         {% unless post.dontshow %}
         {% unless post.tags contains "WIP" %}
           <li class="active">{{this_month}} {{this_year}}
-          <a href="{{ BASE_PATH }}{{post.url}}" class="active">{{post.title}}</a><!--
+          <a href="{{ site.baseurl }}{{post.url}}" class="active">{{post.title}}</a><!--
           -->{% unless post.description == "" %} -- {{post.description}}{% endunless %}
           </li>
           {% assign news_counter = news_counter | plus: 1 %}
@@ -112,7 +112,7 @@ k            {% break %}
         {% endunless %}
       {% endfor %}
     </ul>
-    <a href="{{ BASE_PATH}}/news.html" class="btn">Older news and announcements...</a>
+    <a href="{{ site.baseurl }}/news.html" class="btn">Older news and announcements...</a>
   </div>
   <div class="col-md-4">
     {% assign news = site.posts %}
@@ -124,14 +124,14 @@ k            {% break %}
         {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
 
         {% if post.tags contains "latest-release" %}
-          <li class="active"><b>Latest stable release:</b> <a href="{{ BASE_PATH }}{{post.url}}" class="active">{{post.description}}</a></li>
+          <li class="active"><b>Latest stable release:</b> <a href="{{ site.baseurl }}{{post.url}}" class="active">{{post.description}}</a></li>
           {% break %}
         {% endif %}
       {% endfor %}
       {% for post in news %}
         {% if post.tags contains "active-beta-release" %}
           {% assign exist_active_beta = true %}
-          <li class="active"><b>Active beta release:</b> <a href="{{ BASE_PATH }}{{post.url}}" class="active">{{post.description}}</a></li>
+          <li class="active"><b>Active beta release:</b> <a href="{{ site.baseurl }}{{post.url}}" class="active">{{post.description}}</a></li>
           {% break %}
         {% endif %}
       {% endfor %}
@@ -151,7 +151,7 @@ k            {% break %}
         {% unless post.tags contains "WIP" %}
         {% if post.tags contains "release" %}
         {% unless post.tags contains "latest" or post.tags contains "active" %}
-          <li class="active">{{this_month}} {{this_year}} <a href="{{ BASE_PATH }}{{post.url}}" class="active">{{post.description}}</a></li>
+          <li class="active">{{this_month}} {{this_year}} <a href="{{ site.baseurl }}{{post.url}}" class="active">{{post.description}}</a></li>
           {% assign releases_counter = releases_counter | plus: 1 %}
           {% if releases_counter >= max_releases_number %}
             {% break %}
@@ -162,6 +162,6 @@ k            {% break %}
         {% endunless %}
       {% endfor %}
     </ul>
-    <a href="{{ BASE_PATH}}/releases.html" class="btn">Older releases...</a>
+    <a href="{{ site.baseurl }}/releases.html" class="btn">Older releases...</a>
   </div>
 </div>
