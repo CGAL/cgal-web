@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2025-03-31T14:49:34+00:00</updated>
+ <updated>2025-03-31T14:52:58+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -13,57 +13,53 @@
 
  
  <entry>
-   <title>Welcome: Nicolas Bourbaki</title>
+   <title>CGAL User Portait: Debeers/Tiffany</title>
    <link href="http://www.cgal.org/news/2025/04/01/Hope/"/>
    <updated>2025-04-01T00:00:00+00:00</updated>
    <id>http://www.cgal.org/news/2025/04/01/Hope</id>
    <content type="html">
-&lt;p&gt;The CGAL Editorial Board was invited by &lt;a href=&quot;https://www.accenture.com/fr-fr&quot;&gt;Accenture France&lt;/a&gt;
-to perform a self-assessment.
-This one week workshop in a monastery in the Maritime Alps was a unique experience, and it came
-to us as the price of the &lt;em&gt;SoCG Test of Time Award&lt;/em&gt; that the CGAL Project received last June.
-The workshop led to the insight, that to attact even more brillant people than today,
-we have to give up our egoless programming culture, which, ironically, had been
-promoted by the same consulting firm around the year 2000.&lt;/p&gt;
+&lt;p&gt;The De Beers Group is a South African–British corporation that specializes in the diamond industry, 
+including mining, exploitation, retail, inscription, grading, trading and industrial diamond manufacturing.
+Tiffany and Co is an American luxury jewelry and specialty design house headquartered on Fifth Avenue in Manhattan.&lt;/p&gt;
 
-&lt;p&gt;While it is true that developers are listed as authors of the Manual chapters
-the discussion with the bahavioral psychologists of Accenture made us understand
-that people expect much more recognition. So do not be surprised when in CGAL 6.0
-you will encounter the &lt;code&gt;CGAL::Hyperbolic_Teillaud_diagram_2&lt;/code&gt; as well as the  &lt;code&gt;CGAL::Oesau_graph_3&lt;/code&gt;.
-&lt;/p&gt;
+&lt;p&gt;Just like Total and Saudi Aramco, the De Beers Group makes already for several years use of the
+phantastic CGAL mesh generation algorithms in their  sub surface modeleing software.   
+More recently we worked on a completely different topic for them, when they needed a highest 
+performance version for the corefinement of a mesh with a plane (See pull request 
+&lt;a href=&quot;https://github.com/CGAL/cgal/pull/8721&quot;&gt;PR 8721&lt;/a&gt;) for a rather special 
+diamond cut project, called &quot;Hope&quot;.  Before cutting a real raw diamond, they explore 
+the space of possibilities by cutting its digital twin.
+Although the final jewel does not have that many facets, during the training data generation
+for the AI powered cut CAD, several billions of cuts are peformed on the digital twin. 
+While this could be done in a brute force manner, De Beers Group prefers efficiency, 
+that is a frugal approach, in order to help saving the blue planet.&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3&gt;Welcome Nicolas Bourbaki&lt;/h3&gt;
+&lt;h3&gt;Hope&lt;/h3&gt;
 
-&lt;p&gt;In the workshop we also learned that we have to develop a &lt;em&gt;Welcome Culture&lt;/em&gt;
-which puts new developers in the spot light, even before they have made a first contribution.
-We will do a better job for our 2024 Google Summmer of Code students, but let&apos;s start
-with &lt;em&gt;Nicolas Bourbaki&lt;/em&gt;, who currently works at &lt;em&gt;Ecole Normale Superieure&lt;/em&gt; in Paris.&lt;/p&gt;
+&lt;p&gt;The De Beers project &quot;Hope&quot; has its name from the diamond &lt;a href=&quot;https://en.wikipedia.org/wiki/Hope_Diamond&quot;&gt;&quot;Hope&quot;&lt;/a&gt;. This diamond was originally
+&quot;the French Blue&quot;, ownned by Louis XIV, which had been lost during the French Revolution, and later undergone a re-cut,
+the largest section having become the &quot;Hope Diamond&quot;, still in the National Museum of Natural History in Washington, D.C. 
+While French governments every now and then claim a restitution of this French crown jewel, 
+an even larger French/US diplomatic crisis lies ahead, with plans of the jewel getting incorported into a crown made by Tiffany and Co.&lt;/p&gt;
 
-&lt;p&gt;Nicolas first contribution will be a &lt;em&gt;Curves and Surfaces&lt;/em&gt; package,
-featuring the &lt;a href=&quot;https://mathcurve.com/courbes2d.gb/oeuf/oeuf.shtml&quot;&gt;Huegelschaeffer Egg&lt;/a&gt;
-and the &lt;a href=&quot;https://mathcurve.com/courbes2d.gb/conchoiddecercle/conchoiddecercle.shtml&quot;&gt;Conchoid&lt;/a&gt; curve, as well as the &lt;a href=&quot;https://mathcurve.com/surfaces/seifert/seifert.shtml&quot;&gt;Seifert&lt;/a&gt; surface.&lt;/p&gt;
+&lt;h3&gt;Crowns&lt;/h3&gt;
+
+&lt;p&gt;As explained in a recent article in a special issue of the &lt;a href=&quot;https://boutiquevpc.courrierinternational.com/hors-series/3742-le-nouvel-age-des-empires.html&quot;&gt;Courrier International&lt;/a&gt;
+there is a global tendency for autocrats to make national jewelry manufacturers the official suppliers of crowns and coronets
+for their governments.&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../../images/April24/huegelschaeffer.gif&quot;&gt;&lt;img src=&quot;../../../../../images/April24/huegelschaeffer.gif&quot; style=&quot;max-width:85%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
-  &lt;br /&gt;&lt;small&gt;The Huegelschaeffer egg curve.&lt;/small&gt;
+  &lt;a href=&quot;../../../../../images/April25/CourrierInternational.png&quot;&gt;&lt;img src=&quot;../../../../../images/April25/CourrierInternational.png&quot; style=&quot;max-width:85%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+  &lt;br /&gt;&lt;small&gt;Front page of Courrier International.&lt;/small&gt;
 &lt;/div&gt;
 
-&lt;p&gt;These curves and surfaces may seem of only theoretical interest which, however, is completely wrong.
-The conchoid is strongly related to the study of linkages of autonomous humanoid robotics,
-while the Seifert surface led to the invention of the
-&lt;a href=&quot;https://www.youtube.com/watch?v=SwkWP--UQFA&quot;&gt;Quechua 2&lt;/a&gt; tent made by Decathlon.&lt;/p&gt;
+&lt;p&gt;Tiffany plans to integrate the Hope Diamond in a presidential crown
+in the style of the Napoleonic Empire. Tiffany further took inspiration from Doge crowns, also called &amp;lt;a href=https://en.wikipedia.org/wiki/Corno_ducale&quot;&amp;gt;Corno Ducale/a&amp;gt; 
+and will manufacture them for special government employees. Here again, CGAL came in for the 3D Voronoi structure inside this wonderful crown&lt;/p&gt;
 
-&lt;h3&gt;Back to the Physical World&lt;/h3&gt;
+&lt;p&gt;Tiffany and Co, Christofle, Pandora and several other jewelry companies are the founding members of the &lt;em&gt;Association of Crown Manufacturers&lt;/em&gt;, also short &lt;em&gt;ACM&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;.&lt;/p&gt;
 
-&lt;p&gt;While a &lt;a href=&quot;https://www.cgal.org/people.html&quot;&gt;People&lt;/a&gt; web page is a nice living document
-we decided to produce a &lt;em&gt;physical twin&lt;/em&gt; with portrait photos not made with an iphone
-but by a portrait photograph. We are grateful to the Inria Research Center in Sophia-Antipolis
-which offers a physical wall in the Gilles Kahn Auditorium for hosting the CGAL Editorial Board Gallery.
-
-
-&lt;p&gt;&lt;b&gt;This April joke came with a &lt;a href=&quot;/cgal-web/April24/index.html&quot;&gt;gallery.&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
-&lt;/p&gt;
 </content>
  </entry>
  
