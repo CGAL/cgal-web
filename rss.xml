@@ -5,10 +5,65 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2025-03-31T12:54:34+00:00</lastBuildDate>
-        <pubDate>2025-03-31T12:54:34+00:00</pubDate>
+        <lastBuildDate>2025-03-31T14:49:34+00:00</lastBuildDate>
+        <pubDate>2025-03-31T14:49:34+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Welcome: Nicolas Bourbaki</title>
+                <description>
+&lt;p&gt;The CGAL Editorial Board was invited by &lt;a href=&quot;https://www.accenture.com/fr-fr&quot;&gt;Accenture France&lt;/a&gt;
+to perform a self-assessment.
+This one week workshop in a monastery in the Maritime Alps was a unique experience, and it came
+to us as the price of the &lt;em&gt;SoCG Test of Time Award&lt;/em&gt; that the CGAL Project received last June.
+The workshop led to the insight, that to attact even more brillant people than today,
+we have to give up our egoless programming culture, which, ironically, had been
+promoted by the same consulting firm around the year 2000.&lt;/p&gt;
+
+&lt;p&gt;While it is true that developers are listed as authors of the Manual chapters
+the discussion with the bahavioral psychologists of Accenture made us understand
+that people expect much more recognition. So do not be surprised when in CGAL 6.0
+you will encounter the &lt;code&gt;CGAL::Hyperbolic_Teillaud_diagram_2&lt;/code&gt; as well as the  &lt;code&gt;CGAL::Oesau_graph_3&lt;/code&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3&gt;Welcome Nicolas Bourbaki&lt;/h3&gt;
+
+&lt;p&gt;In the workshop we also learned that we have to develop a &lt;em&gt;Welcome Culture&lt;/em&gt;
+which puts new developers in the spot light, even before they have made a first contribution.
+We will do a better job for our 2024 Google Summmer of Code students, but let&apos;s start
+with &lt;em&gt;Nicolas Bourbaki&lt;/em&gt;, who currently works at &lt;em&gt;Ecole Normale Superieure&lt;/em&gt; in Paris.&lt;/p&gt;
+
+&lt;p&gt;Nicolas first contribution will be a &lt;em&gt;Curves and Surfaces&lt;/em&gt; package,
+featuring the &lt;a href=&quot;https://mathcurve.com/courbes2d.gb/oeuf/oeuf.shtml&quot;&gt;Huegelschaeffer Egg&lt;/a&gt;
+and the &lt;a href=&quot;https://mathcurve.com/courbes2d.gb/conchoiddecercle/conchoiddecercle.shtml&quot;&gt;Conchoid&lt;/a&gt; curve, as well as the &lt;a href=&quot;https://mathcurve.com/surfaces/seifert/seifert.shtml&quot;&gt;Seifert&lt;/a&gt; surface.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;a href=&quot;../../../../../images/April24/huegelschaeffer.gif&quot;&gt;&lt;img src=&quot;../../../../../images/April24/huegelschaeffer.gif&quot; style=&quot;max-width:85%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+  &lt;br /&gt;&lt;small&gt;The Huegelschaeffer egg curve.&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;p&gt;These curves and surfaces may seem of only theoretical interest which, however, is completely wrong.
+The conchoid is strongly related to the study of linkages of autonomous humanoid robotics,
+while the Seifert surface led to the invention of the
+&lt;a href=&quot;https://www.youtube.com/watch?v=SwkWP--UQFA&quot;&gt;Quechua 2&lt;/a&gt; tent made by Decathlon.&lt;/p&gt;
+
+&lt;h3&gt;Back to the Physical World&lt;/h3&gt;
+
+&lt;p&gt;While a &lt;a href=&quot;https://www.cgal.org/people.html&quot;&gt;People&lt;/a&gt; web page is a nice living document
+we decided to produce a &lt;em&gt;physical twin&lt;/em&gt; with portrait photos not made with an iphone
+but by a portrait photograph. We are grateful to the Inria Research Center in Sophia-Antipolis
+which offers a physical wall in the Gilles Kahn Auditorium for hosting the CGAL Editorial Board Gallery.
+
+
+&lt;p&gt;&lt;b&gt;This April joke came with a &lt;a href=&quot;/cgal-web/April24/index.html&quot;&gt;gallery.&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;/p&gt;
+</description>
+                <link>http://www.cgal.org/news/2025/04/01/Hope/</link>
+                <guid>http://www.cgal.org/news/2025/04/01/Hope</guid>
+                <pubDate>2025-04-01T00:00:00+00:00</pubDate>
+        </item>
 
         <item>
                 <title>CGAL to participate in the Google Summer of Code 2025</title>
