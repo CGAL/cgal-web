@@ -5,43 +5,42 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2025-03-31T14:52:58+00:00</lastBuildDate>
-        <pubDate>2025-03-31T14:52:58+00:00</pubDate>
+        <lastBuildDate>2025-03-31T15:05:37+00:00</lastBuildDate>
+        <pubDate>2025-03-31T15:05:37+00:00</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
-                <title>CGAL User Portait: Debeers/Tiffany</title>
+                <title>CGAL User Portait: De Beers / Tiffany</title>
                 <description>
-&lt;p&gt;The De Beers Group is a South African–British corporation that specializes in the diamond industry, 
+&lt;p&gt;The De Beers Group is a South African–British corporation that specializes in the diamond industry,
 including mining, exploitation, retail, inscription, grading, trading and industrial diamond manufacturing.
-Tiffany and Co is an American luxury jewelry and specialty design house headquartered on Fifth Avenue in Manhattan.&lt;/p&gt;
+Tiffany and Co. is an American luxury jewelry and specialty design house headquartered on Fifth Avenue in Manhattan.&lt;/p&gt;
 
-&lt;p&gt;Just like Total and Saudi Aramco, the De Beers Group makes already for several years use of the
-phantastic CGAL mesh generation algorithms in their  sub surface modeleing software.   
-More recently we worked on a completely different topic for them, when they needed a highest 
-performance version for the corefinement of a mesh with a plane (See pull request 
-&lt;a href=&quot;https://github.com/CGAL/cgal/pull/8721&quot;&gt;PR 8721&lt;/a&gt;) for a rather special 
-diamond cut project, called &quot;Hope&quot;.  Before cutting a real raw diamond, they explore 
+&lt;p&gt;Just like Total and Saudi Aramco, the De Beers Group has been making use of the
+fantastic CGAL mesh generation algorithms in their sub-surface modeling software for several years already.
+More recently, we worked on a completely different topic for them, when they needed a highest
+performance version for the corefinement of a mesh with a plane (See pull request
+&lt;a href=&quot;https://github.com/CGAL/cgal/pull/8721&quot;&gt;PR 8721&lt;/a&gt;) for a rather special
+diamond cut project, called &quot;Hope&quot;. Before cutting a real raw diamond, they explore
 the space of possibilities by cutting its digital twin.
 Although the final jewel does not have that many facets, during the training data generation
-for the AI powered cut CAD, several billions of cuts are peformed on the digital twin. 
-While this could be done in a brute force manner, De Beers Group prefers efficiency, 
+for the AI-powered cut CAD, several billions of cuts are peformed on the digital twin.
+While this could be done in a brute force manner, De Beers Group prefers efficiency,
 that is a frugal approach, in order to help saving the blue planet.&lt;/p&gt;
 
 &lt;h3&gt;Hope&lt;/h3&gt;
 
 &lt;p&gt;The De Beers project &quot;Hope&quot; has its name from the diamond &lt;a href=&quot;https://en.wikipedia.org/wiki/Hope_Diamond&quot;&gt;&quot;Hope&quot;&lt;/a&gt;. This diamond was originally
 &quot;the French Blue&quot;, ownned by Louis XIV, which had been lost during the French Revolution, and later undergone a re-cut,
-the largest section having become the &quot;Hope Diamond&quot;, still in the National Museum of Natural History in Washington, D.C. 
-While French governments every now and then claim a restitution of this French crown jewel, 
+the largest section having become the &quot;Hope Diamond&quot;, still in the National Museum of Natural History in Washington, D.C.
+While French governments every now and then claim a restitution of this French crown jewel,
 an even larger French/US diplomatic crisis lies ahead, with plans of the jewel getting incorported into a crown made by Tiffany and Co.&lt;/p&gt;
 
 &lt;h3&gt;Crowns&lt;/h3&gt;
 
 &lt;p&gt;As explained in a recent article in a special issue of the &lt;a href=&quot;https://boutiquevpc.courrierinternational.com/hors-series/3742-le-nouvel-age-des-empires.html&quot;&gt;Courrier International&lt;/a&gt;
-there is a global tendency for autocrats to make national jewelry manufacturers the official suppliers of crowns and coronets
-for their governments.&lt;/p&gt;
+there is a global tendency for autocrats to make national jewelry manufacturers the official suppliers of crowns and coronets for their governments.&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
   &lt;a href=&quot;../../../../../images/April25/CourrierInternational.png&quot;&gt;&lt;img src=&quot;../../../../../images/April25/CourrierInternational.png&quot; style=&quot;max-width:85%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
@@ -49,10 +48,10 @@ for their governments.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Tiffany plans to integrate the Hope Diamond in a presidential crown
-in the style of the Napoleonic Empire. Tiffany further took inspiration from Doge crowns, also called &amp;lt;a href=https://en.wikipedia.org/wiki/Corno_ducale&quot;&amp;gt;Corno Ducale/a&amp;gt; 
+in the style of the Napoleonic Empire. Tiffany further took inspiration from Doge crowns, also called &amp;lt;a href=https://en.wikipedia.org/wiki/Corno_ducale&quot;&amp;gt;Corno Ducale/a&amp;gt;
 and will manufacture them for special government employees. Here again, CGAL came in for the 3D Voronoi structure inside this wonderful crown&lt;/p&gt;
 
-&lt;p&gt;Tiffany and Co, Christofle, Pandora and several other jewelry companies are the founding members of the &lt;em&gt;Association of Crown Manufacturers&lt;/em&gt;, also short &lt;em&gt;ACM&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Tiffany and Co, Christofle, Pandora and several other jewelry companies are the founding members of the &lt;em&gt;Association of Crown Manufacturers&lt;/em&gt;, also known as &lt;em&gt;ACM&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;.&lt;/p&gt;
 
 </description>
