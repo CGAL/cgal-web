@@ -71,15 +71,15 @@ and using the <em>Interpolated Corrected Curvature Measures</em> function for cu
 in the upcoming version of CGAL, CGAL 6.0, scheduled for mid 2024.</p>
 
 <i class="bi bi-book"></i>
-<a href="https://doc.cgal.org/5.6/Manual/packages.html#PkgPolygonMeshProcessing">Documentation of the package Polygon Mesh Processing</a>
+<a href="https://doc.cgal.org/6.0/Manual/packages.html#PkgPolygonMeshProcessing">Documentation of the package Polygon Mesh Processing</a>
 <br>
 
 <i class="bi bi-book"></i>
-<a href="https://cgal.geometryfactory.com/CGAL/doc/master/Polygon_mesh_processing/index.html#title59">Documentation section of the master branch about <code>interpolated_corrected_curvatures()</code></a>
+<a href="https://doc.cgal.org/6.0/Polygon_mesh_processing/index.html#PMPICC">Documentation section about <code>interpolated_corrected_curvatures()</code></a>
 <br>
 
 <i class="bi bi-book"></i>
-<a href="https://cgal.geometryfactory.com/CGAL/doc/master/Polygon_mesh_processing/index.html#title8">Documentation section of the master branch about <code>isotropic_remeshing()</code></a>
+<a href="https://doc.cgal.org/6.0/Polygon_mesh_processing/index.html#PMPMeshing">Documentation section about <code>isotropic_remeshing()</code></a>
 <br>
 
 <i class="bi bi-arrow-down-circle"></i>
