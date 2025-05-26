@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2025-05-24T20:50:22+00:00</updated>
+ <updated>2025-05-26T13:32:17+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -115,7 +115,6 @@ available since CGAL 6.0, and Planar Remeshing will be officially released
 in the upcoming version of CGAL, CGAL 6.1, scheduled for mid 2025.&lt;/p&gt;
 
 &lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/6.1/Polygon_mesh_processing/index.html#acvdrem&quot;&gt;Documentation section about ACVD Remeshing&lt;/a&gt;
 &lt;br /&gt;
 &lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
@@ -123,14 +122,17 @@ in the upcoming version of CGAL, CGAL 6.1, scheduled for mid 2025.&lt;/p&gt;
 &lt;br /&gt;
 &lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;
+&lt;br /&gt;&lt;br /&gt;
 
 &lt;h4&gt;Bibliography&lt;/h4&gt;
 
+&lt;p&gt;
 [1] Valette, S., &amp;amp; Chassery, J. M. (2004, September). Approximated centroidal voronoi diagrams for uniform polygonal mesh coarsening. In Computer Graphics Forum (Vol. 23, No. 3, pp. 381-389). Oxford, UK and Boston, USA: Blackwell Publishing, Inc.
 &lt;br /&gt;
 [2] Audette, M., Rivière, D., Ewend, M., &amp;amp; Valette, S. (2010, September). Approach-guided controlled resolution brain meshing for fe-based interactive neurosurgery simulation. In Workshop on Mesh Processing in Medical Image Analysis.
 &lt;br /&gt;
 [3] Valette, S., Chassery, J. M., &amp;amp; Prost, R. (2008). Generic remeshing of 3D triangular meshes with metric-dependent discrete Voronoi diagrams. IEEE Transactions on Visualization and Computer Graphics, 14(2), 369-381.
+&lt;/p&gt;
 &lt;/p&gt;&lt;/p&gt;
 </content>
  </entry>
@@ -227,11 +229,14 @@ will be officially released in the upcoming version of CGAL, CGAL 6.1, scheduled
 &lt;a href=&quot;https://doc.cgal.org/6.1/Polygon_repair&quot;&gt;Documentation of the “2D Polygon Repair” package&lt;/a&gt;
 &lt;br /&gt;
 &lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
-&lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4&gt;Bibliography&lt;/h4&gt;
 
-&lt;p&gt;[1] Ledoux, H., Ohori, K. A., &amp;amp; Meijers, M. (2014). A triangulation-based approach to automatically repair GIS polygons. Computers &amp;amp; Geosciences, 66, 121-131.&lt;/p&gt;
+&lt;p&gt;
+[1] Ledoux, H., Ohori, K. A., &amp;amp; Meijers, M. (2014). A triangulation-based approach to automatically repair GIS polygons. Computers &amp;amp; Geosciences, 66, 121-131.
+&lt;/p&gt;
 </content>
  </entry>
  
