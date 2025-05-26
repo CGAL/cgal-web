@@ -95,7 +95,10 @@ will be officially released in the upcoming version of CGAL, CGAL 6.1, scheduled
 <br>
 <i class="bi bi-arrow-down-circle"></i>
 <a href="https://github.com/CGAL/cgal/tree/master">CGAL master branch on GitHub</a>
+<br><br>
 
 <h4>Bibliography</h4>
 
+<p>
 [1] Ledoux, H., Ohori, K. A., & Meijers, M. (2014). A triangulation-based approach to automatically repair GIS polygons. Computers & Geosciences, 66, 121-131.
+</p>

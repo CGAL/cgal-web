@@ -104,7 +104,6 @@ available since CGAL 6.0, and Planar Remeshing will be officially released
 in the upcoming version of CGAL, CGAL 6.1, scheduled for mid 2025.</p>
 
 <i class="bi bi-book"></i>
-<i class="bi bi-book"></i>
 <a href="https://doc.cgal.org/6.1/Polygon_mesh_processing/index.html#acvdrem">Documentation section about ACVD Remeshing</a>
 <br>
 <i class="bi bi-book"></i>
@@ -112,11 +111,14 @@ in the upcoming version of CGAL, CGAL 6.1, scheduled for mid 2025.</p>
 <br>
 <i class="bi bi-arrow-down-circle"></i>
 <a href="https://github.com/CGAL/cgal/tree/master">CGAL master branch on GitHub</a>
+<br><br>
 
 <h4>Bibliography</h4>
 
+<p>
 [1] Valette, S., & Chassery, J. M. (2004, September). Approximated centroidal voronoi diagrams for uniform polygonal mesh coarsening. In Computer Graphics Forum (Vol. 23, No. 3, pp. 381-389). Oxford, UK and Boston, USA: Blackwell Publishing, Inc.
 <br>
 [2] Audette, M., Rivière, D., Ewend, M., & Valette, S. (2010, September). Approach-guided controlled resolution brain meshing for fe-based interactive neurosurgery simulation. In Workshop on Mesh Processing in Medical Image Analysis.
 <br>
 [3] Valette, S., Chassery, J. M., & Prost, R. (2008). Generic remeshing of 3D triangular meshes with metric-dependent discrete Voronoi diagrams. IEEE Transactions on Visualization and Computer Graphics, 14(2), 369-381.
+</p>
