@@ -99,8 +99,8 @@ and customization with user-specific criteria.</p>
 <h4>Status</h4>
 
 <p>All these additions already are integrated in CGAL's master branch on the
-<a href="https://github.com/CGAL/cgal/">CGAL GitHub repository</a>. ACVD Remeshing has been
-available since CGAL 6.0, and Planar Remeshing will be officially released
+<a href="https://github.com/CGAL/cgal/">CGAL GitHub repository</a>. Planar Remeshing has been
+available since CGAL 6.0, and ACVD Remeshing will be officially released
 in the upcoming version of CGAL, CGAL 6.1, scheduled for mid 2025.</p>
 
 <i class="bi bi-book"></i>
