@@ -49,8 +49,8 @@ in a multipolygon with holes, and calling it as simple as:</p>
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/XXX.png"><img src="../../../../images/XXX.png" style="max-width:95%"/></a>
-  <br><small>[IMPRESSIVE IMAGE ALGORITHM]</small>
+  <a href="../../../../images/non_zero_departments.png"><img src="../../../../images/non_zero_departments.png" style="max-width:95%"/></a>
+  <br><small>Turning the multipolygon of metropolitan french departments into two polygons using the non-zero rule</small>
 </div>
 
 <h3>Repair Strategies</h3>
