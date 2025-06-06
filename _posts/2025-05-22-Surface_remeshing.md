@@ -55,15 +55,15 @@ allowing the processing of large meshes up to several million triangles.</p>
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/XXX.png"><img src="../../../../images/XXX.png" style="max-width:95%"/></a>
-  <br><small>[IMPRESSIVE IMAGE ALGORITHM]</small>
+  <a href="../../../../images/ACVD_ex.png"><img src="../../../../images/ACVD_ex.png" style="max-width:95%"/></a>
+  <br><small>From left to right: Input mesh; Remeshing with a budget of 50k vertices; Curvature adaptative remeshing with a budget of 50k vertices.</small>
 </div>
 
 <p>If the input mesh contains sharp features or corners, it is possible to use quadric error metrics to either move output vertices (fast, but can produce bad looking triangles), of to use quadric error metrics directly into the energy formulation of each cluster (slower, but produces better quality triangles). Additionally, adaptive remeshing based on surface curvature is possible.</p>
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/XXX.png"><img src="../../../../images/XXX.png" style="max-width:95%"/></a>
+  <a href="../../../../images/ACVD_qem.png"><img src="../../../../images/ACVD_qem.png" style="max-width:95%"/></a>
   <br><small>[IMAGE DIFFERENT STRATEGIES]</small>
 </div>
 <br>
@@ -85,7 +85,7 @@ This function performs a detection of the planar regions using geometric predica
 and collinearity checks.</p>
 
 <div style="text-align:center;">
-  <a href="../../../../images/XXX.png"><img src="../../../../images/XXX.png" style="max-width:95%"/></a><br>
+  <a href="../../../../images/planar_remeshing.png"><img src="../../../../images/planar_remeshing.png" style="max-width:95%"/></a><br>
   <br><small>[IMPRESSIVE COPLANAR REMESHING IMAGES].</small>
 </div>
 
