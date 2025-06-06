@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2025-06-06T11:57:00+00:00</updated>
+ <updated>2025-06-06T15:56:00+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -184,8 +184,8 @@ in a multipolygon with holes, and calling it as simple as:&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/XXX.png&quot;&gt;&lt;img src=&quot;../../../../images/XXX.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
-  &lt;br /&gt;&lt;small&gt;[IMPRESSIVE IMAGE ALGORITHM]&lt;/small&gt;
+  &lt;a href=&quot;../../../../images/non_zero_departments.png&quot;&gt;&lt;img src=&quot;../../../../images/non_zero_departments.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
+  &lt;br /&gt;&lt;small&gt;Turning the multipolygon of metropolitan french departments into two polygons using the non-zero rule&lt;/small&gt;
 &lt;/div&gt;
 
 &lt;h3&gt;Repair Strategies&lt;/h3&gt;
