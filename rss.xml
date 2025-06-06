@@ -5,8 +5,8 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2025-06-05T16:30:23+00:00</lastBuildDate>
-        <pubDate>2025-06-05T16:30:23+00:00</pubDate>
+        <lastBuildDate>2025-06-06T11:57:00+00:00</lastBuildDate>
+        <pubDate>2025-06-06T11:57:00+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -61,15 +61,15 @@ allowing the processing of large meshes up to several million triangles.&lt;/p&g
 
 &lt;br /&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/XXX.png&quot;&gt;&lt;img src=&quot;../../../../images/XXX.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
-  &lt;br /&gt;&lt;small&gt;[IMPRESSIVE IMAGE ALGORITHM]&lt;/small&gt;
+  &lt;a href=&quot;../../../../images/ACVD_ex.png&quot;&gt;&lt;img src=&quot;../../../../images/ACVD_ex.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
+  &lt;br /&gt;&lt;small&gt;From left to right: Input mesh; Remeshing with a budget of 50k vertices; Curvature adaptative remeshing with a budget of 50k vertices.&lt;/small&gt;
 &lt;/div&gt;
 
 &lt;p&gt;If the input mesh contains sharp features or corners, it is possible to use quadric error metrics to either move output vertices (fast, but can produce bad looking triangles), of to use quadric error metrics directly into the energy formulation of each cluster (slower, but produces better quality triangles). Additionally, adaptive remeshing based on surface curvature is possible.&lt;/p&gt;
 
 &lt;br /&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/XXX.png&quot;&gt;&lt;img src=&quot;../../../../images/XXX.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;../../../../images/ACVD_qem.png&quot;&gt;&lt;img src=&quot;../../../../images/ACVD_qem.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
   &lt;br /&gt;&lt;small&gt;[IMAGE DIFFERENT STRATEGIES]&lt;/small&gt;
 &lt;/div&gt;
 &lt;br /&gt;
@@ -91,7 +91,7 @@ This function performs a detection of the planar regions using geometric predica
 and collinearity checks.&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/XXX.png&quot;&gt;&lt;img src=&quot;../../../../images/XXX.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+  &lt;a href=&quot;../../../../images/planar_remeshing.png&quot;&gt;&lt;img src=&quot;../../../../images/planar_remeshing.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
   &lt;br /&gt;&lt;small&gt;[IMPRESSIVE COPLANAR REMESHING IMAGES].&lt;/small&gt;
 &lt;/div&gt;
 
