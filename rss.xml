@@ -5,10 +5,70 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2025-06-06T15:56:00+00:00</lastBuildDate>
-        <pubDate>2025-06-06T15:56:00+00:00</pubDate>
+        <lastBuildDate>2025-06-08T06:29:45+00:00</lastBuildDate>
+        <pubDate>2025-06-08T06:29:45+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>New in CGAL: New Implementation of Surface Mesh Clipping</title>
+                <description>
+&lt;h3&gt;&lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Sébastien Loriot&lt;/a&gt;&amp;#42;&lt;/h3&gt;
+&lt;h4&gt;&amp;#42;&lt;a href=&quot;https://geometryfactory.com/&quot;&gt;GeometryFactory&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Several releases ago, CGAL shipped the function &lt;a href=&quot;https://doc.cgal.org/latest/Polygon_mesh_processing/group__PMP__corefinement__grp.html#ga88ea5360f9fe65458f9086b453447662&quot;&gt;CGAL::Polygon_mesh_processing::clip()&lt;/a&gt;
+that allows the user to restrict the volume bounded by a triangle mesh to a halfspace defined by an oriented plane. This operations is often called clip.
+Over the releases, this function has been extended to also clip surfaces represented by triangle meshes with boundaries, as well as self-intersecting surfaces.
+The original implementation was a by product of the function &lt;a href=&quot;https://doc.cgal.org/latest/Polygon_mesh_processing/group__PMP__corefinement__grp.html#ga3ff96d36cad8f37efcdada916c46fbbe&quot;&gt;CGAL::Polygon_mesh_processing::corefine_and_compute_intersection()&lt;/a&gt;.
+The code was working well but with several drawbacks:
+ - the clipping plane was actually represented by a triangle mesh of the enlarged bounding box of the input mesh, clipped with the input plane.
+   This lead to extra vertices in the output.
+ - the code was restricted to input triangle meshes
+ - the code was not taking advantage at of of the fact that the clipper is a plane
+
+With CGAL 6.1, we will release a new from scratch implementation fixing all those drawbacks, without changing the API.
+&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;a href=&quot;../../../../images/clip_ex.png&quot;&gt;&lt;img src=&quot;../../../../images/clip_ex.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
+  &lt;br /&gt;&lt;small&gt;Iterative plane clipping of a surface mesh of the elephant.&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+|                            | Input     | 1st clip  | 2nd clip  | 3rd clip | 4th clip |
+| ---------------------------|  -------  | --------- | --------- | -------- | -------- |
+| Number of faces (CGAL 6.1) | 1,422,848 | 743,276   | 170,652   | 113,425  | 55,245   |
+| Runtime in s.(CGAL 6.1)    |    -      | 0.19656   | 0.12051   | 0.04491  | 0.03605  |
+| Number of faces (CGAL 6.0) | 1,422,848 | 749,714   | 173,542   | 116,520  | 58,800   |
+| Runtime in s. (CGAL 6.0)   |    -      | 2.71621   | 0.87903   | 0.60735  | 0.36834  |
+
+The runtimes and numbers of faces for CGAL 6.1 are given when the resulting clipped mesh is not triangulated.
+Below you can see the final output not trianguled of CGAL 6.1 vs. that of CGAL 6.0:
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;a href=&quot;../../../../images/clip_with_edges.png&quot;&gt;&lt;img src=&quot;../../../../images/clip_with_edges.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
+  &lt;br /&gt;&lt;small&gt;Output of CGAL 6.1 vs output of CGAL 6.0.&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;The implementation is a internally using the new in CGAL 6.1 function
+&lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/master/Polygon_mesh_processing/group__PMP__corefinement__grp.html#gacb9d68fa4dea8fd03ec53b56a16d6fc6&quot;&gt;CGAL::Polygon_mesh_processing::refine_with_plane()&lt;/a&gt;
+that inserts in an input surface mesh the intersection edges of an input plane and provides an access to the created intersection edges.
+
+&lt;/p&gt;
+
+&lt;h4&gt;Status&lt;/h4&gt;
+
+&lt;p&gt;All these additions already are integrated in CGAL&apos;s master branch on the
+&lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt; and
+will be officially released in the upcoming version of CGAL, CGAL 6.1, scheduled for mid 2025.&lt;/p&gt;
+</description>
+                <link>http://www.cgal.org/2025/06/06/new_clip/</link>
+                <guid>http://www.cgal.org/2025/06/06/new_clip</guid>
+                <pubDate>2025-06-06T00:00:00+00:00</pubDate>
+        </item>
 
         <item>
                 <title>New in CGAL: New Surface Remeshing Algorithms</title>
