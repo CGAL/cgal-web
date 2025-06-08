@@ -185,11 +185,15 @@ Below you can see the final output not trianguled of CGAL 6.1 vs. that of CGAL 6
 
 </p>
 
-<p>The implementation is a internally using the new in CGAL 6.1 function
+<p>The implementation is internally using the new in CGAL 6.1 function
 <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Polygon_mesh_processing/group__PMP__corefinement__grp.html#gacb9d68fa4dea8fd03ec53b56a16d6fc6">CGAL::Polygon_mesh_processing::refine_with_plane()</a>
 that inserts in an input surface mesh the intersection edges of an input plane and provides an access to the created intersection edges.
-
 </p>
+
+<div style="text-align:center;">
+  <a href="../../../../images/refine_with_planes.png"><img src="../../../../images/refine_with_planes.png" style="max-width:95%" /></a>
+  <br /><small>Triangle mesh with intersection edges of planes of a regular grids, (not triangulated on the left)Output of CGAL 6.1 vs output of CGAL 6.0.</small>
+</div>
 
 <h4>Status</h4>
 
