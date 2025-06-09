@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2025-06-08T06:42:07+00:00</updated>
+ <updated>2025-06-09T19:06:32+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -13,7 +13,7 @@
 
  
  <entry>
-   <title>New in CGAL: New Implementation of Surface Mesh Clipping</title>
+   <title>New in CGAL: Improved Surface Mesh Clipping</title>
    <link href="http://www.cgal.org/2025/06/06/new_clip/"/>
    <updated>2025-06-06T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2025/06/06/new_clip</id>
@@ -22,57 +22,133 @@
 &lt;h4&gt;&amp;#42;&lt;a href=&quot;https://geometryfactory.com/&quot;&gt;GeometryFactory&lt;/a&gt;&lt;/h4&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;Several releases ago, CGAL shipped the function &lt;a href=&quot;https://doc.cgal.org/latest/Polygon_mesh_processing/group__PMP__corefinement__grp.html#ga88ea5360f9fe65458f9086b453447662&quot;&gt;CGAL::Polygon_mesh_processing::clip()&lt;/a&gt;
-that allows the user to restrict the volume bounded by a triangle mesh to a halfspace defined by an oriented plane. This operations is often called clip.
-Over the releases, this function has been extended to also clip surfaces represented by triangle meshes with boundaries, as well as self-intersecting surfaces.
-The original implementation was a by product of the function &lt;a href=&quot;https://doc.cgal.org/latest/Polygon_mesh_processing/group__PMP__corefinement__grp.html#ga3ff96d36cad8f37efcdada916c46fbbe&quot;&gt;CGAL::Polygon_mesh_processing::corefine_and_compute_intersection()&lt;/a&gt;.
-The code was working well but with several drawbacks:
- - the clipping plane was actually represented by a triangle mesh of the enlarged bounding box of the input mesh, clipped with the input plane.
-   This lead to extra vertices in the output.
- - the code was restricted to input triangle meshes
- - the code was not taking advantage at of of the fact that the clipper is a plane
+&lt;h3&gt;Clipping and Splitting Meshes with Planes&lt;/h3&gt;
 
-With CGAL 6.1, we will release a new from scratch implementation fixing all those drawbacks, without changing the API.
+&lt;p&gt;Several releases ago, CGAL introduced the function &lt;a href=&quot;https://doc.cgal.org/latest/Polygon_mesh_processing/group__PMP__corefinement__grp.html#ga88ea5360f9fe65458f9086b453447662&quot;&gt;CGAL::Polygon_mesh_processing::clip()&lt;/a&gt;,
+which enabled users to restrict the volume bounded by a triangle mesh to a halfspace defined
+by an oriented plane. Over the releases, this function has been extended to also enable clipping
+of surfaces represented by triangle meshes with boundaries, as well as self-intersecting surfaces.
+A twin function, &lt;a href=&quot;https://doc.cgal.org/latest/Polygon_mesh_processing/group__PMP__corefinement__grp.html#ga0c49ffd458b13ee9489cad2321656f71&quot;&gt;CGAL::Polygon_mesh_processing::split()&lt;/a&gt;, can be used
+to cut and separate a surface in multiple components.
 &lt;/p&gt;
 
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
   &lt;a href=&quot;../../../../images/clip_ex.png&quot;&gt;&lt;img src=&quot;../../../../images/clip_ex.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
-  &lt;br /&gt;&lt;small&gt;Iterative plane clipping of a surface mesh of the elephant.&lt;/small&gt;
+  &lt;br /&gt;&lt;small&gt;Fig 1: Four successive plane clipping of the &lt;em&gt;&quot;elephant&quot;&lt;/em&gt; surface.&lt;/small&gt;
 &lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3&gt;10x Runtime Improvements&lt;/h3&gt;
 
 &lt;p&gt;
+The original implementation of the clip/split functions was a by-product of the Boolean operations
+function &lt;a href=&quot;https://doc.cgal.org/latest/Polygon_mesh_processing/group__PMP__corefinement__grp.html#ga3ff96d36cad8f37efcdada916c46fbbe&quot;&gt;CGAL::Polygon_mesh_processing::corefine_and_compute_intersection()&lt;/a&gt;.
+The approach was functional but with several drawbacks:
+&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;the clipping plane was internally represented by a triangle mesh of the enlarged bounding box of the input mesh, clipped with the input plane.
+      This lead to extra vertices in the output;&lt;/li&gt;
+  &lt;li&gt;the code was restricted to input triangle meshes;&lt;/li&gt;
+  &lt;li&gt;the code was not taking advantage of the fact that the clipper was simply a plane, for which
+      efficient orientation tests can be performed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+With CGAL 6.1, these functions have been reimplemented from scratch (without changing the API),
+fixing all those drawbacks. The improved implemention results in a tenfold runtime increase.
+The table illustrates the improvements for the successive cuts depicted on Figure 1.
+&lt;/p&gt;
+
+&lt;!--
 |                            | Input     | 1st clip  | 2nd clip  | 3rd clip | 4th clip |
 | ---------------------------|  -------  | --------- | --------- | -------- | -------- |
-| Number of faces (CGAL 6.1) | 1,422,848 | 743,276   | 170,652   | 113,425  | 55,245   |
-| Runtime in s.(CGAL 6.1)    |    -      | 0.19656   | 0.12051   | 0.04491  | 0.03605  |
-| Number of faces (CGAL 6.0) | 1,422,848 | 749,714   | 173,542   | 116,520  | 58,800   |
 | Runtime in s. (CGAL 6.0)   |    -      | 2.71621   | 0.87903   | 0.60735  | 0.36834  |
+| Runtime in s. (CGAL 6.1)   |    -      | 0.19656   | 0.12051   | 0.04491  | 0.03605  |
+| Number of faces (CGAL 6.0) | 1,422,848 | 749,714   | 173,542   | 116,520  | 58,800   |
+| Number of faces (CGAL 6.1) | 1,422,848 | 743,276   | 170,652   | 113,425  | 55,245   |
+--&gt;
 
-The runtimes and numbers of faces for CGAL 6.1 are given when the resulting clipped mesh is not triangulated.
-Below you can see the final output not trianguled of CGAL 6.1 vs. that of CGAL 6.0:
+&lt;table style=&quot;width:100%&quot; border=&quot;1&quot;&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;em&gt;Input&lt;/em&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;em&gt;1st clip&lt;/em&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;em&gt;2nd clip&lt;/em&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;em&gt;3rd clip&lt;/em&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;em&gt;4th clip&lt;/em&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Runtime in s. (CGAL 6.0)&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;2.71621&lt;/td&gt;
+    &lt;td&gt;0.87903&lt;/td&gt;
+    &lt;td&gt;0.60735&lt;/td&gt;
+    &lt;td&gt;0.36834&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Runtime in s. (CGAL 6.1)&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;&lt;b&gt;0.19656&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b&gt;0.12051&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b&gt;0.04491&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b&gt;0.03605&lt;/b&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Number of faces (CGAL 6.0)&lt;/td&gt;
+    &lt;td&gt;1,422,848&lt;/td&gt;
+    &lt;td&gt;749,714&lt;/td&gt;
+    &lt;td&gt;173,542&lt;/td&gt;
+    &lt;td&gt;116,520&lt;/td&gt;
+    &lt;td&gt;58,800&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Number of faces (CGAL 6.1)&lt;/td&gt;
+    &lt;td&gt;1,422,848&lt;/td&gt;
+    &lt;td&gt;743,276&lt;/td&gt;
+    &lt;td&gt;170,652&lt;/td&gt;
+    &lt;td&gt;113,425&lt;/td&gt;
+    &lt;td&gt;55,245&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
 
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;The runtimes and numbers of faces for CGAL 6.1 are given when the resulting clipped mesh is not triangulated.
+Below you can see the final output not trianguled of CGAL 6.1 vs. that of CGAL 6.0:&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
   &lt;a href=&quot;../../../../images/clip_with_edges.png&quot;&gt;&lt;img src=&quot;../../../../images/clip_with_edges.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
-  &lt;br /&gt;&lt;small&gt;Output of CGAL 6.1 vs output of CGAL 6.0.&lt;/small&gt;
+  &lt;br /&gt;&lt;small&gt;Fig 2: Output of CGAL 6.1 vs output of CGAL 6.0.&lt;/small&gt;
 &lt;/div&gt;
 
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3&gt;Behind the Scenes: a New Function for Mesh Refinement&lt;/h3&gt;
+
+&lt;p&gt;The new implementation uses internally a new function introduced in CGAL 6.1 to the Polygon Mesh Processing package:
+&lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/master/Polygon_mesh_processing/group__PMP__corefinement__grp.html#gacb9d68fa4dea8fd03ec53b56a16d6fc6&quot;&gt;CGAL::Polygon_mesh_processing::refine_with_plane()&lt;/a&gt;.
+This function inserts in an input surface mesh the intersection edges of an input plane
+and provides an access to the created intersection edges.
 &lt;/p&gt;
 
-&lt;p&gt;The implementation is internally using the new in CGAL 6.1 function
-&lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/master/Polygon_mesh_processing/group__PMP__corefinement__grp.html#gacb9d68fa4dea8fd03ec53b56a16d6fc6&quot;&gt;CGAL::Polygon_mesh_processing::refine_with_plane()&lt;/a&gt;
-that inserts in an input surface mesh the intersection edges of an input plane and provides an access to the created intersection edges.
-&lt;/p&gt;
-
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
   &lt;a href=&quot;../../../../images/refine_with_planes.png&quot;&gt;&lt;img src=&quot;../../../../images/refine_with_planes.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
-  &lt;br /&gt;&lt;small&gt;Triangle mesh with intersection edges of planes of a regular grids, (not triangulated on the left)Output of CGAL 6.1 vs output of CGAL 6.0.&lt;/small&gt;
+  &lt;br /&gt;&lt;small&gt;Fig 3: Intersection edges (in red) of a triangle mesh with planes forming a regular grid for CGAL 6.0 (left) and CGAL 6.1 (right).&lt;/small&gt;
 &lt;/div&gt;
 
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h4&gt;Status&lt;/h4&gt;
 
-&lt;p&gt;All these additions already are integrated in CGAL&apos;s master branch on the
+&lt;p&gt;All these enhancements are already integrated in CGAL&apos;s master branch on the
 &lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt; and
 will be officially released in the upcoming version of CGAL, CGAL 6.1, scheduled for mid 2025.&lt;/p&gt;
+
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
+&lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/master/Polygon_mesh_processing/group__PMP__corefinement__grp.html#ga5dc9e7acf8433235adc7b91ac93a7d42&quot;&gt;Documentation of the function &lt;em&gt;CGAL::Polygon_mesh_processing::clip()&lt;/em&gt;&lt;/a&gt;
+&lt;br /&gt;
+&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
+&lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -116,6 +192,7 @@ versions of surface meshes:
 &lt;/ul&gt;
 &lt;/p&gt;
 
+&lt;br /&gt;
 &lt;h3&gt;Approximated Discrete Centroidal Voronoi Diagram (ACVD) Remeshing&lt;/h3&gt;
 
 &lt;p&gt;This remeshing algorithm uses clustering on polygonal meshes as to approximate a Centroidal Voronoi
@@ -131,15 +208,16 @@ allowing the processing of large meshes up to several million triangles.&lt;/p&g
 &lt;br /&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
   &lt;a href=&quot;../../../../images/ACVD_ex.png&quot;&gt;&lt;img src=&quot;../../../../images/ACVD_ex.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
-  &lt;br /&gt;&lt;small&gt;From left to right: Input mesh; Remeshing with a budget of 50k vertices; Curvature adaptative remeshing with a budget of 50k vertices.&lt;/small&gt;
+  &lt;br /&gt;&lt;small&gt;Input (left); remeshing with a budget of 50k vertices: isotropic (middle) and curvature adapted (right).&lt;/small&gt;
 &lt;/div&gt;
 
+&lt;br /&gt;
 &lt;p&gt;If the input mesh contains sharp features or corners, it is possible to use quadric error metrics to either move output vertices (fast, but can produce bad looking triangles), of to use quadric error metrics directly into the energy formulation of each cluster (slower, but produces better quality triangles). Additionally, adaptive remeshing based on surface curvature is possible.&lt;/p&gt;
 
 &lt;br /&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
   &lt;a href=&quot;../../../../images/ACVD_qem.png&quot;&gt;&lt;img src=&quot;../../../../images/ACVD_qem.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
-  &lt;br /&gt;&lt;small&gt;[IMAGE DIFFERENT STRATEGIES]&lt;/small&gt;
+  &lt;br /&gt;&lt;small&gt;Input (left); remeshing without (middle) and with (right) QEM-based placement optimization.&lt;/small&gt;
 &lt;/div&gt;
 &lt;br /&gt;
 
@@ -149,7 +227,7 @@ contributed by &lt;a href=&quot;https://www.linkedin.com/in/hossam-saeed-1abab91
 mentored by &lt;a href=&quot;https://www.creatis.insa-lyon.fr/~valette/public/&quot;&gt;Sébastien Valette&lt;/a&gt;
 and &lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Sébastien Loriot&lt;/a&gt;.&lt;/p&gt;
 
-&lt;br /&gt;&lt;br /&gt;
+&lt;br /&gt;
 &lt;h3&gt;Remeshing of (Almost) Planar Patches&lt;/h3&gt;
 
 &lt;p&gt;When many triangles are used to describe a planar region of a model, one might wish to simplify
@@ -161,9 +239,10 @@ and collinearity checks.&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
   &lt;a href=&quot;../../../../images/planar_remeshing.png&quot;&gt;&lt;img src=&quot;../../../../images/planar_remeshing.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
-  &lt;br /&gt;&lt;small&gt;[IMPRESSIVE COPLANAR REMESHING IMAGES].&lt;/small&gt;
+  &lt;br /&gt;&lt;small&gt;Remeshing of a complex mechanical piece.&lt;/small&gt;
 &lt;/div&gt;
 
+&lt;br /&gt;
 &lt;p&gt;In real life, models often exhibit slight noise, which might cause regions to be unexpectedly
 small when using exact predicates because faces are not exactly coplanar. To palliate this, it is possible to specify
 a threshold on the angle between adjacent faces (resp. segments) such that they are considered coplanar (resp. collinear).
@@ -214,6 +293,7 @@ in the upcoming version of CGAL, CGAL 6.1, scheduled for mid 2025.&lt;/p&gt;
 &lt;h4&gt;&amp;#42;&lt;a href=&quot;https://www.tudelft.nl/en/&quot;&gt;TU Delft&lt;/a&gt;,
 &amp;deg;&lt;a href=&quot;https://geometryfactory.com/&quot;&gt;GeometryFactory&lt;/a&gt;&lt;/h4&gt;
 
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;Polygons are one the standard representations of geometric data, and are extensively used
 in various fields, and in particular visualisation and Geographic Information Systems (GIS).
 Within CGAL, 2D polygons (possibly with holes) are used in various packages such as
@@ -231,6 +311,7 @@ until recently.&lt;/p&gt;
 is one the lastest additions to CGAL, and provides automatic repair of invalid polygons with a fast and generic
 implementation, with immediate compatibility with other polygon-based CGAL packages.&lt;/p&gt;
 
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h3&gt;A Triangulation-based Approach to Automatic Polygon Repair&lt;/h3&gt;
 
 &lt;p&gt;This new package implements different polygon repair methods. Starting from possibly invalid inputs
@@ -252,6 +333,7 @@ in a multipolygon with holes, and calling it as simple as:&lt;/p&gt;
   &lt;br /&gt;&lt;small&gt;Turning the multipolygon of metropolitan french departments into two polygons using the non-zero rule&lt;/small&gt;
 &lt;/div&gt;
 
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h3&gt;Repair Strategies&lt;/h3&gt;
 
 &lt;p&gt;For a given invalid polygon inputs, multiple solutions might exist. Consequently, different
@@ -261,19 +343,30 @@ labeling heuristics are possible. Four strategies are currently offered by the n
   and exterior/holes each time that an input edge is passed. It does not distinguish between edges
   that are part of outer boundaries from those of inner boundaries;&lt;/li&gt;
   &lt;li&gt;the &lt;b&gt;non-zero&lt;/b&gt; rule, which keeps areas with a non-zero winding number;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;../../../../images/PolygonRepair_WindingNonZeroDifferent.svg&quot; alt=&quot;triangle with all three sides equal&quot; height=&quot;200&quot; /&gt;
+  &lt;br /&gt;&lt;small&gt;Input (left), non-zero (middle) even-odd (right).&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
   &lt;li&gt;the &lt;b&gt;union&lt;/b&gt; rule, which keeps areas that are contained in at least one of the input polygons (with holes);&lt;/li&gt;
   &lt;li&gt;the &lt;b&gt;intersection&lt;/b&gt; rule, which keeps areas that are contained in all input polygons (with holes).&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;The choice of strategy will generally depend on the input polygon type, and on the downstream application(s).
-For example, the “union” and “intersection” rules are useful when given two or more similar valid
-polygons with holes or to obtain an approximation from outside and inside.&amp;lt;/p&amp;gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/XXX.png&quot;&gt;&lt;img src=&quot;../../../../images/XXX.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
-  &lt;br /&gt;&lt;small&gt;[IMAGE STRATEGIES]&lt;/small&gt;
+  &lt;img src=&quot;../../../../images/PolygonRepair_UnionIntersection.svg&quot; alt=&quot;triangle with all three sides equal&quot; height=&quot;200&quot; /&gt;
+  &lt;br /&gt;&lt;small&gt;Union (top) and Intersection (bottom). &lt;/small&gt;
 &lt;/div&gt;
 
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;The choice of strategy will generally depend on the input polygon type, and on the downstream application(s).
+For example, the &quot;union&quot; and &quot;intersection&quot; rules are useful when given two or more similar valid
+polygons with holes or to obtain an approximation from outside and inside.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h4&gt;Status&lt;/h4&gt;
 
 &lt;p&gt;The initial CGAL 6.0 implementation of the Polygon Repair method using only the &quot;even-odd&quot; rule

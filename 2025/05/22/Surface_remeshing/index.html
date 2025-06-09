@@ -179,6 +179,7 @@ versions of surface meshes:
 </ul>
 </p>
 
+<br />
 <h3>Approximated Discrete Centroidal Voronoi Diagram (ACVD) Remeshing</h3>
 
 <p>This remeshing algorithm uses clustering on polygonal meshes as to approximate a Centroidal Voronoi
@@ -194,15 +195,16 @@ allowing the processing of large meshes up to several million triangles.</p>
 <br />
 <div style="text-align:center;">
   <a href="../../../../images/ACVD_ex.png"><img src="../../../../images/ACVD_ex.png" style="max-width:95%" /></a>
-  <br /><small>From left to right: Input mesh; Remeshing with a budget of 50k vertices; Curvature adaptative remeshing with a budget of 50k vertices.</small>
+  <br /><small>Input (left); remeshing with a budget of 50k vertices: isotropic (middle) and curvature adapted (right).</small>
 </div>
 
+<br />
 <p>If the input mesh contains sharp features or corners, it is possible to use quadric error metrics to either move output vertices (fast, but can produce bad looking triangles), of to use quadric error metrics directly into the energy formulation of each cluster (slower, but produces better quality triangles). Additionally, adaptive remeshing based on surface curvature is possible.</p>
 
 <br />
 <div style="text-align:center;">
   <a href="../../../../images/ACVD_qem.png"><img src="../../../../images/ACVD_qem.png" style="max-width:95%" /></a>
-  <br /><small>[IMAGE DIFFERENT STRATEGIES]</small>
+  <br /><small>Input (left); remeshing without (middle) and with (right) QEM-based placement optimization.</small>
 </div>
 <br />
 
@@ -212,7 +214,7 @@ contributed by <a href="https://www.linkedin.com/in/hossam-saeed-1abab91b3/">Hos
 mentored by <a href="https://www.creatis.insa-lyon.fr/~valette/public/">Sébastien Valette</a>
 and <a href="https://geometryfactory.com/who-we-are/">Sébastien Loriot</a>.</p>
 
-<br /><br />
+<br />
 <h3>Remeshing of (Almost) Planar Patches</h3>
 
 <p>When many triangles are used to describe a planar region of a model, one might wish to simplify
@@ -224,9 +226,10 @@ and collinearity checks.</p>
 
 <div style="text-align:center;">
   <a href="../../../../images/planar_remeshing.png"><img src="../../../../images/planar_remeshing.png" style="max-width:95%" /></a><br />
-  <br /><small>[IMPRESSIVE COPLANAR REMESHING IMAGES].</small>
+  <br /><small>Remeshing of a complex mechanical piece.</small>
 </div>
 
+<br />
 <p>In real life, models often exhibit slight noise, which might cause regions to be unexpectedly
 small when using exact predicates because faces are not exactly coplanar. To palliate this, it is possible to specify
 a threshold on the angle between adjacent faces (resp. segments) such that they are considered coplanar (resp. collinear).
@@ -272,7 +275,7 @@ in the upcoming version of CGAL, CGAL 6.1, scheduled for mid 2025.</p>
           
             
             
-            <li class="active"><a href="/cgal-web/2025/06/06/new_clip/" class="active">New in CGAL: New Implementation of Surface Mesh Clipping</a>
+            <li class="active"><a href="/cgal-web/2025/06/06/new_clip/" class="active">New in CGAL: Improved Surface Mesh Clipping</a>
             <br><div style="font-size:12px">June 2025</div></li>
           
             
