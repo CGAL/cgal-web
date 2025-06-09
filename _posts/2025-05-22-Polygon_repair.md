@@ -14,6 +14,7 @@ tags: [""]
 <h4>&#42;<a href="https://www.tudelft.nl/en/">TU Delft</a>,
 &deg;<a href="https://geometryfactory.com/">GeometryFactory</a></h4>
 
+<br>
 <p>Polygons are one the standard representations of geometric data, and are extensively used
 in various fields, and in particular visualisation and Geographic Information Systems (GIS).
 Within CGAL, 2D polygons (possibly with holes) are used in various packages such as
@@ -31,6 +32,7 @@ until recently.</p>
 is one the lastest additions to CGAL, and provides automatic repair of invalid polygons with a fast and generic
 implementation, with immediate compatibility with other polygon-based CGAL packages.</p>
 
+<br>
 <h3>A Triangulation-based Approach to Automatic Polygon Repair</h3>
 
 <p>This new package implements different polygon repair methods. Starting from possibly invalid inputs
@@ -53,6 +55,7 @@ in a multipolygon with holes, and calling it as simple as:</p>
   <br><small>Turning the multipolygon of metropolitan french departments into two polygons using the non-zero rule</small>
 </div>
 
+<br>
 <h3>Repair Strategies</h3>
 
 <p>For a given invalid polygon inputs, multiple solutions might exist. Consequently, different
@@ -62,19 +65,37 @@ labeling heuristics are possible. Four strategies are currently offered by the n
   and exterior/holes each time that an input edge is passed. It does not distinguish between edges
   that are part of outer boundaries from those of inner boundaries;</li>
   <li>the <b>non-zero</b> rule, which keeps areas with a non-zero winding number;</li>
+</ul>
+
+<div style="text-align:center;">
+  <img
+    src="../../../../images/PolygonRepair_WindingNonZeroDifferent.svg"
+    alt="triangle with all three sides equal"
+    height="200"/>
+  <br><small>Input (left), non-zero (middle) even-odd (right).</small>
+</div>
+
+<br>
+<ul>
   <li>the <b>union</b> rule, which keeps areas that are contained in at least one of the input polygons (with holes);</li>
   <li>the <b>intersection</b> rule, which keeps areas that are contained in all input polygons (with holes).</li>
 </ul>
-The choice of strategy will generally depend on the input polygon type, and on the downstream application(s).
+
+<div style="text-align:center;">
+  <img
+    src="../../../../images/PolygonRepair_UnionIntersection.svg"
+    alt="triangle with all three sides equal"
+    height="200"/>
+  <br><small>Union (top) and Intersection (bottom). </small>
+</div>
+
+<br>
+<p>The choice of strategy will generally depend on the input polygon type, and on the downstream application(s).
 For example, the "union" and "intersection" rules are useful when given two or more similar valid
 polygons with holes or to obtain an approximation from outside and inside.</p>
 
-<br>
-<div style="text-align:center;">
-  <a href="../../../../images/XXX.png"><img src="../../../../images/XXX.png" style="max-width:95%"/></a>
-  <br><small>[IMAGE STRATEGIES]</small>
-</div>
 
+<br>
 <h4>Status</h4>
 
 <p>The initial CGAL 6.0 implementation of the Polygon Repair method using only the "even-odd" rule
