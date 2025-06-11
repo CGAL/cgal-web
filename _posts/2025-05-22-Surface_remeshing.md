@@ -35,8 +35,8 @@ resample a mesh, or adapt the mesh to a set of criteria, notably:
 <p>Recently, two new methods have been introduced to CGAL, with the purpose of generating coarser
 versions of surface meshes:
 <ul>
-  <li><b><i>Approximated Discrete Centroidal Voronoi Diagram (ACVD) Remeshing</i></b>, which can be used to create high-quality feature-preserving surface meshes with a user-provided budget of vertices.</li>
-  <li><b><i>Almost Planar Face Remeshing</i></b>, to be used when one desires to extract the coarsest
+  <li><i>Approximated Discrete Centroidal Voronoi Diagram (ACVD) Remeshing</i>, which can be used to create high-quality feature-preserving surface meshes with a user-provided budget of vertices.</li>
+  <li><i>Almost Planar Face Remeshing</i>, to be used when one desires to extract the coarsest
   possible mesh without sacrificing geometry.</li>
 </ul>
 </p>
@@ -44,7 +44,7 @@ versions of surface meshes:
 <br>
 <h3>Approximated Discrete Centroidal Voronoi Diagram (ACVD) Remeshing</h3>
 
-<p>This remeshing algorithm uses clustering on polygonal meshes as to approximate a Centroidal Voronoi
+<p>The function <a href="https://doc.cgal.org/6.1/Polygon_mesh_processing/group__PkgPolygonMeshProcessingRef.html#gaed23e63b12c7fe8268927d17b4d379f1">CGAL::Polygon_mesh_processing::approximated_centroidal_Voronoi_diagram_remeshing()</a> uses clustering on polygonal meshes as to approximate a Centroidal Voronoi
 Diagram construction. It is inspired by the method introduced by Valette and Chassery [1] and further
 developed by Audette et al. [2] and Valette et al. [3]. The algorithm is similar to Lloyd's algorithm
 (or k-means), where random input vertices are picked to initialize clusters of vertices, which are
@@ -81,7 +81,7 @@ and <a href="https://geometryfactory.com/who-we-are/">Sébastien Loriot</a>.</p>
 
 <p>When many triangles are used to describe a planar region of a model, one might wish to simplify
 the mesh in this region to use as few elements as possible, possibly even a single large polygonal face.
-This can be achieved using the new function
+This can be achieved using the function
 <a href="https://doc.cgal.org/6.1/Polygon_mesh_processing/group__PMP__meshing__grp.html#ga7fca6fa2db94560ab6d32e6a77fc35b6">CGAL::Polygon_mesh_processing::remesh_planar_patches()</a>.
 This function performs a detection of the planar regions using geometric predicates for coplanarity
 and collinearity checks.</p>
