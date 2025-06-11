@@ -80,7 +80,7 @@ and <a href="https://geometryfactory.com/who-we-are/">Sébastien Loriot</a>.</p>
 <h3>Remeshing of (Almost) Planar Patches</h3>
 
 <p>When many triangles are used to describe a planar region of a model, one might wish to simplify
-the mesh in this region to use as few elements as possible, possibly event a single large polygonal face.
+the mesh in this region to use as few elements as possible, possibly even a single large polygonal face.
 This can be achieved using the new function
 <a href="https://doc.cgal.org/6.1/Polygon_mesh_processing/group__PMP__meshing__grp.html#ga7fca6fa2db94560ab6d32e6a77fc35b6">CGAL::Polygon_mesh_processing::remesh_planar_patches()</a>.
 This function performs a detection of the planar regions using geometric predicates for coplanarity
