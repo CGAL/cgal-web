@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2025-06-11T11:33:59+00:00</updated>
+ <updated>2025-06-11T14:32:17+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -48,7 +48,7 @@ function &lt;a href=&quot;https://doc.cgal.org/latest/Polygon_mesh_processing/gr
 With CGAL 6.1, the functions &lt;code&gt;clip()&lt;/code&gt; and &lt;code&gt;split()&lt;/code&gt; have been reimplemented from scratch, without changing the API.
 The new implemention now takes advantage of the fact that the clipper is simply a plane,
 for which efficient orientation tests can be performed, which results in a tenfold speed-up,
-In addition, the code can now be used over meshes with polygonal faces, which is crucial
+In addition, the functions can now be used with meshes with polygonal faces, which is crucial
 to avoid cascading growth of the number of subfaces when a face is clipped several times (see Figure 3).
 &lt;/p&gt;
 

@@ -175,7 +175,7 @@ function <a href="https://doc.cgal.org/latest/Polygon_mesh_processing/group__PMP
 With CGAL 6.1, the functions <code>clip()</code> and <code>split()</code> have been reimplemented from scratch, without changing the API.
 The new implemention now takes advantage of the fact that the clipper is simply a plane,
 for which efficient orientation tests can be performed, which results in a tenfold speed-up,
-In addition, the code can now be used over meshes with polygonal faces, which is crucial
+In addition, the functions can now be used with meshes with polygonal faces, which is crucial
 to avoid cascading growth of the number of subfaces when a face is clipped several times (see Figure 3).
 </p>
 
