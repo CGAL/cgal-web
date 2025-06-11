@@ -5,8 +5,8 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2025-06-11T10:46:51+00:00</lastBuildDate>
-        <pubDate>2025-06-11T10:46:51+00:00</pubDate>
+        <lastBuildDate>2025-06-11T11:33:59+00:00</lastBuildDate>
+        <pubDate>2025-06-11T11:33:59+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -243,7 +243,7 @@ and customization with user-specific criteria.&lt;/p&gt;
 
 &lt;h4&gt;Status&lt;/h4&gt;
 
-&lt;p&gt;All these additions already are integrated in CGAL&apos;s master branch on the
+&lt;p&gt;All these additions are already integrated in CGAL&apos;s master branch on the
 &lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;. Planar Remeshing has been
 available since CGAL 6.0, and ACVD Remeshing will be officially released
 in the upcoming version of CGAL, CGAL 6.1, scheduled for mid 2025.&lt;/p&gt;
@@ -360,15 +360,15 @@ polygons with holes or to obtain an approximation from outside and inside.&lt;/p
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h4&gt;Status&lt;/h4&gt;
 
-&lt;p&gt;The initial CGAL 6.0 implementation of the Polygon Repair method using only the &quot;even-odd&quot; rule
+&lt;p&gt;The initial CGAL 6.0 implementation of the Polygon Repair package providing only the &quot;even-odd&quot; rule
 was the result of a successful &lt;a href=&quot;https://summerofcode.withgoogle.com/archive/2023/projects/ivuH5hxv&quot;&gt;Google Summer of Code&lt;/a&gt; project,
 contributed by &lt;a href=&quot;https://3d.bk.tudelft.nl/ken/en/&quot;&gt;Ken Arroyo Ohori&lt;/a&gt;
 mentored by &lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Andreas Fabri&lt;/a&gt;
 and &lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Sébastien Loriot&lt;/a&gt;, and based on the
 work of Ledoux, Ohori, and Meijers [1].
-Additional strategies and polygon union and intersection were added in CGAL 6.1 by Andreas Fabri.&lt;/p&gt;
+Non-zero, union, and intersection strategies were added in CGAL 6.1 by Andreas Fabri.&lt;/p&gt;
 
-&lt;p&gt;All these additions already are integrated in CGAL&apos;s master branch on the
+&lt;p&gt;All these additions are already integrated in CGAL&apos;s master branch on the
 &lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;. Polygon repair has been
 available since CGAL 6.0, and the new even-odd rule as well as the Boolean operations
 will be officially released in the upcoming version of CGAL, CGAL 6.1, scheduled for mid 2025.&lt;/p&gt;
@@ -1938,7 +1938,7 @@ and using the &lt;em&gt;Interpolated Corrected Curvature Measures&lt;/em&gt; fun
 
 &lt;h3&gt;Status&lt;/h3&gt;
 
-&lt;p&gt;All these additions already are integrated in CGAL&apos;s master branch on the
+&lt;p&gt;All these additions are already integrated in CGAL&apos;s master branch on the
 &lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;, and will be officially released
 in the upcoming version of CGAL, CGAL 6.0, scheduled for mid 2024.&lt;/p&gt;
 
