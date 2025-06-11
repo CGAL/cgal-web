@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2025-06-10T08:24:43+00:00</updated>
+ <updated>2025-06-11T09:58:18+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -28,7 +28,7 @@
 which enabled users to restrict the volume bounded by a triangle mesh to a halfspace defined
 by an oriented plane. Over the releases, this function has been extended to also enable clipping
 of surfaces represented by triangle meshes with boundaries, as well as self-intersecting surfaces.
-A twin function, &lt;a href=&quot;https://doc.cgal.org/latest/Polygon_mesh_processing/group__PMP__corefinement__grp.html#ga0c49ffd458b13ee9489cad2321656f71&quot;&gt;CGAL::Polygon_mesh_processing::split()&lt;/a&gt;, can be used
+A closely related function, &lt;a href=&quot;https://doc.cgal.org/latest/Polygon_mesh_processing/group__PMP__corefinement__grp.html#ga0c49ffd458b13ee9489cad2321656f71&quot;&gt;CGAL::Polygon_mesh_processing::split()&lt;/a&gt;, can be used
 to cut and separate a surface in multiple components.
 &lt;/p&gt;
 
@@ -42,21 +42,14 @@ to cut and separate a surface in multiple components.
 &lt;h3&gt;10x Runtime Improvements&lt;/h3&gt;
 
 &lt;p&gt;
-The original implementation of the clip/split functions was a by-product of the Boolean operations
+The original implementation of the two functions was a by-product of the Boolean operations
 function &lt;a href=&quot;https://doc.cgal.org/latest/Polygon_mesh_processing/group__PMP__corefinement__grp.html#ga3ff96d36cad8f37efcdada916c46fbbe&quot;&gt;CGAL::Polygon_mesh_processing::corefine_and_compute_intersection()&lt;/a&gt;.
-The approach was functional but with several drawbacks:
-&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;the clipping plane was internally represented by a triangle mesh of the enlarged bounding box of the input mesh, clipped with the input plane.
-      This lead to extra vertices in the output;&lt;/li&gt;
-  &lt;li&gt;the code was restricted to input triangle meshes;&lt;/li&gt;
-  &lt;li&gt;the code was not taking advantage of the fact that the clipper was simply a plane, for which
-      efficient orientation tests can be performed.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-With CGAL 6.1, these functions have been reimplemented from scratch (without changing the API),
-fixing all those drawbacks. The improved implemention results in a tenfold runtime increase.
-The table illustrates the improvements for the successive cuts depicted on Figure 1.
+
+With CGAL 6.1, the functions &lt;code&gt;clip()&lt;/code&gt; and &lt;code&gt;split()&lt;/code&gt; have been reimplemented from scratch, without changing the API.
+The new implemention now takes advantage of the fact that the clipper is simply a plane,
+for which efficient orientation tests can be performed, which results in a tenfold speed-up,
+In addition, the code can now be used over meshes with polygonal faces, which is crucial
+to avoid cascading growth of the number of subfaces when a face is clipped several times (see Figure 3).
 &lt;/p&gt;
 
 &lt;!--
@@ -78,20 +71,20 @@ The table illustrates the improvements for the successive cuts depicted on Figur
     &lt;td&gt;&lt;em&gt;4th clip&lt;/em&gt;&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;td&gt;Runtime in s. (CGAL 6.0)&lt;/td&gt;
+    &lt;td&gt;Runtime in seconds (CGAL 6.0)&lt;/td&gt;
     &lt;td&gt;-&lt;/td&gt;
-    &lt;td&gt;2.71621&lt;/td&gt;
-    &lt;td&gt;0.87903&lt;/td&gt;
-    &lt;td&gt;0.60735&lt;/td&gt;
-    &lt;td&gt;0.36834&lt;/td&gt;
+    &lt;td&gt;2.716&lt;/td&gt;
+    &lt;td&gt;0.879&lt;/td&gt;
+    &lt;td&gt;0.607&lt;/td&gt;
+    &lt;td&gt;0.368&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;td&gt;Runtime in s. (CGAL 6.1)&lt;/td&gt;
+    &lt;td&gt;Runtime in seconds (CGAL 6.1)&lt;/td&gt;
     &lt;td&gt;-&lt;/td&gt;
-    &lt;td&gt;&lt;b&gt;0.19656&lt;/b&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;b&gt;0.12051&lt;/b&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;b&gt;0.04491&lt;/b&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;b&gt;0.03605&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b&gt;0.197&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b&gt;0.121&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b&gt;0.045&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b&gt;0.036&lt;/b&gt;&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
     &lt;td&gt;Number of faces (CGAL 6.0)&lt;/td&gt;
@@ -110,10 +103,13 @@ The table illustrates the improvements for the successive cuts depicted on Figur
     &lt;td&gt;55,245&lt;/td&gt;
   &lt;/tr&gt;
 &lt;/table&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;small&gt;Table 1: Runtime and face count improvements for the successive cuts depicted on Figure 1.&lt;/small&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;The runtimes and numbers of faces for CGAL 6.1 are given when the resulting clipped mesh is not triangulated.
-Below you can see the final output not trianguled of CGAL 6.1 vs. that of CGAL 6.0:&lt;/p&gt;
+Below you can see the final output of CGAL 6.1 (not trianguled) vs. that of CGAL 6.0 (necessarily triangulated):&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
@@ -126,8 +122,8 @@ Below you can see the final output not trianguled of CGAL 6.1 vs. that of CGAL 6
 
 &lt;p&gt;The new implementation uses internally a new function introduced in CGAL 6.1 to the Polygon Mesh Processing package:
 &lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/master/Polygon_mesh_processing/group__PMP__corefinement__grp.html#gacb9d68fa4dea8fd03ec53b56a16d6fc6&quot;&gt;CGAL::Polygon_mesh_processing::refine_with_plane()&lt;/a&gt;.
-This function inserts in an input surface mesh the intersection edges of an input plane
-and provides an access to the created intersection edges.
+This function inserts in an input surface mesh the intersection edges between the surface and a plane,
+and provides access to the created intersection edges.
 &lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -231,7 +227,7 @@ and &lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Sébastien
 &lt;h3&gt;Remeshing of (Almost) Planar Patches&lt;/h3&gt;
 
 &lt;p&gt;When many triangles are used to describe a planar region of a model, one might wish to simplify
-the mesh in this region to use as few elements as possible, possibly event a single large polygonal face.
+the mesh in this region to use as few elements as possible, possibly even a single large polygonal face.
 This can be achieved using the new function
 &lt;a href=&quot;https://doc.cgal.org/6.1/Polygon_mesh_processing/group__PMP__meshing__grp.html#ga7fca6fa2db94560ab6d32e6a77fc35b6&quot;&gt;CGAL::Polygon_mesh_processing::remesh_planar_patches()&lt;/a&gt;.
 This function performs a detection of the planar regions using geometric predicates for coplanarity
