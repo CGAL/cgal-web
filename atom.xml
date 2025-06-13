@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2025-06-13T14:17:29+00:00</updated>
+ <updated>2025-06-13T14:18:04+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -13,7 +13,7 @@
 
  
  <entry>
-   <title>New in CGAL: Resolving Self-Intersection in Surface Mesh, now with Snap Rounding</title>
+   <title>New in CGAL: Resolving Self-Intersections in a Surface Mesh, now with Snap Rounding</title>
    <link href="http://www.cgal.org/2025/06/13/autorefine-and-snap/"/>
    <updated>2025-06-13T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2025/06/13/autorefine-and-snap</id>
