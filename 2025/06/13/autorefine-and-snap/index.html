@@ -151,7 +151,7 @@
 <p><br /></p>
 <h3>3D Boolean Operations in CGAL: a Primer</h3>
 
-<p>In December 2004, CGAL 3.1 was released with the package [3D Boolean Operations on Nef Polyhedra](https://doc.cgal.org/latest/Nef_3).
+<p>In December 2004, CGAL 3.1 was released with the package <a href="https://doc.cgal.org/latest/Nef_3">3D Boolean Operations on Nef Polyhedra</a>
 It provided a robust way to compute Boolean Operations on Nef Polyhedra. In particular, it allows users to do some Boolean operations
 on solids bounded by surface meshes, but also on models with non-manifold features and 1D features. Even today, this package is probably
 the only one in the open source world to allow this kind of operations. All this genericity comes at a price. Indeed the algorithm used
@@ -162,12 +162,12 @@ use of a Kernel with exact constructions.</p>
 <p>As all this genericity is not required for all applications, we decided to work on an alternative method that would be restricted to solids
 being bounded by triangle meshes, and such that the output is manifold. In October 2012, we released an undocumented version of a new code
 based of corefinement of triangles meshes. With the feedback of early adopters, we officially released with CGAL 4.10 in May 2017 inside
-the [Polygon Mesh Processing](https://doc.cgal.org/latest/Polygon_mesh_processing/) a rewrite of the original 3D Boolean operations through
+the <a href="https://doc.cgal.org/latest/Polygon_mesh_processing">Polygon Mesh Processing</a> package a rewrite of the original 3D Boolean operations through
 corefinement. One of the key features of this code is the ability to compute several type of operations in one run (union and intersection
 for example), and the possibility to store the result in a new mesh or directly update one of the input meshes to avoid recopying the entire
 mesh if only a small portion is affected. When it comes to robustness, exact constructions are used under the hood to guarantee an output
-with the correct topology. To show the robustness and the speed of the method, we posted a benchmark on the [Thingi10k data set](https://ten-thousand-models.appspot.com/),
-testing the code on thousands of models.</p>
+with the correct topology. To show the robustness and the speed of the method, we posted a <a href="https://www.linkedin.com/pulse/benchmarking-mesh-union-using-cgal-libigl-sebastien-loriot/">benchmark</a>
+on the <a href="https://ten-thousand-models.appspot.com/">Thingi10k data set</a> testing the code on thousands of models.</p>
 
 <p>A question that was often asked by users was the possibility to use that code to resolve self-intersections in triangle meshes
 and more particularly in solids. This gave us the idea to modify the corefinement code to write an autorefinement version
@@ -193,7 +193,7 @@ we could not match the feature freeze of April even if the code was already work
 
 <h3>A Robust and Fast Method to Resolve Intersections in Triangle Soups</h3>
 
-<p>The function [CGAL::Polygon_mesh_processing::autorefine_triangle_soup()](https://doc.cgal.org/6.0/Polygon_mesh_processing/group__PMP__corefinement__grp.html#gaec85370aa0b2acc0919e5f8406cfb74c)
+<p>The function <a href="https://doc.cgal.org/6.0/Polygon_mesh_processing/group__PMP__corefinement__grp.html#gaec85370aa0b2acc0919e5f8406cfb74c">CGAL::Polygon_mesh_processing::autorefine_triangle_soup()</a>
 takes as input a triangle soup (a range of points and a range of triple of integers representing triangles using points indices), and resolves all
 intersections among the triangles by refining the triangles no triangle intersects but along a shared edge or a shared vertex. The function operates
 on a triangle soup and not a triangle mesh to be able to handle all kind of nasty input (including degenerate faces and non-manifoldness), but
