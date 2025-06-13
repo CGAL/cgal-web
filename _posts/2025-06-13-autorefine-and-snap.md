@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "New in CGAL: Resolving Self-Intersection in Surface Mesh, now with Snap Rounding"
+title: "New in CGAL: Resolving Self-Intersections in a Surface Mesh, now with Snap Rounding"
 description: ""
 category:
 tags: [""]
