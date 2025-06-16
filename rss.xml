@@ -5,8 +5,8 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2025-06-16T09:27:36+00:00</lastBuildDate>
-        <pubDate>2025-06-16T09:27:36+00:00</pubDate>
+        <lastBuildDate>2025-06-16T13:33:39+00:00</lastBuildDate>
+        <pubDate>2025-06-16T13:33:39+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -149,10 +149,11 @@ will be officially released in the upcoming version of CGAL, CGAL 6.1, scheduled
         <item>
                 <title>New in CGAL: New Surface Remeshing Algorithms</title>
                 <description>
-&lt;h3&gt;&lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Sébastien Loriot&lt;/a&gt;&amp;#42; and
+&lt;h3&gt;&lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Sébastien Loriot&lt;/a&gt;,
+&lt;a href=&quot;https://www.creatis.insa-lyon.fr/~valette/public/&quot;&gt;Sébastien Valette&lt;/a&gt;,
+and
 &lt;a href=&quot;https://www.linkedin.com/in/hossam-saeed-1abab91b3/&quot;&gt;Hossam Mohamed Saeed&lt;/a&gt;
 &lt;/h3&gt;
-&lt;h4&gt;&amp;#42;&lt;a href=&quot;https://geometryfactory.com/&quot;&gt;GeometryFactory&lt;/a&gt;&lt;/h4&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;Numerous tasks in geometric modeling and processing revolve around 3D geometric objects
