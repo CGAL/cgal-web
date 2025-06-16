@@ -1,0 +1,371 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>New in CGAL: New Surface Remeshing Algorithms</title>
+    <meta name="description" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="CGAL Editorial Board">
+
+    <link rel="icon" type="image/png" href="/cgal-web/images/cgal_logo/g-196x196-y.png">
+    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
+    <link rel="stylesheet" href="/cgal-web/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+
+    <!--[if lte IE 8]>
+	<link rel="stylesheet" href="css/leaflet.ie.css" />
+	<![endif]-->
+    <link rel="stylesheet" href="/cgal-web/assets/themes/cgal/main.css">
+
+    <!-- atom & rss feed -->
+    <link href="/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/cgal-web/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    
+
+    <!-- Navigation & Logo-->
+    <div class="mainmenu-wrapper">
+    <div class="container">
+    <div class="mobile-header">
+      <a href="/cgal-web/index.html" class="mobile-logo">
+        <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="30">
+      </a>
+      <button class="menu-toggle" aria-label="Menu">
+        Menu
+      </button>
+    </div>
+    <nav id="mainmenu" class="mainmenu" role="navigation">
+    <ul>
+    <li class="logo-wrapper hidden-xs hidden-sm hidden-md">
+    <a href="/cgal-web/index.html">
+    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
+    </a>
+    </li>
+
+    <li class="hidden-lg">
+    <a href="/cgal-web/index.html">
+    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
+    </a>
+    </li>
+
+    <li>
+    <a href="/cgal-web/project.html">Project</a>
+    </li>
+
+    <li>
+    <a href="/cgal-web/download.html">Download</a>
+    </li>
+
+    <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Packages</a>
+        <ul class="dropdown-menu">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometryProcessing" target="_blank">Geometry Processing</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
+        </ul>
+    </li>
+
+    <li>
+    <a href="/cgal-web/documentation.html">Documentation</a>
+    </li>
+
+    <li>
+    <a href="/cgal-web/news.html">News</a>
+    </li>
+
+    <li>
+    <a href="/cgal-web/media.html">Media</a>
+    </li>
+
+    <li>
+    <a href="/cgal-web/support.html">Support</a>
+    </li>
+
+    </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="section section-breadcrumbs">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 home-title">
+            <h1>New in CGAL: New Surface Remeshing Algorithms </h1>
+            <a style="text-align: right;" href="https://github.com/cgal/cgal" alt="The CGAL Project's github">
+              <span class="btn-dark-orange github-link fs-5">CGAL/cgal <i class="bi bi-github"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+<div class="section">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-9">
+        <div class="blog-post blog-single-post">
+          <div class="single-post-title">
+            <h3>New in CGAL: New Surface Remeshing Algorithms</h3>
+          </div>
+          <br>
+          <div class="single-post-info">
+            <i class="bi bi-clock"></i>
+            22 May 2025
+          </div>
+          <div class="single-post-content">
+            
+<h3><a href="https://geometryfactory.com/who-we-are/">Sébastien Loriot</a>&#42; and
+<a href="https://www.linkedin.com/in/hossam-saeed-1abab91b3/">Hossam Mohamed Saeed</a>
+</h3>
+<h4>&#42;<a href="https://geometryfactory.com/">GeometryFactory</a></h4>
+
+<p><br /></p>
+<p>Numerous tasks in geometric modeling and processing revolve around 3D geometric objects
+represented by surface meshes. Such meshes can be created through different processes (CAD, scans, ...),
+with varying element shape and size, which might not be adapted to downstream applications. For example,
+3D scanners can create amounts of data that are excessive for a simple visualization.
+Adapting the density of the mesh, also known as remeshing, is thus a crucial step to fit the data
+to application needs.<p>
+
+<p>CGAL offers various packages and functions that can be used to construct a mesh from scratch,
+resample a mesh, or adapt the mesh to a set of criteria, notably:
+<ul>
+  <li><a href="https://doc.cgal.org/6.1/Polygon_mesh_processing/index.html#mesh3rem">CGAL::Polygon_mesh_processing::surface_Delaunay_remeshing()</a>, which remeshes a surface triangle mesh following a Delaunay refinement algorithm.</li>
+  <li><a href="https://doc.cgal.org/6.1/Polygon_mesh_processing/index.html#isorem">CGAL::Polygon_mesh_processing::isotropic_remeshing()</a>, which uses atomic operations
+  such as edge splits, edge collapses, edge flips, and Laplacian smoothing to adapt a mesh
+  to a user-provided sizing field.</li>
+  <li><a href="https://doc.cgal.org/6.1/Surface_mesh_simplification/index.html#Chapter_Triangulated_Surface_Mesh_Simplification">Triangulated Surface Mesh Simplification</a>, which regroups a family of methods that can be used to progressively prune a mesh using for example
+  quadric error metrics.</li>
+</ul>
+</p>
+
+<p>Recently, two new methods have been introduced to CGAL, with the purpose of generating coarser
+versions of surface meshes:
+<ul>
+  <li><i>Approximated Discrete Centroidal Voronoi Diagram (ACVD) Remeshing</i>, which can be used to create high-quality feature-preserving surface meshes with a user-provided budget of vertices.</li>
+  <li><i>Almost Planar Face Remeshing</i>, to be used when one desires to extract the coarsest
+  possible mesh without sacrificing geometry.</li>
+</ul>
+</p>
+
+<br />
+<h3>Approximated Discrete Centroidal Voronoi Diagram (ACVD) Remeshing</h3>
+
+<p>The function <a href="https://doc.cgal.org/6.1/Polygon_mesh_processing/group__PkgPolygonMeshProcessingRef.html#gaed23e63b12c7fe8268927d17b4d379f1">CGAL::Polygon_mesh_processing::approximated_centroidal_Voronoi_diagram_remeshing()</a> uses clustering on polygonal meshes as to approximate a Centroidal Voronoi
+Diagram construction. It is inspired by the method introduced by Valette and Chassery [1] and further
+developed by Audette et al. [2] and Valette et al. [3]. The algorithm is similar to Lloyd's algorithm
+(or k-means), where random input vertices are picked to initialize clusters of vertices, which are
+then grown to minimize a particular energy, until convergence. Upon convergence, output vertices are
+computed from the vertices of each cluster. The algorithm combines the robustness and theoretical
+strength of Delaunay criteria with the efficiency of entirely discrete geometry processing,
+with a low complexity (in terms of calculations and memory requirements),
+allowing the processing of large meshes up to several million triangles.</p>
+
+<br />
+<div style="text-align:center;">
+  <a href="../../../../images/ACVD_ex.png"><img src="../../../../images/ACVD_ex.png" style="max-width:95%" /></a>
+  <br /><small>Input (left); remeshing with a budget of 50k vertices: isotropic (middle) and curvature adapted (right).</small>
+</div>
+
+<br />
+<p>If the input mesh contains sharp features or corners, it is possible to use quadric error metrics to either move output vertices (fast, but can produce bad looking triangles), of to use quadric error metrics directly into the energy formulation of each cluster (slower, but produces better quality triangles). Additionally, adaptive remeshing based on surface curvature is possible.</p>
+
+<br />
+<div style="text-align:center;">
+  <a href="../../../../images/ACVD_qem.png"><img src="../../../../images/ACVD_qem.png" style="max-width:95%" /></a>
+  <br /><small>Input (left); remeshing without (middle) and with (right) QEM-based placement optimization.</small>
+</div>
+<br />
+
+<p>This implementation of the ACVD Remeshing method was the result of another successful
+<a href="https://summerofcode.withgoogle.com/archive/2023/projects/VrwwMSuN">Google Summer of Code</a> project in CGAL,
+contributed by <a href="https://www.linkedin.com/in/hossam-saeed-1abab91b3/">Hossam Saeed</a>
+mentored by <a href="https://www.creatis.insa-lyon.fr/~valette/public/">Sébastien Valette</a>
+and <a href="https://geometryfactory.com/who-we-are/">Sébastien Loriot</a>.</p>
+
+<br />
+<h3>Remeshing of (Almost) Planar Patches</h3>
+
+<p>When many triangles are used to describe a planar region of a model, one might wish to simplify
+the mesh in this region to use as few elements as possible, possibly even a single large polygonal face.
+This can be achieved using the function
+<a href="https://doc.cgal.org/6.1/Polygon_mesh_processing/group__PMP__meshing__grp.html#ga7fca6fa2db94560ab6d32e6a77fc35b6">CGAL::Polygon_mesh_processing::remesh_planar_patches()</a>.
+This function performs a detection of the planar regions using geometric predicates for coplanarity
+and collinearity checks.</p>
+
+<div style="text-align:center;">
+  <a href="../../../../images/planar_remeshing.png"><img src="../../../../images/planar_remeshing.png" style="max-width:95%" /></a><br />
+  <br /><small>Remeshing of a complex mechanical piece.</small>
+</div>
+
+<br />
+<p>In real life, models often exhibit slight noise, which might cause regions to be unexpectedly
+small when using exact predicates because faces are not exactly coplanar. To palliate this, it is possible to specify
+a threshold on the angle between adjacent faces (resp. segments) such that they are considered coplanar (resp. collinear).
+Individual functions are also provided for the different steps of the remeshing process (detection
+of the planar regions, detection of the corners, ...) to enable fine tuning of the algorithm
+and customization with user-specific criteria.</p>
+
+<h4>Status</h4>
+
+<p>All these additions are already integrated in CGAL's master branch on the
+<a href="https://github.com/CGAL/cgal/">CGAL GitHub repository</a>. Planar Remeshing has been
+available since CGAL 6.0, and ACVD Remeshing will be officially released
+in the upcoming version of CGAL, CGAL 6.1, scheduled for mid 2025.</p>
+
+<i class="bi bi-book"></i>
+<a href="https://doc.cgal.org/6.1/Polygon_mesh_processing/index.html#acvdrem">Documentation section about ACVD Remeshing</a>
+<br />
+<i class="bi bi-book"></i>
+<a href="https://doc.cgal.org/6.1/Polygon_mesh_processing/index.html#decimate">Documentation section about Planar Remeshing</a>
+<br />
+<i class="bi bi-arrow-down-circle"></i>
+<a href="https://github.com/CGAL/cgal/tree/master">CGAL master branch on GitHub</a>
+<br /><br />
+
+<h4>Bibliography</h4>
+
+<p>
+[1] Valette, S., &amp; Chassery, J. M. (2004, September). Approximated centroidal voronoi diagrams for uniform polygonal mesh coarsening. In Computer Graphics Forum (Vol. 23, No. 3, pp. 381-389). Oxford, UK and Boston, USA: Blackwell Publishing, Inc.
+<br />
+[2] Audette, M., Rivière, D., Ewend, M., &amp; Valette, S. (2010, September). Approach-guided controlled resolution brain meshing for fe-based interactive neurosurgery simulation. In Workshop on Mesh Processing in Medical Image Analysis.
+<br />
+[3] Valette, S., Chassery, J. M., &amp; Prost, R. (2008). Generic remeshing of 3D triangular meshes with metric-dependent discrete Voronoi diagrams. IEEE Transactions on Visualization and Computer Graphics, 14(2), 369-381.
+</p>
+</p></p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3 blog-sidebar">
+        <h4>Recent Posts</h4>
+        <ul class="recent-posts">
+          
+            
+            
+            <li class="active"><a href="/cgal-web/2025/06/06/new_clip/" class="active">New in CGAL: Improved Surface Mesh Clipping</a>
+            <br><div style="font-size:12px">June 2025</div></li>
+          
+            
+            
+            <li class="active"><a href="/cgal-web/2025/05/22/Surface_remeshing/" class="active">New in CGAL: New Surface Remeshing Algorithms</a>
+            <br><div style="font-size:12px">May 2025</div></li>
+          
+            
+            
+            <li class="active"><a href="/cgal-web/2025/05/22/Polygon_repair/" class="active">New in CGAL: Polygon Repair</a>
+            <br><div style="font-size:12px">May 2025</div></li>
+          
+            
+            
+            <li class="active"><a href="/cgal-web/news/2025/04/01/Hope/" class="active">CGAL User Portrait: De Beers / Tiffany</a>
+            <br><div style="font-size:12px">April 2025</div></li>
+          
+        </ul>
+        <a href="/cgal-web/news.html" class="btn">Older posts...</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="footer-copyright">
+            <div style="float: left;">
+              <a href="https://twitter.com/TheCGALProject" alt="The CGAL Project's Twitter">
+                <img src="/cgal-web/images/icons/twitter.svg" class="center-block btn-dark-orange" alt="Twitter" height="18"></img>
+              </a>
+            </div>
+            &copy; 1995-2025 The CGAL Project. All rights reserved.
+            <div style="float: right;">
+              <a href="https://cgal.geometryfactory.com/CGAL/Members/wiki/Main_Page" alt="Password protected access to the Developer Wiki">
+                <i class="bi bi-file-lock fs-5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascripts -->
+    <script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+      <script src="/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
+      <script>
+        $(function () {
+          $('.bxslider').bxSlider({
+            auto: true,
+            speed: 0,
+            pause: 5000,
+            infiniteLoop: true,
+            touchEnabled: false,
+            pager: true,
+            pagerCustom: '.custom-pager',
+            controls: false,
+            onSliderLoad: function (currentIndex) {
+              $('.bxslider li').find('.slideTitle, .slideSubTitle').css({
+                transform: 'translate(0)',
+                opacity: 1
+              });
+              $('.bxslider li').eq(currentIndex).find('.slideTitle, .slideSubTitle').addClass('animatedTitle');
+            },
+            onSlideBefore: function ($slideElement, oldIndex, newIndex) {
+              $($slideElement).siblings().find('.slideTitle, .slideSubTitle').removeClass('animatedTitle');
+              $($slideElement).find('.slideTitle, .slideSubTitle').addClass('animatedTitle');
+              $($slideElement).siblings().find('.slide').removeClass('slideInFromRight');
+              $($slideElement).find('.slide').addClass('slideInFromRight');
+            }
+          });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+          const menuToggle = document.querySelector('.menu-toggle');
+          const mainMenu = document.getElementById('mainmenu');
+
+          menuToggle.addEventListener('click', function() {
+              mainMenu.classList.toggle('active');
+              menuToggle.classList.toggle('active');
+          });
+      });
+      </script>
+      <script src="/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+    </body>
+</html>
+

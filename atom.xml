@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2025-06-13T14:27:15+00:00</updated>
+ <updated>2025-06-16T09:20:57+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -13,109 +13,131 @@
 
  
  <entry>
-   <title>New in CGAL: Resolving Self-Intersections in a Surface Mesh, now with Snap Rounding</title>
-   <link href="http://www.cgal.org/2025/06/13/autorefine-and-snap/"/>
-   <updated>2025-06-13T00:00:00+00:00</updated>
-   <id>http://www.cgal.org/2025/06/13/autorefine-and-snap</id>
+   <title>New in CGAL: Improved Surface Mesh Clipping</title>
+   <link href="http://www.cgal.org/2025/06/06/new_clip/"/>
+   <updated>2025-06-06T00:00:00+00:00</updated>
+   <id>http://www.cgal.org/2025/06/06/new_clip</id>
    <content type="html">
-&lt;h3&gt;&lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Sébastien Loriot&lt;/a&gt;&amp;#42; &amp;amp; &lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Léo Valque&lt;/a&gt;&amp;#42;&lt;/h3&gt;
+&lt;h3&gt;&lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Sébastien Loriot&lt;/a&gt;&amp;#42;&lt;/h3&gt;
 &lt;h4&gt;&amp;#42;&lt;a href=&quot;https://geometryfactory.com/&quot;&gt;GeometryFactory&lt;/a&gt;&lt;/h4&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3&gt;3D Boolean Operations in CGAL: a Primer&lt;/h3&gt;
+&lt;h3&gt;Clipping and Splitting Meshes with Planes&lt;/h3&gt;
 
-&lt;p&gt;In December 2004, CGAL 3.1 was released with the package &lt;a href=&quot;https://doc.cgal.org/latest/Nef_3&quot;&gt;3D Boolean Operations on Nef Polyhedra&lt;/a&gt;
-It provided a robust way to compute Boolean Operations on Nef Polyhedra. In particular, it allows users to do some Boolean operations
-on solids bounded by surface meshes, but also on models with non-manifold features and 1D features. Even today, this package is probably
-the only one in the open source world to allow this kind of operations. All this genericity comes at a price. Indeed the algorithm used
-needs to compute and maintain an arrangement of circles on a sphere at each vertex of the Nef Polyhedra in order to enable those operations.
-This representation also requires that the intersection points computed are coplanar with the polygongal faces they describe, implying the
-use of a Kernel with exact constructions.&lt;/p&gt;
-
-&lt;p&gt;As all this genericity is not required for all applications, we decided to work on an alternative method that would be restricted to solids
-being bounded by triangle meshes, and such that the output is manifold. In October 2012, we released an undocumented version of a new code
-based of corefinement of triangles meshes. With the feedback of early adopters, we officially released with CGAL 4.10 in May 2017 inside
-the &lt;a href=&quot;https://doc.cgal.org/latest/Polygon_mesh_processing&quot;&gt;Polygon Mesh Processing&lt;/a&gt; package a rewrite of the original 3D Boolean operations through
-corefinement. One of the key features of this code is the ability to compute several type of operations in one run (union and intersection
-for example), and the possibility to store the result in a new mesh or directly update one of the input meshes to avoid recopying the entire
-mesh if only a small portion is affected. When it comes to robustness, exact constructions are used under the hood to guarantee an output
-with the correct topology. To show the robustness and the speed of the method, we posted a &lt;a href=&quot;https://www.linkedin.com/pulse/benchmarking-mesh-union-using-cgal-libigl-sebastien-loriot/&quot;&gt;benchmark&lt;/a&gt;
-on the &lt;a href=&quot;https://ten-thousand-models.appspot.com/&quot;&gt;Thingi10k data set&lt;/a&gt; testing the code on thousands of models.&lt;/p&gt;
-
-&lt;p&gt;A question that was often asked by users was the possibility to use that code to resolve self-intersections in triangle meshes
-and more particularly in solids. This gave us the idea to modify the corefinement code to write an autorefinement version
-that would refine triangles from the same mesh that are intersecting along segments not in the input. Then, using those intersection
-edges apply a self-union to resolve self-intersections of the solid.
+&lt;p&gt;Several releases ago, CGAL introduced the function &lt;a href=&quot;https://doc.cgal.org/latest/Polygon_mesh_processing/group__PMP__corefinement__grp.html#ga88ea5360f9fe65458f9086b453447662&quot;&gt;CGAL::Polygon_mesh_processing::clip()&lt;/a&gt;,
+which enabled users to restrict the volume bounded by a triangle mesh to a halfspace defined
+by an oriented plane. Over the releases, this function has been extended to also enable clipping
+of surfaces represented by triangle meshes with boundaries, as well as self-intersecting surfaces.
+A closely related function, &lt;a href=&quot;https://doc.cgal.org/latest/Polygon_mesh_processing/group__PMP__corefinement__grp.html#ga0c49ffd458b13ee9489cad2321656f71&quot;&gt;CGAL::Polygon_mesh_processing::split()&lt;/a&gt;, can be used
+to cut and separate a surface in multiple components.
 &lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/cylinder_autorefine.png&quot;&gt;&lt;img src=&quot;../../../../images/cylinder_autorefine.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
-  &lt;br /&gt;&lt;small&gt;Left: A triangle mesh genererated by sweeping a circle along a spiral curve;
-             Right: A triangle mesh free from self-intersection bounding the same volume as in the left picture;
-             On the bottom, we see the intersection curve of a plane with the triangle meshes.&lt;/small&gt;
+  &lt;a href=&quot;../../../../images/clip_ex.png&quot;&gt;&lt;img src=&quot;../../../../images/clip_ex.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
+  &lt;br /&gt;&lt;small&gt;Fig 1: Four successive clips of the &lt;em&gt;&quot;elephant&quot;&lt;/em&gt; surface, using planes in arbitrary directions.&lt;/small&gt;
 &lt;/div&gt;
-
-&lt;p&gt;In CGAL 4.11 (April 2018), we released an undocumented version of this autorefinement code. The code was however limited to
-meshes where only pairs of triangles were intersecting along the same segment (as an underlying requirement of the code is
-a pairwise intersection). In order to officially release that code, we needed to over come this limitation. Over the years,
-we have tried to improve the code but we were limited by the notion of pairwise intersection.
-As a new year resolution, on the 2nd of January 2023 we started a new from scratch implementation of an autorefinement
-code of triangle soups, that was officially release in September 2024 with CGAL 6.0 (CGAL 5.6 being released in July 2023
-we could not match the feature freeze of April even if the code was already working).&lt;/p&gt;
-
-&lt;h3&gt;A Robust and Fast Method to Resolve Intersections in Triangle Soups&lt;/h3&gt;
-
-&lt;p&gt;The function &lt;a href=&quot;https://doc.cgal.org/6.0/Polygon_mesh_processing/group__PMP__corefinement__grp.html#gaec85370aa0b2acc0919e5f8406cfb74c&quot;&gt;CGAL::Polygon_mesh_processing::autorefine_triangle_soup()&lt;/a&gt;
-takes as input a triangle soup (a range of points and a range of triple of integers representing triangles using points indices), and resolves all
-intersections among the triangles by refining the triangles no triangle intersects but along a shared edge or a shared vertex. The function operates
-on a triangle soup and not a triangle mesh to be able to handle all kind of nasty input (including degenerate faces and non-manifoldness), but
-also to be able to get non-manifold output. Indeed, even for two triangles intersecting along a line, after refining them to resolve the intersection
-you end up with four triangles sharing the same edge.
-
-In order to show the robustness and the runtime efficiency of the function, we ran it over all 10,000 models from the Thingi10k repository.
-The computer used for the benchmark runs a x86_64 Debian GNU/Linux 6.1.0-12-amd64 and features a 2016 Intel(R) Xeon(R) CPU E5-1650 v4 @ 3.60GHz with 6 threads/12 hyperthreads. The values of memory are
-the maximum resident set size (given using `/usr/bin/time` command).
-
-&lt;br /&gt;
-&lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/XXX.png&quot;&gt;&lt;img src=&quot;../../../../images/XXX.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
-  &lt;br /&gt;&lt;small&gt;Blabla&lt;/small&gt;
-&lt;/div&gt;
-TODO: the graph
-&lt;/p&gt;
-
-&lt;p&gt;Even if exact computations are used internally, if the input is using double coordinates, then the output point coordinates are also rounded to double coordinates.
-As a matter of fact, this naive rounding to double implies that out the 9997 valid input files, only 9425 were free from self-intersection after autorefine and naive rounding.
-So we are left with 572 files still featuring self-intersections while the purpose of calling the autorefine function was to resolve them.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3&gt;A New Snapping Strategy&lt;/h3&gt;
+&lt;h3&gt;10x Runtime Improvements&lt;/h3&gt;
 
 &lt;p&gt;
-Based on `[1]`, CGAL 6.1 introduces the new parameter `apply_iterative_snap_rouding()` to the autorefine function to activate a snapping strategy in order
-to avoid self-intersections produced while rounding the coordinates to double.
-With the default values of the parameters for this method, all the models but one could be rounded with one call.
-The remaining model required a few more iterations.
+The original implementation of the two functions was a by-product of the Boolean operations
+function &lt;a href=&quot;https://doc.cgal.org/latest/Polygon_mesh_processing/group__PMP__corefinement__grp.html#ga3ff96d36cad8f37efcdada916c46fbbe&quot;&gt;CGAL::Polygon_mesh_processing::corefine_and_compute_intersection()&lt;/a&gt;.
 
-&lt;br /&gt;
-&lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/XXX.png&quot;&gt;&lt;img src=&quot;../../../../images/XXX.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
-  &lt;br /&gt;&lt;small&gt;Blabla&lt;/small&gt;
-&lt;/div&gt;
-TODO: the graph
+With CGAL 6.1, the functions &lt;code&gt;clip()&lt;/code&gt; and &lt;code&gt;split()&lt;/code&gt; have been reimplemented from scratch, without changing the API.
+The new implemention now takes advantage of the fact that the clipper is simply a plane,
+for which efficient orientation tests can be performed, which results in a tenfold speed-up,
+In addition, the functions can now be used with meshes with polygonal faces, which is crucial
+to avoid cascading growth of the number of subfaces when a face is clipped several times (see Figure 3).
 &lt;/p&gt;
 
-&lt;p&gt;The main idea behind the method is a loop that rounds coordinates of triangles involved in a self-intersections onto a floating point number type, eliminate degenerate
-elements, and resolve again the self-intersections, until a maximum number of iterations is reached or all self-intersections are resolved.
-Even if there is no theoretical guarantee for successful termination, it has good experimental results.&lt;/p&gt;
+&lt;!--
+|                            | Input     | 1st clip  | 2nd clip  | 3rd clip | 4th clip |
+| ---------------------------|  -------  | --------- | --------- | -------- | -------- |
+| Runtime in s. (CGAL 6.0)   |    -      | 2.71621   | 0.87903   | 0.60735  | 0.36834  |
+| Runtime in s. (CGAL 6.1)   |    -      | 0.19656   | 0.12051   | 0.04491  | 0.03605  |
+| Number of faces (CGAL 6.0) | 1,422,848 | 749,714   | 173,542   | 116,520  | 58,800   |
+| Number of faces (CGAL 6.1) | 1,422,848 | 743,276   | 170,652   | 113,425  | 55,245   |
+--&gt;
+
+&lt;table style=&quot;width:100%&quot; border=&quot;1&quot;&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;em&gt;Input&lt;/em&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;em&gt;1st clip&lt;/em&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;em&gt;2nd clip&lt;/em&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;em&gt;3rd clip&lt;/em&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;em&gt;4th clip&lt;/em&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Runtime in seconds (CGAL 6.0)&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;2.716&lt;/td&gt;
+    &lt;td&gt;0.879&lt;/td&gt;
+    &lt;td&gt;0.607&lt;/td&gt;
+    &lt;td&gt;0.368&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Runtime in seconds (CGAL 6.1)&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;&lt;b&gt;0.197&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b&gt;0.121&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b&gt;0.045&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b&gt;0.036&lt;/b&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Number of faces (CGAL 6.0)&lt;/td&gt;
+    &lt;td&gt;1,422,848&lt;/td&gt;
+    &lt;td&gt;749,714&lt;/td&gt;
+    &lt;td&gt;173,542&lt;/td&gt;
+    &lt;td&gt;116,520&lt;/td&gt;
+    &lt;td&gt;58,800&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Number of faces (CGAL 6.1)&lt;/td&gt;
+    &lt;td&gt;1,422,848&lt;/td&gt;
+    &lt;td&gt;743,276&lt;/td&gt;
+    &lt;td&gt;170,652&lt;/td&gt;
+    &lt;td&gt;113,425&lt;/td&gt;
+    &lt;td&gt;55,245&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;small&gt;Table 1: Runtime and face count improvements for the successive cuts depicted on Figure 1.&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;The runtimes and numbers of faces for CGAL 6.1 are given when the resulting clipped mesh is not triangulated.
+Below you can see the final output of CGAL 6.1 (not trianguled) vs. that of CGAL 6.0 (necessarily triangulated):&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;a href=&quot;../../../../images/clip_with_edges.png&quot;&gt;&lt;img src=&quot;../../../../images/clip_with_edges.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
+  &lt;br /&gt;&lt;small&gt;Fig 2: Output of CGAL 6.1 vs output of CGAL 6.0.&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3&gt;Behind the Scenes: a New Function for Mesh Refinement&lt;/h3&gt;
+
+&lt;p&gt;The new implementation uses internally a new function introduced in CGAL 6.1 to the Polygon Mesh Processing package:
+&lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/master/Polygon_mesh_processing/group__PMP__corefinement__grp.html#gacb9d68fa4dea8fd03ec53b56a16d6fc6&quot;&gt;CGAL::Polygon_mesh_processing::refine_with_plane()&lt;/a&gt;.
+This function inserts in an input surface mesh the intersection edges between the surface and a plane,
+and provides access to the created intersection edges.
+&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;a href=&quot;../../../../images/refine_with_planes.png&quot;&gt;&lt;img src=&quot;../../../../images/refine_with_planes.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
+  &lt;br /&gt;&lt;small&gt;Fig 3: Intersection edges (in red) of a triangle mesh with planes forming a regular grid for CGAL 6.0 (left) and CGAL 6.1 (right).&lt;/small&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h4&gt;Status&lt;/h4&gt;
 
-&lt;p&gt;All methods are already integrated in CGAL&apos;s master branch on the
+&lt;p&gt;All these enhancements are already integrated in CGAL&apos;s master branch on the
 &lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt; and
-will be officially released in the upcoming version of CGAL, CGAL 6.1, scheduled for summer 2025.&lt;/p&gt;
+will be officially released in the upcoming version of CGAL, CGAL 6.1, scheduled for mid 2025.&lt;/p&gt;
 
 &lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/master/Polygon_mesh_processing/group__PMP__corefinement__grp.html#ga5dc9e7acf8433235adc7b91ac93a7d42&quot;&gt;Documentation of the function &lt;em&gt;CGAL::Polygon_mesh_processing::clip()&lt;/em&gt;&lt;/a&gt;
@@ -123,9 +145,251 @@ will be officially released in the upcoming version of CGAL, CGAL 6.1, scheduled
 &lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;
 &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>New in CGAL: New Surface Remeshing Algorithms</title>
+   <link href="http://www.cgal.org/2025/05/22/Surface_remeshing/"/>
+   <updated>2025-05-22T00:00:00+00:00</updated>
+   <id>http://www.cgal.org/2025/05/22/Surface_remeshing</id>
+   <content type="html">
+&lt;h3&gt;&lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Sébastien Loriot&lt;/a&gt;&amp;#42; and
+&lt;a href=&quot;https://www.linkedin.com/in/hossam-saeed-1abab91b3/&quot;&gt;Hossam Mohamed Saeed&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h4&gt;&amp;#42;&lt;a href=&quot;https://geometryfactory.com/&quot;&gt;GeometryFactory&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Numerous tasks in geometric modeling and processing revolve around 3D geometric objects
+represented by surface meshes. Such meshes can be created through different processes (CAD, scans, ...),
+with varying element shape and size, which might not be adapted to downstream applications. For example,
+3D scanners can create amounts of data that are excessive for a simple visualization.
+Adapting the density of the mesh, also known as remeshing, is thus a crucial step to fit the data
+to application needs.&lt;p&gt;
+
+&lt;p&gt;CGAL offers various packages and functions that can be used to construct a mesh from scratch,
+resample a mesh, or adapt the mesh to a set of criteria, notably:
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://doc.cgal.org/6.1/Polygon_mesh_processing/index.html#mesh3rem&quot;&gt;CGAL::Polygon_mesh_processing::surface_Delaunay_remeshing()&lt;/a&gt;, which remeshes a surface triangle mesh following a Delaunay refinement algorithm.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://doc.cgal.org/6.1/Polygon_mesh_processing/index.html#isorem&quot;&gt;CGAL::Polygon_mesh_processing::isotropic_remeshing()&lt;/a&gt;, which uses atomic operations
+  such as edge splits, edge collapses, edge flips, and Laplacian smoothing to adapt a mesh
+  to a user-provided sizing field.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://doc.cgal.org/6.1/Surface_mesh_simplification/index.html#Chapter_Triangulated_Surface_Mesh_Simplification&quot;&gt;Triangulated Surface Mesh Simplification&lt;/a&gt;, which regroups a family of methods that can be used to progressively prune a mesh using for example
+  quadric error metrics.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Recently, two new methods have been introduced to CGAL, with the purpose of generating coarser
+versions of surface meshes:
+&lt;ul&gt;
+  &lt;li&gt;&lt;i&gt;Approximated Discrete Centroidal Voronoi Diagram (ACVD) Remeshing&lt;/i&gt;, which can be used to create high-quality feature-preserving surface meshes with a user-provided budget of vertices.&lt;/li&gt;
+  &lt;li&gt;&lt;i&gt;Almost Planar Face Remeshing&lt;/i&gt;, to be used when one desires to extract the coarsest
+  possible mesh without sacrificing geometry.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+
+&lt;br /&gt;
+&lt;h3&gt;Approximated Discrete Centroidal Voronoi Diagram (ACVD) Remeshing&lt;/h3&gt;
+
+&lt;p&gt;The function &lt;a href=&quot;https://doc.cgal.org/6.1/Polygon_mesh_processing/group__PkgPolygonMeshProcessingRef.html#gaed23e63b12c7fe8268927d17b4d379f1&quot;&gt;CGAL::Polygon_mesh_processing::approximated_centroidal_Voronoi_diagram_remeshing()&lt;/a&gt; uses clustering on polygonal meshes as to approximate a Centroidal Voronoi
+Diagram construction. It is inspired by the method introduced by Valette and Chassery [1] and further
+developed by Audette et al. [2] and Valette et al. [3]. The algorithm is similar to Lloyd&apos;s algorithm
+(or k-means), where random input vertices are picked to initialize clusters of vertices, which are
+then grown to minimize a particular energy, until convergence. Upon convergence, output vertices are
+computed from the vertices of each cluster. The algorithm combines the robustness and theoretical
+strength of Delaunay criteria with the efficiency of entirely discrete geometry processing,
+with a low complexity (in terms of calculations and memory requirements),
+allowing the processing of large meshes up to several million triangles.&lt;/p&gt;
+
+&lt;br /&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;a href=&quot;../../../../images/ACVD_ex.png&quot;&gt;&lt;img src=&quot;../../../../images/ACVD_ex.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
+  &lt;br /&gt;&lt;small&gt;Input (left); remeshing with a budget of 50k vertices: isotropic (middle) and curvature adapted (right).&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;br /&gt;
+&lt;p&gt;If the input mesh contains sharp features or corners, it is possible to use quadric error metrics to either move output vertices (fast, but can produce bad looking triangles), of to use quadric error metrics directly into the energy formulation of each cluster (slower, but produces better quality triangles). Additionally, adaptive remeshing based on surface curvature is possible.&lt;/p&gt;
+
+&lt;br /&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;a href=&quot;../../../../images/ACVD_qem.png&quot;&gt;&lt;img src=&quot;../../../../images/ACVD_qem.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
+  &lt;br /&gt;&lt;small&gt;Input (left); remeshing without (middle) and with (right) QEM-based placement optimization.&lt;/small&gt;
+&lt;/div&gt;
+&lt;br /&gt;
+
+&lt;p&gt;This implementation of the ACVD Remeshing method was the result of another successful
+&lt;a href=&quot;https://summerofcode.withgoogle.com/archive/2023/projects/VrwwMSuN&quot;&gt;Google Summer of Code&lt;/a&gt; project in CGAL,
+contributed by &lt;a href=&quot;https://www.linkedin.com/in/hossam-saeed-1abab91b3/&quot;&gt;Hossam Saeed&lt;/a&gt;
+mentored by &lt;a href=&quot;https://www.creatis.insa-lyon.fr/~valette/public/&quot;&gt;Sébastien Valette&lt;/a&gt;
+and &lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Sébastien Loriot&lt;/a&gt;.&lt;/p&gt;
+
+&lt;br /&gt;
+&lt;h3&gt;Remeshing of (Almost) Planar Patches&lt;/h3&gt;
+
+&lt;p&gt;When many triangles are used to describe a planar region of a model, one might wish to simplify
+the mesh in this region to use as few elements as possible, possibly even a single large polygonal face.
+This can be achieved using the function
+&lt;a href=&quot;https://doc.cgal.org/6.1/Polygon_mesh_processing/group__PMP__meshing__grp.html#ga7fca6fa2db94560ab6d32e6a77fc35b6&quot;&gt;CGAL::Polygon_mesh_processing::remesh_planar_patches()&lt;/a&gt;.
+This function performs a detection of the planar regions using geometric predicates for coplanarity
+and collinearity checks.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;a href=&quot;../../../../images/planar_remeshing.png&quot;&gt;&lt;img src=&quot;../../../../images/planar_remeshing.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+  &lt;br /&gt;&lt;small&gt;Remeshing of a complex mechanical piece.&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;br /&gt;
+&lt;p&gt;In real life, models often exhibit slight noise, which might cause regions to be unexpectedly
+small when using exact predicates because faces are not exactly coplanar. To palliate this, it is possible to specify
+a threshold on the angle between adjacent faces (resp. segments) such that they are considered coplanar (resp. collinear).
+Individual functions are also provided for the different steps of the remeshing process (detection
+of the planar regions, detection of the corners, ...) to enable fine tuning of the algorithm
+and customization with user-specific criteria.&lt;/p&gt;
+
+&lt;h4&gt;Status&lt;/h4&gt;
+
+&lt;p&gt;All these additions are already integrated in CGAL&apos;s master branch on the
+&lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;. Planar Remeshing has been
+available since CGAL 6.0, and ACVD Remeshing will be officially released
+in the upcoming version of CGAL, CGAL 6.1, scheduled for mid 2025.&lt;/p&gt;
+
+&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
+&lt;a href=&quot;https://doc.cgal.org/6.1/Polygon_mesh_processing/index.html#acvdrem&quot;&gt;Documentation section about ACVD Remeshing&lt;/a&gt;
+&lt;br /&gt;
+&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
+&lt;a href=&quot;https://doc.cgal.org/6.1/Polygon_mesh_processing/index.html#decimate&quot;&gt;Documentation section about Planar Remeshing&lt;/a&gt;
+&lt;br /&gt;
+&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
+&lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;
+&lt;br /&gt;&lt;br /&gt;
 
 &lt;h4&gt;Bibliography&lt;/h4&gt;
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[1]&lt;/code&gt; Sylvain Lazard and Leo Valque. Removing self-intersections in 3D meshes while preserving floating-point coordinates. working paper or preprint, January 2025.&lt;/p&gt;
+
+&lt;p&gt;
+[1] Valette, S., &amp;amp; Chassery, J. M. (2004, September). Approximated centroidal voronoi diagrams for uniform polygonal mesh coarsening. In Computer Graphics Forum (Vol. 23, No. 3, pp. 381-389). Oxford, UK and Boston, USA: Blackwell Publishing, Inc.
+&lt;br /&gt;
+[2] Audette, M., Rivière, D., Ewend, M., &amp;amp; Valette, S. (2010, September). Approach-guided controlled resolution brain meshing for fe-based interactive neurosurgery simulation. In Workshop on Mesh Processing in Medical Image Analysis.
+&lt;br /&gt;
+[3] Valette, S., Chassery, J. M., &amp;amp; Prost, R. (2008). Generic remeshing of 3D triangular meshes with metric-dependent discrete Voronoi diagrams. IEEE Transactions on Visualization and Computer Graphics, 14(2), 369-381.
+&lt;/p&gt;
+&lt;/p&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>New in CGAL: Polygon Repair</title>
+   <link href="http://www.cgal.org/2025/05/22/Polygon_repair/"/>
+   <updated>2025-05-22T00:00:00+00:00</updated>
+   <id>http://www.cgal.org/2025/05/22/Polygon_repair</id>
+   <content type="html">
+&lt;h3&gt;&lt;a href=&quot;https://3d.bk.tudelft.nl/ken/en/&quot;&gt;Ken Arroyo Ohori&lt;/a&gt;&amp;#42;,
+&lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Andreas Fabri&lt;/a&gt;&amp;deg;, and
+&lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Sébastien Loriot&lt;/a&gt;&amp;deg;
+&lt;/h3&gt;
+&lt;h4&gt;&amp;#42;&lt;a href=&quot;https://www.tudelft.nl/en/&quot;&gt;TU Delft&lt;/a&gt;,
+&amp;deg;&lt;a href=&quot;https://geometryfactory.com/&quot;&gt;GeometryFactory&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Polygons are one the standard representations of geometric data, and are extensively used
+in various fields, and in particular visualisation and Geographic Information Systems (GIS).
+Within CGAL, 2D polygons (possibly with holes) are used in various packages such as
+&lt;a href=&quot;https://doc.cgal.org/6.1/Manual/packages.html#PkgPartition2&quot;&gt;2D Polygon Partitioning&lt;/a&gt;,
+&lt;a href=&quot;https://doc.cgal.org/6.1/Manual/packages.html#PkgStraightSkeleton2&quot;&gt; 2D Straight Skeleton and Polygon Offsetting&lt;/a&gt;,
+&lt;a href=&quot;https://doc.cgal.org/6.1/Manual/packages.html#PkgMinkowskiSum2&quot;&gt; 2D Minkowski Sums&lt;/a&gt;,
+&lt;a href=&quot;https://doc.cgal.org/6.1/Manual/packages.html#PkgPolylineSimplification2&quot;&gt;2D Polyline Simplification&lt;/a&gt;,
+or &lt;a href=&quot;https://doc.cgal.org/6.1/Manual/packages.html#PkgVisibility2&quot;&gt;2D Visibility Computation&lt;/a&gt;.
+Whether for CGAL or external algorithms, a &lt;i&gt;valid&lt;/i&gt; polygon is generally required as input.
+Unfortunately, although the validation of polygons has now been comprehensively studied,
+sanitization of error-laden inputs has received much less attention, and no solution existed within CGAL
+until recently.&lt;/p&gt;
+
+&lt;p&gt;The package &lt;a href=&quot;https://doc.cgal.org/6.1/Manual/packages.html#PkgPolygonRepair&quot;&gt;2D Polygon Repair&lt;/a&gt;
+is one the lastest additions to CGAL, and provides automatic repair of invalid polygons with a fast and generic
+implementation, with immediate compatibility with other polygon-based CGAL packages.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3&gt;A Triangulation-based Approach to Automatic Polygon Repair&lt;/h3&gt;
+
+&lt;p&gt;This new package implements different polygon repair methods. Starting from possibly invalid inputs
+in the form of a polygon, polygon with holes or multipolygon with holes, the method computes an arrangement
+of the input edges, labels each face according to what it represents (exterior, polygon interior, or hole),
+and reconstructs the polygon(s) represented by the arrangement. The method returns valid output stored
+in a multipolygon with holes, and calling it as simple as:&lt;/p&gt;
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ifstream&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;data/bridge-edge.wkt&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;CGAL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Polygon_with_holes_2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Kernel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pwh&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;CGAL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read_polygon_WKT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pwh&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;Multipolygon_with_holes_2&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CGAL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Polygon_repair&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;repair&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pwh&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;a href=&quot;../../../../images/non_zero_departments.png&quot;&gt;&lt;img src=&quot;../../../../images/non_zero_departments.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
+  &lt;br /&gt;&lt;small&gt;Turning the multipolygon of metropolitan french departments into two polygons using the non-zero rule&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3&gt;Repair Strategies&lt;/h3&gt;
+
+&lt;p&gt;For a given invalid polygon inputs, multiple solutions might exist. Consequently, different
+labeling heuristics are possible. Four strategies are currently offered by the new package:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;the &lt;b&gt;even-odd&lt;/b&gt; rule. In this strategy, areas are alternately assigned as polygon interiors
+  and exterior/holes each time that an input edge is passed. It does not distinguish between edges
+  that are part of outer boundaries from those of inner boundaries;&lt;/li&gt;
+  &lt;li&gt;the &lt;b&gt;non-zero&lt;/b&gt; rule, which keeps areas with a non-zero winding number;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;../../../../images/PolygonRepair_WindingNonZeroDifferent.svg&quot; alt=&quot;triangle with all three sides equal&quot; height=&quot;200&quot; /&gt;
+  &lt;br /&gt;&lt;small&gt;Input (left), non-zero (middle) even-odd (right).&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;the &lt;b&gt;union&lt;/b&gt; rule, which keeps areas that are contained in at least one of the input polygons (with holes);&lt;/li&gt;
+  &lt;li&gt;the &lt;b&gt;intersection&lt;/b&gt; rule, which keeps areas that are contained in all input polygons (with holes).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;../../../../images/PolygonRepair_UnionIntersection.svg&quot; alt=&quot;triangle with all three sides equal&quot; height=&quot;200&quot; /&gt;
+  &lt;br /&gt;&lt;small&gt;Union (top) and Intersection (bottom). &lt;/small&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;The choice of strategy will generally depend on the input polygon type, and on the downstream application(s).
+For example, the &quot;union&quot; and &quot;intersection&quot; rules are useful when given two or more similar valid
+polygons with holes or to obtain an approximation from outside and inside.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4&gt;Status&lt;/h4&gt;
+
+&lt;p&gt;The initial CGAL 6.0 implementation of the Polygon Repair package providing only the &quot;even-odd&quot; rule
+was the result of a successful &lt;a href=&quot;https://summerofcode.withgoogle.com/archive/2023/projects/ivuH5hxv&quot;&gt;Google Summer of Code&lt;/a&gt; project,
+contributed by &lt;a href=&quot;https://3d.bk.tudelft.nl/ken/en/&quot;&gt;Ken Arroyo Ohori&lt;/a&gt;
+mentored by &lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Andreas Fabri&lt;/a&gt;
+and &lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Sébastien Loriot&lt;/a&gt;, and based on the
+work of Ledoux, Ohori, and Meijers [1].
+Non-zero, union, and intersection strategies were added in CGAL 6.1 by Andreas Fabri.&lt;/p&gt;
+
+&lt;p&gt;All these additions are already integrated in CGAL&apos;s master branch on the
+&lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;. Polygon repair has been
+available since CGAL 6.0, and the new even-odd rule as well as the Boolean operations
+will be officially released in the upcoming version of CGAL, CGAL 6.1, scheduled for mid 2025.&lt;/p&gt;
+
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
+&lt;a href=&quot;https://doc.cgal.org/6.1/Polygon_repair&quot;&gt;Documentation of the “2D Polygon Repair” package&lt;/a&gt;
+&lt;br /&gt;
+&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
+&lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4&gt;Bibliography&lt;/h4&gt;
+
+&lt;p&gt;
+[1] Ledoux, H., Ohori, K. A., &amp;amp; Meijers, M. (2014). A triangulation-based approach to automatically repair GIS polygons. Computers &amp;amp; Geosciences, 66, 121-131.
+&lt;/p&gt;
 </content>
  </entry>
  
@@ -1679,20 +1943,20 @@ and using the &lt;em&gt;Interpolated Corrected Curvature Measures&lt;/em&gt; fun
 
 &lt;h3&gt;Status&lt;/h3&gt;
 
-&lt;p&gt;All these additions already are integrated in CGAL&apos;s master branch on the
+&lt;p&gt;All these additions are already integrated in CGAL&apos;s master branch on the
 &lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;, and will be officially released
 in the upcoming version of CGAL, CGAL 6.0, scheduled for mid 2024.&lt;/p&gt;
 
 &lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
-&lt;a href=&quot;https://doc.cgal.org/5.6/Manual/packages.html#PkgPolygonMeshProcessing&quot;&gt;Documentation of the package Polygon Mesh Processing&lt;/a&gt;
+&lt;a href=&quot;https://doc.cgal.org/6.0/Manual/packages.html#PkgPolygonMeshProcessing&quot;&gt;Documentation of the package Polygon Mesh Processing&lt;/a&gt;
 &lt;br /&gt;
 
 &lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
-&lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/master/Polygon_mesh_processing/index.html#title59&quot;&gt;Documentation section of the master branch about &lt;code&gt;interpolated_corrected_curvatures()&lt;/code&gt;&lt;/a&gt;
+&lt;a href=&quot;https://doc.cgal.org/6.0/Polygon_mesh_processing/index.html#PMPICC&quot;&gt;Documentation section about &lt;code&gt;interpolated_corrected_curvatures()&lt;/code&gt;&lt;/a&gt;
 &lt;br /&gt;
 
 &lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
-&lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/master/Polygon_mesh_processing/index.html#title8&quot;&gt;Documentation section of the master branch about &lt;code&gt;isotropic_remeshing()&lt;/code&gt;&lt;/a&gt;
+&lt;a href=&quot;https://doc.cgal.org/6.0/Polygon_mesh_processing/index.html#PMPMeshing&quot;&gt;Documentation section about &lt;code&gt;isotropic_remeshing()&lt;/code&gt;&lt;/a&gt;
 &lt;br /&gt;
 
 &lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
