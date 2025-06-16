@@ -7,10 +7,12 @@ tags: [""]
 ---
 {% include JB/setup %}
 
-<h3><a href="https://geometryfactory.com/who-we-are/">Sébastien Loriot</a>&#42; and
+<h3><a href="https://geometryfactory.com/who-we-are/">Sébastien Loriot</a>,
+<a href="https://www.creatis.insa-lyon.fr/~valette/public/">Sébastien Valette</a>,
+and
 <a href="https://www.linkedin.com/in/hossam-saeed-1abab91b3/">Hossam Mohamed Saeed</a>
 </h3>
-<h4>&#42;<a href="https://geometryfactory.com/">GeometryFactory</a></h4>
+
 
 <br>
 <p>Numerous tasks in geometric modeling and processing revolve around 3D geometric objects
