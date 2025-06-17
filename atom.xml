@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2025-06-17T09:23:26+00:00</updated>
+ <updated>2025-06-17T09:34:53+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -13,7 +13,7 @@
 
  
  <entry>
-   <title>New in CGAL: Resolving Self-Intersections in a Surface Mesh, now with Snap Rounding</title>
+   <title>New in CGAL: Resolving Self-Intersections in a Surface Mesh, Now with Snap Rounding</title>
    <link href="http://www.cgal.org/2025/06/13/autorefine-and-snap/"/>
    <updated>2025-06-13T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2025/06/13/autorefine-and-snap</id>
@@ -93,7 +93,7 @@ As a matter of fact, this naive rounding to double implies that out the 9997 val
 So we are left with 572 files still featuring self-intersections while the purpose of calling the autorefine function was to resolve them.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3&gt;A New Snapping Strategy&lt;/h3&gt;
+&lt;h3&gt;A New Snap Rounding Strategy&lt;/h3&gt;
 
 &lt;p&gt;
 Based on [1], CGAL 6.1 introduces the new parameter `apply_iterative_snap_rouding()` to the autorefine function to activate a snapping strategy in order
@@ -101,8 +101,8 @@ to avoid self-intersections produced while rounding the coordinates to double.
 With the default values of the parameters for this method, all the models but one could be rounded with one call.
 The remaining model required a few more iterations.
 
-The main idea behind the method is a loop that rounds coordinates of triangles involved in a self-intersections onto a floating point number type, eliminate degenerate
-elements, and resolve again the self-intersections, until a maximum number of iterations is reached or all self-intersections are resolved.
+The main idea behind the method is a loop that rounds vertex coordinates of triangles involved in a self-intersections onto a floating point number type, eliminates degenerate
+elements, and resolves again the self-intersections, until a maximum number of iterations is reached or all self-intersections are resolved.
 Even if there is no theoretical guarantee for successful termination, it has good experimental results.
 
 This result will be presented at &lt;a href=&quot;https://sgp2025.my.canva.site/&quot;&gt;SGP 2025&lt;/a&gt; in Bilbao.

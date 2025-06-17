@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>New in CGAL: Resolving Self-Intersections in a Surface Mesh, now with Snap Rounding</title>
+    <title>New in CGAL: Resolving Self-Intersections in a Surface Mesh, Now with Snap Rounding</title>
     <meta name="description" content="">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
@@ -118,7 +118,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 home-title">
-            <h1>New in CGAL: Resolving Self-Intersections in a Surface Mesh, now with Snap Rounding </h1>
+            <h1>New in CGAL: Resolving Self-Intersections in a Surface Mesh, Now with Snap Rounding </h1>
             <a style="text-align: right;" href="https://github.com/cgal/cgal" alt="The CGAL Project's github">
               <span class="btn-dark-orange github-link fs-5">CGAL/cgal <i class="bi bi-github"></i></span>
             </a>
@@ -136,7 +136,7 @@
       <div class="col-sm-9">
         <div class="blog-post blog-single-post">
           <div class="single-post-title">
-            <h3>New in CGAL: Resolving Self-Intersections in a Surface Mesh, now with Snap Rounding</h3>
+            <h3>New in CGAL: Resolving Self-Intersections in a Surface Mesh, Now with Snap Rounding</h3>
           </div>
           <br>
           <div class="single-post-info">
@@ -220,7 +220,7 @@ As a matter of fact, this naive rounding to double implies that out the 9997 val
 So we are left with 572 files still featuring self-intersections while the purpose of calling the autorefine function was to resolve them.</p>
 
 <p><br /></p>
-<h3>A New Snapping Strategy</h3>
+<h3>A New Snap Rounding Strategy</h3>
 
 <p>
 Based on [1], CGAL 6.1 introduces the new parameter `apply_iterative_snap_rouding()` to the autorefine function to activate a snapping strategy in order
@@ -228,8 +228,8 @@ to avoid self-intersections produced while rounding the coordinates to double.
 With the default values of the parameters for this method, all the models but one could be rounded with one call.
 The remaining model required a few more iterations.
 
-The main idea behind the method is a loop that rounds coordinates of triangles involved in a self-intersections onto a floating point number type, eliminate degenerate
-elements, and resolve again the self-intersections, until a maximum number of iterations is reached or all self-intersections are resolved.
+The main idea behind the method is a loop that rounds vertex coordinates of triangles involved in a self-intersections onto a floating point number type, eliminates degenerate
+elements, and resolves again the self-intersections, until a maximum number of iterations is reached or all self-intersections are resolved.
 Even if there is no theoretical guarantee for successful termination, it has good experimental results.
 
 This result will be presented at <a href="https://sgp2025.my.canva.site/">SGP 2025</a> in Bilbao.
@@ -262,7 +262,7 @@ will be officially released in the upcoming version of CGAL, CGAL 6.1, scheduled
           
             
             
-            <li class="active"><a href="/cgal-web/2025/06/13/autorefine-and-snap/" class="active">New in CGAL: Resolving Self-Intersections in a Surface Mesh, now with Snap Rounding</a>
+            <li class="active"><a href="/cgal-web/2025/06/13/autorefine-and-snap/" class="active">New in CGAL: Resolving Self-Intersections in a Surface Mesh, Now with Snap Rounding</a>
             <br><div style="font-size:12px">June 2025</div></li>
           
             
