@@ -7,8 +7,8 @@ tags: [""]
 ---
 {% include JB/setup %}
 
-<h3><a href="https://geometryfactory.com/who-we-are/">Sébastien Loriot</a>&#42; & <a href="https://geometryfactory.com/who-we-are/">Léo Valque</a>&#42;</h3>
-<h4>&#42;<a href="https://geometryfactory.com/">GeometryFactory</a></h4>
+<h3><a href="https://geometryfactory.com/who-we-are/">Sébastien Loriot</a> & <a href="https://geometryfactory.com/who-we-are/">Léo Valque</a></h3>
+<h4><a href="https://geometryfactory.com/">GeometryFactory</a></h4>
 
 <br>
 <h3>History of 3D Boolean Operations in CGAL</h3>
@@ -113,4 +113,4 @@ will be officially released in the upcoming version of CGAL, CGAL 6.1, scheduled
 <br><br>
 
 <h4>Bibliography</h4>
-`[1]` Sylvain Lazard and Leo Valque. Removing self-intersections in 3D meshes while preserving floating-point coordinates. Computer Graphics Forum. Vol. XX. No. X. 2025.
+[1] Sylvain Lazard and Leo Valque. Removing self-intersections in 3D meshes while preserving floating-point coordinates. Computer Graphics Forum. Vol. XX. No. X. 2025.
