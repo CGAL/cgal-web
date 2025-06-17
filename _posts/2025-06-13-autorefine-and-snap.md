@@ -64,15 +64,18 @@ also to be able to get non-manifold output. Indeed, even for two triangles inter
 you end up with four triangles sharing the same edge.
 
 In order to show the robustness and the runtime efficiency of the function, we ran it over all 10,000 models from the Thingi10k repository.
-The computer used for the benchmark runs a x86_64 Debian GNU/Linux 6.1.0-12-amd64 and features a 2016 Intel(R) Xeon(R) CPU E5-1650 v4 @ 3.60GHz with 6 threads/12 hyperthreads. The values of memory are
-the maximum resident set size (given using `/usr/bin/time` command).
+The computer used for the benchmark runs a x86_64 Debian GNU/Linux 6.1.0-12-amd64 and features a 2016 Intel(R) Xeon(R) CPU E5-1650 v4 @ 3.60GHz with 6 threads/12 hyperthreads.
+The values of memory are the maximum resident set size (given using `/usr/bin/time` command).
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/XXX.png"><img src="../../../../images/XXX.png" style="max-width:95%"/></a>
-  <br><small>Blabla</small>
+  <a href="../../../../images/autoref_runtime.png"><img src="../../../../images/autoref_runtime.png" style="max-width:95%"/></a>
 </div>
-TODO: the graph
+</p>
+<br>
+<div style="text-align:center;">
+  <a href="../../../../images/autoref_mem.png"><img src="../../../../images/autoref_mem.png" style="max-width:95%"/></a>
+</div>
 </p>
 
 Even if exact computations are used internally, if the input is using double coordinates, then the output point coordinates are also rounded to double coordinates.
