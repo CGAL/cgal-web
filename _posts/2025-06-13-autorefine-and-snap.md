@@ -11,7 +11,7 @@ tags: [""]
 <h4>&#42;<a href="https://geometryfactory.com/">GeometryFactory</a></h4>
 
 <br>
-<h3>3D Boolean Operations in CGAL: a Primer</h3>
+<h3>History of 3D Boolean Operations in CGAL</h3>
 
 <p>In December 2004, CGAL 3.1 was released with the package <a href="https://doc.cgal.org/latest/Nef_3">3D Boolean Operations on Nef Polyhedra</a>
 It provided a robust way to compute Boolean Operations on Nef Polyhedra. In particular, it allows users to do some Boolean operations
@@ -44,6 +44,7 @@ edges apply a self-union to resolve self-intersections of the solid.
              Right: A triangle mesh free from self-intersection bounding the same volume as in the left picture;
              On the bottom, we see the intersection curve of a plane with the triangle meshes.</small>
 </div>
+<br>
 
 
 In CGAL 4.11 (April 2018), we released an undocumented version of this autorefinement code. The code was however limited to
@@ -86,7 +87,7 @@ So we are left with 572 files still featuring self-intersections while the purpo
 <h3>A New Snapping Strategy</h3>
 
 <p>
-Based on `[1]`, CGAL 6.1 introduces the new parameter `apply_iterative_snap_rouding()` to the autorefine function to activate a snapping strategy in order
+Based on [1], CGAL 6.1 introduces the new parameter `apply_iterative_snap_rouding()` to the autorefine function to activate a snapping strategy in order
 to avoid self-intersections produced while rounding the coordinates to double.
 With the default values of the parameters for this method, all the models but one could be rounded with one call.
 The remaining model required a few more iterations.
