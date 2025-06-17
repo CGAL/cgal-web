@@ -5,8 +5,8 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2025-06-17T08:59:31+00:00</lastBuildDate>
-        <pubDate>2025-06-17T08:59:31+00:00</pubDate>
+        <lastBuildDate>2025-06-17T09:03:19+00:00</lastBuildDate>
+        <pubDate>2025-06-17T09:03:19+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -71,17 +71,16 @@ you end up with four triangles sharing the same edge.
 In order to show the robustness and the runtime efficiency of the function, we ran it over all 10,000 models from the Thingi10k repository.
 The computer used for the benchmark runs a x86_64 Debian GNU/Linux 6.1.0-12-amd64 and features a 2016 Intel(R) Xeon(R) CPU E5-1650 v4 @ 3.60GHz with 6 threads/12 hyperthreads.
 The values of memory are the maximum resident set size (given using `/usr/bin/time` command).
+&lt;/p&gt;
 
-&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
   &lt;a href=&quot;../../../../images/autoref_runtime.png&quot;&gt;&lt;img src=&quot;../../../../images/autoref_runtime.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
 &lt;/div&gt;
-&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
   &lt;a href=&quot;../../../../images/autoref_mem.png&quot;&gt;&lt;img src=&quot;../../../../images/autoref_mem.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;&amp;lt;/p&amp;gt;&lt;/p&gt;
 
 &lt;p&gt;Even if exact computations are used internally, if the input is using double coordinates, then the output point coordinates are also rounded to double coordinates.
 As a matter of fact, this naive rounding to double implies that out the 9997 valid input files, only 9425 were free from self-intersection after autorefine and naive rounding.
@@ -96,34 +95,29 @@ to avoid self-intersections produced while rounding the coordinates to double.
 With the default values of the parameters for this method, all the models but one could be rounded with one call.
 The remaining model required a few more iterations.
 
-&lt;br /&gt;
-&lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/XXX.png&quot;&gt;&lt;img src=&quot;../../../../images/XXX.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
-  &lt;br /&gt;&lt;small&gt;Blabla&lt;/small&gt;
-&lt;/div&gt;
-TODO: the graph
-&lt;/p&gt;
-
-&lt;p&gt;The main idea behind the method is a loop that rounds coordinates of triangles involved in a self-intersections onto a floating point number type, eliminate degenerate
+The main idea behind the method is a loop that rounds coordinates of triangles involved in a self-intersections onto a floating point number type, eliminate degenerate
 elements, and resolve again the self-intersections, until a maximum number of iterations is reached or all self-intersections are resolved.
-Even if there is no theoretical guarantee for successful termination, it has good experimental results.&lt;/p&gt;
+Even if there is no theoretical guarantee for successful termination, it has good experimental results.
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+This result will be presented at &lt;a href=&quot;https://sgp2025.my.canva.site/&quot;&gt;SGP 2025&lt;/a&gt; in Bilbao.
+
+&lt;br /&gt;
 &lt;h4&gt;Status&lt;/h4&gt;
 
 &lt;p&gt;All methods are already integrated in CGAL&apos;s master branch on the
 &lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt; and
 will be officially released in the upcoming version of CGAL, CGAL 6.1, scheduled for summer 2025.&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/master/Polygon_mesh_processing/group__PMP__corefinement__grp.html#ga5dc9e7acf8433235adc7b91ac93a7d42&quot;&gt;Documentation of the function &lt;em&gt;CGAL::Polygon_mesh_processing::clip()&lt;/em&gt;&lt;/a&gt;
 &lt;br /&gt;
 &lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;
-&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;br /&gt;&lt;br /&gt;
 
 &lt;h4&gt;Bibliography&lt;/h4&gt;
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[1]&lt;/code&gt; Sylvain Lazard and Leo Valque. Removing self-intersections in 3D meshes while preserving floating-point coordinates. working paper or preprint, January 2025.&lt;/p&gt;
+`[1]` Sylvain Lazard and Leo Valque. Removing self-intersections in 3D meshes while preserving floating-point coordinates. working paper or preprint, January 2025.
+&lt;/p&gt;
 </description>
                 <link>http://www.cgal.org/2025/06/13/autorefine-and-snap/</link>
                 <guid>http://www.cgal.org/2025/06/13/autorefine-and-snap</guid>
