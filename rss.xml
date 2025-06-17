@@ -5,8 +5,8 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2025-06-17T09:07:04+00:00</lastBuildDate>
-        <pubDate>2025-06-17T09:07:04+00:00</pubDate>
+        <lastBuildDate>2025-06-17T09:17:26+00:00</lastBuildDate>
+        <pubDate>2025-06-17T09:17:26+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -17,7 +17,7 @@
 &lt;h4&gt;&amp;#42;&lt;a href=&quot;https://geometryfactory.com/&quot;&gt;GeometryFactory&lt;/a&gt;&lt;/h4&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3&gt;3D Boolean Operations in CGAL: a Primer&lt;/h3&gt;
+&lt;h3&gt;History of 3D Boolean Operations in CGAL&lt;/h3&gt;
 
 &lt;p&gt;In December 2004, CGAL 3.1 was released with the package &lt;a href=&quot;https://doc.cgal.org/latest/Nef_3&quot;&gt;3D Boolean Operations on Nef Polyhedra&lt;/a&gt;
 It provided a robust way to compute Boolean Operations on Nef Polyhedra. In particular, it allows users to do some Boolean operations
@@ -50,6 +50,7 @@ edges apply a self-union to resolve self-intersections of the solid.
              Right: A triangle mesh free from self-intersection bounding the same volume as in the left picture;
              On the bottom, we see the intersection curve of a plane with the triangle meshes.&lt;/small&gt;
 &lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;In CGAL 4.11 (April 2018), we released an undocumented version of this autorefinement code. The code was however limited to
 meshes where only pairs of triangles were intersecting along the same segment (as an underlying requirement of the code is
@@ -90,7 +91,7 @@ So we are left with 572 files still featuring self-intersections while the purpo
 &lt;h3&gt;A New Snapping Strategy&lt;/h3&gt;
 
 &lt;p&gt;
-Based on `[1]`, CGAL 6.1 introduces the new parameter `apply_iterative_snap_rouding()` to the autorefine function to activate a snapping strategy in order
+Based on [1], CGAL 6.1 introduces the new parameter `apply_iterative_snap_rouding()` to the autorefine function to activate a snapping strategy in order
 to avoid self-intersections produced while rounding the coordinates to double.
 With the default values of the parameters for this method, all the models but one could be rounded with one call.
 The remaining model required a few more iterations.
