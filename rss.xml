@@ -5,8 +5,8 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2025-06-17T09:03:19+00:00</lastBuildDate>
-        <pubDate>2025-06-17T09:03:19+00:00</pubDate>
+        <lastBuildDate>2025-06-17T09:07:04+00:00</lastBuildDate>
+        <pubDate>2025-06-17T09:07:04+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -109,14 +109,14 @@ This result will be presented at &lt;a href=&quot;https://sgp2025.my.canva.site/
 will be officially released in the upcoming version of CGAL, CGAL 6.1, scheduled for summer 2025.&lt;/p&gt;
 
 &lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
-&lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/master/Polygon_mesh_processing/group__PMP__corefinement__grp.html#ga5dc9e7acf8433235adc7b91ac93a7d42&quot;&gt;Documentation of the function &lt;em&gt;CGAL::Polygon_mesh_processing::clip()&lt;/em&gt;&lt;/a&gt;
+&lt;a href=&quot;https://doc.cgal.org/6.1/Polygon_mesh_processing/group__PMP__corefinement__grp.html#gaec85370aa0b2acc0919e5f8406cfb74c&quot;&gt;Documentation of the function &lt;em&gt;CGAL::Polygon_mesh_processing::autorefine_triangle_soup()&lt;/em&gt;&lt;/a&gt;
 &lt;br /&gt;
 &lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;
 &lt;br /&gt;&lt;br /&gt;
 
 &lt;h4&gt;Bibliography&lt;/h4&gt;
-`[1]` Sylvain Lazard and Leo Valque. Removing self-intersections in 3D meshes while preserving floating-point coordinates. working paper or preprint, January 2025.
+`[1]` Sylvain Lazard and Leo Valque. Removing self-intersections in 3D meshes while preserving floating-point coordinates. Computer Graphics Forum. Vol. XX. No. X. 2025.
 &lt;/p&gt;
 </description>
                 <link>http://www.cgal.org/2025/06/13/autorefine-and-snap/</link>
