@@ -66,21 +66,21 @@ you end up with four triangles sharing the same edge.
 In order to show the robustness and the runtime efficiency of the function, we ran it over all 10,000 models from the Thingi10k repository.
 The computer used for the benchmark runs a x86_64 Debian GNU/Linux 6.1.0-12-amd64 and features a 2016 Intel(R) Xeon(R) CPU E5-1650 v4 @ 3.60GHz with 6 threads/12 hyperthreads.
 The values of memory are the maximum resident set size (given using `/usr/bin/time` command).
+</p>
 
 <br>
 <div style="text-align:center;">
   <a href="../../../../images/autoref_runtime.png"><img src="../../../../images/autoref_runtime.png" style="max-width:95%"/></a>
 </div>
-</p>
 <br>
 <div style="text-align:center;">
   <a href="../../../../images/autoref_mem.png"><img src="../../../../images/autoref_mem.png" style="max-width:95%"/></a>
 </div>
-</p>
 
-Even if exact computations are used internally, if the input is using double coordinates, then the output point coordinates are also rounded to double coordinates.
+
+<p>Even if exact computations are used internally, if the input is using double coordinates, then the output point coordinates are also rounded to double coordinates.
 As a matter of fact, this naive rounding to double implies that out the 9997 valid input files, only 9425 were free from self-intersection after autorefine and naive rounding.
-So we are left with 572 files still featuring self-intersections while the purpose of calling the autorefine function was to resolve them.
+So we are left with 572 files still featuring self-intersections while the purpose of calling the autorefine function was to resolve them.</p>
 
 <br>
 <h3>A New Snapping Strategy</h3>
@@ -91,17 +91,11 @@ to avoid self-intersections produced while rounding the coordinates to double.
 With the default values of the parameters for this method, all the models but one could be rounded with one call.
 The remaining model required a few more iterations.
 
-<br>
-<div style="text-align:center;">
-  <a href="../../../../images/XXX.png"><img src="../../../../images/XXX.png" style="max-width:95%"/></a>
-  <br><small>Blabla</small>
-</div>
-TODO: the graph
-</p>
-
 The main idea behind the method is a loop that rounds coordinates of triangles involved in a self-intersections onto a floating point number type, eliminate degenerate
 elements, and resolve again the self-intersections, until a maximum number of iterations is reached or all self-intersections are resolved.
 Even if there is no theoretical guarantee for successful termination, it has good experimental results.
+
+This result will be presented at <a href="https://sgp2025.my.canva.site/">SGP 2025</a> in Bilbao.
 
 <br>
 <h4>Status</h4>
