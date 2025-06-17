@@ -105,11 +105,11 @@ This result will be presented at <a href="https://sgp2025.my.canva.site/">SGP 20
 will be officially released in the upcoming version of CGAL, CGAL 6.1, scheduled for summer 2025.</p>
 
 <i class="bi bi-book"></i>
-<a href="https://cgal.geometryfactory.com/CGAL/doc/master/Polygon_mesh_processing/group__PMP__corefinement__grp.html#ga5dc9e7acf8433235adc7b91ac93a7d42">Documentation of the function <em>CGAL::Polygon_mesh_processing::clip()</em></a>
+<a href="https://doc.cgal.org/6.1/Polygon_mesh_processing/group__PMP__corefinement__grp.html#gaec85370aa0b2acc0919e5f8406cfb74c">Documentation of the function <em>CGAL::Polygon_mesh_processing::autorefine_triangle_soup()</em></a>
 <br>
 <i class="bi bi-arrow-down-circle"></i>
 <a href="https://github.com/CGAL/cgal/tree/master">CGAL master branch on GitHub</a>
 <br><br>
 
 <h4>Bibliography</h4>
-`[1]` Sylvain Lazard and Leo Valque. Removing self-intersections in 3D meshes while preserving floating-point coordinates. working paper or preprint, January 2025.
+`[1]` Sylvain Lazard and Leo Valque. Removing self-intersections in 3D meshes while preserving floating-point coordinates. Computer Graphics Forum. Vol. XX. No. X. 2025.
