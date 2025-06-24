@@ -1,0 +1,308 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>New in CGAL: 2D Triangulations on Hyperbolic Surfaces</title>
+    <meta name="description" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="CGAL Editorial Board">
+
+    <link rel="icon" type="image/png" href="/cgal-web/images/cgal_logo/g-196x196-y.png">
+    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
+    <link rel="stylesheet" href="/cgal-web/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+
+    <!--[if lte IE 8]>
+	<link rel="stylesheet" href="css/leaflet.ie.css" />
+	<![endif]-->
+    <link rel="stylesheet" href="/cgal-web/assets/themes/cgal/main.css">
+
+    <!-- atom & rss feed -->
+    <link href="/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/cgal-web/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    
+
+    <!-- Navigation & Logo-->
+    <div class="mainmenu-wrapper">
+    <div class="container">
+    <div class="mobile-header">
+      <a href="/cgal-web/index.html" class="mobile-logo">
+        <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="30">
+      </a>
+      <button class="menu-toggle" aria-label="Menu">
+        Menu
+      </button>
+    </div>
+    <nav id="mainmenu" class="mainmenu" role="navigation">
+    <ul>
+    <li class="logo-wrapper hidden-xs hidden-sm hidden-md">
+    <a href="/cgal-web/index.html">
+    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
+    </a>
+    </li>
+
+    <li class="hidden-lg">
+    <a href="/cgal-web/index.html">
+    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
+    </a>
+    </li>
+
+    <li>
+    <a href="/cgal-web/project.html">Project</a>
+    </li>
+
+    <li>
+    <a href="/cgal-web/download.html">Download</a>
+    </li>
+
+    <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Packages</a>
+        <ul class="dropdown-menu">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometryProcessing" target="_blank">Geometry Processing</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
+        </ul>
+    </li>
+
+    <li>
+    <a href="/cgal-web/documentation.html">Documentation</a>
+    </li>
+
+    <li>
+    <a href="/cgal-web/news.html">News</a>
+    </li>
+
+    <li>
+    <a href="/cgal-web/media.html">Media</a>
+    </li>
+
+    <li>
+    <a href="/cgal-web/support.html">Support</a>
+    </li>
+
+    </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="section section-breadcrumbs">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 home-title">
+            <h1>New in CGAL: 2D Triangulations on Hyperbolic Surfaces </h1>
+            <a style="text-align: right;" href="https://github.com/cgal/cgal" alt="The CGAL Project's github">
+              <span class="btn-dark-orange github-link fs-5">CGAL/cgal <i class="bi bi-github"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+<div class="section">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-9">
+        <div class="blog-post blog-single-post">
+          <div class="single-post-title">
+            <h3>New in CGAL: 2D Triangulations on Hyperbolic Surfaces</h3>
+          </div>
+          <br>
+          <div class="single-post-info">
+            <i class="bi bi-clock"></i>
+            24 June 2025
+          </div>
+          <div class="single-post-content">
+            
+<h3>
+<a href="https://members.loria.fr/vincent.despre/">Vincent Despré</a>,
+<a href="https://loic-dubois.github.io/">Loïc Dubois</a>,
+<a href="https://members.loria.fr/MPouget/">Marc Pouget</a> and
+<a href="https://members.loria.fr/Monique.Teillaud/">Monique Teillaud</a>
+</h3>
+<h4>
+<a href="https://www.inria.fr/fr/centre-inria-universite-lorraine ">INRIA Nancy - Grand Est</a>,
+<a href="https://www.loria.fr/en/">LORIA</a>,
+<a href="https://www.univ-gustave-eiffel.fr/en/">University Gustave Eiffel</a>
+</h4>
+
+<p><br /> &lt;p&gt; Triangulations, and in particular Delaunay triangulations, are among
+the most important structures in computational geometry and have been part of
+CGAL since its very first release. CGAL offers (Delaunay) triangulations in
+Euclidean spaces in any dimensions. It also offers packages to compute Delaunay
+triangulations of the flat torus in 2 and 3 dimensions, which can be seen as
+periodic triangulations of the Euclidean space in 2 and 3 dimensions,
+respectively. For non-Euclidean spaces, CGAL offers triangulations for the
+sphere and two packages for hyperbolic geometry: one for the hyperbolic plane
+and the other for the Bolza surface.&lt;/p&gt;</p>
+
+<p> The new package introduces a data structure and algorithms for
+triangulations of closed orientable hyperbolic surfaces.  It is thus a
+generalisation of the specific case of the Bolza surface which is the most
+symmetric hyperbolic surface of genus 2. The triangulation is represented by an
+enriched CGAL::Combinatorial_map with complex number attributes on edges. Such a
+triangulation can be constructed from a surface given by a convex fundamental
+domain. A method is offered that randomly generates such domains for surfaces of
+genus two. On the other hand, the package works for any genus surface that may
+be provided by the user either as a fundamental domain or as an already computed
+triangulation. Functionalities are offered such as the Delaunay flip algorithm
+and the construction of a portion of the lift of the triangulation in the
+Poincaré disk model of the hyperbolic plane.
+</p>
+
+<p> Coming soon: We are working on improving the generator of hyperbolic
+surfaces to handle any genus. We will also add an epsilon-net algorithm to
+uniformly sample a surface and thus ease the computation of distances. </p>
+
+<div style="text-align:center;">
+  <img src="../../../../images/triangulation-on-hyperbolic-surface.svg" width="50%" /><br />
+  <small>Illustration of Delaunay triangulations of hyperbolic surfaces
+  of genus 2 lifted in the Poincaré disk.</small>
+</div>
+
+<p><br /></p>
+<p>The packages is already available in CGAL's master branch
+on the <a href="https://github.com/CGAL/cgal/">CGAL GitHub repository</a>,
+and will be officially released in the upcoming version of CGAL 6.1.</p>
+
+<p><i class="bi bi-book"></i>
+<a href="https://cgal.geometryfactory.com/CGAL/doc/master/Triangulation_on_hyperbolic_surface_2/index.html">Documentation of the package 2D Triangulations on Hyperbolic Surfaces</a> <br /></p>
+
+<p><i class="bi bi-arrow-down-circle"></i>
+<a href="https://github.com/CGAL/cgal/tree/master">CGAL master branch on GitHub</a></p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3 blog-sidebar">
+        <h4>Recent Posts</h4>
+        <ul class="recent-posts">
+          
+            
+            
+            <li class="active"><a href="/cgal-web/2025/06/24/triangulations-on-hyperbolic-surfaces/" class="active">New in CGAL: 2D Triangulations on Hyperbolic Surfaces</a>
+            <br><div style="font-size:12px">June 2025</div></li>
+          
+            
+            
+            <li class="active"><a href="/cgal-web/2025/06/06/new_clip/" class="active">New in CGAL: Improved Surface Mesh Clipping</a>
+            <br><div style="font-size:12px">June 2025</div></li>
+          
+            
+            
+            <li class="active"><a href="/cgal-web/2025/05/22/Surface_remeshing/" class="active">New in CGAL: New Surface Remeshing Algorithms</a>
+            <br><div style="font-size:12px">May 2025</div></li>
+          
+            
+            
+            <li class="active"><a href="/cgal-web/2025/05/22/Polygon_repair/" class="active">New in CGAL: Polygon Repair</a>
+            <br><div style="font-size:12px">May 2025</div></li>
+          
+        </ul>
+        <a href="/cgal-web/news.html" class="btn">Older posts...</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="footer-copyright">
+            <div style="float: left;">
+              <a href="https://twitter.com/TheCGALProject" alt="The CGAL Project's Twitter">
+                <img src="/cgal-web/images/icons/twitter.svg" class="center-block btn-dark-orange" alt="Twitter" height="18"></img>
+              </a>
+            </div>
+            &copy; 1995-2025 The CGAL Project. All rights reserved.
+            <div style="float: right;">
+              <a href="https://cgal.geometryfactory.com/CGAL/Members/wiki/Main_Page" alt="Password protected access to the Developer Wiki">
+                <i class="bi bi-file-lock fs-5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascripts -->
+    <script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+      <script src="/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
+      <script>
+        $(function () {
+          $('.bxslider').bxSlider({
+            auto: true,
+            speed: 0,
+            pause: 5000,
+            infiniteLoop: true,
+            touchEnabled: false,
+            pager: true,
+            pagerCustom: '.custom-pager',
+            controls: false,
+            onSliderLoad: function (currentIndex) {
+              $('.bxslider li').find('.slideTitle, .slideSubTitle').css({
+                transform: 'translate(0)',
+                opacity: 1
+              });
+              $('.bxslider li').eq(currentIndex).find('.slideTitle, .slideSubTitle').addClass('animatedTitle');
+            },
+            onSlideBefore: function ($slideElement, oldIndex, newIndex) {
+              $($slideElement).siblings().find('.slideTitle, .slideSubTitle').removeClass('animatedTitle');
+              $($slideElement).find('.slideTitle, .slideSubTitle').addClass('animatedTitle');
+              $($slideElement).siblings().find('.slide').removeClass('slideInFromRight');
+              $($slideElement).find('.slide').addClass('slideInFromRight');
+            }
+          });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+          const menuToggle = document.querySelector('.menu-toggle');
+          const mainMenu = document.getElementById('mainmenu');
+
+          menuToggle.addEventListener('click', function() {
+              mainMenu.classList.toggle('active');
+              menuToggle.classList.toggle('active');
+          });
+      });
+      </script>
+      <script src="/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+    </body>
+</html>
+
