@@ -20,7 +20,7 @@ tags: [""]
 </h4>
 
 
-<br> <p> Triangulations, and in particular Delaunay triangulations, are among
+<br> Triangulations, and in particular Delaunay triangulations, are among
 the most important structures in computational geometry and have been part of
 CGAL since its very first release. CGAL offers (Delaunay) triangulations in
 Euclidean spaces in any dimensions. It also offers packages to compute Delaunay
@@ -28,11 +28,11 @@ triangulations of the flat torus in 2 and 3 dimensions, which can be seen as
 periodic triangulations of the Euclidean space in 2 and 3 dimensions,
 respectively. For non-Euclidean spaces, CGAL offers triangulations for the
 sphere and two packages for hyperbolic geometry: one for the hyperbolic plane
-and the other for the Bolza surface.</p>
+and the other for the Bolza surface.
 
 <p> The new package introduces a data structure and algorithms for
 triangulations of closed orientable hyperbolic surfaces.  It is thus a
-generalisation of the specific case of the Bolza surface which is the most
+generalisation of the specific case of the Bolza surface, which is the most
 symmetric hyperbolic surface of genus 2. The triangulation is represented by an
 enriched CGAL::Combinatorial_map with complex number attributes on edges. Such a
 triangulation can be constructed from a surface given by a convex fundamental
@@ -44,22 +44,22 @@ and the construction of a portion of the lift of the triangulation in the
 Poincaré disk model of the hyperbolic plane.
 </p>
 
-<p> Coming soon: We are working on improving the generator of hyperbolic
-surfaces to handle any genus. We will also add an epsilon-net algorithm to
-uniformly sample a surface and thus ease the computation of distances. </p>
+<p>The package is already available in the master branch
+of the <a href="https://github.com/CGAL/cgal/">CGAL GitHub repository</a>,
+and will be officially released in the upcoming version of CGAL
+6.1.</p>
 
 <div style="text-align:center;">
   <img src="../../../../images/triangulation-on-hyperbolic-surface.svg" width="50%"><br>
-  <small>Illustration of Delaunay triangulations of hyperbolic surfaces
+  <small>Delaunay triangulations of hyperbolic surfaces
   of genus 2 lifted in the Poincaré disk.</small>
 </div>
 
-
-
 <br>
-<p>The packages is already available in CGAL's master branch
-on the <a href="https://github.com/CGAL/cgal/">CGAL GitHub repository</a>,
-and will be officially released in the upcoming version of CGAL 6.1.</p>
+<p> <b>Coming soon:</b> We are working on improving the generator of hyperbolic
+surfaces to handle any genus. We will also add an epsilon-net algorithm to
+uniformly sample a surface and thus ease the computation of distances. </p>
+
 
 <i class="bi bi-book"></i>
 <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Triangulation_on_hyperbolic_surface_2/index.html">Documentation of the package 2D Triangulations on Hyperbolic Surfaces</a> <br>
