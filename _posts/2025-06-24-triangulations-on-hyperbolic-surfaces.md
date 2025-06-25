@@ -10,7 +10,7 @@ tags: [""]
 <h3>
 <a href="https://members.loria.fr/vincent.despre/">Vincent Despré</a>,
 <a href="https://loic-dubois.github.io/">Loïc Dubois</a>,
-<a href="https://members.loria.fr/MPouget/">Marc Pouget</a> and
+<a href="https://members.loria.fr/MPouget/">Marc Pouget</a>, and
 <a href="https://members.loria.fr/Monique.Teillaud/">Monique Teillaud</a>
 </h3>
 <h4>
