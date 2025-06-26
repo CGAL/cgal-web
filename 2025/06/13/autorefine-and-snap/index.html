@@ -149,43 +149,48 @@
 <h4><a href="https://geometryfactory.com/">GeometryFactory</a></h4>
 
 <p><br /></p>
-<p><b>The work described in this post will be presented at <a href="https://sgp2025.my.canva.site/">SGP 2025</a> in Bilbao next week (June 30 - July 4, 2025)</b></p>
+<p><b>The second half of the work described in this post (snap rounding strategies)
+will be presented at <a href="https://sgp2025.my.canva.site/">SGP 2025</a> in Bilbao next week (June 30 - July 4, 2025)</b></p>
 
 <p>Self-intersections in triangle meshes are a common source of issues in geometry processing, simulation,
-and 3D printing. Such defects can arise in various ways, such as poor design, approximate conversions,
-or as faulty outputs of mesh processing algorithms.
-A particularly interesting case in the latter category is Boolean operations, as they turn out to
-be both a source of self-intersections and, as we will see, a solution to them as well.
+and 3D printing. Such defects can arise in various ways: poor design, approximate conversions,
+faulty outputs of mesh processing algorithms, and so on.
+A particularly interesting case in the latter category is <em>Boolean operations</em>, as these
+turn out to be both a source of self-intersections and, as we will see,
+a solution to them as well.
 </p>
 
+<p>[SELF INTERSECTIONS IMAGE?]</p>
+
 <p>
-Over the years, CGAL has introduced several approaches for Boolean operations,
+Over the years, CGAL has developped its own algorithms for Boolean operations,
 evolving from general and robust methods to more specialized and efficient solutions
 (an exhaustive history can be found at the end of this post). To perform robustly,
 these methods all rely on exact constructions, meaning the use of arbitrary precision numbers
 (see also the page <a href="https://www.cgal.org/exact.html">The Exact Computation Paradigm </a>).
 Unfortunately, when results are brought back to the real, double-based world,
-self-intersections frequently appear.</p>
+self-intersections may appear.</p>
 
-<p>[SELF INTERSECTIONS IMAGE?]</p>
+<p>[ROUNDING CREATES SELF INTERSECTIONS IMAGE]</p>
 
 <p>Resolving self-intersections in triangle meshes can be tackled in different ways (vertex
-displacement, complete remeshing, etc.), but these solutions have limitations in terms of scope,
+displacement, complete remeshing, ...), but these solutions have limitations in terms of scope,
 computational requirements, or robustness on large datasets.</p>
 
 <p>In CGAL 6.1, we introduce a new method for resolving self-intersections in triangle meshes
 and triangle soups, combining a novel Boolean operation function called "autorefinement"
 and a new iterative snap rounding strategy. This approach was evaluated on
 the <a href="https://ten-thousand-models.appspot.com/">Thingi10k dataset</a>
-(nearly 10,000 models including for non-manifold and degenerate inputs) and produced intersection-free
-outputs for all cases, and thus provides a practical way to address self-intersections in meshes
+(nearly 10,000 models including for non-manifold and degenerate inputs) and <b>produced intersection-free
+outputs for all cases</b>, thus providing a practical way to address self-intersections in meshes
 for a wide range of applications.</p>
 
 <p><br /></p>
 <h3>First half: Autorefinement of Triangle Soups</h3>
 
 <p>A question often asked by users was whether CGAL's Boolean operations
-(see [PMP::coref]) could be used to resolve self-intersections in triangle meshes, especially in solids.
+(see <a href="https://doc.cgal.org/latest/Polygon_mesh_processing/index.html#title16">Corefinement
+and Boolean Operations"</a>) could be used to resolve self-intersections in triangle meshes, especially in solids.
 This led us to modify the corefinement code to create an <em>autorefinement</em> version,
 which refines triangles from the same mesh that are intersecting along segments not in the input.
 Then, using those intersection edges, a self-union is applied to resolve self-intersections of the solid.</p>
@@ -199,11 +204,11 @@ Then, using those intersection edges, a self-union is applied to resolve self-in
 </div>
 <p><br /></p>
 
-<p>The new function, <a href="https://doc.cgal.org/6.0/Polygon_mesh_processing/group__PMP__corefinement__grp.html#gaec85370aa0b2acc0919e5f8406cfb74c">CGAL::Polygon_mesh_processing::autorefine_triangle_soup()</a>,
-takes as input a triangle soup (that is, a range of points and a range of triples of integers representing
+<p>Autorefinement is now available in a new function, <a href="https://doc.cgal.org/6.0/Polygon_mesh_processing/group__PMP__corefinement__grp.html#gaec85370aa0b2acc0919e5f8406cfb74c">CGAL::Polygon_mesh_processing::autorefine_triangle_soup()</a>.
+This function takes as input a triangle soup (that is, a range of points and a range of triples of integers representing
 triangles using point indices), and resolves all intersections among the triangles by refining the triangles
 so that no triangle intersects except along a shared edge or a shared vertex. The function operates on a triangle soup
-and not a triangle mesh to handle arbitrarily complex inputs (including degenerate faces
+and not a triangle mesh as to handle arbitrarily complex inputs (including degenerate faces
 and non-manifold configurations), and also to represent non-manifold output. Indeed,
 even configurations as simple as two triangles whose intersection is a segment will result in
 four triangles sharing the same edge after refining them with their intersection.
@@ -214,7 +219,7 @@ To demonstrate the robustness and runtime efficiency of the function, we ran it 
 all 10,000 models from the Thingi10k repository.
 The computer used for the benchmark runs x86_64 Debian GNU/Linux 6.1.0-12-amd64 and features
 a 2016 Intel(R) Xeon(R) CPU E5-1650 v4 @ 3.60GHz with 6 threads/12 hyperthreads.
-The memory values are the maximum resident set size (given using the `/usr/bin/time` command).
+The memory values are the maximum resident set size (given using the <tt>/usr/bin/time</tt> command).
 </p>
 
 <div style="text-align:center;">
@@ -225,25 +230,27 @@ The memory values are the maximum resident set size (given using the `/usr/bin/t
 </div>
 
 <p>Naturally, this new function does not suffice by itself to resolve self-intersections
-as it suffers from the same issues as previous Boolean operations: it is performed using
-exact computations, but once newly created vertices are rounded back to double, self-intersections
-can appear: out the 9997 valid input files, only 9425 were free from self-intersection
+as it suffers from the same issues as other Boolean operations: it must be performed using
+exact computations, but once newly created vertices are rounded back to doubles, self-intersections
+may appear: out the 9997 valid input files, only 9425 were free from self-intersection
 after autorefine and naive rounding to double. Therefore, we are left with 572 files
 still featuring self-intersections.</p>
 
 <p><br /></p>
 <h3>Second half: A New Snap Rounding Strategy</h3>
 
-<p>The autorefinement function is coupled with a novel snap rounding strategy: based on the work of Lazard and Valque [1],
+<p>The second part of our solution is a novel snap rounding strategy: based on the work of Lazard and Valque [1],
 the main idea behind the method is a loop that rounds vertex coordinates of triangles involved
-in self-intersections onto a floating point number type, eliminates degenerate
+in self-intersections to integers (up to a scaling factor), eliminates degenerate
 elements, and resolves self-intersections again, until all self-intersections are resolved
 or a user-defined maximum number of iterations is reached. Even if there is no theoretical guarantee
-for successful termination, it has good experimental results: with the default values of the parameters for this method,
-all the models but one could be rounded with one call. The single remaining model required a few more iterations.</p>
+for successful termination, it performs well in practice: using the default values of the parameters for this method,
+all the models but one could be rounded with one call. The single remaining model, the infamous required a few more iterations.</p>
 
-<p>From an API point of view, the function `CGAL::Polygon_mesh_processing::autorefine_triangle_soup()`
-has a parameter `apply_iterative_snap_rounding()` called to the autorefine
+<p>[IMAGE RESOLVED SELF INTERSECTION]</p>
+
+<p>From an API point of view, the function <code>CGAL::Polygon_mesh_processing::autorefine_triangle_soup()</code>
+has a parameter <code>apply_iterative_snap_rounding()</code> called to the autorefine
 function to activate a snapping strategy in order to avoid self-intersections produced while rounding the coordinates to double.</p>
 
 <p><br /></p>
@@ -268,32 +275,30 @@ will be officially released in the upcoming version of CGAL, CGAL 6.1, scheduled
 <h3>Bonus: History of 3D Boolean Operations in CGAL</h3>
 
 <p>In December 2004, CGAL 3.1 was released with the package <a href="https://doc.cgal.org/latest/Nef_3">3D Boolean Operations on Nef Polyhedra</a>
-It provided a robust way to compute Boolean operations on Nef Polyhedra. In particular, it allows users to do some Boolean operations
+It provided a robust way to compute Boolean operations on Nef Polyhedra. In particular, it enables users to perform some Boolean operations
 on solids bounded by surface meshes, but also on models with non-manifold features and 1D features. Even today, this package is probably
-the only one in the open source world to allow this kind of operations. All this genericity comes at a price. Indeed, the algorithm used
-needs to compute and maintain an arrangement of circles on a sphere at each vertex of the Nef Polyhedra in order to enable those operations.
-This representation also requires that the intersection points computed are coplanar with the polygonal faces they describe, implying the
-use of a Kernel with exact constructions.
+the only solution in the open source world to allow this kind of operations. Unfortuantely, all this genericity comes at a price. Indeed, the algorithm
+relies on maintaining an arrangement of circles on a sphere at each vertex of the Nef Polyhedra in order to enable those operations.
+This representation also requires that intersection points are strictly coplanar with the polygonal faces they describe, implying that
+a Kernel providing exact constructions is mandatory.
 </p>
 
-<p>As all this genericity is not required for all applications, we decided to work on an alternative method that would be restricted to solids
+<p>As this genericity is not required for all applications, we decided to work on an alternative method which would be restricted to solids
 bounded by triangle meshes, and such that the output is manifold. In October 2012, we released an undocumented version of a new code
-based on corefinement of triangle meshes. With feedback from early adopters, we officially released with CGAL 4.10 in May 2017 inside
-the <a href="https://doc.cgal.org/latest/Polygon_mesh_processing">Polygon Mesh Processing</a> package a rewrite of the original 3D Boolean operations through
-corefinement. One of the key features of this code is the ability to compute several types of operations in one run (union and intersection,
+based on corefinement of triangle meshes. With feedback from early adopters, we officially released with CGAL 4.10 in May 2017
+a rewrite of the original 3D Boolean operations through corefinement (see the manual entry <a href="https://doc.cgal.org/latest/Polygon_mesh_processing/index.html#title16">"Corefinement and Boolean Operations"</a>).
+One of the key features of this code is the ability to compute several types of Boolean operations in one run (union and intersection,
 for example), and the possibility to store the result in a new mesh or directly update one of the input meshes to avoid recopying the entire
 mesh if only a small portion is affected. When it comes to robustness, exact constructions are used under the hood to guarantee an output
-with the correct topology. To show the robustness and speed of the method, we posted a <a href="https://www.linkedin.com/pulse/benchmarking-mesh-union-using-cgal-libigl-sebastien-loriot/">benchmark</a>
+with the correct topology. To demonstrate the robustness and speed of the method, we posted a <a href="https://www.linkedin.com/pulse/benchmarking-mesh-union-using-cgal-libigl-sebastien-loriot/">benchmark</a>
 on the <a href="https://ten-thousand-models.appspot.com/">Thingi10k data set</a> testing the code on thousands of models.
 </p>
 
-<p>In CGAL 4.11 (April 2018), we released an undocumented version of this autorefinement code. The code was, however, limited to
+<p>In CGAL 4.11 (April 2018), we released an undocumented version of the autorefinement code. The code was, however, limited to
 meshes where only pairs of triangles were intersecting along the same segment (as an underlying requirement of the code is
-a pairwise intersection). In order to officially release that code, we needed to overcome this limitation. Over the years,
-we have tried to improve the code but were limited by the notion of pairwise intersection.
-As a new year resolution, on January 2, 2023, we started a new from-scratch implementation of an autorefinement
-code for triangle soups, which was officially released in September 2024 with CGAL 6.0 (CGAL 5.6 being released in July 2023,
-we could not match the feature freeze of April even if the code was already working).
+a pairwise intersection). In order to officially release that code, we needed to overcome this limitation.
+In 2023, we found the time to start a new implementation from-scratch of autorefinement for triangle soups,
+which was then peer reviewed in 2024 and officially released with CGAL 6.0 in September 2024.
 </p>
 
           </div>
