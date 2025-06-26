@@ -22,12 +22,9 @@ turn out to be both a source of self-intersections and, as we will see,
 a solution to them as well.
 </p>
 
-<br>
 <div style="text-align:center;">
-  <a href="../../../../images/triangle_si.png"><img src="../../../../images/triangle_si.png" style="max-width:95%"/></a>
-  <br><small>Resolution of self-intersection -- Left: Two triangles of a mesh intersecting;
-             Right: Resolution of the intersection by creating intersection points of triangle and edges + addition of new edges and faces,
-                    the mesh becomes non-manifold</small>
+  <a href="../../../../images/996816-self-intersections.png"><img src="../../../../images/996816-self-intersections.png" style="max-width:95%"/></a>
+  <br><small>The model <tt>996816</tt> from the Thingi10k dataset is riddled with thousands of self-intersections</small>
 </div>
 <br>
 
@@ -40,39 +37,28 @@ these methods all rely on exact constructions, meaning the use of arbitrary prec
 Unfortunately, when results are brought back to the real, double-based world,
 self-intersections may appear.</p>
 
-<br>
-<div style="text-align:center;">
-  <a href="../../../../images/triangle_snap_error.png"><img src="../../../../images/triangle_snap_error.png" style="max-width:95%"/></a>
-  <br><small>Illustration of rounding issues in self-intersection resolutions. The red grid represent the grid of floating point numbers.
-             Points with floating points coordinates must lie on a vertex of the grid. <b>From left to right:</b> input triangles with floating point
-             numbers coordinates; Resolution of intersections of triangles using arbitrary precision; Rounding new intersection points to the nearest
-             vertex on the grid: even if the intersection is solved with arbitrary precision, the rounding using floating point coordinates
-             induces new intersections that cannot be solved by naively iterating the process (in addition to creating new degenerate faces).
-</small>
-</div>
-<br>
-
 <p>Resolving self-intersections in triangle meshes can be tackled in different ways (vertex
 displacement, complete remeshing, ...), but these solutions have limitations in terms of scope,
 computational requirements, or robustness on large datasets.</p>
 
 <p>In CGAL 6.1, we introduce a new method for resolving self-intersections in triangle meshes
 and triangle soups, combining a novel Boolean operation function called "autorefinement"
-and a new iterative snap rounding strategy. This approach was evaluated on
+and a new iterative snap rounding strategy. <b>This approach was evaluated on
 the <a href="https://ten-thousand-models.appspot.com/">Thingi10k dataset</a>
-(nearly 10,000 models including for non-manifold and degenerate inputs) and <b>produced intersection-free
-outputs for all cases</b>, thus providing a practical way to address self-intersections in meshes
-for a wide range of applications.</p>
+(nearly 10,000 models including for non-manifold and degenerate inputs) and produced intersection-free
+outputs for all cases, thus providing a practical way to address self-intersections in meshes
+for a wide range of applications</b>.</p>
 
 <br>
-<h3>First half: Autorefinement of Triangle Soups</h3>
+<h3>First half of the Solution: Autorefinement of Triangle Soups</h3>
 
 <p>A question often asked by users was whether CGAL's Boolean operations
 (see <a href="https://doc.cgal.org/latest/Polygon_mesh_processing/index.html#title16">Corefinement
 and Boolean Operations"</a>) could be used to resolve self-intersections in triangle meshes, especially in solids.
 This led us to modify the corefinement code to create an <em>autorefinement</em> version,
 which refines triangles from the same mesh that are intersecting along segments not in the input.
-Then, using those intersection edges, a self-union is applied to resolve self-intersections of the solid.</p>
+Using those intersection edges, it is now possible to apply a self-union to resolve the self-intersections
+of the solid.</p>
 
 <br>
 <div style="text-align:center;">
@@ -108,15 +94,26 @@ The memory values are the maximum resident set size (given using the <tt>/usr/bi
   <a href="../../../../images/autoref_mem.png"><img src="../../../../images/autoref_mem.png" style="max-width:95%"/></a>
 </div>
 
-<p>Naturally, this new function does not suffice by itself to resolve self-intersections
+<br>
+<h3>Second half of the Solution: A New Snap Rounding Strategy</h3>
+
+<p>Naturally, the new autorefinement function does not suffice by itself to resolve self-intersections
 as it suffers from the same issues as other Boolean operations: it must be performed using
 exact computations, but once newly created vertices are rounded back to doubles, self-intersections
 may appear: out the 9997 valid input files, only 9425 were free from self-intersection
 after autorefine and naive rounding to double. Therefore, we are left with 572 files
 still featuring self-intersections.</p>
 
+<div style="text-align:center;">
+  <a href="../../../../images/triangle_snap_error.png"><img src="../../../../images/triangle_snap_error.png" style="max-width:95%"/></a>
+  <br><small>Illustration of rounding issues in self-intersection resolutions. The red grid represent the grid of floating point numbers.
+             Points with floating points coordinates must lie on a vertex of the grid. <b>From left to right:</b> input triangles with floating point
+             numbers coordinates; Resolution of intersections of triangles using arbitrary precision; Rounding new intersection points to the nearest
+             vertex on the grid: even if the intersection is solved with arbitrary precision, the rounding using floating point coordinates
+             induces new intersections that cannot be solved by naively iterating the process (in addition to creating new degenerate faces).
+</small>
+</div>
 <br>
-<h3>Second half: A New Snap Rounding Strategy</h3>
 
 <p>The second part of our solution is a novel snap rounding strategy: based on the work of Lazard and Valque [1],
 the main idea behind the method is a loop that rounds vertex coordinates of triangles involved
@@ -124,9 +121,14 @@ in self-intersections to integers (up to a scaling factor), eliminates degenerat
 elements, and resolves self-intersections again, until all self-intersections are resolved
 or a user-defined maximum number of iterations is reached. Even if there is no theoretical guarantee
 for successful termination, it performs well in practice: using the default values of the parameters for this method,
-all the models but one could be rounded with one call. The single remaining model, the infamous required a few more iterations.</p>
+all the models but one could be rounded with one call. The single remaining model, the infamous model
+<tt>996816</tt> (see image at the top of the post) required a few more iterations.</p>
 
-[IMAGE RESOLVED SELF INTERSECTION]
+<div style="text-align:center;">
+  <a href="../../../../images/996816-no-self-intersections.png"><img src="../../../../images/996816-no-self-intersections.png" style="max-width:95%"/></a>
+  <br><small>The model <tt>996816</tt> no longer intersects and a reasonable number of new vertices was needed: the input has 75k vertices and 170k faces, and the output has 100k vertices and 245k faces.</small>
+</div>
+<br>
 
 <p>From an API point of view, the function <code>CGAL::Polygon_mesh_processing::autorefine_triangle_soup()</code>
 has a parameter <code>apply_iterative_snap_rounding()</code> called to the autorefine
@@ -135,7 +137,7 @@ function to activate a snapping strategy in order to avoid self-intersections pr
 <br>
 <h3>Status</h3>
 
-<p>All methods are already integrated in CGAL's master branch on the
+<p>The new function is already integrated in CGAL's master branch on the
 <a href="https://github.com/CGAL/cgal/">CGAL GitHub repository</a> and
 will be officially released in the upcoming version of CGAL, CGAL 6.1, scheduled for summer 2025.</p>
 
