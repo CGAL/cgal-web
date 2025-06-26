@@ -22,10 +22,17 @@ turn out to be both a source of self-intersections and, as we will see,
 a solution to them as well.
 </p>
 
-[SELF INTERSECTIONS IMAGE?]
+<br>
+<div style="text-align:center;">
+  <a href="../../../../images/triangle_si.png"><img src="../../../../images/triangle_si.png" style="max-width:95%"/></a>
+  <br><small>Resolution of self-intersection -- Left: Two triangles of a mesh intersecting;
+             Right: Resolution of the intersection by creating intersection points of triangle and edges + addition of new edges and faces,
+                    the mesh becomes non-manifold</small>
+</div>
+<br>
 
 <p>
-Over the years, CGAL has developped its own algorithms for Boolean operations,
+Over the years, CGAL has developed its own algorithms for Boolean operations,
 evolving from general and robust methods to more specialized and efficient solutions
 (an exhaustive history can be found at the end of this post). To perform robustly,
 these methods all rely on exact constructions, meaning the use of arbitrary precision numbers
@@ -33,7 +40,17 @@ these methods all rely on exact constructions, meaning the use of arbitrary prec
 Unfortunately, when results are brought back to the real, double-based world,
 self-intersections may appear.</p>
 
-[ROUNDING CREATES SELF INTERSECTIONS IMAGE]
+<br>
+<div style="text-align:center;">
+  <a href="../../../../images/triangle_snap_error.png"><img src="../../../../images/triangle_snap_error.png" style="max-width:95%"/></a>
+  <br><small>Illustration of rounding issues in self-intersection resolutions. The red grid represent the grid of floating point numbers.
+             Points with floating points coordinates must lie on a vertex of the grid. <b>From left to right:</b> input triangles with floating point
+             numbers coordinates; Resolution of intersections of triangles using arbitrary precision; Rounding new intersection points to the nearest
+             vertex on the grid: even if the intersection is solved with arbitrary precision, the rounding using floating point coordinates
+             induces new intersections that cannot be solved by naively iterating the process (in addition to creating new degenerate faces).
+</small>
+</div>
+<br>
 
 <p>Resolving self-intersections in triangle meshes can be tackled in different ways (vertex
 displacement, complete remeshing, ...), but these solutions have limitations in terms of scope,
@@ -139,7 +156,7 @@ will be officially released in the upcoming version of CGAL, CGAL 6.1, scheduled
 <p>In December 2004, CGAL 3.1 was released with the package <a href="https://doc.cgal.org/latest/Nef_3">3D Boolean Operations on Nef Polyhedra</a>
 It provided a robust way to compute Boolean operations on Nef Polyhedra. In particular, it enables users to perform some Boolean operations
 on solids bounded by surface meshes, but also on models with non-manifold features and 1D features. Even today, this package is probably
-the only solution in the open source world to allow this kind of operations. Unfortuantely, all this genericity comes at a price. Indeed, the algorithm
+the only solution in the open source world to allow this kind of operations. Unfortunately, all this genericity comes at a price. Indeed, the algorithm
 relies on maintaining an arrangement of circles on a sphere at each vertex of the Nef Polyhedra in order to enable those operations.
 This representation also requires that intersection points are strictly coplanar with the polygonal faces they describe, implying that
 a Kernel providing exact constructions is mandatory.
