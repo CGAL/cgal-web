@@ -11,6 +11,11 @@ tags: [""]
 <a href="https://geometryfactory.com/who-we-are/">Jane Tournois</a>
 </h3>
 
+<div style="text-align:center;">
+  <a href="../../../../images/cdt3_flower_pots.png"><img src="../../../../images/cdt3_flower_pots.png" style="max-width:95%"/></a>
+  <br><small>3D Constrained Triangulation</small>
+</div>
+
 <br>
 <p> Building the triangulation of a set of points in 3D is a well known problem
 in computational geometry, and its implementation from 3D points
@@ -21,7 +26,7 @@ input points, but also a set of specified line segments and polygons that repres
 holes, or internal features of the domain.
 <p>
 Building a build constrained triangulation is a fundamental technique used to partition
-a closed domain defined by a `Piecewise Linear Complex` into non-overlapping triangles
+a closed domain defined by a _Piecewise Linear Complex_ into non-overlapping triangles
 and tetrahedra while preserving a set of predefined edges and polygonal faces, known as `constraints`.
 This added geometric and topological complexity makes constrained triangulation particularly useful
 in applications such as mesh generation for finite element analysis, computer graphics,
@@ -37,7 +42,7 @@ to construct a 3D constrained triangulation from an input Piecewise Linear Compl
 
 <p>This package provides two main free functions
 <a href="https://doc.cgal.org/6.1/Constrained_triangulation_3/group___pkg_constrained_triangulation3_functions_polygon_soup_or_mesh.html">CGAL::make_conforming_constrained_Delaunay_triangulation_3()</a>
-to build the constrained triangulation from a PLC or a polygon soup.
+to build the constrained triangulation from a Piecewise Linear Complex or a polygon soup.
 The class
 <a href="https://doc.cgal.org/6.1/Constrained_triangulation_3/class_c_g_a_l_1_1_conforming__constrained___delaunay__triangulation__3.html">CGAL::Conforming_constrained_Delaunay_triangulation_3</a>
 offers a more complete way of tuning the constrained triangulation.
