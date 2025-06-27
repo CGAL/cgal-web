@@ -12,8 +12,9 @@ tags: [""]
 
 <br>
 <p><b>The second half of the work described in this post (snap rounding strategies)
-will be presented at <a href="https://sgp2025.my.canva.site/">SGP 2025</a> in Bilbao next week (June 30 - July 4, 2025)</b></p>
+will be presented at <a href="https://sgp2025.my.canva.site/">SGP 2025</a> in Bilbao (June 30 - July 4, 2025)</b></p>
 
+<br>
 <p>Self-intersections in triangle meshes are a common source of issues in geometry processing, simulation,
 and 3D printing. Such defects can arise in various ways: poor design, approximate conversions,
 faulty outputs of mesh processing algorithms, and so on.
@@ -38,7 +39,7 @@ Unfortunately, when results are brought back to the real, double-based world,
 self-intersections may appear.</p>
 
 <p>Resolving self-intersections in triangle meshes can be tackled in different ways (vertex
-displacement, complete remeshing, ...), but these solutions have limitations in terms of scope,
+displacement, complete remeshing, etc.), but these solutions have limitations in terms of scope,
 computational requirements, or robustness on large datasets.</p>
 
 <p>In CGAL 6.1, we introduce a new method for resolving self-intersections in triangle meshes
