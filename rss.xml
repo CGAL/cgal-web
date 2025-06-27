@@ -5,8 +5,8 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2025-06-26T14:58:54+00:00</lastBuildDate>
-        <pubDate>2025-06-26T14:58:54+00:00</pubDate>
+        <lastBuildDate>2025-06-27T07:40:46+00:00</lastBuildDate>
+        <pubDate>2025-06-27T07:40:46+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -43,7 +43,7 @@ constrained triangulations provide a flexible and robust foundation for the simu
 
 &lt;p&gt;CGAL-6.1 offers a new package,
 &lt;a href=&quot;https://doc.cgal.org/6.1/Constrained_triangulation_3/index.html&quot;&gt;3D Constrained Triangulations&lt;/a&gt;,
-to construct a 3D constrained triangulation from an input Piecewise Linear Complex or a polygon soup.
+to construct a 3D constrained triangulation from an input piecewise linear complex or a polygon soup.
 &lt;/p&gt;
 
 &lt;p&gt;This package provides two main free functions
