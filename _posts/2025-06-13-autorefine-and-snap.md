@@ -51,7 +51,7 @@ outputs for all cases, thus providing a practical way to address self-intersecti
 for a wide range of applications</b>.</p>
 
 <br>
-<h3>First half of the Solution: Autorefinement of Triangle Soups</h3>
+<h3>First Half of the Solution: Autorefinement of Triangle Soups</h3>
 
 <p>A question often asked by users was whether CGAL's Boolean operations
 (see <a href="https://doc.cgal.org/latest/Polygon_mesh_processing/index.html#title16">Corefinement
@@ -96,7 +96,7 @@ The memory values are the maximum resident set size (given using the <tt>/usr/bi
 </div>
 
 <br>
-<h3>Second half of the Solution: A New Snap Rounding Strategy</h3>
+<h3>Second Half of the Solution: A New Snap Rounding Strategy</h3>
 
 <p>Naturally, the new autorefinement function does not suffice by itself to resolve self-intersections
 as it suffers from the same issues as other Boolean operations: it must be performed using
