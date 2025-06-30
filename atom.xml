@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2025-06-30T15:25:26+00:00</updated>
+ <updated>2025-06-30T15:29:23+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -47,7 +47,6 @@ constrained triangulations provide a flexible and robust foundation for the simu
 &lt;p&gt;
 
 &lt;h3&gt;New package&lt;/h3&gt;
-&lt;br /&gt;
 &lt;p&gt;CGAL-6.1 offers a new package,
 &lt;a href=&quot;https://doc.cgal.org/6.1/Constrained_triangulation_3/index.html&quot;&gt;3D Constrained Triangulations&lt;/a&gt;,
 to construct a 3D constrained triangulation from an input piecewise linear complex or a polygon soup.
@@ -69,13 +68,11 @@ offers a more complete way of tuning the constrained triangulation.
 &lt;/div&gt;
 
 &lt;h3&gt;Robustness&lt;/h3&gt;
-&lt;br /&gt;
 The algorithm successfully constructs constrained triangulations for all the data sets of &lt;a href=&quot;https://ten-thousand-models.appspot.com/&quot;&gt;Thingi10k&lt;/a&gt;
 that satisfy the input geometric and topologic requirements.
 &lt;p&gt;
 
 &lt;h3&gt;Status&lt;/h3&gt;
-
 &lt;p&gt;All these additions are already integrated in CGAL&apos;s master branch on the
 &lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;.
 3D Constrained Triangulations will be officially released
