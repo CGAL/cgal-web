@@ -5,8 +5,8 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2025-06-30T07:09:47+00:00</lastBuildDate>
-        <pubDate>2025-06-30T07:09:47+00:00</pubDate>
+        <lastBuildDate>2025-06-30T07:53:47+00:00</lastBuildDate>
+        <pubDate>2025-06-30T07:53:47+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -123,7 +123,7 @@ outputs for all cases, thus providing a practical way to address self-intersecti
 for a wide range of applications&lt;/b&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3&gt;First half of the Solution: Autorefinement of Triangle Soups&lt;/h3&gt;
+&lt;h3&gt;First Half of the Solution: Autorefinement of Triangle Soups&lt;/h3&gt;
 
 &lt;p&gt;A question often asked by users was whether CGAL&apos;s Boolean operations
 (see &lt;a href=&quot;https://doc.cgal.org/latest/Polygon_mesh_processing/index.html#title16&quot;&gt;Corefinement
@@ -168,7 +168,7 @@ The memory values are the maximum resident set size (given using the &lt;tt&gt;/
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3&gt;Second half of the Solution: A New Snap Rounding Strategy&lt;/h3&gt;
+&lt;h3&gt;Second Half of the Solution: A New Snap Rounding Strategy&lt;/h3&gt;
 
 &lt;p&gt;Naturally, the new autorefinement function does not suffice by itself to resolve self-intersections
 as it suffers from the same issues as other Boolean operations: it must be performed using
