@@ -12,8 +12,8 @@ tags: [""]
 </h3>
 
 <div style="text-align:center;">
-  <a href="../../../../images/cdt_title_pyramid.png"><img src="../../../../images/cdt_title_pyramid.png" style="max-width:95%"/></a>
-  <br><small>Piecewise Linear Complex (left) and its 3D Constrained Triangulation (right).</small>
+  <a href="../../../../images/cdt3_flower_pots_plc_cdt.png"><img src="../../../../images/cdt3_flower_pots_plc_cdt.png" style="max-width:95%"/></a>
+  <br><small>Piecewise Linear Complex and its 3D Constrained Triangulation</small>
 </div>
 
 <br>
@@ -49,10 +49,24 @@ The class
 offers a more complete way of tuning the constrained triangulation.
 </p>
 
+<h3>Planar patches</h3>
+<p>
+A preprocessing step can be performed to systematically detect and merge all coplanar faces within a Piecewise Linear Complex.
+This operation simplifies the input data by reducing its overall complexity, while striving to preserve,
+as constraints, only the boundary edges of the planar surface patches.
+The resulting structure can then serve as input to the constrained triangulation algorithm,
+leading to high-quality results, as illustrated in the following figures.
+</p>
+
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/cdt3_flower_pots_plc_cdt.png"><img src="../../../../images/cdt3_flower_pots_plc_cdt.png" style="max-width:95%"/></a>
-  <br><small>Piecewise Linear Complexes and their 3D Constrained Triangulations</small>
+  <a href="../../../../images/cdt3_flower_pots_remesh_plc_cdt.png"><img src="../../../../images/cdt3_flower_pots_remesh_plc_cdt.png" style="max-width:95%"/></a>
+  <br><small>Piecewise Linear Complex after Remeshing of planar faces, and its 3D Constrained Triangulation</small>
+</div>
+<br>
+<div style="text-align:center;">
+  <a href="../../../../images/cdt_title_pyramid.png"><img src="../../../../images/cdt_title_pyramid.png" style="max-width:95%"/></a>
+  <br><small>Piecewise Linear Complex and its 3D Constrained Triangulation</small>
 </div>
 
 
