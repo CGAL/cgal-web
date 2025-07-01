@@ -5,8 +5,8 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2025-07-01T15:25:58+00:00</lastBuildDate>
-        <pubDate>2025-07-01T15:25:58+00:00</pubDate>
+        <lastBuildDate>2025-07-01T15:30:20+00:00</lastBuildDate>
+        <pubDate>2025-07-01T15:30:20+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -16,6 +16,12 @@
 &lt;h3&gt;&lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Laurent Rineau&lt;/a&gt;,
 &lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Jane Tournois&lt;/a&gt;
 &lt;/h3&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;a href=&quot;../../../../images/cdt_title_pyramid.png&quot;&gt;&lt;img src=&quot;../../../../images/cdt_title_pyramid.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
+  &lt;br /&gt;&lt;small&gt;Piecewise Linear Complex and its 3D Constrained Triangulation&lt;/small&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt; Building the triangulation of a set of points in 3D is a well known problem
@@ -42,6 +48,7 @@ constrained triangulations provide a flexible and robust foundation for the simu
   &lt;br /&gt;&lt;small&gt;Piecewise Linear Complex and its 3D Constrained Triangulation&lt;/small&gt;
 &lt;/div&gt;
 
+&lt;br /&gt;
 &lt;h3&gt;New package&lt;/h3&gt;
 &lt;p&gt;CGAL-6.1 offers a new package,
 &lt;a href=&quot;https://doc.cgal.org/6.1/Constrained_triangulation_3/index.html&quot;&gt;3D Constrained Triangulations&lt;/a&gt;,
@@ -56,6 +63,7 @@ The class
 offers a more complete way of tuning the constrained triangulation.
 &lt;/p&gt;
 
+&lt;br /&gt;
 &lt;h3&gt;Planar patches&lt;/h3&gt;
 &lt;p&gt;
 A preprocessing step can be performed to systematically detect and merge all coplanar faces within a Piecewise Linear Complex.
@@ -70,18 +78,14 @@ leading to high-quality results, as illustrated in the following figures.
   &lt;a href=&quot;../../../../images/cdt3_flower_pots_remesh_plc_cdt.png&quot;&gt;&lt;img src=&quot;../../../../images/cdt3_flower_pots_remesh_plc_cdt.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
   &lt;br /&gt;&lt;small&gt;Piecewise Linear Complex after Remeshing of planar faces, and its 3D Constrained Triangulation&lt;/small&gt;
 &lt;/div&gt;
+
 &lt;br /&gt;
-&lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/cdt_title_pyramid.png&quot;&gt;&lt;img src=&quot;../../../../images/cdt_title_pyramid.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
-  &lt;br /&gt;&lt;small&gt;Piecewise Linear Complex and its 3D Constrained Triangulation&lt;/small&gt;
-&lt;/div&gt;
-
-
 &lt;h3&gt;Robustness&lt;/h3&gt;
 The algorithm successfully constructs constrained triangulations for all the data sets of &lt;a href=&quot;https://ten-thousand-models.appspot.com/&quot;&gt;Thingi10k&lt;/a&gt;
 that satisfy the input geometric and topologic requirements.
 &lt;p&gt;
 
+&lt;br /&gt;
 &lt;h3&gt;Status&lt;/h3&gt;
 &lt;p&gt;All these additions are already integrated in CGAL&apos;s master branch on the
 &lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;.
