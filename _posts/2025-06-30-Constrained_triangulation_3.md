@@ -12,6 +12,12 @@ tags: [""]
 </h3>
 
 <br>
+<div style="text-align:center;">
+  <a href="../../../../images/cdt_title_pyramid.png"><img src="../../../../images/cdt_title_pyramid.png" style="max-width:95%"/></a>
+  <br><small>Piecewise Linear Complex and its 3D Constrained Triangulation</small>
+</div>
+
+<br>
 <p> Building the triangulation of a set of points in 3D is a well known problem
 in computational geometry, and its implementation from 3D points
 has been available in CGAL since CGAL-2.1.
@@ -36,6 +42,7 @@ constrained triangulations provide a flexible and robust foundation for the simu
   <br><small>Piecewise Linear Complex and its 3D Constrained Triangulation</small>
 </div>
 
+<br>
 <h3>New package</h3>
 <p>CGAL-6.1 offers a new package,
 <a href="https://doc.cgal.org/6.1/Constrained_triangulation_3/index.html">3D Constrained Triangulations</a>,
@@ -50,6 +57,7 @@ The class
 offers a more complete way of tuning the constrained triangulation.
 </p>
 
+<br>
 <h3>Planar patches</h3>
 <p>
 A preprocessing step can be performed to systematically detect and merge all coplanar faces within a Piecewise Linear Complex.
@@ -64,18 +72,14 @@ leading to high-quality results, as illustrated in the following figures.
   <a href="../../../../images/cdt3_flower_pots_remesh_plc_cdt.png"><img src="../../../../images/cdt3_flower_pots_remesh_plc_cdt.png" style="max-width:95%"/></a>
   <br><small>Piecewise Linear Complex after Remeshing of planar faces, and its 3D Constrained Triangulation</small>
 </div>
+
 <br>
-<div style="text-align:center;">
-  <a href="../../../../images/cdt_title_pyramid.png"><img src="../../../../images/cdt_title_pyramid.png" style="max-width:95%"/></a>
-  <br><small>Piecewise Linear Complex and its 3D Constrained Triangulation</small>
-</div>
-
-
 <h3>Robustness</h3>
 The algorithm successfully constructs constrained triangulations for all the data sets of <a href="https://ten-thousand-models.appspot.com/">Thingi10k</a>
 that satisfy the input geometric and topologic requirements.
 <p>
 
+<br>
 <h3>Status</h3>
 <p>All these additions are already integrated in CGAL's master branch on the
 <a href="https://github.com/CGAL/cgal/">CGAL GitHub repository</a>.
