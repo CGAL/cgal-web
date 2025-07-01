@@ -5,8 +5,8 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2025-06-30T15:30:32+00:00</lastBuildDate>
-        <pubDate>2025-06-30T15:30:32+00:00</pubDate>
+        <lastBuildDate>2025-07-01T14:09:40+00:00</lastBuildDate>
+        <pubDate>2025-07-01T14:09:40+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -18,8 +18,8 @@
 &lt;/h3&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/cdt_title_pyramid.png&quot;&gt;&lt;img src=&quot;../../../../images/cdt_title_pyramid.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
-  &lt;br /&gt;&lt;small&gt;Piecewise Linear Complex (left) and its 3D Constrained Triangulation (right).&lt;/small&gt;
+  &lt;a href=&quot;../../../../images/cdt3_flower_pots_plc_cdt.png&quot;&gt;&lt;img src=&quot;../../../../images/cdt3_flower_pots_plc_cdt.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
+  &lt;br /&gt;&lt;small&gt;Piecewise Linear Complex and its 3D Constrained Triangulation&lt;/small&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -55,10 +55,24 @@ The class
 offers a more complete way of tuning the constrained triangulation.
 &lt;/p&gt;
 
+&lt;h3&gt;Planar patches&lt;/h3&gt;
+&lt;p&gt;
+A preprocessing step can be performed to systematically detect and merge all coplanar faces within a Piecewise Linear Complex.
+This operation simplifies the input data by reducing its overall complexity, while striving to preserve,
+as constraints, only the boundary edges of the planar surface patches.
+The resulting structure can then serve as input to the constrained triangulation algorithm,
+leading to high-quality results, as illustrated in the following figures.
+&lt;/p&gt;
+
 &lt;br /&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/cdt3_flower_pots_plc_cdt.png&quot;&gt;&lt;img src=&quot;../../../../images/cdt3_flower_pots_plc_cdt.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
-  &lt;br /&gt;&lt;small&gt;Piecewise Linear Complexes and their 3D Constrained Triangulations&lt;/small&gt;
+  &lt;a href=&quot;../../../../images/cdt3_flower_pots_remesh_plc_cdt.png&quot;&gt;&lt;img src=&quot;../../../../images/cdt3_flower_pots_remesh_plc_cdt.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
+  &lt;br /&gt;&lt;small&gt;Piecewise Linear Complex after Remeshing of planar faces, and its 3D Constrained Triangulation&lt;/small&gt;
+&lt;/div&gt;
+&lt;br /&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;a href=&quot;../../../../images/cdt_title_pyramid.png&quot;&gt;&lt;img src=&quot;../../../../images/cdt_title_pyramid.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
+  &lt;br /&gt;&lt;small&gt;Piecewise Linear Complex and its 3D Constrained Triangulation&lt;/small&gt;
 &lt;/div&gt;
 
 
