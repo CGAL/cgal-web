@@ -11,11 +11,6 @@ tags: [""]
 <a href="https://geometryfactory.com/who-we-are/">Jane Tournois</a>
 </h3>
 
-<div style="text-align:center;">
-  <a href="../../../../images/cdt3_flower_pots_plc_cdt.png"><img src="../../../../images/cdt3_flower_pots_plc_cdt.png" style="max-width:95%"/></a>
-  <br><small>Piecewise Linear Complex and its 3D Constrained Triangulation</small>
-</div>
-
 <br>
 <p> Building the triangulation of a set of points in 3D is a well known problem
 in computational geometry, and its implementation from 3D points
@@ -34,6 +29,12 @@ geographic information systems (GIS), and terrain modeling.
 By ensuring that key structural features are retained in the resulting mesh,
 constrained triangulations provide a flexible and robust foundation for the simulation and analysis of complex geometries.
 <p>
+
+<br>
+<div style="text-align:center;">
+  <a href="../../../../images/cdt3_flower_pots_plc_cdt.png"><img src="../../../../images/cdt3_flower_pots_plc_cdt.png" style="max-width:95%"/></a>
+  <br><small>Piecewise Linear Complex and its 3D Constrained Triangulation</small>
+</div>
 
 <h3>New package</h3>
 <p>CGAL-6.1 offers a new package,
