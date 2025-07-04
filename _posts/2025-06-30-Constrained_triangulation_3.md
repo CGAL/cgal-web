@@ -53,9 +53,9 @@ to construct a 3D constrained triangulation from an input piecewise linear compl
 
 <p>This package provides two core functions to generate constrained triangulations in 3D:
 <ul>
-<li><a href="https://doc.cgal.org/6.1/Constrained_triangulation_3/group___pkg_constrained_triangulation3_functions_polygon_soup_or_mesh.html#gaf6c5b49383aa7a8652f9cd50bf171ed8">CGAL::make_conforming_constrained_Delaunay_triangulation_3(plc)</a>
+<li><a href="https://doc.cgal.org/6.1/Constrained_triangulation_3/group___pkg_constrained_triangulation3_functions_polygon_soup_or_mesh.html#gaf6c5b49383aa7a8652f9cd50bf171ed8">CGAL::make_conforming_constrained_Delaunay_triangulation_3(plc)</a></li>
 to build the constrained triangulation from a Piecewise Linear Complex,
-<li><a href="https://doc.cgal.org/6.1/Constrained_triangulation_3/group___pkg_constrained_triangulation3_functions_polygon_soup_or_mesh.html#gadf8d2593ea11fdd58a57bbb7a7cc3fd3">CGAL::make_conforming_constrained_Delaunay_triangulation_3(points, polygons)</a>
+<li><a href="https://doc.cgal.org/6.1/Constrained_triangulation_3/group___pkg_constrained_triangulation3_functions_polygon_soup_or_mesh.html#gadf8d2593ea11fdd58a57bbb7a7cc3fd3">CGAL::make_conforming_constrained_Delaunay_triangulation_3(points, polygons)</a></li>
 to build the constrained triangulation from a polygon soup.
 </ul>
 
@@ -87,10 +87,10 @@ leading to high-quality results, as illustrated in the following figures.
 Built on top of CGAL's existing kernel and Delaunay triangulation structures,
 the constrained variant inherits:
 <ul>
-<li> Exact geometric predicates
-<li> Robustness to degeneracies
+<li> Exact geometric predicates</li>
+<li> Robustness to degeneracies</li>
 <li> Easy interfacing with CGAL <a href="https://doc.cgal.org/6.1/Polygon_mesh_processing/index.html">Polygon Mesh Processing</a>
-and <a href="https://doc.cgal.org/6.1/Tetrahedral_remeshing/index.html">Tetrahedral Remeshing</a> packages, among others
+and <a href="https://doc.cgal.org/6.1/Tetrahedral_remeshing/index.html">Tetrahedral Remeshing</a> packages, among others</li>
 </ul>
 
 The algorithm successfully constructs constrained triangulations for all the data sets of <a href="https://ten-thousand-models.appspot.com/">Thingi10k</a>
