@@ -5,8 +5,8 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2025-07-01T15:30:20+00:00</lastBuildDate>
-        <pubDate>2025-07-01T15:30:20+00:00</pubDate>
+        <lastBuildDate>2025-07-04T13:16:45+00:00</lastBuildDate>
+        <pubDate>2025-07-04T13:16:45+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -45,7 +45,7 @@ constrained triangulations provide a flexible and robust foundation for the simu
 &lt;br /&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
   &lt;a href=&quot;../../../../images/cdt3_flower_pots_plc_cdt.png&quot;&gt;&lt;img src=&quot;../../../../images/cdt3_flower_pots_plc_cdt.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
-  &lt;br /&gt;&lt;small&gt;Piecewise Linear Complex and its 3D Constrained Triangulation&lt;/small&gt;
+  &lt;br /&gt;&lt;small&gt;Piecewise Linear Complex (left) and its 3D Constrained Triangulation (right)&lt;/small&gt;
 &lt;/div&gt;
 
 &lt;br /&gt;
@@ -76,7 +76,7 @@ leading to high-quality results, as illustrated in the following figures.
 &lt;br /&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
   &lt;a href=&quot;../../../../images/cdt3_flower_pots_remesh_plc_cdt.png&quot;&gt;&lt;img src=&quot;../../../../images/cdt3_flower_pots_remesh_plc_cdt.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
-  &lt;br /&gt;&lt;small&gt;Piecewise Linear Complex after Remeshing of planar faces, and its 3D Constrained Triangulation&lt;/small&gt;
+  &lt;br /&gt;&lt;small&gt;Piecewise Linear Complex after Remeshing of planar faces (left), and its 3D Constrained Triangulation (right)&lt;/small&gt;
 &lt;/div&gt;
 
 &lt;br /&gt;
