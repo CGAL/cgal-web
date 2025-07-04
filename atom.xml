@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2025-07-04T13:39:21+00:00</updated>
+ <updated>2025-07-04T13:48:43+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -64,17 +64,17 @@ to construct a 3D constrained triangulation from an input piecewise linear compl
 
 &lt;p&gt;This package provides two core functions to generate constrained triangulations in 3D:
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://doc.cgal.org/6.1/Constrained_triangulation_3/group___pkg_constrained_triangulation3_functions_polygon_soup_or_mesh.html#gaf6c5b49383aa7a8652f9cd50bf171ed8&quot;&gt;CGAL::make_conforming_constrained_Delaunay_triangulation_3(plc)&lt;/a&gt;
+&lt;li&gt;&lt;a href=&quot;https://doc.cgal.org/6.1/Constrained_triangulation_3/group___pkg_constrained_triangulation3_functions_polygon_soup_or_mesh.html#gaf6c5b49383aa7a8652f9cd50bf171ed8&quot;&gt;CGAL::make_conforming_constrained_Delaunay_triangulation_3(plc)&lt;/a&gt;&lt;/li&gt;
 to build the constrained triangulation from a Piecewise Linear Complex,
-&lt;li&gt;&lt;a href=&quot;https://doc.cgal.org/6.1/Constrained_triangulation_3/group___pkg_constrained_triangulation3_functions_polygon_soup_or_mesh.html#gadf8d2593ea11fdd58a57bbb7a7cc3fd3&quot;&gt;CGAL::make_conforming_constrained_Delaunay_triangulation_3(points, polygons)&lt;/a&gt;
+&lt;li&gt;&lt;a href=&quot;https://doc.cgal.org/6.1/Constrained_triangulation_3/group___pkg_constrained_triangulation3_functions_polygon_soup_or_mesh.html#gadf8d2593ea11fdd58a57bbb7a7cc3fd3&quot;&gt;CGAL::make_conforming_constrained_Delaunay_triangulation_3(points, polygons)&lt;/a&gt;&lt;/li&gt;
 to build the constrained triangulation from a polygon soup.
-&amp;lt;/ul&amp;gt;
+&lt;/ul&gt;
 
 &lt;br /&gt;The class
 &lt;a href=&quot;https://doc.cgal.org/6.1/Constrained_triangulation_3/class_c_g_a_l_1_1_conforming__constrained___delaunay__triangulation__3.html&quot;&gt;CGAL::Conforming_constrained_Delaunay_triangulation_3&lt;/a&gt;
 offers a more complete way of tuning the constrained triangulation.
 
-&amp;lt;/p&amp;gt;
+&lt;/p&gt;
 
 &lt;br /&gt;
 &lt;h3&gt;Planar patches&lt;/h3&gt;
@@ -98,15 +98,15 @@ leading to high-quality results, as illustrated in the following figures.
 Built on top of CGAL&apos;s existing kernel and Delaunay triangulation structures,
 the constrained variant inherits:
 &lt;ul&gt;
-&lt;li&gt; Exact geometric predicates
-&lt;li&gt; Robustness to degeneracies
+&lt;li&gt; Exact geometric predicates&lt;/li&gt;
+&lt;li&gt; Robustness to degeneracies&lt;/li&gt;
 &lt;li&gt; Easy interfacing with CGAL &lt;a href=&quot;https://doc.cgal.org/6.1/Polygon_mesh_processing/index.html&quot;&gt;Polygon Mesh Processing&lt;/a&gt;
-and &lt;a href=&quot;https://doc.cgal.org/6.1/Tetrahedral_remeshing/index.html&quot;&gt;Tetrahedral Remeshing&lt;/a&gt; packages, among others
-&amp;lt;/ul&amp;gt;
+and &lt;a href=&quot;https://doc.cgal.org/6.1/Tetrahedral_remeshing/index.html&quot;&gt;Tetrahedral Remeshing&lt;/a&gt; packages, among others&lt;/li&gt;
+&lt;/ul&gt;
 
 The algorithm successfully constructs constrained triangulations for all the data sets of &lt;a href=&quot;https://ten-thousand-models.appspot.com/&quot;&gt;Thingi10k&lt;/a&gt;
 that satisfy the input geometric and topologic requirements.
-&amp;lt;/p&amp;gt;
+&lt;/p&gt;
 
 &lt;br /&gt;
 &lt;h3&gt;Status&lt;/h3&gt;
@@ -121,8 +121,8 @@ in the upcoming version of CGAL, CGAL 6.1, scheduled for July 2025.&lt;/p&gt;
 &lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/master&quot;&gt;CGAL master branch on GitHub&lt;/a&gt;
 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
-&amp;lt;/p&amp;gt;
-&lt;/li&gt;&lt;/li&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;&lt;/li&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;/p&gt;
+&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;
 </content>
  </entry>
  
