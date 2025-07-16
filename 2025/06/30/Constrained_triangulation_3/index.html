@@ -1,0 +1,339 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>New in CGAL: 3D Constrained Triangulations</title>
+    <meta name="description" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="CGAL Editorial Board">
+
+    <link rel="icon" type="image/png" href="/cgal-web/images/cgal_logo/g-196x196-y.png">
+    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
+    <link rel="stylesheet" href="/cgal-web/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+
+    <!--[if lte IE 8]>
+	<link rel="stylesheet" href="css/leaflet.ie.css" />
+	<![endif]-->
+    <link rel="stylesheet" href="/cgal-web/assets/themes/cgal/main.css">
+
+    <!-- atom & rss feed -->
+    <link href="/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/cgal-web/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    
+
+    <!-- Navigation & Logo-->
+    <div class="mainmenu-wrapper">
+    <div class="container">
+    <div class="mobile-header">
+      <a href="/cgal-web/index.html" class="mobile-logo">
+        <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="30">
+      </a>
+      <button class="menu-toggle" aria-label="Menu">
+        Menu
+      </button>
+    </div>
+    <nav id="mainmenu" class="mainmenu" role="navigation">
+    <ul>
+    <li class="logo-wrapper hidden-xs hidden-sm hidden-md">
+    <a href="/cgal-web/index.html">
+    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
+    </a>
+    </li>
+
+    <li class="hidden-lg">
+    <a href="/cgal-web/index.html">
+    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
+    </a>
+    </li>
+
+    <li>
+    <a href="/cgal-web/project.html">Project</a>
+    </li>
+
+    <li>
+    <a href="/cgal-web/download.html">Download</a>
+    </li>
+
+    <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Packages</a>
+        <ul class="dropdown-menu">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometryProcessing" target="_blank">Geometry Processing</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
+        </ul>
+    </li>
+
+    <li>
+    <a href="/cgal-web/documentation.html">Documentation</a>
+    </li>
+
+    <li>
+    <a href="/cgal-web/news.html">News</a>
+    </li>
+
+    <li>
+    <a href="/cgal-web/media.html">Media</a>
+    </li>
+
+    <li>
+    <a href="/cgal-web/support.html">Support</a>
+    </li>
+
+    </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="section section-breadcrumbs">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 home-title">
+            <h1>New in CGAL: 3D Constrained Triangulations </h1>
+            <a style="text-align: right;" href="https://github.com/cgal/cgal" alt="The CGAL Project's github">
+              <span class="btn-dark-orange github-link fs-5">CGAL/cgal <i class="bi bi-github"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+<div class="section">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-9">
+        <div class="blog-post blog-single-post">
+          <div class="single-post-title">
+            <h3>New in CGAL: 3D Constrained Triangulations</h3>
+          </div>
+          <br>
+          <div class="single-post-info">
+            <i class="bi bi-clock"></i>
+            30 June 2025
+          </div>
+          <div class="single-post-content">
+            
+<h3><a href="https://geometryfactory.com/who-we-are/">Laurent Rineau</a>,
+<a href="https://geometryfactory.com/who-we-are/">Jane Tournois</a>
+</h3>
+<h4><a href="https://geometryfactory.com/">GeometryFactory</a></h4>
+
+<p><br /></p>
+<p>Triangulations, and in particular Delaunay triangulations, are fundamental tools in computational geometry
+and have been part of CGAL since its very first release.
+CGAL offers (Delaunay) triangulations in Euclidean spaces of any dimension, as well as specialized
+types such as periodic or hyperbolic triangulations.</p>
+
+<p>Among these, a particularly interesting subset of triangulations are <em>Constrained (Delaunay) Triangulations</em>,
+which guarantee that a given set of points, segments, or polygonal constraints are present in the
+triangulation. By ensuring that key features are retained in the resulting mesh,
+constrained triangulations provide a faithful representation of complex geometries for simulation
+and analysis. CGAL has long supported two-dimensional constrained triangulations,
+but the notoriously harder three-dimensional version was missing, until now.</p>
+
+<h3>New Package: 3D Constrained Triangulations</h3>
+
+<p>As a major milestone for the CGAL library, the upcoming release CGAL 6.1
+will offer a new package, <a href="https://doc.cgal.org/6.1/Constrained_triangulation_3/index.html">3D Constrained Triangulations</a>,
+which enables the construction of 3D Delaunay triangulations that can preserve a user-defined set of
+segments and 3D polygons.</p>
+
+<p>These new triangulations leverage the exact geometric paradigm of CGAL,
+and the experience of existing triangulations to achieve robustness to degeneracies. For example,
+the algorithm successfully constructs constrained Delaunay triangulations for all inputs
+of <a href="https://ten-thousand-models.appspot.com/">Thingi10k</a> that meet
+the input geometrical and topological requirements.</p>
+
+<div style="text-align:center;">
+  <a href="../../../../images/cdt_title_pyramid.png"><img src="../../../../images/cdt_title_pyramid.png" style="max-width:95%" /></a>
+  <br /><small>Piecewise linear complex input (left) and its 3D constrained Delaunay triangulation (right)</small>
+</div>
+<p><br /></p>
+
+<p>The package supports two types of input: piecewise linear complexes and 3D polygon soups. These are used as parameters for the two main functions to generate constrained triangulations in 3D:</p>
+
+<ul>
+<li><a href="https://doc.cgal.org/6.1/Constrained_triangulation_3/group___pkg_constrained_triangulation3_functions_polygon_soup_or_mesh.html#gaf6c5b49383aa7a8652f9cd50bf171ed8"><code>CGAL::make_conforming_constrained_Delaunay_triangulation_3(plc)</code></a>
+to build the constrained triangulation from a piecewise linear complex;</li>
+<li><a href="https://doc.cgal.org/6.1/Constrained_triangulation_3/group___pkg_constrained_triangulation3_functions_polygon_soup_or_mesh.html#gadf8d2593ea11fdd58a57bbb7a7cc3fd3"><code>CGAL::make_conforming_constrained_Delaunay_triangulation_3(points, polygons)</code></a>
+to build the constrained triangulation from a polygon soup.</li>
+</ul>
+
+<p>
+The class
+<a href="https://doc.cgal.org/6.1/Constrained_triangulation_3/class_c_g_a_l_1_1_conforming__constrained___delaunay__triangulation__3.html"><code>CGAL::Conforming_constrained_Delaunay_triangulation_3</code></a>
+provides a richer interface to build and explore the triangulation.
+</p>
+
+<h3>Interfacing with Existing CGAL Packages</h3>
+
+<p>The new 3D constrained triangulations have been designed to interface easily with other CGAL components,
+such as <a href="https://doc.cgal.org/6.1/Polygon_mesh_processing/index.html">Polygon Mesh Processing</a>
+or <a href="https://doc.cgal.org/6.1/Tetrahedral_remeshing/index.html">Tetrahedral Remeshing</a> packages.
+As an illustration of this, a preprocessing step can be performed using the function
+<a href="https://doc.cgal.org/6.1/Polygon_mesh_processing/group__PMP__meshing__grp.html#ga7fca6fa2db94560ab6d32e6a77fc35b6"><code>CGAL::Polygon_mesh_processing::remesh_planar_patches</code></a>
+to systematically detect and merge all coplanar faces within a piecewise linear complex.
+This operation simplifies the input data by reducing its overall complexity, while striving to preserve
+as constraints, only the boundary edges of the planar surface patches.
+The resulting structure can then serve as input to the constrained triangulation algorithm,
+leading to simpler and higher quality results, as illustrated in the following two figures.
+</p>
+
+<p><br /></p>
+<div style="text-align:center;">
+  <a href="../../../../images/cdt3_flower_pots_plc_cdt.png"><img src="../../../../images/cdt3_flower_pots_plc_cdt.png" style="max-width:95%" /></a>
+  <br /><small>Piecewise linear complex (left) and its 3D Constrained Triangulation (right)</small>
+</div>
+<p><br /></p>
+<div style="text-align:center;">
+  <a href="../../../../images/cdt3_flower_pots_remesh_plc_cdt.png"><img src="../../../../images/cdt3_flower_pots_remesh_plc_cdt.png" style="max-width:95%" /></a>
+  <br /><small>Piecewise linear complex after remeshing of planar faces (left), and its 3D Constrained Triangulation (right)</small>
+</div>
+
+<p><br /></p>
+<h3>Status</h3>
+<p>The package <em>3D Constrained Triangulations</em> is already available in CGAL's master branch
+on the <a href="https://github.com/CGAL/cgal/">CGAL GitHub repository</a>, and will be officially released in CGAL 6.1, scheduled for mid 2025.</p>
+
+<p><i class="bi bi-book"></i>
+<a href="https://doc.cgal.org/6.1/Constrained_triangulation_3/index.html">Documentation about 3D Constrained Triangulations</a>
+<br />
+<i class="bi bi-arrow-down-circle"></i>
+<a href="https://github.com/CGAL/cgal/tree/master">CGAL master branch on GitHub</a></p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3 blog-sidebar">
+        <h4>Recent Posts</h4>
+        <ul class="recent-posts">
+          
+            
+            
+            <li class="active"><a href="/cgal-web/2025/07/07/cgal61-beta1/" class="active">CGAL 6.1 beta1 released</a>
+            <br><div style="font-size:12px">July 2025</div></li>
+          
+            
+            
+            <li class="active"><a href="/cgal-web/2025/06/30/Constrained_triangulation_3/" class="active">New in CGAL: 3D Constrained Triangulations</a>
+            <br><div style="font-size:12px">June 2025</div></li>
+          
+            
+            
+            <li class="active"><a href="/cgal-web/2025/06/24/triangulations-on-hyperbolic-surfaces/" class="active">New in CGAL: 2D Triangulations on Hyperbolic Surfaces</a>
+            <br><div style="font-size:12px">June 2025</div></li>
+          
+            
+            
+            <li class="active"><a href="/cgal-web/2025/06/13/autorefine-and-snap/" class="active">New in CGAL: Fixing Self-Intersections in Triangle Soups using Snap Rounding</a>
+            <br><div style="font-size:12px">June 2025</div></li>
+          
+        </ul>
+        <a href="/cgal-web/news.html" class="btn">Older posts...</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="footer-copyright">
+            <div style="float: left;">
+              <a href="https://twitter.com/TheCGALProject" alt="The CGAL Project's Twitter">
+                <img src="/cgal-web/images/icons/twitter.svg" class="center-block btn-dark-orange" alt="Twitter" height="18"></img>
+              </a>
+            </div>
+            &copy; 1995-2025 The CGAL Project. All rights reserved.
+            <div style="float: right;">
+              <a href="https://cgal.geometryfactory.com/CGAL/Members/wiki/Main_Page" alt="Password protected access to the Developer Wiki">
+                <i class="bi bi-file-lock fs-5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascripts -->
+    <script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+      <script src="/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
+      <script>
+        $(function () {
+          $('.bxslider').bxSlider({
+            auto: true,
+            speed: 0,
+            pause: 5000,
+            infiniteLoop: true,
+            touchEnabled: false,
+            pager: true,
+            pagerCustom: '.custom-pager',
+            controls: false,
+            onSliderLoad: function (currentIndex) {
+              $('.bxslider li').find('.slideTitle, .slideSubTitle').css({
+                transform: 'translate(0)',
+                opacity: 1
+              });
+              $('.bxslider li').eq(currentIndex).find('.slideTitle, .slideSubTitle').addClass('animatedTitle');
+            },
+            onSlideBefore: function ($slideElement, oldIndex, newIndex) {
+              $($slideElement).siblings().find('.slideTitle, .slideSubTitle').removeClass('animatedTitle');
+              $($slideElement).find('.slideTitle, .slideSubTitle').addClass('animatedTitle');
+              $($slideElement).siblings().find('.slide').removeClass('slideInFromRight');
+              $($slideElement).find('.slide').addClass('slideInFromRight');
+            }
+          });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+          const menuToggle = document.querySelector('.menu-toggle');
+          const mainMenu = document.getElementById('mainmenu');
+
+          menuToggle.addEventListener('click', function() {
+              mainMenu.classList.toggle('active');
+              menuToggle.classList.toggle('active');
+          });
+      });
+      </script>
+      <script src="/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+    </body>
+</html>
+
