@@ -32,7 +32,7 @@ jobs:
       - name: Build with jekyll
         run: bundle exec jekyll build --future --destination ./_site
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
       - name: Create PR number file
         run: |
           echo "${{ github.event.number }}" > pr_number.txt
