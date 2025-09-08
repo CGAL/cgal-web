@@ -1,0 +1,41 @@
+RedirectPermanent /Manual/3.2/doc_html/cgal_manual/pkgdescription.html /Manual/3.2/doc_html/cgal_manual/packages.html
+RedirectMatch permanent ^/Manual/doc_html(.*) /Manual/latest/doc_html$1
+
+Redirect /Manual/3.4/doc_pdf/cgal_manual.pdf http://gforge.inria.fr/frs/download.php/15696/cgal_manual.pdf
+Redirect /Manual/3.4/doc_html/cgal_manual.tar.gz http://gforge.inria.fr/frs/download.php/15694/CGAL-3.4-doc_html.tar.gz
+Redirect /Manual/3.5/doc_pdf/cgal_manual.pdf http://gforge.inria.fr/frs/download.php/25114/cgal_manual.pdf
+Redirect /Manual/3.5/doc_html/cgal_manual.tar.gz http://gforge.inria.fr/frs/download.php/25112/CGAL-3.5-doc_html.tar.gz
+Redirect /Manual/3.6/doc_pdf/cgal_manual.pdf https://gforge.inria.fr/frs/download.php/26692/cgal_manual.pdf
+Redirect /Manual/3.6/doc_html/cgal_manual.tar.gz https://gforge.inria.fr/frs/download.php/26689/CGAL-3.6-doc_html.tar.gz
+Redirect /Manual/3.6.1/doc_pdf/cgal_manual.pdf https://gforge.inria.fr/frs/download.php/27227/cgal_manual.pdf
+Redirect /Manual/3.6.1/doc_html/cgal_manual.tar.gz https://gforge.inria.fr/frs/download.php/27226/CGAL-3.6.1-doc_html.tar.gz
+Redirect /Manual/3.7/doc_html/cgal_manual.tar.gz https://gforge.inria.fr/frs/download.php/27645/CGAL-3.7-doc_html.tar.gz
+Redirect /Manual/3.7/doc_pdf/cgal_manual.pdf https://gforge.inria.fr/frs/download.php/27646/cgal_manual.pdf
+Redirect /Manual/3.8/doc_pdf/cgal_manual.pdf https://gforge.inria.fr/frs/download.php/28506/cgal_manual.pdf
+Redirect /Manual/3.8/doc_html/cgal_manual.tar.gz https://gforge.inria.fr/frs/download.php/28498/CGAL-3.8-doc_html.tar.gz
+Redirect /Manual/3.9/doc_pdf/cgal_manual.pdf https://gforge.inria.fr/frs/download.php/29127/cgal_manual.pdf
+Redirect /Manual/3.9/doc_html/cgal_manual.tar.gz https://gforge.inria.fr/frs/download.php/29123/CGAL-3.9-doc_html.tar.gz
+Redirect /Manual/4.0/doc_pdf/cgal_manual.pdf https://gforge.inria.fr/frs/download.php/30392/cgal_manual.pdf
+Redirect /Manual/4.0/doc_html/cgal_manual.tar.gz https://gforge.inria.fr/frs/download.php/30388/CGAL-4.0-doc_html.tar.gz
+Redirect /Manual/4.0.1/doc_pdf/cgal_manual.pdf https://gforge.inria.fr/frs/download.php/31141/cgal_manual.pdf
+Redirect /Manual/4.0.1/doc_html/cgal_manual.tar.gz https://gforge.inria.fr/frs/download.php/31137/CGAL-4.0.1-doc_html.tar.gz
+Redirect /Manual/4.0.2/doc_pdf/cgal_manual.pdf https://gforge.inria.fr/frs/download.php/31177/cgal_manual.pdf
+Redirect /Manual/4.0.2/doc_html/cgal_manual.tar.gz https://gforge.inria.fr/frs/download.php/31180/CGAL-4.0.2-doc_html.tar.gz
+Redirect /Manual/4.1/doc_pdf/cgal_manual.pdf https://gforge.inria.fr/frs/download.php/31644/cgal_manual.pdf
+Redirect /Manual/4.1/doc_html/cgal_manual.tar.gz https://gforge.inria.fr/frs/download.php/31646/CGAL-4.1-doc_html.tar.gz
+Redirect /Manual/4.2/doc_pdf/cgal_manual.pdf https://gforge.inria.fr/frs/download.php/32357/cgal_manual.pdf
+Redirect /Manual/4.2/doc_html/cgal_manual.tar.gz https://gforge.inria.fr/frs/download.php/32364/CGAL-4.2-doc_html.tar.gz
+Redirect /Manual/4.3/doc_html/cgal_manual.tar.gz https://gforge.inria.fr/frs/download.php/32999/CGAL-4.3-doc_html.tar.gz
+Redirect /Manual/4.4/doc_html/cgal_manual.tar.gz https://gforge.inria.fr/frs/download.php/33521/CGAL-4.4-doc_html.tar.gz
+Redirect /Manual/4.5/doc_html/cgal_manual.tar.gz https://gforge.inria.fr/frs/download.php/file/34143/CGAL-4.5-doc_html.tar.gz
+Redirect /Manual/latest/doc_html/cgal_manual.tar.gz https://gforge.inria.fr/frs/download.php/file/34143/CGAL-4.5-doc_html.tar.gz
+
+Redirect /Manual/4.6-beta1/doc_html/cgal_manual.tar.gz https://gforge.inria.fr/frs/download.php/file/34551/CGAL-4.6-beta1-doc_html.tar.gz
+
+
+#RedirectMatch seeother /Manual/latest/(.*) http://www.cgal.org/Manual/latest/$1
+
+# Redirection to doc.cgal.org, Laurent Rineau, 20150910
+RedirectMatch permanent ^/Manual/(.*)/doc_html/cgal_manual/(.*) http://doc.cgal.org/Manual/$1/doc_html/cgal_manual/$2
+RedirectMatch permanent ^/Manual/(.*)/doc_html/Developers_manual/(.*) http://doc.cgal.org/Manual/$1/doc_html/Developers_manual/$2
+RedirectMatch permanent ^/Manual/(.*)/doc_html/installation_manual/(.*) http://doc.cgal.org/Manual/$1/doc_html/installation_manual/$2
