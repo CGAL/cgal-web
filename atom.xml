@@ -4,13 +4,40 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2025-09-08T12:32:41+00:00</updated>
+ <updated>2025-09-11T08:59:56+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
    <email>cgal-info@inria.fr</email>
  </author>
 
+ 
+ <entry>
+   <title>CGAL @ FU Berlin 2025</title>
+   <link href="http://www.cgal.org/news/2025/09/11/FU-Berlin/"/>
+   <updated>2025-09-11T00:00:00+00:00</updated>
+   <id>http://www.cgal.org/news/2025/09/11/FU-Berlin</id>
+   <content type="html">
+&lt;p&gt;The CGAL Project began in 1996 as part of the European FP4 Esprit program. Nearly thirty years later,
+it continues to be actively developed and widely used, and in 2023 it was recognized with the SoCG
+Test of Time Award. At its core, CGAL is a C++ library offering a broad range of geometric algorithms
+and data structures.&lt;/p&gt;
+
+&lt;p&gt;This talk does not focus on scientific results, technical details, or commercial aspects.
+Instead, it will address organizational aspects of the CGAL Open Source Project: the reasoning
+behind license choices, the evolution of development infrastructure, the challenges of sustaining
+a long-term project, efforts to attract new contributors, and the role of GeometryFactory
+as a non-academic partner.&lt;/p&gt;
+
+&lt;p&gt;The Oberseminar page can be found &lt;a href=&quot;https://www.mi.fu-berlin.de/en/math/groups/ag-geom/events/oberseminar/inhalt/2025-09-11_os_fabri.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Time &amp;amp; Location:&lt;/b&gt;
+&lt;br /&gt;
+Sep 11, 2025 | 05:00 PM
+&lt;br /&gt;
+FU Berlin | Arnimallee 6 | Raum 108/109&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>CGAL 6.1 beta1 released</title>
