@@ -4,13 +4,168 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2025-09-17T19:09:58+00:00</updated>
+ <updated>2025-10-01T15:13:11+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
    <email>cgal-info@inria.fr</email>
  </author>
 
+ 
+ <entry>
+   <title>CGAL 6.1 released</title>
+   <link href="http://www.cgal.org/2025/10/01/cgal61/"/>
+   <updated>2025-10-01T00:00:00+00:00</updated>
+   <id>http://www.cgal.org/2025/10/01/cgal61</id>
+   <content type="html">
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
+&lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v6.1&quot;&gt;Download CGAL-6.1&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
+&lt;a href=&quot;https://doc.cgal.org/6.1/Manual/index.html&quot;&gt;CGAL-6.1 documentation&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;CGAL 6.1 offers the following improvements and new functionality over
+&lt;a href=&quot;../../../../2024/09/27/cgal60/&quot;&gt;CGAL 6.0&lt;/a&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;product-detail-info&quot;&gt;
+
+  &lt;h2 id=&quot;changelog&quot;&gt;Changelog&lt;/h2&gt;
+
+  &lt;h3 id=&quot;general-changes&quot;&gt;General Changes&lt;/h3&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;The new list of supported compilers is:
+      &lt;ul&gt;
+        &lt;li&gt;Visual C++ 15.9, 16.10, 17.0 (from Visual Studio 2017, 2019 and 2022) or later&lt;/li&gt;
+        &lt;li&gt;Gnu g++ 12.2.0 or later (on Linux)&lt;/li&gt;
+        &lt;li&gt;LLVM Clang version 20.1.6 or later (on Linux)&lt;/li&gt;
+        &lt;li&gt;Apple Clang compiler versions 12.0.5 and 12.0.5 (on macOS)&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;The minimal supported version of Boost is now 1.74.0.&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h3 id=&quot;d-constrained-triangulations-new-package&quot;&gt;&lt;a href=&quot;https://doc.cgal.org/6.1/Manual/packages.html#PkgConstrainedTriangulation3&quot;&gt;3D Constrained Triangulations&lt;/a&gt; (new package)&lt;/h3&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;This package implements the construction of a 3D Constrained Delaunay triangulation. This triangulation is a generalization of a 3D Delaunay Triangulation which conforms to the set of faces of a 3D piecewise linear complex (PLC), ensuring that these faces are part of the triangulation. As not all PLCs are tetrahedralizable, the algorithm may insert Steiner points to construct the constrained triangulation. The main entry point is the function &lt;a href=&quot;https://doc.cgal.org/6.1/Constrained_triangulation_3/group__PkgConstrainedTriangulation3FunctionsPolygonSoupOrMesh.html&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CGAL::make_conforming_constrained_Delaunay_triangulation_3()&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h3 id=&quot;d-isosurfacing-new-package&quot;&gt;&lt;a href=&quot;https://doc.cgal.org/6.1/Manual/packages.html#PkgIsosurfacing3&quot;&gt;3D Isosurfacing&lt;/a&gt; (new package)&lt;/h3&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;This package provides algorithms to extract isosurfaces from scalar fields. The algorithms provided in this first version include Marching Cubes, Topologically Correct Marching Cubes, and Dual Contouring. The algorithm is generic with respect to the scalar field representation (implicit function, discrete values, …) and the discretization data structure (Cartesian grid, octree, …). The output is an indexed face set that stores an isosurface in the form of a surface mesh.&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h3 id=&quot;dd-frchet-distance-new-package&quot;&gt;&lt;a href=&quot;https://doc.cgal.org/6.1/Manual/packages.html#PkgFrechetDistance&quot;&gt;dD Fréchet Distance&lt;/a&gt; (new package)&lt;/h3&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;This package provides functions for computing the Fréchet distance of polylines in any dimension under the Euclidean metric.&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h3 id=&quot;d-triangulations-on-hyperbolic-surfaces-new-package&quot;&gt;&lt;a href=&quot;https://doc.cgal.org/6.1/Manual/packages.html#PkgHyperbolicSurfaceTriangulation2&quot;&gt;2D Triangulations on Hyperbolic Surfaces&lt;/a&gt; (new package)&lt;/h3&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;p&gt;This package enables building and handling triangulations of closed orientable hyperbolic surfaces. It offers functions for the generation of the triangulation from a convex fundamental domain, the Delaunay flip algorithm, and the construction of a portion of the lift of the triangulation in the Poincaré disk. A method is offered that generates such domains in genus two.&lt;/p&gt;
+
+      &lt;p&gt;See also the associated &lt;a href=&quot;https://www.cgal.org/2025/06/24/triangulations-on-hyperbolic-surfaces/&quot;&gt;news entry&lt;/a&gt;.&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h3 id=&quot;polygon-repair&quot;&gt;&lt;a href=&quot;https://doc.cgal.org/6.1/Manual/packages.html#PkgPolygonRepair&quot;&gt;Polygon Repair&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;Added the &lt;a href=&quot;https://doc.cgal.org/6.1/Polygon_repair/structCGAL_1_1Polygon__repair_1_1Non__zero__rule.html&quot;&gt;non-zero rule&lt;/a&gt; (areas with non-zero winding number are kept), as well as two functions to compute the conservative inner and outer hull of similar polygons:
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://doc.cgal.org/6.1/Polygon_repair/group__PkgPolygonRepairFunctions.html#gad5b959666d952392c0e3b8d4b1b1847a&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CGAL::Polygon_repair::join()&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;https://doc.cgal.org/6.1/Polygon_repair/group__PkgPolygonRepairFunctions.html#ga780e31115643e3d0b406349b56c9f3d5&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CGAL::Polygon_repair::intersect()&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+
+      &lt;p&gt;See also the associated &lt;a href=&quot;https://www.cgal.org/2025/05/22/Polygon_repair/&quot;&gt;news entry&lt;/a&gt;.&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h3 id=&quot;polygon-mesh-processing&quot;&gt;&lt;a href=&quot;https://doc.cgal.org/6.1/Manual/packages.html#PkgPolygonMeshProcessing&quot;&gt;Polygon Mesh Processing&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;Added the parameter &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;apply_iterative_snap_rounding&lt;/code&gt; to the function &lt;a href=&quot;https://doc.cgal.org/6.1/Polygon_mesh_processing/group__PMP__corefinement__grp.html#gaf7747d676c459d9e5da9b13be7d12bb5&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CGAL::Polygon_mesh_processing::autorefine_triangle_soup()&lt;/code&gt;&lt;/a&gt;. When set to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;true&lt;/code&gt;, the coordinates are rounded to fit in double and may perform additional subdivisions to ensure the output is free of self-intersections. See also the associated &lt;a href=&quot;https://www.cgal.org/2025/06/13/autorefine-and-snap/&quot;&gt;news entry&lt;/a&gt;.&lt;/li&gt;
+    &lt;li&gt;Added the function &lt;a href=&quot;https://doc.cgal.org/6.1/Polygon_mesh_processing/group__PkgPolygonMeshProcessingRef.html#gaed23e63b12c7fe8268927d17b4d379f1&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CGAL::Polygon_mesh_processing::approximated_centroidal_Voronoi_diagram_remeshing()&lt;/code&gt;&lt;/a&gt; to remesh triangle meshes. This remeshing algorithm uses clustering on polygonal meshes as to approximate a Centroidal Voronoi Diagram construction, and can move vertices as to recover sharp features and corners. See also the associated &lt;a href=&quot;https://www.cgal.org/2025/05/22/Surface_remeshing/&quot;&gt;news entry&lt;/a&gt;.&lt;/li&gt;
+    &lt;li&gt;New implementation of &lt;a href=&quot;https://doc.cgal.org/6.1/Polygon_mesh_processing/group__PMP__corefinement__grp.html#ga2c73d3460872e601f84a03f58dd069ae&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CGAL::Polygon_mesh_processing::clip()&lt;/code&gt;&lt;/a&gt; and &lt;a href=&quot;https://doc.cgal.org/6.1/Polygon_mesh_processing/group__PMP__corefinement__grp.html#ga6738052411a4d548a5b375f11b913924&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CGAL::Polygon_mesh_processing::split()&lt;/code&gt;&lt;/a&gt; with a plane as clipper that is much faster and is now able to handle non-triangulated surface meshes. See also the associated &lt;a href=&quot;https://www.cgal.org/2025/06/06/new_clip/&quot;&gt;news entry&lt;/a&gt;.&lt;/li&gt;
+    &lt;li&gt;Added the function &lt;a href=&quot;https://doc.cgal.org/6.1/Polygon_mesh_processing/group__PMP__corefinement__grp.html#gacb9d68fa4dea8fd03ec53b56a16d6fc6&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CGAL::Polygon_mesh_processing::refine_with_plane()&lt;/code&gt;&lt;/a&gt;, which enables users to refine a mesh with its intersection with a plane.&lt;/li&gt;
+    &lt;li&gt;Added a function in the &lt;a href=&quot;https://doc.cgal.org/6.1/Polygon_mesh_processing/classPMPCorefinementVisitor.html&quot;&gt;visitor of the corefinement based methods&lt;/a&gt; to trace faces in the output meshes which correspond to coplanar faces of the input.&lt;/li&gt;
+    &lt;li&gt;Added the function &lt;a href=&quot;https://doc.cgal.org/6.1/Polygon_mesh_processing/group__PMP__measure__grp.html#ga1a31fa9412b4643dc7202a54246db78b&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CGAL::Polygon_mesh_processing::discrete_mean_curvature()&lt;/code&gt;&lt;/a&gt; and &lt;a href=&quot;https://doc.cgal.org/6.1/Polygon_mesh_processing/group__PMP__measure__grp.html#ga11a2d646d4636605d185653bff5bbbbb&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CGAL::Polygon_mesh_processing::discrete_Gaussian_curvature()&lt;/code&gt;&lt;/a&gt; to evaluate the discrete curvature at a vertex of a mesh.&lt;/li&gt;
+    &lt;li&gt;Added the function &lt;a href=&quot;https://doc.cgal.org/6.1/Polygon_mesh_processing/group__PMP__measure__grp.html#ga25d3836c21931610cf76b6716a06254c&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CGAL::Polygon_mesh_processing::angle_sum()&lt;/code&gt;&lt;/a&gt; to compute the sum of the angles around a vertex.&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h3 id=&quot;point-set-processing&quot;&gt;&lt;a href=&quot;https://doc.cgal.org/6.1/Manual/packages.html#PkgPointSetProcessing3&quot;&gt;Point Set Processing&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;Added &lt;a href=&quot;https://doc.cgal.org/6.1/Point_set_processing_3/group__PkgPointSetProcessing3Algorithms.html#ga2d73d46ca766656a219bf5e6045b837a&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CGAL::poisson_eliminate()&lt;/code&gt;&lt;/a&gt;, which can be used to downsample a point cloud to a target size while providing Poisson disk property, i.e., a larger minimal distance between points.&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h3 id=&quot;cgal-and-the-boost-graph-library-bgl&quot;&gt;&lt;a href=&quot;https://doc.cgal.org/6.1/Manual/packages.html#PkgBGL&quot;&gt;CGAL and the Boost Graph Library (BGL)&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;Added the function &lt;a href=&quot;https://doc.cgal.org/6.1/BGL/group__PkgBGLTraversal.html#gaa4058482db0089886b84a8c6a341e528&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dijkstra_shortest_path()&lt;/code&gt;&lt;/a&gt;, which can be used to compute the geometrically shortest sequence of halfedges between two vertices.&lt;/li&gt;
+    &lt;li&gt;Added the function &lt;a href=&quot;https://doc.cgal.org/6.1/BGL/group__PkgBGLEulerOperations.html#gab3455663b7db4624529e54ae3ce2387c&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CGAL::Euler::remove_degree_2_vertex()&lt;/code&gt;&lt;/a&gt;, which enables users to remove vertices which have exactly two incident edges.&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h3 id=&quot;d-arrangements&quot;&gt;&lt;a href=&quot;https://doc.cgal.org/6.1/Manual/packages.html#PkgArrangementOnSurface2&quot;&gt;2D Arrangements&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Breaking change&lt;/strong&gt;: Renamed the concept &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AosApproximateTraits_2&lt;/code&gt; to &lt;a href=&quot;https://doc.cgal.org/6.1/Arrangement_on_surface_2/classAosApproximatePointTraits__2.html&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AosApproximatePointTraits_2&lt;/code&gt;&lt;/a&gt; to make room for the new concept &lt;a href=&quot;https://doc.cgal.org/6.1/Arrangement_on_surface_2/classAosApproximateTraits__2.html&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AosApproximateTraits_2&lt;/code&gt;&lt;/a&gt;. This concept requires the provision of a functor called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Approximate_2&lt;/code&gt; that has an operator that approximates the coordinates of a point.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Breaking change&lt;/strong&gt;: The concept &lt;a href=&quot;https://doc.cgal.org/6.1/Arrangement_on_surface_2/classAosApproximateTraits__2.html&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AosApproximateTraits_2&lt;/code&gt;&lt;/a&gt; now refines the concept &lt;a href=&quot;https://doc.cgal.org/6.1/Arrangement_on_surface_2/classAosApproximatePointTraits__2.html&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AosApproximatePointTraits_2&lt;/code&gt;&lt;/a&gt; and requires the provision of a functor called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Approximate_2&lt;/code&gt;. In addition to an operator that approximates the coordinates of a point, it also requires the provision of (i) an operator that approximates a points, and (ii) an operator that approximates a curve.&lt;/li&gt;
+    &lt;li&gt;Renamed the prefix of the names of all concepts in the Arrangement_on_surface_2 package from “Arrangement” to “Aos”.&lt;/li&gt;
+    &lt;li&gt;Introduced two traits decorators, namely &lt;a href=&quot;https://doc.cgal.org/6.1/Arrangement_on_surface_2/classCGAL_1_1Arr__tracing__traits__2.html&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CGAL::Arr_tracing_traits_2&lt;/code&gt;&lt;/a&gt; and &lt;a href=&quot;https://doc.cgal.org/6.1/Arrangement_on_surface_2/classCGAL_1_1Arr__counting__traits__2.html&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CGAL::Arr_counting_traits_2&lt;/code&gt;&lt;/a&gt;, which can be used to extract debugging and informative metadata about the traits in use while a program is being executed.&lt;/li&gt;
+    &lt;li&gt;Fixed the Landmark point-location strategy so that it can be applied to arrangements on a sphere.&lt;/li&gt;
+    &lt;li&gt;Fixed a bug in the extensions of vertex and halfedge types of the DCEL when used to instantiate Arrangement_with_history_2 or similar arrangement classes that derive from Arrangement_2.&lt;/li&gt;
+    &lt;li&gt;Fixed &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;do_intersect()&lt;/code&gt; of a 2D Arrangement with a curve.&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h3 id=&quot;triangulations&quot;&gt;Triangulations&lt;/h3&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;All triangulations now offer the functions &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;point(Vertex_handle)&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;point(Simplex, int)&lt;/code&gt;, which enables users to access the geometric position of a vertex and of the i-th vertex of a simplex of a triangulation.&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h3 id=&quot;poisson-surface-reconstruction&quot;&gt;&lt;a href=&quot;https://doc.cgal.org/6.1/Manual/packages.html#PkgPoissonSurfaceReconstruction3&quot;&gt;Poisson Surface Reconstruction&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;Added a new mesh domain &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Poisson_mesh_domain_3&lt;/code&gt; that integrates some optimizations from the deprecated 3D Surface Mesh Generation package.&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h3 id=&quot;d-triangulations&quot;&gt;&lt;a href=&quot;https://doc.cgal.org/6.1/Manual/packages.html#PkgTriangulation2&quot;&gt;2D Triangulations&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Breaking change&lt;/strong&gt;: In the class template &lt;a href=&quot;https://doc.cgal.org/6.1/Triangulation_2/classCGAL_1_1Constrained__triangulation__plus__2.html&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Constrained_triangulation_plus_2&lt;/code&gt;&lt;/a&gt;, the value type of the range returned by &lt;a href=&quot;https://doc.cgal.org/6.1/Triangulation_2/classCGAL_1_1Constrained__triangulation__plus__2.html#af25114a7e1675194367f8f9de9de90d2&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;subconstraints()&lt;/code&gt;&lt;/a&gt; has changed from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;const std::pair&amp;lt;const Subconstraint, std::list&amp;lt;Context&amp;gt;*&amp;gt;&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Subconstraint&lt;/code&gt;. The old range type is now returned by a new function named &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;subconstraints_and_contexts()&lt;/code&gt;.&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h3 id=&quot;d-mesh-generation&quot;&gt;&lt;a href=&quot;https://doc.cgal.org/6.1/Manual/packages.html#PkgMesh3&quot;&gt;3D Mesh Generation&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;Added two new meshing parameters that enable custom mesh initialization:&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;https://doc.cgal.org/6.1/Mesh_3/group__PkgMesh3Parameters.html#gaf53777b83f1b2f3e7d49275dbab6e46b&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;initial_points_generator&lt;/code&gt;&lt;/a&gt;: enables the user to specify a functor that generates initial points,&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;https://doc.cgal.org/6.1/Mesh_3/group__PkgMesh3Parameters.html#gaf26d164d1845dcd66dc4861b6920b5ec&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;initial_points&lt;/code&gt;&lt;/a&gt;: enables the user to specify a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Range&lt;/code&gt; of initial points.&lt;/li&gt;
+    &lt;li&gt;Added a new meshing parameter &lt;a href=&quot;https://doc.cgal.org/6.1/Mesh_3/group__PkgMesh3Parameters.html#gaa2618c09b6117d7caab12dccca16ee58&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;surface_only&lt;/code&gt;&lt;/a&gt;, which can be used to improve performance when only surface mesh generation is sought.&lt;/li&gt;
+    &lt;li&gt;Added a new mesh domain &lt;a href=&quot;https://doc.cgal.org/6.1/Poisson_surface_reconstruction_3/classCGAL_1_1Poisson__mesh__domain__3.html&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Poisson_mesh_domain_3&lt;/code&gt;&lt;/a&gt;, which should be used when generating a mesh from a Poisson surface obtained with the package &lt;a href=&quot;https://doc.cgal.org/6.1/Manual/packages.html#PkgPoissonSurfaceReconstruction3&quot;&gt;Poisson Surface Reconstruction&lt;/a&gt;. This mesh domain re-integrates some optimizations for Poisson surface mesh generation that were lost when the package &lt;a href=&quot;https://doc.cgal.org/6.1/Manual/packages.html#PkgMesh3&quot;&gt;3D Mesh Generation&lt;/a&gt; had to be replaced instead of the deprecated package &lt;a href=&quot;https://doc.cgal.org/latest/Manual/packages.html#PkgSurfaceMesher3&quot;&gt;3D Surface Mesh Generation&lt;/a&gt;.&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h3 id=&quot;d-subdivision-methods&quot;&gt;&lt;a href=&quot;https://doc.cgal.org/6.1/Manual/packages.html#PkgSurfaceSubdivisionMethod3&quot;&gt;3D Subdivision Methods&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;Added a new named parameter for &lt;a href=&quot;https://doc.cgal.org/6.1/Subdivision_method_3/group__PkgSurfaceSubdivisionMethod3Functions.html#gafa1e441c4e07eb06e1f6efecef7ff268&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CGAL::Subdivision_method_3::Loop_subdivision()&lt;/code&gt;&lt;/a&gt; and &lt;a href=&quot;https://doc.cgal.org/6.1/Subdivision_method_3/group__PkgSurfaceSubdivisionMethod3Functions.html#ga8e6c8dd3c26d7a27c070b3a091684679&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CGAL::Subdivision_method_3::CatmullClark_subdivision()&lt;/code&gt;&lt;/a&gt;, which enables users to subdivide a mesh without modifying its geometry.&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h3 id=&quot;algebraic-kernel&quot;&gt;&lt;a href=&quot;https://doc.cgal.org/6.1/Manual/packages.html#PkgAlgebraicKernelD&quot;&gt;Algebraic Kernel&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Breaking change&lt;/strong&gt;: Classes based on the RS Library are no longer provided.&lt;/li&gt;
+  &lt;/ul&gt;
+
+&lt;/div&gt;
+</content>
+ </entry>
  
  <entry>
    <title>CGAL 6.1 beta2 released</title>
