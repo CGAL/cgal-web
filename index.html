@@ -8,40 +8,40 @@ tagline:
   <div class="carrousel">
 
     <ul class="bxslider">
+      <li><img class="slide" src="{{ site.baseurl }}/images/CCDT3.png" /> <!-- https://senselab.med.yale.edu/3dmodeldb/ -->
+        <h2 class="slideTitle">Constrained Triangulations</h2>
+        <h3 class="slideSubTitle">
+          <pre>CGAL::make_constrained_Delaunay_triangulation_3(neuron);</pre>
+        </h3>
+      </li>
       <li><img class="slide" src="{{ site.baseurl }}/images/david_bool_op.png" />
         <h2 class="slideTitle">Boolean Operations</h2>
         <h3 class="slideSubTitle">
           <pre>CGAL::corefine_and_compute_boolean_operations(statue, container);</pre>
         </h3>
       </li>
+      <li><img class="slide" src="{{ site.baseurl }}/images/arr_curves.png" />
+        <h2 class="slideTitle">Arrangement of Curves</h2>
+        <h3 class="slideSubTitle">
+          <pre>CGAL::make_arrangement(arcs);</pre>
+        </h3>
+      </li>
       <li><img class="slide" src="{{ site.baseurl }}/images/alpha_wrap.png" />
         <h2 class="slideTitle">Wrapping</h2>
         <h3 class="slideSubTitle">
-          <pre>CGAL::alpha_wrap();</pre>
-        </h3>
-      </li>
-      <li><img class="slide" src="{{ site.baseurl }}/images/ToS2porto.png" />
-        <h2 class="slideTitle">Triangulations</h2>
-        <h3 class="slideSubTitle">
-          <pre>CGAL::make_triangulation();</pre>
+          <pre>CGAL::alpha_wrap(engine);</pre>
         </h3>
       </li>
       <li><img class="slide" src="{{ site.baseurl }}/images/aabb_tree.png" />
-        <h2 class="slideTitle">Axis Aligned Bounding Box Tree</h2>
+        <h2 class="slideTitle">Axis-Aligned Bounding Box Tree</h2>
         <h3 class="slideSubTitle">
           <pre>CGAL::AABB_tree tree(faces(surface_mesh));</pre>
         </h3>
       </li>
-      <li><img class="slide" src="{{ site.baseurl }}/images/octo_0.png" />
-        <h2 class="slideTitle">The Heat Method</h2>
+      <li><img class="slide" src="{{ site.baseurl }}/images/periodic_banner.png" />
+        <h2 class="slideTitle">Mesh Generation and Remeshing</h2>
         <h3 class="slideSubTitle">
-          <pre>CGAL::Heat_method_3::estimate_geodesic_distances();</pre>
-        </h3>
-      </li>
-      <li><img class="slide" src="{{ site.baseurl }}/images/segmentation.png" />
-        <h2 class="slideTitle">Mesh Segmentation</h2>
-        <h3 class="slideSubTitle">
-          <pre>CGAL::sdf_values(surface_mesh);</pre>
+          <pre>CGAL::Tetrahedral_mesh mesh = CGAL::make_mesh();</pre>
         </h3>
       </li>
       <li><img class="slide" src="{{ site.baseurl }}/images/classif_header_cgal.png" />
@@ -50,10 +50,10 @@ tagline:
           <pre>CGAL::Classification::classify(las_points);</pre>
         </h3>
       </li>
-      <li><img class="slide" src="{{ site.baseurl }}/images/periodic_banner.png" />
-        <h2 class="slideTitle">Periodic Mesh Generation</h2>
+      <li><img class="slide" src="{{ site.baseurl }}/images/segmentation.png" />
+        <h2 class="slideTitle">Mesh Segmentation</h2>
         <h3 class="slideSubTitle">
-          <pre>CGAL::Periodic_tet_mesh mesh = CGAL::make_periodic_mesh();</pre>
+          <pre>CGAL::sdf_values(surface_mesh);</pre>
         </h3>
       </li>
     </ul>
