@@ -3,7 +3,7 @@ layout: page
 title: Features of 2025
 ---
 {% assign posts_of_the_year = "" | split: "" %}
-{% for post in site.posts |%}
+{% for post in site.posts %}
   {% assign year = post.date | date: "%Y" %}
   {% if post.tags contains 'features' and year == '2025' %}
     {% assign posts_of_the_year = posts_of_the_year | push: post %}
@@ -29,6 +29,7 @@ title: Features of 2025
 </div>
 
 All features released in 2025:
+
 <ul>
 {% for post in posts_of_the_year %}
   <li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: '%B %d, %Y' }}</li>
