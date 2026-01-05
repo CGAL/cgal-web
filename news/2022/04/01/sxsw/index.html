@@ -259,13 +259,15 @@ It is not clear that Sonia Delaunay was aware of this, but <i>Ignorantia juris n
         $(function () {
           $('.bxslider').bxSlider({
             auto: true,
+            autoHover: true,
             speed: 0,
             pause: 5000,
             infiniteLoop: true,
             touchEnabled: false,
             pager: true,
             pagerCustom: '.custom-pager',
-            controls: false,
+            stopAutoOnClick: true,
+            controls: true,
             onSliderLoad: function (currentIndex) {
               $('.bxslider li').find('.slideTitle, .slideSubTitle').css({
                 transform: 'translate(0)',

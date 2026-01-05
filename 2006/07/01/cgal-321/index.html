@@ -275,13 +275,15 @@ ambiguities with Boost’s <code class="language-plaintext highlighter-rouge">fi
         $(function () {
           $('.bxslider').bxSlider({
             auto: true,
+            autoHover: true,
             speed: 0,
             pause: 5000,
             infiniteLoop: true,
             touchEnabled: false,
             pager: true,
             pagerCustom: '.custom-pager',
-            controls: false,
+            stopAutoOnClick: true,
+            controls: true,
             onSliderLoad: function (currentIndex) {
               $('.bxslider li').find('.slideTitle, .slideSubTitle').css({
                 transform: 'translate(0)',

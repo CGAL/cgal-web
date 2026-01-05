@@ -240,13 +240,15 @@ on Thursday, 11 August, 2022 at 11:10 am in the Labs are (West Building, Ballroo
         $(function () {
           $('.bxslider').bxSlider({
             auto: true,
+            autoHover: true,
             speed: 0,
             pause: 5000,
             infiniteLoop: true,
             touchEnabled: false,
             pager: true,
             pagerCustom: '.custom-pager',
-            controls: false,
+            stopAutoOnClick: true,
+            controls: true,
             onSliderLoad: function (currentIndex) {
               $('.bxslider li').find('.slideTitle, .slideSubTitle').css({
                 transform: 'translate(0)',

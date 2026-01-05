@@ -222,13 +222,15 @@ Have a look at our <a href="https://github.com/CGAL/cgal/wiki/GSoC_2018">Project
         $(function () {
           $('.bxslider').bxSlider({
             auto: true,
+            autoHover: true,
             speed: 0,
             pause: 5000,
             infiniteLoop: true,
             touchEnabled: false,
             pager: true,
             pagerCustom: '.custom-pager',
-            controls: false,
+            stopAutoOnClick: true,
+            controls: true,
             onSliderLoad: function (currentIndex) {
               $('.bxslider li').find('.slideTitle, .slideSubTitle').css({
                 transform: 'translate(0)',
