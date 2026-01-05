@@ -3,7 +3,8 @@ layout: post
 title: "New in CGAL: 2D Triangulations on Hyperbolic Surfaces"
 description: ""
 category:
-tags: [""]
+tags: ["features"]
+image: /images/triangulation-on-hyperbolic-surface.svg
 ---
 {% include JB/setup %}
 

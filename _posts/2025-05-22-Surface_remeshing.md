@@ -3,7 +3,8 @@ layout: post
 title: "New in CGAL: New Surface Remeshing Algorithms"
 description: ""
 category:
-tags: [""]
+tags: ["features"]
+image: /images/planar_remeshing.png
 ---
 {% include JB/setup %}
 

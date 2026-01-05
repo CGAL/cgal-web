@@ -3,7 +3,8 @@ layout: post
 title: "New in CGAL: 3D Constrained Triangulations"
 description: ""
 category:
-tags: [""]
+tags: ["features"]
+image: /images/cdt_title_pyramid.png
 ---
 {% include JB/setup %}
 
