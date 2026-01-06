@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2026-01-06T11:57:28+00:00</updated>
+ <updated>2026-01-06T12:01:04+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -21,7 +21,7 @@
 &lt;ul style=&quot;list-style: none; padding: 0;&quot;&gt;
 
   &lt;li style=&quot;display: flex; align-items: flex-start; margin-bottom: 2em;&quot;&gt;
-    &lt;img src=&quot;/images/cdt_title_pyramid.png&quot; alt=&quot;3D Constrained Triangulations&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
+    &lt;img src=&quot;../../../../images/cdt_title_pyramid.png&quot; alt=&quot;3D Constrained Triangulations&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
     &lt;div&gt;
       &lt;h3&gt;3D Constrained Triangulations&lt;/h3&gt;
         &lt;p&gt;A major milestone for the CGAL library, this new package enables the construction
@@ -38,7 +38,7 @@
   &lt;/li&gt;
 
   &lt;li style=&quot;display: flex; align-items: flex-start; margin-bottom: 2em;&quot;&gt;
-    &lt;img src=&quot;/images/996816-no-self-intersections.png&quot; alt=&quot;Polygon Repair&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
+    &lt;img src=&quot;../../../../images/996816-no-self-intersections.png&quot; alt=&quot;Polygon Repair&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
     &lt;div&gt;
       &lt;h3&gt;Fixing Self-Intersections in Polygon Soups and Meshes&lt;/h3&gt;
         &lt;p&gt;With CGAL 6.1, we introduced a new method for reliably resolving self-intersections,
@@ -56,7 +56,7 @@
   &lt;/li&gt;
 
   &lt;li style=&quot;display: flex; align-items: flex-start; margin-bottom: 2em;&quot;&gt;
-    &lt;img src=&quot;/images/planar_remeshing.png&quot; alt=&quot;Almost Planar Patch Remeshing&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
+    &lt;img src=&quot;../../../../images/planar_remeshing.png&quot; alt=&quot;Almost Planar Patch Remeshing&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
     &lt;div&gt;
       &lt;h3&gt;Remeshing of (Almost) Planar Patches&lt;/h3&gt;
         &lt;p&gt;A new function was introduced to simplify planar patches, with a tolerance
@@ -74,7 +74,7 @@
   &lt;/li&gt;
 
   &lt;li style=&quot;display: flex; align-items: flex-start; margin-bottom: 2em;&quot;&gt;
-    &lt;img src=&quot;/images/PolygonRepair_WindingNonZeroDifferent.svg&quot; alt=&quot;Polygon Repair&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
+    &lt;img src=&quot;../../../../images/PolygonRepair_WindingNonZeroDifferent.svg&quot; alt=&quot;Polygon Repair&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
     &lt;div&gt;
       &lt;h3&gt;Polygon Repair&lt;/h3&gt;
         &lt;p&gt;This new package offers automatic repair of invalid polygons, polygons with holes,
@@ -91,7 +91,7 @@
   &lt;/li&gt;
 
   &lt;li style=&quot;display: flex; align-items: flex-start; margin-bottom: 2em;&quot;&gt;
-    &lt;img src=&quot;/images/ACVD_ex-mini.png&quot; alt=&quot;ACVD Remeshing&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
+    &lt;img src=&quot;../../../../images/ACVD_ex-mini.png&quot; alt=&quot;ACVD Remeshing&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
     &lt;div&gt;
       &lt;h3&gt;Remeshing with Approximated Discrete Centroidal Voronoi Diagrams&lt;/h3&gt;
         &lt;p&gt;The result of a successful Google Summer of Code project in CGAL, this new remeshing
@@ -110,7 +110,7 @@
   &lt;/li&gt;
 
   &lt;li style=&quot;display: flex; align-items: flex-start; margin-bottom: 2em;&quot;&gt;
-    &lt;img src=&quot;/images/clipping_carrot.jpg&quot; alt=&quot;Faster Surface Clipping&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
+    &lt;img src=&quot;../../../../images/clipping_carrot.jpg&quot; alt=&quot;Faster Surface Clipping&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
     &lt;div&gt;
       &lt;h3&gt;Speeding-up Surface Mesh Clipping and Splitting&lt;/h3&gt;
         &lt;p&gt;Clipping and splitting of polygonal surface meshes received a 10x acceleration,
@@ -127,7 +127,7 @@
   &lt;/li&gt;
 
   &lt;li style=&quot;display: flex; align-items: flex-start; margin-bottom: 2em;&quot;&gt;
-    &lt;img src=&quot;/images/triangulation-on-hyperbolic-surface-mini.svg&quot; alt=&quot;Triangulations on Hyperbolic Surfaces&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
+    &lt;img src=&quot;../../../../images/triangulation-on-hyperbolic-surface-mini.svg&quot; alt=&quot;Triangulations on Hyperbolic Surfaces&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
     &lt;div&gt;
       &lt;h3&gt;2D Triangulations on Hyperbolic Surfaces&lt;/h3&gt;
         &lt;p&gt;The new package introduces a data structure and algorithms for
