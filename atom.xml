@@ -4,13 +4,149 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2026-01-05T15:55:41+00:00</updated>
+ <updated>2026-01-06T11:57:28+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
    <email>cgal-info@inria.fr</email>
  </author>
 
+ 
+ <entry>
+   <title>CGAL 2025 Highlights</title>
+   <link href="http://www.cgal.org/2026/01/01/2025_recap/"/>
+   <updated>2026-01-01T00:00:00+00:00</updated>
+   <id>http://www.cgal.org/2026/01/01/2025_recap</id>
+   <content type="html">
+&lt;ul style=&quot;list-style: none; padding: 0;&quot;&gt;
+
+  &lt;li style=&quot;display: flex; align-items: flex-start; margin-bottom: 2em;&quot;&gt;
+    &lt;img src=&quot;/images/cdt_title_pyramid.png&quot; alt=&quot;3D Constrained Triangulations&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
+    &lt;div&gt;
+      &lt;h3&gt;3D Constrained Triangulations&lt;/h3&gt;
+        &lt;p&gt;A major milestone for the CGAL library, this new package enables the construction
+          of 3D Delaunay triangulations that can preserve a user-defined set of segments
+          and 3D polygons.&lt;/p&gt;
+        &lt;p&gt;
+          &lt;i class=&quot;bi bi-pen&quot;&gt;&lt;/i&gt;
+          &lt;a href=&quot;/cgal-web/2025/06/30/Constrained_triangulation_3/&quot;&gt;Full post&lt;/a&gt;
+          &lt;br /&gt;
+          &lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
+          &lt;a href=&quot;https://doc.cgal.org/latest/Manual/packages.html#PkgConstrainedTriangulation3&quot;&gt;Documentation&lt;/a&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+
+  &lt;li style=&quot;display: flex; align-items: flex-start; margin-bottom: 2em;&quot;&gt;
+    &lt;img src=&quot;/images/996816-no-self-intersections.png&quot; alt=&quot;Polygon Repair&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
+    &lt;div&gt;
+      &lt;h3&gt;Fixing Self-Intersections in Polygon Soups and Meshes&lt;/h3&gt;
+        &lt;p&gt;With CGAL 6.1, we introduced a new method for reliably resolving self-intersections,
+        a very common defect in real-world meshes, using 3D snap rounding.
+        The algorithm was thoroughly tested on large data sets such as &lt;a href=&quot;https://ten-thousand-models.appspot.com/&quot;&gt;Thingi10k dataset&lt;/a&gt;,
+        producing intersection-free outputs in all cases.&lt;/p&gt;
+        &lt;p&gt;
+          &lt;i class=&quot;bi bi-pen&quot;&gt;&lt;/i&gt;
+          &lt;a href=&quot;/cgal-web/2025/06/13/autorefine-and-snap/&quot;&gt;Full post&lt;/a&gt;
+          &lt;br /&gt;
+          &lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
+          &lt;a href=&quot;https://doc.cgal.org/latest/Manual/packages.html#PkgPolygonRepair&quot;&gt;Documentation&lt;/a&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+
+  &lt;li style=&quot;display: flex; align-items: flex-start; margin-bottom: 2em;&quot;&gt;
+    &lt;img src=&quot;/images/planar_remeshing.png&quot; alt=&quot;Almost Planar Patch Remeshing&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
+    &lt;div&gt;
+      &lt;h3&gt;Remeshing of (Almost) Planar Patches&lt;/h3&gt;
+        &lt;p&gt;A new function was introduced to simplify planar patches, with a tolerance
+        available to take into account inherent inaccuracies in real-world inputs.
+        Individual functions are also provided for the different steps of the remeshing process (detection of the planar regions, detection of the corners, ...) to enable fine tuning
+        of the algorithm and customization with user-specific criteria&lt;/p&gt;
+        &lt;p&gt;
+          &lt;i class=&quot;bi bi-pen&quot;&gt;&lt;/i&gt;
+          &lt;a href=&quot;/cgal-web/2025/05/22/Surface_remeshing/&quot;&gt;Full post&lt;/a&gt;
+          &lt;br /&gt;
+          &lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
+          &lt;a href=&quot;https://doc.cgal.org/6.1/Polygon_mesh_processing/index.html#decimate&quot;&gt;Documentation&lt;/a&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+
+  &lt;li style=&quot;display: flex; align-items: flex-start; margin-bottom: 2em;&quot;&gt;
+    &lt;img src=&quot;/images/PolygonRepair_WindingNonZeroDifferent.svg&quot; alt=&quot;Polygon Repair&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
+    &lt;div&gt;
+      &lt;h3&gt;Polygon Repair&lt;/h3&gt;
+        &lt;p&gt;This new package offers automatic repair of invalid polygons, polygons with holes,
+        and multipolygons with holes through a fast and generic implementation,
+        with immediate compatibility with other polygon-based CGAL packages.&lt;/p&gt;
+        &lt;p&gt;
+          &lt;i class=&quot;bi bi-pen&quot;&gt;&lt;/i&gt;
+          &lt;a href=&quot;/cgal-web/2025/05/22/Polygon_repair/&quot;&gt;Full post&lt;/a&gt;
+          &lt;br /&gt;
+          &lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
+          &lt;a href=&quot;https://doc.cgal.org/latest/Manual/packages.html#PkgPolygonRepair&quot;&gt;Documentation&lt;/a&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+
+  &lt;li style=&quot;display: flex; align-items: flex-start; margin-bottom: 2em;&quot;&gt;
+    &lt;img src=&quot;/images/ACVD_ex-mini.png&quot; alt=&quot;ACVD Remeshing&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
+    &lt;div&gt;
+      &lt;h3&gt;Remeshing with Approximated Discrete Centroidal Voronoi Diagrams&lt;/h3&gt;
+        &lt;p&gt;The result of a successful Google Summer of Code project in CGAL, this new remeshing
+        function can be used to improve mesh quality and sharpen features. The algorithm
+        combines the robustness and theoretical strength of Delaunay criteria with the efficiency
+        of entirely discrete geometry processing, with a low complexity (in terms of calculations
+        and memory requirements), allowing the processing of large meshes up to several million triangles.&lt;/p&gt;
+        &lt;p&gt;
+          &lt;i class=&quot;bi bi-pen&quot;&gt;&lt;/i&gt;
+          &lt;a href=&quot;/cgal-web/2025/05/22/Surface_remeshing/&quot;&gt;Full post&lt;/a&gt;
+          &lt;br /&gt;
+          &lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
+          &lt;a href=&quot;https://doc.cgal.org/latest/Polygon_mesh_processing/index.html#title8&quot;&gt;Documentation&lt;/a&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+
+  &lt;li style=&quot;display: flex; align-items: flex-start; margin-bottom: 2em;&quot;&gt;
+    &lt;img src=&quot;/images/clipping_carrot.jpg&quot; alt=&quot;Faster Surface Clipping&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
+    &lt;div&gt;
+      &lt;h3&gt;Speeding-up Surface Mesh Clipping and Splitting&lt;/h3&gt;
+        &lt;p&gt;Clipping and splitting of polygonal surface meshes received a 10x acceleration,
+        with a brand new corefinement function under the hood based on efficient
+        and exact orientation tests.&lt;/p&gt;
+        &lt;p&gt;
+          &lt;i class=&quot;bi bi-pen&quot;&gt;&lt;/i&gt;
+          &lt;a href=&quot;/cgal-web/2025/06/06/new_clip/&quot;&gt;Full post&lt;/a&gt;
+          &lt;br /&gt;
+          &lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
+          &lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/master/Polygon_mesh_processing/group__PMP__corefinement__grp.html#ga5dc9e7acf8433235adc7b91ac93a7d42&quot;&gt;Documentation&lt;/a&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+
+  &lt;li style=&quot;display: flex; align-items: flex-start; margin-bottom: 2em;&quot;&gt;
+    &lt;img src=&quot;/images/triangulation-on-hyperbolic-surface-mini.svg&quot; alt=&quot;Triangulations on Hyperbolic Surfaces&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
+    &lt;div&gt;
+      &lt;h3&gt;2D Triangulations on Hyperbolic Surfaces&lt;/h3&gt;
+        &lt;p&gt;The new package introduces a data structure and algorithms for
+triangulations of closed orientable hyperbolic surfaces.  It is thus a
+generalisation of the specific case of the Bolza surface, which is the most
+symmetric hyperbolic surface of genus 2&lt;/p&gt;
+        &lt;p&gt;
+          &lt;i class=&quot;bi bi-pen&quot;&gt;&lt;/i&gt;
+          &lt;a href=&quot;/cgal-web/2025/06/24/triangulations-on-hyperbolic-surfaces/&quot;&gt;Full post&lt;/a&gt;
+          &lt;br /&gt;
+          &lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
+          &lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/master/Triangulation_on_hyperbolic_surface_2/index.html&quot;&gt;Documentation&lt;/a&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>CGAL 6.1 released</title>
