@@ -5,8 +5,8 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2026-01-06T12:05:11+00:00</lastBuildDate>
-        <pubDate>2026-01-06T12:05:11+00:00</pubDate>
+        <lastBuildDate>2026-01-10T11:43:18+00:00</lastBuildDate>
+        <pubDate>2026-01-10T11:43:18+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -86,6 +86,25 @@
   &lt;/li&gt;
 
   &lt;li style=&quot;display: flex; align-items: flex-start; margin-bottom: 2em;&quot;&gt;
+    &lt;img src=&quot;../../../../images/isosurfacing_teaser.png&quot; alt=&quot;Classical Contouring Methods&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
+    &lt;div&gt;
+      &lt;h3&gt;3D Isosurfacing&lt;/h3&gt;
+        &lt;p&gt;Classical methods for generating polygonal surface meshes have been added to CGAL:
+        Marching Cubes, Dual Contouring. The new package follows the usual principles of CGAL,
+        offering robustness, genericity with respect to the input data type, and various otions
+        to tune the algorithms. A newer contouring method is also part of this initial version,
+        offering a modified Marching Cubes approach that comes with topological guarantees.&lt;/p&gt;
+        &lt;p&gt;
+          &lt;i class=&quot;bi bi-pen&quot;&gt;&lt;/i&gt;
+          &lt;a href=&quot;/cgal-web/2025/10/10/Isosurfacing/&quot;&gt;Full post&lt;/a&gt;
+          &lt;br /&gt;
+          &lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
+          &lt;a href=&quot;https://doc.cgal.org/latest/Manual/packages.html#PkgIsosurfacing3&quot;&gt;Documentation&lt;/a&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+
+  &lt;li style=&quot;display: flex; align-items: flex-start; margin-bottom: 2em;&quot;&gt;
     &lt;img src=&quot;../../../../images/ACVD_ex-mini.png&quot; alt=&quot;ACVD Remeshing&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
     &lt;div&gt;
       &lt;h3&gt;Remeshing with Approximated Discrete Centroidal Voronoi Diagrams&lt;/h3&gt;
@@ -144,6 +163,108 @@ symmetric hyperbolic surface of genus 2&lt;/p&gt;
                 <link>http://www.cgal.org/2026/01/01/2025_recap/</link>
                 <guid>http://www.cgal.org/2026/01/01/2025_recap</guid>
                 <pubDate>2026-01-01T00:00:00+00:00</pubDate>
+        </item>
+
+        <item>
+                <title>New in CGAL: Isosurfacing</title>
+                <description>
+&lt;h3&gt;&lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Mael Rouxel-Labbé&lt;/a&gt;&amp;deg;,
+&lt;a href=&quot;https://www.lgdv.tf.fau.de/person/julian-stahl/&quot;&gt;Julian Stahl&lt;/a&gt;&amp;dagger;,
+&lt;a href=&quot;https://daniel-zint.github.io/&quot;&gt;Daniel Zint&lt;/a&gt;&amp;#42;,
+&lt;a href=&quot;https://www-sop.inria.fr/members/Pierre.Alliez/&quot;&gt;Pierre Alliez&lt;/a&gt;&amp;#42;.
+&lt;/h3&gt;
+&lt;h4&gt;&amp;deg;&lt;a href=&quot;https://geometryfactory.com/&quot;&gt;GeometryFactory&lt;/a&gt;,
+    &amp;dagger;&lt;a href=&quot;https://www.fau.eu/&quot;&gt;Friedrich-Alexander-Universität&lt;/a&gt;,
+    &amp;#42;&lt;a href=&quot;https://team.inria.fr/titane/&quot;&gt;INRIA Sophia Antipolis&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;a href=&quot;../../../../images/isosurfacing_teaser.png&quot;&gt;&lt;img src=&quot;../../../../images/isosurfacing_teaser.png&quot; style=&quot;max-width:50%&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&quot;Isosurfacing&quot;, also known as &quot;isosurface extraction&quot; or &quot;contouring&quot;, is the process
+of constructing the isosurface corresponding to a given value field and isovalue.
+Isosurfacing is often needed for volume visualization and for the simulation of physical phenomena.&lt;p&gt;
+
+&lt;p&gt;CGAL offers various packages and functions that can be used to generate meshes for various types of
+input data (see chapter &lt;a href=&quot;https://doc.cgal.org/latest/Manual/packages.html#PartMeshing&quot;&gt; Mesh Generation
+&lt;/a&gt;), most notably the package &lt;a href=&quot;https://doc.cgal.org/latest/Manual/packages.html#PkgMesh3&quot;&gt;3D Mesh Generation&lt;/a&gt;,
+which is able to generate surface and volume meshes of implicit functions, 3D images, polyhedral
+domains, etc. This package is based on one of the most fundamental structures in computationa geometry,
+the Delaunay triangulation. However, a large category of classical isosurfacing methods had been
+missing from CGAL: the approaches based on contouring using volumetric grids.&lt;/p&gt;
+
+&lt;br /&gt;
+&lt;h3&gt;New Package: 3D Isosurfacing&lt;/h3&gt;
+
+&lt;p&gt;The initial version of the new package, &lt;a href=&quot;https://doc.cgal.org/latest/Isosurfacing_3/index.html&quot;&gt;3D Isosurfacing&lt;/a&gt;
+offers the following methods to extract isosurfaces from 3D value fields:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://doc.cgal.org/latest/Isosurfacing_3/index.html#SubSecMarchingCubes&quot;&gt;Marching Cubes (MC)&lt;/a&gt;:
+  a simple and efficient method that generates a triangle mesh, with almost no guarantees.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://doc.cgal.org/latest/Isosurfacing_3/index.html#SubSecTMC&quot;&gt;Topologically Correct Marching Cubes (TMC)&lt;/a&gt;:
+  an extension to Marching Cubes that provides additional guarantees for the output.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://doc.cgal.org/latest/Isosurfacing_3/index.html#SubSecDualContouring&quot;&gt;Dual Contouring (DC)&lt;/a&gt;:
+  a method that generates a polygon mesh, with a focus on sharp features recovery.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These contouring techniques rely on the partition of the 3D space and of the field to construct
+an approximate representation of the isosurface. The 3D value field can be described through various
+representations: an implicit function, an interpolated set of discrete sampling values, a 3D image,
+etc. (see &lt;a href=&quot;https://doc.cgal.org/latest/Isosurfacing_3/index.html#title8&quot;&gt;the examples&lt;/a&gt;
+in the documentation). The isovalue is user-defined. The output is a polygon soup, made either
+of triangles or quads depending on the method, and may consist of a single connected component,
+or multiple, disjoint components. Each method offer tuning options to select specific strategies,
+such as the placement at the center of the cell or optimized using Quadric Error Metrics (QEM)
+for Dual Contouring.&lt;/p&gt;
+
+&lt;br /&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;a href=&quot;../../../../images/isosurfacing_MC_DC.png&quot;&gt;&lt;img src=&quot;../../../../images/isosurfacing_MC_DC.png&quot; style=&quot;max-width:75%&quot; /&gt;&lt;/a&gt;
+  &lt;br /&gt;&lt;small&gt;Contouring a simple implicit function with Marching Cubes (left) and Dual Contouring (DC).&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;br /&gt;
+&lt;h3&gt;Topologically correct Marching Cubes&lt;/h3&gt;
+
+&lt;p&gt;Topologically Correct Marching Cubes is an extension to the Marching Cubes algorithm which provides
+additional guarantees for the output [1]. More specifically, it generates a mesh
+that is homeomorphic to the trilinear interpolant of the input value field inside each cube.
+This means that the output mesh can accurately represent small complex features. For example,
+a tunnel of the isosurface within a single cell is topologically resolved. To achieve this,
+the algorithm can insert additional vertices within cells. Furthermore, the mesh is guaranteed
+to be 2-manifold and watertight, as long as the isosurface does not intersect the domain boundaries..&lt;/p&gt;
+
+&lt;br /&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;a href=&quot;../../../../images/isosurfacing_MC_TMC.png&quot;&gt;&lt;img src=&quot;../../../../images/isosurfacing_MC_TMC.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
+  &lt;br /&gt;&lt;small&gt;Trilinearly interpolated surface (left), Marching Cubes (middle), and
+  Topologically Correct Marching Cubes (right). The latter correctly recovers the topology of the surface.&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;h4&gt;Status&lt;/h4&gt;
+
+&lt;p&gt;The package 3D Isosurfacing has been available since CGAL 6.1, released in the fall of 2025.&lt;/p&gt;
+
+&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
+&lt;a href=&quot;https://doc.cgal.org/latest/Manual/packages.html#PkgIsosurfacing3&quot;&gt;Documentation of the &quot;3D Isosurfacing&quot; package&lt;/a&gt;
+&lt;br /&gt;
+&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
+&lt;a href=&quot;https://github.com/CGAL/cgal/tree/main&quot;&gt;CGAL &quot;main&quot; branch on GitHub&lt;/a&gt;
+&lt;br /&gt;&lt;br /&gt;
+
+&lt;h4&gt;Bibliography&lt;/h4&gt;
+
+&lt;p&gt;
+[1] Roberto Grosso. Construction of topologically correct and manifold isosurfaces. In Computer Graphics Forum, volume 35, pages 187–196. Wiley Online Library, 2016.
+&lt;/p&gt;
+&lt;/p&gt;&lt;/p&gt;
+</description>
+                <link>http://www.cgal.org/2025/10/10/Isosurfacing/</link>
+                <guid>http://www.cgal.org/2025/10/10/Isosurfacing</guid>
+                <pubDate>2025-10-10T00:00:00+00:00</pubDate>
         </item>
 
         <item>
