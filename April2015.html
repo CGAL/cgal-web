@@ -183,22 +183,6 @@
         
         
         
-          <li class="active">January 2026 <a href="/cgal-web/2026/01/01/2025_recap/" class="active">CGAL 2025 Highlights: A recap of some of the major new features introduced in CGAL in 2025</a></li>
-        
-        
-        
-        
-        
-        
-        
-          <li class="active">October 2025 <a href="/cgal-web/2025/10/10/Isosurfacing/" class="active">New in CGAL: Isosurfacing: </a></li>
-        
-        
-        
-        
-        
-        
-        
           <li class="active">October 2025 <a href="/cgal-web/2025/10/01/cgal61/" class="active">CGAL 6.1 released: CGAL 6.1</a></li>
         
         
@@ -208,6 +192,22 @@
         
         
           <li class="active">September 2025 <a href="/cgal-web/2025/09/17/cgal61-beta2/" class="active">CGAL 6.1 beta2 released: CGAL 6.1 beta2</a></li>
+        
+        
+        
+        
+        
+        
+        
+          <li class="active">September 2025 <a href="/cgal-web/2025/09/17/cgal602/" class="active">CGAL 6.0.2 released: CGAL 6.0.2</a></li>
+        
+        
+        
+        
+        
+        
+        
+          <li class="active">September 2025 <a href="/cgal-web/2025/09/17/cgal563/" class="active">CGAL 5.6.3 released: CGAL 5.6.3</a></li>
         
         
         
@@ -254,16 +254,13 @@
         $(function () {
           $('.bxslider').bxSlider({
             auto: true,
-            autoHover: true,
             speed: 0,
             pause: 5000,
             infiniteLoop: true,
             touchEnabled: false,
             pager: true,
             pagerCustom: '.custom-pager',
-            stopAutoOnClick: true,
-            controls: true,
-            keyboardEnabled: true,
+            controls: false,
             onSliderLoad: function (currentIndex) {
               $('.bxslider li').find('.slideTitle, .slideSubTitle').css({
                 transform: 'translate(0)',

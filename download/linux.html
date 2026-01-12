@@ -213,16 +213,13 @@ on the CGAL project's <a href="https://github.com/CGAL/cgal/blob/main/INSTALL.md
         $(function () {
           $('.bxslider').bxSlider({
             auto: true,
-            autoHover: true,
             speed: 0,
             pause: 5000,
             infiniteLoop: true,
             touchEnabled: false,
             pager: true,
             pagerCustom: '.custom-pager',
-            stopAutoOnClick: true,
-            controls: true,
-            keyboardEnabled: true,
+            controls: false,
             onSliderLoad: function (currentIndex) {
               $('.bxslider li').find('.slideTitle, .slideSubTitle').css({
                 transform: 'translate(0)',
