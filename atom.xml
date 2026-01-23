@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2026-01-23T22:22:56+00:00</updated>
+ <updated>2026-01-23T22:28:15+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -18,6 +18,13 @@
    <updated>2026-01-01T00:00:00+00:00</updated>
    <id>http://www.cgal.org/2026/01/01/2025_recap</id>
    <content type="html">
+&lt;p&gt;The CGAL developers teams wishes you a happy year!&lt;/p&gt;
+
+&lt;p&gt;2025 was a fruitful year, with the publication of CGAL version 6.1.&lt;/p&gt;
+
+&lt;p&gt;Here are a few of the features that were introduced during that year!&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;ul style=&quot;list-style: none; padding: 0;&quot;&gt;
 
   &lt;li style=&quot;display: flex; align-items: flex-start; margin-bottom: 2em;&quot;&gt;
