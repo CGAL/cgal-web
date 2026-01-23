@@ -116,7 +116,7 @@ still featuring self-intersections.</p>
 </div>
 <br>
 
-<p>The second part of our solution is a novel snap rounding strategy: based on the work of Lazard and Valque [1],
+<p>The second part of our solution is a novel snap rounding strategy from Lazard and Valque [1]:
 the main idea behind the method is a loop that rounds vertex coordinates of triangles involved
 in self-intersections to integers (up to a scaling factor), eliminates degenerate
 elements, and resolves self-intersections again, until all self-intersections are resolved
