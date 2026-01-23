@@ -5,8 +5,8 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2026-01-19T14:25:29+00:00</lastBuildDate>
-        <pubDate>2026-01-19T14:25:29+00:00</pubDate>
+        <lastBuildDate>2026-01-23T13:58:15+00:00</lastBuildDate>
+        <pubDate>2026-01-23T13:58:15+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -814,7 +814,7 @@ still featuring self-intersections.&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;The second part of our solution is a novel snap rounding strategy: based on the work of Lazard and Valque [1],
+&lt;p&gt;The second part of our solution is a novel snap rounding strategy from Lazard and Valque [1]:
 the main idea behind the method is a loop that rounds vertex coordinates of triangles involved
 in self-intersections to integers (up to a scaling factor), eliminates degenerate
 elements, and resolves self-intersections again, until all self-intersections are resolved
