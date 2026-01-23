@@ -151,7 +151,7 @@ will be officially released in the upcoming version of CGAL, CGAL 6.1, scheduled
 
 <h3>Bibliography</h3>
 
-[1] Sylvain Lazard and Leo Valque. Removing self-intersections in 3D meshes while preserving floating-point coordinates. Computer Graphics Forum. Vol. XX. No. X. 2025.
+[1] Sylvain Lazard and Leo Valque. Removing self-intersections in 3D meshes while preserving floating-point coordinates. Computer Graphics Forum. Vol. 44. No. 5. 2025.
 
 <br>
 <h3>Bonus: History of 3D Boolean Operations in CGAL</h3>
