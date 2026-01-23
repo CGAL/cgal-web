@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2026-01-23T13:58:15+00:00</updated>
+ <updated>2026-01-23T14:05:00+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -854,7 +854,7 @@ will be officially released in the upcoming version of CGAL, CGAL 6.1, scheduled
 
 &lt;h3&gt;Bibliography&lt;/h3&gt;
 
-&lt;p&gt;[1] Sylvain Lazard and Leo Valque. Removing self-intersections in 3D meshes while preserving floating-point coordinates. Computer Graphics Forum. Vol. XX. No. X. 2025.&lt;/p&gt;
+&lt;p&gt;[1] Sylvain Lazard and Leo Valque. Removing self-intersections in 3D meshes while preserving floating-point coordinates. Computer Graphics Forum. Vol. 44. No. 5. 2025.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h3&gt;Bonus: History of 3D Boolean Operations in CGAL&lt;/h3&gt;
