@@ -5,10 +5,48 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2026-01-26T11:39:07+00:00</lastBuildDate>
-        <pubDate>2026-01-26T11:39:07+00:00</pubDate>
+        <lastBuildDate>2026-01-26T13:09:35+00:00</lastBuildDate>
+        <pubDate>2026-01-26T13:09:35+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>CGAL 6.1.1 released</title>
+                <description>
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
+&lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v6.1.1&quot;&gt;Download CGAL-6.1.1&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
+&lt;a href=&quot;https://doc.cgal.org/6.1.1/Manual/index.html&quot;&gt;CGAL-6.1.1 documentation&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;CGAL 6.1.1 is a bug-fix release for &lt;a href=&quot;/cgal-web/2025/10/01/cgal61/&quot;&gt;CGAL 6.1&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The list of fixed bugs since &lt;a href=&quot;/cgal-web/2025/10/01/cgal61/&quot;&gt;CGAL 6.1&lt;/a&gt; can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AMerged_in_6.1.1+-label%3AMerged_in_6.1&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+                <link>http://www.cgal.org/2026/01/26/cgal611/</link>
+                <guid>http://www.cgal.org/2026/01/26/cgal611</guid>
+                <pubDate>2026-01-26T00:00:00+00:00</pubDate>
+        </item>
+
+        <item>
+                <title>CGAL 6.0.3 released</title>
+                <description>
+&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
+&lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v6.0.3&quot;&gt;Download CGAL-6.0.3&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
+&lt;a href=&quot;https://doc.cgal.org/6.0.3/Manual/index.html&quot;&gt;CGAL-6.0.3 documentation&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;CGAL 6.0.3 is a bug-fix release for &lt;a href=&quot;/cgal-web/2024/09/27/cgal60/&quot;&gt;CGAL 6.0&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The list of fixed bugs since &lt;a href=&quot;/cgal-web/2025/09/17/cgal602/&quot;&gt;CGAL 6.0.2&lt;/a&gt; can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AMerged_in_6.0.3+-label%3AMerged_in_6.0.2&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+                <link>http://www.cgal.org/2026/01/26/cgal603/</link>
+                <guid>http://www.cgal.org/2026/01/26/cgal603</guid>
+                <pubDate>2026-01-26T00:00:00+00:00</pubDate>
+        </item>
 
         <item>
                 <title>CGAL 2025 Highlights</title>
