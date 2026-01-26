@@ -150,12 +150,36 @@
       <ul>
     
 
-    <li><a href="/cgal-web/2026/01/26/cgal611/">CGAL 6.1.1 released</a>
-        <br><div style="color:#afaa98;font-size:12px">January 26, 2026</div>
+    <li><a href="/cgal-web/2026/01/01/2025_recap/">CGAL 2025 Highlights</a>
+        <br><div style="color:#afaa98;font-size:12px">January  1, 2026</div>
+    </li>
+
+    
+      
+        </ul>
+        <h2>2025</h2>
+        <h3>December</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+
+    <li><a href="/cgal-web/2025/12/31/Frechet_distance/">New in CGAL: Computation of Frechet Distance in Any Dimension</a>
+        <br><div style="color:#afaa98;font-size:12px">December 31, 2025</div>
     </li>
 
     
           
+        
+          </ul>
+          <h3>October</h3>
+          <ul>
         
       
     
@@ -167,16 +191,13 @@
   
     
 
-    <li><a href="/cgal-web/2026/01/26/cgal603/">CGAL 6.0.3 released</a>
-        <br><div style="color:#afaa98;font-size:12px">January 26, 2026</div>
+    <li><a href="/cgal-web/2025/10/10/Isosurfacing/">New in CGAL: Isosurfacing</a>
+        <br><div style="color:#afaa98;font-size:12px">October 10, 2025</div>
     </li>
 
     
-      
-        </ul>
-        <h2>2025</h2>
-        <h3>October</h3>
-        <ul>
+          
+        
       
     
   
@@ -5451,13 +5472,16 @@
         $(function () {
           $('.bxslider').bxSlider({
             auto: true,
+            autoHover: true,
             speed: 0,
             pause: 5000,
             infiniteLoop: true,
             touchEnabled: false,
             pager: true,
             pagerCustom: '.custom-pager',
-            controls: false,
+            stopAutoOnClick: true,
+            controls: true,
+            keyboardEnabled: true,
             onSliderLoad: function (currentIndex) {
               $('.bxslider li').find('.slideTitle, .slideSubTitle').css({
                 transform: 'translate(0)',

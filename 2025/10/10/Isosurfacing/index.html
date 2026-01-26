@@ -8,8 +8,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>CGAL 6.0.3 released</title>
-    <meta name="description" content="CGAL 6.0.3">
+    <title>New in CGAL: Isosurfacing</title>
+    <meta name="description" content="">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <meta name="author" content="CGAL Editorial Board">
@@ -118,7 +118,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 home-title">
-            <h1>CGAL 6.0.3 released </h1>
+            <h1>New in CGAL: Isosurfacing </h1>
             <a style="text-align: right;" href="https://github.com/cgal/cgal" alt="The CGAL Project's github">
               <span class="btn-dark-orange github-link fs-5">CGAL/cgal <i class="bi bi-github"></i></span>
             </a>
@@ -136,25 +136,108 @@
       <div class="col-sm-9">
         <div class="blog-post blog-single-post">
           <div class="single-post-title">
-            <h3>CGAL 6.0.3 released</h3>
+            <h3>New in CGAL: Isosurfacing</h3>
           </div>
           <br>
           <div class="single-post-info">
             <i class="bi bi-clock"></i>
-            26 January 2026
+            10 October 2025
           </div>
           <div class="single-post-content">
             
-<p><i class="bi bi-arrow-down-circle"></i>
-<a href="https://github.com/CGAL/cgal/releases/tag/v6.0.3">Download CGAL-6.0.3</a></p>
+<h3><a href="https://geometryfactory.com/who-we-are/">Mael Rouxel-Labbé</a>&deg;,
+<a href="https://www.lgdv.tf.fau.de/person/julian-stahl/">Julian Stahl</a>&dagger;,
+<a href="https://daniel-zint.github.io/">Daniel Zint</a>&#42;,
+<a href="https://www-sop.inria.fr/members/Pierre.Alliez/">Pierre Alliez</a>&#42;.
+</h3>
+<h4>&deg;<a href="https://geometryfactory.com/">GeometryFactory</a>,
+    &dagger;<a href="https://www.fau.eu/">Friedrich-Alexander-Universität</a>,
+    &#42;<a href="https://team.inria.fr/titane/">INRIA Sophia Antipolis</a></h4>
 
-<p><i class="bi bi-book"></i>
-<a href="https://doc.cgal.org/6.0.3/Manual/index.html">CGAL-6.0.3 documentation</a></p>
+<p><br /></p>
+<div style="text-align:center;">
+  <a href="../../../../images/isosurfacing_teaser.png"><img src="../../../../images/isosurfacing_teaser.png" style="max-width:50%" /></a>
+</div>
 
-<p>CGAL 6.0.3 is a bug-fix release for <a href="/cgal-web/2024/09/27/cgal60/">CGAL 6.0</a>.</p>
+<p><br /></p>
+<p>"Isosurfacing", also known as "isosurface extraction" or "contouring", is the process
+of constructing the isosurface corresponding to a given value field and isovalue.
+Isosurfacing is often needed for volume visualization and for the simulation of physical phenomena.<p>
 
-<p>The list of fixed bugs since <a href="/cgal-web/2025/09/17/cgal602/">CGAL 6.0.2</a> can be accessed <a href="https://github.com/CGAL/cgal/issues?q=label%3AMerged_in_6.0.3+-label%3AMerged_in_6.0.2">on Github</a>.</p>
+<p>CGAL offers various packages and functions that can be used to generate meshes for various types of
+input data (see chapter <a href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing"> Mesh Generation
+</a>), most notably the package <a href="https://doc.cgal.org/latest/Manual/packages.html#PkgMesh3">3D Mesh Generation</a>,
+which is able to generate surface and volume meshes of implicit functions, 3D images, polyhedral
+domains, etc. This package is based on one of the most fundamental structures in computationa geometry,
+the Delaunay triangulation. However, a large category of classical isosurfacing methods had been
+missing from CGAL: the approaches based on contouring using volumetric grids.</p>
 
+<br />
+<h3>New Package: 3D Isosurfacing</h3>
+
+<p>The initial version of the new package, <a href="https://doc.cgal.org/latest/Isosurfacing_3/index.html">3D Isosurfacing</a>
+offers the following methods to extract isosurfaces from 3D value fields:</p>
+
+<ul>
+  <li><a href="https://doc.cgal.org/latest/Isosurfacing_3/index.html#SubSecMarchingCubes">Marching Cubes (MC)</a>:
+  a simple and efficient method that generates a triangle mesh, with almost no guarantees.</li>
+  <li><a href="https://doc.cgal.org/latest/Isosurfacing_3/index.html#SubSecTMC">Topologically Correct Marching Cubes (TMC)</a>:
+  an extension to Marching Cubes that provides additional guarantees for the output.</li>
+  <li><a href="https://doc.cgal.org/latest/Isosurfacing_3/index.html#SubSecDualContouring">Dual Contouring (DC)</a>:
+  a method that generates a polygon mesh, with a focus on sharp features recovery.</li>
+</ul>
+
+<p>These contouring techniques rely on the partition of the 3D space and of the field to construct
+an approximate representation of the isosurface. The 3D value field can be described through various
+representations: an implicit function, an interpolated set of discrete sampling values, a 3D image,
+etc. (see <a href="https://doc.cgal.org/latest/Isosurfacing_3/index.html#title8">the examples</a>
+in the documentation). The isovalue is user-defined. The output is a polygon soup, made either
+of triangles or quads depending on the method, and may consist of a single connected component,
+or multiple, disjoint components. Each method offer tuning options to select specific strategies,
+such as the placement at the center of the cell or optimized using Quadric Error Metrics (QEM)
+for Dual Contouring.</p>
+
+<br />
+<div style="text-align:center;">
+  <a href="../../../../images/isosurfacing_MC_DC.png"><img src="../../../../images/isosurfacing_MC_DC.png" style="max-width:75%" /></a>
+  <br /><small>Contouring a simple implicit function with Marching Cubes (left) and Dual Contouring (DC).</small>
+</div>
+
+<br />
+<h3>Topologically correct Marching Cubes</h3>
+
+<p>Topologically Correct Marching Cubes is an extension to the Marching Cubes algorithm which provides
+additional guarantees for the output [1]. More specifically, it generates a mesh
+that is homeomorphic to the trilinear interpolant of the input value field inside each cube.
+This means that the output mesh can accurately represent small complex features. For example,
+a tunnel of the isosurface within a single cell is topologically resolved. To achieve this,
+the algorithm can insert additional vertices within cells. Furthermore, the mesh is guaranteed
+to be 2-manifold and watertight, as long as the isosurface does not intersect the domain boundaries..</p>
+
+<br />
+<div style="text-align:center;">
+  <a href="../../../../images/isosurfacing_MC_TMC.png"><img src="../../../../images/isosurfacing_MC_TMC.png" style="max-width:95%" /></a>
+  <br /><small>Trilinearly interpolated surface (left), Marching Cubes (middle), and
+  Topologically Correct Marching Cubes (right). The latter correctly recovers the topology of the surface.</small>
+</div>
+
+<h4>Status</h4>
+
+<p>The package 3D Isosurfacing has been available since CGAL 6.1, released in the fall of 2025.</p>
+
+<i class="bi bi-book"></i>
+<a href="https://doc.cgal.org/latest/Manual/packages.html#PkgIsosurfacing3">Documentation of the "3D Isosurfacing" package</a>
+<br />
+<i class="bi bi-arrow-down-circle"></i>
+<a href="https://github.com/CGAL/cgal/tree/main">CGAL "main" branch on GitHub</a>
+<br /><br />
+
+<h4>Bibliography</h4>
+
+<p>
+[1] Roberto Grosso. Construction of topologically correct and manifold isosurfaces. In Computer Graphics Forum, volume 35, pages 187–196. Wiley Online Library, 2016.
+</p>
+</p></p>
 
           </div>
         </div>
@@ -166,23 +249,23 @@
           
             
             
-            <li class="active"><a href="/cgal-web/2026/01/26/cgal611/" class="active">CGAL 6.1.1 released</a>
+            <li class="active"><a href="/cgal-web/2026/01/01/2025_recap/" class="active">CGAL 2025 Highlights</a>
             <br><div style="font-size:12px">January 2026</div></li>
           
             
             
-            <li class="active"><a href="/cgal-web/2026/01/26/cgal603/" class="active">CGAL 6.0.3 released</a>
-            <br><div style="font-size:12px">January 2026</div></li>
+            <li class="active"><a href="/cgal-web/2025/12/31/Frechet_distance/" class="active">New in CGAL: Computation of Frechet Distance in Any Dimension</a>
+            <br><div style="font-size:12px">December 2025</div></li>
+          
+            
+            
+            <li class="active"><a href="/cgal-web/2025/10/10/Isosurfacing/" class="active">New in CGAL: Isosurfacing</a>
+            <br><div style="font-size:12px">October 2025</div></li>
           
             
             
             <li class="active"><a href="/cgal-web/2025/10/01/cgal61/" class="active">CGAL 6.1 released</a>
             <br><div style="font-size:12px">October 2025</div></li>
-          
-            
-            
-            <li class="active"><a href="/cgal-web/2025/09/17/cgal61-beta2/" class="active">CGAL 6.1 beta2 released</a>
-            <br><div style="font-size:12px">September 2025</div></li>
           
         </ul>
         <a href="/cgal-web/news.html" class="btn">Older posts...</a>
@@ -229,13 +312,16 @@
         $(function () {
           $('.bxslider').bxSlider({
             auto: true,
+            autoHover: true,
             speed: 0,
             pause: 5000,
             infiniteLoop: true,
             touchEnabled: false,
             pager: true,
             pagerCustom: '.custom-pager',
-            controls: false,
+            stopAutoOnClick: true,
+            controls: true,
+            keyboardEnabled: true,
             onSliderLoad: function (currentIndex) {
               $('.bxslider li').find('.slideTitle, .slideSubTitle').css({
                 transform: 'translate(0)',
