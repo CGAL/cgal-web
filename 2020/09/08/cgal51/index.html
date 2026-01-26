@@ -483,23 +483,23 @@ if the third party library TBB has been found and linked with, and to
           
             
             
-            <li class="active"><a href="/cgal-web/2026/01/01/2025_recap/" class="active">CGAL 2025 Highlights</a>
+            <li class="active"><a href="/cgal-web/2026/01/26/cgal611/" class="active">CGAL 6.1.1 released</a>
             <br><div style="font-size:12px">January 2026</div></li>
           
             
             
-            <li class="active"><a href="/cgal-web/2025/12/31/Frechet_distance/" class="active">New in CGAL: Computation of Frechet Distance in Any Dimension</a>
-            <br><div style="font-size:12px">December 2025</div></li>
-          
-            
-            
-            <li class="active"><a href="/cgal-web/2025/10/10/Isosurfacing/" class="active">New in CGAL: Isosurfacing</a>
-            <br><div style="font-size:12px">October 2025</div></li>
+            <li class="active"><a href="/cgal-web/2026/01/26/cgal603/" class="active">CGAL 6.0.3 released</a>
+            <br><div style="font-size:12px">January 2026</div></li>
           
             
             
             <li class="active"><a href="/cgal-web/2025/10/01/cgal61/" class="active">CGAL 6.1 released</a>
             <br><div style="font-size:12px">October 2025</div></li>
+          
+            
+            
+            <li class="active"><a href="/cgal-web/2025/09/17/cgal61-beta2/" class="active">CGAL 6.1 beta2 released</a>
+            <br><div style="font-size:12px">September 2025</div></li>
           
         </ul>
         <a href="/cgal-web/news.html" class="btn">Older posts...</a>
@@ -546,16 +546,13 @@ if the third party library TBB has been found and linked with, and to
         $(function () {
           $('.bxslider').bxSlider({
             auto: true,
-            autoHover: true,
             speed: 0,
             pause: 5000,
             infiniteLoop: true,
             touchEnabled: false,
             pager: true,
             pagerCustom: '.custom-pager',
-            stopAutoOnClick: true,
-            controls: true,
-            keyboardEnabled: true,
+            controls: false,
             onSliderLoad: function (currentIndex) {
               $('.bxslider li').find('.slideTitle, .slideSubTitle').css({
                 transform: 'translate(0)',
