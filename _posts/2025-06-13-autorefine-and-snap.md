@@ -3,7 +3,8 @@ layout: post
 title: "New in CGAL: Fixing Self-Intersections in Triangle Soups using Snap Rounding"
 description: ""
 category:
-tags: [""]
+tags: ["features"]
+image: /images/triangle_snap_error.png
 ---
 {% include JB/setup %}
 

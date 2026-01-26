@@ -3,7 +3,8 @@ layout: post
 title: "New in CGAL: Polygon Repair"
 description: ""
 category:
-tags: [""]
+tags: ["features"]
+image: /images/PolygonRepair_WindingNonZeroDifferent.svg
 ---
 {% include JB/setup %}
 

@@ -1,0 +1,37 @@
+---
+layout: page
+title: Features of 2025
+---
+{% assign posts_of_the_year = "" | split: "" %}
+{% for post in site.posts %}
+  {% assign year = post.date | date: "%Y" %}
+  {% if post.tags contains 'features' and year == '2025' %}
+    {% assign posts_of_the_year = posts_of_the_year | push: post %}
+  {% endif %}
+{% endfor %}
+{% assign posts_of_the_year = posts_of_the_year | reverse %}
+
+<div class="carrousel-wrapper">
+  <div class="carrousel">
+    <ul class="bxslider">
+      {% for post in posts_of_the_year %}
+        <li><img class="slide" src="{{ site.baseurl }}{{ post.image }}" />
+          <h2 class="slideTitle">{{ post.title }}</h2>
+        </li>
+      {% endfor %}
+    </ul>
+    <div class="custom-pager">
+      {% for post in posts_of_the_year %}
+        <a data-slide-index="{{ forloop.index0 }}" href=""></a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+All features released in 2025:
+
+<ul>
+{% for post in posts_of_the_year %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: '%B %d, %Y' }}</li>
+{% endfor %}
+</ul>
