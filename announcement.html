@@ -1,0 +1,293 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>CGAL 30th Anniversary and 50th Developer Meeting</title>
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="CGAL Editorial Board">
+
+    <link rel="icon" type="image/png" href="/cgal-web/images/cgal_logo/g-196x196-y.png">
+    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
+    <link rel="stylesheet" href="/cgal-web/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+
+    <!--[if lte IE 8]>
+	<link rel="stylesheet" href="css/leaflet.ie.css" />
+	<![endif]-->
+    <link rel="stylesheet" href="/cgal-web/assets/themes/cgal/main.css">
+
+    <!-- atom & rss feed -->
+    <link href="/cgal-web/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/cgal-web/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+
+    <!-- Navigation & Logo-->
+    <div class="mainmenu-wrapper">
+    <div class="container">
+    <div class="mobile-header">
+      <a href="/cgal-web/index.html" class="mobile-logo">
+        <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="30">
+      </a>
+      <button class="menu-toggle" aria-label="Menu">
+        Menu
+      </button>
+    </div>
+    <nav id="mainmenu" class="mainmenu" role="navigation">
+    <ul>
+    <li class="logo-wrapper hidden-xs hidden-sm hidden-md">
+    <a href="/cgal-web/index.html">
+    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
+    </a>
+    </li>
+
+    <li class="hidden-lg">
+    <a href="/cgal-web/index.html">
+    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
+    </a>
+    </li>
+
+    <li>
+    <a href="/cgal-web/project.html">Project</a>
+    </li>
+
+    <li>
+    <a href="/cgal-web/download.html">Download</a>
+    </li>
+
+    <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Packages</a>
+        <ul class="dropdown-menu">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometryProcessing" target="_blank">Geometry Processing</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
+        </ul>
+    </li>
+
+    <li>
+    <a href="/cgal-web/documentation.html">Documentation</a>
+    </li>
+
+    <li>
+    <a href="/cgal-web/news.html">News</a>
+    </li>
+
+    <li>
+    <a href="/cgal-web/media.html">Media</a>
+    </li>
+
+    <li>
+    <a href="/cgal-web/support.html">Support</a>
+    </li>
+
+    </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="section section-breadcrumbs">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 home-title">
+            <h1>CGAL 30th Anniversary and 50th Developer Meeting </h1>
+            <a style="text-align: right;" href="https://github.com/cgal/cgal" alt="The CGAL Project's github">
+              <span class="btn-dark-orange github-link fs-5">CGAL/cgal <i class="bi bi-github"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+<div class="section">
+  <div class="container">
+    
+
+
+<br>
+<div style="text-align:center;">
+  <a href="../../../../images/announcement.png"><img src="../../../../images/announcement.png" style="max-width:60%"/></a>
+</div>
+
+<br><br>
+<h1>A Special Event for a Double Anniversary</h1>
+
+<p>The year 2026 will see two major milestones for CGAL: the 30th anniversary of the project,
+and the 50th CGAL developer meeting!</p>
+
+<p>To celebrate these occasions, we are planning to append a special event to the next developer meeting
+to get together and meet people who have been involved with CGAL over the years, to share memories,
+stories, thoughts, feelings and opinions, both personal and concerning the past, present,
+and future of the project that connects us all: CGAL.</p>
+
+<p>The event is intended to be mostly informal and social, with lots of opportunities for individual interaction.
+But we also plan to have a short program, with presentations and discussions on CGAL, computation geometry,
+and open source projects. There are a few items on the program already, and we do not intend
+to fully "program" both days of the event. Nevertheless, there is still room for contributions.
+So please do not hesitate to contact the organizers at
+<a href="mailto:cgal-editorial-board@inria.fr">cgal-editorial-board@inria.fr</a>
+if you would like to contribute.</p>
+
+<br><hr>
+<h1>Schedule and Venue</h1>
+
+<p><b>Where:</b> <a href="https://www.inria.fr/en/inria-centre-universite-cote-azur">Inria Centre at Université Côte d'Azur, Sophia Antipolis (France)</a></p>
+
+<p><b>When:</b> April 20th-25th, 2026</p>
+
+<h2>Developer Meeting: April 20th-22nd, 2026</h2>
+
+<p>A "regular" CGAL developer meeting will take place from Monday to Wednesday.
+This meeting is intended for active CGAL developers and maintainers,
+but others are welcome to join as well.</p>
+
+<h2>Anniversary Event: April 23rd-24th, 2026</h2>
+
+<p>The anniversary event will take place on Thursday and Friday.
+The presentations and discussions will start on Thursday afternoon as to allow participants to arrive
+on Thursday morning. The event will conclude on Friday afternoon.</p>
+
+<p>On Thursday evening there will be a cocktail reception at INRIA, and on Friday evening a dinner party
+to celebrate the anniversary.</p>
+
+<h2>Saturday Outing: April 25th, 2026</h2>
+
+<p>On Saturday, April 25, 2026, we plan to have an outing in the area around Nice.</p>
+
+<br><hr>
+<h1>Logistics</h1>
+
+<p>The costs for the trip and the room have to be covered by you. Cocktail and dinner party will be covered by the organizers.</p>
+
+<p><b>Participation: Please register within the next two weeks via the following <a href="https://docs.google.com/forms/d/1LmrAJAKdW3v1nXJ77EKkYH409ROdZ8SaTV7z7UJ9aSY/edit?ts=69777e54">Google form</a>.</b></p>
+
+<p>Hoping to see you in Sophia Antipolis,<br>
+The CGAL Anniversary Event Organizers</p>
+
+<br><hr>
+<h1>Practical information</h1>
+<ul>
+  <li><i>Arriving by plane:</i> The nearest airport is <a href="https://www.nice.aeroport.fr/en">Nice Côte d'Azur Airport (NCE)</a>. From the airport, you can take a taxi, ride-sharing service, or <a href="https://itineraires-zou.maregionsud.fr/fr/horaires/Zou%20!%20Proximit%C3%A9/BUS/ligne/630/direction/OUTWARD/14633">public transportation</a> to reach Sophia Antipolis.</li>
+  <li><i>Arriving by train:</i> The nearest major train station is <a href="https://www.garesetconnexions.sncf/fr/gares-services/antibes">Gare d'Antibes</a>. From there, you can take a taxi, ride-sharing service, or <a href="https://www.envibus.fr/le-reseau/ligne/ligne-a">public transportation</a> to reach Sophia Antipolis.</li>
+  <li><i>Some hotels:</i>
+    <ul>
+      <li>In Sophia Antipolis: Moxy Sophia Antipolis (very recent, in front of Inria), Hotel Omega, Hôtel Novotel, Ibis, B&B Hotel, B&B Hotels Le Relais, Nemea Apparthotel Green Side.</li>
+      <li>In Antibes: Hôtel de l’Etoile, Modern Hotel, Hôtel le Collier, Hôtel Josse</li>
+    </ul>
+  </li>
+
+  <li><a href="https://www-sop.inria.fr/hephaistos/prototypes/carte_inria.jpg">Map of the INRIA Centre buildings</a></li>
+</ul>
+
+
+  </div>
+</div>
+
+
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="footer-copyright">
+            <div style="float: left;">
+              <a href="https://bsky.app/profile/thecgalproject.bsky.social" alt="The CGAL Project on Bluesky">
+                <img src="/cgal-web/images/icons/bluesky.svg" class="center-block btn-dark-orange" alt="Bluesky" height="16"></img>
+              </a>
+            </div>
+            <div style="float: left; width: 10px;">&nbsp;</div>
+            <div style="float: left;">
+              <a href="https://twitter.com/TheCGALProject" alt="The CGAL Project's Twitter">
+                <img src="/cgal-web/images/icons/twitter.svg" class="center-block btn-dark-orange" alt="Twitter" height="16"></img>
+              </a>
+            </div>
+            &copy; 1995-2026 The CGAL Project. All rights reserved.
+            <div style="float: right;">
+              <a href="https://cgal.geometryfactory.com/CGAL/Members/wiki/Main_Page" alt="Password protected access to the Developer Wiki">
+                <i class="bi bi-file-lock fs-5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascripts -->
+    <script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/cgal-web/node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+      <script src="/cgal-web/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
+      <script>
+        $(function () {
+          $('.bxslider').bxSlider({
+            auto: true,
+            autoHover: true,
+            speed: 0,
+            pause: 5000,
+            infiniteLoop: true,
+            touchEnabled: false,
+            pager: true,
+            pagerCustom: '.custom-pager',
+            stopAutoOnClick: true,
+            controls: true,
+            keyboardEnabled: true,
+            onSliderLoad: function (currentIndex) {
+              $('.bxslider li').find('.slideTitle, .slideSubTitle').css({
+                transform: 'translate(0)',
+                opacity: 1
+              });
+              $('.bxslider li').eq(currentIndex).find('.slideTitle, .slideSubTitle').addClass('animatedTitle');
+            },
+            onSlideBefore: function ($slideElement, oldIndex, newIndex) {
+              $($slideElement).siblings().find('.slideTitle, .slideSubTitle').removeClass('animatedTitle');
+              $($slideElement).find('.slideTitle, .slideSubTitle').addClass('animatedTitle');
+              $($slideElement).siblings().find('.slide').removeClass('slideInFromRight');
+              $($slideElement).find('.slide').addClass('slideInFromRight');
+            }
+          });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+          const menuToggle = document.querySelector('.menu-toggle');
+          const mainMenu = document.getElementById('mainmenu');
+
+          menuToggle.addEventListener('click', function() {
+              mainMenu.classList.toggle('active');
+              menuToggle.classList.toggle('active');
+          });
+      });
+      </script>
+      <script src="/cgal-web/node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+    </body>
+</html>
+
