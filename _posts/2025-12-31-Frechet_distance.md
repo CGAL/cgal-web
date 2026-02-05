@@ -9,11 +9,11 @@ tags: [""]
 
 <h3><a href="https://www-sop.inria.fr/members/Andre.Nusser/">André Nusser</a>&deg;,
 <a href="https://act.iti.kit.edu/people/marvinkuennemann">Marvin Künnemann</a>&dagger;, and
-<a href="https://people.mpi-inf.mpg.de/~kbringma/"> Karl Bringmann</a>&deg;;
+<a href="https://people.mpi-inf.mpg.de/~kbringma/"> Karl Bringmann</a>&#42;
 </h3>
-<h4>&deg;<a href="https://www.inria.fr/en/inria-centre-universite-cote-azur">CNRS / Inria Center at Université Côte d’Azur</a>,
-    &dagger;<a href="https://www.kit.edu/english/">Karlsruhe Institute of Technology</a>,
-    &#42;<a href="https://www.mpi-inf.mpg.de/home">Max Planck Institute for Informatics</a></h4>
+<h4>&deg; <a href="https://www.inria.fr/en/inria-centre-universite-cote-azur">CNRS / Inria Center at Université Côte d’Azur</a>,<br>
+    &dagger; <a href="https://www.kit.edu/english/">Karlsruhe Institute of Technology</a>,<br>
+    &#42; <a href="https://www.mpi-inf.mpg.de/home">Max Planck Institute for Informatics</a></h4>
 
 <br>
 <p>The Fréchet distance is a classical dissimilarity measure between polylines.
@@ -41,12 +41,13 @@ considers the polylines as continuous objects and takes into account the orderin
 <br>
 <h3>New Package: dD Fréchet Distance</h3>
 
-<p>This new package provides the means to compute a bounded approximation of the Fréchet distance between
-two polylines, as well as a near neighbor data structure for polylines under the Fréchet distance,
-both in d-dimensional Euclidean space.</p>
+<p>This new package provides the means to compute an approximation of the Fréchet distance between
+two polylines that is guaranteed to be within an arbitrarily small, user-provided bound.
+In addition, a near neighbor data structure for polylines under the Fréchet distance is offered.
+These functionalities are provided for polylines in any dimension.</p>
 
 <p>The following code snippet demonstrates how to compute the Fréchet distance between
-two polylines, with a maximal error of 0.000001 to the exact distance:</p>
+two polylines, with a maximal additive error of 0.000001 to the exact distance:</p>
 
 ```cpp
   std::vector<Point> pA, pB;
@@ -69,10 +70,10 @@ two polylines, with a maximal error of 0.000001 to the exact distance:</p>
 this package guarantees the correctness of the result, provided functions are called using a kernel offering
 filtered predicates or exact predicates, such as provided by the kernel <code>CGAL::Exact_predicates_and_inexact_constructions_kernel</code>.</p>
 
-<p>The implementation is based on a series of state-of-the-art papers by Bringmann et al. [2, 3],
-which significantly improved on previous state of the art. Furthermore,
-the algorithm is not concerned by the curse of dimensionality.
-We refer to the papers themselves for a very detailed practical analysis.</p>
+<p>The implementation is based on state-of-the-art papers by Bringmann et al. [2, 3],
+which significantly improved on previous research. Furthermore, the algorithm is not
+affected by the curse of dimensionality; we refer to the papers themselves
+for a very detailed practical analysis.</p>
 
 <h3>Status</h3>
 
