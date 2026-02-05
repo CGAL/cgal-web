@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2026-01-30T14:29:18+00:00</updated>
+ <updated>2026-02-05T14:42:21+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -246,11 +246,11 @@ symmetric hyperbolic surface of genus 2&lt;/p&gt;
    <content type="html">
 &lt;h3&gt;&lt;a href=&quot;https://www-sop.inria.fr/members/Andre.Nusser/&quot;&gt;André Nusser&lt;/a&gt;&amp;deg;,
 &lt;a href=&quot;https://act.iti.kit.edu/people/marvinkuennemann&quot;&gt;Marvin Künnemann&lt;/a&gt;&amp;dagger;, and
-&lt;a href=&quot;https://people.mpi-inf.mpg.de/~kbringma/&quot;&gt; Karl Bringmann&lt;/a&gt;&amp;deg;;
+&lt;a href=&quot;https://people.mpi-inf.mpg.de/~kbringma/&quot;&gt; Karl Bringmann&lt;/a&gt;&amp;#42;
 &lt;/h3&gt;
-&lt;h4&gt;&amp;deg;&lt;a href=&quot;https://www.inria.fr/en/inria-centre-universite-cote-azur&quot;&gt;CNRS / Inria Center at Université Côte d’Azur&lt;/a&gt;,
-    &amp;dagger;&lt;a href=&quot;https://www.kit.edu/english/&quot;&gt;Karlsruhe Institute of Technology&lt;/a&gt;,
-    &amp;#42;&lt;a href=&quot;https://www.mpi-inf.mpg.de/home&quot;&gt;Max Planck Institute for Informatics&lt;/a&gt;&lt;/h4&gt;
+&lt;h4&gt;&amp;deg; &lt;a href=&quot;https://www.inria.fr/en/inria-centre-universite-cote-azur&quot;&gt;CNRS / Inria Center at Université Côte d’Azur&lt;/a&gt;,&lt;br /&gt;
+    &amp;dagger; &lt;a href=&quot;https://www.kit.edu/english/&quot;&gt;Karlsruhe Institute of Technology&lt;/a&gt;,&lt;br /&gt;
+    &amp;#42; &lt;a href=&quot;https://www.mpi-inf.mpg.de/home&quot;&gt;Max Planck Institute for Informatics&lt;/a&gt;&lt;/h4&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;The Fréchet distance is a classical dissimilarity measure between polylines.
@@ -278,12 +278,13 @@ considers the polylines as continuous objects and takes into account the orderin
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h3&gt;New Package: dD Fréchet Distance&lt;/h3&gt;
 
-&lt;p&gt;This new package provides the means to compute a bounded approximation of the Fréchet distance between
-two polylines, as well as a near neighbor data structure for polylines under the Fréchet distance,
-both in d-dimensional Euclidean space.&lt;/p&gt;
+&lt;p&gt;This new package provides the means to compute an approximation of the Fréchet distance between
+two polylines that is guaranteed to be within an arbitrarily small, user-provided bound.
+In addition, a near neighbor data structure for polylines under the Fréchet distance is offered.
+These functionalities are provided for polylines in any dimension.&lt;/p&gt;
 
 &lt;p&gt;The following code snippet demonstrates how to compute the Fréchet distance between
-two polylines, with a maximal error of 0.000001 to the exact distance:&lt;/p&gt;
+two polylines, with a maximal additive error of 0.000001 to the exact distance:&lt;/p&gt;
 
 &lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vector&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pB&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;CGAL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read_linestring_WKT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;wkt/moebius.wkt&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
@@ -305,10 +306,10 @@ two polylines, with a maximal error of 0.000001 to the exact distance:&lt;/p&gt;
 this package guarantees the correctness of the result, provided functions are called using a kernel offering
 filtered predicates or exact predicates, such as provided by the kernel &lt;code&gt;CGAL::Exact_predicates_and_inexact_constructions_kernel&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;The implementation is based on a series of state-of-the-art papers by Bringmann et al. [2, 3],
-which significantly improved on previous state of the art. Furthermore,
-the algorithm is not concerned by the curse of dimensionality.
-We refer to the papers themselves for a very detailed practical analysis.&lt;/p&gt;
+&lt;p&gt;The implementation is based on state-of-the-art papers by Bringmann et al. [2, 3],
+which significantly improved on previous research. Furthermore, the algorithm is not
+affected by the curse of dimensionality; we refer to the papers themselves
+for a very detailed practical analysis.&lt;/p&gt;
 
 &lt;h3&gt;Status&lt;/h3&gt;
 
