@@ -13,7 +13,7 @@ tags: [""]
 </h3>
 <h4>&deg; <a href="https://www.inria.fr/en/inria-centre-universite-cote-azur">CNRS / Inria Center at Université Côte d’Azur</a>,<br>
     &dagger; <a href="https://www.kit.edu/english/">Karlsruhe Institute of Technology</a>,<br>
-    &#42; <a href="https://www.mpi-inf.mpg.de/home">Max Planck Institute for Informatics</a></h4>
+    &#42; <a href="https://www.uni-saarland.de/en">Saarland University</a> and <a href="https://www.mpi-inf.mpg.de/home">Max Planck Institute for Informatics</a></h4>
 
 <br>
 <p>The Fréchet distance is a classical dissimilarity measure between polylines.
