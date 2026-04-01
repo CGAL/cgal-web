@@ -59,12 +59,6 @@ Engineers describe the design goal as "Rheya in Tarkovsky's <em>Solaris</em>"</p
 <blockquote class="twitter-tweet"><p lang="fr" dir="ltr">Yann Le Cun ouvre une nouvelle page de l’intelligence artificielle. C’est la France des chercheurs, des bâtisseurs et des audacieux. Bravo ! <a href="https://t.co/hVxMMFoabJ">https://t.co/hVxMMFoabJ</a></p>&mdash; Emmanuel Macron (@EmmanuelMacron) <a href="https://twitter.com/EmmanuelMacron/status/2031288199503388717?ref_src=twsrc%5Etfw">March 10, 2026</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 
-<blockquote>
-<p>"Yann LeCun ouvre une nouvelle page de l’intelligence artificielle. C’est la France des chercheurs,
-des bâtisseurs et des audacieux. Bravo !"</p>
-<p><small>President Emmanuel Macron posted on X.</small></p>
-</blockquote>
-
 <h3>A Flying Start</h3>
 
 <p>Because AMI Labs focuses primarily on software, the company has partnered with the Polish humanoid robotics
@@ -81,7 +75,8 @@ and, last but not least, <a href="https://rocq-prover.org/">Rocq</a>, a trustwor
 and dependently typed programming language for mechanised reasoning.
 </p>
 
-<p>For that reason AMI Labs will, over the next three years, donate 0.1% of the $1 billion raised to these Open Source projects</p>
+<p>For that reason, AMI Labs will actively apply a trickle-down funding approach and, over the next three years, 
+donate 0.1% of the $1 billion raised to these Open Source projects.</p>
 
 <blockquote>
 <p>"Using Open Source software developed mainly in France, we stand on the shoulders of giants."</p>
