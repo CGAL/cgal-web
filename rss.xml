@@ -5,10 +5,104 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2026-03-31T19:43:05+00:00</lastBuildDate>
-        <pubDate>2026-03-31T19:43:05+00:00</pubDate>
+        <lastBuildDate>2026-04-01T07:09:38+00:00</lastBuildDate>
+        <pubDate>2026-04-01T07:09:38+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>CGAL Donor Portrait: AMI Labs</title>
+                <description>
+&lt;p&gt;French artificial intelligence startup &lt;a href=&quot;https://amilabs.xyz/&quot;&gt;AMI Labs&lt;/a&gt;
+(standing for Advanced Machine Intelligence) raised $1 billion three weeks ago to develop
+AI systems designed to understand the physical world &quot;in the way animals and humans do&quot;,
+unlike the language-based models behind chatbots such as ChatGPT.
+&lt;/p&gt;
+
+&lt;p&gt;AMI Labs expects to produce &quot;fairly universal intelligent systems&quot; within five years,
+a timeline that investors described as &quot;ambitious but compatible with current funding conditions.&quot;&lt;/p&gt;
+
+&lt;h3&gt;Chauffeur&lt;/h3&gt;
+
+&lt;p&gt;In order to become profitable within twelve months, the first product milestone,
+code-named &lt;em&gt;Chauffeur&lt;/em&gt;, is a humanoid private driver designed to make autonomous driving
+a reality much faster than most car manufacturers have ever envisioned.&lt;/p&gt;
+
+&lt;p&gt;Early profitability was a condition imposed by investors, among them Toyota Ventures,
+which is pushing for solutions compatible with the existing global fleet of cars,
+estimated at more than 1.4 billion vehicles.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&quot;Make the driver intelligent, not the car.&quot;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;Yann LeCun&lt;/small&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;Chauffeur&lt;/em&gt; sits in the driver&apos;s seat, fastens the seatbelt,
+adjusts the mirrors, and performs the usual pre-driving ritual familiar to human drivers.&lt;/p&gt;
+
+&lt;p&gt;It manipulates the pedals for the accelerator, brakes, and clutch with its feet,
+inserts the key, changes gears, turns the steering wheel,
+and operates dashboard controls with its hands.&lt;/p&gt;
+
+&lt;p&gt;The system can refuel at gas stations, pay for parking,
+and in the event of a flat tire, replace the wheel using tools stored in the trunk.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Chauffeur&lt;/em&gt; is powered directly by the vehicle,
+drawing electricity from the cigarette lighter.&lt;/p&gt;
+
+&lt;p&gt;To reduce costs, the most basic version will consist of a lightweight skeletal frame
+with minimal cosmetic elements.
+An additional benefit is that it can fold itself away like a Transformer or a Brompton bicycle
+and be stored in the trunk when five seats are required.&lt;/p&gt;
+
+&lt;p&gt;This version targets the European and US mass markets,
+as well as the Global South, where many decommissioned cars enjoy a long second life.&lt;/p&gt;
+
+&lt;p&gt;A premium model will target the luxury segment,
+with the explicit requirement that the &lt;em&gt;Chauffeur&lt;/em&gt; be indistinguishable from a human driver.
+Engineers describe the design goal as &quot;Rheya in Tarkovsky&apos;s &lt;em&gt;Solaris&lt;/em&gt;&quot;&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;fr&quot; dir=&quot;ltr&quot;&gt;Yann Le Cun ouvre une nouvelle page de l’intelligence artificielle. C’est la France des chercheurs, des bâtisseurs et des audacieux. Bravo ! &lt;a href=&quot;https://t.co/hVxMMFoabJ&quot;&gt;https://t.co/hVxMMFoabJ&lt;/a&gt;&lt;/p&gt;&amp;mdash; Emmanuel Macron (@EmmanuelMacron) &lt;a href=&quot;https://twitter.com/EmmanuelMacron/status/2031288199503388717?ref_src=twsrc%5Etfw&quot;&gt;March 10, 2026&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;h3&gt;A Flying Start&lt;/h3&gt;
+
+&lt;p&gt;Because AMI Labs focuses primarily on software, the company has partnered with the Polish humanoid robotics
+manufacurer &lt;a href=&quot;https://www.clonerobotics.com/&quot;&gt;Clone Robotics&lt;/a&gt;, the first company
+producing a biomorphic hand which is in form and function fully equivalent to the human hand.&lt;/p&gt;
+
+&lt;p&gt;On the software side, AMI Labs is developing &lt;em&gt;world models&lt;/em&gt; that learn abstract representations of real-world sensor data,
+ignoring unpredictable details, and making predictions in &lt;em&gt;representation space&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Representation space means geometric entities, means triangle meshes, means CGAL, as well as other Open Source geometry libraries
+such as &lt;a href=&quot;https://github.com/BrunoLevy/geogram&quot;&gt;Geogram&lt;/a&gt; and &lt;a href=&quot;https://dev.opencascade.org/&quot;&gt;OpenCascade&lt;/a&gt;,
+but also simulation frameworks such as &lt;a href=&quot;https://www.sofa-framework.org/&quot;&gt;Sofa&lt;/a&gt; and &lt;a href=&quot;https://www.salome-platform.org/&quot;&gt;Salome&lt;/a&gt;,
+and, last but not least, &lt;a href=&quot;https://rocq-prover.org/&quot;&gt;Rocq&lt;/a&gt;, a trustworthy, industrial-strength interactive theorem prover
+and dependently typed programming language for mechanised reasoning.
+&lt;/p&gt;
+
+&lt;p&gt;For that reason, AMI Labs will actively apply a trickle-down funding approach and, over the next three years, 
+donate 0.1% of the $1 billion raised to these Open Source projects.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&quot;Using Open Source software developed mainly in France, we stand on the shoulders of giants.&quot;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;Alexandre Lebrun, CEO of AMI Labs&lt;/small&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;What exactly will be used from CGAL is not yet fully clear, but point-cloud processing,
+shape detection, and surface reconstruction are among the leading candidates for the
+interior &lt;em&gt;perception system&lt;/em&gt;. &lt;/p&gt;
+
+&lt;p&gt;Even when pre-trained on typical car interiors,
+&lt;em&gt;Chauffeur&lt;/em&gt; must remain capable of identifying objects
+placed on the dashboard and deciding whether to ignore them,
+move them aside, or comment on them politely.&lt;/p&gt;
+
+</description>
+                <link>http://www.cgal.org/news/2026/04/01/DonorPortrait-AMILabs/</link>
+                <guid>http://www.cgal.org/news/2026/04/01/DonorPortrait-AMILabs</guid>
+                <pubDate>2026-04-01T00:00:00+00:00</pubDate>
+        </item>
 
         <item>
                 <title>New in CGAL: 2D Alpha Wrapping</title>
