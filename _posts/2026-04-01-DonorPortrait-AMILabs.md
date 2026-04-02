@@ -92,3 +92,8 @@ interior <em>perception system</em>. </p>
 placed on the dashboard and deciding whether to ignore them,
 move them aside, or comment on them politely.</p>
 
+
+<p>The above story was only an April fools joke, although who knows what will happen.  The $1 billion raised by an AI startup, however, is true. 
+The April fools joke came with a <a href="https://www.cgal.org/April26/index.html">gallery</a>.</p>
+
+
