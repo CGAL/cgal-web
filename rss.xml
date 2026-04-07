@@ -5,10 +5,47 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2026-04-02T06:44:32+00:00</lastBuildDate>
-        <pubDate>2026-04-02T06:44:32+00:00</pubDate>
+        <lastBuildDate>2026-04-07T11:23:30+00:00</lastBuildDate>
+        <pubDate>2026-04-07T11:23:30+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>CGAL Turns 30: Two Special Events for the Open Source Community</title>
+                <description>
+&lt;h3&gt;&lt;a href=&quot;/cgal-web/people.html&quot;&gt;The CGAL Project&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;a href=&quot;/cgal-web/images/anniversary_2026_event.png&quot;&gt;&lt;img src=&quot;/cgal-web/images/anniversary_2026_event.png&quot; style=&quot;max-width:80%&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;2026 is a big year for CGAL: we celebrate the 30th anniversary of the project
+alongside our 50th CGAL Developer Meeting!&lt;/p&gt;
+
+&lt;p&gt;To mark these milestones, we invite you to two public, half-day events dedicated to the world of Open Source:
+&lt;ul&gt;
+  &lt;li&gt;&lt;b&gt;Technical Showcases of CGAL, SOFA, and VTK:&lt;/b&gt; in-depth technical presentations of three major geometric libraries&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;Panel Discussion, &quot;Open Source, More Than Just a License&quot;:&lt;/b&gt; strategies and challenges of Open Source projects, featuring:
+  &lt;ul&gt;
+  &lt;li&gt;Yves Bertot (&lt;a href=&quot;https://rocq-prover.org/&quot;&gt;Rocq&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Mathieu Bredif (&lt;a href=&quot;https://www.ign.fr/&quot;&gt;IGN&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Guillaume Gisbert (&lt;a href=&quot;https://vtk.org/&quot;&gt;VTK&lt;/a&gt;, &lt;a href=&quot;https://www.paraview.org/&quot;&gt;ParaView&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Andreas Fabri (CGAL)&lt;/li&gt;
+  &lt;li&gt;Bruno Lévy (&lt;a href=&quot;https://github.com/BrunoLevy/geogram&quot;&gt;Geogram&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Vincent Picavet (&lt;a href=&quot;https://oslandia.com/en/&quot;&gt;Oslandia&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Hugo Talbot (&lt;a href=&quot;https://www.sofa-framework.org/&quot;&gt;SOFA&lt;/a&gt;)&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Full Program &amp;amp; &lt;b&gt;mandatory&lt;/b&gt; registration &lt;a href=&quot;/cgal-web/open_source_event_2026.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+                <link>http://www.cgal.org/2026/04/07/Open_event_2026/</link>
+                <guid>http://www.cgal.org/2026/04/07/Open_event_2026</guid>
+                <pubDate>2026-04-07T00:00:00+00:00</pubDate>
+        </item>
 
         <item>
                 <title>CGAL Donor Portrait: AMI Labs</title>
