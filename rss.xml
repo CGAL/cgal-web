@@ -5,8 +5,8 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2026-05-11T13:00:13+00:00</lastBuildDate>
-        <pubDate>2026-05-11T13:00:13+00:00</pubDate>
+        <lastBuildDate>2026-05-11T13:05:26+00:00</lastBuildDate>
+        <pubDate>2026-05-11T13:05:26+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -20,6 +20,7 @@
   &lt;a href=&quot;../../../../images/acd_results.jpg&quot;&gt;&lt;img src=&quot;../../../../images/acd_results.jpg&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
   &lt;br /&gt;&lt;small&gt;A camel mesh decomposed into 4, 8 and 12 convex volumes.&lt;/small&gt;
 &lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;The upcoming CGAL release 6.2, will introduce the method &lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/main/Convex_decomposition_3/index.html#title4&quot;&gt;Approximate Convex Decomposition&lt;/a&gt;. Convex decomposition of 3D objects have applications ranging from collision detection and rigid body simulation to motion planning and geometric approximation. While exact convex decomposition algorithms provide strong guarantees, they can produce a large number of components and can be NP-hard if the minimal number of components is required.&lt;/p&gt;
 
 &lt;p&gt;The approximate convex decomposition addresses these limitations by partitioning closed triangle meshes into a set of convex components while providing direct control over the approximation quality and the number of components. Instead of enforcing exact convexity, the algorithm iteratively detects highly concave regions and introduces cuts that reduce the overall concavity of the shape. The decomposition output is represented as a collection of submeshes that can easily be reused in applications relying on Surface_mesh or Polygon Mesh Processing.&lt;/p&gt;
@@ -65,6 +66,7 @@ officially released in the upcoming version of CGAL, CGAL 6.2, scheduled for Jun
   &lt;a href=&quot;../../../../images/barycentric_overview.svg&quot;&gt;&lt;img src=&quot;../../../../images/barycentric_overview.svg&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
   &lt;br /&gt;&lt;small&gt;Wachspress, discrete harmonic, mean value, and harmonic coordinate functions for a convex polygon plotted with respect to the marked vertex.&lt;/small&gt;
 &lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;One application of barycentric coordinates is shape deformation. The barycentric coordinates of vertex positions of an input object are calculated with respect to an enclosing convex polyhedron, e.g., a bounding box. The deformed object can then be obtained by retrieving the vertex positions deforming the enclosing polyhedron.&lt;/p&gt;
 
