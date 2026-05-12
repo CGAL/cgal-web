@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "New in CGAL: Approximate Convex Decomposition"
-description: ""
+description: "Covering a mesh by tight convex volumes"
 category:
 tags: [""]
 ---
