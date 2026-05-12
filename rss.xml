@@ -5,8 +5,8 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2026-05-11T13:05:26+00:00</lastBuildDate>
-        <pubDate>2026-05-11T13:05:26+00:00</pubDate>
+        <lastBuildDate>2026-05-12T09:08:05+00:00</lastBuildDate>
+        <pubDate>2026-05-12T09:08:05+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -79,7 +79,7 @@ officially released in the upcoming version of CGAL, CGAL 6.2, scheduled for Jun
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h3&gt;Status&lt;/h3&gt;
 
-&lt;p&gt;The package Barycentric_coordinates_3 is already integrated in CGAL&apos;s &quot;main&quot; branch
+&lt;p&gt;The package &lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/main/Barycentric_coordinates_3/index.html&quot;&gt;3D Generalized Barycentric Coordinates&lt;/a&gt; is already integrated in CGAL&apos;s &quot;main&quot; branch
 on the &lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;, and will be
 officially released in the upcoming version of CGAL, CGAL 6.2, scheduled for June 2026.&lt;/p&gt;
 
