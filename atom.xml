@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2026-05-12T09:08:05+00:00</updated>
+ <updated>2026-05-13T07:32:50+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -19,6 +19,7 @@
    <id>http://www.cgal.org/2026/05/11/approx_convex_decomposition</id>
    <content type="html">
 &lt;h3&gt;&lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Sven Oesau&lt;/a&gt;&lt;/h3&gt;
+&lt;h4&gt;&lt;a href=&quot;https://geometryfactory.com/&quot;&gt;GeometryFactory&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
@@ -64,7 +65,7 @@ officially released in the upcoming version of CGAL, CGAL 6.2, scheduled for Jun
 &lt;a href=&quot;https://www.linkedin.com/in/dmitry-anisimov/&quot;&gt;Dmitry Anisimov&lt;/a&gt;&lt;/h3&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;The upcoming CGAL release 6.2, will introduce the package &lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/main/Barycentric_coordinates_3/index.html&quot;&gt;3D Generalized Barycentric Coordinates&lt;/a&gt; which was developed during a &lt;a href=&quot;https://summerofcode.withgoogle.com/&quot;&gt;Google Summer of Code&lt;/a&gt;. The 3D package complements the existing &lt;a href=&quot;https://doc.cgal.org/latest/Barycentric_coordinates_2/index.html&quot;&gt;2D package&lt;/a&gt;. Barycentric coordinates are a fundamental tool in geometry processing, interpolation, and deformation. While classical barycentric coordinates are defined with respect to simplices, many modern applications require coordinates over more general polyhedral shapes. This package implements several widely used closed-form formulations, including Wachspress, discrete harmonic, and mean value coordinates, all adapted to convex 3D polyhedra with triangular faces.&lt;/p&gt;
+&lt;p&gt;The upcoming CGAL release 6.2, will introduce the package &lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/main/Barycentric_coordinates_3/index.html&quot;&gt;3D Generalized Barycentric Coordinates&lt;/a&gt;. A first version was implemented during &lt;a href=&quot;https://summerofcode.withgoogle.com/&quot;&gt;Google Summer of Code&lt;/a&gt;. The 3D package complements the existing &lt;a href=&quot;https://doc.cgal.org/latest/Barycentric_coordinates_2/index.html&quot;&gt;2D package&lt;/a&gt;. Barycentric coordinates are a fundamental tool in geometry processing, interpolation, and deformation. While classical barycentric coordinates are defined with respect to simplices, many modern applications require coordinates over more general polyhedral shapes. This package implements several widely used closed-form formulations, including Wachspress, discrete harmonic, and mean value coordinates, all adapted to convex 3D polyhedra with triangular faces.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
@@ -89,11 +90,10 @@ on the &lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repos
 officially released in the upcoming version of CGAL, CGAL 6.2, scheduled for June 2026.&lt;/p&gt;
 
 &lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
-&lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/main/Barycentric_coordinates_3/index.html&quot;&gt;Documentation of the package Barycentric_coordinates_3&lt;/a&gt;
+&lt;a href=&quot;https://doc.cgal.org/6.2/Barycentric_coordinates_3/index.html&quot;&gt;Documentation of the package Barycentric_coordinates_3&lt;/a&gt;
 &lt;br /&gt;
 &lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/tree/main&quot;&gt;CGAL “main” branch on GitHub&lt;/a&gt;&lt;/p&gt;
-
 </content>
  </entry>
  
