@@ -12,7 +12,7 @@ tags: [""]
 <a href="https://www.linkedin.com/in/dmitry-anisimov/">Dmitry Anisimov</a></h3>
 
 <br>
-<p>The upcoming CGAL release 6.2, will introduce the package <a href="https://cgal.geometryfactory.com/CGAL/doc/main/Barycentric_coordinates_3/index.html">3D Generalized Barycentric Coordinates</a> which was developed during a <a href="https://summerofcode.withgoogle.com/">Google Summer of Code</a>. The 3D package complements the existing <a href="https://doc.cgal.org/latest/Barycentric_coordinates_2/index.html">2D package</a>. Barycentric coordinates are a fundamental tool in geometry processing, interpolation, and deformation. While classical barycentric coordinates are defined with respect to simplices, many modern applications require coordinates over more general polyhedral shapes. This package implements several widely used closed-form formulations, including Wachspress, discrete harmonic, and mean value coordinates, all adapted to convex 3D polyhedra with triangular faces.</p>
+<p>The upcoming CGAL release 6.2, will introduce the package <a href="https://cgal.geometryfactory.com/CGAL/doc/main/Barycentric_coordinates_3/index.html">3D Generalized Barycentric Coordinates</a>. A first version was implemented during <a href="https://summerofcode.withgoogle.com/">Google Summer of Code</a>. The 3D package complements the existing <a href="https://doc.cgal.org/latest/Barycentric_coordinates_2/index.html">2D package</a>. Barycentric coordinates are a fundamental tool in geometry processing, interpolation, and deformation. While classical barycentric coordinates are defined with respect to simplices, many modern applications require coordinates over more general polyhedral shapes. This package implements several widely used closed-form formulations, including Wachspress, discrete harmonic, and mean value coordinates, all adapted to convex 3D polyhedra with triangular faces.</p>
 
 <br>
 <div style="text-align:center;">
@@ -37,8 +37,7 @@ on the <a href="https://github.com/CGAL/cgal/">CGAL GitHub repository</a>, and w
 officially released in the upcoming version of CGAL, CGAL 6.2, scheduled for June 2026.</p>
 
 <i class="bi bi-book"></i>
-<a href="https://cgal.geometryfactory.com/CGAL/doc/main/Barycentric_coordinates_3/index.html">Documentation of the package Barycentric_coordinates_3</a>
+<a href="https://doc.cgal.org/6.2/Barycentric_coordinates_3/index.html">Documentation of the package Barycentric_coordinates_3</a>
 <br>
 <i class="bi bi-arrow-down-circle"></i>
 <a href="https://github.com/CGAL/cgal/tree/main">CGAL "main" branch on GitHub</a>
-

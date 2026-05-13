@@ -8,6 +8,7 @@ tags: [""]
 {% include JB/setup %}
 
 <h3><a href="https://geometryfactory.com/who-we-are/">Sven Oesau</a></h3>
+<h4><a href="https://geometryfactory.com/">GeometryFactory</a></h4>
 <br>
 
 <div style="text-align:center;">
