@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2026-05-21T14:13:32+00:00</updated>
+ <updated>2026-05-21T14:15:04+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>CGAL 6.2 beta1 released</title>
-   <link href="http://www.cgal.org/2026/05/21/cgal62-beta2/"/>
+   <link href="http://www.cgal.org/2026/05/21/cgal62-beta1/"/>
    <updated>2026-05-21T00:00:00+00:00</updated>
-   <id>http://www.cgal.org/2026/05/21/cgal62-beta2</id>
+   <id>http://www.cgal.org/2026/05/21/cgal62-beta1</id>
    <content type="html">
 &lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v6.2-beta1&quot;&gt;Download CGAL-6.2-beta1&lt;/a&gt;&lt;/p&gt;
