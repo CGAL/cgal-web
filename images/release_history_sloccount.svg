@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"  standalone="no"?>
+<svg 
+ viewBox="0 0 800 400"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+
+<title>Gnuplot</title>
+<desc>Produced by GNUPLOT 6.0.3 patchlevel 3 </desc>
+
+<g id="gnuplot_canvas">
+
+<rect x="0" y="0" width="800" height="400" fill="none"/>
+<defs>
+
+	<circle id='gpDot' r='0.5' stroke-width='0.5' stroke='currentColor'/>
+	<path id='gpPt0' stroke-width='0.222' stroke='currentColor' d='M-1,0 h2 M0,-1 v2'/>
+	<path id='gpPt1' stroke-width='0.222' stroke='currentColor' d='M-1,-1 L1,1 M1,-1 L-1,1'/>
+	<path id='gpPt2' stroke-width='0.222' stroke='currentColor' d='M-1,0 L1,0 M0,-1 L0,1 M-1,-1 L1,1 M-1,1 L1,-1'/>
+	<rect id='gpPt3' stroke-width='0.222' stroke='currentColor' x='-1' y='-1' width='2' height='2'/>
+	<rect id='gpPt4' stroke-width='0.222' stroke='currentColor' fill='currentColor' x='-1' y='-1' width='2' height='2'/>
+	<circle id='gpPt5' stroke-width='0.222' stroke='currentColor' cx='0' cy='0' r='1'/>
+	<use xlink:href='#gpPt5' id='gpPt6' fill='currentColor' stroke='none'/>
+	<path id='gpPt7' stroke-width='0.222' stroke='currentColor' d='M0,-1.33 L-1.33,0.67 L1.33,0.67 z'/>
+	<use xlink:href='#gpPt7' id='gpPt8' fill='currentColor' stroke='none'/>
+	<use xlink:href='#gpPt7' id='gpPt9' stroke='currentColor' transform='rotate(180)'/>
+	<use xlink:href='#gpPt9' id='gpPt10' fill='currentColor' stroke='none'/>
+	<use xlink:href='#gpPt3' id='gpPt11' stroke='currentColor' transform='rotate(45)'/>
+	<use xlink:href='#gpPt11' id='gpPt12' fill='currentColor' stroke='none'/>
+	<path id='gpPt13' stroke-width='0.222' stroke='currentColor' d='M0,1.330 L1.265,0.411 L0.782,-1.067 L-0.782,-1.076 L-1.265,0.411 z'/>
+	<use xlink:href='#gpPt13' id='gpPt14' fill='currentColor' stroke='none'/>
+	<filter id='textbox' filterUnits='objectBoundingBox' x='0' y='0' height='1' width='1'>
+	  <feFlood flood-color='white' flood-opacity='1' result='bgnd'/>
+	  <feComposite in='SourceGraphic' in2='bgnd' operator='atop'/>
+	</filter>
+	<filter id='greybox' filterUnits='objectBoundingBox' x='0' y='0' height='1' width='1'>
+	  <feFlood flood-color='lightgrey' flood-opacity='1' result='grey'/>
+	  <feComposite in='SourceGraphic' in2='grey' operator='atop'/>
+	</filter>
+</defs>
+<g fill="none" color="white" stroke="currentColor" stroke-width="1.50" stroke-linecap="round" stroke-linejoin="round">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.50" stroke-linecap="round" stroke-linejoin="round">
+	<path stroke='black'  d='M79.70,364.00 L88.70,364.00 M774.82,364.00 L765.82,364.00  '/>	<g transform="translate(71.31,367.90)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
+		<text><tspan font-family="Arial" > 0</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.50" stroke-linecap="round" stroke-linejoin="round">
+	<path stroke='black'  d='M79.70,326.39 L88.70,326.39 M774.82,326.39 L765.82,326.39  '/>	<g transform="translate(71.31,330.29)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
+		<text><tspan font-family="Arial" > 100000</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.50" stroke-linecap="round" stroke-linejoin="round">
+	<path stroke='black'  d='M79.70,288.78 L88.70,288.78 M774.82,288.78 L765.82,288.78  '/>	<g transform="translate(71.31,292.68)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
+		<text><tspan font-family="Arial" > 200000</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.50" stroke-linecap="round" stroke-linejoin="round">
+	<path stroke='black'  d='M79.70,251.18 L88.70,251.18 M774.82,251.18 L765.82,251.18  '/>	<g transform="translate(71.31,255.08)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
+		<text><tspan font-family="Arial" > 300000</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.50" stroke-linecap="round" stroke-linejoin="round">
+	<path stroke='black'  d='M79.70,213.57 L88.70,213.57 M774.82,213.57 L765.82,213.57  '/>	<g transform="translate(71.31,217.47)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
+		<text><tspan font-family="Arial" > 400000</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.50" stroke-linecap="round" stroke-linejoin="round">
+	<path stroke='black'  d='M79.70,175.96 L88.70,175.96 M774.82,175.96 L765.82,175.96  '/>	<g transform="translate(71.31,179.86)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
+		<text><tspan font-family="Arial" > 500000</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.50" stroke-linecap="round" stroke-linejoin="round">
+	<path stroke='black'  d='M79.70,138.35 L88.70,138.35 M774.82,138.35 L765.82,138.35  '/>	<g transform="translate(71.31,142.25)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
+		<text><tspan font-family="Arial" > 600000</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.50" stroke-linecap="round" stroke-linejoin="round">
+	<path stroke='black'  d='M79.70,100.75 L88.70,100.75 M774.82,100.75 L765.82,100.75  '/>	<g transform="translate(71.31,104.65)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
+		<text><tspan font-family="Arial" > 700000</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.50" stroke-linecap="round" stroke-linejoin="round">
+	<path stroke='black'  d='M79.70,63.14 L88.70,63.14 M774.82,63.14 L765.82,63.14  '/>	<g transform="translate(71.31,67.04)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
+		<text><tspan font-family="Arial" > 800000</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.50" stroke-linecap="round" stroke-linejoin="round">
+	<path stroke='black'  d='M79.70,25.53 L88.70,25.53 M774.82,25.53 L765.82,25.53  '/>	<g transform="translate(71.31,29.43)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
+		<text><tspan font-family="Arial" > 900000</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.50" stroke-linecap="round" stroke-linejoin="round">
+	<path stroke='black'  d='M180.89,364.00 L180.89,355.00 M180.89,18.01 L180.89,27.01  '/>	<g transform="translate(180.89,385.90)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" > 2000</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.50" stroke-linecap="round" stroke-linejoin="round">
+	<path stroke='black'  d='M290.88,364.00 L290.88,355.00 M290.88,18.01 L290.88,27.01  '/>	<g transform="translate(290.88,385.90)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" > 2005</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.50" stroke-linecap="round" stroke-linejoin="round">
+	<path stroke='black'  d='M400.86,364.00 L400.86,355.00 M400.86,18.01 L400.86,27.01  '/>	<g transform="translate(400.86,385.90)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" > 2010</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.50" stroke-linecap="round" stroke-linejoin="round">
+	<path stroke='black'  d='M510.85,364.00 L510.85,355.00 M510.85,18.01 L510.85,27.01  '/>	<g transform="translate(510.85,385.90)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" > 2015</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.50" stroke-linecap="round" stroke-linejoin="round">
+	<path stroke='black'  d='M620.84,364.00 L620.84,355.00 M620.84,18.01 L620.84,27.01  '/>	<g transform="translate(620.84,385.90)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" > 2020</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.50" stroke-linecap="round" stroke-linejoin="round">
+	<path stroke='black'  d='M730.83,364.00 L730.83,355.00 M730.83,18.01 L730.83,27.01  '/>	<g transform="translate(730.83,385.90)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" > 2025</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.50" stroke-linecap="round" stroke-linejoin="round">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.50" stroke-linecap="round" stroke-linejoin="round">
+	<path stroke='black'  d='M79.70,18.01 L79.70,364.00 L774.82,364.00 L774.82,18.01 L79.70,18.01 Z  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.50" stroke-linecap="round" stroke-linejoin="round">
+</g>
+	<g id="gnuplot_plot_1"  fill="none"><title>gnuplot_plot_1</title>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.50" stroke-linecap="round" stroke-linejoin="round">
+	<path stroke='rgb(148,   0, 211)'  d='M125.04,343.74 L143.67,334.24 L148.73,331.59 L160.58,327.17 L169.03,326.91 L182.58,308.36 L197.80,299.44 L216.41,284.56
+		L233.35,289.14 L263.80,284.42 L289.18,267.72 L321.34,238.86 L343.34,218.01 L380.56,207.67 L395.78,195.14 L405.94,189.51
+		L417.78,181.54 L429.64,177.87 L438.08,172.17 L449.96,170.71 L460.08,168.37 L471.96,166.63 L482.03,159.56 L493.96,155.16
+		L504.03,149.65 L515.95,142.62 L527.35,126.65 L537.95,124.70 L549.35,123.32 L564.08,111.14 L571.34,104.58 L586.74,106.79
+		L593.34,99.40 L603.94,95.84 L615.34,95.48 L631.84,86.41 L641.96,84.01 L653.83,79.36 L664.83,73.58 L675.83,72.93
+		L697.83,65.72 L719.83,59.02 L741.82,52.87 L761.62,45.02  '/></g>
+	</g>
+	<g id="gnuplot_plot_2"  fill="none"><title>gnuplot_plot_2</title>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.50" stroke-linecap="round" stroke-linejoin="round">
+	<use xlink:href='#gpPt6' transform='translate(125.04,343.74) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(143.67,334.24) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(148.73,331.59) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(160.58,327.17) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(169.03,326.91) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(182.58,308.36) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(197.80,299.44) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(216.41,284.56) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(233.35,289.14) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(263.80,284.42) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(289.18,267.72) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(321.34,238.86) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(343.34,218.01) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(380.56,207.67) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(395.78,195.14) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(405.94,189.51) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(417.78,181.54) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(429.64,177.87) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(438.08,172.17) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(449.96,170.71) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(460.08,168.37) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(471.96,166.63) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(482.03,159.56) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(493.96,155.16) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(504.03,149.65) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(515.95,142.62) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(527.35,126.65) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(537.95,124.70) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(549.35,123.32) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(564.08,111.14) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(571.34,104.58) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(586.74,106.79) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(593.34,99.40) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(603.94,95.84) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(615.34,95.48) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(631.84,86.41) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(641.96,84.01) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(653.83,79.36) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(664.83,73.58) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(675.83,72.93) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(697.83,65.72) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(719.83,59.02) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(741.82,52.87) scale(4.50)' color='rgb(  0,   0,   0)'/>
+	<use xlink:href='#gpPt6' transform='translate(761.62,45.02) scale(4.50)' color='rgb(  0,   0,   0)'/>
+</g>
+	</g>
+	<g id="gnuplot_plot_3"  fill="none"><title>gnuplot_plot_3</title>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.50" stroke-linecap="round" stroke-linejoin="round">
+	<g transform="translate(107.18,330.30) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >0.9</tspan></text>
+	</g>
+	<g transform="translate(125.81,320.80) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >1.0</tspan></text>
+	</g>
+	<g transform="translate(130.87,318.15) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >1.1</tspan></text>
+	</g>
+	<g transform="translate(142.72,313.73) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >1.2</tspan></text>
+	</g>
+	<g transform="translate(151.17,313.47) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >2.0</tspan></text>
+	</g>
+	<g transform="translate(164.72,294.92) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >2.1</tspan></text>
+	</g>
+	<g transform="translate(179.94,286.00) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >2.2</tspan></text>
+	</g>
+	<g transform="translate(198.55,271.12) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >2.3</tspan></text>
+	</g>
+	<g transform="translate(215.49,275.70) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >2.4</tspan></text>
+	</g>
+	<g transform="translate(245.94,270.98) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >3.0</tspan></text>
+	</g>
+	<g transform="translate(271.32,254.28) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >3.1</tspan></text>
+	</g>
+	<g transform="translate(303.48,225.42) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >3.2</tspan></text>
+	</g>
+	<g transform="translate(325.48,204.57) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >3.3</tspan></text>
+	</g>
+	<g transform="translate(362.70,194.23) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >3.4</tspan></text>
+	</g>
+	<g transform="translate(377.92,181.70) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >3.5</tspan></text>
+	</g>
+	<g transform="translate(388.08,176.07) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >3.6</tspan></text>
+	</g>
+	<g transform="translate(399.92,168.10) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >3.7</tspan></text>
+	</g>
+	<g transform="translate(411.78,164.43) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >3.8</tspan></text>
+	</g>
+	<g transform="translate(420.22,158.73) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >3.9</tspan></text>
+	</g>
+	<g transform="translate(432.10,157.27) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >4.0</tspan></text>
+	</g>
+	<g transform="translate(442.22,154.93) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >4.1</tspan></text>
+	</g>
+	<g transform="translate(454.10,153.19) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >4.2</tspan></text>
+	</g>
+	<g transform="translate(464.17,146.12) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >4.3</tspan></text>
+	</g>
+	<g transform="translate(476.10,141.72) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >4.4</tspan></text>
+	</g>
+	<g transform="translate(486.17,136.21) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >4.5</tspan></text>
+	</g>
+	<g transform="translate(498.09,129.18) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >4.6</tspan></text>
+	</g>
+	<g transform="translate(509.49,113.21) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >4.7</tspan></text>
+	</g>
+	<g transform="translate(520.09,111.26) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >4.8</tspan></text>
+	</g>
+	<g transform="translate(531.49,109.88) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >4.9</tspan></text>
+	</g>
+	<g transform="translate(546.22,97.70) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >4.10</tspan></text>
+	</g>
+	<g transform="translate(553.48,91.14) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >4.11</tspan></text>
+	</g>
+	<g transform="translate(568.88,93.35) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >4.12</tspan></text>
+	</g>
+	<g transform="translate(575.48,85.96) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >4.13</tspan></text>
+	</g>
+	<g transform="translate(586.08,82.40) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >4.14</tspan></text>
+	</g>
+	<g transform="translate(597.48,82.04) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >5.0</tspan></text>
+	</g>
+	<g transform="translate(613.98,72.97) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >5.1</tspan></text>
+	</g>
+	<g transform="translate(624.10,70.57) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >5.2</tspan></text>
+	</g>
+	<g transform="translate(635.97,65.92) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >5.3</tspan></text>
+	</g>
+	<g transform="translate(646.97,60.14) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >5.4</tspan></text>
+	</g>
+	<g transform="translate(657.97,59.49) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >5.5</tspan></text>
+	</g>
+	<g transform="translate(679.97,52.28) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >5.6</tspan></text>
+	</g>
+	<g transform="translate(701.97,45.58) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >6.0</tspan></text>
+	</g>
+	<g transform="translate(723.96,39.43) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >6.1</tspan></text>
+	</g>
+	<g transform="translate(743.76,31.58) rotate(45.00)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >6.2</tspan></text>
+	</g>
+</g>
+	</g>
+<g fill="none" color="white" stroke="black" stroke-width="3.00" stroke-linecap="round" stroke-linejoin="round">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="3.00" stroke-linecap="round" stroke-linejoin="round">
+</g>
+<g fill="none" color="black" stroke="black" stroke-width="1.50" stroke-linecap="round" stroke-linejoin="round">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.50" stroke-linecap="round" stroke-linejoin="round">
+	<path stroke='black'  d='M79.70,18.01 L79.70,364.00 L774.82,364.00 L774.82,18.01 L79.70,18.01 Z  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.50" stroke-linecap="round" stroke-linejoin="round">
+</g>
+</g>
+</svg>
+
