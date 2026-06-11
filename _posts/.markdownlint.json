@@ -1,0 +1,6 @@
+{
+  "no-inline-html": {
+    "allowed_elements": ["i", "div"]
+  },
+  "line-length": false
+}
