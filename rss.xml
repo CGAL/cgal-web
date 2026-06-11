@@ -5,8 +5,8 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2026-06-11T09:57:08+00:00</lastBuildDate>
-        <pubDate>2026-06-11T09:57:08+00:00</pubDate>
+        <lastBuildDate>2026-06-11T10:03:19+00:00</lastBuildDate>
+        <pubDate>2026-06-11T10:03:19+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -288,7 +288,7 @@
 
 &lt;p&gt;CGAL 6.1.2 is a bug-fix release for &lt;a href=&quot;/cgal-web/2025/10/01/cgal61/&quot;&gt;CGAL 6.1&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;The list of fixed bugs since &lt;a href=&quot;/cgal-web/2025/10/01/cgal61/&quot;&gt;CGAL 6.1&lt;/a&gt; can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AMerged_in_6.1.2+-label%3AMerged_in_6.1&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The list of fixed bugs since &lt;a href=&quot;/cgal-web/2026/01/26/cgal611/&quot;&gt;CGAL 6.1.1&lt;/a&gt; can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AMerged_in_6.1.2+-label%3AMerged_in_6.1.1&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 
 </description>
                 <link>http://www.cgal.org/2026/06/10/cgal612/</link>
