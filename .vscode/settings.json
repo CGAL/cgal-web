@@ -3,5 +3,6 @@
         "livePreview.serverRoot": "_site/",
         "livePreview.showServerStatusNotifications": true,
         "livePreview.autoRefreshPreview": "On Changes to Saved Files",
-        "livePreview.previewDebounceDelay": 1000
+        "livePreview.previewDebounceDelay": 1000,
+        "sarif-viewer.connectToGithubCodeScanning": "off"
 }
