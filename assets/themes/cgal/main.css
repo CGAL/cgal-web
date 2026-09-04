@@ -657,6 +657,19 @@ a:hover {
   font-size: 1em;
   text-align: justify;
 }
+.single-post-content ul,
+.single-post-content ol {
+  color: #828282;
+  font-size: 1em;
+  text-align: justify;
+  padding-left: 2em;
+}
+
+.single-post-content li {
+  color: #828282;
+  font-size: 1em;
+  text-align: justify;
+}
 .post-comments {
   list-style-type: none;
   margin-left: 0;
