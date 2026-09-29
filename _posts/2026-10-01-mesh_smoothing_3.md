@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "New in CGAL: 2D Mesh Volume Smoothing"
+title: "New in CGAL: 3D Mesh Volume Smoothing"
 description: "Efficient, robust and boundary aware volume smoothing"
 category:
 tags: [""]
@@ -37,14 +37,14 @@ Cells can carry material labels or simulation data, and their indices and
 adjacency may already be used by downstream software. In these situations,
 remeshing operations such as edge splits, collapses, or flips are inappropriate.
 
-The new `Mesh_smoothing_3` package addresses this problem by **optimizing the
+The new Mesh_smoothing_3 package addresses this problem by **optimizing the
 positions of mesh vertices without modifying the mesh connectivity**. It combines
 volumetric mesh quality improvement with geometric fitting of surfaces, curves,
 and constrained points.
 
 <h3>Volume Mesh Optimization</h3>
 
-At the core of `Mesh_smoothing_3` is a nonlinear optimization of the mesh vertex
+At the core of Mesh_smoothing_3 is a nonlinear optimization of the mesh vertex
 positions. Element quality is measured using a conformal distortion energy,
 designed to favor well-shaped tetrahedra and improve their dihedral angles.
 
@@ -62,7 +62,7 @@ mesh remain unchanged.
 Improving element quality alone is generally insufficient for boundary
 vertices: moving them freely would deform the represented shape.
 
-`Mesh_smoothing_3` therefore couples mesh quality optimization with geometric
+Mesh_smoothing_3 therefore couples mesh quality optimization with geometric
 fitting. Rather than requiring one particular representation of the target
 geometry, the package uses a simple abstraction that associates constrained
 vertices with local tangent spaces.
@@ -140,11 +140,11 @@ when the corresponding backend is available.
 
 <h3>Smoothing or Remeshing?</h3>
 
-`Mesh_smoothing_3` is intended for applications where the existing mesh
+Mesh_smoothing_3 is intended for applications where the existing mesh
 connectivity must be retained.
 
 When changes to the number of vertices, mesh resolution, or connectivity are
-required, CGAL's tetrahedral remeshing functionality remains the appropriate
+required, <a href="https://doc.cgal.org/latest/Manual/packages.html#PkgTetrahedralRemeshing">CGAL's tetrahedral remeshing</a>  functionality remains the appropriate
 tool. The two operations therefore address complementary use cases:
 remeshing modifies the discretization, whereas smoothing optimizes the
 embedding of a fixed discretization.
@@ -156,7 +156,7 @@ invalidate its Delaunay property.
 
 <h3>Status</h3>
 
-<p>The package `Mesh_smoothing_3` is already integrated in CGAL's "main" branch
+<p>The package Mesh_smoothing_3 is already integrated in CGAL's "main" branch
 on the <a href="https://github.com/CGAL/cgal/">CGAL GitHub repository</a>, and will be
 officially released in the upcoming version of CGAL, CGAL 6.3, scheduled for October 2026.</p>
 
