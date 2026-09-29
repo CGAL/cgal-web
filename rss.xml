@@ -5,13 +5,13 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2026-09-29T09:14:14+00:00</lastBuildDate>
-        <pubDate>2026-09-29T09:14:14+00:00</pubDate>
+        <lastBuildDate>2026-09-29T09:26:45+00:00</lastBuildDate>
+        <pubDate>2026-09-29T09:26:45+00:00</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
-                <title>New in CGAL: 2D Mesh Volume Smoothing</title>
+                <title>New in CGAL: 3D Mesh Volume Smoothing</title>
                 <description>
 &lt;h3&gt;&lt;a href=&quot;https://fprotais.github.io/&quot;&gt;François Protais&lt;/a&gt;&lt;/h3&gt;
 &lt;h4&gt;&lt;a href=&quot;https://www.inria.fr&quot;&gt;INRIA Sophia Antipolis&lt;/a&gt;&lt;/h4&gt;
@@ -42,14 +42,14 @@ Cells can carry material labels or simulation data, and their indices and
 adjacency may already be used by downstream software. In these situations,
 remeshing operations such as edge splits, collapses, or flips are inappropriate.&lt;/p&gt;
 
-&lt;p&gt;The new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Mesh_smoothing_3&lt;/code&gt; package addresses this problem by &lt;strong&gt;optimizing the
+&lt;p&gt;The new Mesh_smoothing_3 package addresses this problem by &lt;strong&gt;optimizing the
 positions of mesh vertices without modifying the mesh connectivity&lt;/strong&gt;. It combines
 volumetric mesh quality improvement with geometric fitting of surfaces, curves,
 and constrained points.&lt;/p&gt;
 
 &lt;h3&gt;Volume Mesh Optimization&lt;/h3&gt;
 
-&lt;p&gt;At the core of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Mesh_smoothing_3&lt;/code&gt; is a nonlinear optimization of the mesh vertex
+&lt;p&gt;At the core of Mesh_smoothing_3 is a nonlinear optimization of the mesh vertex
 positions. Element quality is measured using a conformal distortion energy,
 designed to favor well-shaped tetrahedra and improve their dihedral angles.&lt;/p&gt;
 
@@ -67,7 +67,7 @@ mesh remain unchanged.&lt;/p&gt;
 &lt;p&gt;Improving element quality alone is generally insufficient for boundary
 vertices: moving them freely would deform the represented shape.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Mesh_smoothing_3&lt;/code&gt; therefore couples mesh quality optimization with geometric
+&lt;p&gt;Mesh_smoothing_3 therefore couples mesh quality optimization with geometric
 fitting. Rather than requiring one particular representation of the target
 geometry, the package uses a simple abstraction that associates constrained
 vertices with local tangent spaces.&lt;/p&gt;
@@ -144,11 +144,11 @@ when the corresponding backend is available.&lt;/p&gt;
 
 &lt;h3&gt;Smoothing or Remeshing?&lt;/h3&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Mesh_smoothing_3&lt;/code&gt; is intended for applications where the existing mesh
+&lt;p&gt;Mesh_smoothing_3 is intended for applications where the existing mesh
 connectivity must be retained.&lt;/p&gt;
 
 &lt;p&gt;When changes to the number of vertices, mesh resolution, or connectivity are
-required, CGAL’s tetrahedral remeshing functionality remains the appropriate
+required, &lt;a href=&quot;https://doc.cgal.org/latest/Manual/packages.html#PkgTetrahedralRemeshing&quot;&gt;CGAL’s tetrahedral remeshing&lt;/a&gt;  functionality remains the appropriate
 tool. The two operations therefore address complementary use cases:
 remeshing modifies the discretization, whereas smoothing optimizes the
 embedding of a fixed discretization.&lt;/p&gt;
@@ -160,7 +160,7 @@ invalidate its Delaunay property.&lt;/p&gt;
 
 &lt;h3&gt;Status&lt;/h3&gt;
 
-&lt;p&gt;The package `Mesh_smoothing_3` is already integrated in CGAL&apos;s &quot;main&quot; branch
+&lt;p&gt;The package Mesh_smoothing_3 is already integrated in CGAL&apos;s &quot;main&quot; branch
 on the &lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;, and will be
 officially released in the upcoming version of CGAL, CGAL 6.3, scheduled for October 2026.&lt;/p&gt;
 
