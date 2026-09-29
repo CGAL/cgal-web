@@ -21,7 +21,8 @@ tags: [""]
   <small>
     Smoothing and feature recovery on a mesh generated from an implicit domain.
     The mesh connectivity is preserved while its vertices are optimized and fitted
-    to the target geometry.
+    to the target geometry. It is possible to zoom by clicking on the image
+    for more details.
   </small>
 </div>
 
@@ -37,14 +38,14 @@ Cells can carry material labels or simulation data, and their indices and
 adjacency may already be used by downstream software. In these situations,
 remeshing operations such as edge splits, collapses, or flips are inappropriate.
 
-The new Mesh_smoothing_3 package addresses this problem by **optimizing the
+The new 3D Mesh Volume Smoothing package addresses this problem by **optimizing the
 positions of mesh vertices without modifying the mesh connectivity**. It combines
 volumetric mesh quality improvement with geometric fitting of surfaces, curves,
 and constrained points.
 
 <h3>Volume Mesh Optimization</h3>
 
-At the core of Mesh_smoothing_3 is a nonlinear optimization of the mesh vertex
+At the core of Mesh Smoothing package is a nonlinear optimization of the mesh vertex
 positions. Element quality is measured using a conformal distortion energy,
 designed to favor well-shaped tetrahedra and improve their dihedral angles.
 
@@ -62,7 +63,7 @@ mesh remain unchanged.
 Improving element quality alone is generally insufficient for boundary
 vertices: moving them freely would deform the represented shape.
 
-Mesh_smoothing_3 therefore couples mesh quality optimization with geometric
+The 3D Mesh Smoothing therefore couples mesh quality optimization with geometric
 fitting. Rather than requiring one particular representation of the target
 geometry, the package uses a simple abstraction that associates constrained
 vertices with local tangent spaces.
@@ -140,7 +141,7 @@ when the corresponding backend is available.
 
 <h3>Smoothing or Remeshing?</h3>
 
-Mesh_smoothing_3 is intended for applications where the existing mesh
+This package is intended for applications where the existing mesh
 connectivity must be retained.
 
 When changes to the number of vertices, mesh resolution, or connectivity are
