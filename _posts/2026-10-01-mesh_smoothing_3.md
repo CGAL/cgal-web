@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "New in CGAL: 3D Mesh Volume Smoothing"
-description: "Efficient, robust and boundary aware volume smoothing"
+description: "Efficient, robust, and boundary-aware smoothing"
 category:
 tags: [""]
 ---
@@ -28,17 +28,20 @@ tags: [""]
 
 <br>
 
-Tetrahedral meshes frequently require an additional optimization step after
-generation or deformation. Poorly shaped elements can affect the robustness and
-accuracy of subsequent numerical computations, while the boundary of the mesh
-must often continue to approximate a prescribed geometry.
+Poorly shaped elements can affect the robustness and accuracy of numerical
+computations. Therefore, mesh generation approaches have to balance
+element quality with the fidelity to the prescribed geometry. Additional
+optimization steps are frequently required to produce adequate meshes,
+as mentioned in the <a href="https://doc.cgal.org/latest/Mesh_3/index.html#Mesh_3OptimizationPhase">3D Mesh Generation package</a>.
+
 
 In many applications, however, changing the connectivity is not desirable.
 Cells can carry material labels or simulation data, and their indices and
 adjacency may already be used by downstream software. In these situations,
 remeshing operations such as edge splits, collapses, or flips are inappropriate.
 
-The new 3D Mesh Volume Smoothing package addresses this problem by **optimizing the
+
+The new <a href="https://doc.cgal.org/latest/Manual/packages.html#PkgMeshSmoothing3">3D Mesh Volume Smoothing package</a> package addresses this problem by **optimizing the
 positions of mesh vertices without modifying the mesh connectivity**. It combines
 volumetric mesh quality improvement with geometric fitting of surfaces, curves,
 and constrained points.
@@ -94,7 +97,7 @@ CGAL `C3t3`, to polyhedral mesh domains, to polyhedral domains containing
 feature curves, and to implicit surfaces represented through signed-distance
 functions.
 
-Applications can also implement their own tangent-space construction. This
+Applications can also implement their own tangent-space constructions. This
 makes it possible to optimize meshes whose boundaries combine several types of
 geometry.
 
@@ -123,16 +126,16 @@ accurate reference geometry without changing its connectivity.
 
 <h3>A Compact Interface</h3>
 
-The main entry point is `CGAL::boundary_aware_mesh_smoothing()`. For example,
-an existing `C3t3` can itself be used as the geometric reference:
+The main entry point is `CGAL::boundary_aware_mesh_smoothing()`. This function
+can be used with the various projectors or with a user-defined geometric
+oracle. As an example, we can smooth a mesh with its own boundary as a target:
 
-<pre><code>CGAL::boundary_aware_mesh_smoothing(
+<pre><code>
+auto c3t3 = make_mesh_3();
+CGAL::boundary_aware_mesh_smoothing(
     c3t3,
     CGAL::Mesh_smoothing_3::C3t3_mesh_projector(c3t3));
 </code></pre>
-
-The same optimization function can be used with the other provided projectors
-or with a user-defined geometric oracle.
 
 Named parameters control, among other options, constrained vertices, edges and
 facets, stopping criteria, verbosity, and the execution policy. The
@@ -159,7 +162,7 @@ invalidate its Delaunay property.
 
 <p>The package Mesh_smoothing_3 is already integrated in CGAL's "main" branch
 on the <a href="https://github.com/CGAL/cgal/">CGAL GitHub repository</a>, and will be
-officially released in the upcoming version of CGAL, CGAL 6.3, scheduled for October 2026.</p>
+officially released in the upcoming version of CGAL, CGAL 6.3, scheduled for December 2026.</p>
 
 <i class="bi bi-book"></i>
 <a href="https://doc.cgal.org/6.3/Manual/packages.html#PkgMeshSmoothing3">Documentation of the package Mesh_smoothing_3</a>
