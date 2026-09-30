@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2026-09-30T16:33:02+00:00</updated>
+ <updated>2026-09-30T16:56:30+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -23,7 +23,7 @@
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/hexmesh-bunny.png&quot;&gt;&lt;img src=&quot;../../../../images/hexmesh-bunny-interior.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+  &amp;lt;a href=&quot;../../../../images/hexmesh-bunny.png&quot; style=&quot;max-width:49%&quot;&quot;&amp;gt;&lt;img src=&quot;../../../../images/hexmesh-bunny-interior.png&quot; style=&quot;max-width:49%&quot; /&gt;&amp;lt;/a&amp;gt;&lt;br /&gt;
   &lt;br /&gt;&lt;small&gt;Result of hexmeshing method for bunny00.off, using 15 as initial grid size and 2 as number of two-refinement levels. (Right) View of the interior of the mesh.&lt;/small&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -32,6 +32,8 @@
 &lt;p&gt;The method starts to create a regular grid of voxels, then refines voxels intersected by the input surface using four simple refinement templates. Moreover, transitions are created between refined and non-refined voxels to guarantee that the final output is a pure hexadral mesh. The exterior mesh elements can be trimmed (removed from the mesh) or kept. A last optional step is the smoothing of the 3D mesh to project boundary vertices on the input surface.&lt;/p&gt;
 
 &lt;p&gt;The two parameters of the methods are the size of the initial grid of voxels, and the number of two-refinement levels applied. Be careful to not use too big numbers for these two parameters, since this can implies a huge number of hexahedra created, and possibly a crash of the method due to a filling up of the computer memory.&lt;/p&gt;
+
+&lt;p&gt;The code was developed during two successive google summer of code projects: firstly by Théo Bénard in 2024, then by Soichiro Yamazaki in 2025. For now, the method is sequential. The parallel version of the method is under developement.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h3&gt;Status&lt;/h3&gt;

@@ -150,7 +150,7 @@
 <p><br /></p>
 
 <div style="text-align:center;">
-  <a href="../../../../images/hexmesh-bunny.png"><img src="../../../../images/hexmesh-bunny-interior.png" style="max-width:95%" /></a><br />
+  &lt;a href="../../../../images/hexmesh-bunny.png" style="max-width:49%""&gt;<img src="../../../../images/hexmesh-bunny-interior.png" style="max-width:49%" />&lt;/a&gt;<br />
   <br /><small>Result of hexmeshing method for bunny00.off, using 15 as initial grid size and 2 as number of two-refinement levels. (Right) View of the interior of the mesh.</small>
 </div>
 <p><br /></p>
@@ -159,6 +159,8 @@
 <p>The method starts to create a regular grid of voxels, then refines voxels intersected by the input surface using four simple refinement templates. Moreover, transitions are created between refined and non-refined voxels to guarantee that the final output is a pure hexadral mesh. The exterior mesh elements can be trimmed (removed from the mesh) or kept. A last optional step is the smoothing of the 3D mesh to project boundary vertices on the input surface.</p>
 
 <p>The two parameters of the methods are the size of the initial grid of voxels, and the number of two-refinement levels applied. Be careful to not use too big numbers for these two parameters, since this can implies a huge number of hexahedra created, and possibly a crash of the method due to a filling up of the computer memory.</p>
+
+<p>The code was developed during two successive google summer of code projects: firstly by Théo Bénard in 2024, then by Soichiro Yamazaki in 2025. For now, the method is sequential. The parallel version of the method is under developement.</p>
 
 <p><br /></p>
 <h3>Status</h3>
