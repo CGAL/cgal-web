@@ -5,8 +5,8 @@
         <description>CGAL - CGAL Editorial Board</description>
         <link>http://www.cgal.org</link>
         <link>http://www.cgal.org</link>
-        <lastBuildDate>2026-09-30T17:02:00+00:00</lastBuildDate>
-        <pubDate>2026-09-30T17:02:00+00:00</pubDate>
+        <lastBuildDate>2026-09-30T17:10:06+00:00</lastBuildDate>
+        <pubDate>2026-09-30T17:10:06+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -18,8 +18,8 @@
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/hexmesh-bunny.png&quot;&gt;&lt;img src=&quot;../../../../images/hexmesh-bunny.png&quot; style=&quot;max-width:49%&quot; /&gt;&lt;/a&gt;
-  &lt;a href=&quot;../../../../images/hexmesh-bunny-interior.png&quot;&gt;&lt;img src=&quot;../../../../images/hexmesh-bunny-interior.png&quot; style=&quot;max-width:49%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+  &lt;a href=&quot;../../../../images/hexmesh-bunny.png&quot;&gt;&lt;img src=&quot;../../../../images/hexmesh-bunny.png&quot; style=&quot;max-width:40%&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;../../../../images/hexmesh-bunny-interior.png&quot;&gt;&lt;img src=&quot;../../../../images/hexmesh-bunny-interior.png&quot; style=&quot;max-width:59%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
   &lt;br /&gt;&lt;small&gt;Result of hexmeshing method for bunny00.off, using 15 as initial grid size and 2 as number of two-refinement levels. (Right) View of the interior of the mesh.&lt;/small&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
