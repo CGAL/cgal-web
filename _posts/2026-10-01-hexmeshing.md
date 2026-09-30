@@ -12,8 +12,8 @@ tags: [""]
 <br>
 
 <div style="text-align:center;">
-  <a href="../../../../images/hexmesh-bunny.png"><img src="../../../../images/hexmesh-bunny.png" style="max-width:49%"/></a>
-  <a href="../../../../images/hexmesh-bunny-interior.png"><img src="../../../../images/hexmesh-bunny-interior.png" style="max-width:49%"/></a><br>
+  <a href="../../../../images/hexmesh-bunny.png"><img src="../../../../images/hexmesh-bunny.png" style="max-width:40%"/></a>
+  <a href="../../../../images/hexmesh-bunny-interior.png"><img src="../../../../images/hexmesh-bunny-interior.png" style="max-width:59%"/></a><br>
   <br><small>Result of hexmeshing method for bunny00.off, using 15 as initial grid size and 2 as number of two-refinement levels. (Right) View of the interior of the mesh.</small>
 </div>
 <br>
