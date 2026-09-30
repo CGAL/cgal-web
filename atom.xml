@@ -4,7 +4,7 @@
  <title>CGAL</title>
  <link href="http://www.cgal.org/" rel="self"/>
  <link href="http://www.cgal.org"/>
- <updated>2026-09-29T14:24:12+00:00</updated>
+ <updated>2026-09-30T14:38:37+00:00</updated>
  <id>http://www.cgal.org</id>
  <author>
    <name>CGAL Editorial Board</name>
@@ -38,17 +38,18 @@
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;Tetrahedral meshes frequently require an additional optimization step after
-generation or deformation. Poorly shaped elements can affect the robustness and
-accuracy of subsequent numerical computations, while the boundary of the mesh
-must often continue to approximate a prescribed geometry.&lt;/p&gt;
+&lt;p&gt;Poorly shaped elements can affect the robustness and accuracy of numerical
+computations. Therefore, mesh generation approaches have to balance
+element quality with the fidelity to the prescribed geometry. Additional
+optimization steps are frequently required to produce adequate meshes,
+as mentioned in the &lt;a href=&quot;https://doc.cgal.org/latest/Mesh_3/index.html#Mesh_3OptimizationPhase&quot;&gt;3D Mesh Generation package&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;In many applications, however, changing the connectivity is not desirable.
 Cells can carry material labels or simulation data, and their indices and
 adjacency may already be used by downstream software. In these situations,
 remeshing operations such as edge splits, collapses, or flips are inappropriate.&lt;/p&gt;
 
-&lt;p&gt;The new 3D Mesh Volume Smoothing package addresses this problem by &lt;strong&gt;optimizing the
+&lt;p&gt;The new &lt;a href=&quot;https://doc.cgal.org/latest/Manual/packages.html#PkgMeshSmoothing3&quot;&gt;3D Mesh Volume Smoothing package&lt;/a&gt; package addresses this problem by &lt;strong&gt;optimizing the
 positions of mesh vertices without modifying the mesh connectivity&lt;/strong&gt;. It combines
 volumetric mesh quality improvement with geometric fitting of surfaces, curves,
 and constrained points.&lt;/p&gt;
@@ -104,7 +105,7 @@ CGAL &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C3t3&lt;
 feature curves, and to implicit surfaces represented through signed-distance
 functions.&lt;/p&gt;
 
-&lt;p&gt;Applications can also implement their own tangent-space construction. This
+&lt;p&gt;Applications can also implement their own tangent-space constructions. This
 makes it possible to optimize meshes whose boundaries combine several types of
 geometry.&lt;/p&gt;
 
@@ -132,16 +133,16 @@ accurate reference geometry without changing its connectivity.&lt;/p&gt;
 
 &lt;h3&gt;A Compact Interface&lt;/h3&gt;
 
-&lt;p&gt;The main entry point is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CGAL::boundary_aware_mesh_smoothing()&lt;/code&gt;. For example,
-an existing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C3t3&lt;/code&gt; can itself be used as the geometric reference:&lt;/p&gt;
+&lt;p&gt;The main entry point is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CGAL::boundary_aware_mesh_smoothing()&lt;/code&gt;. This function
+can be used with the various projectors or with a user-defined geometric
+oracle. As an example, we can smooth a mesh with its own boundary as a target:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;CGAL::boundary_aware_mesh_smoothing(
+&lt;pre&gt;&lt;code&gt;
+auto c3t3 = make_mesh_3();
+CGAL::boundary_aware_mesh_smoothing(
     c3t3,
     CGAL::Mesh_smoothing_3::C3t3_mesh_projector(c3t3));
 &lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The same optimization function can be used with the other provided projectors
-or with a user-defined geometric oracle.&lt;/p&gt;
 
 &lt;p&gt;Named parameters control, among other options, constrained vertices, edges and
 facets, stopping criteria, verbosity, and the execution policy. The
@@ -168,7 +169,7 @@ invalidate its Delaunay property.&lt;/p&gt;
 
 &lt;p&gt;The package Mesh_smoothing_3 is already integrated in CGAL&apos;s &quot;main&quot; branch
 on the &lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;, and will be
-officially released in the upcoming version of CGAL, CGAL 6.3, scheduled for October 2026.&lt;/p&gt;
+officially released in the upcoming version of CGAL, CGAL 6.3, scheduled for December 2026.&lt;/p&gt;
 
 &lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
 &lt;a href=&quot;https://doc.cgal.org/6.3/Manual/packages.html#PkgMeshSmoothing3&quot;&gt;Documentation of the package Mesh_smoothing_3&lt;/a&gt;
