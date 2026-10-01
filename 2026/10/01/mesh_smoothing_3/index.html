@@ -8,8 +8,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>New in CGAL: Hexahedral mesh generation</title>
-    <meta name="description" content="Generation of an hexahedral mesh from a surface">
+    <title>New in CGAL: 3D Mesh Volume Smoothing</title>
+    <meta name="description" content="Efficient, robust, and boundary-aware smoothing">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <meta name="author" content="CGAL Editorial Board">
@@ -118,7 +118,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 home-title">
-            <h1>New in CGAL: Hexahedral mesh generation </h1>
+            <h1>New in CGAL: 3D Mesh Volume Smoothing </h1>
             <a style="text-align: right;" href="https://github.com/cgal/cgal" alt="The CGAL Project's github">
               <span class="btn-dark-orange github-link fs-5">CGAL/cgal <i class="bi bi-github"></i></span>
             </a>
@@ -136,7 +136,7 @@
       <div class="col-sm-9">
         <div class="blog-post blog-single-post">
           <div class="single-post-title">
-            <h3>New in CGAL: Hexahedral mesh generation</h3>
+            <h3>New in CGAL: 3D Mesh Volume Smoothing</h3>
           </div>
           <br>
           <div class="single-post-info">
@@ -145,33 +145,161 @@
           </div>
           <div class="single-post-content">
             
-<h3><a href="https://perso.liris.cnrs.fr/guillaume.damiand/">Guillaume Damiand</a></h3>
-<h4><a href="https://cnrs.fr/">CNRS</a> / <a href="https://liris.cnrs.fr/">LIRIS</a></h4>
+<h3><a href="https://fprotais.github.io/">François Protais</a></h3>
+<h4><a href="https://www.inria.fr">INRIA Sophia Antipolis</a></h4>
+
 <p><br /></p>
 
 <div style="text-align:center;">
-  <a href="../../../../images/hexmesh-bunny.png"><img src="../../../../images/hexmesh-bunny.png" style="max-width:40%" /></a>
-  <a href="../../../../images/hexmesh-bunny-interior.png"><img src="../../../../images/hexmesh-bunny-interior.png" style="max-width:59%" /></a><br />
-  <br /><small>Result of hexmeshing method for bunny00.off, using 15 as initial grid size and 2 as number of two-refinement levels. (Right) View of the interior of the mesh.</small>
+  <a href="../../../../images/mesh_smoothing_3_implicit.png">
+    <img src="../../../../images/mesh_smoothing_3_implicit.png" style="max-width:95%" />
+  </a>
+  <br />
+  <small>
+    Smoothing and feature recovery on a mesh generated from an implicit domain.
+    The mesh connectivity is preserved while its vertices are optimized and fitted
+    to the target geometry. It is possible to zoom by clicking on the image
+    for more details.
+  </small>
 </div>
-<p><br /></p>
-<p>The upcoming CGAL release 6.3, will introduce the method <a href="https://cgal.geometryfactory.com/CGAL/doc/main/Linear_cell_complex/index.html#Linear_cell_complexHexmeshing">Hexahedral Two-refinement</a>. It generates a pure 3D hexahedral mesh from a surface triangle mesh using the two-refinement algorithm described in the paper "A template-based approach for parallel hexahedral two-refinement" of Steven J. Owen, Ryan M. Shih and Corey D. Ernst.</p>
-
-<p>The method starts to create a regular grid of voxels, then refines voxels intersected by the input surface using four simple refinement templates. Moreover, transitions are created between refined and non-refined voxels to guarantee that the final output is a pure hexadral mesh. The exterior mesh elements can be trimmed (removed from the mesh) or kept. A last optional step is the smoothing of the 3D mesh to project boundary vertices on the input surface.</p>
-
-<p>The two parameters of the methods are the size of the initial grid of voxels, and the number of two-refinement levels applied. Be careful to not use too big numbers for these two parameters, since this can implies a huge number of hexahedra created, and possibly a crash of the method due to a filling up of the computer memory.</p>
-
-<p>The code was developed during two successive google summer of code projects: firstly by Théo Bénard in 2024, then by Soichiro Yamazaki in 2025. For now, the method is sequential. The parallel version of the method is under developement.</p>
 
 <p><br /></p>
+
+<p>Poorly shaped elements can affect the robustness and accuracy of numerical
+computations. Therefore, mesh generation approaches have to balance
+element quality with the fidelity to the prescribed geometry. Additional
+optimization steps are frequently required to produce adequate meshes,
+as mentioned in the <a href="https://doc.cgal.org/latest/Mesh_3/index.html#Mesh_3OptimizationPhase">3D Mesh Generation package</a>.</p>
+
+<p>In many applications, however, changing the connectivity is not desirable.
+Cells can carry material labels or simulation data, and their indices and
+adjacency may already be used by downstream software. In these situations,
+remeshing operations such as edge splits, collapses, or flips are inappropriate.</p>
+
+<p>The new <a href="https://doc.cgal.org/latest/Manual/packages.html#PkgMeshSmoothing3">3D Mesh Volume Smoothing package</a> package addresses this problem by <strong>optimizing the
+positions of mesh vertices without modifying the mesh connectivity</strong>. It combines
+volumetric mesh quality improvement with geometric fitting of surfaces, curves,
+and constrained points.</p>
+
+<h3>Volume Mesh Optimization</h3>
+
+<p>At the core of Mesh Smoothing package is a nonlinear optimization of the mesh vertex
+positions. Element quality is measured using a conformal distortion energy,
+designed to favor well-shaped tetrahedra and improve their dihedral angles.</p>
+
+<p>The energy includes a barrier against element inversion. Consequently, when the
+input mesh is valid, the optimization maintains positively oriented
+tetrahedra. The same framework can also be used to attempt to untangle meshes
+that initially contain inverted elements.</p>
+
+<p>Importantly, only vertex coordinates are modified. Cell connectivity, cell
+indices, patch identifiers, material labels, and other data attached to the
+mesh remain unchanged.</p>
+
+<h3>Fitting the Mesh to Geometry</h3>
+
+<p>Improving element quality alone is generally insufficient for boundary
+vertices: moving them freely would deform the represented shape.</p>
+
+<p>The 3D Mesh Smoothing therefore couples mesh quality optimization with geometric
+fitting. Rather than requiring one particular representation of the target
+geometry, the package uses a simple abstraction that associates constrained
+vertices with local tangent spaces.</p>
+
+<p>Depending on the geometric dimension, these constraints can represent:</p>
+
+<ul>
+  <li>a tangent plane for a surface;</li>
+  <li>a tangent direction for a curve;</li>
+  <li>a fixed position for a corner or constrained point.</li>
+</ul>
+
+<p>These geometric constraints are integrated directly into the optimization.
+They are generally treated as soft constraints, allowing the optimizer to
+balance element quality and geometric accuracy, while selected vertices,
+edges, or facets can also be explicitly locked.</p>
+
+<p>Changes in the target tangent spaces can additionally be used to recover and
+preserve sharp features.</p>
+
+<h3>Several Geometric Representations</h3>
+
+<p>The optimization algorithm is deliberately separated from the representation
+of the target geometry.</p>
+
+<p>The package provides ready-to-use projectors for fitting a mesh to another
+CGAL <code class="language-plaintext highlighter-rouge">C3t3</code>, to polyhedral mesh domains, to polyhedral domains containing
+feature curves, and to implicit surfaces represented through signed-distance
+functions.</p>
+
+<p>Applications can also implement their own tangent-space constructions. This
+makes it possible to optimize meshes whose boundaries combine several types of
+geometry.</p>
+
+<p><br /></p>
+
+<div style="text-align:center;">
+  <a href="../../../../images/mesh_smoothing_3_hybrid.png">
+    <img src="../../../../images/mesh_smoothing_3_hybrid.png" style="max-width:95%" />
+  </a>
+  <br />
+  <small>
+    Smoothing of a hybrid domain combining polyhedral and implicit boundary
+    representations. The same optimization process can fit the different
+    geometric components and their interface. Close-ups highlight that
+    a given topology may not be adequate to fit a geometric target.
+  </small>
+</div>
+
+<p><br /></p>
+
+<p>This separation between mesh optimization and geometric representation is also
+useful when the input mesh and the geometry used for fitting are different. A
+coarse or distorted volume mesh can, for example, be optimized against a more
+accurate reference geometry without changing its connectivity.</p>
+
+<h3>A Compact Interface</h3>
+
+<p>The main entry point is <code class="language-plaintext highlighter-rouge">CGAL::boundary_aware_mesh_smoothing()</code>. This function
+can be used with the various projectors or with a user-defined geometric
+oracle. As an example, we can smooth a mesh with its own boundary as a target:</p>
+
+<pre><code>
+auto c3t3 = make_mesh_3();
+CGAL::boundary_aware_mesh_smoothing(
+    c3t3,
+    CGAL::Mesh_smoothing_3::C3t3_mesh_projector(c3t3));
+</code></pre>
+
+<p>Named parameters control, among other options, constrained vertices, edges and
+facets, stopping criteria, verbosity, and the execution policy. The
+implementation supports sequential execution as well as parallel execution
+when the corresponding backend is available.</p>
+
+<h3>Smoothing or Remeshing?</h3>
+
+<p>This package is intended for applications where the existing mesh
+connectivity must be retained.</p>
+
+<p>When changes to the number of vertices, mesh resolution, or connectivity are
+required, <a href="https://doc.cgal.org/latest/Manual/packages.html#PkgTetrahedralRemeshing">CGAL’s tetrahedral remeshing</a>  functionality remains the appropriate
+tool. The two operations therefore address complementary use cases:
+remeshing modifies the discretization, whereas smoothing optimizes the
+embedding of a fixed discretization.</p>
+
+<p>One consequence of keeping connectivity fixed is that properties depending on
+the current vertex positions and connectivity simultaneously are not
+preserved. In particular, smoothing a Delaunay or regular triangulation may
+invalidate its Delaunay property.</p>
+
 <h3>Status</h3>
 
-<p>The method "Hexahedral Two-refinement" is already integrated in CGAL's "main" branch
+<p>The package Mesh_smoothing_3 is already integrated in CGAL's "main" branch
 on the <a href="https://github.com/CGAL/cgal/">CGAL GitHub repository</a>, and will be
-officially released in the upcoming version of CGAL, CGAL 6.3, scheduled for XXX 2026.</p>
+officially released in the upcoming version of CGAL, CGAL 6.3, scheduled for December 2026.</p>
 
 <p><i class="bi bi-book"></i>
-<a href="https://cgal.geometryfactory.com/CGAL/doc/main/Linear_cell_complex/index.html#Linear_cell_complexHexmeshing">Documentation of the Hexahedral Two-refinement</a>
+<a href="https://doc.cgal.org/6.3/Manual/packages.html#PkgMeshSmoothing3">Documentation of the package Mesh_smoothing_3</a>
 <br />
 <i class="bi bi-arrow-down-circle"></i>
 <a href="https://github.com/CGAL/cgal/tree/main">CGAL “main” branch on GitHub</a></p>
@@ -186,7 +314,7 @@ officially released in the upcoming version of CGAL, CGAL 6.3, scheduled for XXX
           
             
             
-            <li class="active"><a href="/cgal-web/2026/10/01/hexmeshing/" class="active">New in CGAL: Hexahedral mesh generation</a>
+            <li class="active"><a href="/cgal-web/2026/10/01/mesh_smoothing_3/" class="active">New in CGAL: 3D Mesh Volume Smoothing</a>
             <br><div style="font-size:12px">October 2026</div></li>
           
             
