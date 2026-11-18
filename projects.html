@@ -8,7 +8,9 @@ group: navigation
 {% include JB/setup %}
 
 
-<p>This page gathers links to external projects using CGAL. If you are aware of
+<p>This page gathers links to some external projects using CGAL.</p>
+
+<p>This list is far from exhaustive. If you are aware of
 such other projects, we would appreciate if you could <A
 HREF="mailto:info@cgal.org">send us</A> the corresponding
 information (name, URL, authors, company/university, category, used CGAL
@@ -82,6 +84,23 @@ download statistics</i></a>.
 <!-- ============================================================================================= -->
 
 <ul class="projects-list">
+
+<li><a href="https://github.com/tudelft3d/City3D"><b>City3D - large-scale LoD2 building reconstruction from airborne LiDAR point clouds</b></a><br>
+    <b>3D Geoinformation group, TU Delft</b><br>
+    <b>Used CGAL packages:</b> Shape Detection (region growing), Shape Regularization, 2D Alpha Shapes, 2D Triangulations, Polyline Simplification, Optimal Transportation Curve Reconstruction (modified copy), 3D Point Set<br><br>
+
+<li><a href="https://github.com/IfcOpenShell/IfcOpenShell"><b>IfcOpenShell</b></a> - open source toolkit and geometry engine for Industry Foundation Classes (IFC), also used by the Bonsai (BlenderBIM) add-on for Blender<br>
+    <b>The IfcOpenShell contributors</b><br>
+    <b>Used CGAL packages:</b> 3D Nef Polyhedra, Polygon Mesh Processing, 2D Arrangements, 2D Regularized Boolean Set-Operations, 2D Polygon Partitioning, AABB Tree, dD Spatial Searching<br><br>
+
+<li><a href="https://github.com/3DBAG/roofer"><b>roofer - automatic LoD2 building reconstruction from point clouds</b></a>, used to produce the <a href="https://docs.3dbag.nl/en/">3DBAG</a> dataset of all buildings in the Netherlands<br>
+    <b>3D geoinformation research group, Delft University of Technology, and 3DGI</b>, The Netherlands<br>
+    <b>Used CGAL packages:</b> Shape Detection, Shape Regularization, 2D Alpha Shapes, 2D Triangulations, 2D Arrangements, 2D Regularized Boolean Set-Operations, dD Spatial Searching, AABB Tree<br><br>
+
+<li><a href="https://github.com/tudelft3d/City4CFD"><b>City4CFD - automatic reconstruction of 3D city geometries for urban flow simulations</b></a><br>
+    <b>3D geoinformation research group</b>, Delft University of Technology, The Netherlands<br>
+    <b>Used CGAL packages:</b> 2D Triangulations, 2D Alpha Shapes, Polygon Mesh Processing, 3D Point Set, dD Spatial Searching, 2D Regularized Boolean Set-Operations<br><br>
+
 <li><B>Geosimulation tool applied to urban data for a gentrification application</B><br>
     <b>K. Hins Mallet and <a href="https://www.scg.ulaval.ca/mir-abolfazl-mostafavi">Mir Abolfazl Mostafavi</a></b>.<br>
     D&eacute;partement des sciences g&eacute;omatiques, Universit&eacute; Laval, Qu&eacute;bec, Canada.<br>
@@ -269,6 +288,11 @@ and H. Pottmann</B><BR>
 <!-- ============================================================================================= -->
 
 <ul class="projects-list">
+
+<li><a href="https://github.com/zenustech/zeno"><b>ZENO - a node-based simulation and rendering engine for visual effects</b></a><br>
+  <b>Zenus Technology</b><br>
+  Uses CGAL through libigl for mesh Boolean operations (optional module)<br><br>
+
 <LI><A HREF="https://www.cise.ufl.edu/research/SurfLab/">
   <B>Surflab</B></A><BR>
   <B>Jorg Peters</B> <i>et al.</i><BR>
@@ -306,7 +330,6 @@ and H. Pottmann</B><BR>
 <li> <a href="https://github.com/mrzv/diode"><b>DioDe - alpha shape filtrations for the Dionysus persistent homology library</b></a><br>
   <b><a href="https://www.mrzv.org/">Dmitriy Morozov</a></b><br>
   <b>Used CGAL packages:</b> 3D Alpha Shapes, 2D and 3D Triangulations, 3D Periodic Triangulations, 2D Periodic Triangulations<br><br>
-
 
 <li> <a href="https://doi.org/10.1016/j.cad.2023.103563"><b>Computing Geometrical Measures of Topological Holes</b></a><br>
   <b>Jude T. Anderson</b>, <b>David M. Williams</b>, and <b>Andrew Corrigan</b><br>
@@ -370,7 +393,6 @@ and H. Pottmann</B><BR>
 <li><b><a href="https://github.com/NeoGeographyToolkit/StereoPipeline">NASA Ames Stereo Pipeline</a></b> - tools for processing planetary and Earth stereo imagery; its <a href="https://github.com/NeoGeographyToolkit/cgal_tools">CGAL mesh tools</a> post-process the produced meshes<br>
   <b>NASA Ames Research Center</b>, USA<br>
   <b>Used CGAL packages:</b> Polygon Mesh Processing, Triangulated Surface Mesh Simplification, Point Set Processing, Poisson Surface Reconstruction, Scale-Space Surface Reconstruction, Advancing Front Surface Reconstruction<br><br>
-
 
 <li><b><a href="http://inria-mvs.gforge.inria.fr/">Multi-View Stereo Software</a></b><br>
   <b>Jean-Paul Chieze</b><br>
@@ -510,6 +532,35 @@ Surface reconstruction applied to point clouds obtained through a computer visio
 
 <ul class="projects-list">
 
+  <LI><b><a href="https://qgis.org/">QGIS</a></b> - free and open source geographic information system<br>
+  QGIS project & OSGeo<br>
+  <b>Uses CGAL via SFCGAL</b> (since QGIS 4.0)<br><br>
+
+  <LI> <A HREF="https://postgis.net/">
+    <B>PostGIS - Geographic Objects for the PostgreSQL Database</B></A><BR>
+    PostGIS PSC & OSGeo<br>
+    <B>Uses CGAL via SFCGAL</B><BR><BR>
+
+  <LI> <A HREF="https://sfcgal.gitlab.io/SFCGAL/">
+    <B>SFCGAL - a C++ wrapper library around CGAL with the aim of supporting ISO 19107:2013 and OGC Simple Features Access 1.2 for 3D operations. </B></A><BR>
+    <A HREF="https://oslandia.com/">Oslandia</A><br><br>
+
+  <LI><b><a href="https://github.com/OSGeo/gdal">GDAL/OGR</a></b> - translator library for raster and vector geospatial data formats<br>
+  OSGeo<br>
+  <b>Uses CGAL via SFCGAL</b><br><br>
+
+  <LI><b><a href="https://github.com/tudelft3d/val3dity">val3dity - validation of 3D GIS primitives according to ISO 19107</a></b><br>
+  <b>3D geoinformation research group</b>, Delft University of Technology, The Netherlands<br>
+  <b>Used CGAL packages:</b> 3D Nef Polyhedra, 3D Minkowski Sums, Polygon Mesh Processing, 3D Polyhedral Surface, Intersecting Sequences of dD Iso-oriented Boxes, 2D Triangulations<br><br>
+
+  <LI><b><a href="https://github.com/tudelft3d/3dfier">3dfier - creation of 3D city models by lifting 2D GIS datasets with point clouds</a></b><br>
+  <b>3D geoinformation research group</b>, Delft University of Technology, The Netherlands<br>
+  <b>Used CGAL packages:</b> 2D Triangulations (constrained Delaunay)<br><br>
+
+  <LI><b><a href="https://github.com/tudelft3d/pprepair">pprepair - validation and automatic repair of planar partitions</a></b><br>
+  <b>3D geoinformation research group</b>, Delft University of Technology, The Netherlands<br>
+  <b>Used CGAL packages:</b> 2D Triangulations (constrained Delaunay), 2D Polygons<br><br>
+
   <LI><b><a href="https://github.com/tue-alga/cartocrow/">CartoCrow - A framework for cartographic visualization algorithms</a></b><br>
   <b><a href="https://algo.win.tue.nl/">ALGO cluster</a></b><br>
   Eindhoven University of Technology, The Netherlands</br>
@@ -537,14 +588,6 @@ Surface reconstruction applied to point clouds obtained through a computer visio
 <LI><A HREF="https://www.gplates.org"><b>GPlates</b></a> - software for the interactive visualisation of plate-tectonics. <BR>
      <B>Used CGAL packages:</B> 3D Surface Interpolation, 2D Mesh Generator <BR><BR>
 
-<LI> <A HREF="https://sfcgal.gitlab.io/SFCGAL/">
-     <B>SFCGAL - a C++ wrapper library around CGAL with the aim of supporting ISO 19107:2013 and OGC Simple Features Access 1.2 for 3D operations. </B></A><BR>
-     <A HREF="https://oslandia.com/">Oslandia</A><br><br>
-
-<LI> <A HREF="https://postgis.net/">
-     <B>PostGIS - Geographic Objects for the PostgreSQL Database</B></A><BR>
-     PostGIS PSC & OSGeo<br>
-     <B>Uses CGAL via SFCGAL</B><BR><BR>
 
 <LI> <A HREF="https://code.flickr.net/2008/10/30/the-shape-of-alpha/"><B>The Shape of Alpha</B></A><BR>
      <B>Used CGAL packages:</B> Alpha Shapes<BR><BR>
@@ -562,15 +605,24 @@ Surface reconstruction applied to point clouds obtained through a computer visio
 
 <ul class="projects-list">
 
+<LI><a href="https://gitlab.kitware.com/vtk/meshing/vespa"><B>VESPA - VTK Enhanced with Surface Processing Algorithms</B></a> - CGAL algorithms exposed as VTK filters and as a ParaView plugin<BR>
+    <B>Kitware</B><BR>
+    <B>Used CGAL packages:</B> Polygon Mesh Processing, 3D Alpha Wrapping, Triangulated Surface Mesh Deformation, and others<BR><BR>
+
+<LI><a href="https://github.com/CloudCompare/CloudCompare"><B>CloudCompare</B></a> - 3D point cloud and mesh processing software<BR>
+    <B>Daniel Girardeau-Montaut and the CloudCompare contributors</B><BR>
+    <B>Used CGAL packages:</B> 2D Triangulations, dD Spatial Searching; mesh Boolean operations through the CGAL-based module of libigl<BR><BR>
+
+<LI><a href="https://github.com/PyMesh/PyMesh"><B>PyMesh - geometry processing library for Python</B></a> (no longer actively developed)<BR>
+    <B>Qingnan Zhou</B><BR>
+    <B>Used CGAL packages:</B> Polygon Mesh Processing (corefinement), 3D Nef Polyhedra, 2D Arrangements, 2D Snap Rounding, 2D Straight Skeleton, AABB Tree<BR><BR>
+
 <LI><A HREF="http://www-sop.inria.fr/geometrica/collaborations/iron/">
     <B>IRON (ERC Starting grant project)</B></a><BR>
     <B>Pierre Alliez </B> <BR>
     INRIA Sophia Antipolis - M&eacute;diterran&eacute;e, France.<BR>
-
     <A HREF="https://doi.org/10.1111/j.1467-8659.2011.02033.x">Optimal transport for robust shape reconstruction</a><BR>
-
     <B>Used CGAL packages:</B> 2D/3D Delaunay triangulations, Polyhedral surfaces, Fast intersection and distance computations.
-
 
      <BR><BR>
 
@@ -611,6 +663,10 @@ Surface reconstruction applied to point clouds obtained through a computer visio
 
 <ul class="projects-list">
 
+  <li><b><a href="https://graph-tool.skewed.de/">graph-tool</a></b> - efficient Python module for the manipulation and statistical analysis of graphs (networks)<br>
+  <b>Tiago de Paula Peixoto</b><br>
+  <b>Used CGAL packages:</b> 2D and 3D Triangulations, 3D Periodic Triangulations (generation of triangulation graphs from point sets)<br><br>
+
   <li><b><a href="https://doi.org/10.1016/j.disc.2022.113213">Hyperbolic polyhedral surfaces with regular faces</a></B>
   (<a href="https://arxiv.org/abs/1807.10762">arXiv</a>)<BR>
   <B><a href="http://www.math.tohoku.ac.jp/english/people/akama-e.html">Yohji Akama</a></B>
@@ -624,6 +680,14 @@ Surface reconstruction applied to point clouds obtained through a computer visio
 <!-- ============================================================================================= -->
 
 <ul class="projects-list">
+
+<li><a href="https://github.com/kharchenkolab/Baysor"><b>Baysor - Bayesian segmentation of imaging-based spatial transcriptomics data</b></a><br>
+  <b>Kharchenko Lab</b><br>
+  <b>Used CGAL packages:</b> 2D Triangulations<br><br>
+
+<li><a href="https://github.com/simnibs/simnibs"><b>SimNIBS - simulation of non-invasive brain stimulation</b></a>, whose <i>charm</i> pipeline builds individualized tetrahedral head models from MRI<br>
+  <b>The SimNIBS developers</b><br>
+  <b>Used CGAL packages:</b> 3D Mesh Generation (from labeled images and polyhedral complexes), Polygon Mesh Processing, AABB Tree<br><br>
 
 <li><a href="https://arxiv.org/abs/2112.11530"><b>Three Dimensional
   Optimization of Scaffold Porosities for Bone Tissue
@@ -721,6 +785,10 @@ TSI department at T&eacute;l&eacute;com ParisTech <br>
 
 <ul class="projects-list">
 
+<li><a href="https://www.dealii.org/"><b>deal.II - an open source finite element library</b></a><br>
+  <b>The deal.II developers</b><br>
+  <b>Used CGAL packages:</b> 3D Mesh Generation, 3D Surface Mesh Generation, Polygon Mesh Processing, 2D Polygons, 3D Convex Hulls, 3D Triangulations<br><br>
+
 <li><a href="https://doi.org/10.1111/cgf.15019"><b>BallMerge:
   High-quality Fast Surface Reconstruction via Voronoi Balls</b></a>
   <a href="https://hal.science/hal-04457247">(free version)</a><br>
@@ -734,6 +802,12 @@ TSI department at T&eacute;l&eacute;com ParisTech <br>
   Czech Technical University in Prague,<br>
   <b>Used CGAL packages:</B> 3D Triangulations <br><br>
 
+<li>Surface reconstruction from Gaussian Splatting, extracting meshes with the CGAL-based Delaunay tetrahedralization module of Tetra-NeRF:
+  <a href="https://github.com/autonomousvision/gaussian-opacity-fields"><b>Gaussian Opacity Fields</b></a> (SIGGRAPH Asia 2024),
+  <a href="https://github.com/BaowenZ/RaDe-GS"><b>RaDe-GS</b></a>,
+  <a href="https://github.com/Anttwo/MILo"><b>MILo: Mesh-In-the-Loop Gaussian Splatting</b></a> (SIGGRAPH Asia 2025)<br>
+  <b>Used CGAL packages:</b> 3D Triangulations, Point Set Processing<br><br>
+
 <LI> <A HREF="https://www.cs.purdue.edu/homes/tamaldey/locpsc.html">
      <B>LocPSC: Software for Generating Large Delaunay Meshes of Surfaces, Volumes, Piecewise-Smooth Surfaces, Non-manifolds </B></A><BR>
   <B><a href="https://www.cs.purdue.edu/homes/tamaldey/">Tamal Krishna Dey</a></B>
@@ -741,7 +815,6 @@ TSI department at T&eacute;l&eacute;com ParisTech <br>
   Department of Computer Science and Engineering,
   The Ohio State University <BR>
   <B>Used CGAL packages:</B> 3D Triangulations <BR><BR>
-
 
 <LI> <A HREF="https://iso2mesh.sourceforge.net/cgi-bin/index.cgi?Home">
      <B>ISO2Mesh: a free 3D surface and volumetric mesh generator for
@@ -794,6 +867,17 @@ TSI department at T&eacute;l&eacute;com ParisTech <br>
 <!-- ============================================================================================= -->
 
 <ul class="projects-list">
+
+<li> <a href="https://github.com/prusa3d/PrusaSlicer"><B>PrusaSlicer</B></a>, slicing software for 3D printing<BR>
+  <B>Prusa Research</B><BR>
+  <B>Used CGAL packages:</B> Polygon Mesh Processing (Boolean operations), 3D Nef Polyhedra, 3D Convex Hulls, 2D and 3D Triangulations, AABB Tree<BR><BR>
+
+<li> <a href="https://github.com/bambulab/BambuStudio"><B>Bambu Studio</B></a> (Bambu Lab) and <a href="https://github.com/SoftFever/OrcaSlicer"><B>OrcaSlicer</B></a>, slicing software for 3D printing derived from PrusaSlicer<BR>
+  <B>Used CGAL packages:</B> Polygon Mesh Processing (Boolean operations, clipping, repair, remeshing, hole filling), Triangulated Surface Mesh Segmentation, 2D Arrangements, 2D Intersection of Curves<BR><BR>
+
+<li> <a href="https://github.com/GilesBathgate/RapCAD"><B>RapCAD</B></a>, a rapid prototyping CAD IDE for 3D printing<BR>
+  <B>Giles Bathgate</B><BR>
+  <B>Used CGAL packages:</B> 3D Nef Polyhedra, 3D Alpha Shapes, 2D and 3D Triangulations, 3D Subdivision Methods, Triangulated Surface Mesh Simplification, Bounding Volumes<BR><BR>
 
 <li> <a href="https://openscad.org/"><B>OpenSCAD</B></a>, a software for creating solid 3D CAD objects</a><BR>
   <B>Used CGAL packages:</B>2D and 3D Nef Polyhedra<BR><BR>
@@ -1008,6 +1092,10 @@ TSI department at T&eacute;l&eacute;com ParisTech <br>
 
     <ul class="projects-list">
 
+      <li><a href="https://octopus-code.org/"><b>Octopus - real-space, real-time (TDDFT) electronic structure code</b></a><br>
+      <b>The Octopus developers</b><br>
+      Uses CGAL to read polyhedral geometry files defining simulation boxes and linear media<br><br>
+
       <li><a href="https://arxiv.org/abs/2212.05997"><b>An Electrodynamics Solver for Moving Sources</b></a><br>
       <b>Sameh Y. Elnaggar</b> and <b>Yahia M. M. Antar</b><br>
       The Royal Military College of Canada.<br><br>
@@ -1221,6 +1309,17 @@ TSI department at T&eacute;l&eacute;com ParisTech <br>
     <!-- ============================================================================================= -->
 
     <ul class="projects-list">
+
+        <li>
+            <a href="https://github.com/meshpro/pygalmesh"><b>pygalmesh</b></a> :
+            Python frontend to CGAL's 2D and 3D mesh generation<br>
+            <b>Nico Schl&ouml;mer</b><br><br>
+        </li>
+        <li>
+            <a href="https://compas.dev/compas_cgal/"><b>COMPAS CGAL</b></a> :
+            Python bindings for CGAL algorithms in the COMPAS framework for architecture, engineering and digital fabrication<br>
+            <b>Block Research Group, ETH Z&uuml;rich</b><br><br>
+        </li>
         <li>
             <a href="https://github.com/CGAL/cgal-swig-bindings"><b>CGAL SWIG-Bindings</b></a> :
             bindings for CGAL using <a href="https://www.swig.org">SWIG</a> for Java, Python, ... <br>
