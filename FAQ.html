@@ -31,7 +31,6 @@ group: navigation
             <LI> <A HREF="#debian_demos">How do I compile and execute the demos and examples on Debian / Ubuntu?</A>
             <LI> <A HREF="#compilers">Which compilers are supported?</A>
             <LI> <A HREF="#qt">Which versions of Qt are supported?</A>
-            <LI> <A HREF="#mac_optimization_bug">Why do I get errors when using compiler optimization on Mac OS X?</A>
             <LI> <A HREF="#compilation_speed">How to reduce compilation time of programs using CGAL ?</A>
          </UL>
     <LI> <A HREF="#kernels">Kernels and Number Types</A>
@@ -79,8 +78,6 @@ group: navigation
          <UL>
              <LI> <A HREF="#polyhedron_transform">Why is there no
                   <I>transform</I> function for <I>Polyhedron_3</I>?</A>
-             <LI> <A HREF="#polyhedron_examples">Where can I find examples of 
-                  polyhedral surfaces?</A>
              <LI> <A HREF="#polyhedron_normals">How can I compute the plane
                   equation (normal) for a facet in a polyhedral surface?</A>
          </UL>
@@ -221,19 +218,9 @@ group: navigation
 
    <LI> <A NAME="qt"></A>
         <B>Which versions of Qt are supported?</B>
-	<P>All the demos use Qt5. The 2D demos are based on the
-           <a href="http://www.cgal.org/Pkg/GraphicsView">GraphicsView framework</a>,
-           the 3D demos on the <a href="http://www.libqglviewer.com/">libQGLViewer</a>. </P>
-
-   <LI> <A NAME="mac_optimization_bug"></A>
-        <B>Why do I get errors when using compiler optimization on Mac OS X?</B>
-	<P>The default compiler on Mac OS X is g++ 4.0 (at least on Tiger and Leopard).
-       	   It has some bugs that are unfortunately encountered by some programs using
-           CGAL when optimizing.
-	   We recommend that you use a more recent version of g++, such as g++ 4.2,
-	   which you can get by upgrading to the latest XCode, or using Fink.
-	   You can then select it by passing the following flags to CMake :
-	   <tt>-DCMAKE_CXX_COMPILER=/usr/bin/g++-4.2 -DCMAKE_C_COMPILER=/usr/bin/gcc-4.2</tt></P>
+	<P>Since CGAL&nbsp;6.0, the demos and the basic viewer use <a href="https://doc.cgal.org/latest/Manual/thirdparty.html#thirdpartyQt">Qt6</a>.
+           The 2D demos are based on the
+           <a href="https://doc.cgal.org/latest/Manual/packages.html#PkgGraphicsView">CGAL and the Qt Graphics View Framework</a> package.</P>
 
    <LI> <A NAME="compilation_speed"></A>
         <B>How to reduce compilation time of programs using CGAL ?</B>
