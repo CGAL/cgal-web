@@ -21,7 +21,7 @@ RewriteRule (.*) https://www.cgal.org/$1 [R=301,L]
 Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
 
 # Redirect page removed from the web site in April 2015
-Redirect permanent /platforms.html http://doc.cgal.org/latest/Manual/installation.html#seccompilers
+Redirect permanent /platforms.html https://doc.cgal.org/latest/Manual/thirdparty.html#seccompilers
 Redirect permanent /windows_installation.html /download/windows.html
 Redirect permanent /grass.html /news/2014/04/01/GoogleGrass/
 Redirect permanent /philosophy.html /exact.html
