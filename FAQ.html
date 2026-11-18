@@ -676,12 +676,10 @@ group: navigation
          variable stored in facets.<P>
 
          The plane equations must be computed separately by the
-         user. There is currently no general method available in CGAL
-         that computes the plane equations, since the requirements
-         could vary considerably with the number type chosen or the
-         possible knowledge of the facet types (convex, triangles,
-         ...). Assuming strictly convex facets and exact arithmetic
-         (or the willingness to live with rounding errors), the example 
+         user. For face normals, the functions
+         <A HREF="https://doc.cgal.org/latest/Polygon_mesh_processing/group__PMP__normal__grp.html"><TT>CGAL::Polygon_mesh_processing::compute_face_normal()</TT></A> and
+         <TT>compute_face_normals()</TT> can be used. Otherwise, assuming strictly convex facets and exact arithmetic
+         (or the willingness to live with rounding errors), the example
         <TT>&lt;CGALROOT&gt;/examples/Polyhedron/polyhedron_prog_normals.cpp</TT>
          computes these plane equations, see also the <A HREF=
          "https://doc.cgal.org/latest/Polyhedron/index.html">User Manual
