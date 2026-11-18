@@ -12,7 +12,7 @@ tags: [""]
     <a href="https://geometryfactory.com/who-we-are/">Simon Giraudot</a>&deg;,
     <a href="https://www-sop.inria.fr/members/Jean-Philippe.Bauchet/">Jean-Philippe Bauchet</a>&#42;,
     <a href="https://www-sop.inria.fr/members/Florent.Lafarge/">Florent Lafarge</a>&#42;</h3>
-<h4>&deg;<a href="http://www.geometryfactory.com" target="_blank">GeometryFactory</a>,
+<h4>&deg;<a href="https://www.geometryfactory.com" target="_blank">GeometryFactory</a>,
     &#42;<a href="https://www.inria.fr">INRIA Sophia Antipolis</a></h4>
 
 <br>

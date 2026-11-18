@@ -10,7 +10,7 @@ tags: [""]
 <h3><a href="https://geometryfactory.com/who-we-are/">Mael Rouxel-Labbé</a>&deg;,
 <a href="https://members.loria.fr/Monique.Teillaud/">Monique Teillaud</a>&#42;,
 and Claudia Werner&#42;</h3>
-<h4>&deg;<a href="http://www.geometryfactory.com" target="_blank">GeometryFactory</a>, &#42;<a href="https://www.inria.fr">INRIA</a></h4>
+<h4>&deg;<a href="https://www.geometryfactory.com" target="_blank">GeometryFactory</a>, &#42;<a href="https://www.inria.fr">INRIA</a></h4>
 
 <br>
 <p>The Delaunay triangulation, along with its dual – the Voronoi diagram, are some of the most

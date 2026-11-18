@@ -9,7 +9,7 @@ tags: [""]
 
 <h3>Mikhail Bogdanov&#42;, Aymeric Pellé&#42;, <a href="https://geometryfactory.com/who-we-are/">Mael Rouxel-Labbé</a>&deg;,
 and <a href="https://members.loria.fr/Monique.Teillaud/">Monique Teillaud</a>&#42;</h3>
-<h4>&#42;<a href="https://www.inria.fr">INRIA</a>, &deg;<a href="http://www.geometryfactory.com" target="_blank">GeometryFactory</a></h4>
+<h4>&#42;<a href="https://www.inria.fr">INRIA</a>, &deg;<a href="https://www.geometryfactory.com" target="_blank">GeometryFactory</a></h4>
 
 <br>
 <p>The field of algorithmic geometry is traditionally limited to Euclidean spaces. Consequently,

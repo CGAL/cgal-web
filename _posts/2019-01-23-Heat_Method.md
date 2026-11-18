@@ -12,7 +12,7 @@ tags: [""]
 <a href="https://www.linkedin.com/in/cvaz2018">Christina Vaz</a>&#42;, and
 <a href="https://geometryfactory.com/who-we-are/">Andreas Fabri</a>&deg;</h3>
 <h4>&#42;<a href="https://www.csd.cs.cmu.edu/">Carnegie Mellon University</a>,
-&deg;<a href="http://www.geometryfactory.com" target="_blank">GeometryFactory</a></h4>
+&deg;<a href="https://www.geometryfactory.com" target="_blank">GeometryFactory</a></h4>
 
 <br>
 Measuring distances in space and over manifolds is one of the most fundamental operations

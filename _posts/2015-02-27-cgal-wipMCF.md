@@ -8,7 +8,7 @@ tags: ["WIP"]
 {% include JB/setup %}
 
 <h3>Xiang Gao, Sebastien Loriot, and Andrea Tagliasacchi</h3>
-<h4> <a href="http://www.geometryfactory.com" target="_blank">GeometryFactory</a></h4>
+<h4> <a href="https://www.geometryfactory.com" target="_blank">GeometryFactory</a></h4>
 
 <p>This new package provides a (1D) curve skeleton extraction algorithm for 
  a triangulated poylgonal mesh without borders based on the mean curvature flow.

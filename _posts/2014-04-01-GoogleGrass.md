@@ -8,7 +8,7 @@ tags: [gsoc, april]
 {% include JB/setup %}
 
 
-The CGAL Open Source Project, a <a href="http://www.cgal.org/project_ideas.html">mentoring organization
+The CGAL Open Source Project, a <a href="https://www.cgal.org/project_ideas.html">mentoring organization
 of the Google Summer of Code 2014</a>, participates in <em>Google Grass</em>,
 a study run by Google and several medical schools worldwide.
 The goal is to find out if a moderate consumption of cannabis

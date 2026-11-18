@@ -8,7 +8,7 @@ tags: ["WIP"]
 {% include JB/setup %}
 
 <h3>Ilker O. Yaz, Sebastien Loriot, and Jane Tournois</h3>
-<h4> <a href="http://www.geometryfactory.com" target="_blank">GeometryFactory</a></h4>
+<h4> <a href="https://www.geometryfactory.com" target="_blank">GeometryFactory</a></h4>
 
 <p>This package implements a collection of methods and classes for
 polygon mesh processing, ranging from basic operations on simplices,

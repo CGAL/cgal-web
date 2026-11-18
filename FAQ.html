@@ -95,7 +95,7 @@ group: navigation
 <UL>
    <LI> <A NAME="what_is_cgal"></A>
         <B>What is CGAL?</B>
-        <P>CGAL is an acronym for the <a href="/Manual/last/doc_html/cgal_manual/contents.html">Computational Geometry Algorithms Library</a>.
+        <P>CGAL is an acronym for the <a href="https://doc.cgal.org/latest/Manual/index.html">Computational Geometry Algorithms Library</a>.
        It is at the same time the short name for the <a href="opensource.html">CGAL Open
           Source Project</a>. The goal of the project
            is to provide <em>easy access to efficient and reliable geometric algorithms</em>
@@ -126,8 +126,8 @@ group: navigation
         Yes.  The CGAL distribution includes two directories containing
         example programs: <TT>&lt;CGALROOT&gt;/examples/</TT> and
         <TT>&lt;CGALROOT&gt;/demo/</TT>.  Here you find the source code and
-        makefiles for these programs. The current CGAL manual provides a nice
-        <a href="/Manual/last/doc_html/cgal_manual/packages.html">overview of packages</a>
+        CMake scripts for these programs. The current CGAL manual provides a nice
+        <a href="https://doc.cgal.org/latest/Manual/packages.html">overview of packages</a>
         from where you can also get the demo source code and Windows executables.
         <P>
 
@@ -255,7 +255,7 @@ group: navigation
                 Regrouping them reduces the time spent by the compiler to parse
                 the header files, and avoids redundant template instantiations.
             <LI><em>Precompile header files</em> : some compilers, such as GCC, provide
-                a feature named <a href="http://en.wikipedia.org/wiki/Precompiled_header">
+                a feature named <a href="https://en.wikipedia.org/wiki/Precompiled_header">
                 precompiled headers</a>. This can be mostly useful if you can regroup in a
                 single header file most of the header files that you use, together with
                 most template instantiations.  Refer to your compiler documentation to use this feature.
@@ -291,7 +291,7 @@ group: navigation
         program involves the construction of new objects or simply predicate
         evaluation and comparisons, and on the size of the input numbers. The
         section
-        <A HREF="/Manual/last/doc_html/cgal_manual/Kernel_23/Chapter_main.html#Section_7.2.6">
+        <A HREF="https://doc.cgal.org/latest/Kernel_23/index.html#Kernel_23ChoosingaKernelandPredefinedKernels">
         Choosing a kernel</A> in the kernel manual should provide some guidance.
 
         <P>
@@ -314,7 +314,7 @@ group: navigation
          correctness of subsequent computations with this object cannot be
          guaranteed. However, providing exact constructions is currently
          less efficient, which is basically the reason why the kernel
-         <A HREF="/Manual/last/doc_html/cgal_manual/Kernel_23_ref/Class_Exact_predicates_inexact_constructions_kernel.html">CGAL::Exact_predicates_inexact_constructions_kernel</A> exists;
+         <A HREF="https://doc.cgal.org/latest/Kernel_23/classCGAL_1_1Exact__predicates__inexact__constructions__kernel.html">CGAL::Exact_predicates_inexact_constructions_kernel</A> exists;
          <TT>double</TT> is used as the representation
          type in this case.<BR><BR>
 
@@ -326,8 +326,8 @@ group: navigation
         <P>
         While it may well be a bug in CGAL, with such number types you are more
         likely to suffer from a problem with robustness. In particular, using
-	the kernel <A HREF="/Manual/last/doc_html/cgal_manual/Kernel_23_ref/Class_Cartesian.html">CGAL::Cartesian</A> with number types <TT>double</TT> or
-	<TT>float</TT> is likely to give you wrong results.<P><P>  
+	the kernel <A HREF="https://doc.cgal.org/latest/Kernel_23/structCGAL_1_1Cartesian.html">CGAL::Cartesian</A> with number types <TT>double</TT> or
+	<TT>float</TT> is likely to give you wrong results.<P><P>
 
         The problem is that double and float are inexact number types,
         and as such they cannot guarantee exact results in all
@@ -344,22 +344,22 @@ group: navigation
 	<P><P>
 
         A solution that always works (although it might slow down the algorithm
-	considerably) is to use an exact multi-precision number type such as 
-        <A HREF="/Manual/last/doc_html/cgal_manual/NumberTypeSupport_ref/Class_Quotient.html">CGAL::Quotient</A>&lt;<A HREF="/Manual/last/doc_html/cgal_manual/NumberTypeSupport_ref/Class_MP_Float.html">CGAL::MP_Float</A>&gt; or 
-        <A HREF="/Manual/last/doc_html/cgal_manual/NumberTypeSupport_ref/Class_Gmpq.html">CGAL::Gmpq</A>, instead of <TT>double</TT> or <TT>float</TT>.
+	considerably) is to use an exact multi-precision number type such as
+        <A HREF="https://doc.cgal.org/latest/Number_types/classCGAL_1_1Quotient.html">CGAL::Quotient</A>&lt;<A HREF="https://doc.cgal.org/latest/Number_types/classCGAL_1_1MP__Float.html">CGAL::MP_Float</A>&gt; or
+        <A HREF="https://doc.cgal.org/latest/Number_types/classCGAL_1_1Gmpq.html">CGAL::Gmpq</A>, instead of <TT>double</TT> or <TT>float</TT>.
         <P><P>
 
         If your program does not involve the construction of new objects
         from the input data (such as the intersection of two objects, or the
         center of a sphere defined by the input objects),
-        the <A HREF="/Manual/last/doc_html/cgal_manual/Kernel_23_ref/Class_Exact_predicates_inexact_constructions_kernel.html">CGAL::Exact_predicates_inexact_constructions_kernel</A> 
-        kernel provides a nice and fast way to use exact predicates together 
+        the <A HREF="https://doc.cgal.org/latest/Kernel_23/classCGAL_1_1Exact__predicates__inexact__constructions__kernel.html">CGAL::Exact_predicates_inexact_constructions_kernel</A>
+        kernel provides a nice and fast way to use exact predicates together
 	with an inexact number type such as <TT>double</TT> for constructions.
         <P><P>
 
         When your program uses constructions of new objects, you can still
         speed things up by using the number type
-        <A HREF="/Manual/last/doc_html/cgal_manual/NumberTypeSupport_ref/Class_Lazy_exact_nt.html">CGAL::Lazy_exact_nt</A>
+        <A HREF="https://doc.cgal.org/latest/Number_types/classCGAL_1_1Lazy__exact__nt.html">CGAL::Lazy_exact_nt</A>
         on top of an exact number type.<BR><BR>
 
   Good references that discuss the robustness problem in geometric computing are:<BR>
@@ -379,7 +379,7 @@ group: navigation
 	   <LI> Lutz Kettner, Kurt Mehlhorn, Sylvain Pion, Stefan Schirra, and
 	        Chee Yap. Classroom Examples of Robustness Problems in
 		Geometric Computations, <I>Computational Geometry: Theory and
-		Algorithms</I>, 40(1):61-78, 2008. <A HREF="http://hal.inria.fr/inria-00344310">[html]</A>
+		Algorithms</I>, 40(1):61-78, 2008. <A HREF="https://inria.hal.science/inria-00344310">[html]</A>
         </UL>
 
         <P>
@@ -440,9 +440,9 @@ group: navigation
          <P>
          There are two means provided in CGAL for performing boolean operations
          on polygons in the plane.  One is provided via the class template
-         <A HREF="/Manual/last/doc_html/cgal_manual/Nef_2/Chapter_main.html"><TT>Nef_polyhedron_2</TT></A>.  
-         The other is provided via the <A HREF="/Manual/last/doc_html/cgal_manual/Boolean_set_operations_2/Chapter_main.html">Boolean Set-Operations</A> package.  
-         There are <A HREF="/Manual/last/doc_html/cgal_manual/packages.html#Pkg:BooleanSetOperations2">demo programs</A> illustrating 
+         <A HREF="https://doc.cgal.org/latest/Nef_2/index.html"><TT>Nef_polyhedron_2</TT></A>.
+         The other is provided via the <A HREF="https://doc.cgal.org/latest/Boolean_set_operations_2/index.html">Boolean Set-Operations</A> package.
+         There are <A HREF="https://doc.cgal.org/latest/Manual/packages.html#PkgBooleanSetOperations2">demo programs</A> illustrating
          boolean operations using both of these.  The manual pages provide
          more information regarding, for example, additional functionality
          available with these class templates.  See also the
@@ -454,10 +454,10 @@ group: navigation
          <B>How do I compute the triangulation of the interior of a polygon?</B>
          <P>
          For this, one should use one of the constrained triangulation classes:
-        <A HREF="/Manual/last/doc_html/cgal_manual/Triangulation_2_ref/Class_Constrained_triangulation_2.html"><TT>Constrained_triangulation_2</TT></A>,
-        <A HREF="/Manual/last/doc_html/cgal_manual/Triangulation_2_ref/Class_Constrained_Delaunay_triangulation_2.html"><TT>Constrained_Delaunay_triangulation_2</TT></A>
+        <A HREF="https://doc.cgal.org/latest/Triangulation_2/classCGAL_1_1Constrained__triangulation__2.html"><TT>Constrained_triangulation_2</TT></A>,
+        <A HREF="https://doc.cgal.org/latest/Triangulation_2/classCGAL_1_1Constrained__Delaunay__triangulation__2.html"><TT>Constrained_Delaunay_triangulation_2</TT></A>
         or
-        <A HREF="/Manual/last/doc_html/cgal_manual/Triangulation_2_ref/Class_Constrained_triangulation_plus_2.html"><TT>Constrained_triangulation_plus_2</TT></A>.
+        <A HREF="https://doc.cgal.org/latest/Triangulation_2/classCGAL_1_1Constrained__triangulation__plus__2.html"><TT>Constrained_triangulation_plus_2</TT></A>.
         The edges of the polygon should be input as constraints to the
         triangulation.  The constructed triangulation will be a triangulation
         of the whole convex hull, but including as edges the edges of the
@@ -496,7 +496,7 @@ group: navigation
         <B>Boolean set operations: How can I compute them?</B>
 
         <p>The package
-        <a href="/Manual/last/doc_html/cgal_manual/Boolean_set_operations_2/Chapter_main.html">Regularized Boolean Set-Operation</a>
+        <a href="https://doc.cgal.org/latest/Boolean_set_operations_2/index.html">Regularized Boolean Set-Operation</a>
         consists of the implementation of Boolean set-operations on
         point sets bounded by weakly x-monotone curves in
         2-dimensional Euclidean space. In particular, it contains the
@@ -506,10 +506,10 @@ group: navigation
 	<p>Ordinary Boolean set-operations that operate on (linear)
 	polygons, which distinguish between the interior and the
 	boundary of a polygon, are supported by the
-	<a HREF="/Manual/last/doc_html/cgal_manual/Nef_2/Chapter_main.html">Planar Nef Polyhedra</a> package.</p>
+	<a HREF="https://doc.cgal.org/latest/Nef_2/index.html">Planar Nef Polyhedra</a> package.</p>
 
         <p>For intersections of the interiors of polygons also refer to
-	the <a href="/Manual/last/doc_html/cgal_manual/packages.html#Pkg:Nef2">polygon
+	the <a href="https://doc.cgal.org/latest/Manual/packages.html#PkgNef2">polygon
 	intersection demo program</a>, which is also available in the <tt>demo</tt>
 	directory of the CGAL distribution.</p>
 
@@ -523,7 +523,7 @@ group: navigation
         <ol>
           <li>Passing <var>x</var>-monotone curves that are pairwise
 	  disjoint in their interior to the overloaded insertion-function
-	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Function_insert.html"><code>insert()</code></a>
+	  <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/index.html"><code>insert()</code></a>
 	  is more efficient (in running time) and less demanding (in
 	  traits-class functionality) than passing general curves.
 	  </li>
@@ -531,20 +531,20 @@ group: navigation
           <li>When the curves to be inserted into an arrangement are
 	  segments that are pairwise disjoint in their interior, it
 	  is more efficient to use the traits class
-	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arr_non_caching_segment_traits_2.html"><code>Arr_non_caching_segment_traits_2</code></a>
+	  <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arr__non__caching__segment__traits__2.html"><code>Arr_non_caching_segment_traits_2</code></a>
 	  rather then the default one
-	  (<a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arr_segment_traits_2.html"><code>Arr_segment_traits_2</code></a>).
-	  
+	  (<a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arr__segment__traits__2.html"><code>Arr_segment_traits_2</code></a>).
+
 	  <p>If the segments may intersect each other, the default
 	  traits class
-	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arr_segment_traits_2.html"><code>Arr_segment_traits_2</code></a>
+	  <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arr__segment__traits__2.html"><code>Arr_segment_traits_2</code></a>
 	  can be safely used with the somehow limited number type
-	  <a href="/Manual/last/doc_html/cgal_manual/NumberTypeSupport_ref/Class_Quotient.html">Quotient</a>&lt;<a href="/Manual/last/doc_html/cgal_manual/NumberTypeSupport_ref/Class_MP_Float.html">MP_float</a>&gt;.
+	  <a href="https://doc.cgal.org/latest/Number_types/classCGAL_1_1Quotient.html">Quotient</a>&lt;<a href="https://doc.cgal.org/latest/Number_types/classCGAL_1_1MP__Float.html">MP_float</a>&gt;.
 
 	  <p>On rare occasions the traits class
-	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arr_non_caching_segment_traits_2.html"><code>Arr_non_caching_segment_traits_2</code></a>
+	  <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arr__non__caching__segment__traits__2.html"><code>Arr_non_caching_segment_traits_2</code></a>
 	  exhibits slightly better performance than the default one
-	  (<a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arr_segment_traits_2.html"><code>Arr_segment_traits_2</code></a>)
+	  (<a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arr__segment__traits__2.html"><code>Arr_segment_traits_2</code></a>)
 	  even when the segments intersect each other, due to the
 	  small overhead of the latter (optimized) traits class.
 	  (For example, when the the so called L<SMALL>EDA</SMALL>
@@ -554,11 +554,11 @@ group: navigation
 	  arrangement can be used to accelerate operations that insert
 	  <var>x</var>-monotone curves, whose interior is disjoint
 	  from existing edges and vertices of the arrangement. The
-	  specialized insertion functions, i.e., 
-	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_2.html"><code>insert_in_face_interior()</code></a>,
-	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_2.html"><code>insert_from_left_vertex()</code></a>, 
-	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_2.html"><code>insert_from_right_vertex()</code></a>, and
-	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_2.html"><code>insert_at_vertices()</code></a>
+	  specialized insertion functions, i.e.,
+	  <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arrangement__2.html"><code>insert_in_face_interior()</code></a>,
+	  <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arrangement__2.html"><code>insert_from_left_vertex()</code></a>,
+	  <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arrangement__2.html"><code>insert_from_right_vertex()</code></a>, and
+	  <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arrangement__2.html"><code>insert_at_vertices()</code></a>
 	  can be used according to the available information. These
 	  functions hardly involve any geometric operations, if at
 	  all. They accept topologically related parameters, and use
@@ -569,23 +569,23 @@ group: navigation
           <p>A polygon, represented by a list of segments along its
 	  boundary, can be inserted into an empty arrangement as
 	  follows. First, one segment is inserted using
-	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_2.html"><code>insert_in_face_interior()</code></a>
+	  <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arrangement__2.html"><code>insert_in_face_interior()</code></a>
 	  into the unbounded face. Then, a segment with a common end
 	  point is inserted using either
-	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_2.html"><code>insert_from_left_vertex()</code></a>
+	  <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arrangement__2.html"><code>insert_from_left_vertex()</code></a>
 	  or
-	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_2.html"><code>insert_from_right_vertex()</code></a>,
+	  <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arrangement__2.html"><code>insert_from_right_vertex()</code></a>,
 	  and so on with the rest of the segments except for the last,
 	  which is inserted using
-	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_2.html"><code>insert_at_vertices()</code></a>,
+	  <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arrangement__2.html"><code>insert_at_vertices()</code></a>,
 	  as both endpoints of which are the mapping of known
 	  vertices.</p></li>
-	    
+
 	  <li>The main trade-off among point-location strategies, is
 	  between time and storage. Using the
-	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arr_naive_point_location.html">naive</a>
+	  <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arr__naive__point__location.html">naive</a>
 	  or
-	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arr_walk_along_line_point_location.html">walk</a>
+	  <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arr__walk__along__line__point__location.html">walk</a>
 	  strategies, for example, takes more query time but does not
 	  require preprocessing or maintenance of auxiliary structures
 	  and saves storage space.</li>
@@ -595,14 +595,13 @@ group: navigation
 	  or merging edges are, then using a point-location strategy
 	  that does not require the maintenance of auxiliary
 	  structures, such as the
-the
-	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arr_naive_point_location.html">naive</a>
+	  <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arr__naive__point__location.html">naive</a>
 	  or
-	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arr_walk_along_line_point_location.html">walk</a>
+	  <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arr__walk__along__line__point__location.html">walk</a>
 	  strategies, is preferable.</li>
 
 	  <li>There is a trade-off between two modes of the
-	  <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arr_trapezoid_ric_point_location.html">RIC</a>
+	  <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arr__trapezoid__ric__point__location.html">RIC</a>
 	  strategy that enables the user to choose whether
 	  preprocessing should be performed or not. If preprocessing
 	  is not used, the creation of the structure is
@@ -644,7 +643,7 @@ the
          <I>vertex</I>, <I>halfedge</I>, and/or <I>face</I> types will
 	 contain the information you want. The package facilitates
 	 the coding necessary to achieve this task. Refer to Section
-	 <a href="/Manual/last/doc_html/cgal_manual/Arrangement_on_surface_2/Chapter_main.html#arr_sec:ex_dcel"><b>Extending the D<small>CEL</small></b></a>
+	 <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/index.html#arr_ssecex_dcel"><b>Extending the D<small>CEL</small></b></a>
 	 for further details.
 
          <p>You have to supply your model of the concept
@@ -699,7 +698,7 @@ the
          (or the willingness to live with rounding errors), the example 
         <TT>&lt;CGALROOT&gt;/examples/Polyhedron/polyhedron_prog_normals.cpp</TT>
          computes these plane equations, see also the <A HREF=
-         "/Manual/last/doc_html/cgal_manual/Polyhedron/Chapter_main.html">User Manual
+         "https://doc.cgal.org/latest/Polyhedron/index.html">User Manual
          for polyhedral surfaces</A>.<P>
 
          For inexact double arithmetic and/or non-convex facets one
