@@ -29,7 +29,7 @@ group: navigation
             <LI> <A HREF="#how_to_compile">How do I compile a program using CGAL?</A>
             <LI> <A HREF="#debian_packages">Are there packages for Debian / Ubuntu available?</A>
             <LI> <A HREF="#debian_demos">How do I compile and execute the demos and examples on Debian / Ubuntu?</A>
-            <LI> <A HREF="#is_vc6_supported">Is VC++ 6 supported?</A>
+            <LI> <A HREF="#compilers">Which compilers are supported?</A>
             <LI> <A HREF="#qt">Which versions of Qt are supported?</A>
             <LI> <A HREF="#mac_optimization_bug">Why do I get errors when using compiler optimization on Mac OS X?</A>
             <LI> <A HREF="#compilation_speed">How to reduce compilation time of programs using CGAL ?</A>
@@ -212,13 +212,12 @@ group: navigation
           <P>See also /usr/share/doc/libcgal-dev/README.Debian for more information.</P>
   </LI>
 
-   <LI> <A NAME="is_vc6_supported"></A>
-        <B>Is Visual C++ 6 supported?</B>
-        <P>No, it is not and there is no hope that you can make the necessary
-           fixes yourself to get it running with this compiler.
-           The issue lies in the fact that VC6 did not support the template mechanism well
-           enough. The solution is to either use an old version of CGAL
-           or to upgrade to newer versions of the Microsoft compiler.</P>
+   <LI> <A NAME="compilers"></A>
+        <B>Which compilers are supported?</B>
+        <P>CGAL requires a C++ compiler supporting C++17 or later. The list of compilers
+           that are continuously tested with the latest release is given in the section
+           <A HREF="https://doc.cgal.org/latest/Manual/thirdparty.html#seccompilers">Supported Compilers</A>
+           of the manual. Older compilers might work, but no guarantee is provided.</P>
 
    <LI> <A NAME="qt"></A>
         <B>Which versions of Qt are supported?</B>
