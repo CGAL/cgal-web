@@ -64,7 +64,7 @@ on a fixed domain, since precomputation done for the first query can be re-used.
 <h3>Heat Method : The Package</h3>
 
 <p>The newest CGAL package, <b>Heat_method_3</b> implements the heat method.
-This package is related to the package <a href="https://doc.cgal.org/latest/Manual/packages.html#PkgSurfaceMeshShortestPathSummary">
+This package is related to the package <a href="https://doc.cgal.org/latest/Manual/packages.html#PkgSurfaceMeshShortestPath">
 Triangulated Surface Mesh Shortest Paths</a> as both deal with geodesic distances. The heat method package computes for every vertex
 of a mesh an approximate distance to one or several source vertices, whereas
 the geodesic shortest path package computes the exact shortest path
