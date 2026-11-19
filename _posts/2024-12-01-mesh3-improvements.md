@@ -2,6 +2,7 @@
 layout: post
 title: "Tetrahedral Mesh Generation Improvements"
 description: "Tetrahedral Mesh Generation Improvements in CGAL 6"
+image: "/images/mesh3_edge_distance_stool.png"
 category:
 tags: [""]
 ---

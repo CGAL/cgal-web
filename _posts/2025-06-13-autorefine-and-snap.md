@@ -2,6 +2,7 @@
 layout: post
 title: "New in CGAL: Fixing Self-Intersections in Triangle Soups using Snap Rounding"
 description: ""
+long_description: "Fixing self-intersections in triangle soups with CGAL: autorefinement, and snap rounding strategies that output coordinates representable as doubles."
 category:
 tags: ["features"]
 image: /images/triangle_snap_error.png

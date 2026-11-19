@@ -2,6 +2,8 @@
 layout: post
 title: "New in CGAL: 3D Alpha Wrapping"
 description: "Fast, robust, and generic surface wrapping"
+long_description: "The 3D Alpha Wrapping package of CGAL 5.5 wraps triangle soups, segment soups, and point sets into watertight, intersection-free, 2-manifold surface meshes."
+image: "/images/alpha_wrap_gallery.png"
 category:
 tags: [""]
 ---

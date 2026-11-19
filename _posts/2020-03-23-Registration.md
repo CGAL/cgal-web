@@ -2,6 +2,7 @@
 layout: post
 title: "New in CGAL: Wrappers for Registration Libraries"
 description: "Introducing wrappers for OpenGR and Pointmatcher for point cloud registration"
+image: "/images/Registration.png"
 category:
 tags: [""]
 ---

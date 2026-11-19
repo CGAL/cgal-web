@@ -2,6 +2,7 @@
 layout: post
 title: "New in CGAL: Tutorial on Surface Reconstruction"
 description: "Demonstrating different use cases of Point Set Processing and Reconstruction packages"
+image: "/images/compare_reconstructions.png"
 category:
 tags: [""]
 ---

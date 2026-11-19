@@ -2,6 +2,8 @@
 layout: post
 title: "CGAL How-tos: Writing a CGAL Plugin for ParaView"
 description: ""
+long_description: "How to write a ParaView plugin that calls CGAL's isotropic remeshing, with a ready-to-use GitHub repository and a step-by-step guide to build your own plugins."
+image: "/images/bull_remeshed.png"
 category: 
 tags: []
 ---

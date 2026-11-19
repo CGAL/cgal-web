@@ -2,6 +2,7 @@
 layout: post
 title: "New in CGAL: 2D Triangulations on Hyperbolic Surfaces"
 description: ""
+long_description: "A new CGAL 6.1 package for Delaunay triangulations of closed orientable hyperbolic surfaces, generalizing the triangulations of the Bolza surface."
 category:
 tags: ["features"]
 image: /images/triangulation-on-hyperbolic-surface.svg

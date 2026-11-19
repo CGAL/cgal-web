@@ -2,6 +2,7 @@
 layout: post
 title: "New in CGAL: 3D Periodic Mesh Generation"
 description: "Introducing a new package to generate meshes over the three-dimensional flat torus"
+image: "/images/periodic_mesh.png"
 category:
 tags: [""]
 ---

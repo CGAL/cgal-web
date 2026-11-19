@@ -2,6 +2,7 @@
 layout: post
 title: "New in CGAL: 3D Constrained Triangulations"
 description: ""
+long_description: "CGAL 6.1 adds 3D constrained Delaunay triangulations, which guarantee that input polygonal constraints are present in the tetrahedral mesh."
 category:
 tags: ["features"]
 image: /images/cdt_title_pyramid.png

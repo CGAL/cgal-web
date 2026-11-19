@@ -2,8 +2,10 @@
 layout: post
 title: "New in CGAL: Isosurfacing"
 description: ""
+long_description: "The 3D Isosurfacing package of CGAL 6.1 extracts isosurfaces from value fields with Marching Cubes, Topologically correct Marching Cubes, and Dual Contouring."
+image: "/images/isosurfacing_teaser.png"
 category:
-tags: [""]
+tags: ["features"]
 ---
 {% include JB/setup %}
 

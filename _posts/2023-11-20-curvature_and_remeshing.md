@@ -2,6 +2,8 @@
 layout: post
 title: "New in CGAL: Interpolated Corrected Curvature Measures and Isotropic Remeshing with Sizing Field"
 description: ""
+long_description: "Two Google Summer of Code contributions: Interpolated Corrected Curvature Measures on polygon meshes, and Isotropic Remeshing with a sizing field based on them."
+image: "/images/bimba_curvature.png"
 category:
 tags: [""]
 ---

@@ -2,6 +2,7 @@
 layout: post
 title: "Polygon Mesh Processing"
 description: "Hole Filling, Intersection Detection, Fairing,..."
+long_description: "Work in progress in 2015 on the Polygon Mesh Processing package: refinement, fairing, hole filling, self-intersection and orientation tests, and slicing."
 category:
 tags: ["WIP"]
 ---

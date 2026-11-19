@@ -2,6 +2,7 @@
 layout: post
 title: "New in CGAL: Triangulations on the Sphere"
 description: "Constructing Delaunay triangulations on the 2-sphere"
+image: "/images/ToS2.png"
 category:
 tags: [""]
 ---

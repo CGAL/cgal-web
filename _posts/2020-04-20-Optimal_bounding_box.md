@@ -2,6 +2,7 @@
 layout: post
 title: "New in CGAL: Optimal Bounding Box"
 description: "Computing Tight Bounding Boxes Of Point Sets and Models"
+image: "/images/aabb_vs_obb.png"
 category:
 tags: [""]
 ---

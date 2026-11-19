@@ -2,6 +2,8 @@
 layout: post
 title: "New in CGAL: Basic Viewer"
 description: ""
+long_description: "The Basic Viewer package of CGAL 6.0: interactive visualization of CGAL data structures with CGAL::draw(), and customization of what is drawn and how."
+image: "/images/draw_surface_mesh_small_faces.png"
 category:
 tags: [""]
 ---

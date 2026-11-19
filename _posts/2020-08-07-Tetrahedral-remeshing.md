@@ -2,6 +2,8 @@
 layout: post
 title: "New in CGAL: Tetrahedral Remeshing"
 description: "Tetrahedral isotropic remeshing algorithm"
+long_description: "The Tetrahedral Remeshing package of CGAL 5.1 produces high-quality isotropic tetrahedral meshes, preserving materials, geometric features, and topology."
+image: "/images/Tet_remeshing_star.png"
 category:
 tags: [""]
 ---

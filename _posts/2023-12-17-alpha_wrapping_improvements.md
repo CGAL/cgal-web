@@ -2,6 +2,8 @@
 layout: post
 title: "New in CGAL: Improvements for 3D Alpha Wrapping"
 description: "New features, and speed-up"
+long_description: "3D Alpha Wrapping improvements in CGAL 6.0: pausing and resuming a wrap, fast LOD wrapping, volumetric wraps, and a 2x speed-up since CGAL 5.6."
+image: "/images/volumetric_wrap.png"
 category:
 tags: [""]
 ---

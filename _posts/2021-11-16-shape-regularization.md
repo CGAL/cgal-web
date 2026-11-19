@@ -2,6 +2,7 @@
 layout: post
 title: "New in CGAL: Shape Regularization package"
 description: "A new block in CGAL's reconstruction pipeline"
+long_description: "The Shape Regularization package makes near-parallel, near-orthogonal, and near-collinear lines and planes exactly so, a step of reconstruction pipelines."
 category:
 tags: [""]
 ---

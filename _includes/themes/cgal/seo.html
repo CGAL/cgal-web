@@ -1,15 +1,10 @@
 {%- comment -%}
   Search engine and social media metadata.
   Front matter variables used (all optional):
-    title, description, seo_title, image, noindex
+    title, description, seo_title, long_description, image, social_image, noindex
   Site variables used (_config.yml): production_url, title, description,
     default_image, twitter_username
 
-  Posts without a description use their excerpt instead: the text before
-  <!--more-->, or the whole post when there is no such marker
-  (see excerpt_separator in _config.yml).
-  Social networks do not render SVG previews, so an SVG `image` is replaced
-  by site.default_image.
 {%- endcomment -%}
 {%- assign seo_url = site.production_url | default: "https://www.cgal.org" -%}
 {%- assign is_post = false -%}
@@ -28,9 +23,14 @@
   {%- endif -%}
 {%- endif -%}
 
-{%- assign seo_description = page.description | strip_html | normalize_whitespace | strip -%}
-{%- if seo_description == "" and is_post -%}
-  {%- assign seo_description = page.excerpt | strip_html | normalize_whitespace | strip | truncate: 160 -%}
+{%- assign seo_description = page.long_description | strip_html | normalize_whitespace | strip -%}
+{%- if seo_description == "" -%}
+  {%- assign seo_description = page.description | strip_html | normalize_whitespace | strip -%}
+{%- endif -%}
+{%- if is_post and seo_description.size < 50 -%}
+  {%- comment -%} Short post descriptions are taglines ("CGAL 6.2", "Visit our booth"): prefer the excerpt. {%- endcomment -%}
+  {%- assign seo_excerpt = page.excerpt | strip_html | normalize_whitespace | strip | truncate: 160 -%}
+  {%- if seo_excerpt != "" -%}{%- assign seo_description = seo_excerpt -%}{%- endif -%}
 {%- endif -%}
 {%- if seo_description == "" -%}
   {%- assign seo_description = site.description | strip_html | normalize_whitespace | strip -%}
@@ -38,7 +38,7 @@
 
 {%- assign seo_canonical = page.url | replace: "/index.html", "/" | prepend: seo_url -%}
 
-{%- assign seo_image = page.image | default: site.default_image -%}
+{%- assign seo_image = page.social_image | default: page.image | default: site.default_image -%}
 {%- assign seo_image_ext = seo_image | split: "?" | first | split: "." | last | downcase -%}
 {%- if seo_image_ext == "svg" -%}{%- assign seo_image = site.default_image -%}{%- endif -%}
 {%- assign seo_image_is_default = false -%}

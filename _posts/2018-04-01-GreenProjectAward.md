@@ -2,6 +2,7 @@
 layout: post
 title: "CGAL - Finalist for the Green Project Award"
 description: "The Carbon Footprint of a Cricket"
+image: "/images/zoe.png"
 category: "news"
 tags: []
 ---

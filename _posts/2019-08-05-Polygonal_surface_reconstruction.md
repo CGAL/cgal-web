@@ -2,6 +2,7 @@
 layout: post
 title: "New in CGAL: Polygonal Surface Reconstruction"
 description: "Introducing a new package for piecewise planar object reconstruction from point clouds"
+image: "/images/polyfit_pipeline.png"
 category:
 tags: [""]
 ---

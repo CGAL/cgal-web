@@ -2,6 +2,7 @@
 layout: post
 title: "New in CGAL: New Surface Remeshing Algorithms"
 description: ""
+long_description: "New surface remeshing algorithms in CGAL: approximated centroidal Voronoi diagram (ACVD) remeshing, and remeshing of planar and almost planar patches."
 category:
 tags: ["features"]
 image: /images/planar_remeshing.png

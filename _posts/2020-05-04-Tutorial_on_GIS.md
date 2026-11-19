@@ -2,6 +2,7 @@
 layout: post
 title: "New in CGAL: Tutorial on GIS"
 description: "Demonstrating how to use CGAL packages for Geometric Information System applications"
+image: "/images/gis_tuto.jpg"
 category:
 tags: [""]
 ---

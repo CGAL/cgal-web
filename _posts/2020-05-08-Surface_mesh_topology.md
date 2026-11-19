@@ -2,6 +2,7 @@
 layout: post
 title: "New in CGAL: Surface Mesh Topology"
 description: "Toolbox for manipulating curves on a combinatorial surface from the topological point of view"
+image: "/images/edge-width.png"
 category:
 tags: [""]
 ---

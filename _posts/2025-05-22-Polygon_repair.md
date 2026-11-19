@@ -2,9 +2,11 @@
 layout: post
 title: "New in CGAL: Polygon Repair"
 description: ""
+long_description: "The Polygon Repair package turns invalid 2D polygons and multipolygons into valid ones, with even-odd, non-zero, union, and intersection rules."
 category:
 tags: ["features"]
 image: /images/PolygonRepair_WindingNonZeroDifferent.svg
+social_image: "/images/non_zero_departments.png"
 ---
 {% include JB/setup %}
 

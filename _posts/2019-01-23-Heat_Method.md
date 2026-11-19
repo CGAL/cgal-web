@@ -2,6 +2,7 @@
 layout: post
 title: "New in CGAL: The Heat Method "
 description: "Introducing a new package to compute geodesic distances over triangulated surface meshes"
+image: "/images/Heat_method_bunny.png"
 category:
 tags: [""]
 ---

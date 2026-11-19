@@ -2,6 +2,7 @@
 layout: post
 title: "New in CGAL: 3D Generalized Barycentric Coordinates"
 description: "Fast and closed-form generalized barycentric coordinates for convex simplicial polytopes"
+image: "/images/barycentric_shape_deform.png"
 category:
 tags: [""]
 ---

@@ -2,6 +2,8 @@
 layout: post
 title: "New in CGAL: Approximate Convex Decomposition"
 description: "Covering a mesh by tight convex volumes"
+long_description: "Approximate Convex Decomposition in CGAL 6.2 partitions closed triangle meshes into a few convex volumes, with control over approximation quality."
+image: "/images/acd_results.jpg"
 category:
 tags: [""]
 ---

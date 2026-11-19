@@ -2,6 +2,7 @@
 layout: post
 title: "New in CGAL: 2D Hyperbolic Triangulations and 2D Periodic Hyperbolic Triangulations"
 description: "Introducing two new packages to construct hyperbolic triangulations"
+image: "/images/periodic-hyperbolic-triangulation-and-voronoi.png"
 category:
 tags: [""]
 ---

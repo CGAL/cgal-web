@@ -2,8 +2,10 @@
 layout: post
 title: "New in CGAL: Computation of Frechet Distance in Any Dimension"
 description: ""
+long_description: "The dD Fréchet Distance package of CGAL 6.1 computes the Fréchet distance between polylines in any dimension, a classical similarity measure for curves."
+image: "/images/frechet_teaser.png"
 category:
-tags: [""]
+tags: ["features"]
 ---
 {% include JB/setup %}
 

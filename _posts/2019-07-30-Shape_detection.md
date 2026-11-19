@@ -2,6 +2,7 @@
 layout: post
 title: "New in CGAL: Shape Detection enhancements"
 description: "a new Generalized Region Growing algorithm enables much more genericity"
+image: "/images/3d-pm.png"
 category:
 tags: [""]
 ---

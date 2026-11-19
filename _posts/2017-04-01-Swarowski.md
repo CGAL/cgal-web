@@ -2,6 +2,7 @@
 layout: post
 title: "CGAL User Portrait: Swarowski and the Ivanka Diagram"
 description: "CGAL - simply wear it!"
+image: "/images/april2017.jpg"
 category: "news"
 tags: []
 ---

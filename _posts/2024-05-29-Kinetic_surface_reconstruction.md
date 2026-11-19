@@ -2,6 +2,8 @@
 layout: post
 title: "New in CGAL: Kinetic Space Partition and Kinetic Surface Reconstruction"
 description: ""
+long_description: "Two new CGAL 6.0 packages that reconstruct piecewise-planar models of buildings and other man-made objects from point clouds, keeping sharp features."
+image: "/images/KSR_meeting_room_outside.png"
 category:
 tags: [""]
 ---

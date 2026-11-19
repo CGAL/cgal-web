@@ -2,6 +2,8 @@
 layout: post
 title: "New in CGAL: Weighted Straight Skeletons and Straight Skeleton Extrusion"
 description: ""
+long_description: "The 2D Straight Skeleton package of CGAL now offers weighted straight skeletons and the extrusion of polygons with holes into closed 3D surfaces."
+image: "/images/sls_cropped_extrusion.png"
 category:
 tags: [""]
 ---
