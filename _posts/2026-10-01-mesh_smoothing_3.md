@@ -15,8 +15,8 @@ tags: [""]
 <br>
 
 <div style="text-align:center;">
-  <a href="../../../../images/mesh_smoothing_3_implicit.png">
-    <img src="../../../../images/mesh_smoothing_3_implicit.png"
+  <a href="{{ '/images/mesh_smoothing_3_implicit.png'  | relative_url }}">
+    <img src="{{ '/images/mesh_smoothing_3_implicit.png'  | relative_url }}"
          style="max-width:95%"/>
   </a>
   <br>
@@ -106,8 +106,8 @@ geometry.
 <br>
 
 <div style="text-align:center;">
-  <a href="../../../../images/mesh_smoothing_3_hybrid.png">
-    <img src="../../../../images/mesh_smoothing_3_hybrid.png"
+  <a href="{{ '/images/mesh_smoothing_3_hybrid.png'  | relative_url }}">
+    <img src="{{ '/images/mesh_smoothing_3_hybrid.png'  | relative_url }}"
          style="max-width:95%"/>
   </a>
   <br>

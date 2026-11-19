@@ -25,6 +25,6 @@ tags: []
 
 <br><br>
 <div style="text-align:center;">
-  <a href="../../../../../images/SoCG_2023_ToT_CGAL.pdf"><img src="../../../../../images/SoCG_2023_ToT_CGAL.png" style="max-width:95%"/></a><br>
+  <a href="{{ '/images/SoCG_2023_ToT_CGAL.pdf'  | relative_url }}"><img src="{{ '/images/SoCG_2023_ToT_CGAL.png'  | relative_url }}" style="max-width:95%"/></a><br>
   <br><small>Certificate (click for the pdf).</small>
 </div>

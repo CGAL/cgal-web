@@ -52,7 +52,7 @@ and will be officially released in the upcoming version of CGAL
 6.1.</p>
 
 <div style="text-align:center;">
-  <img src="../../../../images/triangulation-on-hyperbolic-surface.svg" width="50%"><br>
+  <img src="{{ '/images/triangulation-on-hyperbolic-surface.svg'  | relative_url }}" width="50%"><br>
   <small>Delaunay triangulations of hyperbolic surfaces
   of genus 2 lifted in the Poincaré disk.</small>
 </div>

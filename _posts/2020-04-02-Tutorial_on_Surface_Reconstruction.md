@@ -17,7 +17,7 @@ tags: [""]
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/compare_reconstructions.png"><img src="../../../../images/compare_reconstructions.png" style="max-width:95%"/></a><br>
+  <a href="{{ '/images/compare_reconstructions.png'  | relative_url }}"><img src="{{ '/images/compare_reconstructions.png'  | relative_url }}" style="max-width:95%"/></a><br>
   <small>Comparison of reconstruction methods applied to the same input (full shape and close-up). From left to right: original point cloud; Poisson; advancing front; scale space.</small>
 </div>
 <br>
@@ -36,7 +36,7 @@ tags: [""]
 
 <br>
 <div style="text-align:center;">
-  <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Manual/tuto_reconstruction.html"><img src="../../../../images/reconstruction_tutorial.png" style="max-width:100%"/></a><br>
+  <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Manual/tuto_reconstruction.html"><img src="{{ '/images/reconstruction_tutorial.png'  | relative_url }}" style="max-width:100%"/></a><br>
   <small>The new Tutorial on Surface Reconstruction from Point Clouds.</small>
 </div>
 <br>

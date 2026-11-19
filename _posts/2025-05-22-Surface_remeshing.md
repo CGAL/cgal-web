@@ -60,7 +60,7 @@ allowing the processing of large meshes up to several million triangles.</p>
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/ACVD_ex.png"><img src="../../../../images/ACVD_ex.png" style="max-width:95%"/></a>
+  <a href="{{ '/images/ACVD_ex.png'  | relative_url }}"><img src="{{ '/images/ACVD_ex.png'  | relative_url }}" style="max-width:95%"/></a>
   <br><small>Input (left); remeshing with a budget of 50k vertices: isotropic (middle) and curvature adapted (right).</small>
 </div>
 
@@ -69,7 +69,7 @@ allowing the processing of large meshes up to several million triangles.</p>
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/ACVD_qem.png"><img src="../../../../images/ACVD_qem.png" style="max-width:95%"/></a>
+  <a href="{{ '/images/ACVD_qem.png'  | relative_url }}"><img src="{{ '/images/ACVD_qem.png'  | relative_url }}" style="max-width:95%"/></a>
   <br><small>Input (left); remeshing without (middle) and with (right) QEM-based placement optimization.</small>
 </div>
 <br>
@@ -91,7 +91,7 @@ This function performs a detection of the planar regions using geometric predica
 and collinearity checks.</p>
 
 <div style="text-align:center;">
-  <a href="../../../../images/planar_remeshing.png"><img src="../../../../images/planar_remeshing.png" style="max-width:95%"/></a><br>
+  <a href="{{ '/images/planar_remeshing.png'  | relative_url }}"><img src="{{ '/images/planar_remeshing.png'  | relative_url }}" style="max-width:95%"/></a><br>
   <br><small>Remeshing of a complex mechanical piece.</small>
 </div>
 

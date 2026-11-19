@@ -20,7 +20,7 @@ tags: ["features"]
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/isosurfacing_teaser.png"><img src="../../../../images/isosurfacing_teaser.png" style="max-width:50%"/></a>
+  <a href="{{ '/images/isosurfacing_teaser.png'  | relative_url }}"><img src="{{ '/images/isosurfacing_teaser.png'  | relative_url }}" style="max-width:50%"/></a>
 </div>
 
 <br>
@@ -63,7 +63,7 @@ for Dual Contouring.</p>
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/isosurfacing_MC_DC.png"><img src="../../../../images/isosurfacing_MC_DC.png" style="max-width:75%"/></a>
+  <a href="{{ '/images/isosurfacing_MC_DC.png'  | relative_url }}"><img src="{{ '/images/isosurfacing_MC_DC.png'  | relative_url }}" style="max-width:75%"/></a>
   <br><small>Contouring a simple implicit function with Marching Cubes (left) and Dual Contouring (DC).</small>
 </div>
 
@@ -80,7 +80,7 @@ to be 2-manifold and watertight, as long as the isosurface does not intersect th
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/isosurfacing_MC_TMC.png"><img src="../../../../images/isosurfacing_MC_TMC.png" style="max-width:95%"/></a>
+  <a href="{{ '/images/isosurfacing_MC_TMC.png'  | relative_url }}"><img src="{{ '/images/isosurfacing_MC_TMC.png'  | relative_url }}" style="max-width:95%"/></a>
   <br><small>Trilinearly interpolated surface (left), Marching Cubes (middle), and
   Topologically Correct Marching Cubes (right). The latter correctly recovers the topology of the surface.</small>
 </div>

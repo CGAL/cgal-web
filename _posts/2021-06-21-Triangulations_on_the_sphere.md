@@ -29,7 +29,7 @@ whether another point is within or outside the circumscribing ball of this face 
 to an orientation test of the points in 3D.</p>
 
 <div style="text-align:center;">
-  <a href="../../../../images/ToS2-in_sphere.png"><img src="../../../../images/ToS2-in_sphere.png" style="max-width:50%"/></a><br>
+  <a href="{{ '/images/ToS2-in_sphere.png'  | relative_url }}"><img src="{{ '/images/ToS2-in_sphere.png'  | relative_url }}" style="max-width:50%"/></a><br>
 </div>
 <br>
 
@@ -49,7 +49,7 @@ and 3D triangulations, hyperbolic triangulations, periodic triangulations, ...<a
 
 <br><br>
 <div style="text-align:center;">
-  <a href="../../../../images/ToS2.png"><img src="../../../../images/ToS2.png" style="max-width:95%"/></a><br>
+  <a href="{{ '/images/ToS2.png'  | relative_url }}"><img src="{{ '/images/ToS2.png'  | relative_url }}" style="max-width:95%"/></a><br>
   <br><small>Delaunay triangulations and Voronoi diagrams of radar data on Earth (click to enlarge).</small>
 </div>
 

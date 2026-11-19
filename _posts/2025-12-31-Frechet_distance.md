@@ -36,7 +36,7 @@ considers the polylines as continuous objects and takes into account the orderin
 </p>
 
 <div style="text-align:center;">
-  <a href="../../../../images/frechet_teaser.png"><img src="../../../../images/frechet_teaser.png" style="max-width:50%"/></a>
+  <a href="{{ '/images/frechet_teaser.png'  | relative_url }}"><img src="{{ '/images/frechet_teaser.png'  | relative_url }}" style="max-width:50%"/></a>
   <br><small>Frechet distance is a powerful tool to compute clusters of given polylines [1, Fig. 1]</small>
 </div>
 
@@ -61,7 +61,7 @@ two polylines, with a maximal additive error of 0.000001 to the exact distance:<
 ```
 
 <div style="text-align:center;">
-  <a href="../../../../images/frechet_distance.png"><img src="../../../../images/frechet_distance.png" style="max-width:50%"/></a>
+  <a href="{{ '/images/frechet_distance.png'  | relative_url }}"><img src="{{ '/images/frechet_distance.png'  | relative_url }}" style="max-width:50%"/></a>
   <br><small>The two polylines (blue and red), and the a visualization of the distance (green).</small>
 </div>
 

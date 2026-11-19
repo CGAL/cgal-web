@@ -19,7 +19,7 @@ tags: [""]
 
 <br><br>
 <div style="text-align:center;">
-  <a href="../../../../images/alpha_wrap_gallery.png"><img src="../../../../images/alpha_wrap_gallery.png" style="max-width:95%"/></a><br>
+  <a href="{{ '/images/alpha_wrap_gallery.png'  | relative_url }}"><img src="{{ '/images/alpha_wrap_gallery.png'  | relative_url }}" style="max-width:95%"/></a><br>
   <br><small>Input meshes (pink) and wraps (grey) (click to enlarge).</small>
 </div>
 
@@ -75,7 +75,7 @@ characterized by many defects such as intersections, gaps, and non-manifold feat
 
 <br><br>
 <div style="text-align:center;">
-  <a href="../../../../images/alpha_wrap_overview.png"><img src="../../../../images/alpha_wrap_overview.png" style="max-width:95%"/></a><br>
+  <a href="{{ '/images/alpha_wrap_overview.png'  | relative_url }}"><img src="{{ '/images/alpha_wrap_overview.png'  | relative_url }}" style="max-width:95%"/></a><br>
   <br><small>Illustration of the algorithm in 2D. Input (red) and a few steps of the algorithm (click to enlarge).</small>
 </div>
 
@@ -91,7 +91,7 @@ can be chosen independently and arbitrarily large or small, but must be strictly
 
 <br><br>
 <div style="text-align:center;">
-  <a href="../../../../images/alpha_wrap_bike.png"><img src="../../../../images/alpha_wrap_bike.png" style="max-width:95%"/></a><br>
+  <a href="{{ '/images/alpha_wrap_bike.png'  | relative_url }}"><img src="{{ '/images/alpha_wrap_bike.png'  | relative_url }}" style="max-width:95%"/></a><br>
   <br><small>Multiple wrappings of the bike model for various combinations of alpha and offset (click to enlarge).<br>
              Alpha and offset impact the complexity-fidelity tradeoff.</small>
 </div>
@@ -108,7 +108,7 @@ satisfy a number of conditions (validity, manifoldness, output encloses the inpu
 
 <p>Our algorithm is made generic by using an <i>oracle</i> class whose role is to answer a number
 of geometric queries (such as <i>"What is the distance between this 3D point and the input data?"</i>).
-The oracle's API is fixed and as such it is possible to easily switching input representations 
+The oracle's API is fixed and as such it is possible to easily switching input representations
 by simply replacing one implementation of oracle - and thus one type of input data - by another.
 In our implementation, we have even added the possibility to combine oracles; consequently,
 different input representations can be mixed together in the same scene queried by the oracle.
@@ -117,7 +117,7 @@ on input data that combine points, polylines, and triangles.</p>
 
 <br><br>
 <div style="text-align:center;">
-  <a href="../../../../images/alpha_wrap_mixed.png"><img src="../../../../images/alpha_wrap_mixed.png" style="max-width:95%"/></a><br>
+  <a href="{{ '/images/alpha_wrap_mixed.png'  | relative_url }}"><img src="{{ '/images/alpha_wrap_mixed.png'  | relative_url }}" style="max-width:95%"/></a><br>
   <br><small>Single wrap of input data with different representation types: points, segments, triangles (click to enlarge).</small>
 </div>
 

@@ -35,7 +35,7 @@ Further operations supported are the location of a point in the triangulation, t
 of existing vertices, and the computation of dual objects of faces and edges.</p>
 
 <div style="text-align:center;">
-  <img src="../../../../images/hyperbolic-triangulation-and-voronoi.png"><br>
+  <img src="{{ '/images/hyperbolic-triangulation-and-voronoi.png'  | relative_url }}"><br>
   <small>Delaunay triangulation and Voronoi diagram of a set of points on the Poincar&eacute; disk.</small>
 </div>
 
@@ -50,7 +50,7 @@ of the hyperbolic plane, periodic in the 4 directions defined by the gluing
 of the opposite sides of the octagon.</p>
 
 <div style="text-align:center;">
-  <img src="../../../../images/tiling-hyperbolic-plane.png" width="50%"><br>
+  <img src="{{ '/images/tiling-hyperbolic-plane.png'  | relative_url }}" width="50%"><br>
   <small>Illustration of the periodicity of the hyperbolic plane. All the red points correspond to the same
          point, periodically reproduced.</small>
 </div>
@@ -63,7 +63,7 @@ such as point location, vertex removal, and construction of dual objects of face
 and edges of the triangulation.</p>
 
 <div style="text-align:center;">
-  <img src="../../../../images/periodic-hyperbolic-triangulation-and-voronoi.png"><br>
+  <img src="{{ '/images/periodic-hyperbolic-triangulation-and-voronoi.png'  | relative_url }}"><br>
   <small>Periodic Delaunay triangulation and periodic Voronoi diagram of a set of points.</small>
 </div>
 

@@ -41,7 +41,7 @@ of <a href="https://ten-thousand-models.appspot.com/">Thingi10k</a> that meet
 the input geometrical and topological requirements.</p>
 
 <div style="text-align:center;">
-  <a href="../../../../images/cdt_title_pyramid.png"><img src="../../../../images/cdt_title_pyramid.png" style="max-width:95%"/></a>
+  <a href="{{ '/images/cdt_title_pyramid.png'  | relative_url }}"><img src="{{ '/images/cdt_title_pyramid.png'  | relative_url }}" style="max-width:95%"/></a>
   <br><small>Piecewise linear complex input (left) and its 3D constrained Delaunay triangulation (right)</small>
 </div>
 <br>
@@ -77,12 +77,12 @@ leading to simpler and higher quality results, as illustrated in the following t
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/cdt3_flower_pots_plc_cdt.png"><img src="../../../../images/cdt3_flower_pots_plc_cdt.png" style="max-width:95%"/></a>
+  <a href="{{ '/images/cdt3_flower_pots_plc_cdt.png'  | relative_url }}"><img src="{{ '/images/cdt3_flower_pots_plc_cdt.png'  | relative_url }}" style="max-width:95%"/></a>
   <br><small>Piecewise linear complex (left) and its 3D Constrained Triangulation (right)</small>
 </div>
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/cdt3_flower_pots_remesh_plc_cdt.png"><img src="../../../../images/cdt3_flower_pots_remesh_plc_cdt.png" style="max-width:95%"/></a>
+  <a href="{{ '/images/cdt3_flower_pots_remesh_plc_cdt.png'  | relative_url }}"><img src="{{ '/images/cdt3_flower_pots_remesh_plc_cdt.png'  | relative_url }}" style="max-width:95%"/></a>
   <br><small>Piecewise linear complex after remeshing of planar faces (left), and its 3D Constrained Triangulation (right)</small>
 </div>
 

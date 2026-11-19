@@ -41,8 +41,8 @@ if two given curves on a combinatorial surface can be continuously deformed one 
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/edge-width.png"><img src="../../../../images/edge-width.png" style="max-width:45%"/></a>
-  <a href="../../../../images/elephant-shortest-cycle.png"><img src="../../../../images/elephant-shortest-cycle.png" style="max-width:45%"/></a><br>
+  <a href="{{ '/images/edge-width.png'  | relative_url }}"><img src="{{ '/images/edge-width.png'  | relative_url }}" style="max-width:45%"/></a>
+  <a href="{{ '/images/elephant-shortest-cycle.png'  | relative_url }}"><img src="{{ '/images/elephant-shortest-cycle.png'  | relative_url }}" style="max-width:45%"/></a><br>
   <small><b>Left:</b>The pink cycle is the edge width of the mesh: the shortest (in the number of edges) non contractible cycle. The green cycle is the shortest (in length) non contractible cycle. <b>Right:</b> The three shortest non-contractible cycles computed successively on elephant mesh.</small>
 </div>
 
@@ -62,7 +62,7 @@ if two given curves on a combinatorial surface can be continuously deformed one 
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/free-vs-fixed-endpoints.svg"><img src="../../../../images/free-vs-fixed-endpoints.svg" style="max-width:95%"/></a><br>
+  <a href="{{ '/images/free-vs-fixed-endpoints.svg'  | relative_url }}"><img src="{{ '/images/free-vs-fixed-endpoints.svg'  | relative_url }}" style="max-width:95%"/></a><br>
   <small>On the upper left surface, the green curve is contractible. The red and blue curves share the same (green) endpoint. (Being closed, their two endpoints coincide.) These last two curves are freely homotopic as shown by the suggested continuous transformation of the blue curve.</small>
 </div>
 <br>

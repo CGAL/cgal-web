@@ -23,19 +23,19 @@ tags: [""]
 <p>Kinetic Surface Reconstruction (<code>CGAL::Kinetic_surface_reconstruction_3</code>) is a new package that implements a state-of-the-art 3D reconstruction pipeline based on another new package, <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Kinetic_space_partition/index.html">Kinetic Space Partition</a>(<code>CGAL::Kinetic_shape_partition_3</code>). While the Kinetic Space Partition is the core mechanism providing the geometry for the reconstruction (more on that later), other steps are necessary to extract the 3D surface from the partition. Our pipeline is based on <a href="https://inria.hal.science/hal-02924409/file/tog2020.pdf">Bauchet, J.-P., & Lafarge, F. (2020). Kinetic Shape Reconstruction. In ACM Transactions of Graphics, 39(5), 2020</a>, and takes an oriented point cloud as input and generates a watertight 3D polygonal surface.</p>
 
 <div style="text-align:center;">
-  <a href="../../../../images/KSR_meeting_room_outside.png"><img src="../../../../images/KSR_meeting_room_outside.png" style="max-width:95%"/></a>
+  <a href="{{ '/images/KSR_meeting_room_outside.png'  | relative_url }}"><img src="{{ '/images/KSR_meeting_room_outside.png'  | relative_url }}" style="max-width:95%"/></a>
   <br><small>Indoor LiDAR point cloud and low-polygonal mesh from Kinetic Surface Reconstruction.</small>
 </div>
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/KSR_indoor_overlay.png"><img src="../../../../images/KSR_indoor_overlay.png" style="max-width:95%"/></a>
+  <a href="{{ '/images/KSR_indoor_overlay.png'  | relative_url }}"><img src="{{ '/images/KSR_indoor_overlay.png'  | relative_url }}" style="max-width:95%"/></a>
   <br><small>Indoor LiDAR point cloud and low-polygonal mesh from Kinetic Surface Reconstruction.</small>
 </div>
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/KSR_indoor_reconstruction.png"><img src="../../../../images/KSR_indoor_reconstruction.png" style="max-width:95%"/></a>
+  <a href="{{ '/images/KSR_indoor_reconstruction.png'  | relative_url }}"><img src="{{ '/images/KSR_indoor_reconstruction.png'  | relative_url }}" style="max-width:95%"/></a>
   <br><small>Polygon mesh only.</small>
 </div>
 
@@ -46,7 +46,7 @@ tags: [""]
 <p>All reconstructions shown here have been created with the example <a href="https://github.com/CGAL/cgal/blob/master/Kinetic_surface_reconstruction/examples/Kinetic_surface_reconstruction/ksr_parameters.cpp">ksr_parameters.cpp</a>. The used parameters are listed in the <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Kinetic_surface_reconstruction/index.html#title9">Performance</a> chapter in the user manual and the <a href="https://files.inria.fr/titane/KSR42_dataset.zip">datasets</a> can be found on the <a href="https://team.inria.fr/titane/">INRIA Titane webpage</a>.</p>
 
 <div style="text-align:center;">
-  <a href="../../../../images/KSR_church_parameters.png"><img src="../../../../images/KSR_church_parameters.png" style="max-width:95%"/></a><br>
+  <a href="{{ '/images/KSR_church_parameters.png'  | relative_url }}"><img src="{{ '/images/KSR_church_parameters.png'  | relative_url }}" style="max-width:95%"/></a><br>
   <br><small>Reconstruction of aerial LiDAR of a church with different complexity parameters. <br>(middle right) shows the reconstruction with an axis-aligned bounding box and (right) sets the bottom bounding box face to be labeled as empty.</small>
 </div>
 
@@ -56,7 +56,7 @@ tags: [""]
 <p>The major challenges of space decomposition and labeling methods are high computational complexity and a large number of small cells which are caused by the often indefinite extension of planar shapes. The Kinetic Space Partition overcomes these limitations by following a kinetic approach: planar input shapes are not extended indefinitely, but extend over time until they collide with other input shapes. A user-provided parameter to adjust the overall complexity of the partition limits the extension of shapes after a number of intersections with other shapes. Thus, the Kinetic Space Partition is a subset of a full plane arrangement and small input shapes are limited to only have a local impact on the partition.</p>
 <p>A subdivision by using an octree allows to split up the input shapes into smaller Kinetic Space Partitions and thus provide a significant speedup. The mechanism is fully transparent as the smaller partitions are fused into one conformal partition.</p>
 <div style="text-align:center;">
-  <a href="../../../../images/KSP_horse_octree.png"><img src="../../../../images/KSP_horse_octree.png" style="max-width:95%"/></a><br>
+  <a href="{{ '/images/KSP_horse_octree.png'  | relative_url }}"><img src="{{ '/images/KSP_horse_octree.png'  | relative_url }}" style="max-width:95%"/></a><br>
   <br><small>Point cloud of a horse split into 127 kinetic space partitions using an octree.</small>
 </div>
 

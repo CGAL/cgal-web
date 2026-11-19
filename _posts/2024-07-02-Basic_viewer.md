@@ -50,31 +50,31 @@ int main(int argc, char* argv[])
 
 
 <div style="text-align:center;">
-  <a href="../../../../images/draw_surface_mesh_vcolor.png"><img src="../../../../images/draw_surface_mesh_vcolor.png" style="max-width:95%"/></a>
+  <a href="{{ '/images/draw_surface_mesh_vcolor.png'  | relative_url }}"><img src="{{ '/images/draw_surface_mesh_vcolor.png'  | relative_url }}" style="max-width:95%"/></a>
   <br><small>Example of tuned drawing of a 3D surface mesh where some vertex colors are changed.</small>
 </div>
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/draw_surface_height.png"><img src="../../../../images/draw_surface_height.png" style="max-width:95%"/></a>
+  <a href="{{ '/images/draw_surface_height.png'  | relative_url }}"><img src="{{ '/images/draw_surface_height.png'  | relative_url }}" style="max-width:95%"/></a>
   <br><small>Example of mesh drawing with a color for each face computed depending on its height.</small>
 </div>
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/draw_mesh_and_points.png"><img src="../../../../images/draw_mesh_and_points.png" style="max-width:95%"/></a>
+  <a href="{{ '/images/draw_mesh_and_points.png'  | relative_url }}"><img src="{{ '/images/draw_mesh_and_points.png'  | relative_url }}" style="max-width:95%"/></a>
   <br><small>Example of drawing of a point cloud and a polyhedron in a same viewer.</small>
 </div>
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/draw_several_windows.png"><img src="../../../../images/draw_several_windows.png" style="max-width:95%"/></a>
+  <a href="{{ '/images/draw_several_windows.png'  | relative_url }}"><img src="{{ '/images/draw_several_windows.png'  | relative_url }}" style="max-width:95%"/></a>
   <br><small>Example of drawing of two Basic_viewer side by side.</small>
 </div>
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/draw_surface_mesh_small_faces.png"><img src="../../../../images/draw_surface_mesh_small_faces.png" style="max-width:95%"/></a>
+  <a href="{{ '/images/draw_surface_mesh_small_faces.png'  | relative_url }}"><img src="{{ '/images/draw_surface_mesh_small_faces.png'  | relative_url }}" style="max-width:95%"/></a>
   <br><small>Two examples of drawing of a mesh with small faces in red. Left: With the initial threshold. Right: After having increased the threshold.</small>
 </div>
 
