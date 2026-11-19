@@ -4,7 +4,9 @@ title: "CGAL User Portrait: Swarowski and the Ivanka Diagram"
 description: "CGAL - simply wear it!"
 image: "/images/april2017.jpg"
 category: "news"
-tags: []
+tags: ["april"]
+noindex: true
+sitemap: false
 ---
 {% include JB/setup %}
 
@@ -12,9 +14,9 @@ tags: []
 and manufactures the world's most beautiful jewelry for the
 most beautiful people.</p>
 
-<p>When Kmart, Sears, and Nordstrom decided to evict Ivanka Trump branded 
+<p>When Kmart, Sears, and Nordstrom decided to evict Ivanka Trump branded
 jewelry from their U.S. online stores, Swarowski seized the opportunity
-and asked Ms. Trump to design exclusively for Swarowski for the next four 
+and asked Ms. Trump to design exclusively for Swarowski for the next four
 years.</p>
 
 <p>The upcoming Ivanka Trump jewelry collection uses quite disruptive
@@ -29,16 +31,16 @@ curves.</p>
 <p><small>Left: Voronoi ring  Right: Space filling ear ring</small></p>
 
 <h3>A Unified Naming Scheme</h3>
-<p>Laure N.T. Rhino, the chief software architect at McNeel  who gave 
-this most wonderful design software its name, contacted the CGAL Editorial 
-Board, asking if it wouldn't be possible to rename the  <i>multiplicatively 
-weighted Voronoi diagrams</i> to <i>Ivanka Diagram</i>, so that it 
+<p>Laure N.T. Rhino, the chief software architect at McNeel  who gave
+this most wonderful design software its name, contacted the CGAL Editorial
+Board, asking if it wouldn't be possible to rename the  <i>multiplicatively
+weighted Voronoi diagrams</i> to <i>Ivanka Diagram</i>, so that it
 has the same name as the plugin they produced exclusively for Swarowski. </p>
 
 <blockquote>
-<p>"With the CGAL Multiplicatively weighted Voronoi diagram  as a key routine 
-of the <em>Ivanka</em> plugin, astonishing pieces can be designed at a fraction 
-of the cost and time of traditional design methods.  It enables our designers 
+<p>"With the CGAL Multiplicatively weighted Voronoi diagram  as a key routine
+of the <em>Ivanka</em> plugin, astonishing pieces can be designed at a fraction
+of the cost and time of traditional design methods.  It enables our designers
 to push the boundaries of how jewelery can look like in the 21st century"</p>
 
  <p><small>Sebastien L.O. Riot, Chief Technologist at Swarowki</small></p>
@@ -46,20 +48,20 @@ to push the boundaries of how jewelery can look like in the 21st century"</p>
 
 <p>According to Swarowski and McNeel, we would do them a favor if the
 collection, the tool, as well as the CGAL component had the same name.
-This is somehow understandable, if we think about the naming mess 
+This is somehow understandable, if we think about the naming mess
 of Visual Studio 2013, sitting in the directory Microsoft Visual Studio 12.0,
 and having the version number MSC_VER = 18 in case you want to #if it
 in your C++ code.</p>
 
 <h3>Your Opinon is Important for Us </h3>
 
-<p>Before making this move, we would like to gather feedback from 
+<p>Before making this move, we would like to gather feedback from
 the CGAL User Community, as first of all we are a software development
 project run by developers for developers.</p>
 
 <p>As the C++ programming language does only allow templated typedefs starting
 with C++11, we are
-reluctant to break backward compatibility, by just renaming the class 
+reluctant to break backward compatibility, by just renaming the class
 <i>CGAL::Multiplicatively_weighted_voronoi_diagram_3</i> to <i>Ivanka_diagram</i>,
 but there are maybe even non-technical issues we should take into account,
 so maybe you can help us to add items to our pro and con list which

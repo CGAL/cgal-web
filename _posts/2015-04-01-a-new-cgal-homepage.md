@@ -2,8 +2,10 @@
 layout: post
 title: "A New CGAL Homepage"
 description: "More than just &laquo;Old wine in new bottles&raquo;"
-category: 
-tags: []
+category:
+tags: ["april"]
+noindex: true
+sitemap: false
 ---
 {% include JB/setup %}
 
@@ -20,12 +22,12 @@ with responsive web design.<p>
 
 <p>Besides responsiveness, we thought it is time to get a slightly cooler
 look: A large image on the home page, something between <a href="http://www.airbnb.com/">airbnb</a>
-and <a href="http://www.abercrombie.com/">Abercrombie&amp;Fitch</a>.</p> 
+and <a href="http://www.abercrombie.com/">Abercrombie&amp;Fitch</a>.</p>
 
 <p>What our users do, most often has a higher coolness factor than
-a geometric algorithm with <em>O(n log log n)</em> amortized runtime complexity. 
-We identified and contacted some users, who were willing to provide us with 
+a geometric algorithm with <em>O(n log log n)</em> amortized runtime complexity.
+We identified and contacted some users, who were willing to provide us with
 images and testimonials.
-We today start our series of <em>User Portraits</em> 
+We today start our series of <em>User Portraits</em>
 with <a href="{{ site.baseurl }}/news/2015/04/01/SpaceX/">SpaceX</a>. Stay tuned, even if you think
 that SpaceX will be hard to beat.</p>
