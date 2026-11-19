@@ -7,7 +7,10 @@ sitemap: false
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 {%- for p in site.pages %}
   {%- if p.sitemap == false or p.noindex %}{% continue %}{% endif %}
-  {%- if p.url contains "/node_modules/" or p.url contains ".xml" or p.url contains ".txt" or p.url contains ".css" or p.url contains ".js" or p.url contains ".json" %}{% continue %}{% endif %}
+  {%- if p.url contains "/node_modules/" %}{% continue %}{% endif %}
+  {%- comment %} Only list HTML pages (skips feeds, robots.txt, stylesheets, scripts...) {% endcomment %}
+  {%- assign p_ext = p.name | split: "." | last | downcase %}
+  {%- unless p_ext == "html" or p_ext == "md" or p_ext == "markdown" %}{% continue %}{% endunless %}
   <url>
     <loc>{{ p.url | replace: "/index.html", "/" | prepend: seo_url | xml_escape }}</loc>
   </url>
