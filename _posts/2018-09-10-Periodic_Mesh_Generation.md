@@ -2,6 +2,7 @@
 layout: post
 title: "New in CGAL: 3D Periodic Mesh Generation"
 description: "Introducing a new package to generate meshes over the three-dimensional flat torus"
+image: "/images/periodic_mesh.png"
 category:
 tags: [""]
 ---
@@ -21,7 +22,7 @@ seen as a square (in 2D) or cubic (in 3D) tile that paves the Euclidean space. G
 in these spaces are duplicated across all tiles.</p>
 
 <div style="text-align:center;">
-  <img src="../../../../images/periodic_2D.png"><br>
+  <img src="{{ '/images/periodic_2D.png'  | relative_url }}"><br>
   <small>Example of 3 points in a 2D periodic space: the points and simplicies are reproduced periodically from tile to tile.</small>
 </div>
 
@@ -32,7 +33,7 @@ the program of the <a href="https://members.loria.fr/MTeillaud/PeriodicSpacesWor
 on Geometric Computing in Periodic Spaces </a> )...
 As in the Euclidean space, the study of these topics requires discretizing objects in triangulations
 and meshes. The construction of 3D periodic triangulations has been available in CGAL since
-<a href="../../../../2009/10/05/cgal-35">CGAL 3.5</a>, with the release of the package
+<a href="{{ '/2009/10/05/cgal-35'  | relative_url }}">CGAL 3.5</a>, with the release of the package
 <a href="https://doc.cgal.org/4.13/Periodic_3_triangulation_3/index.html#Chapter_3D_Periodic_Triangulations">3D Periodic Triangulations</a>.
 The next natural step was to offer mesh generation, that is the automatic generation of new points
 of a triangulation to construct a good approximation of a given domain living within the periodic cube.</p>
@@ -45,7 +46,7 @@ described through implicit functional boundaries over the flat torus. The output
 of the domain volume and conformal surface meshes for all the boundary and subdividing surfaces.
 
 <div style="text-align:center;">
-  <a href="../../../../images/periodic_mesh.png"><img src="../../../../images/periodic_mesh.png" style="max-width:95%"/></a><br>
+  <a href="{{ '/images/periodic_mesh.png'  | relative_url }}"><img src="{{ '/images/periodic_mesh.png'  | relative_url }}" style="max-width:95%"/></a><br>
   <small>Example of a periodic mesh (8 representations of the mesh are shown, each with a different color).</small>
 </div>
 
@@ -58,7 +59,7 @@ of sharp edges in a mesh, as well as post-processing steps such as mesh optimiza
 (Lloyd, ODT, sliver removal, ...):</p>
 
 <div style="text-align:center;">
-  <img src="../../../../images/periodic_optimizers.png" style="max-width:80%"><br>
+  <img src="{{ '/images/periodic_optimizers.png'  | relative_url }}" style="max-width:80%"><br>
   <small>Optimization of a periodic mesh (8 representations shown).</small>
 </div>
 

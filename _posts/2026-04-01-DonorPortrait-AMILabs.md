@@ -3,7 +3,9 @@ layout: post
 title: "CGAL Donor Portrait: AMI Labs"
 description: "Make the driver intelligent, not the car"
 category: "news"
-tags: []
+tags: ["april"]
+noindex: true
+sitemap: false
 ---
 {% include JB/setup %}
 
@@ -56,7 +58,7 @@ as well as the Global South, where many decommissioned cars enjoy a long second 
 with the explicit requirement that the <em>Chauffeur</em> be indistinguishable from a human driver.
 Engineers describe the design goal as "Rheya in Tarkovsky's <em>Solaris</em>"</p>
 
-<blockquote class="twitter-tweet"><p lang="fr" dir="ltr">Yann Le Cun ouvre une nouvelle page de l’intelligence artificielle. C’est la France des chercheurs, des bâtisseurs et des audacieux. Bravo ! <a href="https://t.co/hVxMMFoabJ">https://t.co/hVxMMFoabJ</a></p>&mdash; Emmanuel Macron (@EmmanuelMacron) <a href="https://twitter.com/EmmanuelMacron/status/2031288199503388717?ref_src=twsrc%5Etfw">March 10, 2026</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<blockquote class="twitter-tweet"><p lang="fr" dir="ltr">Yann Le Cun ouvre une nouvelle page de l’intelligence artificielle. C’est la France des chercheurs, des bâtisseurs et des audacieux. Bravo ! <a href="https://t.co/hVxMMFoabJ">https://t.co/hVxMMFoabJ</a></p>&mdash; Emmanuel Macron (@EmmanuelMacron) <a href="https://twitter.com/EmmanuelMacron/status/2031288199503388717?ref_src=twsrc%5Etfw">March 10, 2026</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 <h3>A Flying Start</h3>
@@ -75,7 +77,7 @@ and, last but not least, <a href="https://rocq-prover.org/">Rocq</a>, a trustwor
 and dependently typed programming language for mechanised reasoning.
 </p>
 
-<p>For that reason, AMI Labs will actively apply a trickle-down funding approach and, over the next three years, 
+<p>For that reason, AMI Labs will actively apply a trickle-down funding approach and, over the next three years,
 donate 0.1% of the $1 billion raised to these Open Source projects.</p>
 
 <blockquote>
@@ -93,7 +95,7 @@ placed on the dashboard and deciding whether to ignore them,
 move them aside, or comment on them politely.</p>
 
 
-<p>The above story was only an April fools joke, although who knows what will happen.  The $1 billion raised by an AI startup, however, is true. 
+<p>The above story was only an April fools joke, although who knows what will happen.  The $1 billion raised by an AI startup, however, is true.
 The April fools joke came with a <a href="https://www.cgal.org/April26/index.html">gallery</a>.</p>
 
 

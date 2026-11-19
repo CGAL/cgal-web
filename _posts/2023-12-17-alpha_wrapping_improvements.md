@@ -2,6 +2,8 @@
 layout: post
 title: "New in CGAL: Improvements for 3D Alpha Wrapping"
 description: "New features, and speed-up"
+long_description: "3D Alpha Wrapping improvements in CGAL 6.0: pausing and resuming a wrap, fast LOD wrapping, volumetric wraps, and a 2x speed-up since CGAL 5.6."
+image: "/images/volumetric_wrap.png"
 category:
 tags: [""]
 ---
@@ -22,7 +24,7 @@ or motion planning. Finally, it is fully robust to defects in the input such as 
 degeneracies, non-manifoldness...</p>
 
 <div style="text-align:center;">
-  <a href="../../../../images/christmas_wrap.png"><img src="../../../../images/christmas_wrap.png" style="max-width:95%"/></a><br>
+  <a href="{{ '/images/christmas_wrap.png'  | relative_url }}"><img src="{{ '/images/christmas_wrap.png'  | relative_url }}" style="max-width:95%"/></a><br>
   <br><small>Season's wrappings.</small>
 </div>
 
@@ -56,7 +58,7 @@ By avoiding a recomputation from scratch, a lot of time is saved. Here is a new 
 illustrating the process: <a href="https://github.com/CGAL/cgal/blob/master/Alpha_wrap_3/examples/Alpha_wrap_3/successive_wraps.cpp">successive_wraps.cpp</a>.</p>
 
 <div style="text-align:center;">
-  <a href="../../../../images/alpha_wrap.png"><img src="../../../../images/alpha_wrap.png" style="max-width:95%"/></a><br>
+  <a href="{{ '/images/alpha_wrap.png'  | relative_url }}"><img src="{{ '/images/alpha_wrap.png'  | relative_url }}" style="max-width:95%"/></a><br>
   <br><small>Wrapping of an engine piece with complex interior (left) for different values of alpha.</small>
 </div>
 
@@ -70,7 +72,7 @@ By combining this with the recent package <a href="https://doc.cgal.org/latest/M
 one can generate high-quality volumetric tetrahedral meshes of the space enclosed by the wrap.</p>
 
 <div style="text-align:center;">
-  <a href="../../../../images/volumetric_wrap.png"><img src="../../../../images/volumetric_wrap.png" style="max-width:95%"/></a><br>
+  <a href="{{ '/images/volumetric_wrap.png'  | relative_url }}"><img src="{{ '/images/volumetric_wrap.png'  | relative_url }}" style="max-width:95%"/></a><br>
   <br><small>Volumetric mesh of the notoriously painful input <a href="https://ten-thousand-models.appspot.com/detail.html?file_id=996816">996816.stl</a> (Thingi10k). 380k cells in ~10s.</small>
 </div>
 

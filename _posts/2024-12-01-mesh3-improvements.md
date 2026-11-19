@@ -2,6 +2,7 @@
 layout: post
 title: "Tetrahedral Mesh Generation Improvements"
 description: "Tetrahedral Mesh Generation Improvements in CGAL 6"
+image: "/images/mesh3_edge_distance_stool.png"
 category:
 tags: [""]
 ---
@@ -54,7 +55,7 @@ for feature protection, similarly to what is done for polyhedral surfaces.</p>
 </p>
 
 <div style="text-align:center;">
-  <a href="../../../../images/mesh3_triple_lines_protection.png"><img src="../../../../images/mesh3_triple_lines_protection.png" style="max-width:80%"/></a><br>
+  <a href="{{ '/images/mesh3_triple_lines_protection.png'  | relative_url }}"><img src="{{ '/images/mesh3_triple_lines_protection.png'  | relative_url }}" style="max-width:80%"/></a><br>
   <br><small>Mesh generation from labeled image without (left)
    and with triple lines detection and protection (right).
    Protection of the feature lines at the intersection of the three subdomains (pink, blue, outside)
@@ -77,7 +78,7 @@ This addition has been added to CGAL, and the 3D image of weights can be generat
 <code>CGAL::Mesh_3::generate_label_weights()</code>.</p>
 
 <div style="text-align:center;">
-  <a href="../../../../images/mesh3_weighted_images.png"><img src="../../../../images/mesh3_weighted_images.png" style="max-width:100%"/></a><br>
+  <a href="{{ '/images/mesh3_weighted_images.png'  | relative_url }}"><img src="{{ '/images/mesh3_weighted_images.png'  | relative_url }}" style="max-width:100%"/></a><br>
   <br><small>Mesh generation from labeled image without weights (left, 88,000 vertices)
    and with weights (right, 67,000 vertices).</small>
 </div>
@@ -103,7 +104,7 @@ providing finer control over the mesh features.</p>
 mesh_polyhedral_domain_with_edge_distance.cpp</a> shows how to use this new criterion, called <code>edge_distance</code>.</p>
 
 <div style="text-align:center;">
-  <a href="../../../../images/mesh3_edge_distance_stool.png"><img src="../../../../images/mesh3_edge_distance_stool.png" style="max-width:65%"/></a><br>
+  <a href="{{ '/images/mesh3_edge_distance_stool.png'  | relative_url }}"><img src="{{ '/images/mesh3_edge_distance_stool.png'  | relative_url }}" style="max-width:65%"/></a><br>
   <br><small>Mesh generation from polyhedral surface with a varying <code>edge_distance</code> meshing criterion.
   The quality improvement is noticeable at the extremities of the stool legs.</small>
 </div>

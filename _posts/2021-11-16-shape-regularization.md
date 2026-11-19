@@ -2,6 +2,7 @@
 layout: post
 title: "New in CGAL: Shape Regularization package"
 description: "A new block in CGAL's reconstruction pipeline"
+long_description: "The Shape Regularization package makes near-parallel, near-orthogonal, and near-collinear lines and planes exactly so, a step of reconstruction pipelines."
 category:
 tags: [""]
 ---
@@ -34,7 +35,7 @@ With the next CGAL release, a new package will add one more step towards a robus
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/shape_regularisation/80.1.svg"><img src="../../../../images/shape_regularisation/80.1.svg" style="max-width:50%"/></a><br>
+  <a href="{{ '/images/shape_regularisation/80.1.svg'  | relative_url }}"><img src="{{ '/images/shape_regularisation/80.1.svg'  | relative_url }}" style="max-width:50%"/></a><br>
 </div>
 
 <br>
@@ -59,7 +60,7 @@ and after (green) the angle and offset regularization are depicted.</p>
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/shape_regularisation/80.2.svg"><img src="../../../../images/shape_regularisation/80.2.svg" style="max-width:50%"/></a><br>
+  <a href="{{ '/images/shape_regularisation/80.2.svg'  | relative_url }}"><img src="{{ '/images/shape_regularisation/80.2.svg'  | relative_url }}" style="max-width:50%"/></a><br>
 </div>
 
 <br>
@@ -107,7 +108,7 @@ is the direction of the longest edge.</p>
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/shape_regularisation/80.13.svg"><img src="../../../../images/shape_regularisation/80.13.svg" style="max-width:50%"/></a><br>
+  <a href="{{ '/images/shape_regularisation/80.13.svg'  | relative_url }}"><img src="{{ '/images/shape_regularisation/80.13.svg'  | relative_url }}" style="max-width:50%"/></a><br>
 </div>
 
 <br>
@@ -158,7 +159,7 @@ of input segments when using the external <a href="https://cgal.geometryfactory.
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/shape_regularisation/80.10.svg"><img src="../../../../images/shape_regularisation/80.10.svg" style="max-width:50%"/></a><br>
+  <a href="{{ '/images/shape_regularisation/80.10.svg'  | relative_url }}"><img src="{{ '/images/shape_regularisation/80.10.svg'  | relative_url }}" style="max-width:50%"/></a><br>
 </div>
 
 <br>
@@ -170,7 +171,7 @@ with respect to the number of contour vertices as it can be seen from the plot b
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/shape_regularisation/80.16.svg"><img src="../../../../images/shape_regularisation/80.16.svg" style="max-width:50%"/></a><br>
+  <a href="{{ '/images/shape_regularisation/80.16.svg'  | relative_url }}"><img src="{{ '/images/shape_regularisation/80.16.svg'  | relative_url }}" style="max-width:50%"/></a><br>
 </div>
 
 <br>

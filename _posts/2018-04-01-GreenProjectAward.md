@@ -2,8 +2,11 @@
 layout: post
 title: "CGAL - Finalist for the Green Project Award"
 description: "The Carbon Footprint of a Cricket"
+image: "/images/zoe.png"
 category: "news"
-tags: []
+tags: ["april"]
+noindex: true
+sitemap: false
 ---
 {% include JB/setup %}
 
@@ -39,7 +42,7 @@ some minimal ecological standards. These standards will not be very demanding, b
 applying (a regulatory) force is often the only thing that helps.</p>
 
 <blockquote>
-<p>"We should go down there, get some guys together, ya know, get some bricks and baseball bats, 
+<p>"We should go down there, get some guys together, ya know, get some bricks and baseball bats,
 and really explain things to 'em."</p>
  <p><small>Woody Allen, Manhattan</small></p>
 </blockquote>

@@ -2,6 +2,7 @@
 layout: post
 title: "Header-Only CGAL"
 description: "Remove the need to build a CGAL library"
+long_description: "Work in progress in 2014: making CGAL usable as a header-only library, removing the need to build the CGAL libraries before using them."
 category:
 tags: ["WIP"]
 ---

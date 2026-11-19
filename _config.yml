@@ -1,6 +1,7 @@
 # This is the default format.
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:year/:month/:day/:title/
+excerpt_separator: "<!--more-->"
 include:
   - .htaccess
   - node_modules
@@ -18,6 +19,9 @@ exclude:
 # so be sure to set them if your theme uses them.
 #
 title: CGAL
+description: "CGAL is an open source C++ library of robust and efficient geometric algorithms: triangulations, meshing, mesh processing, Boolean operations, arrangements, and more."
+default_image: /images/social/cgal-social-card.png
+twitter_username: TheCGALProject
 tagline: The Computational Geometry Algorithms Library
 author:
   name: CGAL Editorial Board

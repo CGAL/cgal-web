@@ -2,6 +2,7 @@
 layout: post
 title: "New in CGAL: The Heat Method "
 description: "Introducing a new package to compute geodesic distances over triangulated surface meshes"
+image: "/images/Heat_method_bunny.png"
 category:
 tags: [""]
 ---
@@ -47,7 +48,7 @@ and uses the heat kernel to compute geodesics, following an approach illustrated
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/Heat_method_theory.png"><img src="../../../../images/Heat_method_theory.png" style="max-width:95%"/></a><br>
+  <a href="{{ '/images/Heat_method_theory.png'  | relative_url }}"><img src="{{ '/images/Heat_method_theory.png'  | relative_url }}" style="max-width:95%"/></a><br>
   <small> Outline of the heat method. (I) Heat is allowed to diffuse for a
   brief period of time (left). (II) The temperature gradient (center left) is
   normalized and negated to get a unit vector field (center right) pointing
@@ -72,7 +73,7 @@ between any two points on the surface.</p>
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/Heat_method_bunny.png"><img src="../../../../images/Heat_method_bunny.png" style="max-width:85%"/></a><br>
+  <a href="{{ '/images/Heat_method_bunny.png'  | relative_url }}"><img src="{{ '/images/Heat_method_bunny.png'  | relative_url }}" style="max-width:85%"/></a><br>
   <small> Geodesic distance on the Stanford Bunny. The heat method allows
   distance to be rapidly updated for new source points or curves.
   <a href="https://dl.acm.org/citation.cfm?id=3131280">[1]</a></small>

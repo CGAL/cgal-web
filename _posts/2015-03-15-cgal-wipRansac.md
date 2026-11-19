@@ -2,6 +2,7 @@
 layout: post
 title: "Point Set Shape Detection"
 description: "An implementation of the Efficient RANSAC method"
+long_description: "Work in progress in 2015: the Efficient RANSAC method in CGAL, to detect planes, spheres, cylinders, cones, and tori in unstructured point sets."
 category:
 tags: ["WIP"]
 ---

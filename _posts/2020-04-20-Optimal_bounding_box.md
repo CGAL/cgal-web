@@ -2,6 +2,7 @@
 layout: post
 title: "New in CGAL: Optimal Bounding Box"
 description: "Computing Tight Bounding Boxes Of Point Sets and Models"
+image: "/images/aabb_vs_obb.png"
 category:
 tags: [""]
 ---
@@ -38,7 +39,7 @@ but provides a tight approximation.</p>
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/aabb_vs_obb.png"><img src="../../../../images/aabb_vs_obb.png" style="max-width:95%"/></a><br>
+  <a href="{{ '/images/aabb_vs_obb.png'  | relative_url }}"><img src="{{ '/images/aabb_vs_obb.png'  | relative_url }}" style="max-width:95%"/></a><br>
   <small>Although simple to compute, an AABB (left) is rarely as a good fit for a model as the optimal bounding box (right)</small>
   <!-- model: https://www.myminifactory.com/object/3d-print-chinese-new-year-dragon-incense-holder-5476 -->
 </div>
@@ -84,7 +85,7 @@ Convex hull preprocessing is used to greatly improve speed, and is performed usi
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/obb_chess.png"><img src="../../../../images/obb_chess.png" style="max-width:95%"/></a><br>
+  <a href="{{ '/images/obb_chess.png'  | relative_url }}"><img src="{{ '/images/obb_chess.png'  | relative_url }}" style="max-width:95%"/></a><br>
   <small>Optimal bounding boxes of a set of chess pieces.</small>
   <!-- chess pieces from https://www.myminifactory.com/object/3d-print-chess-game-set-26114 -->
 </div>

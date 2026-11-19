@@ -2,6 +2,8 @@
 layout: post
 title: "New in CGAL: 3D Mesh Volume Smoothing"
 description: "Efficient, robust, and boundary-aware smoothing"
+long_description: "The Mesh_smoothing_3 package of CGAL 6.3 improves tetrahedral mesh quality and fits the mesh to the geometry, without changing the mesh connectivity."
+image: "/images/mesh_smoothing_3_implicit.png"
 category:
 tags: [""]
 ---
@@ -13,8 +15,8 @@ tags: [""]
 <br>
 
 <div style="text-align:center;">
-  <a href="../../../../images/mesh_smoothing_3_implicit.png">
-    <img src="../../../../images/mesh_smoothing_3_implicit.png"
+  <a href="{{ '/images/mesh_smoothing_3_implicit.png'  | relative_url }}">
+    <img src="{{ '/images/mesh_smoothing_3_implicit.png'  | relative_url }}"
          style="max-width:95%"/>
   </a>
   <br>
@@ -104,8 +106,8 @@ geometry.
 <br>
 
 <div style="text-align:center;">
-  <a href="../../../../images/mesh_smoothing_3_hybrid.png">
-    <img src="../../../../images/mesh_smoothing_3_hybrid.png"
+  <a href="{{ '/images/mesh_smoothing_3_hybrid.png'  | relative_url }}">
+    <img src="{{ '/images/mesh_smoothing_3_hybrid.png'  | relative_url }}"
          style="max-width:95%"/>
   </a>
   <br>

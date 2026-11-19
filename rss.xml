@@ -2,25 +2,30 @@
 layout: null
 title : RSS Feed
 ---
-
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
 <channel>
-        <title>{{ site.title }}</title>
-        <description>{{ site.title }} - {{ site.author.name }}</description>
-        <link>{{ site.production_url }}{{ site.rss_path }}</link>
-        <link>{{ site.production_url }}</link>
-        <lastBuildDate>{{ site.time | date_to_xmlschema }}</lastBuildDate>
-        <pubDate>{{ site.time | date_to_xmlschema }}</pubDate>
+        <title>{{ site.title | xml_escape }}</title>
+        <description>{{ site.description | xml_escape }}</description>
+        <link>{{ site.production_url }}/</link>
+        <atom:link href="{{ site.production_url }}{{ site.JB.rss_path }}" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+        <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
         <ttl>1800</ttl>
 
-{% for post in site.posts %}
+{% for post in site.posts limit: 20 %}
+{%- assign feed_image = post.social_image | default: post.image -%}
+{%- assign feed_image_ext = feed_image | split: "." | last | downcase -%}
+{%- if feed_image_ext == "svg" -%}{%- assign feed_image = nil -%}{%- endif %}
         <item>
-                <title>{{ post.title }}</title>
+                <title>{{ post.title | xml_escape }}</title>
                 <description>{{ post.content | xml_escape }}</description>
                 <link>{{ site.production_url }}{{ post.url }}</link>
                 <guid>{{ site.production_url }}{{ post.id }}</guid>
-                <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+                <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+                {%- if feed_image %}
+                <media:thumbnail url="{% unless feed_image contains '://' %}{{ site.production_url }}{% endunless %}{{ feed_image }}"/>
+                {%- endif %}
         </item>
 {% endfor %}
 

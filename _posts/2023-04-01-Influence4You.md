@@ -3,7 +3,9 @@ layout: post
 title: "Influence4You"
 description: "Help! We need somebody. Help! Not just anybody."
 category: "news"
-tags: []
+tags: ["april"]
+noindex: true
+sitemap: false
 ---
 {% include JB/setup %}
 
@@ -30,7 +32,7 @@ for a <I>focused screening</I> of 30 minutes during the social event of a recent
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../../images/nycBillboard.jpg"><img src="../../../../../images/nycBillboard.jpg" style="max-width:85%"/></a><br>
+  <a href="{{ '/images/nycBillboard.jpg'  | relative_url }}"><img src="{{ '/images/nycBillboard.jpg'  | relative_url }}" style="max-width:85%"/></a><br>
   <br><small>CGAL during 30 min on a billboard at the occasion of a geophysics conference where we exhibited.</small>
 </div>
 
@@ -103,7 +105,7 @@ and will look forward to the future.
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../../images/Lost_in_CGAL_translation.jpg"><img src="../../../../../images/Lost_in_CGAL_translation.jpg" style="max-width:85%"/></a><br>
+  <a href="{{ '/images/Lost_in_CGAL_translation.jpg'  | relative_url }}"><img src="{{ '/images/Lost_in_CGAL_translation.jpg'  | relative_url }}" style="max-width:85%"/></a><br>
   <br><small>CGAL's newest ad on Shibuya Crossing.</small>
 </div>
 

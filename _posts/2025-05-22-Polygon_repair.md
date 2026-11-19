@@ -2,9 +2,11 @@
 layout: post
 title: "New in CGAL: Polygon Repair"
 description: ""
+long_description: "The Polygon Repair package turns invalid 2D polygons and multipolygons into valid ones, with even-odd, non-zero, union, and intersection rules."
 category:
 tags: ["features"]
 image: /images/PolygonRepair_WindingNonZeroDifferent.svg
+social_image: "/images/non_zero_departments.png"
 ---
 {% include JB/setup %}
 
@@ -52,7 +54,7 @@ in a multipolygon with holes, and calling it as simple as:</p>
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/non_zero_departments.png"><img src="../../../../images/non_zero_departments.png" style="max-width:95%"/></a>
+  <a href="{{ '/images/non_zero_departments.png'  | relative_url }}"><img src="{{ '/images/non_zero_departments.png'  | relative_url }}" style="max-width:95%"/></a>
   <br><small>Turning the multipolygon of metropolitan french departments into two polygons using the non-zero rule</small>
 </div>
 
@@ -70,7 +72,7 @@ labeling heuristics are possible. Four strategies are currently offered by the n
 
 <div style="text-align:center;">
   <img
-    src="../../../../images/PolygonRepair_WindingNonZeroDifferent.svg"
+    src="{{ '/images/PolygonRepair_WindingNonZeroDifferent.svg'  | relative_url }}"
     alt="triangle with all three sides equal"
     height="200"/>
   <br><small>Input (left), non-zero (middle) even-odd (right).</small>
@@ -84,7 +86,7 @@ labeling heuristics are possible. Four strategies are currently offered by the n
 
 <div style="text-align:center;">
   <img
-    src="../../../../images/PolygonRepair_UnionIntersection.svg"
+    src="{{ '/images/PolygonRepair_UnionIntersection.svg'  | relative_url }}"
     alt="triangle with all three sides equal"
     height="200"/>
   <br><small>Union (top) and Intersection (bottom). </small>

@@ -2,6 +2,8 @@
 layout: post
 title: "New in CGAL: Interpolated Corrected Curvature Measures and Isotropic Remeshing with Sizing Field"
 description: ""
+long_description: "Two Google Summer of Code contributions: Interpolated Corrected Curvature Measures on polygon meshes, and Isotropic Remeshing with a sizing field based on them."
+image: "/images/bimba_curvature.png"
 category:
 tags: [""]
 ---
@@ -34,7 +36,7 @@ the surface mesh.   Additionally,  if the polygonal mesh has a user-prescribed n
 <br>
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/bimba_curvature.png"><img src="../../../../images/bimba_curvature.png" style="max-width:95%"/></a><br>
+  <a href="{{ '/images/bimba_curvature.png'  | relative_url }}"><img src="{{ '/images/bimba_curvature.png'  | relative_url }}" style="max-width:95%"/></a><br>
   <br><small> Mean curvature, Gaussian curvature, Minimal principal curvature directions and Maximal principal curvature directions on a mesh.</small>
 </div>
 <br>
@@ -51,14 +53,14 @@ and using the <em>Interpolated Corrected Curvature Measures</em> function for cu
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/david_comparison.png"><img src="../../../../images/david_comparison.png" style="max-width:95%"/></a><br>
+  <a href="{{ '/images/david_comparison.png'  | relative_url }}"><img src="{{ '/images/david_comparison.png'  | relative_url }}" style="max-width:95%"/></a><br>
   <br><small>Input Mesh (left), Curvature based isotropic remeshing (right).</small>
 </div>
 
 <br>
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/thorvaldsen_comparison.png"><img src="../../../../images/thorvaldsen_comparison.png" style="max-width:95%"/></a><br>
+  <a href="{{ '/images/thorvaldsen_comparison.png'  | relative_url }}"><img src="{{ '/images/thorvaldsen_comparison.png'  | relative_url }}" style="max-width:95%"/></a><br>
   <br><small>Input Mesh (left), Curvature based isotropic remeshing (right).</small>
 </div>
 <br>

@@ -1,0 +1,25 @@
+---
+layout: null
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+{%- assign seo_url = site.production_url | default: "https://www.cgal.org" %}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for p in site.pages %}
+  {%- if p.sitemap == false or p.noindex %}{% continue %}{% endif %}
+  {%- if p.url contains "/node_modules/" %}{% continue %}{% endif %}
+  {%- comment %} Only list HTML pages (skips feeds, robots.txt, stylesheets, scripts...) {% endcomment %}
+  {%- assign p_ext = p.name | split: "." | last | downcase %}
+  {%- unless p_ext == "html" or p_ext == "md" or p_ext == "markdown" %}{% continue %}{% endunless %}
+  <url>
+    <loc>{{ p.url | replace: "/index.html", "/" | prepend: seo_url | xml_escape }}</loc>
+  </url>
+{%- endfor %}
+{%- for p in site.posts %}
+  {%- if p.sitemap == false or p.noindex %}{% continue %}{% endif %}
+  <url>
+    <loc>{{ p.url | prepend: seo_url | xml_escape }}</loc>
+    <lastmod>{{ p.last_modified_at | default: p.date | date_to_xmlschema }}</lastmod>
+  </url>
+{%- endfor %}
+</urlset>

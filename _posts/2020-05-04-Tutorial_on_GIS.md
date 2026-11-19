@@ -2,6 +2,7 @@
 layout: post
 title: "New in CGAL: Tutorial on GIS"
 description: "Demonstrating how to use CGAL packages for Geometric Information System applications"
+image: "/images/gis_tuto.jpg"
 category:
 tags: [""]
 ---
@@ -16,7 +17,7 @@ tags: [""]
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/gis_tuto.jpg"><img src="../../../../images/gis_tuto.jpg" style="max-width:100%"/></a><br>
+  <a href="{{ '/images/gis_tuto.jpg'  | relative_url }}"><img src="{{ '/images/gis_tuto.jpg'  | relative_url }}" style="max-width:100%"/></a><br>
   <small>Two examples of GIS applications: Digital Surface Model and Classification of a LIDAR point cloud</small>
 </div>
 <br>
@@ -35,7 +36,7 @@ tags: [""]
 
 <br>
 <div style="text-align:center;">
-  <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Manual/tuto_gis.html"><img src="../../../../images/gis_tutorial.png" style="max-width:100"/></a><br>
+  <a href="https://cgal.geometryfactory.com/CGAL/doc/master/Manual/tuto_gis.html"><img src="{{ '/images/gis_tutorial.png'  | relative_url }}" style="max-width:100"/></a><br>
   <small>The new Tutorial on GIS.</small>
 </div>
 <br>

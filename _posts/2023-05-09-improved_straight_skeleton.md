@@ -2,6 +2,8 @@
 layout: post
 title: "New in CGAL: Weighted Straight Skeletons and Straight Skeleton Extrusion"
 description: ""
+long_description: "The 2D Straight Skeleton package of CGAL now offers weighted straight skeletons and the extrusion of polygons with holes into closed 3D surfaces."
+image: "/images/sls_cropped_extrusion.png"
 category:
 tags: [""]
 ---
@@ -19,7 +21,7 @@ along the angular bisector of the lines subtending the edges, tracing a tree-lik
 the straight skeleton.</p>
 
 <div style="text-align:center;">
-  <a href="../../../../images/sls_progress.png"><img src="../../../../images/sls_progress.png" style="max-width:95%"/></a><br>
+  <a href="{{ '/images/sls_progress.png'  | relative_url }}"><img src="{{ '/images/sls_progress.png'  | relative_url }}" style="max-width:95%"/></a><br>
   <br><small>Construction of a straight skeleton: the wavefront interfaces define the straight skeleton (red).</small>
 </div>
 
@@ -46,7 +48,7 @@ but along a *weighted* bisector, which changes its angle.</p>
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/sls_weights.png"><img src="../../../../images/sls_weights.png" style="max-width:95%"/></a><br>
+  <a href="{{ '/images/sls_weights.png'  | relative_url }}"><img src="{{ '/images/sls_weights.png'  | relative_url }}" style="max-width:95%"/></a><br>
   <br><small>An unweighted straight skeleton (leftmost) and three randomly weighted straight skeletons.</small>
 </div>
 
@@ -71,7 +73,7 @@ surface triangle mesh.</p>
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/sls_extrusion.png"><img src="../../../../images/sls_extrusion.png" style="max-width:95%"/></a><br>
+  <a href="{{ '/images/sls_extrusion.png'  | relative_url }}"><img src="{{ '/images/sls_extrusion.png'  | relative_url }}" style="max-width:95%"/></a><br>
   <br><small>Input polygon (left), weighted skeleton with colored faces (middle), and extruded skeleton (right).</small>
 </div>
 
@@ -80,7 +82,7 @@ surface triangle mesh.</p>
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/sls_cropped_extrusion.png"><img src="../../../../images/sls_cropped_extrusion.png" style="max-width:95%"/></a><br>
+  <a href="{{ '/images/sls_cropped_extrusion.png'  | relative_url }}"><img src="{{ '/images/sls_cropped_extrusion.png'  | relative_url }}" style="max-width:95%"/></a><br>
   <br><small>Input polygon with three holes and its weighted straight skeleton (left), <br> and two extrusions of the skeleton with different maximum heights (middle and right).</small>
 </div>
 

@@ -2,6 +2,8 @@
 layout: post
 title: "New in CGAL: Approximate Convex Decomposition"
 description: "Covering a mesh by tight convex volumes"
+long_description: "Approximate Convex Decomposition in CGAL 6.2 partitions closed triangle meshes into a few convex volumes, with control over approximation quality."
+image: "/images/acd_results.jpg"
 category:
 tags: [""]
 ---
@@ -12,7 +14,7 @@ tags: [""]
 <br>
 
 <div style="text-align:center;">
-  <a href="../../../../images/acd_results.jpg"><img src="../../../../images/acd_results.jpg" style="max-width:95%"/></a><br>
+  <a href="{{ '/images/acd_results.jpg'  | relative_url }}"><img src="{{ '/images/acd_results.jpg'  | relative_url }}" style="max-width:95%"/></a><br>
   <br><small>A camel mesh decomposed into 4, 8 and 12 convex volumes.</small>
 </div>
 <br>
@@ -24,7 +26,7 @@ tags: [""]
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/acd_pipeline.jpg"><img src="../../../../images/acd_pipeline.jpg" style="max-width:95%"/></a><br>
+  <a href="{{ '/images/acd_pipeline.jpg'  | relative_url }}"><img src="{{ '/images/acd_pipeline.jpg'  | relative_url }}" style="max-width:95%"/></a><br>
   <br><small>From left to right: 1) Input mesh, 2) Voxelization, 3) Convex volumes after splitting phase, 4) Final 10 convex volumes.</small>
 </div>
 

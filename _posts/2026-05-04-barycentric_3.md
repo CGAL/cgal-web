@@ -2,13 +2,14 @@
 layout: post
 title: "New in CGAL: 3D Generalized Barycentric Coordinates"
 description: "Fast and closed-form generalized barycentric coordinates for convex simplicial polytopes"
+image: "/images/barycentric_shape_deform.png"
 category:
 tags: [""]
 ---
 {% include JB/setup %}
 
 <h3>
-<a href="https://www.linkedin.com/in/antonio-gomes-023019230/">Antonio Gomes</a>, 
+<a href="https://www.linkedin.com/in/antonio-gomes-023019230/">Antonio Gomes</a>,
 <a href="https://www.linkedin.com/in/dmitry-anisimov/">Dmitry Anisimov</a></h3>
 
 <br>
@@ -16,7 +17,7 @@ tags: [""]
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/barycentric_overview.svg"><img src="../../../../images/barycentric_overview.svg" style="max-width:95%"/></a><br>
+  <a href="{{ '/images/barycentric_overview.svg'  | relative_url }}"><img src="{{ '/images/barycentric_overview.svg'  | relative_url }}" style="max-width:95%"/></a><br>
   <br><small>Wachspress, discrete harmonic, mean value, and harmonic coordinate functions for a convex polygon plotted with respect to the marked vertex.</small>
 </div>
 <br>
@@ -25,7 +26,7 @@ tags: [""]
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/barycentric_shape_deform.png"><img src="../../../../images/barycentric_shape_deform.png" style="max-width:95%"/></a><br>
+  <a href="{{ '/images/barycentric_shape_deform.png'  | relative_url }}"><img src="{{ '/images/barycentric_shape_deform.png'  | relative_url }}" style="max-width:95%"/></a><br>
   <br><small>A sphere deformed by using a deformed bounding box as reference.</small>
 </div>
 

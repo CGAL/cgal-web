@@ -2,6 +2,7 @@
 layout: post
 title: "New in CGAL: Wrappers for Registration Libraries"
 description: "Introducing wrappers for OpenGR and Pointmatcher for point cloud registration"
+image: "/images/Registration.png"
 category:
 tags: [""]
 ---
@@ -31,7 +32,7 @@ tags: [""]
 
 <br>
 <div style="text-align:center;">
-  <a href="../../../../images/Registration.png"><img src="../../../../images/Registration.png" style="max-width:95%"/></a><br>
+  <a href="{{ '/images/Registration.png'  | relative_url }}"><img src="{{ '/images/Registration.png'  | relative_url }}" style="max-width:95%"/></a><br>
   <small>Registration pipeline. From left to right: input point cloud, output of coarse registration with <em>OpenGR</em>, output of fine registration using <em>Pointmatcher</em>.</small>
 </div>
 <br>

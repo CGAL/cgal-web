@@ -3,7 +3,9 @@ layout: post
 title: "CGAL User Portrait: Clubhouse"
 description: "Listen to the Sound of Geometry"
 category: "news"
-tags: []
+tags: ["april"]
+noindex: true
+sitemap: false
 ---
 {% include JB/setup %}
 
