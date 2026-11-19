@@ -1,12 +1,48 @@
 
 
 <!DOCTYPE html>
-<html class="no-js">
+<html class="no-js" lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
     <title>New in CGAL: Fixing Self-Intersections in Triangle Soups using Snap Rounding</title>
-    <meta name="description" content="">
+    <meta name="description" content="Fixing self-intersections in triangle soups with CGAL: autorefinement, and snap rounding strategies that output coordinates representable as doubles.">
+    <link rel="canonical" href="https://www.cgal.org/2025/06/13/autorefine-and-snap/">
+    <meta property="og:site_name" content="CGAL">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="New in CGAL: Fixing Self-Intersections in Triangle Soups using Snap Rounding">
+    <meta property="og:description" content="Fixing self-intersections in triangle soups with CGAL: autorefinement, and snap rounding strategies that output coordinates representable as doubles.">
+    <meta property="og:url" content="https://www.cgal.org/2025/06/13/autorefine-and-snap/">
+    <meta property="og:image" content="https://www.cgal.org/images/triangle_snap_error.png">
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2025-06-13T00:00:00+00:00">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@TheCGALProject">
+    <meta name="twitter:title" content="New in CGAL: Fixing Self-Intersections in Triangle Soups using Snap Rounding">
+    <meta name="twitter:description" content="Fixing self-intersections in triangle soups with CGAL: autorefinement, and snap rounding strategies that output coordinates representable as doubles.">
+    <meta name="twitter:image" content="https://www.cgal.org/images/triangle_snap_error.png">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "New in CGAL: Fixing Self-Intersections in Triangle Soups using Snap Rounding",
+      "description": "Fixing self-intersections in triangle soups with CGAL: autorefinement, and snap rounding strategies that output coordinates representable as doubles.",
+      "datePublished": "2025-06-13T00:00:00+00:00",
+      "dateModified": "2025-06-13T00:00:00+00:00",
+      "url": "https://www.cgal.org/2025/06/13/autorefine-and-snap/",
+      "mainEntityOfPage": "https://www.cgal.org/2025/06/13/autorefine-and-snap/",
+      "image": "https://www.cgal.org/images/triangle_snap_error.png",
+      "author": { "@type": "Organization", "name": "The CGAL Project", "url": "https://www.cgal.org/" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "The CGAL Project",
+        "url": "https://www.cgal.org/",
+        "logo": { "@type": "ImageObject", "url": "https://www.cgal.org/images/cgal_logo/g-196x196-y.png" }
+      }
+    }
+    </script>
+
     <meta name="viewport" content="width=device-width">
     <meta name="author" content="CGAL Editorial Board">
 
@@ -15,7 +51,7 @@
     <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
     <link rel="stylesheet" href="/cgal-web/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" href="/cgal-web/assets/themes/cgal/main.css">
 
@@ -34,21 +70,21 @@
       <a href="/cgal-web/index.html" class="mobile-logo">
         <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="30">
       </a>
-      <button class="menu-toggle" aria-label="Menu">
+      <button type="button" class="menu-toggle" aria-label="Menu">
         Menu
       </button>
     </div>
-    <nav id="mainmenu" class="mainmenu" role="navigation">
+    <nav id="mainmenu" class="mainmenu">
     <ul>
     <li class="logo-wrapper hidden-xs hidden-sm hidden-md">
     <a href="/cgal-web/index.html">
-    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
+    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250">
     </a>
     </li>
 
     <li class="hidden-lg">
     <a href="/cgal-web/index.html">
-    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
+    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20">
     </a>
     </li>
 
@@ -63,24 +99,24 @@
     <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Packages</a>
         <ul class="dropdown-menu">
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygonMeshProcessing" target="_blank">Polygon Mesh Processing</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPointSetProcessing" target="_blank">Point Set Processing</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching and Sorting</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygonMeshProcessing" target="_blank">Polygon Mesh Processing</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPointSetProcessing" target="_blank">Point Set Processing</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching and Sorting</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
         </ul>
     </li>
 
@@ -153,7 +189,7 @@ a solution to them as well.
 </p>
 
 <div style="text-align:center;">
-  <a href="../../../../images/996816-self-intersections.png"><img src="../../../../images/996816-self-intersections.png" style="max-width:95%" /></a>
+  <a href="/cgal-web/images/996816-self-intersections.png"><img src="/cgal-web/images/996816-self-intersections.png" style="max-width:95%" /></a>
   <br /><small>The model <tt>996816</tt> from the Thingi10k dataset is riddled with thousands of self-intersections</small>
 </div>
 <p><br /></p>
@@ -192,7 +228,7 @@ of the solid.</p>
 
 <p><br /></p>
 <div style="text-align:center;">
-  <a href="../../../../images/cylinder_autorefine.png"><img src="../../../../images/cylinder_autorefine.png" style="max-width:95%" /></a>
+  <a href="/cgal-web/images/cylinder_autorefine.png"><img src="/cgal-web/images/cylinder_autorefine.png" style="max-width:95%" /></a>
   <br /><small>Left: A triangle mesh generated by sweeping a circle along a spiral curve;
              Right: A triangle mesh free from self-intersection bounding the same volume as in the left picture;
              On the bottom, we see the intersection curve of a plane with the triangle meshes.</small>
@@ -218,10 +254,10 @@ The memory values are the maximum resident set size (given using the <tt>/usr/bi
 </p>
 
 <div style="text-align:center;">
-  <a href="../../../../images/autoref_runtime.png"><img src="../../../../images/autoref_runtime.png" style="max-width:95%" /></a>
+  <a href="/cgal-web/images/autoref_runtime.png"><img src="/cgal-web/images/autoref_runtime.png" style="max-width:95%" /></a>
 </div>
 <div style="text-align:center;">
-  <a href="../../../../images/autoref_mem.png"><img src="../../../../images/autoref_mem.png" style="max-width:95%" /></a>
+  <a href="/cgal-web/images/autoref_mem.png"><img src="/cgal-web/images/autoref_mem.png" style="max-width:95%" /></a>
 </div>
 
 <p><br /></p>
@@ -235,7 +271,7 @@ after autorefine and naive rounding to double. Therefore, we are left with 572 f
 still featuring self-intersections.</p>
 
 <div style="text-align:center;">
-  <a href="../../../../images/triangle_snap_error.png"><img src="../../../../images/triangle_snap_error.png" style="max-width:95%" /></a>
+  <a href="/cgal-web/images/triangle_snap_error.png"><img src="/cgal-web/images/triangle_snap_error.png" style="max-width:95%" /></a>
   <br /><small>Illustration of rounding issues in self-intersection resolutions. The red grid represent the grid of floating point numbers.
              Points with floating points coordinates must lie on a vertex of the grid. <b>From left to right:</b> input triangles with floating point
              numbers coordinates; Resolution of intersections of triangles using arbitrary precision; Rounding new intersection points to the nearest
@@ -255,7 +291,7 @@ all the models but one could be rounded with one call. The single remaining mode
 <tt>996816</tt> (see image at the top of the post) required a few more iterations.</p>
 
 <div style="text-align:center;">
-  <a href="../../../../images/996816-no-self-intersections.png"><img src="../../../../images/996816-no-self-intersections.png" style="max-width:95%" /></a>
+  <a href="/cgal-web/images/996816-no-self-intersections.png"><img src="/cgal-web/images/996816-no-self-intersections.png" style="max-width:95%" /></a>
   <br /><small>The model <tt>996816</tt> no longer intersects and a reasonable number of new vertices was needed: the input has 75k vertices and 170k faces, and the output has 100k vertices and 245k faces.</small>
 </div>
 <p><br /></p>
