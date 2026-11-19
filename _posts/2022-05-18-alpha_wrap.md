@@ -13,7 +13,7 @@ tags: [""]
     <a href="https://www-sop.inria.fr/members/David.Cohen-Steiner/">David Cohen-Steiner</a>&#42;,
     <a href="https://team.inria.fr/titane/pierre-alliez/">Pierre Alliez</a>&#42;</h3>
 <h4>&#42;<a href="https://www.inria.fr">INRIA Sophia Antipolis</a>,
-    &deg;<a href="http://www.geometryfactory.com" target="_blank">GeometryFactory</a></h4>
+    &deg;<a href="https://www.geometryfactory.com" target="_blank">GeometryFactory</a></h4>
 
 <br><br>
 <div style="text-align:center;">

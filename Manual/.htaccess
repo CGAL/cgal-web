@@ -33,7 +33,7 @@ Redirect /Manual/latest/doc_html/cgal_manual.tar.gz https://gforge.inria.fr/frs/
 Redirect /Manual/4.6-beta1/doc_html/cgal_manual.tar.gz https://gforge.inria.fr/frs/download.php/file/34551/CGAL-4.6-beta1-doc_html.tar.gz
 
 
-#RedirectMatch seeother /Manual/latest/(.*) http://www.cgal.org/Manual/latest/$1
+#RedirectMatch seeother /Manual/latest/(.*) https://www.cgal.org/Manual/latest/$1
 
 # Redirection to doc.cgal.org, Laurent Rineau, 20150910
 RedirectMatch permanent ^/Manual/(.*)/doc_html/cgal_manual/(.*) http://doc.cgal.org/Manual/$1/doc_html/cgal_manual/$2

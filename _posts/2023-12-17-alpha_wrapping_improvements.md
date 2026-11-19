@@ -8,7 +8,7 @@ tags: [""]
 {% include JB/setup %}
 
 <h3><a href="https://geometryfactory.com/who-we-are/">Mael Rouxel-Labbé</a></h3>
-<h4><a href="http://www.geometryfactory.com" target="_blank">GeometryFactory</a></h4>
+<h4><a href="https://www.geometryfactory.com" target="_blank">GeometryFactory</a></h4>
 
 <br>
 <p>Introduced in CGAL 5.5, the package
