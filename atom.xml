@@ -5,8 +5,8 @@
  <subtitle>CGAL is an open source C++ library of robust and efficient geometric algorithms: triangulations, meshing, mesh processing, Boolean operations, arrangements, and more.</subtitle>
  <link href="https://www.cgal.org/atom.xml" rel="self"/>
  <link href="https://www.cgal.org"/>
- <updated>2026-11-19T13:35:39+00:00</updated>
- <id>https://www.cgal.org</id>
+ <updated>2026-11-19T14:32:37+00:00</updated>
+ <id>https://www.cgal.org/</id>
  <icon>https://www.cgal.org/images/cgal_logo/g-196x196-y.png</icon>
  <author>
    <name>CGAL Editorial Board</name>
@@ -28,8 +28,8 @@
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/mesh_smoothing_3_implicit.png&quot;&gt;
-    &lt;img src=&quot;../../../../images/mesh_smoothing_3_implicit.png&quot; style=&quot;max-width:95%&quot; /&gt;
+  &lt;a href=&quot;/cgal-web/images/mesh_smoothing_3_implicit.png&quot;&gt;
+    &lt;img src=&quot;/cgal-web/images/mesh_smoothing_3_implicit.png&quot; style=&quot;max-width:95%&quot; /&gt;
   &lt;/a&gt;
   &lt;br /&gt;
   &lt;small&gt;
@@ -116,8 +116,8 @@ geometry.&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/mesh_smoothing_3_hybrid.png&quot;&gt;
-    &lt;img src=&quot;../../../../images/mesh_smoothing_3_hybrid.png&quot; style=&quot;max-width:95%&quot; /&gt;
+  &lt;a href=&quot;/cgal-web/images/mesh_smoothing_3_hybrid.png&quot;&gt;
+    &lt;img src=&quot;/cgal-web/images/mesh_smoothing_3_hybrid.png&quot; style=&quot;max-width:95%&quot; /&gt;
   &lt;/a&gt;
   &lt;br /&gt;
   &lt;small&gt;
@@ -527,7 +527,7 @@ officially released in the upcoming version of CGAL, CGAL 6.3, scheduled for Dec
 &lt;a href=&quot;https://doc.cgal.org/6.2/Manual/index.html&quot;&gt;CGAL-6.2-beta1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 6.2 offers the following improvements and new functionality over
-&lt;a href=&quot;../../../../2025/10/01/cgal61/&quot;&gt;CGAL 6.1&lt;/a&gt;:&lt;/p&gt;
+&lt;a href=&quot;/cgal-web/2025/10/01/cgal61/&quot;&gt;CGAL 6.1&lt;/a&gt;:&lt;/p&gt;
 
 &lt;div class=&quot;product-detail-info&quot;&gt;
 
@@ -897,7 +897,7 @@ for ANSI color support in terminal output.&lt;/li&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/acd_results.jpg&quot;&gt;&lt;img src=&quot;../../../../images/acd_results.jpg&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+  &lt;a href=&quot;/cgal-web/images/acd_results.jpg&quot;&gt;&lt;img src=&quot;/cgal-web/images/acd_results.jpg&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
   &lt;br /&gt;&lt;small&gt;A camel mesh decomposed into 4, 8 and 12 convex volumes.&lt;/small&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -909,7 +909,7 @@ for ANSI color support in terminal output.&lt;/li&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/acd_pipeline.jpg&quot;&gt;&lt;img src=&quot;../../../../images/acd_pipeline.jpg&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+  &lt;a href=&quot;/cgal-web/images/acd_pipeline.jpg&quot;&gt;&lt;img src=&quot;/cgal-web/images/acd_pipeline.jpg&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
   &lt;br /&gt;&lt;small&gt;From left to right: 1) Input mesh, 2) Voxelization, 3) Convex volumes after splitting phase, 4) Final 10 convex volumes.&lt;/small&gt;
 &lt;/div&gt;
 
@@ -937,7 +937,7 @@ officially released in the upcoming version of CGAL, CGAL 6.2, scheduled for Jun
    <media:thumbnail url="https://www.cgal.org/images/barycentric_shape_deform.png"/>
    <content type="html">
 &lt;h3&gt;
-&lt;a href=&quot;https://www.linkedin.com/in/antonio-gomes-023019230/&quot;&gt;Antonio Gomes&lt;/a&gt;, 
+&lt;a href=&quot;https://www.linkedin.com/in/antonio-gomes-023019230/&quot;&gt;Antonio Gomes&lt;/a&gt;,
 &lt;a href=&quot;https://www.linkedin.com/in/dmitry-anisimov/&quot;&gt;Dmitry Anisimov&lt;/a&gt;&lt;/h3&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -945,7 +945,7 @@ officially released in the upcoming version of CGAL, CGAL 6.2, scheduled for Jun
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/barycentric_overview.svg&quot;&gt;&lt;img src=&quot;../../../../images/barycentric_overview.svg&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+  &lt;a href=&quot;/cgal-web/images/barycentric_overview.svg&quot;&gt;&lt;img src=&quot;/cgal-web/images/barycentric_overview.svg&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
   &lt;br /&gt;&lt;small&gt;Wachspress, discrete harmonic, mean value, and harmonic coordinate functions for a convex polygon plotted with respect to the marked vertex.&lt;/small&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -954,7 +954,7 @@ officially released in the upcoming version of CGAL, CGAL 6.2, scheduled for Jun
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/barycentric_shape_deform.png&quot;&gt;&lt;img src=&quot;../../../../images/barycentric_shape_deform.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+  &lt;a href=&quot;/cgal-web/images/barycentric_shape_deform.png&quot;&gt;&lt;img src=&quot;/cgal-web/images/barycentric_shape_deform.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
   &lt;br /&gt;&lt;small&gt;A sphere deformed by using a deformed bounding box as reference.&lt;/small&gt;
 &lt;/div&gt;
 
@@ -1085,7 +1085,7 @@ and, last but not least, &lt;a href=&quot;https://rocq-prover.org/&quot;&gt;Rocq
 and dependently typed programming language for mechanised reasoning.
 &lt;/p&gt;
 
-&lt;p&gt;For that reason, AMI Labs will actively apply a trickle-down funding approach and, over the next three years, 
+&lt;p&gt;For that reason, AMI Labs will actively apply a trickle-down funding approach and, over the next three years,
 donate 0.1% of the $1 billion raised to these Open Source projects.&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -1102,7 +1102,7 @@ interior &lt;em&gt;perception system&lt;/em&gt;. &lt;/p&gt;
 placed on the dashboard and deciding whether to ignore them,
 move them aside, or comment on them politely.&lt;/p&gt;
 
-&lt;p&gt;The above story was only an April fools joke, although who knows what will happen.  The $1 billion raised by an AI startup, however, is true. 
+&lt;p&gt;The above story was only an April fools joke, although who knows what will happen.  The $1 billion raised by an AI startup, however, is true.
 The April fools joke came with a &lt;a href=&quot;https://www.cgal.org/April26/index.html&quot;&gt;gallery&lt;/a&gt;.&lt;/p&gt;
 
 </content>
@@ -1146,7 +1146,7 @@ triangulation.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/aw2_alpha_croc.png&quot;&gt;&lt;img src=&quot;../../../../images/aw2_alpha_croc.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+  &lt;a href=&quot;/cgal-web/images/aw2_alpha_croc.png&quot;&gt;&lt;img src=&quot;/cgal-web/images/aw2_alpha_croc.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
   &lt;br /&gt;&lt;small&gt;An input (purple and blue) and wrapping results (black).
   The input is composed of many overlapping polylines, as shown in the head zoom (leftmost).&lt;/small&gt;
 &lt;/div&gt;
@@ -1173,7 +1173,7 @@ can be chosen independently and arbitrarily large or small, but must be strictly
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/aw2_alpha_offset_bike.jpg&quot;&gt;&lt;img src=&quot;../../../../images/aw2_alpha_offset_bike.jpg&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+  &lt;a href=&quot;/cgal-web/images/aw2_alpha_offset_bike.jpg&quot;&gt;&lt;img src=&quot;/cgal-web/images/aw2_alpha_offset_bike.jpg&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
   &lt;br /&gt;&lt;small&gt;Multiple wrappings (black) of the racers model (blue) for various combinations of alpha and offset (click to enlarge).&lt;br /&gt;
              Alpha and offset impact the complexity-fidelity tradeoff.&lt;/small&gt;
 &lt;/div&gt;
@@ -1282,7 +1282,7 @@ the remaining ~30% are not failures, but generally projects that explored a new 
 &lt;ul style=&quot;list-style: none; padding: 0;&quot;&gt;
 
   &lt;li style=&quot;display: flex; align-items: flex-start; margin-bottom: 2em;&quot;&gt;
-    &lt;img src=&quot;../../../../images/cdt_title_pyramid.png&quot; alt=&quot;3D Constrained Triangulations&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
+    &lt;img src=&quot;/cgal-web/images/cdt_title_pyramid.png&quot; alt=&quot;3D Constrained Triangulations&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
     &lt;div&gt;
       &lt;h3&gt;3D Constrained Triangulations&lt;/h3&gt;
         &lt;p&gt;A major milestone for the CGAL library, this new package enables the construction
@@ -1300,7 +1300,7 @@ the remaining ~30% are not failures, but generally projects that explored a new 
 
   &lt;br /&gt;
   &lt;li style=&quot;display: flex; align-items: flex-start; margin-bottom: 2em;&quot;&gt;
-    &lt;img src=&quot;../../../../images/996816-no-self-intersections.png&quot; alt=&quot;Polygon Repair&quot; style=&quot;width:45%; height:auto; margin-right: 2em; flex-shrink:0; max-width:100%;&quot; /&gt;
+    &lt;img src=&quot;/cgal-web/images/996816-no-self-intersections.png&quot; alt=&quot;Polygon Repair&quot; style=&quot;width:45%; height:auto; margin-right: 2em; flex-shrink:0; max-width:100%;&quot; /&gt;
     &lt;div&gt;
       &lt;h3&gt;Fixing Self-Intersections in Polygon Soups and Meshes&lt;/h3&gt;
         &lt;p&gt;With CGAL 6.1, we introduced a new method for reliably resolving self-intersections,
@@ -1319,7 +1319,7 @@ the remaining ~30% are not failures, but generally projects that explored a new 
 
   &lt;br /&gt;
   &lt;li style=&quot;display: flex; align-items: flex-start; margin-bottom: 2em;&quot;&gt;
-    &lt;img src=&quot;../../../../images/planar_remeshing.png&quot; alt=&quot;Almost Planar Patch Remeshing&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
+    &lt;img src=&quot;/cgal-web/images/planar_remeshing.png&quot; alt=&quot;Almost Planar Patch Remeshing&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
     &lt;div&gt;
       &lt;h3&gt;Remeshing of (Almost) Planar Patches&lt;/h3&gt;
         &lt;p&gt;A new function was introduced to simplify planar patches, with a tolerance
@@ -1338,7 +1338,7 @@ the remaining ~30% are not failures, but generally projects that explored a new 
 
   &lt;br /&gt;
   &lt;li style=&quot;display: flex; align-items: flex-start; margin-bottom: 2em;&quot;&gt;
-    &lt;img src=&quot;../../../../images/PolygonRepair_WindingNonZeroDifferent.svg&quot; alt=&quot;Polygon Repair&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
+    &lt;img src=&quot;/cgal-web/images/PolygonRepair_WindingNonZeroDifferent.svg&quot; alt=&quot;Polygon Repair&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
     &lt;div&gt;
       &lt;h3&gt;Polygon Repair&lt;/h3&gt;
         &lt;p&gt;This new package offers automatic repair of invalid polygons, polygons with holes,
@@ -1356,7 +1356,7 @@ the remaining ~30% are not failures, but generally projects that explored a new 
 
   &lt;br /&gt;
   &lt;li style=&quot;display: flex; align-items: flex-start; margin-bottom: 2em;&quot;&gt;
-    &lt;img src=&quot;../../../../images/isosurfacing_teaser.png&quot; alt=&quot;Classical Contouring Methods&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
+    &lt;img src=&quot;/cgal-web/images/isosurfacing_teaser.png&quot; alt=&quot;Classical Contouring Methods&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
     &lt;div&gt;
       &lt;h3&gt;3D Isosurfacing&lt;/h3&gt;
         &lt;p&gt;Classical methods for generating polygonal surface meshes have been added to CGAL:
@@ -1376,7 +1376,7 @@ the remaining ~30% are not failures, but generally projects that explored a new 
 
   &lt;br /&gt;
   &lt;li style=&quot;display: flex; align-items: flex-start; margin-bottom: 2em;&quot;&gt;
-    &lt;img src=&quot;../../../../images/ACVD_ex-mini.png&quot; alt=&quot;ACVD Remeshing&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
+    &lt;img src=&quot;/cgal-web/images/ACVD_ex-mini.png&quot; alt=&quot;ACVD Remeshing&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
     &lt;div&gt;
       &lt;h3&gt;Remeshing with Approximated Discrete Centroidal Voronoi Diagrams&lt;/h3&gt;
         &lt;p&gt;The result of a successful Google Summer of Code project in CGAL, this new remeshing
@@ -1396,7 +1396,7 @@ the remaining ~30% are not failures, but generally projects that explored a new 
 
   &lt;br /&gt;
   &lt;li style=&quot;display: flex; align-items: flex-start; margin-bottom: 2em;&quot;&gt;
-    &lt;img src=&quot;../../../../images/clipping_carrot.jpg&quot; alt=&quot;Faster Surface Clipping&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
+    &lt;img src=&quot;/cgal-web/images/clipping_carrot.jpg&quot; alt=&quot;Faster Surface Clipping&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
     &lt;div&gt;
       &lt;h3&gt;Speeding-up Surface Mesh Clipping and Splitting&lt;/h3&gt;
         &lt;p&gt;Clipping and splitting of polygonal surface meshes received a 10x acceleration,
@@ -1414,7 +1414,7 @@ the remaining ~30% are not failures, but generally projects that explored a new 
 
   &lt;br /&gt;
   &lt;li style=&quot;display: flex; align-items: flex-start; margin-bottom: 2em;&quot;&gt;
-    &lt;img src=&quot;../../../../images/triangulation-on-hyperbolic-surface-mini.svg&quot; alt=&quot;Triangulations on Hyperbolic Surfaces&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
+    &lt;img src=&quot;/cgal-web/images/triangulation-on-hyperbolic-surface-mini.svg&quot; alt=&quot;Triangulations on Hyperbolic Surfaces&quot; style=&quot;width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;&quot; /&gt;
     &lt;div&gt;
       &lt;h3&gt;2D Triangulations on Hyperbolic Surfaces&lt;/h3&gt;
         &lt;p&gt;The new package introduces a data structure and algorithms for
@@ -1433,7 +1433,7 @@ symmetric hyperbolic surface of genus 2&lt;/p&gt;
 
   &lt;br /&gt;
   &lt;li style=&quot;display: flex; align-items: flex-start; margin-bottom: 2em;&quot;&gt;
-    &lt;img src=&quot;../../../../images/frechet_distance.png&quot; alt=&quot;Computation of Frechet Distances&quot; style=&quot;width:45%; height:auto; margin-right: 2em; flex-shrink:0; max-width:100%; transform: rotate(90deg);&quot; /&gt;
+    &lt;img src=&quot;/cgal-web/images/frechet_distance.png&quot; alt=&quot;Computation of Frechet Distances&quot; style=&quot;width:45%; height:auto; margin-right: 2em; flex-shrink:0; max-width:100%; transform: rotate(90deg);&quot; /&gt;
     &lt;div&gt;
       &lt;h3&gt;dD Frechet Distance&lt;/h3&gt;
         &lt;p&gt;This package provides functions for computing an approximation of the Fréchet distance
@@ -1489,7 +1489,7 @@ considers the polylines as continuous objects and takes into account the orderin
 &lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/frechet_teaser.png&quot;&gt;&lt;img src=&quot;../../../../images/frechet_teaser.png&quot; style=&quot;max-width:50%&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;/cgal-web/images/frechet_teaser.png&quot;&gt;&lt;img src=&quot;/cgal-web/images/frechet_teaser.png&quot; style=&quot;max-width:50%&quot; /&gt;&lt;/a&gt;
   &lt;br /&gt;&lt;small&gt;Frechet distance is a powerful tool to compute clusters of given polylines [1, Fig. 1]&lt;/small&gt;
 &lt;/div&gt;
 
@@ -1513,7 +1513,7 @@ two polylines, with a maximal additive error of 0.000001 to the exact distance:&
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/frechet_distance.png&quot;&gt;&lt;img src=&quot;../../../../images/frechet_distance.png&quot; style=&quot;max-width:50%&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;/cgal-web/images/frechet_distance.png&quot;&gt;&lt;img src=&quot;/cgal-web/images/frechet_distance.png&quot; style=&quot;max-width:50%&quot; /&gt;&lt;/a&gt;
   &lt;br /&gt;&lt;small&gt;The two polylines (blue and red), and the a visualization of the distance (green).&lt;/small&gt;
 &lt;/div&gt;
 
@@ -1571,7 +1571,7 @@ Conference on Advances in Geographic Information Systems 2020 Nov 3 (pp. 99-110)
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/isosurfacing_teaser.png&quot;&gt;&lt;img src=&quot;../../../../images/isosurfacing_teaser.png&quot; style=&quot;max-width:50%&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;/cgal-web/images/isosurfacing_teaser.png&quot;&gt;&lt;img src=&quot;/cgal-web/images/isosurfacing_teaser.png&quot; style=&quot;max-width:50%&quot; /&gt;&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -1614,7 +1614,7 @@ for Dual Contouring.&lt;/p&gt;
 
 &lt;br /&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/isosurfacing_MC_DC.png&quot;&gt;&lt;img src=&quot;../../../../images/isosurfacing_MC_DC.png&quot; style=&quot;max-width:75%&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;/cgal-web/images/isosurfacing_MC_DC.png&quot;&gt;&lt;img src=&quot;/cgal-web/images/isosurfacing_MC_DC.png&quot; style=&quot;max-width:75%&quot; /&gt;&lt;/a&gt;
   &lt;br /&gt;&lt;small&gt;Contouring a simple implicit function with Marching Cubes (left) and Dual Contouring (DC).&lt;/small&gt;
 &lt;/div&gt;
 
@@ -1631,7 +1631,7 @@ to be 2-manifold and watertight, as long as the isosurface does not intersect th
 
 &lt;br /&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;a href=&quot;../../../../images/isosurfacing_MC_TMC.png&quot;&gt;&lt;img src=&quot;../../../../images/isosurfacing_MC_TMC.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;/cgal-web/images/isosurfacing_MC_TMC.png&quot;&gt;&lt;img src=&quot;/cgal-web/images/isosurfacing_MC_TMC.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
   &lt;br /&gt;&lt;small&gt;Trilinearly interpolated surface (left), Marching Cubes (middle), and
   Topologically Correct Marching Cubes (right). The latter correctly recovers the topology of the surface.&lt;/small&gt;
 &lt;/div&gt;
@@ -1671,7 +1671,7 @@ to be 2-manifold and watertight, as long as the isosurface does not intersect th
 &lt;a href=&quot;https://doc.cgal.org/6.1/Manual/index.html&quot;&gt;CGAL-6.1 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 6.1 offers the following improvements and new functionality over
-&lt;a href=&quot;../../../../2024/09/27/cgal60/&quot;&gt;CGAL 6.0&lt;/a&gt;:&lt;/p&gt;
+&lt;a href=&quot;/cgal-web/2024/09/27/cgal60/&quot;&gt;CGAL 6.0&lt;/a&gt;:&lt;/p&gt;
 
 &lt;div class=&quot;product-detail-info&quot;&gt;
 
@@ -1828,7 +1828,7 @@ to be 2-manifold and watertight, as long as the isosurface does not intersect th
 &lt;a href=&quot;https://doc.cgal.org/6.1/Manual/index.html&quot;&gt;CGAL-6.1-beta2 documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CGAL 6.1 offers the following improvements and new functionality over
-&lt;a href=&quot;../../../../2024/09/27/cgal60/&quot;&gt;CGAL 6.0&lt;/a&gt;:&lt;/p&gt;
+&lt;a href=&quot;/cgal-web/2024/09/27/cgal60/&quot;&gt;CGAL 6.0&lt;/a&gt;:&lt;/p&gt;
 
 &lt;div class=&quot;product-detail-info&quot;&gt;
 
