@@ -4,5 +4,3 @@ User-agent: *
 # We do not want web robots index that web site.
 Disallow: /
 <!--#endif -->
-
-Sitemap: https://www.cgal.org/sitemap.xml

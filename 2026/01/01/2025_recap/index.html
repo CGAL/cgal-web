@@ -1,48 +1,12 @@
 
 
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
     <title>CGAL 2025 Highlights</title>
     <meta name="description" content="A recap of some of the major new features introduced in CGAL in 2025">
-    <link rel="canonical" href="https://www.cgal.org/2026/01/01/2025_recap/">
-    <meta property="og:site_name" content="CGAL">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:title" content="CGAL 2025 Highlights">
-    <meta property="og:description" content="A recap of some of the major new features introduced in CGAL in 2025">
-    <meta property="og:url" content="https://www.cgal.org/2026/01/01/2025_recap/">
-    <meta property="og:image" content="https://www.cgal.org/images/cdt_title_pyramid.png">
-    <meta property="og:type" content="article">
-    <meta property="article:published_time" content="2026-01-01T00:00:00+00:00">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@TheCGALProject">
-    <meta name="twitter:title" content="CGAL 2025 Highlights">
-    <meta name="twitter:description" content="A recap of some of the major new features introduced in CGAL in 2025">
-    <meta name="twitter:image" content="https://www.cgal.org/images/cdt_title_pyramid.png">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      "headline": "CGAL 2025 Highlights",
-      "description": "A recap of some of the major new features introduced in CGAL in 2025",
-      "datePublished": "2026-01-01T00:00:00+00:00",
-      "dateModified": "2026-01-01T00:00:00+00:00",
-      "url": "https://www.cgal.org/2026/01/01/2025_recap/",
-      "mainEntityOfPage": "https://www.cgal.org/2026/01/01/2025_recap/",
-      "image": "https://www.cgal.org/images/cdt_title_pyramid.png",
-      "author": { "@type": "Organization", "name": "The CGAL Project", "url": "https://www.cgal.org/" },
-      "publisher": {
-        "@type": "Organization",
-        "name": "The CGAL Project",
-        "url": "https://www.cgal.org/",
-        "logo": { "@type": "ImageObject", "url": "https://www.cgal.org/images/cgal_logo/g-196x196-y.png" }
-      }
-    }
-    </script>
-
     <meta name="viewport" content="width=device-width">
     <meta name="author" content="CGAL Editorial Board">
 
@@ -51,7 +15,7 @@
     <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
     <link rel="stylesheet" href="/cgal-web/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="/cgal-web/assets/themes/cgal/main.css">
 
@@ -70,21 +34,21 @@
       <a href="/cgal-web/index.html" class="mobile-logo">
         <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="30">
       </a>
-      <button type="button" class="menu-toggle" aria-label="Menu">
+      <button class="menu-toggle" aria-label="Menu">
         Menu
       </button>
     </div>
-    <nav id="mainmenu" class="mainmenu">
+    <nav id="mainmenu" class="mainmenu" role="navigation">
     <ul>
     <li class="logo-wrapper hidden-xs hidden-sm hidden-md">
     <a href="/cgal-web/index.html">
-    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250">
+    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
     </a>
     </li>
 
     <li class="hidden-lg">
     <a href="/cgal-web/index.html">
-    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20">
+    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
     </a>
     </li>
 
@@ -99,24 +63,24 @@
     <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Packages</a>
         <ul class="dropdown-menu">
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygonMeshProcessing" target="_blank">Polygon Mesh Processing</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPointSetProcessing" target="_blank">Point Set Processing</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching and Sorting</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygonMeshProcessing" target="_blank">Polygon Mesh Processing</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPointSetProcessing" target="_blank">Point Set Processing</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching and Sorting</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
         </ul>
     </li>
 
@@ -182,7 +146,7 @@
 <ul style="list-style: none; padding: 0;">
 
   <li style="display: flex; align-items: flex-start; margin-bottom: 2em;">
-    <img src="/cgal-web/images/cdt_title_pyramid.png" alt="3D Constrained Triangulations" style="width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;" />
+    <img src="../../../../images/cdt_title_pyramid.png" alt="3D Constrained Triangulations" style="width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;" />
     <div>
       <h3>3D Constrained Triangulations</h3>
         <p>A major milestone for the CGAL library, this new package enables the construction
@@ -200,7 +164,7 @@
 
   <br />
   <li style="display: flex; align-items: flex-start; margin-bottom: 2em;">
-    <img src="/cgal-web/images/996816-no-self-intersections.png" alt="Polygon Repair" style="width:45%; height:auto; margin-right: 2em; flex-shrink:0; max-width:100%;" />
+    <img src="../../../../images/996816-no-self-intersections.png" alt="Polygon Repair" style="width:45%; height:auto; margin-right: 2em; flex-shrink:0; max-width:100%;" />
     <div>
       <h3>Fixing Self-Intersections in Polygon Soups and Meshes</h3>
         <p>With CGAL 6.1, we introduced a new method for reliably resolving self-intersections,
@@ -219,7 +183,7 @@
 
   <br />
   <li style="display: flex; align-items: flex-start; margin-bottom: 2em;">
-    <img src="/cgal-web/images/planar_remeshing.png" alt="Almost Planar Patch Remeshing" style="width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;" />
+    <img src="../../../../images/planar_remeshing.png" alt="Almost Planar Patch Remeshing" style="width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;" />
     <div>
       <h3>Remeshing of (Almost) Planar Patches</h3>
         <p>A new function was introduced to simplify planar patches, with a tolerance
@@ -238,7 +202,7 @@
 
   <br />
   <li style="display: flex; align-items: flex-start; margin-bottom: 2em;">
-    <img src="/cgal-web/images/PolygonRepair_WindingNonZeroDifferent.svg" alt="Polygon Repair" style="width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;" />
+    <img src="../../../../images/PolygonRepair_WindingNonZeroDifferent.svg" alt="Polygon Repair" style="width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;" />
     <div>
       <h3>Polygon Repair</h3>
         <p>This new package offers automatic repair of invalid polygons, polygons with holes,
@@ -256,7 +220,7 @@
 
   <br />
   <li style="display: flex; align-items: flex-start; margin-bottom: 2em;">
-    <img src="/cgal-web/images/isosurfacing_teaser.png" alt="Classical Contouring Methods" style="width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;" />
+    <img src="../../../../images/isosurfacing_teaser.png" alt="Classical Contouring Methods" style="width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;" />
     <div>
       <h3>3D Isosurfacing</h3>
         <p>Classical methods for generating polygonal surface meshes have been added to CGAL:
@@ -276,7 +240,7 @@
 
   <br />
   <li style="display: flex; align-items: flex-start; margin-bottom: 2em;">
-    <img src="/cgal-web/images/ACVD_ex-mini.png" alt="ACVD Remeshing" style="width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;" />
+    <img src="../../../../images/ACVD_ex-mini.png" alt="ACVD Remeshing" style="width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;" />
     <div>
       <h3>Remeshing with Approximated Discrete Centroidal Voronoi Diagrams</h3>
         <p>The result of a successful Google Summer of Code project in CGAL, this new remeshing
@@ -296,7 +260,7 @@
 
   <br />
   <li style="display: flex; align-items: flex-start; margin-bottom: 2em;">
-    <img src="/cgal-web/images/clipping_carrot.jpg" alt="Faster Surface Clipping" style="width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;" />
+    <img src="../../../../images/clipping_carrot.jpg" alt="Faster Surface Clipping" style="width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;" />
     <div>
       <h3>Speeding-up Surface Mesh Clipping and Splitting</h3>
         <p>Clipping and splitting of polygonal surface meshes received a 10x acceleration,
@@ -314,7 +278,7 @@
 
   <br />
   <li style="display: flex; align-items: flex-start; margin-bottom: 2em;">
-    <img src="/cgal-web/images/triangulation-on-hyperbolic-surface-mini.svg" alt="Triangulations on Hyperbolic Surfaces" style="width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;" />
+    <img src="../../../../images/triangulation-on-hyperbolic-surface-mini.svg" alt="Triangulations on Hyperbolic Surfaces" style="width:45%; height:auto; margin-right: 1em; flex-shrink:0; max-width:100%;" />
     <div>
       <h3>2D Triangulations on Hyperbolic Surfaces</h3>
         <p>The new package introduces a data structure and algorithms for
@@ -333,7 +297,7 @@ symmetric hyperbolic surface of genus 2</p>
 
   <br />
   <li style="display: flex; align-items: flex-start; margin-bottom: 2em;">
-    <img src="/cgal-web/images/frechet_distance.png" alt="Computation of Frechet Distances" style="width:45%; height:auto; margin-right: 2em; flex-shrink:0; max-width:100%; transform: rotate(90deg);" />
+    <img src="../../../../images/frechet_distance.png" alt="Computation of Frechet Distances" style="width:45%; height:auto; margin-right: 2em; flex-shrink:0; max-width:100%; transform: rotate(90deg);" />
     <div>
       <h3>dD Frechet Distance</h3>
         <p>This package provides functions for computing an approximation of the Fréchet distance
