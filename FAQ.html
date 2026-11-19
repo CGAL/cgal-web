@@ -7,689 +7,768 @@ group: navigation
 ---
 {% include JB/setup %}
 
-
-
-<UL>
-    <LI> <A HREF="#general">General Information</A>
-         <UL>
-             <LI> <A HREF="#what_is_cgal">What is CGAL?</A>
-             <LI> <A HREF="#who_is_cgal">Who is involved in CGAL?</A>
-             <LI> <A HREF="#cgal_logo">How did you make the CGAL logo?</A>
-             <LI> <A HREF="#cgal_pronounce">How do you pronounce CGAL?</A>
-             <LI> <A HREF="#examples_and_demos">
-                  Are there example/demo programs somewhere?</A>
-             <LI> <A HREF="#cgal_discuss">Is there a mailing list for users?</A>
-             <LI> <A HREF="#bug_reporting">I think I have encountered a bug in
-                  CGAL. What should I do?</A>
-             <LI> <A HREF="#oldreleases">Where do I find old releases of CGAL?</A>
-         </UL>
-    <LI> <A HREF="#installation">Installation and Compilation</A>
-         <UL>
-            <LI> <A HREF="#how_to_install">How do I install CGAL?</A>
-            <LI> <A HREF="#how_to_compile">How do I compile a program using CGAL?</A>
-            <LI> <A HREF="#debian_packages">Are there packages for Debian / Ubuntu available?</A>
-            <LI> <A HREF="#debian_demos">How do I compile and execute the demos and examples on Debian / Ubuntu?</A>
-            <LI> <A HREF="#compilers">Which compilers are supported?</A>
-            <LI> <A HREF="#qt">Which versions of Qt are supported?</A>
-            <LI> <A HREF="#compilation_speed">How to reduce compilation time of programs using CGAL ?</A>
-         </UL>
-    <LI> <A HREF="#kernels">Kernels and Number Types</A>
-         <UL>
-            <LI> <A HREF="#which_kernel">CGAL offers many different kernels
-                 templates.  Which is the right one for my program?</A>
-            <LI> <A HREF="#which_NT">What is the right number type for my
-                 program?</A>
-            <LI> <A HREF="#predicates_vs_constructions">
-                 What is the difference between a predicate and a construction
-                 and why does this make a difference for the robustness of my
-                 program?</A>
-            <LI> <A HREF="#inexact_NT">I am using <TT>double</TT> (or
-                 <TT>float</TT> or ...) as my number type
-                 and get assertion failures or incorrect output.  Is this a
-                 bug in CGAL?</A>
-            <LI> <A HREF="#modifiable_kernel">I want to modify the coordinates
-                 of a point or the endpoints of a segment, but the CGAL kernel
-                 does not seem to support that.  Why?</A>
-	    <LI> <A HREF="#to_double">I want to convert a number type, e.g.
-	         <TT>FT</TT> to <TT>double</TT>.  How do I do that?</A>
-	    <LI> <A HREF="#uncertain_exception">My program reports "Microsoft C++ exception: CGAL::Uncertain_conversion_exception at memory location ...".  Why?</A>
-        </UL>
-    <LI> <A HREF="#polygons">Polygons</A>
-         <UL>
-            <LI> <A HREF="#boolean_ops">How can I do boolean operations on
-                 polygons?</A>
-            <LI> <A HREF="#polygon_triangulation">How do I compute the
-                 triangulation of the interior of a polygon?</A>
-         </UL>
-    <LI> <A HREF="#planar_maps">Planar Maps and Arrangements</A>
-         <UL>
-             <LI><a HREF="#planar_map_outer_face">
-		 Is the outer CCB (counterclockwise boundary) of a face of an
-		 arrangement a SIMPLE polygon?</a>
-             <LI><a HREF="#planar_map_bops">Boolean set operations:
-                 How can I compute them?</a>
-             <LI><a HREF="#planar_map_faster">
-                 How can I accelerate the work with arrangements?</a>
-             <li><a HREF="#planar_map_adding_info">
-                 How can I attach information to a vertex, a halfedge,
-		 or a face?</a>
-         </UL>
-    <LI> <A HREF="#polyhedron">Polyhedral Surfaces</A>
-         <UL>
-             <LI> <A HREF="#polyhedron_transform">Why is there no
-                  <I>transform</I> function for <I>Polyhedron_3</I>?</A>
-             <LI> <A HREF="#polyhedron_normals">How can I compute the plane
-                  equation (normal) for a facet in a polyhedral surface?</A>
-         </UL>
-</UL>
-
-<A NAME="general"></A>
-<HR>
-<BR>
-
-<FONT SIZE="+1"><B>General Information</B></FONT>
-
-<UL>
-   <LI> <A NAME="what_is_cgal"></A>
-        <B>What is CGAL?</B>
-        <P>CGAL is an acronym for the <a href="https://doc.cgal.org/latest/Manual/index.html">Computational Geometry Algorithms Library</a>.
-       It is at the same time the short name for the <a href="opensource.html">CGAL Open
-          Source Project</a>. The goal of the project
-           is to provide <em>easy access to efficient and reliable geometric algorithms</em>
-           to  users in industry and academia.
-        <P>
-
-   <LI> <A NAME="who_is_cgal"></A>
-        <B>Who is involved in CGAL?</B>
-
-        <p> For more information see the <A HREF="people.html">project members</A>  and the
-        <a href="partners.html">partners and funding sources</a> pages.
-        <P>
-
-   <LI> <A NAME="cgal_logo"></A>
-        <B>How did you make the CGAL logo?</B>
-	<P>
-  See <a href="logo-design.html">this page</a> for information about the construction of the CGAL logo.
-	<P>
-
-	<LI> <A NAME="cgal_pronounce"></A>
-	<B>How do you pronounce CGAL?</B>
-
-	<p>CGAL is pronounced like "seagull" in English, or "cigale" in French.</p>
-
-   <LI> <A NAME="examples_and_demos"></A>
-        <B>Are there example/demo programs somewhere?</B>
-        <P>
-        Yes.  The CGAL distribution includes two directories containing
-        example programs: <TT>&lt;CGALROOT&gt;/examples/</TT> and
-        <TT>&lt;CGALROOT&gt;/demo/</TT>.  Here you find the source code and
-        CMake scripts for these programs. The current CGAL manual provides a nice
-        <a href="https://doc.cgal.org/latest/Manual/packages.html">overview of packages</a>
-        from where you can also get the demo source code and Windows executables.
-        <P>
-
-   <LI> <A NAME="cgal_discuss"></A>
-        <B>Is there a mailing list for users?</B>
-        <P>
-        Yes. See the web page describing the CGAL <a href="mailing_list.html">mailing lists</a>.
-        <P>
-
-   <LI> <A NAME="bug_reporting"></A>
-        <B>I think I have encountered a bug in CGAL.  What should I do?</B>
-        <P>
-	Please follow the <a href="bug_report.html">bug reporting instructions</a>.
-        <P>
-
-    <LI> <A NAME="oldreleases"></A>
-      <B>Where do I find old releases of CGAL?</B>
-      <P>All released files as well as manuals are available in the
-        <a href="https://github.com/CGAL/cgal/releases">release</a> section
-        of the CGAL GitHub repository.</P>
-      <P>
-</UL>
-
-<A NAME="installation"></A>
-<HR>
-<BR>
-
-<FONT SIZE="+1"><B>Installation and Compilation</B></FONT>
-
-<UL>
-   <LI> <A NAME="how_to_install"></A>
-        <B>How do I install CGAL?</B>
-        <P>
-        Please have a look at the <A HREF="https://doc.cgal.org/latest/Manual/general_intro.html">Installation Guide</A>.
-	<P>
-
-   <LI> <A NAME="how_to_compile"></A>
-        <B>How do I compile a program using CGAL?</B>
-        <P>
-        Please have a look at the <A HREF="https://doc.cgal.org/latest/Manual/general_intro.html">Installation Guide</A>.
-	<P>
-
-  <LI> <A NAME="debian_packages"></A>
-       <B>Are there packages for Debian / Ubuntu available?</B>
-       <P>Packages for Debian unstable (sid) are available from the official
-       Debian repository. Debian stable (trixie) and Debian testing (Forky)
-       might not contain the latest version of CGAL. In that case, add</P>
-      <PRE>   deb <A href="http://debian.cgal.org/">http://debian.cgal.org</A> bookworm main
-   deb-src <A href="http://debian.cgal.org/">http://debian.cgal.org</A> bookworm main</PRE>
-       or
-      <PRE>   deb <A href="http://debian.cgal.org/">http://debian.cgal.org</A> trixie main
-   deb-src <A href="http://debian.cgal.org/">http://debian.cgal.org</A> trixie main</PRE>
-       to <TT>/etc/apt/sources.list</TT> (note that you only need the pair of lines
-       corresponding to the release you are using) and make sure that the package
-       <TT>apt-transport-https</TT> is installed. The packages are called
-       <TT>libcgal-dev</TT>, <TT>libcgal-qt6-dev</TT>, <TT>libcgal-demo</TT> and
-       <TT>libcgal-ipelets</TT>. Packages for older CGAL versions are available at
-       <A href="http://debian.cgal.org/archive/">http://debian.cgal.org/archive</A>
-       or from the official Debian archive.</P>
-       <P>The Ubuntu repository also contains packages for CGAL, but not
-       always for the latest version. The Debian packages might work on
-       Ubuntu as well.</P>
-  </LI>
-
-  <LI> <A NAME="debian_demos"></A>
-       <B>How do I compile and execute the demos and examples on Debian / Ubuntu?</B>
-       <P>Install the CGAL packages (see the preceding entry).
-          Unpack the examples and demos in some directory, e.g., <TT>$HOME/cgal</TT>.</P>
-          <PRE>   $ mkdir $HOME/cgal
-   $ cd $HOME/cgal
-   $ tar xzf /usr/share/doc/libcgal-demo/examples.tar.gz
-   $ tar xzf /usr/share/doc/libcgal-demo/demo.tar.gz</PRE>
-          <P>Configure and build the desired examples or demos, e.g., the
-             demos of Triangulation_2.</P>
-          <PRE>   $ cd demo/Triangulation_2
-   $ cmake .
-   $ make</PRE>
-          <P>Then run the demos.</P>
-          <PRE>   $ ./Constrained_delaunay_triangulation_2 &
-   $ ./Delaunay_triangulation_2 &
-   $ ./Regular_triangulation_2 &</PRE>
-          <P>See also /usr/share/doc/libcgal-dev/README.Debian for more information.</P>
-  </LI>
-
-   <LI> <A NAME="compilers"></A>
-        <B>Which compilers are supported?</B>
-        <P>CGAL requires a C++ compiler supporting C++17 or later. The list of compilers
-           that are continuously tested with the latest release is given in the section
-           <A HREF="https://doc.cgal.org/latest/Manual/thirdparty.html#seccompilers">Supported Compilers</A>
-           of the manual. Older compilers might work, but no guarantee is provided.</P>
-
-   <LI> <A NAME="qt"></A>
-        <B>Which versions of Qt are supported?</B>
-	<P>Since CGAL&nbsp;6.0, the demos and the basic viewer use <a href="https://doc.cgal.org/latest/Manual/thirdparty.html#thirdpartyQt">Qt6</a>.
-           The 2D demos are based on the
-           <a href="https://doc.cgal.org/latest/Manual/packages.html#PkgGraphicsView">CGAL and the Qt Graphics View Framework</a> package.</P>
-
-   <LI> <A NAME="compilation_speed"></A>
-        <B>How to reduce compilation time of programs using CGAL ?</B>
-  <P>CGAL is heavily using C++ templates, and this has an impact on
-	   compilation speed.  Here are some hints that can help speed up
-           compilation of programs using CGAL:
-        <UL>
-	    <LI><em>Remove compiler debugging</em> options like <code>-g</code> if you can.
-		Indeed, generating debug information can be very costly for
-		template instantiations, both in terms of running time and
-                memory usage by the compiler tool chain.
-      <LI><em>Remove compiler optimization</em> options like <code>-O2</code> when
-    you do not need them, such as in the early steps of the development cycle of
-                your programs.
-	    <LI><em>Regroup translation units</em> : if your program is composed of
-                many small translation units to be compiled and linked, try to
-                reduce their numbers by merging them.  This traditional style
-                for C programs is actually very slow for programs heavily using C++ templates.
-                Regrouping them reduces the time spent by the compiler to parse
-                the header files, and avoids redundant template instantiations.
-            <LI><em>Precompile header files</em> : some compilers, such as GCC, provide
-                a feature named <a href="https://en.wikipedia.org/wiki/Precompiled_header">
-                precompiled headers</a>. This can be mostly useful if you can regroup in a
-                single header file most of the header files that you use, together with
-                most template instantiations.  Refer to your compiler documentation to use this feature.
-        </UL>
-</UL>
-
-<A NAME="kernels"></A>
-<HR>
-<BR>
-
-<FONT SIZE="+1"><B>Kernels and Number Types</B></FONT>
-
-<UL>
-   <LI> <A NAME="which_kernel"></A>
-        <B>CGAL offers many different kernel templates.  Which is the right
-        one for my program?</B>
-
-        <P>
-        There is no universal answer to this question (which is why there are
-        different kernels in the first place).  The section
-        <A HREF="https://doc.cgal.org/latest/Kernel_23/index.html#Kernel_23ChoosingaKernelandPredefinedKernels">
-        Choosing a Kernel and Predefined Kernels</A> in the kernel manual provides some guidance.
-        <P>
-
-    <LI> <A NAME="which_NT"></A>
-         <B>What is the right number type for my program?</B>
-
-        <P>
-        There is no universal answer to this question either (which is why
-        our kernels are templates). The answer depends, among other things,
-        on how important robustness is in comparison to speed, whether your
-        program involves the construction of new objects or simply predicate
-        evaluation and comparisons, and on the size of the input numbers. The
-        section
-        <A HREF="https://doc.cgal.org/latest/Kernel_23/index.html#Kernel_23ChoosingaKernelandPredefinedKernels">
-        Choosing a kernel</A> in the kernel manual should provide some guidance.
-
-        <P>
-   <LI> <A NAME="predicates_vs_constructions"></A>
-        <B>What is the difference between a predicate and a construction and
-           why does this make a difference for the robustness of my program?</B>
-         <P>
-         Geometric predicates are used to test properties of geometric objects
-         and return, for example, a boolean value (true or false). An example
-         of predicate would be testing whether a point lies inside a sphere is a predicate
-         as is testing whether three points form a left turn, right turn or
-         are collinear. A geometric construction creates a new geometric object, such as the line
-         through two different points or the center of a circle defined by a
-         certain set of points.
-         <P>
-         Constructions are problematic with respect to robustness since the
-         constructed object has to be stored in a particular representation.
-         If this representation does not capture the object's properties
-         sufficiently, due, for example, to limited precision roundoffs, the
-         correctness of subsequent computations with this object cannot be
-         guaranteed. However, providing exact constructions is currently
-         less efficient, which is basically the reason why the kernel
-         <A HREF="https://doc.cgal.org/latest/Kernel_23/classCGAL_1_1Exact__predicates__inexact__constructions__kernel.html">CGAL::Exact_predicates_inexact_constructions_kernel</A> exists;
-         <TT>double</TT> is used as the representation
-         type in this case.<BR><BR>
-
-   <LI> <A NAME="inexact_NT"></A>
-        <B>I am using <TT>double</TT> (or <TT>float</TT> or ...) as my number
-        type
-        and get assertion failures or incorrect output.  Is this a bug in CGAL?
-        </B>
-        <P>
-        While it may well be a bug in CGAL, with such number types you are more
-        likely to suffer from a problem with robustness. In particular, using
-	the kernel <A HREF="https://doc.cgal.org/latest/Kernel_23/structCGAL_1_1Cartesian.html">CGAL::Cartesian</A> with number types <TT>double</TT> or
-	<TT>float</TT> is likely to give you wrong results.<P><P>
-
-        The problem is that double and float are inexact number types,
-        and as such they cannot guarantee exact results in all
-        cases. Worse than this, small roundoff errors can have large
-	consequences, up to the point where an algorithm crashes. Algorithms
-	in geometric computing are particularly sensitive in this respect.
-	<P><P>
-
-	This was the bad news. The good news is that CGAL provides an
-	easy way for programmers to get around the limitations of
-	inexact number types like <TT>double</TT> and <TT>float</TT>,
-	through its templated kernels. See also our page on
-	<A HREF="exact.html">The Exact Computation Paradigm</A>.
-	<P><P>
-
-        A solution that always works (although it might slow down the algorithm
-	considerably) is to use an exact multi-precision number type such as
-        <A HREF="https://doc.cgal.org/latest/Number_types/classCGAL_1_1Quotient.html">CGAL::Quotient</A>&lt;<A HREF="https://doc.cgal.org/latest/Number_types/classCGAL_1_1MP__Float.html">CGAL::MP_Float</A>&gt; or
-        <A HREF="https://doc.cgal.org/latest/Number_types/classCGAL_1_1Gmpq.html">CGAL::Gmpq</A>, instead of <TT>double</TT> or <TT>float</TT>.
-        <P><P>
-
-        If your program does not involve the construction of new objects
-        from the input data (such as the intersection of two objects, or the
-        center of a sphere defined by the input objects),
-        the <A HREF="https://doc.cgal.org/latest/Kernel_23/classCGAL_1_1Exact__predicates__inexact__constructions__kernel.html">CGAL::Exact_predicates_inexact_constructions_kernel</A>
-        kernel provides a nice and fast way to use exact predicates together
-	with an inexact number type such as <TT>double</TT> for constructions.
-        <P><P>
-
-        When your program uses constructions of new objects, you can still
-        speed things up by using the number type
-        <A HREF="https://doc.cgal.org/latest/Number_types/classCGAL_1_1Lazy__exact__nt.html">CGAL::Lazy_exact_nt</A>
-        on top of an exact number type.<BR><BR>
-
-  Good references that discuss the robustness problem in geometric computing are:<BR>
-        <UL>
-           <LI> S. Schirra. Robustness and precision issues in geometric
-                computation.  <I>Research Report MPI-I-98-004, Max Planck
-                Institute for Computer Science</I>, 1998.
-                <A HREF="http://data.mpi-sb.mpg.de/internet/reports.nsf/c125634c000710d0c12560400034f45a/875a972ddb455a67c1256594004db691/$FILE/ATTC1DYI/MPI-I-98-1-004.ps">[ps-file]</A>
-                Revised version of: Robustness and precision issues in
-                geometric computations.  Ch 9, in M. van Kreveld et al.
-                (eds.), <I>Algorithmic Foundations of Geographic Information
-                Systems,</I> LNCS 1340, Springer, 1997.
-           <LI> S. Schirra. Robustness and precision issues in geometric
-                computation. in J.-R. Sack and J. Urrutia (eds.),
-                <I>Handbook of Computational Geometry</I> Chapter 14,
-                Elsevier Science, 1999
-	   <LI> Lutz Kettner, Kurt Mehlhorn, Sylvain Pion, Stefan Schirra, and
-	        Chee Yap. Classroom Examples of Robustness Problems in
-		Geometric Computations, <I>Computational Geometry: Theory and
-		Algorithms</I>, 40(1):61-78, 2008. <A HREF="https://inria.hal.science/inria-00344310">[html]</A>
-        </UL>
-
-        <P>
-
-
-   <LI> <A NAME="modifiable_kernel"></A>
-        <B>I want to modify the coordinates of a point, or the endpoints of a
-        segment, but the CGAL kernel does not seem to support that.  Why?</B>
-       <P>
-       Our kernel concept is representation-independent.
-       There is no assumption on how a <tt>Point_3</tt>, for example, is represented. In
-       particular, it need not be represented by Cartesian coordinates.  Thus
-       writing code that relies on being able to change these coordinates may
-       lead to inefficient code.   Our basic library algorithms are designed
-       around the predicates that operate on the geometric objects and do not
-       require this mutability.
-
-       Non-modifiability also makes the underlying handle-rep scheme used (by
-       default) to allocate, copy, etc., CGAL objects somewhat easier.
-
-       We recognize, however, that users may want this flexibility and thus
-       are working on providing mutable kernel objects.
-
-       The only way to do this currently is to construct a new point and assign
-       it to the old one : use <code>p = Point_2(p.x(), p.y()+1);</code>
-       as if you would like to do <code>p.y() += 1;</code>.
-       <P>
-
-       <LI> <A NAME="to_double"></A>
-       <B>I want to convert a number type, e.g. <TT>FT</TT> to <TT>double</TT>.
-       How do I do that?</B>
-       <P>
-       All number types used by CGAL provide a conversion function called
-       <TT>CGAL::to_double</TT>.  For example: <code>double x = CGAL::to_double(p.x());</code>.
-       <P>
-
-       <LI> <A NAME="uncertain_exception"></A>
-       <B>My program reports "Microsoft C++ exception: CGAL::Uncertain_conversion_exception at memory location ...".  Why?</B>
-       <P>
-       This is an internal exception, which is caught by CGAL code.  Users are not supposed
-       to be concerned by this, it is correct behaviour, except that it sometimes shows up,
-       for example when debugging.  It is safe to ignore these exceptions.
-       See <a href="https://www.helixoft.com/blog/how-to-disable-a-first-chance-exception-of-type-messages-in-vs-2005.html">here</a> for more information
-       on how to disable the warning.
-       <P>
-
-</UL>
-
-<A NAME="polygons"></A>
-<HR>
-<BR>
-
-<FONT SIZE="+1"><B>Polygons</B></FONT>
-
-<UL>
-    <LI> <A NAME="boolean_ops"></A>
-         <B>How can I do boolean operations on polygons?</B>
-         <P>
-         There are two means provided in CGAL for performing boolean operations
-         on polygons in the plane.  One is provided via the class template
-         <A HREF="https://doc.cgal.org/latest/Nef_2/index.html"><TT>Nef_polyhedron_2</TT></A>.
-         The other is provided via the <A HREF="https://doc.cgal.org/latest/Boolean_set_operations_2/index.html">Boolean Set-Operations</A> package.
-         There are <A HREF="https://doc.cgal.org/latest/Manual/packages.html#PkgBooleanSetOperations2">demo programs</A> illustrating
-         boolean operations using both of these.  The manual pages provide
-         more information regarding, for example, additional functionality
-         available with these class templates.  See also the
-         <A HREF="#planar_map_bops">section</A> on this page related to planar
-         maps and boolean operations.
-         <P>
-
-    <LI> <A NAME="polygon_triangulation"></A>
-         <B>How do I compute the triangulation of the interior of a polygon?</B>
-         <P>
-         For this, one should use one of the constrained triangulation classes:
-        <A HREF="https://doc.cgal.org/latest/Triangulation_2/classCGAL_1_1Constrained__triangulation__2.html"><TT>Constrained_triangulation_2</TT></A>,
-        <A HREF="https://doc.cgal.org/latest/Triangulation_2/classCGAL_1_1Constrained__Delaunay__triangulation__2.html"><TT>Constrained_Delaunay_triangulation_2</TT></A>
-        or
-        <A HREF="https://doc.cgal.org/latest/Triangulation_2/classCGAL_1_1Constrained__triangulation__plus__2.html"><TT>Constrained_triangulation_plus_2</TT></A>.
-        The edges of the polygon should be input as constraints to the
-        triangulation.  The constructed triangulation will be a triangulation
-        of the whole convex hull, but including as edges the edges of the
-        polygon which are marked as constrained edges.  From there it is easy
-        to output the faces inside (resp. outside) the polygon or to mark
-        these faces as such.
-        See  <TT>&lt;CGALROOT&gt;/demo/Triangulation_2/Constrained_Delaunay_triangulation_2.cpp</TT> for an
-        example.
-         <P>
-</UL>
-
-<A NAME="planar_maps"></A>
-<HR>
-<BR>
-
-<FONT SIZE="+1"><B>Planar Maps and Arrangements</B></FONT>
-
-<UL>
-    <LI><a NAME="planar_map_outer_face"></A>
-	<B>Is the outer CCB (counterclockwise boundary) of a face of an
-	arrangement a SIMPLE polygon?</B>
-
-	<p>The outer CCB of a face of an arrangement is NOT
-	necessarily a simple polygon.  Consider the case where there
-	are "inner antennas"; imagine a face represented by a simple
-	polygon and a vertex <var>v</var> on the outer CCB of the
-	face. Now connect a component that starts and ends at
-	<var>v</var> and lies in the interior of the face (one edge
-	incident at <var>v</var> suffices).
-
-	<p>Mind that if you are using an inexact number type you might
-	get a non-simple polygon even if the outer CCB represents one
-	due to numerical errors.</p></li>
-
-    <LI><a NAME="planar_map_bops"></A>
-        <B>Boolean set operations: How can I compute them?</B>
-
-        <p>The package
-        <a href="https://doc.cgal.org/latest/Boolean_set_operations_2/index.html">Regularized Boolean Set-Operation</a>
-        consists of the implementation of Boolean set-operations on
-        point sets bounded by weakly x-monotone curves in
-        2-dimensional Euclidean space. In particular, it contains the
-	implementation of regularized Boolean set-operations,
-	intersection predicates, and point containment predicates.</p>
-
-	<p>Ordinary Boolean set-operations that operate on (linear)
-	polygons, which distinguish between the interior and the
-	boundary of a polygon, are supported by the
-	<a HREF="https://doc.cgal.org/latest/Nef_2/index.html">Planar Nef Polyhedra</a> package.</p>
-
-        <p>For intersections of the interiors of polygons also refer to
-	the <a href="https://doc.cgal.org/latest/Manual/packages.html#PkgNef2">polygon
-	intersection demo program</a>, which is also available in the <tt>demo</tt>
-	directory of the CGAL distribution.</p>
-
-    <LI><a NAME="planar_map_faster"></A>
-        <b>How can I accelerate the work with arrangements?</B>
-
-        <p>Before the specific tips, we remind you that compiling
-        programs with debug flags disabled and with optimization flags
-        enabled significantly reduces the running time.<br><br>
-
-        <ol>
-          <li>Passing <var>x</var>-monotone curves that are pairwise
-	  disjoint in their interior to the overloaded insertion-function
-	  <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/index.html"><code>insert()</code></a>
-	  is more efficient (in running time) and less demanding (in
-	  traits-class functionality) than passing general curves.
-	  </li>
-
-          <li>When the curves to be inserted into an arrangement are
-	  segments that are pairwise disjoint in their interior, it
-	  is more efficient to use the traits class
-	  <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arr__non__caching__segment__traits__2.html"><code>Arr_non_caching_segment_traits_2</code></a>
-	  rather then the default one
-	  (<a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arr__segment__traits__2.html"><code>Arr_segment_traits_2</code></a>).
-
-	  <p>If the segments may intersect each other, the default
-	  traits class
-	  <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arr__segment__traits__2.html"><code>Arr_segment_traits_2</code></a>
-	  can be safely used with the somehow limited number type
-	  <a href="https://doc.cgal.org/latest/Number_types/classCGAL_1_1Quotient.html">Quotient</a>&lt;<a href="https://doc.cgal.org/latest/Number_types/classCGAL_1_1MP__Float.html">MP_float</a>&gt;.
-
-	  <p>On rare occasions the traits class
-	  <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arr__non__caching__segment__traits__2.html"><code>Arr_non_caching_segment_traits_2</code></a>
-	  exhibits slightly better performance than the default one
-	  (<a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arr__segment__traits__2.html"><code>Arr_segment_traits_2</code></a>)
-	  even when the segments intersect each other, due to the
-	  small overhead of the latter (optimized) traits class.
-	  (For example, when the the so called L<SMALL>EDA</SMALL>
-	  rational kernel is used).
-
-	  <li>Prior knowledge of the combinatorial structure of the
-	  arrangement can be used to accelerate operations that insert
-	  <var>x</var>-monotone curves, whose interior is disjoint
-	  from existing edges and vertices of the arrangement. The
-	  specialized insertion functions, i.e.,
-	  <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arrangement__2.html"><code>insert_in_face_interior()</code></a>,
-	  <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arrangement__2.html"><code>insert_from_left_vertex()</code></a>,
-	  <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arrangement__2.html"><code>insert_from_right_vertex()</code></a>, and
-	  <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arrangement__2.html"><code>insert_at_vertices()</code></a>
-	  can be used according to the available information. These
-	  functions hardly involve any geometric operations, if at
-	  all. They accept topologically related parameters, and use
-	  them to operate directly on the D<small>CEL</small> records,
-	  thus saving algebraic operations, which are especially
-	  expensive when high-degree curves are involved.
-
-          <p>A polygon, represented by a list of segments along its
-	  boundary, can be inserted into an empty arrangement as
-	  follows. First, one segment is inserted using
-	  <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arrangement__2.html"><code>insert_in_face_interior()</code></a>
-	  into the unbounded face. Then, a segment with a common end
-	  point is inserted using either
-	  <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arrangement__2.html"><code>insert_from_left_vertex()</code></a>
-	  or
-	  <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arrangement__2.html"><code>insert_from_right_vertex()</code></a>,
-	  and so on with the rest of the segments except for the last,
-	  which is inserted using
-	  <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arrangement__2.html"><code>insert_at_vertices()</code></a>,
-	  as both endpoints of which are the mapping of known
-	  vertices.</p></li>
-
-	  <li>The main trade-off among point-location strategies, is
-	  between time and storage. Using the
-	  <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arr__naive__point__location.html">naive</a>
-	  or
-	  <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arr__walk__along__line__point__location.html">walk</a>
-	  strategies, for example, takes more query time but does not
-	  require preprocessing or maintenance of auxiliary structures
-	  and saves storage space.</li>
-
-	  <li>If point-location queries are not performed frequently,
-	  but other modifying functions, such as removing, splitting,
-	  or merging edges are, then using a point-location strategy
-	  that does not require the maintenance of auxiliary
-	  structures, such as the
-	  <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arr__naive__point__location.html">naive</a>
-	  or
-	  <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arr__walk__along__line__point__location.html">walk</a>
-	  strategies, is preferable.</li>
-
-	  <li>There is a trade-off between two modes of the
-	  <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arr__trapezoid__ric__point__location.html">RIC</a>
-	  strategy that enables the user to choose whether
-	  preprocessing should be performed or not. If preprocessing
-	  is not used, the creation of the structure is
-	  faster. However, for some input sequences the structure
-	  might be unbalanced and therefore queries and updates might
-	  take longer, especially, if many removal and split
-	  operations are performed.</li>
-
-	  <li>The various traits classes should be instantiated with
-	  an exact number type to ensure robustness, when the input of
-	  the operations to be carried out might be degenerate,
-	  although inexact number types could be used at the user's
-	  own risk.</li>
-
-	  <li>Maintaining short bit-lengths of coordinate
-	  representations may drastically decrease the time
-	  consumption of arithmetic operations on the coordinates.
-	  This can be achieved by caching certain information or
-	  normalization (of rational numbers). However, both solutions
-	  should be used cautiously, as the former may lead to an
-	  undue space consumption, and indiscriminate normalization
-	  may considerably slow down the overall process.</li>
-
-	  <li>Geometric functions (e.g., traits methods) dominate the
-	  time consumption of most operations. Thus, calls to such
-	  function should be avoided or at least their number should
-	  be decreased, perhaps at the expense of increased
-	  combinatorial-function calls or increased space
-	  consumption. For example, repetition of geometric-function
-	  calls could be avoided by storing the results obtained by
-	  the first call, and reusing them when needed.</li>
-
-          </ol>
-
-    <LI><a NAME="planar_map_adding_info"></A>
-        <B>How can I attach information to a vertex, a halfedge, or a face?</B>
-
-         <p>You need to change the D<small>CEL</small>, so that its
-         <I>vertex</I>, <I>halfedge</I>, and/or <I>face</I> types will
-	 contain the information you want. The package facilitates
-	 the coding necessary to achieve this task. Refer to Section
-	 <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/index.html#arr_ssecex_dcel"><b>Extending the D<small>CEL</small></b></a>
-	 for further details.
-
-         <p>You have to supply your model of the concept
-	 <tt>ArrangementDcel</tt>, which represents the extended
-	 D<small>CEL</small>, and instantiate
-	 <code>CGAL::Arrangement_on_surface_2&lt;Traits,Dcel&gt;</code> properly.
-
-	 <p>If <i>Face</i> is the only feature type you need to extend,
-	 refer to the example at
-         <tt>&lt;CGALROOT&gt;/examples/Arrangement_on_surface_2/face_extension.cpp</tt>.
-	 The example
-         <tt>&lt;CGALROOT&gt;/examples/Arrangement_on_surface_2/dcel_extension.cpp</tt>
-         demonstrates how to extend all the feature types simultaneously.</li>
-</UL>
-
-<A NAME="polyhedron"></A>
-<HR>
-<BR>
-
-<FONT SIZE="+1"><B>Polyhedral Surfaces</B></FONT>
-
-<UL>
-   <LI> <A NAME="polyhedron_transform"></A>
-        <B>Why is there no <I>transform</I> function for
-           <I>Polyhedron_3</I>?</B>
-        <P>
-        The polyhedral surface (and other data structures in the
-        Basic Library) can have added geometric attributes by the
-        user that would make a generally working <I>transform</I>
-        function for affine transformations difficult to provide
-        in the class, and on the other hand it is easy for a user
-        to apply standard generic algorithms for that purpose, for example,
-        to transform the points stored in a polyhedral surface <I>P</I>
-        with a CGAL affine transformation given in <I>A</I> (which
-        is a  proper STL functor) one can write:
-        <PRE>std::transform( P.points_begin(), P.points_end(), P.points_begin(), A);</PRE>
-        <P>
-   <LI> <A NAME="polyhedron_normals"></A>
-        <B>How can I compute the plane equation (normal) for a facet
-           in a polyhedral surface?</B>
-        <P>
-         The <I>plane()</I> member function in facets does not compute
-         the plane equation, it is only the access to function to the
-         variable stored in facets.<P>
-
-         The plane equations must be computed separately by the
-         user. For face normals, the functions
-         <A HREF="https://doc.cgal.org/latest/Polygon_mesh_processing/group__PMP__normal__grp.html"><TT>CGAL::Polygon_mesh_processing::compute_face_normal()</TT></A> and
-         <TT>compute_face_normals()</TT> can be used. Otherwise, assuming strictly convex facets and exact arithmetic
-         (or the willingness to live with rounding errors), the example
-        <TT>&lt;CGALROOT&gt;/examples/Polyhedron/polyhedron_prog_normals.cpp</TT>
-         computes these plane equations, see also the <A HREF=
-         "https://doc.cgal.org/latest/Polyhedron/index.html">User Manual
-         for polyhedral surfaces</A>.<P>
-
-         For inexact double arithmetic and/or non-convex facets one
-         might consider the method of Newell which computes the
-         least-square-fit normal of the plane equation, see for
-         example Filippo Tampieri: <EM>Newell's Method for Computing
-         the Plane Equation of a Polygon</EM>. Graphics Gems III,
-         David Kirk (Ed.), AP Professional, 1992.
-<P>
-</UL>
+{% assign doc = "https://doc.cgal.org/latest" %}
+
+<p>
+This page answers the questions most frequently asked by users and by companies
+evaluating CGAL. If your question is not answered here, have a look at the
+<a href="{{ doc }}/Manual/index.html">documentation</a>, or see
+<a href="#get_help">how to get help</a>.
+</p>
+
+<ul>
+  <li><a href="#general">General Information</a>
+    <ul>
+      <li><a href="#what_is_cgal">What is CGAL?</a></li>
+      <li><a href="#what_can_cgal_do">What can I do with CGAL?</a></li>
+      <li><a href="#who_is_cgal">Who develops CGAL?</a></li>
+      <li><a href="#cgal_pronounce">How do you pronounce CGAL?</a></li>
+      <li><a href="#cgal_logo">How did you make the CGAL logo?</a></li>
+      <li><a href="#where_is_cgal_used">Where is CGAL used?</a></li>
+      <li><a href="#how_to_cite">How do I cite CGAL in a publication?</a></li>
+      <li><a href="#contribute">How can I contribute to CGAL?</a></li>
+      <li><a href="#ai_stance">What is CGAL's stance on AI?</a></li>
+    </ul>
+  </li>
+  <li><a href="#licensing">Licensing and Commercial Use</a>
+    <ul>
+      <li><a href="#license">Under which licenses is CGAL distributed?</a></li>
+      <li><a href="#package_license">How do I know the license of a given package?</a></li>
+      <li><a href="#commercial_use">Can I use CGAL in a commercial or closed-source product?</a></li>
+      <li><a href="#commercial_license">What does a commercial license include?</a></li>
+      <li><a href="#commercial_support">Can I get professional support, training, or custom development?</a></li>
+    </ul>
+  </li>
+  <li><a href="#installation">Using CGAL</a>
+    <ul>
+      <li><a href="#how_to_install">Do I still need to install CGAL?</a></li>
+      <li><a href="#package_managers">Which package managers is CGAL available on?</a></li>
+      <li><a href="#oldreleases">Which version of CGAL should I use, and where do I find old releases?</a></li>
+      <li><a href="#compilers">Which compilers and C++ standard are required?</a></li>
+      <li><a href="#how_to_compile">How do I compile a program using CGAL?</a></li>
+      <li><a href="#examples_and_demos">Where can I find more examples and demo programs?</a></li>
+      <li><a href="#python">Can I use CGAL from Python?</a></li>
+      <li><a href="#documentation">Where is the documentation of CGAL?</a></li>
+      <li><a href="#file_formats">Which file formats can CGAL read and write?</a></li>
+      <li><a href="#concepts_and_models">What are concepts and models?</a></li>
+    </ul>
+  </li>
+  <li><a href="#kernels">Robustness, Kernels, and Number Types</a>
+    <ul>
+      <li><a href="#exact_computation">What does "exact computation" mean, and why does it matter?</a></li>
+      <li><a href="#which_kernel">CGAL offers several kernels. Which is the right one for my program?</a></li>
+      <li><a href="#predicates_vs_constructions">What is the difference between a predicate and a construction, and why does it matter for robustness?</a></li>
+      <li><a href="#modifiable_kernel">I want to modify the coordinates of a point, but the CGAL kernel does not seem to support that. Why?</a></li>
+      <li><a href="#to_double">How do I convert a number type, e.g. <code>FT</code>, to <code>double</code>?</a></li>
+    </ul>
+  </li>
+  <li><a href="#polygons">Polygons</a>
+    <ul>
+      <li><a href="#boolean_ops">How can I compute Boolean operations (union, intersection, difference) on polygons?</a></li>
+      <li><a href="#polygon_triangulation">How do I triangulate the interior of a polygon?</a></li>
+      <li><a href="#polygon_offset">How do I compute the offset of a polygon?</a></li>
+      <li><a href="#polygon_repair">How do I repair an invalid polygon?</a></li>
+    </ul>
+  </li>
+  <li><a href="#planar_maps">Arrangements</a>
+    <ul>
+      <li><a href="#planar_map_outer_face">Is the outer boundary of a face of an arrangement a simple polygon?</a></li>
+      <li><a href="#planar_map_faster">How can I accelerate the work with arrangements?</a></li>
+      <li><a href="#planar_map_adding_info">How can I attach information to a vertex, a halfedge, or a face of an arrangement?</a></li>
+    </ul>
+  </li>
+  <li><a href="#pmp">Polygon Mesh Processing</a>
+    <ul>
+      <li><a href="#mesh_data_structure">Which data structure should I use for my surface mesh?</a></li>
+      <li><a href="#mesh_boolean_ops">How can I compute Boolean operations (union, intersection, difference) on meshes?</a></li>
+      <li><a href="#mesh_repair">How do I repair a mesh or a polygon soup?</a></li>
+      <li><a href="#mesh_remeshing">How do I remesh, simplify, or smooth a mesh?</a></li>
+      <li><a href="#mesh_measures">How do I compute the area, the volume, or the distance between meshes?</a></li>
+      <li><a href="#polyhedron_transform">How do I apply a transformation (translation, rotation, scaling) to a mesh?</a></li>
+      <li><a href="#polyhedron_normals">How do I compute the normals of a mesh?</a></li>
+    </ul>
+  </li>
+  <li><a href="#issues">Issues</a>
+    <ul>
+      <li><a href="#get_help">How do I report an issue or get help?</a></li>
+      <li><a href="#bug_reporting">I think I have encountered a bug in CGAL. What should I do?</a></li>
+      <li><a href="#release_mode">My program is very slow. Why?</a></li>
+      <li><a href="#inexact_NT">I am using <code>double</code> (or <code>float</code>) and get assertion failures or incorrect output. Is this a bug in CGAL?</a></li>
+      <li><a href="#uncertain_exception">My debugger reports a <code>CGAL::Uncertain_conversion_exception</code>. Why?</a></li>
+      <li><a href="#compilation_speed">My programs take a long time to compile. What can I do?</a></li>
+      <li><a href="#feature_request">I need a feature that CGAL does not offer. What can I do?</a></li>
+    </ul>
+  </li>
+</ul>
+
+<!-- ======================================================================= -->
+<hr>
+<h2 id="general">General Information</h2>
+
+<h3 id="what_is_cgal">What is CGAL?</h3>
+<p>
+CGAL, the <a href="{{ doc }}/Manual/index.html">Computational Geometry Algorithms Library</a>,
+is an open source C++ library that provides easy access to efficient and reliable geometric
+algorithms and data structures to users in industry and academia. CGAL is also the short name
+of the <a href="opensource.html">CGAL Open Source Project</a>, which was founded in 1996 and
+develops the library.
+</p>
+<p>
+A distinctive feature of CGAL is its focus on <em>robustness</em>: its algorithms produce
+correct results even on degenerate inputs and despite the limited precision of floating-point
+arithmetic (see <a href="#exact_computation">exact computation</a>). CGAL is written in generic
+C++ and can be used with your own data structures (see <a href="#concepts_and_models">concepts
+and models</a>).
+</p>
+
+<h3 id="what_can_cgal_do">What can I do with CGAL?</h3>
+<p>CGAL offers more than one hundred packages, among which:</p>
+<ul>
+  <li>2D and 3D triangulations (Delaunay, constrained, regular, periodic), Voronoi diagrams, and alpha shapes;</li>
+  <li>surface and volume mesh generation, remeshing, and mesh optimization;</li>
+  <li>polygon mesh processing: Boolean operations, repair, hole filling, smoothing, simplification, distance computations;</li>
+  <li>2D polygons: Boolean operations, offsetting, straight skeletons, Minkowski sums, partitioning, repair;</li>
+  <li>arrangements of curves and their applications;</li>
+  <li>point set processing and shape reconstruction from point clouds;</li>
+  <li>convex hulls, spatial searching (AABB trees, kd-trees), geometric optimization, and interpolation.</li>
+</ul>
+<p>
+The <a href="{{ doc }}/Manual/packages.html">Package Overview</a> lists all packages with a
+short description and a picture.
+</p>
+
+<h3 id="who_is_cgal">Who develops CGAL?</h3>
+<p>
+CGAL is developed by a community of developers working at research institutes, universities,
+and companies. The project is steered by the CGAL Editorial Board. See the pages on the
+<a href="people.html">people</a> involved, the <a href="partners.html">partners and funding
+sources</a>, and the <a href="project_rules.html">rules of the project</a>.
+</p>
+
+<h3 id="cgal_pronounce">How do you pronounce CGAL?</h3>
+<p>CGAL is pronounced like "seagull" in English, or "cigale" in French.</p>
+
+<h3 id="cgal_logo">How did you make the CGAL logo?</h3>
+<p>See <a href="logo-design.html">this page</a> for information about the construction of the CGAL logo.</p>
+
+<h3 id="where_is_cgal_used">What is CGAL used for?</h3>
+<p>
+CGAL is used wherever reliable geometric computations are needed, in commercial software,
+open source projects, and research. Typical application domains are computer aided design and
+manufacturing, 3D printing (slicing, Boolean operations, and mesh repair), geographic
+information systems and urban modeling, architecture and building information modeling,
+medical imaging and simulation (mesh generation from images), computer graphics and
+visual effects, computer vision and photogrammetry (surface reconstruction from point clouds),
+robotics and motion planning, molecular modeling, and scientific computing (meshes for
+finite element simulations).
+</p>
+<p>
+The page <a href="projects.html">Projects Using CGAL</a> gathers open source projects and
+publications that rely on CGAL, and GeometryFactory maintains a
+<a href="https://www.geometryfactory.com/markets-and-customers/">list of commercial customers</a>.
+</p>
+
+<h3 id="how_to_cite">How do I cite CGAL in a publication?</h3>
+<p>
+Please cite the specific packages you use, as well as the CGAL User and Reference Manual.
+The page <a href="acknowledging.html">Acknowledging CGAL</a> explains how, and provides
+ready-to-use BibTeX entries.
+</p>
+
+<h3 id="contribute">How can I contribute to CGAL?</h3>
+<p>
+Contributions are welcome, from bug reports and fixes to new packages. See
+<a href="opensource.html">Getting Involved in the CGAL Project</a> and the description of the
+<a href="review_process_rules.html">submission and review process</a>. If you use AI tools,
+please also read the <a href="#ai_stance">AI guidelines</a> of the project.
+</p>
+
+<h3 id="ai_stance">What is CGAL's stance on AI?</h3>
+<p>
+The CGAL project has published
+<a href="https://github.com/CGAL/cgal/blob/main/AI-GUIDELINES.md">guidelines for the use of
+AI tools</a> in contributions. In short, AI assistance is accepted as a tool, but not as a
+replacement for development skills: contributors must understand, review, and test all the code
+they submit, which must follow the project's conventions and be compatible with the license of
+the package. The human submitter is the sole author of the contribution and remains fully
+responsible for it.
+</p>
+
+<!-- ======================================================================= -->
+<hr>
+<h2 id="licensing">Licensing and Commercial Use</h2>
+
+<h3 id="license">Under which licenses is CGAL distributed?</h3>
+<p>
+CGAL is distributed under a dual-license scheme. It is available free of charge under open
+source licenses: the foundational building blocks (such as the kernels and the support library)
+are released under the <a href="https://www.gnu.org/licenses/lgpl-3.0.html">GNU LGPL v3+</a>,
+and most higher-level algorithms and data structures under the
+<a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU GPL v3+</a>. Alternatively, CGAL
+components are available under a commercial license from
+<a href="https://geometryfactory.com/">GeometryFactory</a>. The software is identical under
+both schemes; only the rights and obligations differ. See <a href="license.html">The CGAL
+License</a> for details.
+</p>
+
+<h3 id="package_license">How do I know the license of a given package?</h3>
+<p>
+The license of each package is given in its entry of the
+<a href="{{ doc }}/Manual/packages.html">Package Overview</a>. For the exact terms,
+always refer to the <tt>LICENSE</tt> file of the source code distribution.
+</p>
+
+<h3 id="commercial_use">Can I use CGAL in a commercial or closed-source product?</h3>
+<p>Yes. You have two options:</p>
+<ul>
+  <li><em>Comply with the open source licenses.</em> The LGPL parts can be used in proprietary
+      software, provided that the modifications you make to these parts are made available under
+      the LGPL. If you distribute software that uses GPL parts, you must distribute the source
+      code of your software under the GPL.</li>
+  <li><em>Obtain a commercial license</em> from <a href="https://geometryfactory.com/">GeometryFactory</a>
+      for the CGAL components you use. You can then integrate them in proprietary software,
+      sold or used internally, without the obligations of the GPL.</li>
+</ul>
+<p>
+If you are unsure which option applies to your situation, please
+<a href="https://geometryfactory.com/">contact GeometryFactory</a>.
+</p>
+
+<h3 id="commercial_license">What does a commercial license include?</h3>
+<p>
+GeometryFactory licenses CGAL per component (package), with offers adapted to industrial
+development, industrial research, and academic research. For industrial development, the license
+is a one-time fee, independent of the number of developers in your company, and without royalties
+when you distribute your software. Optional maintenance and support contracts give access to new
+releases and bug fixes of your licensed components and to a privileged channel for technical
+questions. See the <a href="https://geometryfactory.com/products/licenses/">license options</a>
+on the GeometryFactory website.
+</p>
+
+<h3 id="commercial_support">Can I get professional support, training, or custom development?</h3>
+<p>
+Yes. GeometryFactory offers maintenance and support contracts, consulting, training,
+and the development of geometric algorithms that are not yet in CGAL.
+See its <a href="https://geometryfactory.com/products/services/">services</a> page.
+</p>
+
+<!-- ======================================================================= -->
+<hr>
+<h2 id="installation">Using CGAL</h2>
+
+<h3 id="how_to_install">Do I still need to install CGAL?</h3>
+<p>
+Not really. Since version 5.0, CGAL is a header-only library: there is no CGAL library to
+configure, compile, or link. You only need the CGAL header files, obtained from a
+<a href="#package_managers">package manager</a>, from a source archive, or from the GitHub
+repository, together with the required third-party dependencies, which are not all header-only.
+When you configure your program with CMake, CGAL is configured at the same time; if CMake does
+not find CGAL automatically, set the variable <code>CGAL_DIR</code> to the root directory of
+the CGAL sources.
+</p>
+<p>
+The required and optional dependencies are listed in the manual page
+<a href="{{ doc }}/Manual/thirdparty.html">Compilers and Third Party Dependencies</a>,
+and the section <a href="{{ doc }}/Manual/usage.html#section_headeronly">Header-only Usage</a>
+gives all the details.
+</p>
+
+<h3 id="package_managers">Which package managers is CGAL available on?</h3>
+<p>
+Package managers is the recommended way to get CGAL, as they also install the required
+third-party dependencies with compatible versions. Package managers are not maintained by the
+CGAL project and may not offer the latest release immediately. See the download page for your
+platform:
+</p>
+<ul>
+  <li><a href="download/windows.html">Windows</a>: <code>vcpkg install cgal</code>;</li>
+  <li><a href="download/macosx.html">macOS</a>: <code>brew install cgal</code> (CGAL is also available on MacPorts);</li>
+  <li><a href="download/linux.html">Linux</a>: for example, <code>sudo apt-get install libcgal-dev</code>
+      on Debian, Ubuntu, and derivatives, or the package manager of your distribution.</li>
+</ul>
+<p>
+You can also download the source archive of any release from the
+<a href="https://github.com/CGAL/cgal/releases">GitHub releases page</a>.
+</p>
+
+<h3 id="compilers">Which compilers and C++ standard are required?</h3>
+<p>
+Since version 6.0, CGAL requires a C++ compiler supporting C++17 or later. The list of compilers
+that are continuously tested with the latest release is given in the section
+<a href="{{ doc }}/Manual/thirdparty.html#seccompilers">Supported Compilers</a> of the manual.
+Older compilers might work, but no guarantee is provided.
+</p>
+
+<h3 id="how_to_compile">How do I compile a program using CGAL?</h3>
+<p>CGAL uses CMake. A minimal <tt>CMakeLists.txt</tt> for a program using CGAL is:</p>
+<pre>
+cmake_minimum_required(VERSION 3.22)
+project(my_project)
+
+find_package(CGAL REQUIRED)
+
+add_executable(my_program my_program.cpp)
+target_link_libraries(my_program PRIVATE CGAL::CGAL)
+</pre>
+<p>Configure and build it in <em>Release</em> mode (see <a href="#release_mode">why</a>):</p>
+<pre>
+cmake -DCMAKE_BUILD_TYPE=Release .
+make
+</pre>
+<p>
+CGAL also provides the script <tt>cgal_create_CMakeLists</tt> to generate such a file.
+See the manual pages <a href="{{ doc }}/Manual/usage.html">Using CGAL on Unix</a>,
+<a href="{{ doc }}/Manual/windows.html">Using CGAL on Windows</a>, and
+<a href="{{ doc }}/Manual/devman_create_and_use_a_cmakelist.html">How to use CGAL with CMake</a>.
+</p>
+
+<h3 id="concepts_and_models">What are concepts and models?</h3>
+<p>
+CGAL is a library of C++ class and function templates. The requirements on their template
+arguments are expressed by <em>concepts</em>. A concept is a set of requirements on a type:
+nested types, member functions, or free functions that must be available. A <em>model</em> of a
+concept is a type that fulfills these requirements.
+</p>
+<p>
+For example, the convex hull functions are parameterized by a traits class, which must be a
+model of the concept <code>ConvexHullTraits_2</code>; every CGAL kernel is a model of this
+concept. Similarly, most algorithms of the <a href="#pmp">Polygon Mesh Processing</a> packages
+accept any model of the mesh concepts, such as <code>FaceGraph</code>:
+<code>CGAL::Surface_mesh</code> and <code>CGAL::Polyhedron_3</code> are models, and you can make
+your own mesh data structure a model too. In the reference manual, the API of a class is mainly
+documented on the pages of the concepts it is a model of.
+</p>
+<p>
+See the section <a href="{{ doc }}/Manual/tutorial_hello_world.html#intro_concept">Concepts and
+Models</a> of the Hello World tutorial and the
+<a href="{{ doc }}/Manual/manual.html#secorganizationref">organization of the reference manual</a>.
+</p>
+
+<h3 id="examples_and_demos">Where can I find examples and demo programs?</h3>
+<p>
+The user manual of each package contains commented examples, whose source code is included in
+the manual; the <a href="{{ doc }}/Manual/tutorials.html">tutorials</a> are a good starting
+point. All examples and demos are also available in a separate archive,
+<tt>CGAL-<em>x.y</em>-examples.tar.xz</tt>, attached to each release on the
+<a href="https://github.com/CGAL/cgal/releases">GitHub releases page</a>, as they are not
+installed by most package managers. On Debian and Ubuntu, they are provided by the package
+<tt>libcgal-demo</tt>, in <tt>/usr/share/doc/libcgal-demo/</tt>. Examples and demos are
+configured and built with CMake, as any other <a href="#how_to_compile">program using CGAL</a>.
+</p>
+
+<h3 id="python">Can I use CGAL from Python?</h3>
+<p>
+Yes. The CGAL project maintains <a href="https://github.com/CGAL/cgal-swig-bindings">Python
+bindings</a> covering a subset of the library, available on PyPI:
+</p>
+<pre>
+pip install cgal
+</pre>
+<p>
+See the <a href="https://github.com/CGAL/cgal-swig-bindings/wiki">wiki of the bindings</a> for
+the list of available packages and examples. The full functionality of CGAL is available in C++.
+</p>
+
+<h3 id="file_formats">Which file formats can CGAL read and write?</h3>
+<p>
+CGAL reads and writes common file formats for meshes and point sets, such as OFF, OBJ, STL, PLY,
+and XYZ, as well as formats used in geographic information systems such as WKT. The complete
+list, with the corresponding functions, is given in the section
+<a href="{{ doc }}/Stream_support/index.html#IOstreamSupportedFormats">Importing and Exporting
+Data using Standard File Formats</a> of the manual. Some formats require optional dependencies.
+</p>
+
+<h3 id="oldreleases">Which version of CGAL should I use, and where do I find old releases?</h3>
+<p>
+We recommend the latest stable release, announced on the <a href="index.html">home page</a> and
+listed on the <a href="releases.html">Releases</a> page together with its release notes. Patch
+releases (e.g., 6.2.1) only contain bug fixes. Before upgrading to a new major version, check
+the <a href="https://github.com/CGAL/cgal/blob/main/Installation/CHANGES.md">changelog</a> for
+breaking changes.
+</p>
+<p>
+All releases, including old ones, are available in the
+<a href="https://github.com/CGAL/cgal/releases">releases section</a> of the CGAL GitHub
+repository. The manuals of past releases are available at
+<tt>https://doc.cgal.org/<em>version</em>/Manual/</tt>.
+</p>
+
+<!-- ======================================================================= -->
+<hr>
+<h2 id="kernels">Robustness, Kernels, and Number Types</h2>
+
+<h3 id="exact_computation">What does "exact computation" mean, and why does it matter?</h3>
+<p>
+Geometric algorithms take decisions based on tests such as "is this point to the left of this
+line?". When these tests are evaluated with floating-point arithmetic, roundoff errors can lead
+to inconsistent decisions, and then to wrong results, infinite loops, or crashes, typically on
+degenerate inputs (collinear points, coplanar faces, ...). CGAL follows the <em>exact geometric
+computation paradigm</em>: its kernels guarantee that these decisions are correct, while
+remaining fast thanks to arithmetic filtering. See
+<a href="exact.html">The Exact Computation Paradigm</a>.
+</p>
+
+<h3 id="which_kernel">CGAL offers several kernels. Which is the right one for my program?</h3>
+<p>In most cases, one of the predefined kernels is the right choice:</p>
+<ul>
+  <li><code>CGAL::Exact_predicates_inexact_constructions_kernel</code>: exact predicates,
+      constructions computed with <code>double</code>. This is the fastest robust choice, and it
+      is sufficient for algorithms that only test properties of their input, such as most
+      triangulations and convex hulls.</li>
+  <li><code>CGAL::Exact_predicates_exact_constructions_kernel</code>: exact predicates and exact
+      constructions. Use it when your program constructs new objects (intersection points, for
+      example) that are then used in further computations, such as in Boolean operations or
+      arrangements.</li>
+  <li><code>CGAL::Exact_predicates_exact_constructions_kernel_with_sqrt</code>: additionally
+      supports exact square roots.</li>
+</ul>
+<p>
+The section <a href="{{ doc }}/Kernel_23/index.html#Kernel_23ChoosingaKernelandPredefinedKernels">Choosing
+a Kernel and Predefined Kernels</a> of the kernel manual gives more details, including on the
+choice of number types. The user manual of each package also indicates which kernel is
+recommended for its algorithms.
+</p>
+
+<h3 id="predicates_vs_constructions">What is the difference between a predicate and a construction, and why does it matter for robustness?</h3>
+<p>
+Geometric predicates test properties of geometric objects and return, for example, a Boolean
+value or an orientation: testing whether a point lies inside a sphere, or whether three points
+form a left turn, a right turn, or are collinear, are predicates. A geometric construction creates
+a new geometric object, such as the line through two points or the center of a circle defined by
+three points.
+</p>
+<p>
+Constructions are problematic with respect to robustness, since the constructed object has to be
+stored in a particular representation. If this representation does not capture the object's
+properties exactly, due for example to roundoff errors, the correctness of subsequent computations
+with this object cannot be guaranteed. Exact constructions are more expensive than exact
+predicates, which is why the kernel <code>CGAL::Exact_predicates_inexact_constructions_kernel</code>
+exists.
+</p>
+
+<h3 id="modifiable_kernel">I want to modify the coordinates of a point, but the CGAL kernel does not seem to support that. Why?</h3>
+<p>
+The kernel concept is representation-independent: there is no assumption on how a
+<code>Point_3</code>, for example, is represented. In particular, it need not be represented by
+Cartesian coordinates, so code relying on modifying these coordinates could be inefficient or
+wrong. CGAL algorithms are designed around predicates and constructions, which do not require
+this mutability. Non-modifiability also simplifies the reference-counting scheme used by default
+to copy CGAL objects.
+</p>
+<p>
+To change a point, construct a new one and assign it: <code>p = Point_2(p.x(), p.y() + 1);</code>
+</p>
+
+<h3 id="to_double">How do I convert a number type, e.g. <code>FT</code>, to <code>double</code>?</h3>
+<p>
+All number types used by CGAL provide the conversion function <code>CGAL::to_double()</code>.
+For example: <code>double x = CGAL::to_double(p.x());</code>.
+</p>
+
+<!-- ======================================================================= -->
+<hr>
+<h2 id="polygons">Polygons</h2>
+
+<h3 id="boolean_ops">How can I compute Boolean operations (union, intersection, difference) on polygons?</h3>
+<ul>
+  <li>For polygons with or without holes, use the package
+      <a href="{{ doc }}/Boolean_set_operations_2/index.html">2D Regularized Boolean
+      Set-Operations</a>, which provides union, intersection, difference, symmetric difference,
+      and complement, as well as intersection and containment predicates. It also supports
+      polygons bounded by curves, such as circular arcs.</li>
+  <li>For non-regularized operations, which keep lower-dimensional features such as isolated
+      edges and vertices and distinguish between the interior and the boundary, use
+      <a href="{{ doc }}/Nef_2/index.html">2D Boolean Operations on Nef Polygons</a>.</li>
+</ul>
+<p>For Boolean operations on 3D meshes, see <a href="#mesh_boolean_ops">below</a>.</p>
+
+<h3 id="polygon_triangulation">How do I triangulate the interior of a polygon?</h3>
+<p>
+Insert the edges of the polygon (and of its holes) as constraints into a constrained triangulation,
+such as <code>CGAL::Constrained_Delaunay_triangulation_2</code>. The result is a triangulation of
+the convex hull of the input in which the polygon edges are constrained edges. Then call
+<code>CGAL::mark_domain_in_triangulation()</code> to mark the faces that are inside the polygon.
+See the <a href="{{ doc }}/Triangulation_2/index.html">2D Triangulations</a> user manual, which
+contains an example.
+</p>
+
+<h3 id="polygon_offset">How do I compute the offset of a polygon?</h3>
+<ul>
+  <li>For offsets with mitered (sharp) corners, inward or outward, use the functions
+      <code>CGAL::create_interior_skeleton_and_offset_polygons_2()</code> and
+      <code>CGAL::create_exterior_skeleton_and_offset_polygons_2()</code> of the package
+      <a href="{{ doc }}/Straight_skeleton_2/index.html">2D Straight Skeleton and Polygon
+      Offsetting</a>, which also handle polygons with holes and weighted offsets.</li>
+  <li>For offsets with rounded corners, use <code>CGAL::approximated_offset_2()</code> or the
+      exact <code>CGAL::offset_polygon_2()</code> of the package
+      <a href="{{ doc }}/Minkowski_sum_2/index.html">2D Minkowski Sums</a>.</li>
+</ul>
+
+<h3 id="polygon_repair">How do I repair an invalid polygon?</h3>
+<p>
+Polygons coming from real data often have self-intersections, overlapping edges, or
+incorrectly nested holes. The function <code>CGAL::Polygon_repair::repair()</code> of the package
+<a href="{{ doc }}/Polygon_repair/index.html">2D Polygon Repair</a> converts them into valid
+polygons with holes, following a choice of rules (e.g., even-odd or non-zero winding).
+</p>
+
+<!-- ======================================================================= -->
+<hr>
+<h2 id="planar_maps">Arrangements</h2>
+
+<h3 id="planar_map_outer_face">Is the outer boundary of a face of an arrangement a simple polygon?</h3>
+<p>
+Not necessarily. The outer CCB (connected component of the boundary) of a face of an arrangement
+may contain "inner antennas". Consider a face whose boundary is a simple polygon, with a vertex
+<var>v</var> on this boundary, and add a component that starts and ends at <var>v</var> and lies
+in the interior of the face (one edge incident to <var>v</var> suffices). The outer CCB of the
+face then traverses this edge twice.
+</p>
+<p>
+Note also that with an inexact number type, you might get a non-simple polygon even if the outer
+CCB represents one, due to numerical errors.
+</p>
+
+<h3 id="planar_map_faster">How can I accelerate the work with arrangements?</h3>
+<p>First, make sure that your program is compiled in <a href="#release_mode">Release mode</a>. Then:</p>
+<ol>
+  <li>Passing <var>x</var>-monotone curves that are pairwise disjoint in their interior to the
+      insertion functions is more efficient (in running time) and less demanding (in traits-class
+      functionality) than passing general curves.</li>
+  <li>When the curves to be inserted are segments that are pairwise disjoint in their interior,
+      it is more efficient to use the traits class <code>Arr_non_caching_segment_traits_2</code>
+      rather than the default one, <code>Arr_segment_traits_2</code>.</li>
+  <li>Prior knowledge of the combinatorial structure of the arrangement can be used to accelerate
+      the insertion of <var>x</var>-monotone curves whose interior is disjoint from existing edges
+      and vertices: the specialized functions <code>insert_in_face_interior()</code>,
+      <code>insert_from_left_vertex()</code>, <code>insert_from_right_vertex()</code>, and
+      <code>insert_at_vertices()</code> hardly involve any geometric operation. For example, a
+      polygon can be inserted into an empty arrangement by inserting its first segment with
+      <code>insert_in_face_interior()</code>, the following ones with
+      <code>insert_from_left_vertex()</code> or <code>insert_from_right_vertex()</code>, and the
+      last one with <code>insert_at_vertices()</code>.</li>
+  <li>The main trade-off among point-location strategies is between time and storage. The naive
+      and walk strategies require no preprocessing and no auxiliary structures, but answer
+      queries more slowly; they are preferable when point-location queries are rare compared to
+      modifications of the arrangement.</li>
+  <li>The traits classes should be instantiated with an exact kernel to ensure robustness when the
+      input may be degenerate.</li>
+  <li>Geometric operations dominate the running time of most operations: avoid repeating them,
+      for example by storing and reusing their results.</li>
+</ol>
+<p>
+See the <a href="{{ doc }}/Arrangement_on_surface_2/index.html">2D Arrangements</a> user manual
+for details.
+</p>
+
+<h3 id="planar_map_adding_info">How can I attach information to a vertex, a halfedge, or a face of an arrangement?</h3>
+<p>
+Extend the DCEL (doubly connected edge list) of the arrangement, so that its vertex, halfedge,
+and face types contain the information you need. The package provides class templates that make
+this easy; see the section
+<a href="{{ doc }}/Arrangement_on_surface_2/index.html#arr_ssecex_dcel">Extending the DCEL</a>
+of the <a href="{{ doc }}/Arrangement_on_surface_2/index.html">2D Arrangements</a> user manual.
+If only faces need to be extended, see the example
+<tt>examples/Arrangement_on_surface_2/face_extension.cpp</tt>; the example
+<tt>examples/Arrangement_on_surface_2/dcel_extension.cpp</tt> extends all feature types
+simultaneously.
+</p>
+
+<!-- ======================================================================= -->
+<hr>
+<h2 id="pmp">Polygon Mesh Processing</h2>
+
+<p>
+CGAL provides a comprehensive set of algorithms for surface meshes, organized in the packages
+<a href="{{ doc }}/Polygon_mesh_processing/index.html">Polygon Mesh Processing</a>,
+<a href="{{ doc }}/PMP_Boolean_operations/index.html">Boolean Operations on Meshes</a>,
+<a href="{{ doc }}/PMP_Mesh_repair/index.html">Polygon Mesh Repair</a>, and
+<a href="{{ doc }}/PMP_Remeshing/index.html">Meshing and Remeshing of Polygon Meshes</a>.
+All functions are in the namespace <code>CGAL::Polygon_mesh_processing</code>.
+</p>
+
+<h3 id="mesh_data_structure">Which data structure should I use for my surface mesh?</h3>
+<p>
+The mesh processing algorithms are generic: they work with any model of the mesh
+<a href="#concepts_and_models">concepts</a>. For new code, we recommend
+<a href="{{ doc }}/Surface_mesh/index.html"><code>CGAL::Surface_mesh</code></a>, an efficient
+halfedge data structure with dynamic properties. <a href="{{ doc }}/Polyhedron/index.html"><code>CGAL::Polyhedron_3</code></a>
+is also supported. If your application already has its own mesh data structure, you can use the
+algorithms directly on it, without copying, by providing the
+<a href="{{ doc }}/BGL/index.html">graph traits</a> for your type.
+</p>
+
+<h3 id="mesh_boolean_ops">How can I compute Boolean operations (union, intersection, difference) on meshes?</h3>
+<p>
+Use the functions <code>corefine_and_compute_union()</code>,
+<code>corefine_and_compute_intersection()</code>, and <code>corefine_and_compute_difference()</code>
+of the package <a href="{{ doc }}/PMP_Boolean_operations/index.html">Boolean Operations on
+Meshes</a>. They work on triangle meshes that bound volumes and are fast and robust, including in
+degenerate configurations such as coplanar faces. The same package also provides clipping and
+splitting of meshes by a plane, a box, or another mesh (<code>clip()</code>, <code>split()</code>),
+and the computation of intersection polylines. For input meshes with self-intersections, see
+<code>autorefine_triangle_soup()</code>.
+</p>
+<p>
+For non-regularized Boolean operations on general polyhedra, see
+<a href="{{ doc }}/Nef_3/index.html">3D Boolean Operations on Nef Polyhedra</a>.
+</p>
+
+<h3 id="mesh_repair">How do I repair a mesh or a polygon soup?</h3>
+<p>
+The package <a href="{{ doc }}/PMP_Mesh_repair/index.html">Polygon Mesh Repair</a> provides tools
+for the most common defects:
+</p>
+<ul>
+  <li>to turn a polygon soup (for example, read from an STL file) into a mesh:
+      <code>repair_polygon_soup()</code>, <code>orient_polygon_soup()</code>, and
+      <code>polygon_soup_to_polygon_mesh()</code>;</li>
+  <li>to merge duplicated boundaries: <code>stitch_borders()</code>;</li>
+  <li>to fill holes: <code>triangulate_refine_and_fair_hole()</code> and related functions;</li>
+  <li>to fix orientation, degenerate faces, and non-manifold vertices, with dedicated functions.</li>
+</ul>
+<p>
+Self-intersections can be detected with <code>does_self_intersect()</code> and
+<code>self_intersections()</code>. When the input is too damaged to be repaired, for example
+for raw scans or CAD models with many defects,
+<a href="{{ doc }}/Alpha_wrap_3/index.html">3D Alpha Wrapping</a> generates a valid, watertight,
+and orientable surface mesh that encloses the input.
+</p>
+
+<h3 id="mesh_remeshing">How do I remesh, simplify, or smooth a mesh?</h3>
+<ul>
+  <li>Isotropic remeshing, with feature preservation: <code>isotropic_remeshing()</code>,
+      in the package <a href="{{ doc }}/PMP_Remeshing/index.html">Meshing and Remeshing of
+      Polygon Meshes</a>, which also provides refinement, adaptive remeshing, and
+      smoothing (<code>angle_and_area_smoothing()</code>, <code>smooth_shape()</code>).</li>
+  <li>Simplification by edge collapse: the package
+      <a href="{{ doc }}/Surface_mesh_simplification/index.html">Triangulated Surface Mesh
+      Simplification</a>.</li>
+</ul>
+
+<h3 id="mesh_measures">How do I compute the area, the volume, or the distance between meshes?</h3>
+<p>
+Use <code>area()</code>, <code>volume()</code>, and the other functions of the measure group, as
+well as <code>approximate_Hausdorff_distance()</code> to compare two meshes. See the
+<a href="{{ doc }}/Polygon_mesh_processing/index.html">Polygon Mesh Processing</a> manual. For
+fast intersection and distance queries between a mesh and points, rays, or segments, see the
+<a href="{{ doc }}/AABB_tree/index.html">AABB tree</a> package.
+</p>
+
+<h3 id="polyhedron_transform">How do I apply a transformation (translation, rotation, scaling) to a mesh?</h3>
+<p>
+Use <code>CGAL::Polygon_mesh_processing::transform()</code>, which applies a transformation, such
+as <code>CGAL::Aff_transformation_3</code>, to all the points of a mesh. See the
+<a href="{{ doc }}/Polygon_mesh_processing/index.html">Polygon Mesh Processing</a> manual.
+</p>
+
+<h3 id="polyhedron_normals">How do I compute the normals of a mesh?</h3>
+<p>
+Use <code>compute_face_normal()</code> for a single face, or <code>compute_face_normals()</code>
+and <code>compute_vertex_normals()</code> to compute the normals of all faces or vertices at once.
+See the <a href="{{ doc }}/Polygon_mesh_processing/index.html">Polygon Mesh Processing</a> manual.
+Note that the <code>plane()</code> member function of the facets of
+<code>CGAL::Polyhedron_3</code> does not compute the plane equation: it only gives access to a
+plane stored in the facet, if any.
+</p>
+
+<!-- ======================================================================= -->
+<hr>
+<h2 id="issues">Issues</h2>
+
+<h3 id="get_help">How do I report an issue or get help?</h3>
+<ul>
+  <li><em>Questions on how to use CGAL</em>: ask on the user mailing list <tt>cgal-discuss</tt>
+      or on the other channels listed on the page <a href="mailing_list.html">Mailing Lists and
+      Forums</a>. Search the archives first: your question may already have been answered.</li>
+  <li><em>Bugs, crashes, and wrong results</em>: open an issue on the
+      <a href="https://github.com/CGAL/cgal/issues">CGAL issue tracker</a>, following the
+      <a href="bug_report.html">bug reporting instructions</a>.</li>
+  <li><em>Professional support</em>: see <a href="#commercial_support">above</a>.</li>
+</ul>
+<p>
+In all cases, a small, self-contained program and input data reproducing the problem, together
+with the versions of CGAL, of the compiler, and of the operating system, greatly help others to
+answer quickly.
+</p>
+
+<h3 id="bug_reporting">I think I have encountered a bug in CGAL. What should I do?</h3>
+<p>
+First, check that you are using the latest release, that your program is compiled in
+<a href="#release_mode">Release mode</a> if the issue is about performance, and that you use an
+<a href="#which_kernel">appropriate kernel</a>: many apparent bugs are
+<a href="#inexact_NT">robustness issues</a>. Then follow the
+<a href="bug_report.html">bug reporting instructions</a> and open an issue on
+<a href="https://github.com/CGAL/cgal/issues">GitHub</a>.
+</p>
+
+<h3 id="release_mode">My program is very slow. Why?</h3>
+<p>
+The most common reason is that the program was compiled in <em>Debug</em> mode. CGAL makes heavy
+use of C++ templates and contains many internal checks (assertions) that are enabled in Debug
+mode, which can make programs dramatically slower. Always measure performance in
+<em>Release</em> mode, for example with <code>-DCMAKE_BUILD_TYPE=Release</code> when using CMake,
+which also defines <code>NDEBUG</code> and disables the assertions.
+</p>
+<p>
+The choice of the <a href="#which_kernel">kernel</a> also has a large impact on performance: use
+the fastest kernel that provides the guarantees your program needs.
+</p>
+
+<h3 id="inexact_NT">I am using <code>double</code> (or <code>float</code>) and get assertion failures or incorrect output. Is this a bug in CGAL?</h3>
+<p>
+While it may be a bug in CGAL, you are more likely facing a robustness problem. Using a kernel
+such as <code>CGAL::Simple_cartesian&lt;double&gt;</code> or <code>CGAL::Cartesian&lt;double&gt;</code>
+means that all predicates and constructions are evaluated with floating-point arithmetic, without
+any guarantee: small roundoff errors can have large consequences, up to the point where an
+algorithm crashes.
+</p>
+<p>
+Use one of the <a href="#which_kernel">predefined kernels</a> instead: they let you keep
+<code>double</code> coordinates in your input and output, while guaranteeing that all decisions
+taken by the algorithms are correct. If your program constructs new objects that are used in
+further computations, use <code>CGAL::Exact_predicates_exact_constructions_kernel</code>. See also
+<a href="exact.html">The Exact Computation Paradigm</a>.
+</p>
+<p>Good references that discuss the robustness problem in geometric computing are:</p>
+<ul>
+  <li>S. Schirra. Robustness and precision issues in geometric computation. In J.-R. Sack and
+      J. Urrutia (eds.), <em>Handbook of Computational Geometry</em>, Chapter 14, Elsevier
+      Science, 1999.</li>
+  <li>L. Kettner, K. Mehlhorn, S. Pion, S. Schirra, and C. Yap. Classroom Examples of Robustness
+      Problems in Geometric Computations. <em>Computational Geometry: Theory and
+      Applications</em>, 40(1):61-78, 2008.
+      <a href="https://inria.hal.science/inria-00344310">[HAL]</a></li>
+</ul>
+
+<h3 id="uncertain_exception">My debugger reports a <code>CGAL::Uncertain_conversion_exception</code>. Why?</h3>
+<p>
+This is an internal exception that is thrown and caught by CGAL as part of its arithmetic
+filtering mechanism. It is correct behavior and you can safely ignore it. Some debuggers report it
+as a "first-chance exception"; you can configure your debugger to ignore this exception type.
+</p>
+
+<h3 id="compilation_speed">My programs take a long time to compile. What can I do?</h3>
+<p>
+CGAL makes heavy use of C++ templates, which has an impact on compilation time. The following
+hints can help:
+</p>
+<ul>
+  <li><em>Remove debugging options</em> such as <code>-g</code> when you do not need them:
+      generating debug information for template instantiations is costly in time and memory.</li>
+  <li><em>Remove optimization options</em> such as <code>-O2</code> in the early steps of the
+      development cycle, when you do not need fast executables.</li>
+  <li><em>Regroup translation units</em>: if your program is composed of many small translation
+      units, reducing their number avoids parsing the same headers and instantiating the same
+      templates many times.</li>
+  <li><em>Use precompiled headers</em>: regroup the CGAL headers you use in one header and
+      precompile it, for example with the CMake command <code>target_precompile_headers()</code>.</li>
+</ul>
+
+<h3 id="feature_request">I need a feature that CGAL does not offer. What can I do?</h3>
+<p>
+You can submit a feature request on the <a href="https://github.com/CGAL/cgal/issues">issue
+tracker</a>, and check the page <a href="in_progress.html">Work in Progress</a> to see whether it
+is already planned. If you need the feature in a given time frame, GeometryFactory offers
+<a href="https://geometryfactory.com/products/services/">custom development</a>.
+</p>
