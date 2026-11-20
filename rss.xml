@@ -5,8 +5,8 @@
         <description>CGAL is an open source C++ library of robust and efficient geometric algorithms: triangulations, meshing, mesh processing, Boolean operations, arrangements, and more.</description>
         <link>https://www.cgal.org/</link>
         <atom:link href="https://www.cgal.org/rss.xml" rel="self" type="application/rss+xml"/>
-        <lastBuildDate>Thu, 19 Nov 2026 15:59:27 +0000</lastBuildDate>
-        <pubDate>Thu, 19 Nov 2026 15:59:27 +0000</pubDate>
+        <lastBuildDate>Fri, 20 Nov 2026 18:26:52 +0000</lastBuildDate>
+        <pubDate>Fri, 20 Nov 2026 18:26:52 +0000</pubDate>
         <ttl>1800</ttl>
 
 
@@ -176,6 +176,45 @@ officially released in the upcoming version of CGAL, CGAL 6.3, scheduled for Dec
                 <guid>https://www.cgal.org/2026/10/01/mesh_smoothing_3</guid>
                 <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
                 <media:thumbnail url="https://www.cgal.org/images/mesh_smoothing_3_implicit.png"/>
+        </item>
+
+        <item>
+                <title>New in CGAL: Hexahedral mesh generation</title>
+                <description>
+&lt;h3&gt;&lt;a href=&quot;https://perso.liris.cnrs.fr/guillaume.damiand/&quot;&gt;Guillaume Damiand&lt;/a&gt;&lt;/h3&gt;
+&lt;h4&gt;&lt;a href=&quot;https://cnrs.fr/&quot;&gt;CNRS&lt;/a&gt; / &lt;a href=&quot;https://liris.cnrs.fr/&quot;&gt;LIRIS&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;a href=&quot;../../../../images/hexmesh-bunny.png&quot;&gt;&lt;img src=&quot;../../../../images/hexmesh-bunny.png&quot; style=&quot;max-width:40%&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;../../../../images/hexmesh-bunny-interior.png&quot;&gt;&lt;img src=&quot;../../../../images/hexmesh-bunny-interior.png&quot; style=&quot;max-width:59%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+  &lt;br /&gt;&lt;small&gt;Result of hexmeshing method for the model &quot;bunny00.off&quot;, using 15 as initial grid size and 2 as number of two-refinement levels. (Right) View of the interior of the mesh.&lt;/small&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;In the upcoming CGAL release, CGAL 6.3, we introduce the method &lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/main/Linear_cell_complex/index.html#Linear_cell_complexHexmeshing&quot;&gt;Hexahedral Two-refinement&lt;/a&gt;. It generates a pure 3D hexahedral mesh from a surface triangle mesh using the two-refinement algorithm described in the paper &quot;A template-based approach for parallel hexahedral two-refinement&quot; of Steven J. Owen, Ryan M. Shih and Corey D. Ernst.&lt;/p&gt;
+
+&lt;p&gt;The method starts by generating a regular grid of voxels around and within the object. Voxels which intersect by the input surface are refined using four simple refinement templates. Moreover, transitions are created between refined and non-refined voxels as to guarantee that the final output is a pure hexahedral mesh. Exterior mesh elements may be trimmed (i.e., removed from the mesh) or kept. A final, optional step is the smoothing of the 3D mesh to project boundary vertices on the input surface.&lt;/p&gt;
+
+&lt;p&gt;Two parameters govern the behavior of the method: the size of the initial grid of voxels, and the number of two-refinement levels applied. Due to the cubic nature of the grid scaling, users should not use overly large numbers for these two parameters, as this would rapidly create a huge number of hexahedra, and possibly a crash of the method due to a filling up of the computer memory.&lt;/p&gt;
+
+&lt;p&gt;The code was developed over two successive google summer of code projects: firstly by Théo Bénard in 2024, then by Soichiro Yamazaki in 2025. For now, the method is sequential. A parallel version of the method is under development.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3&gt;Status&lt;/h3&gt;
+
+&lt;p&gt;The method &quot;Hexahedral Two-refinement&quot; is already integrated in CGAL&apos;s &quot;main&quot; branch
+on the &lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;, and will be
+officially released in the upcoming version of CGAL, CGAL 6.3, scheduled for December 2026.&lt;/p&gt;
+
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
+&lt;a href=&quot;https://cgal.geometryfactory.com/CGAL/doc/main/Linear_cell_complex/index.html#Linear_cell_complexHexmeshing&quot;&gt;Documentation of the Hexahedral Two-refinement&lt;/a&gt;
+&lt;br /&gt;
+&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
+&lt;a href=&quot;https://github.com/CGAL/cgal/tree/main&quot;&gt;CGAL “main” branch on GitHub&lt;/a&gt;&lt;/p&gt;
+</description>
+                <link>https://www.cgal.org/2026/10/01/hexmeshing/</link>
+                <guid>https://www.cgal.org/2026/10/01/hexmeshing</guid>
+                <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
         </item>
 
         <item>
@@ -1947,25 +1986,6 @@ to be 2-manifold and watertight, as long as the isosurface does not intersect th
                 <guid>https://www.cgal.org/2025/09/17/cgal61-beta2</guid>
                 <pubDate>Wed, 17 Sep 2025 00:00:00 +0000</pubDate>
                 <media:thumbnail url="https://www.cgal.org/images/cdt_title_pyramid.png"/>
-        </item>
-
-        <item>
-                <title>CGAL 6.0.2 released</title>
-                <description>
-&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
-&lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v6.0.2&quot;&gt;Download CGAL-6.0.2&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
-&lt;a href=&quot;https://doc.cgal.org/6.0.2/Manual/index.html&quot;&gt;CGAL-6.0.2 documentation&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;CGAL 6.0.2 is a bug-fix release for &lt;a href=&quot;/cgal-web/2024/09/27/cgal60/&quot;&gt;CGAL 6.0&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The list of fixed bugs since &lt;a href=&quot;/cgal-web/2024/09/27/cgal60/&quot;&gt;CGAL 6.0&lt;/a&gt; can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AMerged_in_6.0.2+-label%3AMerged_in_6.0&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
-
-</description>
-                <link>https://www.cgal.org/2025/09/17/cgal602/</link>
-                <guid>https://www.cgal.org/2025/09/17/cgal602</guid>
-                <pubDate>Wed, 17 Sep 2025 00:00:00 +0000</pubDate>
         </item>
 
 
