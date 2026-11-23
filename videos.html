@@ -1,16 +1,27 @@
 
 
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html class="no-js" lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
     <title>CGAL Videos</title>
-    
-    <meta name="description" content="">
+    <meta name="description" content="Videos about CGAL: talks and computational geometry video reviews illustrating CGAL algorithms and data structures.">
+    <link rel="canonical" href="https://www.cgal.org/videos.html">
+    <meta property="og:site_name" content="CGAL">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="CGAL Videos">
+    <meta property="og:description" content="Videos about CGAL: talks and computational geometry video reviews illustrating CGAL algorithms and data structures.">
+    <meta property="og:url" content="https://www.cgal.org/videos.html">
+    <meta property="og:image" content="https://www.cgal.org/images/video_thumbnails/hidding-et-al.jpg">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@TheCGALProject">
+    <meta name="twitter:title" content="CGAL Videos">
+    <meta name="twitter:description" content="Videos about CGAL: talks and computational geometry video reviews illustrating CGAL algorithms and data structures.">
+    <meta name="twitter:image" content="https://www.cgal.org/images/video_thumbnails/hidding-et-al.jpg">
+
     <meta name="viewport" content="width=device-width">
     <meta name="author" content="CGAL Editorial Board">
 
@@ -19,11 +30,8 @@
     <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
     <link rel="stylesheet" href="/cgal-web/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800" rel="stylesheet" type="text/css">
 
-    <!--[if lte IE 8]>
-	<link rel="stylesheet" href="css/leaflet.ie.css" />
-	<![endif]-->
     <link rel="stylesheet" href="/cgal-web/assets/themes/cgal/main.css">
 
     <!-- atom & rss feed -->
@@ -32,9 +40,6 @@
 
   </head>
   <body>
-    <!--[if lt IE 7]>
-        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
 
 
     <!-- Navigation & Logo-->
@@ -44,21 +49,21 @@
       <a href="/cgal-web/index.html" class="mobile-logo">
         <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="30">
       </a>
-      <button class="menu-toggle" aria-label="Menu">
+      <button type="button" class="menu-toggle" aria-label="Menu">
         Menu
       </button>
     </div>
-    <nav id="mainmenu" class="mainmenu" role="navigation">
+    <nav id="mainmenu" class="mainmenu">
     <ul>
     <li class="logo-wrapper hidden-xs hidden-sm hidden-md">
     <a href="/cgal-web/index.html">
-    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
+    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250">
     </a>
     </li>
 
     <li class="hidden-lg">
     <a href="/cgal-web/index.html">
-    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
+    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20">
     </a>
     </li>
 
@@ -73,23 +78,24 @@
     <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Packages</a>
         <ul class="dropdown-menu">
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometryProcessing" target="_blank">Geometry Processing</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygonMeshProcessing" target="_blank">Polygon Mesh Processing</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPointSetProcessing" target="_blank">Point Set Processing</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching and Sorting</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
         </ul>
     </li>
 
@@ -142,12 +148,12 @@
 
 <table class="videos-list">
   <tr>
-    <td> <a href="http://www.youtube.com/watch?v=3DLfkWWw_Tg"><img src="http://i4.ytimg.com/vi/3DLfkWWw_Tg/1.jpg" alt="[Watch]"></a></td>
-    <td> <a href="http://www.youtube.com/watch?v=3DLfkWWw_Tg"><em>CGAL: The Open Source Computational Geometry Algorithms Library</em></a> (54:59)<BR>
+    <td> <a href="https://www.youtube.com/watch?v=3DLfkWWw_Tg"><img src="https://img.youtube.com/vi/3DLfkWWw_Tg/1.jpg" alt="[Watch]"></a></td>
+    <td> <a href="https://www.youtube.com/watch?v=3DLfkWWw_Tg"><em>CGAL: The Open Source Computational Geometry Algorithms Library</em></a> (54:59)<BR>
       <a href="http://www-sop.inria.fr/members/Sylvain.Pion/">Sylvain Pion</a> and Andreas Fabri.<BR>
-      <a href="http://www.youtube.com/user/googletechtalks">Google Tech Talk</a> series.
+      <a href="https://www.youtube.com/user/googletechtalks">Google Tech Talk</a> series.
       March 3rd, 2008, Google, Mountain View, California.
-      <!-- <object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/3DLfkWWw_Tg&hl=fr"></param><embed src="http://www.youtube.com/v/3DLfkWWw_Tg&hl=fr" type="application/x-shockwave-flash" width="425" height="344"></embed></object> --> </td>
+    </td>
   </tr>
 
   <tr>
@@ -159,12 +165,12 @@
       <a href="http://www.astro.rug.nl/~bernard60/index.php">Bernard J.T. Jones</a>,
       and <a href="http://www-sop.inria.fr/members/Monique.Teillaud/">Monique Teillaud</a>. <BR>
       <a href="http://www.computational-geometry.org/SoCG-videos/socg12video/">21st Video Review of Computational Geometry</a>,
-      <a href="http://socg2012.web.unc.edu/">28th SoCG<a>, 2012, Chapel Hill, NC.</td>
+      <a href="http://socg2012.web.unc.edu/">28th SoCG</a>, 2012, Chapel Hill, NC.</td>
   </tr>
   
   <tr>
     <td> <a href="http://www-sop.inria.fr/members/Nader.Salman/NS_SOCG_Vid09.html"><img src="/cgal-web/images/video_thumbnails/salman-yvinec-2009.jpg" alt="[Watch]"></a></td>
-    <td> <a href="http://www-sop.inria.fr/members/Nader.Salman/NS_SOCG_Vid09.html"><em>High resolution surface reconstruction from overlaping multiple views</em></a> (6:05)<BR>
+    <td> <a href="http://www-sop.inria.fr/members/Nader.Salman/NS_SOCG_Vid09.html"><em>High resolution surface reconstruction from overlapping multiple views</em></a> (6:05)<BR>
       Nader Salman and Mariette Yvinec.<BR>
       <a href="http://www.computational-geometry.org/SoCG-videos/socg09video/">18th Video Review of Computational Geometry</a>,
       <a href="http://www.socg.org/2009">25th SoCG</a>, 2009, Aarhus, Denmark.</td>
@@ -175,17 +181,16 @@
       <a href="http://www.inria.fr/sophia/members/Manuel.Caroli/">Manuel Caroli</a> and <a href="http://www.inria.fr/sophia/members/Monique.Teillaud/">Monique Teillaud</a>.<BR>
       <a href="http://www.computational-geometry.org/SoCG-videos/socg08video/">17th Video Review of Computational Geometry</a>, 
       <a href="http://www.socg.org/2008">24th SoCG</a>, 2008, College Park, Maryland.
-      <!-- <object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/TgcsFR_DoA4&hl=en"></param><embed src="http://www.youtube.com/v/TgcsFR_DoA4&hl=fr" type="application/x-shockwave-flash" width="425" height="344"></embed></object> -->
     </td>
   </tr>
   <tr>
     <td> <a href="http://acg.cs.tau.ac.il/projects/internal-projects/arr-geodesic-sphere/movie/aos-xvid.avi"><img src="/cgal-web/images/video_thumbnails/fogel-halperin-2008.jpg" alt="[Watch]"></a></td>
     <td> <a href="http://acg.cs.tau.ac.il/projects/internal-projects/arr-geodesic-sphere/movie/aos-xvid.avi"><em>Arrangements of Geodesic Arcs on the Sphere</em></a> (5:11)<BR>
-      <a href="http://www.cs.tau.ac.il/~efif/">Efi Fogel</a>, Ophir Setter, and <a href="http://www.cs.tau.ac.il/~danha/">Dan Helperin</a>.<BR>
+      <a href="http://www.cs.tau.ac.il/~efif/">Efi Fogel</a>, Ophir Setter, and <a href="http://www.cs.tau.ac.il/~danha/">Dan Halperin</a>.<BR>
       <a href="http://www.computational-geometry.org/SoCG-videos/socg08video/">17th Video Review of Computational Geometry</a>, 
       <a href="http://www.socg.org/2008">24th SoCG</a>, 2008, College Park, Maryland.
-      <!-- <embed flashvars="&amp;subtitle=on" type="application/x-shockwave-flash" src="http://video.google.com/googleplayer.swf?docId=1465609627167725920&amp;hl=en" id="VideoPlayback"></embed> -->
     </td>
+  </tr>
   <tr>
     <td> <a href="http://www.mpi-inf.mpg.de/~mkerber/video_socg_2008/"><img src="/cgal-web/images/video_thumbnails/emeliyanenko-kerber-2008.jpg" alt="[Watch]"></a></td>
     <td> <a href="http://www.mpi-inf.mpg.de/~mkerber/video_socg_2008/"><em>Visualizing and Exploring Planar Algebraic Arrangements - a Web Application</em></a> (4:08)<BR>
@@ -215,10 +220,9 @@
       <a href="http://www-ma2.upc.es/~geomc/events/socg2002/socg2002.html">18th SoCG</a>, 2002, Barcelona, Spain.</td>
   </tr>
   <tr>
-    <td> <a href="http://vimeo.com/877882"><img src="/cgal-web/images/video_thumbnails/moniker-2008.jpg" alt="[Watch]"></a></td>
-    <td> <a href="http://vimeo.com/877882"><em>Dynamic 3D Voronoi Demo</em></a> (1:08)<br>
-      <a href="http://vimeo.com/user277736">Moniker</a> on <a href="http://vimeo.com">Vimeo</a>, 2008.
-      <!-- <object width="400" height="267"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=877882&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=877882&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="400" height="267"></embed></object> -->
+    <td> <a href="https://vimeo.com/877882"><img src="/cgal-web/images/video_thumbnails/moniker-2008.jpg" alt="[Watch]"></a></td>
+    <td> <a href="https://vimeo.com/877882"><em>Dynamic 3D Voronoi Demo</em></a> (1:08)<br>
+      <a href="https://vimeo.com/user277736">Moniker</a> on <a href="https://vimeo.com">Vimeo</a>, 2008.
     </td>
   </tr>
 </table>

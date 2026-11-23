@@ -1,16 +1,27 @@
 
 
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html class="no-js" lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
     <title>CGAL Projects for Google Summer of Code 2010</title>
-    
-    <meta name="description" content="">
+    <meta name="description" content="Projects accepted and project ideas proposed by CGAL as a mentoring organization of the Google Summer of Code 2010.">
+    <link rel="canonical" href="https://www.cgal.org/gsoc/2010.html">
+    <meta property="og:site_name" content="CGAL">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="CGAL Projects for Google Summer of Code 2010">
+    <meta property="og:description" content="Projects accepted and project ideas proposed by CGAL as a mentoring organization of the Google Summer of Code 2010.">
+    <meta property="og:url" content="https://www.cgal.org/gsoc/2010.html">
+    <meta property="og:image" content="https://www.cgal.org/images/gsoc.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@TheCGALProject">
+    <meta name="twitter:title" content="CGAL Projects for Google Summer of Code 2010">
+    <meta name="twitter:description" content="Projects accepted and project ideas proposed by CGAL as a mentoring organization of the Google Summer of Code 2010.">
+    <meta name="twitter:image" content="https://www.cgal.org/images/gsoc.png">
+
     <meta name="viewport" content="width=device-width">
     <meta name="author" content="CGAL Editorial Board">
 
@@ -19,11 +30,8 @@
     <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
     <link rel="stylesheet" href="/cgal-web/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800" rel="stylesheet" type="text/css">
 
-    <!--[if lte IE 8]>
-	<link rel="stylesheet" href="css/leaflet.ie.css" />
-	<![endif]-->
     <link rel="stylesheet" href="/cgal-web/assets/themes/cgal/main.css">
 
     <!-- atom & rss feed -->
@@ -32,9 +40,6 @@
 
   </head>
   <body>
-    <!--[if lt IE 7]>
-        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
 
 
     <!-- Navigation & Logo-->
@@ -44,21 +49,21 @@
       <a href="/cgal-web/index.html" class="mobile-logo">
         <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="30">
       </a>
-      <button class="menu-toggle" aria-label="Menu">
+      <button type="button" class="menu-toggle" aria-label="Menu">
         Menu
       </button>
     </div>
-    <nav id="mainmenu" class="mainmenu" role="navigation">
+    <nav id="mainmenu" class="mainmenu">
     <ul>
     <li class="logo-wrapper hidden-xs hidden-sm hidden-md">
     <a href="/cgal-web/index.html">
-    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
+    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250">
     </a>
     </li>
 
     <li class="hidden-lg">
     <a href="/cgal-web/index.html">
-    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
+    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20">
     </a>
     </li>
 
@@ -73,23 +78,24 @@
     <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Packages</a>
         <ul class="dropdown-menu">
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometryProcessing" target="_blank">Geometry Processing</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygonMeshProcessing" target="_blank">Polygon Mesh Processing</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPointSetProcessing" target="_blank">Point Set Processing</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching and Sorting</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
         </ul>
     </li>
 
@@ -260,12 +266,12 @@ and the use of 2D Triangulation (non Delaunay) for the maintenance of upper and 
 
 <li id="modulargcd"><h3>Modular GCD for multivariate polynomials</h3>
     <b>Contact:</b> <a href="http://www.mpi-inf.mpg.de/~hemmer/">Michael Hemmer</a>
-    <br><b>Description:</b><br> Based on the package <a href="http://www.cgal.org/Manual/3.4/doc_html/cgal_manual/Modular_arithmetic/Chapter_main.html">Modular Arithmetic</a> the current implementation of the gcd in the <a href="http://www.cgal.org/Manual/3.4/doc_html/cgal_manual/Polynomial/Chapter_main.html">Polynomials</a> package already provides a modular gcd for univariate polynomials. However, the implementation for multivariate polynomials only profits from this in the sense that the modular arithmetic is applied in the last step of the recursion, that is, within the computations for univariate polynomials. This was caused by the fact that the current implementation was more focused on the support of polynomials over certain algebraic extensions.<br>
+    <br><b>Description:</b><br> Based on the package <a href="https://www.cgal.org/Manual/3.4/doc_html/cgal_manual/Modular_arithmetic/Chapter_main.html">Modular Arithmetic</a> the current implementation of the gcd in the <a href="https://www.cgal.org/Manual/3.4/doc_html/cgal_manual/Polynomial/Chapter_main.html">Polynomials</a> package already provides a modular gcd for univariate polynomials. However, the implementation for multivariate polynomials only profits from this in the sense that the modular arithmetic is applied in the last step of the recursion, that is, within the computations for univariate polynomials. This was caused by the fact that the current implementation was more focused on the support of polynomials over certain algebraic extensions.<br>
 
 The fundamental structure of the algorithm is as follows. The algorithm proceeds in rounds. In each round it selects a prime and maps the coefficients of the input polynomials in the corresponding prime field. Over this field the gcd is computed using the Euclidean Algorithm. This is repeated until the actual gcd can be recovered using the Chinese Remainder Theorem. This method is more efficient than a naive application of the Euclidean Algorithm since it avoids the exponential coefficient growth in intermediate expressions. <br>
 
 The first <b>milestone</b> of this project is to provide a modular gcd for multivariate polynomials over the integers. This implementation should be compared with existing implementations. We consider this implementation as the default implementation for CGAL. In case CGAL is configured with other libraries that provide a better gcd the code should automatically switch to a better implementation.
-A second possible <b>milestone</b>  is the support of polynomials over algebraic extensions fields. A fundamental difference to polynomials over integers is that the gcd is not performed over a Field since the extensions may induce zero divisors. This requires special handling within the code and may even effect the current design of the current <a href="http://www.cgal.org/Manual/3.4/doc_html/cgal_manual/NumberTypeSupport/Chapter_main.html"> Number Type Support</a>  and <a href="http://www.cgal.org/Manual/3.4/doc_html/cgal_manual/Algebraic_foundations/Chapter_main.html">Algebraic Foundations</a> of CGAL.
+A second possible <b>milestone</b>  is the support of polynomials over algebraic extensions fields. A fundamental difference to polynomials over integers is that the gcd is not performed over a Field since the extensions may induce zero divisors. This requires special handling within the code and may even effect the current design of the current <a href="https://www.cgal.org/Manual/3.4/doc_html/cgal_manual/NumberTypeSupport/Chapter_main.html"> Number Type Support</a>  and <a href="https://www.cgal.org/Manual/3.4/doc_html/cgal_manual/Algebraic_foundations/Chapter_main.html">Algebraic Foundations</a> of CGAL.
     <br><b>Required skills:</b> Templated C++ and a little bit of algebra.
     <br><br>
 
@@ -273,10 +279,10 @@ A second possible <b>milestone</b>  is the support of polynomials over algebraic
 <li id="random"><h3>Allowing different random number generators to be used in CGAL</h3>
   <b>Contact:</b> <a href="http://www.linkedin.com/in/fcacciola">Fernando Cacciola</a>
   <br><b>Description:</b><br> CGAL provides the class
-<a href="http://www.cgal.org/Manual/3.4/doc_html/cgal_manual/Generator_ref/Class_Random.html#Cross_link_anchor_1766"><tt>CGAL::Random</tt></a>
+<a href="https://www.cgal.org/Manual/3.4/doc_html/cgal_manual/Generator_ref/Class_Random.html#Cross_link_anchor_1766"><tt>CGAL::Random</tt></a>
 for generating seeded random values via the <tt>srand</tt> function of the <tt>C</tt> standard library. This class is
 used as the random number generator in some algorithms like the
-<a href="http://www.cgal.org/Manual/3.4/doc_html/cgal_manual/Generator/Chapter_main.html">random geometric object generators</a>.<br>
+<a href="https://www.cgal.org/Manual/3.4/doc_html/cgal_manual/Generator/Chapter_main.html">random geometric object generators</a>.<br>
 Since all those random generator functions take an instance of class <tt>CGAL::Random</tt> it is not possible to choose different distributions (the class doesn't allow that).<br>
 The goal of this project is to extend the API of the random geometric object generators to accept other underlying random number generators, such as those from
 the <a href="http://www.boost.org/doc/libs/1_38_0/libs/random/index.html">Boost.Random</a> library or the upcoming <tt>std::random</tt> in the next C++ standard, C++0x.<br>
@@ -400,7 +406,7 @@ The interface should be through a web page integrated into an existing Plone bas
     <br><b>Description:</b><br>
     <p> The goal is to implement a demo program for the
     <a
-    href="http://www.cgal.org/Manual/last/doc_html/cgal_manual/Triangulation_3/Chapter_main.html">Triangulation_3</a>
+    href="https://www.cgal.org/Manual/last/doc_html/cgal_manual/Triangulation_3/Chapter_main.html">Triangulation_3</a>
     package using Qt and the QGLViewer. The
     Triangulation_3 package contains algorithms for computation of
     Delaunay triangulations and weighted Delaunay triangulations for a
@@ -444,8 +450,8 @@ of the wrapper code.
 
 <EM>2. Pythonic CGAL</EM>
 <BR>
-For two strongly demanded CGAL packages (<a href="http://www.cgal.org/Pkg/Triangulation3">3D Triangulations<a> and
-<a href="http://www.cgal.org/Pkg/Polyhedron">Polyhedral Surfaces</a>), design a pythonic API
+For two strongly demanded CGAL packages (<a href="https://www.cgal.org/Pkg/Triangulation3">3D Triangulations<a> and
+<a href="https://www.cgal.org/Pkg/Polyhedron">Polyhedral Surfaces</a>), design a pythonic API
 based on feedback from current cgal-python users. This second step will consist of iterations of Step 1, and
 it will again involve C++ development, tool usage, and Python programming.<BR>
 

@@ -1,16 +1,48 @@
 
 
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html class="no-js" lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
     <title>New in CGAL: Improved Surface Mesh Clipping</title>
-    <meta name="description" content="">
-    <meta name="description" content="">
+    <meta name="description" content="In CGAL 6.1, clipping and splitting meshes with planes is about ten times faster, and also works with meshes with polygonal faces.">
+    <link rel="canonical" href="https://www.cgal.org/2025/06/06/new_clip/">
+    <meta property="og:site_name" content="CGAL">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="New in CGAL: Improved Surface Mesh Clipping">
+    <meta property="og:description" content="In CGAL 6.1, clipping and splitting meshes with planes is about ten times faster, and also works with meshes with polygonal faces.">
+    <meta property="og:url" content="https://www.cgal.org/2025/06/06/new_clip/">
+    <meta property="og:image" content="https://www.cgal.org/images/clip_ex.png">
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2025-06-06T00:00:00+00:00">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@TheCGALProject">
+    <meta name="twitter:title" content="New in CGAL: Improved Surface Mesh Clipping">
+    <meta name="twitter:description" content="In CGAL 6.1, clipping and splitting meshes with planes is about ten times faster, and also works with meshes with polygonal faces.">
+    <meta name="twitter:image" content="https://www.cgal.org/images/clip_ex.png">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "New in CGAL: Improved Surface Mesh Clipping",
+      "description": "In CGAL 6.1, clipping and splitting meshes with planes is about ten times faster, and also works with meshes with polygonal faces.",
+      "datePublished": "2025-06-06T00:00:00+00:00",
+      "dateModified": "2025-06-06T00:00:00+00:00",
+      "url": "https://www.cgal.org/2025/06/06/new_clip/",
+      "mainEntityOfPage": "https://www.cgal.org/2025/06/06/new_clip/",
+      "image": "https://www.cgal.org/images/clip_ex.png",
+      "author": { "@type": "Organization", "name": "The CGAL Project", "url": "https://www.cgal.org/" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "The CGAL Project",
+        "url": "https://www.cgal.org/",
+        "logo": { "@type": "ImageObject", "url": "https://www.cgal.org/images/cgal_logo/g-196x196-y.png" }
+      }
+    }
+    </script>
+
     <meta name="viewport" content="width=device-width">
     <meta name="author" content="CGAL Editorial Board">
 
@@ -19,11 +51,8 @@
     <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
     <link rel="stylesheet" href="/cgal-web/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800" rel="stylesheet" type="text/css">
 
-    <!--[if lte IE 8]>
-	<link rel="stylesheet" href="css/leaflet.ie.css" />
-	<![endif]-->
     <link rel="stylesheet" href="/cgal-web/assets/themes/cgal/main.css">
 
     <!-- atom & rss feed -->
@@ -32,9 +61,6 @@
 
   </head>
   <body>
-    <!--[if lt IE 7]>
-        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
 
 
     <!-- Navigation & Logo-->
@@ -44,21 +70,21 @@
       <a href="/cgal-web/index.html" class="mobile-logo">
         <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="30">
       </a>
-      <button class="menu-toggle" aria-label="Menu">
+      <button type="button" class="menu-toggle" aria-label="Menu">
         Menu
       </button>
     </div>
-    <nav id="mainmenu" class="mainmenu" role="navigation">
+    <nav id="mainmenu" class="mainmenu">
     <ul>
     <li class="logo-wrapper hidden-xs hidden-sm hidden-md">
     <a href="/cgal-web/index.html">
-    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
+    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250">
     </a>
     </li>
 
     <li class="hidden-lg">
     <a href="/cgal-web/index.html">
-    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
+    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20">
     </a>
     </li>
 
@@ -73,23 +99,24 @@
     <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Packages</a>
         <ul class="dropdown-menu">
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometryProcessing" target="_blank">Geometry Processing</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygonMeshProcessing" target="_blank">Polygon Mesh Processing</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPointSetProcessing" target="_blank">Point Set Processing</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching and Sorting</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
         </ul>
     </li>
 
@@ -161,7 +188,7 @@ to cut and separate a surface in multiple components.
 
 <p><br /></p>
 <div style="text-align:center;">
-  <a href="../../../../images/clip_ex.png"><img src="../../../../images/clip_ex.png" style="max-width:95%" /></a>
+  <a href="/cgal-web/images/clip_ex.png"><img src="/cgal-web/images/clip_ex.png" style="max-width:95%" /></a>
   <br /><small>Fig 1: Four successive clips of the <em>"elephant"</em> surface, using planes in arbitrary directions.</small>
 </div>
 
@@ -240,7 +267,7 @@ Below you can see the final output of CGAL 6.1 (not trianguled) vs. that of CGAL
 
 <p><br /></p>
 <div style="text-align:center;">
-  <a href="../../../../images/clip_with_edges.png"><img src="../../../../images/clip_with_edges.png" style="max-width:95%" /></a>
+  <a href="/cgal-web/images/clip_with_edges.png"><img src="/cgal-web/images/clip_with_edges.png" style="max-width:95%" /></a>
   <br /><small>Fig 2: Output of CGAL 6.1 vs output of CGAL 6.0.</small>
 </div>
 
@@ -255,7 +282,7 @@ and provides access to the created intersection edges.
 
 <p><br /></p>
 <div style="text-align:center;">
-  <a href="../../../../images/refine_with_planes.png"><img src="../../../../images/refine_with_planes.png" style="max-width:95%" /></a>
+  <a href="/cgal-web/images/refine_with_planes.png"><img src="/cgal-web/images/refine_with_planes.png" style="max-width:95%" /></a>
   <br /><small>Fig 3: Intersection edges (in red) of a triangle mesh with planes forming a regular grid for CGAL 6.0 (left) and CGAL 6.1 (right).</small>
 </div>
 
@@ -283,7 +310,7 @@ will be officially released in the upcoming version of CGAL, CGAL 6.1, scheduled
           
             
             
-            <li class="active"><a href="/cgal-web/2026/10/01/hexmeshing/" class="active">New in CGAL: Hexahedral mesh generation</a>
+            <li class="active"><a href="/cgal-web/2026/10/01/mesh_smoothing_3/" class="active">New in CGAL: 3D Mesh Volume Smoothing</a>
             <br><div style="font-size:12px">October 2026</div></li>
           
             

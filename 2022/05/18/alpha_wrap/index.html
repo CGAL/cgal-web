@@ -1,16 +1,48 @@
 
 
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html class="no-js" lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
     <title>New in CGAL: 3D Alpha Wrapping</title>
-    <meta name="description" content="Fast, robust, and generic surface wrapping">
-    <meta name="description" content="">
+    <meta name="description" content="The 3D Alpha Wrapping package of CGAL 5.5 wraps triangle soups, segment soups, and point sets into watertight, intersection-free, 2-manifold surface meshes.">
+    <link rel="canonical" href="https://www.cgal.org/2022/05/18/alpha_wrap/">
+    <meta property="og:site_name" content="CGAL">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="New in CGAL: 3D Alpha Wrapping">
+    <meta property="og:description" content="The 3D Alpha Wrapping package of CGAL 5.5 wraps triangle soups, segment soups, and point sets into watertight, intersection-free, 2-manifold surface meshes.">
+    <meta property="og:url" content="https://www.cgal.org/2022/05/18/alpha_wrap/">
+    <meta property="og:image" content="https://www.cgal.org/images/alpha_wrap_gallery.png">
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2022-05-18T00:00:00+00:00">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@TheCGALProject">
+    <meta name="twitter:title" content="New in CGAL: 3D Alpha Wrapping">
+    <meta name="twitter:description" content="The 3D Alpha Wrapping package of CGAL 5.5 wraps triangle soups, segment soups, and point sets into watertight, intersection-free, 2-manifold surface meshes.">
+    <meta name="twitter:image" content="https://www.cgal.org/images/alpha_wrap_gallery.png">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "New in CGAL: 3D Alpha Wrapping",
+      "description": "The 3D Alpha Wrapping package of CGAL 5.5 wraps triangle soups, segment soups, and point sets into watertight, intersection-free, 2-manifold surface meshes.",
+      "datePublished": "2022-05-18T00:00:00+00:00",
+      "dateModified": "2022-05-18T00:00:00+00:00",
+      "url": "https://www.cgal.org/2022/05/18/alpha_wrap/",
+      "mainEntityOfPage": "https://www.cgal.org/2022/05/18/alpha_wrap/",
+      "image": "https://www.cgal.org/images/alpha_wrap_gallery.png",
+      "author": { "@type": "Organization", "name": "The CGAL Project", "url": "https://www.cgal.org/" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "The CGAL Project",
+        "url": "https://www.cgal.org/",
+        "logo": { "@type": "ImageObject", "url": "https://www.cgal.org/images/cgal_logo/g-196x196-y.png" }
+      }
+    }
+    </script>
+
     <meta name="viewport" content="width=device-width">
     <meta name="author" content="CGAL Editorial Board">
 
@@ -19,11 +51,8 @@
     <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
     <link rel="stylesheet" href="/cgal-web/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800" rel="stylesheet" type="text/css">
 
-    <!--[if lte IE 8]>
-	<link rel="stylesheet" href="css/leaflet.ie.css" />
-	<![endif]-->
     <link rel="stylesheet" href="/cgal-web/assets/themes/cgal/main.css">
 
     <!-- atom & rss feed -->
@@ -32,9 +61,6 @@
 
   </head>
   <body>
-    <!--[if lt IE 7]>
-        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
 
 
     <!-- Navigation & Logo-->
@@ -44,21 +70,21 @@
       <a href="/cgal-web/index.html" class="mobile-logo">
         <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="30">
       </a>
-      <button class="menu-toggle" aria-label="Menu">
+      <button type="button" class="menu-toggle" aria-label="Menu">
         Menu
       </button>
     </div>
-    <nav id="mainmenu" class="mainmenu" role="navigation">
+    <nav id="mainmenu" class="mainmenu">
     <ul>
     <li class="logo-wrapper hidden-xs hidden-sm hidden-md">
     <a href="/cgal-web/index.html">
-    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
+    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250">
     </a>
     </li>
 
     <li class="hidden-lg">
     <a href="/cgal-web/index.html">
-    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
+    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20">
     </a>
     </li>
 
@@ -73,23 +99,24 @@
     <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Packages</a>
         <ul class="dropdown-menu">
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometryProcessing" target="_blank">Geometry Processing</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygonMeshProcessing" target="_blank">Polygon Mesh Processing</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPointSetProcessing" target="_blank">Point Set Processing</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching and Sorting</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
+          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
         </ul>
     </li>
 
@@ -151,11 +178,11 @@
     <a href="https://www-sop.inria.fr/members/David.Cohen-Steiner/">David Cohen-Steiner</a>&#42;,
     <a href="https://team.inria.fr/titane/pierre-alliez/">Pierre Alliez</a>&#42;</h3>
 <h4>&#42;<a href="https://www.inria.fr">INRIA Sophia Antipolis</a>,
-    &deg;<a href="http://www.geometryfactory.com" target="_blank">GeometryFactory</a></h4>
+    &deg;<a href="https://www.geometryfactory.com" target="_blank">GeometryFactory</a></h4>
 
 <p><br /><br /></p>
 <div style="text-align:center;">
-  <a href="../../../../images/alpha_wrap_gallery.png"><img src="../../../../images/alpha_wrap_gallery.png" style="max-width:95%" /></a><br />
+  <a href="/cgal-web/images/alpha_wrap_gallery.png"><img src="/cgal-web/images/alpha_wrap_gallery.png" style="max-width:95%" /></a><br />
   <br /><small>Input meshes (pink) and wraps (grey) (click to enlarge).</small>
 </div>
 
@@ -211,7 +238,7 @@ characterized by many defects such as intersections, gaps, and non-manifold feat
 
 <p><br /><br /></p>
 <div style="text-align:center;">
-  <a href="../../../../images/alpha_wrap_overview.png"><img src="../../../../images/alpha_wrap_overview.png" style="max-width:95%" /></a><br />
+  <a href="/cgal-web/images/alpha_wrap_overview.png"><img src="/cgal-web/images/alpha_wrap_overview.png" style="max-width:95%" /></a><br />
   <br /><small>Illustration of the algorithm in 2D. Input (red) and a few steps of the algorithm (click to enlarge).</small>
 </div>
 
@@ -227,7 +254,7 @@ can be chosen independently and arbitrarily large or small, but must be strictly
 
 <p><br /><br /></p>
 <div style="text-align:center;">
-  <a href="../../../../images/alpha_wrap_bike.png"><img src="../../../../images/alpha_wrap_bike.png" style="max-width:95%" /></a><br />
+  <a href="/cgal-web/images/alpha_wrap_bike.png"><img src="/cgal-web/images/alpha_wrap_bike.png" style="max-width:95%" /></a><br />
   <br /><small>Multiple wrappings of the bike model for various combinations of alpha and offset (click to enlarge).<br />
              Alpha and offset impact the complexity-fidelity tradeoff.</small>
 </div>
@@ -244,7 +271,7 @@ satisfy a number of conditions (validity, manifoldness, output encloses the inpu
 
 <p>Our algorithm is made generic by using an <i>oracle</i> class whose role is to answer a number
 of geometric queries (such as <i>"What is the distance between this 3D point and the input data?"</i>).
-The oracle's API is fixed and as such it is possible to easily switching input representations 
+The oracle's API is fixed and as such it is possible to easily switching input representations
 by simply replacing one implementation of oracle - and thus one type of input data - by another.
 In our implementation, we have even added the possibility to combine oracles; consequently,
 different input representations can be mixed together in the same scene queried by the oracle.
@@ -253,7 +280,7 @@ on input data that combine points, polylines, and triangles.</p>
 
 <p><br /><br /></p>
 <div style="text-align:center;">
-  <a href="../../../../images/alpha_wrap_mixed.png"><img src="../../../../images/alpha_wrap_mixed.png" style="max-width:95%" /></a><br />
+  <a href="/cgal-web/images/alpha_wrap_mixed.png"><img src="/cgal-web/images/alpha_wrap_mixed.png" style="max-width:95%" /></a><br />
   <br /><small>Single wrap of input data with different representation types: points, segments, triangles (click to enlarge).</small>
 </div>
 
@@ -280,7 +307,7 @@ officially released in the upcoming version of CGAL, CGAL 5.5, scheduled for Jun
           
             
             
-            <li class="active"><a href="/cgal-web/2026/10/01/hexmeshing/" class="active">New in CGAL: Hexahedral mesh generation</a>
+            <li class="active"><a href="/cgal-web/2026/10/01/mesh_smoothing_3/" class="active">New in CGAL: 3D Mesh Volume Smoothing</a>
             <br><div style="font-size:12px">October 2026</div></li>
           
             
