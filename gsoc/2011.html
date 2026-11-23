@@ -1,27 +1,16 @@
 
 
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
     <title>CGAL Projects for Google Summer of Code 2011</title>
-    <meta name="description" content="Projects accepted and project ideas proposed by CGAL as a mentoring organization of the Google Summer of Code 2011.">
-    <link rel="canonical" href="https://www.cgal.org/gsoc/2011.html">
-    <meta property="og:site_name" content="CGAL">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:title" content="CGAL Projects for Google Summer of Code 2011">
-    <meta property="og:description" content="Projects accepted and project ideas proposed by CGAL as a mentoring organization of the Google Summer of Code 2011.">
-    <meta property="og:url" content="https://www.cgal.org/gsoc/2011.html">
-    <meta property="og:image" content="https://www.cgal.org/images/gsoc.png">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@TheCGALProject">
-    <meta name="twitter:title" content="CGAL Projects for Google Summer of Code 2011">
-    <meta name="twitter:description" content="Projects accepted and project ideas proposed by CGAL as a mentoring organization of the Google Summer of Code 2011.">
-    <meta name="twitter:image" content="https://www.cgal.org/images/gsoc.png">
-
+    
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <meta name="author" content="CGAL Editorial Board">
 
@@ -30,8 +19,11 @@
     <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
     <link rel="stylesheet" href="/cgal-web/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 
+    <!--[if lte IE 8]>
+	<link rel="stylesheet" href="css/leaflet.ie.css" />
+	<![endif]-->
     <link rel="stylesheet" href="/cgal-web/assets/themes/cgal/main.css">
 
     <!-- atom & rss feed -->
@@ -40,6 +32,9 @@
 
   </head>
   <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
 
 
     <!-- Navigation & Logo-->
@@ -49,21 +44,21 @@
       <a href="/cgal-web/index.html" class="mobile-logo">
         <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="30">
       </a>
-      <button type="button" class="menu-toggle" aria-label="Menu">
+      <button class="menu-toggle" aria-label="Menu">
         Menu
       </button>
     </div>
-    <nav id="mainmenu" class="mainmenu">
+    <nav id="mainmenu" class="mainmenu" role="navigation">
     <ul>
     <li class="logo-wrapper hidden-xs hidden-sm hidden-md">
     <a href="/cgal-web/index.html">
-    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250">
+    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
     </a>
     </li>
 
     <li class="hidden-lg">
     <a href="/cgal-web/index.html">
-    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20">
+    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
     </a>
     </li>
 
@@ -78,24 +73,23 @@
     <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Packages</a>
         <ul class="dropdown-menu">
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygonMeshProcessing" target="_blank">Polygon Mesh Processing</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPointSetProcessing" target="_blank">Point Set Processing</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching and Sorting</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometryProcessing" target="_blank">Geometry Processing</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
         </ul>
     </li>
 
@@ -253,7 +247,7 @@
 <hr>
 
   <h3 id="boostification">Replacing some Basic Non-Geometric Tools in CGAL by Boost/TR1/C++0x Functionality</h3>
-<p><strong>Mentor:</strong> <a href="mailto:Sebastien.Loriot@geometryfactory.com?Subject=GSoC-2011-TR1">Sebastien Loriot</a> from <a href="https://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+<p><strong>Mentor:</strong> <a href="mailto:Sebastien.Loriot@geometryfactory.com?Subject=GSoC-2011-TR1">Sebastien Loriot</a> from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
   <br>
   <h3>Project Description</h3>
 <p>The CGAL project started in 1996, before the
@@ -294,14 +288,14 @@
 
 <h3 id="embeddedGraph">Switching from CGAL::HalfedgeGraph to boost::PlanarEmbedding</h3>
 
-<p><strong>Mentor:</strong> <a href="mailto:andreas.fabri@geometryfactory.com?Subject=GSoC-2011-PlanarEmbedding">Andreas Fabri</a> from  <a href="https://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+<p><strong>Mentor:</strong> <a href="mailto:andreas.fabri@geometryfactory.com?Subject=GSoC-2011-PlanarEmbedding">Andreas Fabri</a> from  <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
   <br>
   <h3>Project Description</h3>
 <p>Inspired by the Boost Graph Library (BGL), we extended the Graph concept by introducing the
-  <a href="https://www.cgal.org/Manual/latest/doc_html/cgal_manual/BGL/Chapter_main.html#Section_72.2">HalfedgeGraph</a>.
+  <a href="http://www.cgal.org/Manual/latest/doc_html/cgal_manual/BGL/Chapter_main.html#Section_72.2">HalfedgeGraph</a>.
   This concept imposes an order on the edges incident to a vertex. It
   leads to the notion of edges cycles and hence faces. Currently, the CGAL
-  <a href="https://www.cgal.org/Pkg/SurfaceMeshSimplification">Surface Mesh
+  <a href="http://www.cgal.org/Pkg/SurfaceMeshSimplification">Surface Mesh
     Simplification</a> package operates on polyhedral surfaces using this
   API.</p>
 
@@ -313,7 +307,7 @@
   our purposes. The next step is to make the necessary changes in the
   Surface Mesh Simplification package. If there still remains time, the
   student could start to rewrite the CGAL
-  <a href="https://www.cgal.org/Pkg/:SurfaceParameterization">
+  <a href="http://www.cgal.org/Pkg/:SurfaceParameterization">
     Surface Mesh Parametrisation</a>
   package, which took another approach to make an abstraction of a
   polyhedral surface.</p>
@@ -343,9 +337,9 @@
 
 <p>The <em>2D Minkowski Sums</em> package of CGAL contains
   the function
-  <a href="https://www.cgal.org/Manual/latest/doc_html/cgal_manual/Minkowski_sum_2_ref/Function_minkowski_sum_2.html#Cross_link_anchor_1084"><code>minkowski_sum_2()</code></a> that computes the planar Minkowski sums of two
+  <a href="http://www.cgal.org/Manual/latest/doc_html/cgal_manual/Minkowski_sum_2_ref/Function_minkowski_sum_2.html#Cross_link_anchor_1084"><code>minkowski_sum_2()</code></a> that computes the planar Minkowski sums of two
   simple polygons (see the
-  <a href="https://www.cgal.org/Manual/latest/doc_html/cgal_manual/Boolean_set_operations_2/Chapter_main.html#Section_19.2">manual</a>
+  <a href="http://www.cgal.org/Manual/latest/doc_html/cgal_manual/Boolean_set_operations_2/Chapter_main.html#Section_19.2">manual</a>
   for the precise definition of a simple polygon). The function
   is overloaded with two variants; one implements the
   <em>decomposition</em> method and the other implements
@@ -383,7 +377,7 @@
 
 <h3 id="addEigen">Add an Interface for the Eigen Library</h3>
 
-<p><strong>Mentors:</strong> <a href="mailto:sebastien.loriot@geometryfactory.com?Subject=GSoC-2011-Eigen">Sebastien Loriot</a> from  <a href="https://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+<p><strong>Mentors:</strong> <a href="mailto:sebastien.loriot@geometryfactory.com?Subject=GSoC-2011-Eigen">Sebastien Loriot</a> from  <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
   and <a href="mailto:gael.guennebaud@inria.fr?Subject=GSoC-2011-Eigen">Gael Guennebaud</a> from <a href="http://www.labri.fr/perso/guenneba/">LaBRI</a> Bordeaux.
 
   <h3>Project Description</h3>
@@ -408,7 +402,7 @@
 
 <h3 id="meshDeformation">Integrate As-Rigid-As-Possible Surface Modeling in CGAL</h3>
 
-<p><strong>Mentors:</strong> <a href="mailto:andreas.fabri@geometryfactory.com?Subject=GSoC-2011-ARAP">Andreas Fabri</a> from  <a href="https://www.geometryfactory.com/aboutus.html">GeometryFactory</a>,
+<p><strong>Mentors:</strong> <a href="mailto:andreas.fabri@geometryfactory.com?Subject=GSoC-2011-ARAP">Andreas Fabri</a> from  <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>,
   and <a href="mailto:sorkine@inf.ethz.ch?Subject=GSoC-2011-ARAP">Olga Sorkine</a> from <a href="http://people.inf.ethz.ch/sorkineo">ETH Zurich</a>.
 
   <h3>Project Description</h3>
@@ -512,7 +506,7 @@
         subcurves of <var>C</var> that are pairwise disjoint in
         their interior. These subcurves are associated with the
         arrangement edges (more precisely, with pairs of
-        <a href="https://www.cgal.org/Manual/latest/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Concept_ArrangementDcel.html#Cross_link_anchor_1157">DCEL</a>
+        <a href="http://www.cgal.org/Manual/latest/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Concept_ArrangementDcel.html#Cross_link_anchor_1157">DCEL</a>
         halfedges). The connection between the original input
         curves and the arrangement edges is lost during the
         construction process. This loss might be acceptable for
@@ -521,9 +515,9 @@
         the final subcurves.</p>
 
       <p>The
-        <a href="https://www.cgal.org/Manual/latest/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_with_history_2.html#Cross_link_anchor_1239"><code>Arrangement_with_history_2&lt;Traits,Dcel&gt;</code></a>
+        <a href="http://www.cgal.org/Manual/latest/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_with_history_2.html#Cross_link_anchor_1239"><code>Arrangement_with_history_2&lt;Traits,Dcel&gt;</code></a>
         class-template extends the
-        <a href="https://www.cgal.org/Manual/latest/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_2.html#Cross_link_anchor_1137"><code>Arrangement_2&lt;Traits,Dcel&gt;</code></a>
+        <a href="http://www.cgal.org/Manual/latest/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_2.html#Cross_link_anchor_1137"><code>Arrangement_2&lt;Traits,Dcel&gt;</code></a>
         class template with an additional container that
         represents <var>C</var> and a cross mapping between the curves of
         <var>C</var> and the arrangement edges they induce.</p>
@@ -540,7 +534,7 @@
         in <var>C</var>. Recall that <var>C''</var> is the set of
         pairwise disjoint in their interiors subcurves of the curves
         in <var>C'</var>. You are asked to augment the
-        <a href="https://www.cgal.org/Manual/latest/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_with_history_2.html#Cross_link_anchor_1239"><code>Arrangement_with_history_2</code></a>
+        <a href="http://www.cgal.org/Manual/latest/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arrangement_with_history_2.html#Cross_link_anchor_1239"><code>Arrangement_with_history_2</code></a>
         class-template with an additional container that
         represents <var>C'</var>, and (i) a cross mapping between
         the curves of <var>C</var> and the curves
@@ -731,14 +725,14 @@
 
               <p><img align="right" src="/cgal-web/images/gsoc/landmark_pl.gif" alt="landmark point-location" />The arrangement package includes several classes (more precisely,
                 class templates parameterised by an arrangement class) that model
-                the <a href="https://www.cgal.org/Manual/latest/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Concept_ArrangementPointLocation_2.html"> ArrangementPointLocation_2 </a>
+                the <a href="http://www.cgal.org/Manual/latest/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Concept_ArrangementPointLocation_2.html"> ArrangementPointLocation_2 </a>
                 concept. Namely, they all have a member function called
                 <code>locate()</code> that accepts a query point <em>q</em> and
                 returns the face, edge or vertex that contains the query. Each of
                 the various point-location classes employs a different algorithm
                 or strategy for answering queries. One of the most important is the
                 class using
-                <a href="https://www.cgal.org/Manual/latest/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arr_landmarks_point_location.html">Landmarks</a>.
+                <a href="http://www.cgal.org/Manual/latest/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Class_Arr_landmarks_point_location.html">Landmarks</a>.
                 The class uses a set of "landmark" points whose location in the
                 arrangement is known. Given a query point, it uses a Kd-tree to find
                 the nearest landmark and then traverses the straight line segment
@@ -759,7 +753,7 @@
                 point. Therefore, we would like to implement a different walk strategy
                 that does not require the construction of a connecting segment. This
                 would allow to relax the concept
-                <a href="https://doc.cgal.org/latest/Arrangement_on_surface_2/classArrangementLandmarkTraits__2.html">ArrangementLandmarkTraits_2</a>
+                <a href=" http://www.cgal.org/Manual/latest/doc_html/cgal_manual/Arrangement_on_surface_2_ref/Concept_ArrangementLandmarkTraits_2.html">ArrangementLandmarkTraits_2</a>
                 and would enable point location based on landmarks for a broader set
                 of curve types such as B&eacute;zier curves, rational arcs, and algebraic
                 segments.</p>

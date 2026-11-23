@@ -1,48 +1,16 @@
 
 
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
     <title>CGAL Flash Mob at SIGGRAPH</title>
-    <meta name="description" content="As in the previous years, the CGAL Project will be present at Siggraph. Having 20K subscribers on cgal-discuss@inria.fr, we are pretty sure to find at least ...">
-    <link rel="canonical" href="https://www.cgal.org/news/2016/04/01/Flashmob/">
-    <meta property="og:site_name" content="CGAL">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:title" content="CGAL Flash Mob at SIGGRAPH">
-    <meta property="og:description" content="As in the previous years, the CGAL Project will be present at Siggraph. Having 20K subscribers on cgal-discuss@inria.fr, we are pretty sure to find at least ...">
-    <meta property="og:url" content="https://www.cgal.org/news/2016/04/01/Flashmob/">
-    <meta property="og:image" content="https://www.cgal.org/images/AnaheimFlashMob.JPG">
-    <meta property="og:type" content="article">
-    <meta property="article:published_time" content="2016-04-01T00:00:00+00:00">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@TheCGALProject">
-    <meta name="twitter:title" content="CGAL Flash Mob at SIGGRAPH">
-    <meta name="twitter:description" content="As in the previous years, the CGAL Project will be present at Siggraph. Having 20K subscribers on cgal-discuss@inria.fr, we are pretty sure to find at least ...">
-    <meta name="twitter:image" content="https://www.cgal.org/images/AnaheimFlashMob.JPG">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      "headline": "CGAL Flash Mob at SIGGRAPH",
-      "description": "As in the previous years, the CGAL Project will be present at Siggraph. Having 20K subscribers on cgal-discuss@inria.fr, we are pretty sure to find at least ...",
-      "datePublished": "2016-04-01T00:00:00+00:00",
-      "dateModified": "2016-04-01T00:00:00+00:00",
-      "url": "https://www.cgal.org/news/2016/04/01/Flashmob/",
-      "mainEntityOfPage": "https://www.cgal.org/news/2016/04/01/Flashmob/",
-      "image": "https://www.cgal.org/images/AnaheimFlashMob.JPG",
-      "author": { "@type": "Organization", "name": "The CGAL Project", "url": "https://www.cgal.org/" },
-      "publisher": {
-        "@type": "Organization",
-        "name": "The CGAL Project",
-        "url": "https://www.cgal.org/",
-        "logo": { "@type": "ImageObject", "url": "https://www.cgal.org/images/cgal_logo/g-196x196-y.png" }
-      }
-    }
-    </script>
-
+    <meta name="description" content="Let's have a good time at SIGGRAPH 2016">
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <meta name="author" content="CGAL Editorial Board">
 
@@ -51,8 +19,11 @@
     <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
     <link rel="stylesheet" href="/cgal-web/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 
+    <!--[if lte IE 8]>
+	<link rel="stylesheet" href="css/leaflet.ie.css" />
+	<![endif]-->
     <link rel="stylesheet" href="/cgal-web/assets/themes/cgal/main.css">
 
     <!-- atom & rss feed -->
@@ -61,6 +32,9 @@
 
   </head>
   <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
 
 
     <!-- Navigation & Logo-->
@@ -70,21 +44,21 @@
       <a href="/cgal-web/index.html" class="mobile-logo">
         <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="30">
       </a>
-      <button type="button" class="menu-toggle" aria-label="Menu">
+      <button class="menu-toggle" aria-label="Menu">
         Menu
       </button>
     </div>
-    <nav id="mainmenu" class="mainmenu">
+    <nav id="mainmenu" class="mainmenu" role="navigation">
     <ul>
     <li class="logo-wrapper hidden-xs hidden-sm hidden-md">
     <a href="/cgal-web/index.html">
-    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250">
+    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
     </a>
     </li>
 
     <li class="hidden-lg">
     <a href="/cgal-web/index.html">
-    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20">
+    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
     </a>
     </li>
 
@@ -99,24 +73,23 @@
     <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Packages</a>
         <ul class="dropdown-menu">
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygonMeshProcessing" target="_blank">Polygon Mesh Processing</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPointSetProcessing" target="_blank">Point Set Processing</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching and Sorting</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometryProcessing" target="_blank">Geometry Processing</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
         </ul>
     </li>
 
@@ -172,11 +145,11 @@
           </div>
           <div class="single-post-content">
             
-<p>As in the previous years, the CGAL Project will be present at
+<p>As in the previous years, the CGAL Project will be present at 
 <a href="http://s2016.siggraph.org/">Siggraph</a>.
 Having 20K subscribers on <em>cgal-discuss@inria.fr</em>, we are pretty sure
 to find at least 100 subscribers who also attend SIGGRAPH, and who
-would like to share the fun of a CGAL Flash Mob in front of the
+would like to share the fun of a CGAL Flash Mob in front of the 
 convention center</p>
 
 <h4>If You Plan to Participate</h4>
@@ -186,8 +159,8 @@ convention center</p>
    we know how many t-shirts we have to provide.</p>
 
 <h5>About a week before Siggraph</h5>
-<p>   Learn the 60sec CGAL performance.  It is important that we are
-   all perfectly synchronized, so please learn the gestures and
+<p>   Learn the 60sec CGAL performance.  It is important that we are 
+   all perfectly synchronized, so please learn the gestures and 
    words by heart, imitating what we teach on the youtube video
    that we will post on 15th of June.</p>
 
@@ -196,8 +169,8 @@ convention center</p>
      We will at the same time communicate you your "personal spot"
      which will depend on the final head count.
      We will communicate when exactly the performance starts.  It is synchronized with
-     the end of the key note (the exact time is not announced yet),
-     which is generally boring (so you don't miss a lot), but
+     the end of the key note (the exact time is not announced yet), 
+     which is generally boring (so you don't miss a lot), but 
      surprisingly well attended (so we will have a huge audience, coming from a boring event).</p>
 
 <p>Identify your personal spot so that you know where exactly
@@ -210,14 +183,14 @@ convention center</p>
 
 <dl>
    <dt>T-60</dt>  <dd><p>Put the CGAL t-shirt on, and put another t-shirt on top.
-         Preferably wear a black jeans. If you want one of the spots
+         Preferably wear a black jeans. If you want one of the spots 
          in the water, better wear Bermuda shorts.</p></dd>
    <dt>T-15</dt>  <dd><p>Be at your start spot. Do not rush to get there.</p></dd>
    <dt>T-02</dt>  <dd><p>Head to your personal spot. Rush, as this raises attention.</p></dd>
    <dt>T<dt>     <dd><p>Rip off the cover t-shirt and start the performance.</p></dd>
-   <dt>T+01</dt>  <dd><p>Put on the cover t-shirt and walk away as if
+   <dt>T+01</dt>  <dd><p>Put on the cover t-shirt and walk away as if 
          nothing had happened. In fact nothing has happened and it was all a dream<p>&lt;/dd&gt;
-&lt;/dl&gt;
+&lt;/dl&gt; 
 
 <h4>Recommendations</h4>
 
@@ -226,10 +199,10 @@ convention center</p>
 permission at the Siggraph Organization Committee as well as at
 the Anaheim City Council to film the CGAL Flash Mob with a drone.</p>
 
-<p><a href="https://www.cgal.org/news/2014/04/01/GoogleGrass/">Google Grass</a>
+<p><a href="http://www.cgal.org/news/2014/04/01/GoogleGrass/">Google Grass</a>
 proved that Cannabis makes C++ developers more
 productive, and as a side effect more funny, so feel free to
-do what you want at <em>T-30</em>.  As the California law is still
+do what you want at <em>T-30</em>.  As the California law is still 
 relatively strict, please be sure to carry your <em>Medical Marijuana
 Identification Card</em> with you, in case you are resident of California,
 or the most recent prescription you obtained from your doctor.</p>
@@ -244,11 +217,11 @@ tweet it, retweet it, or whatever.</p>
 
 <p>We will be in the area in front of the East entrance.</p>
 
-<img src="/cgal-web/images/AnaheimFlashMob.JPG" />
+<img src="../../../../../images/AnaheimFlashMob.JPG" />
 
 <p>Stand along the palm trees, and in the water. When you register
 please let us know if you are ready for the water.</p>
-<img src="/cgal-web/images/AnaheimFlashMobZoom.JPG" />
+<img src="../../../../../images/AnaheimFlashMobZoom.JPG" />
 
 
 <p>See you at <em>T</em></p>
@@ -265,7 +238,7 @@ please let us know if you are ready for the water.</p>
           
             
             
-            <li class="active"><a href="/cgal-web/2026/10/01/mesh_smoothing_3/" class="active">New in CGAL: 3D Mesh Volume Smoothing</a>
+            <li class="active"><a href="/cgal-web/2026/10/01/hexmeshing/" class="active">New in CGAL: Hexahedral mesh generation</a>
             <br><div style="font-size:12px">October 2026</div></li>
           
             

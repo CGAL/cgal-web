@@ -1,27 +1,16 @@
 
 
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
     <title>CGAL Projects for Google Summer of Code 2014</title>
-    <meta name="description" content="Projects accepted and project ideas proposed by CGAL as a mentoring organization of the Google Summer of Code 2014.">
-    <link rel="canonical" href="https://www.cgal.org/gsoc/2014.html">
-    <meta property="og:site_name" content="CGAL">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:title" content="CGAL Projects for Google Summer of Code 2014">
-    <meta property="og:description" content="Projects accepted and project ideas proposed by CGAL as a mentoring organization of the Google Summer of Code 2014.">
-    <meta property="og:url" content="https://www.cgal.org/gsoc/2014.html">
-    <meta property="og:image" content="https://www.cgal.org/images/gsoc.png">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@TheCGALProject">
-    <meta name="twitter:title" content="CGAL Projects for Google Summer of Code 2014">
-    <meta name="twitter:description" content="Projects accepted and project ideas proposed by CGAL as a mentoring organization of the Google Summer of Code 2014.">
-    <meta name="twitter:image" content="https://www.cgal.org/images/gsoc.png">
-
+    
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <meta name="author" content="CGAL Editorial Board">
 
@@ -30,8 +19,11 @@
     <link rel="stylesheet" href="/cgal-web/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/cgal-web/node_modules/bxslider/dist/jquery.bxslider.css">
     <link rel="stylesheet" href="/cgal-web/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 
+    <!--[if lte IE 8]>
+	<link rel="stylesheet" href="css/leaflet.ie.css" />
+	<![endif]-->
     <link rel="stylesheet" href="/cgal-web/assets/themes/cgal/main.css">
 
     <!-- atom & rss feed -->
@@ -40,6 +32,9 @@
 
   </head>
   <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
 
 
     <!-- Navigation & Logo-->
@@ -49,21 +44,21 @@
       <a href="/cgal-web/index.html" class="mobile-logo">
         <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="30">
       </a>
-      <button type="button" class="menu-toggle" aria-label="Menu">
+      <button class="menu-toggle" aria-label="Menu">
         Menu
       </button>
     </div>
-    <nav id="mainmenu" class="mainmenu">
+    <nav id="mainmenu" class="mainmenu" role="navigation">
     <ul>
     <li class="logo-wrapper hidden-xs hidden-sm hidden-md">
     <a href="/cgal-web/index.html">
-    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250">
+    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" width="250px">
     </a>
     </li>
 
     <li class="hidden-lg">
     <a href="/cgal-web/index.html">
-    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20">
+    <img src="/cgal-web/images/cgal_front_page_2013.png" alt="CGAL Logo" height="20px">
     </a>
     </li>
 
@@ -78,24 +73,23 @@
     <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Packages</a>
         <ul class="dropdown-menu">
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygonMeshProcessing" target="_blank">Polygon Mesh Processing</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPointSetProcessing" target="_blank">Point Set Processing</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching and Sorting</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
-          <li role="none"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartAlgebraicFoundations" target="_blank">Arithmetic and Algebra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartCombinatorialAlgorithms" target="_blank">Combinatorial Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartKernels" target="_blank">Geometry Kernels</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartConvexHullAlgorithms" target="_blank">Convex Hull Algorithms</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolygons" target="_blank">Polygons</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartPolyhedra" target="_blank">Cell Complexes and Polyhedra</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartArrangements" target="_blank">Arrangements</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartTriangulationsAndDelaunayTriangulations" target="_blank">Triangulations</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVoronoiDiagrams" target="_blank">Voronoi Diagrams</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartMeshing" target="_blank">Mesh Generation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartReconstruction" target="_blank">Shape Reconstruction</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometryProcessing" target="_blank">Geometry Processing</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures" target="_blank">Spatial Searching</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartGeometricOptimization" target="_blank">Geometric Optimization</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartInterpolation" target="_blank">Interpolation</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartSupportLibrary" target="_blank">Support Library</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://doc.cgal.org/latest/Manual/packages.html#PartVisualization" target="_blank">Visualization</a></li>
         </ul>
     </li>
 
@@ -191,7 +185,7 @@ First section to read: <a href="#information">Information Candidates Should Supp
 <script type="text/javascript">
   mailto_link("andreas.fabri","geometryfactory","com","Andreas Fabri","Use Embree for Ray Shooting")
 </script>
-from <a href="https://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
 </p>
 <b>Project description:</b>
 <p>
@@ -207,7 +201,7 @@ The Embree project has a low level API for ray shooting queries. First benchmark
 <script type="text/javascript">
   mailto_link("andreas.fabri","geometryfactory","com","Andreas Fabri","Adding better I/O for the CGAL library")
 </script>
-from <a href="https://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
 </p>
 <b>Project description:</b>
 <p>
@@ -256,7 +250,7 @@ Fix and enhance various small features in the 2D Arrangements package:
 <script type="text/javascript">
   mailto_link("laurent.rineau","cgal","org","Laurent Rineau","Support for Qt5")
 </script>
-from <a href="https://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
 and
 <script type="text/javascript">
   mailto_link("guillaume.damiand","liris.cnrs","fr","Guillaume Damiand","Support for Qt5")
@@ -287,7 +281,7 @@ will also have to be adapted so that they can use either Qt4 or Qt5.
 <script type="text/javascript">
   mailto_link("sloriot.ml+gsoc","gmail","com","S&eacutebastien Loriot","Adding a parallel version of the edge simplification algorithm")
 </script>
-from <a href="https://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
 and
 <script type="text/javascript">
   mailto_link("clement.jamin.pro","gmail","com","Cl&eacutement Jamin","Adding a parallel version of the edge simplification algorithm")
@@ -332,7 +326,7 @@ Specifically, the triangular expansion algorithm should be parallelized.
 <script type="text/javascript">
   mailto_link("sloriot.ml+gsoc","gmail","com","S&eacutebastien Loriot","Implementing a Shortest Path on Polyhedron Algorithm")
 </script>
-from <a href="https://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
 and
 &Eacute;ric Colin de Verdi&egrave;re from <a href="http://www.di.ens.fr/~colin/">ENS</a>
 </p>
@@ -359,7 +353,7 @@ and
 <script type="text/javascript">
   mailto_link("sloriot.ml+gsoc","gmail","com","S&eacutebastien Loriot","Intersection of Half-Spaces and Computation of the Voronoi-covariance measure of a Point Set")
 </script>
-from <a href="https://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
 </p>
 <b>Project description:</b>
 <p>
@@ -382,7 +376,7 @@ and
   <script type="text/javascript">
     mailto_link("sloriot.ml+gsoc","gmail","com","Sebastien Loriot","Finalization of the implementation of a 2D Reconstruction and Simplification Algorithm from Point Set")
   </script>
-  from <a href="https://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+  from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
 <h3>Project Description</h3>
 <p>This project consists in going to the submission of a new package to CGAL. The student will start from the prototype code
 of the following paper by De Goes and Cohen-Steiner and Alliez and Desbrun:
@@ -407,7 +401,7 @@ and
 <script type="text/javascript">
   mailto_link("andreas.fabri","geometryfactory","com","Andreas Fabri","BGL for Combinatorial Maps and Linear Cell Complex")
 </script>
-from <a href="https://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
+from <a href="http://www.geometryfactory.com/aboutus.html">GeometryFactory</a>
 </p>
 <b>Project description:</b>
 <p>
