@@ -5,8 +5,8 @@
         <description>CGAL is an open source C++ library of robust and efficient geometric algorithms: triangulations, meshing, mesh processing, Boolean operations, arrangements, and more.</description>
         <link>https://www.cgal.org/</link>
         <atom:link href="https://www.cgal.org/rss.xml" rel="self" type="application/rss+xml"/>
-        <lastBuildDate>Mon, 23 Nov 2026 12:34:56 +0000</lastBuildDate>
-        <pubDate>Mon, 23 Nov 2026 12:34:56 +0000</pubDate>
+        <lastBuildDate>Mon, 23 Nov 2026 13:57:23 +0000</lastBuildDate>
+        <pubDate>Mon, 23 Nov 2026 13:57:23 +0000</pubDate>
         <ttl>1800</ttl>
 
 
