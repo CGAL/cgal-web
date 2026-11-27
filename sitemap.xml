@@ -118,6 +118,10 @@
     <loc>https://www.cgal.org/download/windows.html</loc>
   </url>
   <url>
+    <loc>https://www.cgal.org/2026/11/16/Tetrahedral_remeshing_speedup/</loc>
+    <lastmod>2026-11-16T00:00:00+00:00</lastmod>
+  </url>
+  <url>
     <loc>https://www.cgal.org/2026/10/01/mesh_smoothing_3/</loc>
     <lastmod>2026-10-01T00:00:00+00:00</lastmod>
   </url>

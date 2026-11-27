@@ -5,10 +5,129 @@
         <description>CGAL is an open source C++ library of robust and efficient geometric algorithms: triangulations, meshing, mesh processing, Boolean operations, arrangements, and more.</description>
         <link>https://www.cgal.org/</link>
         <atom:link href="https://www.cgal.org/rss.xml" rel="self" type="application/rss+xml"/>
-        <lastBuildDate>Mon, 23 Nov 2026 13:57:23 +0000</lastBuildDate>
-        <pubDate>Mon, 23 Nov 2026 13:57:23 +0000</pubDate>
+        <lastBuildDate>Fri, 27 Nov 2026 10:02:19 +0000</lastBuildDate>
+        <pubDate>Fri, 27 Nov 2026 10:02:19 +0000</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>New in CGAL 6.3: Tetrahedral Remeshing Is Almost Twice as Fast</title>
+                <description>
+&lt;h3&gt;&lt;a href=&quot;https://github.com/IasonManolas&quot;&gt;Iason Manolas (GSoC 2026)&lt;/a&gt;,
+&lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Jane Tournois&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h4&gt;&lt;a href=&quot;https://geometryfactory.com/&quot;&gt;GeometryFactory&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;In the upcoming CGAL 6.3, the
+&lt;a href=&quot;https://doc.cgal.org/6.3/Tetrahedral_remeshing/index.html&quot;&gt;Tetrahedral Remeshing&lt;/a&gt; package runs
+&lt;strong&gt;about 1.9× faster&lt;/strong&gt; than in CGAL 6.2.1 (1.6× to 2.4×, depending on the mesh and settings). It
+executes &lt;strong&gt;58% fewer CPU instructions&lt;/strong&gt;, and peak memory drops by about 8% on average. No change in
+user code is needed: existing calls to &lt;code&gt;tetrahedral_isotropic_remeshing()&lt;/code&gt; simply run faster.&lt;/p&gt;
+
+&lt;h3&gt;Tetrahedral Remeshing&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;tetrahedral_isotropic_remeshing()&lt;/code&gt; improves the quality of a multi-material tetrahedral mesh by
+repeatedly applying four local operations: edge split, edge collapse, edge flip and vertex
+smoothing. Each pass improves badly shaped cells and moves the mesh towards a target edge length.
+On meshes with millions of cells, this can take many minutes.&lt;/p&gt;
+
+&lt;h3&gt;Benchmarks&lt;/h3&gt;
+
+&lt;p&gt;We compared CGAL 6.2.1 with the current &lt;code&gt;main&lt;/code&gt; branch on nine volume meshes generated with
+&lt;code&gt;make_mesh_3&lt;/code&gt;, including models from the &lt;a href=&quot;https://ten-thousand-models.appspot.com/&quot;&gt;Thingi10K&lt;/a&gt;
+dataset. Each mesh was remeshed with four combinations of target edge length, relative to the
+input&apos;s average edge length, and number of iterations. These range from coarsening to producing
+meshes of more than 3 million cells.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;a href=&quot;../../../../images/speedup_tet_remeshing_benchmark_meshes.png&quot;&gt;&lt;img src=&quot;../../../../images/speedup_tet_remeshing_benchmark_meshes.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
+  &lt;br /&gt;&lt;small&gt;The nine input meshes.&lt;/small&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;The remeshing time drops by &lt;strong&gt;1.87× on average&lt;/strong&gt; (geometric mean over the 35 runs). The speedup is
+largest when coarsening, 1.98× at 1.5× the average edge length, and still 1.79× when refining to
+0.25×.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;a href=&quot;../../../../images/speedup_tet_remeshing_per_mesh.png&quot;&gt;&lt;img src=&quot;../../../../images/speedup_tet_remeshing_per_mesh.png&quot; style=&quot;max-width:95%&quot; /&gt;&lt;/a&gt;
+  &lt;br /&gt;&lt;small&gt;Speedup per mesh and setting. Input cell counts are in parentheses.&lt;/small&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;a href=&quot;../../../../images/speedup_tet_remeshing_runtime_before_after.png&quot;&gt;&lt;img src=&quot;../../../../images/speedup_tet_remeshing_runtime_before_after.png&quot; style=&quot;max-width:85%&quot; /&gt;&lt;/a&gt;
+  &lt;br /&gt;&lt;small&gt;Remeshing time at 0.25× edge length and 3 iterations, the most demanding setting (bunny00 not run, see below).
+   The longest run, armadillo, goes from 222 s to 121 s.&lt;/small&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;How this was measured.&lt;/em&gt; CGAL 6.2.1 (&lt;a href=&quot;https://github.com/CGAL/cgal/commit/28811b671a1&quot;&gt;&lt;code&gt;28811b6&lt;/code&gt;&lt;/a&gt;)
+against &lt;code&gt;main&lt;/code&gt; (&lt;a href=&quot;https://github.com/CGAL/cgal/commit/a3c1b86d2b7&quot;&gt;&lt;code&gt;a3c1b86&lt;/code&gt;&lt;/a&gt;, November 2026). Release
+build (Apple clang 21, &lt;code&gt;-O3&lt;/code&gt;), Apple M2, one thread. Each mesh and setting ran twice per version
+in before/after/after/before order, and the charts show the mean. The time covers only the call to
+&lt;code&gt;tetrahedral_isotropic_remeshing()&lt;/code&gt;. Results will differ on other hardware and compilers, and
+bunny00 was not run at 0.25× because of this machine&apos;s memory.&lt;/p&gt;
+
+&lt;h3&gt;Where the speedup comes from&lt;/h3&gt;
+
+&lt;p&gt;Nearly all of the reduction comes from seven pull requests, found by profiling with Intel VTune and
+&lt;code&gt;perf&lt;/code&gt;; other changes since 6.2.1 move the instruction count by less than 1%. Most of the savings
+come from not doing work whose answer was already known. Each pull request&apos;s description has the
+details and its own measurements.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/CGAL/cgal/pull/9587&quot;&gt;#9587&lt;/a&gt;: decide most collapse candidates with a direct
+dihedral-angle test, before copying their star into a scratch triangulation.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/CGAL/cgal/pull/9591&quot;&gt;#9591&lt;/a&gt;: replace repeated point-location, star and
+sizing-field queries with information already at hand.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/CGAL/cgal/pull/9590&quot;&gt;#9590&lt;/a&gt;: collect the stars of a collapsed edge&apos;s endpoints
+once, instead of up to four times.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/CGAL/cgal/pull/9594&quot;&gt;#9594&lt;/a&gt;: replace hash containers that hold about 20
+elements at most with small inline vectors.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/CGAL/cgal/pull/9592&quot;&gt;#9592&lt;/a&gt;: stop evaluating a flip as soon as its angles can
+no longer improve on the current ones.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/CGAL/cgal/pull/9588&quot;&gt;#9588&lt;/a&gt;: run a flip&apos;s cheap checks before its expensive
+star walks.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/CGAL/cgal/pull/9676&quot;&gt;#9676&lt;/a&gt;: judge a flip&apos;s facets as they are visited, and
+run its most expensive test only on candidates whose angles pass.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Mesh quality&lt;/h3&gt;
+
+&lt;p&gt;These optimizations do not change the remesher&apos;s decisions. On the nine meshes we compared at 1×
+edge length and 10 iterations, the output is byte-identical with and without these pull requests.&lt;/p&gt;
+
+&lt;p&gt;Other changes merged since 6.2.1 do change the output slightly, so 6.2.1 and 6.3 do not produce
+identical files. The quality is equivalent: across the 35 runs, the mean dihedral angle differs by
+at most 0.08°, and the number of output cells by at most 2.2% (in 26 of the 35 runs, by less than
+0.1%). The minimum dihedral angle stays the same in most runs and moves by up to 2° in either
+direction in the others.&lt;/p&gt;
+
+&lt;h3&gt;Status&lt;/h3&gt;
+&lt;p&gt;All these improvements are already integrated in CGAL&apos;s main branch on the
+&lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;, and will be officially released in
+CGAL 6.3.&lt;/p&gt;
+
+&lt;p&gt;This work was done by &lt;a href=&quot;https://github.com/IasonManolas&quot;&gt;Iason Manolas&lt;/a&gt; during
+&lt;a href=&quot;https://summerofcode.withgoogle.com/programs/2026/projects/LDQLCNLF&quot;&gt;Google Summer of Code 2026&lt;/a&gt;,
+mentored by &lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Sébastien Loriot&lt;/a&gt;,
+&lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Mael Rouxel-Labbé&lt;/a&gt; and
+&lt;a href=&quot;https://geometryfactory.com/who-we-are/&quot;&gt;Jane Tournois&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
+&lt;a href=&quot;https://doc.cgal.org/6.3/Tetrahedral_remeshing/index.html&quot;&gt;Documentation about Tetrahedral Remeshing&lt;/a&gt;
+&lt;br /&gt;
+&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
+&lt;a href=&quot;https://github.com/CGAL/cgal/&quot;&gt;CGAL GitHub repository&lt;/a&gt;
+&lt;br /&gt;
+&lt;i class=&quot;bi bi-file-earmark-text&quot;&gt;&lt;/i&gt;
+&lt;a href=&quot;https://github.com/IasonManolas/gsoc2026/blob/main/final_report.md&quot;&gt;GSoC 2026 final report&lt;/a&gt;&lt;/p&gt;
+</description>
+                <link>https://www.cgal.org/2026/11/16/Tetrahedral_remeshing_speedup/</link>
+                <guid>https://www.cgal.org/2026/11/16/Tetrahedral_remeshing_speedup</guid>
+                <pubDate>Mon, 16 Nov 2026 00:00:00 +0000</pubDate>
+        </item>
 
         <item>
                 <title>New in CGAL: 3D Mesh Volume Smoothing</title>
@@ -1947,25 +2066,6 @@ to be 2-manifold and watertight, as long as the isosurface does not intersect th
                 <guid>https://www.cgal.org/2025/09/17/cgal61-beta2</guid>
                 <pubDate>Wed, 17 Sep 2025 00:00:00 +0000</pubDate>
                 <media:thumbnail url="https://www.cgal.org/images/cdt_title_pyramid.png"/>
-        </item>
-
-        <item>
-                <title>CGAL 6.0.2 released</title>
-                <description>
-&lt;p&gt;&lt;i class=&quot;bi bi-arrow-down-circle&quot;&gt;&lt;/i&gt;
-&lt;a href=&quot;https://github.com/CGAL/cgal/releases/tag/v6.0.2&quot;&gt;Download CGAL-6.0.2&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;i class=&quot;bi bi-book&quot;&gt;&lt;/i&gt;
-&lt;a href=&quot;https://doc.cgal.org/6.0.2/Manual/index.html&quot;&gt;CGAL-6.0.2 documentation&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;CGAL 6.0.2 is a bug-fix release for &lt;a href=&quot;/cgal-web/2024/09/27/cgal60/&quot;&gt;CGAL 6.0&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The list of fixed bugs since &lt;a href=&quot;/cgal-web/2024/09/27/cgal60/&quot;&gt;CGAL 6.0&lt;/a&gt; can be accessed &lt;a href=&quot;https://github.com/CGAL/cgal/issues?q=label%3AMerged_in_6.0.2+-label%3AMerged_in_6.0&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
-
-</description>
-                <link>https://www.cgal.org/2025/09/17/cgal602/</link>
-                <guid>https://www.cgal.org/2025/09/17/cgal602</guid>
-                <pubDate>Wed, 17 Sep 2025 00:00:00 +0000</pubDate>
         </item>
 
 
